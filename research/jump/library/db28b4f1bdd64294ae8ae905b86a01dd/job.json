@@ -1,0 +1,2082 @@
+{
+  "run_id": "db28b4f1bdd64294ae8ae905b86a01dd",
+  "status": "RUNNING",
+  "iti_version": "jump_a_iti_v1.0.0",
+  "debase_result_id": "913",
+  "source_folder": "913",
+  "source_lab_id": "de679c41a39f40b8a7c5d1fb6b49c156",
+  "strategy_name": "913",
+  "source_question_sha256": "77cf05701986e1797e809849ebf8c86210c4ded6e45fbd9a7e3211a1f7170800",
+  "source_snapshot": {
+    "lab_id": "de679c41a39f40b8a7c5d1fb6b49c156",
+    "phase_a_result_id": "913",
+    "phase_b_result_id": "913",
+    "BASE_GRADE": "B+",
+    "DEBASE_GRADE": "D",
+    "result_hash": "bd2f5fb587ee6e3382321e887fe433c8bece8b9ff162ba5edbe96f0f58967990",
+    "population": 273,
+    "question_sha256": "77cf05701986e1797e809849ebf8c86210c4ded6e45fbd9a7e3211a1f7170800"
+  },
+  "orchestrator": "optimized",
+  "job_ms": null,
+  "slots": [
+    {
+      "slot_id": "ITI-00",
+      "label": "control",
+      "entry_steps": 0,
+      "win_steps": 0,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mtw2zh6b_f4q8g",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q2",
+            "price_e4": 8000,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 9500,
+            "sequential": false
+          },
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4500,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "77cf05701986e1797e809849ebf8c86210c4ded6e45fbd9a7e3211a1f7170800",
+      "source_question_sha256": "77cf05701986e1797e809849ebf8c86210c4ded6e45fbd9a7e3211a1f7170800",
+      "entry_e4": 8000,
+      "win_e4": 9500,
+      "loss_e4": 4500,
+      "entry_cents": 80,
+      "win_cents": 95,
+      "loss_cents": 45,
+      "population": 273,
+      "BASE_GRADE": "B+",
+      "DEBASE_GRADE": "D",
+      "lab_id": "de679c41a39f40b8a7c5d1fb6b49c156",
+      "phase_a_result_id": "913",
+      "phase_b_result_id": "913",
+      "executed": false,
+      "reused_source": true,
+      "result_hash": "bd2f5fb587ee6e3382321e887fe433c8bece8b9ff162ba5edbe96f0f58967990",
+      "compile_ms": 0,
+      "execute_ms": 0,
+      "lab_ms": 0,
+      "base_ms": 0,
+      "debase_ms": 0,
+      "slot_ms": 0
+    },
+    {
+      "slot_id": "ITI-01",
+      "label": "E-3",
+      "entry_steps": -3,
+      "win_steps": 0,
+      "loss_steps": 0,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mtw2zh6b_f4q8g",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q2",
+            "price_e4": 6800,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 9500,
+            "sequential": false
+          },
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4500,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "8a0073870e7ac24d06505c1a8bd82f660a8024de340564fd1506009294f5d83a",
+      "source_question_sha256": "77cf05701986e1797e809849ebf8c86210c4ded6e45fbd9a7e3211a1f7170800",
+      "entry_e4": 6800,
+      "win_e4": 9500,
+      "loss_e4": 4500,
+      "entry_cents": 68,
+      "win_cents": 95,
+      "loss_cents": 45,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-02",
+      "label": "E-2",
+      "entry_steps": -2,
+      "win_steps": 0,
+      "loss_steps": 0,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mtw2zh6b_f4q8g",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q2",
+            "price_e4": 7200,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 9500,
+            "sequential": false
+          },
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4500,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "0174f23c0e2d32095ac3617d250e6db493071a1b64ced2e06d7692d3da35e862",
+      "source_question_sha256": "77cf05701986e1797e809849ebf8c86210c4ded6e45fbd9a7e3211a1f7170800",
+      "entry_e4": 7200,
+      "win_e4": 9500,
+      "loss_e4": 4500,
+      "entry_cents": 72,
+      "win_cents": 95,
+      "loss_cents": 45,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-03",
+      "label": "E-1",
+      "entry_steps": -1,
+      "win_steps": 0,
+      "loss_steps": 0,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mtw2zh6b_f4q8g",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q2",
+            "price_e4": 7600,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 9500,
+            "sequential": false
+          },
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4500,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "36ec78dc60c9b9c7682e7453884e366ac1c758c8ebfa1a1b65f61f4f894867e1",
+      "source_question_sha256": "77cf05701986e1797e809849ebf8c86210c4ded6e45fbd9a7e3211a1f7170800",
+      "entry_e4": 7600,
+      "win_e4": 9500,
+      "loss_e4": 4500,
+      "entry_cents": 76,
+      "win_cents": 95,
+      "loss_cents": 45,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-04",
+      "label": "E+1",
+      "entry_steps": 1,
+      "win_steps": 0,
+      "loss_steps": 0,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mtw2zh6b_f4q8g",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q2",
+            "price_e4": 8400,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 9500,
+            "sequential": false
+          },
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4500,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "94b3086501320e79a605c82276cb94a8b0243629ad8482fa831649842d402b7a",
+      "source_question_sha256": "77cf05701986e1797e809849ebf8c86210c4ded6e45fbd9a7e3211a1f7170800",
+      "entry_e4": 8400,
+      "win_e4": 9500,
+      "loss_e4": 4500,
+      "entry_cents": 84,
+      "win_cents": 95,
+      "loss_cents": 45,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-05",
+      "label": "E+2",
+      "entry_steps": 2,
+      "win_steps": 0,
+      "loss_steps": 0,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mtw2zh6b_f4q8g",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q2",
+            "price_e4": 8800,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 9500,
+            "sequential": false
+          },
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4500,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "80d7df9c82038a0dd6a57e1e9357f3652a173a0d77ba3409de6dd1c140b1ade9",
+      "source_question_sha256": "77cf05701986e1797e809849ebf8c86210c4ded6e45fbd9a7e3211a1f7170800",
+      "entry_e4": 8800,
+      "win_e4": 9500,
+      "loss_e4": 4500,
+      "entry_cents": 88,
+      "win_cents": 95,
+      "loss_cents": 45,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-06",
+      "label": "E+3",
+      "entry_steps": 3,
+      "win_steps": 0,
+      "loss_steps": 0,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mtw2zh6b_f4q8g",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q2",
+            "price_e4": 9200,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 9500,
+            "sequential": false
+          },
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4500,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "b03aa524a30b336e0590240e6641cd679951728a555215400de62d8afe7c9403",
+      "source_question_sha256": "77cf05701986e1797e809849ebf8c86210c4ded6e45fbd9a7e3211a1f7170800",
+      "entry_e4": 9200,
+      "win_e4": 9500,
+      "loss_e4": 4500,
+      "entry_cents": 92,
+      "win_cents": 95,
+      "loss_cents": 45,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-07",
+      "label": "W-3",
+      "entry_steps": 0,
+      "win_steps": -3,
+      "loss_steps": 0,
+      "status": "SKIPPED",
+      "skip_reason": "win_le_entry",
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mtw2zh6b_f4q8g",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q2",
+            "price_e4": 8000,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8000,
+            "sequential": false
+          },
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4500,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "7971e77acf913554ca3f3cd7a0537d53c35515da6fd6bb2543c151d2632bc5e5",
+      "source_question_sha256": "77cf05701986e1797e809849ebf8c86210c4ded6e45fbd9a7e3211a1f7170800",
+      "entry_e4": 8000,
+      "win_e4": 8000,
+      "loss_e4": 4500,
+      "entry_cents": 80,
+      "win_cents": 80,
+      "loss_cents": 45,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-08",
+      "label": "W-2",
+      "entry_steps": 0,
+      "win_steps": -2,
+      "loss_steps": 0,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mtw2zh6b_f4q8g",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q2",
+            "price_e4": 8000,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4500,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "8be9972f77691a3b0faf6dc583f097505be50bdb79b1e3eebcc4adf0833e125b",
+      "source_question_sha256": "77cf05701986e1797e809849ebf8c86210c4ded6e45fbd9a7e3211a1f7170800",
+      "entry_e4": 8000,
+      "win_e4": 8500,
+      "loss_e4": 4500,
+      "entry_cents": 80,
+      "win_cents": 85,
+      "loss_cents": 45,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-09",
+      "label": "W-1",
+      "entry_steps": 0,
+      "win_steps": -1,
+      "loss_steps": 0,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mtw2zh6b_f4q8g",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q2",
+            "price_e4": 8000,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 9000,
+            "sequential": false
+          },
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4500,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "3c6aa001751af43f2126f67bb80f85b84343bedc4647777ee401100d3adb4d14",
+      "source_question_sha256": "77cf05701986e1797e809849ebf8c86210c4ded6e45fbd9a7e3211a1f7170800",
+      "entry_e4": 8000,
+      "win_e4": 9000,
+      "loss_e4": 4500,
+      "entry_cents": 80,
+      "win_cents": 90,
+      "loss_cents": 45,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-10",
+      "label": "W+1",
+      "entry_steps": 0,
+      "win_steps": 1,
+      "loss_steps": 0,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mtw2zh6b_f4q8g",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q2",
+            "price_e4": 8000,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 9900,
+            "sequential": false
+          },
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4500,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "da1eeb6b344f32fbe56ccd8a94a1b917ad66137ad0392691ae4cf1f06e149a84",
+      "source_question_sha256": "77cf05701986e1797e809849ebf8c86210c4ded6e45fbd9a7e3211a1f7170800",
+      "entry_e4": 8000,
+      "win_e4": 9900,
+      "loss_e4": 4500,
+      "entry_cents": 80,
+      "win_cents": 99,
+      "loss_cents": 45,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-11",
+      "label": "W+2",
+      "entry_steps": 0,
+      "win_steps": 2,
+      "loss_steps": 0,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mtw2zh6b_f4q8g",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q2",
+            "price_e4": 8000,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 9900,
+            "sequential": false
+          },
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4500,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "da1eeb6b344f32fbe56ccd8a94a1b917ad66137ad0392691ae4cf1f06e149a84",
+      "source_question_sha256": "77cf05701986e1797e809849ebf8c86210c4ded6e45fbd9a7e3211a1f7170800",
+      "entry_e4": 8000,
+      "win_e4": 9900,
+      "loss_e4": 4500,
+      "entry_cents": 80,
+      "win_cents": 99,
+      "loss_cents": 45,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-12",
+      "label": "W+3",
+      "entry_steps": 0,
+      "win_steps": 3,
+      "loss_steps": 0,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mtw2zh6b_f4q8g",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q2",
+            "price_e4": 8000,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 9900,
+            "sequential": false
+          },
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4500,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "da1eeb6b344f32fbe56ccd8a94a1b917ad66137ad0392691ae4cf1f06e149a84",
+      "source_question_sha256": "77cf05701986e1797e809849ebf8c86210c4ded6e45fbd9a7e3211a1f7170800",
+      "entry_e4": 8000,
+      "win_e4": 9900,
+      "loss_e4": 4500,
+      "entry_cents": 80,
+      "win_cents": 99,
+      "loss_cents": 45,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-13",
+      "label": "L-3",
+      "entry_steps": 0,
+      "win_steps": 0,
+      "loss_steps": -3,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mtw2zh6b_f4q8g",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q2",
+            "price_e4": 8000,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 9500,
+            "sequential": false
+          },
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 3900,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "fba178b80f9712f8837992ab79e6c9e664ed6af1e6cac04860354c07b21b6067",
+      "source_question_sha256": "77cf05701986e1797e809849ebf8c86210c4ded6e45fbd9a7e3211a1f7170800",
+      "entry_e4": 8000,
+      "win_e4": 9500,
+      "loss_e4": 3900,
+      "entry_cents": 80,
+      "win_cents": 95,
+      "loss_cents": 39,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-14",
+      "label": "L-2",
+      "entry_steps": 0,
+      "win_steps": 0,
+      "loss_steps": -2,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mtw2zh6b_f4q8g",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q2",
+            "price_e4": 8000,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 9500,
+            "sequential": false
+          },
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4100,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "4b3498cd4e683f98f1eb7306c3053d9224be65652344bdb739d92aa67be3db75",
+      "source_question_sha256": "77cf05701986e1797e809849ebf8c86210c4ded6e45fbd9a7e3211a1f7170800",
+      "entry_e4": 8000,
+      "win_e4": 9500,
+      "loss_e4": 4100,
+      "entry_cents": 80,
+      "win_cents": 95,
+      "loss_cents": 41,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-15",
+      "label": "L-1",
+      "entry_steps": 0,
+      "win_steps": 0,
+      "loss_steps": -1,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mtw2zh6b_f4q8g",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q2",
+            "price_e4": 8000,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 9500,
+            "sequential": false
+          },
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4300,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "0eceb66b0d5595ff1dce6fbb4281493521b059f7a2a371cb77a9e2fad3acdf9a",
+      "source_question_sha256": "77cf05701986e1797e809849ebf8c86210c4ded6e45fbd9a7e3211a1f7170800",
+      "entry_e4": 8000,
+      "win_e4": 9500,
+      "loss_e4": 4300,
+      "entry_cents": 80,
+      "win_cents": 95,
+      "loss_cents": 43,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-16",
+      "label": "L+1",
+      "entry_steps": 0,
+      "win_steps": 0,
+      "loss_steps": 1,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mtw2zh6b_f4q8g",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q2",
+            "price_e4": 8000,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 9500,
+            "sequential": false
+          },
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4700,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "ab686fb827ec0a3fa15adc694e2c68c93ad0a9c4f1d5fb54eaf3a745e752141f",
+      "source_question_sha256": "77cf05701986e1797e809849ebf8c86210c4ded6e45fbd9a7e3211a1f7170800",
+      "entry_e4": 8000,
+      "win_e4": 9500,
+      "loss_e4": 4700,
+      "entry_cents": 80,
+      "win_cents": 95,
+      "loss_cents": 47,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-17",
+      "label": "L+2",
+      "entry_steps": 0,
+      "win_steps": 0,
+      "loss_steps": 2,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mtw2zh6b_f4q8g",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q2",
+            "price_e4": 8000,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 9500,
+            "sequential": false
+          },
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4900,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "389dca3f37d1f618989978bdc669f456028b14f80b82232b261de3f7152bddaf",
+      "source_question_sha256": "77cf05701986e1797e809849ebf8c86210c4ded6e45fbd9a7e3211a1f7170800",
+      "entry_e4": 8000,
+      "win_e4": 9500,
+      "loss_e4": 4900,
+      "entry_cents": 80,
+      "win_cents": 95,
+      "loss_cents": 49,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-18",
+      "label": "L+3",
+      "entry_steps": 0,
+      "win_steps": 0,
+      "loss_steps": 3,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mtw2zh6b_f4q8g",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q2",
+            "price_e4": 8000,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 9500,
+            "sequential": false
+          },
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 5100,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "c56e6d5ed0cb6b5d636cd661b119ea36527e313613f9974d2b43e6e89907d04a",
+      "source_question_sha256": "77cf05701986e1797e809849ebf8c86210c4ded6e45fbd9a7e3211a1f7170800",
+      "entry_e4": 8000,
+      "win_e4": 9500,
+      "loss_e4": 5100,
+      "entry_cents": 80,
+      "win_cents": 95,
+      "loss_cents": 51,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-19",
+      "label": "E+1 W+1",
+      "entry_steps": 1,
+      "win_steps": 1,
+      "loss_steps": 0,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mtw2zh6b_f4q8g",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q2",
+            "price_e4": 8400,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 9900,
+            "sequential": false
+          },
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4500,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "041acd77e78f3b79fef675282772a74184e5554d79582051f2870cc0cc901f12",
+      "source_question_sha256": "77cf05701986e1797e809849ebf8c86210c4ded6e45fbd9a7e3211a1f7170800",
+      "entry_e4": 8400,
+      "win_e4": 9900,
+      "loss_e4": 4500,
+      "entry_cents": 84,
+      "win_cents": 99,
+      "loss_cents": 45,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-20",
+      "label": "E-1 W-1",
+      "entry_steps": -1,
+      "win_steps": -1,
+      "loss_steps": 0,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mtw2zh6b_f4q8g",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q2",
+            "price_e4": 7600,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 9000,
+            "sequential": false
+          },
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4500,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "46a48859ca1c8531c27becc8f0a65a7ea2b40ecbfc2faedb1ac91a0fef534f6f",
+      "source_question_sha256": "77cf05701986e1797e809849ebf8c86210c4ded6e45fbd9a7e3211a1f7170800",
+      "entry_e4": 7600,
+      "win_e4": 9000,
+      "loss_e4": 4500,
+      "entry_cents": 76,
+      "win_cents": 90,
+      "loss_cents": 45,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-21",
+      "label": "E+1 L+1",
+      "entry_steps": 1,
+      "win_steps": 0,
+      "loss_steps": 1,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mtw2zh6b_f4q8g",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q2",
+            "price_e4": 8400,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 9500,
+            "sequential": false
+          },
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4700,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "457134fc852b34bbbe2b10525a968d4af8c0fd569ae5c27eff82b5f119ce1f0d",
+      "source_question_sha256": "77cf05701986e1797e809849ebf8c86210c4ded6e45fbd9a7e3211a1f7170800",
+      "entry_e4": 8400,
+      "win_e4": 9500,
+      "loss_e4": 4700,
+      "entry_cents": 84,
+      "win_cents": 95,
+      "loss_cents": 47,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-22",
+      "label": "E-1 L-1",
+      "entry_steps": -1,
+      "win_steps": 0,
+      "loss_steps": -1,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mtw2zh6b_f4q8g",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q2",
+            "price_e4": 7600,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 9500,
+            "sequential": false
+          },
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4300,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "2ce4cdec66983fcb520ed9591c37a7408df7e1ed0bb36c1aef8b3b51fcc33795",
+      "source_question_sha256": "77cf05701986e1797e809849ebf8c86210c4ded6e45fbd9a7e3211a1f7170800",
+      "entry_e4": 7600,
+      "win_e4": 9500,
+      "loss_e4": 4300,
+      "entry_cents": 76,
+      "win_cents": 95,
+      "loss_cents": 43,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-23",
+      "label": "W+1 L-1",
+      "entry_steps": 0,
+      "win_steps": 1,
+      "loss_steps": -1,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mtw2zh6b_f4q8g",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q2",
+            "price_e4": 8000,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 9900,
+            "sequential": false
+          },
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4300,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "d46ab079ad698585ec736305a1f10f1d1b423acf54e486c932dabe9b87f441fd",
+      "source_question_sha256": "77cf05701986e1797e809849ebf8c86210c4ded6e45fbd9a7e3211a1f7170800",
+      "entry_e4": 8000,
+      "win_e4": 9900,
+      "loss_e4": 4300,
+      "entry_cents": 80,
+      "win_cents": 99,
+      "loss_cents": 43,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-24",
+      "label": "W-1 L+1",
+      "entry_steps": 0,
+      "win_steps": -1,
+      "loss_steps": 1,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mtw2zh6b_f4q8g",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q2",
+            "price_e4": 8000,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 9000,
+            "sequential": false
+          },
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4700,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "dffc96594c8db3a609c2bbe9f536876107b57524dda73431031f0c9ba0c11d06",
+      "source_question_sha256": "77cf05701986e1797e809849ebf8c86210c4ded6e45fbd9a7e3211a1f7170800",
+      "entry_e4": 8000,
+      "win_e4": 9000,
+      "loss_e4": 4700,
+      "entry_cents": 80,
+      "win_cents": 90,
+      "loss_cents": 47,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    }
+  ],
+  "slot_n": 25,
+  "progress_done": 1,
+  "recommended_slot_id": "ITI-00",
+  "committed_slot_id": null,
+  "commit_path": null,
+  "created_at": "2026-09-13T12:44:01Z",
+  "updated_at": "2026-09-13T12:44:01Z",
+  "cancel_requested": false,
+  "honesty": {
+    "risk_not": "candle_path_not_fill",
+    "fees": "UNAVAILABLE",
+    "slippage": "UNAVAILABLE",
+    "fills": "UNAVAILABLE",
+    "confirmation_2pct": "OPERATION_REQUIRED",
+    "pyramiding": "OPERATION_REQUIRED",
+    "live_execution": false
+  },
+  "caveats": [
+    "LIVE EXECUTION = FALSE",
+    "CANDLE PATH \u2260 ACTUAL FILL",
+    "2% CONFIRMATION = OPERATION_REQUIRED",
+    "PYRAMIDING = OPERATION_REQUIRED",
+    "RECOMMENDED GRADE \u2260 FILL"
+  ],
+  "live_execution": false
+}

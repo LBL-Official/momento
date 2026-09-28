@@ -1,0 +1,57 @@
+{
+  "schema_version": "first78_active_strategy_v1",
+  "strategy_version": "first78_active_v1",
+  "official_strategy_id": "FIRST78_67",
+  "live_execution": false,
+  "submits": false,
+  "candle_path_is_not_a_fill": true,
+  "population_id": "PRIMARY_EX_ANTE_FIRST78",
+  "selection": "CONTRACT_WISE_FIRST",
+  "entry_cents": 78,
+  "official_stop_cents": 67,
+  "comparison_stops_cents": [65, 60],
+  "variants": [
+    {"strategy_id": "FIRST78_67", "role": "OFFICIAL", "entry_cents": 78, "stop_cents": 67},
+    {"strategy_id": "FIRST78_65", "role": "COMPARISON", "entry_cents": 78, "stop_cents": 65},
+    {"strategy_id": "FIRST78_60", "role": "COMPARISON", "entry_cents": 78, "stop_cents": 60}
+  ],
+  "entry_rule": "First qualifying minute-close up-cross from below 78 cents to at least 78 cents. A first valid close already at or above 78 cents is UNPROVEN_FIRST.",
+  "stop_rule": "First qualifying minute close at or below the selected stop strictly after entry. A low at or below the stop inside the entry bar is INTRABAR_AMBIGUITY, not a stop. Otherwise hold to settlement.",
+  "entry_cap_cents": null,
+  "gross_settlement_yes_cents": 22,
+  "gross_settlement_no_cents": -78,
+  "slices": {
+    "NBA": ["Q2", "Q3"],
+    "NCAAB": ["H1_2", "H2_1"]
+  },
+  "ncaab_boundary": "H1 remaining <= 600 is H1_2. H2 remaining > 600 is H2_1. H2 remaining == 600 is H2_2.",
+  "ncaab_p5_filter": false,
+  "one_candidate_per_game": "Earliest eligible contract, then contract id.",
+  "development_window": {
+    "start_local_inclusive": "2025-11-01T00:00:00-07:00",
+    "end_local_exclusive": "2026-04-02T00:00:00-07:00",
+    "zone": "America/Los_Angeles",
+    "label": "DEVELOPMENT_TAPE"
+  },
+  "separate_windows_not_pooled": ["OCT_2025", "APR_2025"],
+  "quality": {
+    "max_spread_cents": 10,
+    "require_volume_until_first_print": true
+  },
+  "funded_portfolio": {
+    "applies_to": "funded section only",
+    "initial_cash_cents": 2000000,
+    "allocation_bps": 600,
+    "fees_extra": true,
+    "fee_coef_reference": "0.0175",
+    "fee_applicability": "FEE_APPLICABILITY_UNVERIFIED",
+    "fee_coef_stress": "0.07",
+    "shared_slots": 7,
+    "resize": "after every tenth full completion; open quantities do not resize",
+    "scenario_entry_cents": 78,
+    "each_variant_replays_own_admissions": true
+  },
+  "clock_availability": "MODELED_AVAILABILITY",
+  "signal_module": "ROLLER/roller/choosin_texas/first78/eligibility.py",
+  "signal_is_not_order_authorization": true
+}

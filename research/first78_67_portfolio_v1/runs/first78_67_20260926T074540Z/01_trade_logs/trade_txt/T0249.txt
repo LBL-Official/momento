@@ -1,0 +1,10 @@
+trade T0249  NBA  Boston at Indiana
+contract KXNBAGAME-26JAN12BOSIND-BOS  slice Q3
+signal 2026-01-12T17:13:00-08:00 PST  exit 2026-01-12T17:21:00-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 4011  principal_cents 312858
+entry_fee_cents 1205  exit_fee_cents 1552
+exit STOP at 67c  terminal no
+gross_cents -44121  net_cents -46878
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

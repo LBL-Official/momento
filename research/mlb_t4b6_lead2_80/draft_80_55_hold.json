@@ -1,0 +1,39 @@
+{
+  "id": "mlb_t4b6_lead2_ft80_drop55_hold",
+  "note": "Generic Confirm & Run tagged book. Not FIRST80. Not a fill. TRADABLE_YES_BID only. Entry first-touch 80 in T4-B6 with YES lead >= 2. LOSS = first DROP_TO 55. WIN = hold to Kalshi YES settlement. Same-minute tie is TIE_EXCLUDED. Model A 80/40 EV does not apply.",
+  "draft": {
+    "universe": {
+      "sports": ["baseball"],
+      "leagues": ["MLB"],
+      "seasons": ["2025-26"],
+      "markets": ["kalshi"],
+      "marketData": ["candles"],
+      "dataSources": ["mlb_statsapi"],
+      "dateFrom": "2025-03-18",
+      "dateTo": "2026-09-16"
+    },
+    "entryConditions": [
+      {
+        "id": "e1",
+        "family": "first_touch",
+        "priceCents": 80,
+        "periodWindows": [
+          {"period": "T4"},
+          {"period": "B4"},
+          {"period": "T5"},
+          {"period": "B5"},
+          {"period": "T6"},
+          {"period": "B6"}
+        ]
+      }
+    ],
+    "exitConditions": [
+      {"id": "p1", "kind": "path", "family": "drop_to", "priceCents": 55, "outcome": "loss"},
+      {"id": "hold", "kind": "terminal", "family": "hold_expiration_win", "outcome": "win"}
+    ],
+    "teFilters": {
+      "scoreSide": "leading",
+      "customRange": {"min": 2, "max": 99}
+    }
+  }
+}

@@ -1,0 +1,46 @@
+"""Calibration diagnostics. No OOS refitting."""
+
+from __future__ import annotations
+
+import numpy as np
+
+
+def ece(y, p, bins: int = 10):
+    y = np.asarray(y, dtype=float)
+    p = np.asarray(p, dtype=float)
+    if len(y) == 0:
+        return None
+    edges = np.linspace(0.0, 1.0, bins + 1)
+    tot = 0.0
+    n = 0
+    for i in range(bins):
+        right = p < edges[i + 1] if i < bins - 1 else p <= edges[i + 1]
+        m = (p >= edges[i]) & right
+        if not np.any(m):
+            continue
+        tot += abs(float(y[m].mean()) - float(p[m].mean())) * int(m.sum())
+        n += int(m.sum())
+    return tot / n if n else None
+
+
+def reliability_table(y, p, bins: int = 10) -> list[dict]:
+    y = np.asarray(y, dtype=float)
+    p = np.asarray(p, dtype=float)
+    edges = np.linspace(0.0, 1.0, bins + 1)
+    out = []
+    for i in range(bins):
+        right = p < edges[i + 1] if i < bins - 1 else p <= edges[i + 1]
+        m = (p >= edges[i]) & right
+        if not np.any(m):
+            out.append({"lo": float(edges[i]), "hi": float(edges[i + 1]), "n": 0, "mean_p": None, "mean_y": None})
+            continue
+        out.append(
+            {
+                "lo": float(edges[i]),
+                "hi": float(edges[i + 1]),
+                "n": int(m.sum()),
+                "mean_p": float(p[m].mean()),
+                "mean_y": float(y[m].mean()),
+            }
+        )
+    return out

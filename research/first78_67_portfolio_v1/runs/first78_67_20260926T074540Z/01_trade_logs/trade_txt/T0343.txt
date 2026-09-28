@@ -1,0 +1,10 @@
+trade T0343  NBA  Houston at Atlanta
+contract KXNBAGAME-26JAN29HOUATL-HOU  slice Q3
+signal 2026-01-29T18:27:00-08:00 PST  exit 2026-01-29T19:31:57-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 5823  principal_cents 454194
+entry_fee_cents 1749  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 128106  net_cents 126357
+strategy_result POSITIVE  net_r 1.856662160573645233337251675
+Assumed fill. Not a maker fill. Not live P&L.

@@ -1,0 +1,15 @@
+{
+  "strategy_version": "FIRST78_67_PORTFOLIO_V1",
+  "written_before_outcome_inspection": true,
+  "eligible_population": "Prospective definition is not the historical FIRST80-conditioned 936. A deployable book has to be specified without a later 80 cent event.",
+  "primary_endpoints": [
+    "executable net per-contract expectancy",
+    "net portfolio result under the seven-slot cash policy"
+  ],
+  "supporting_endpoints": ["fill rate", "implementation shortfall", "calibration of predicted risk"],
+  "executable_endpoints_status": "NOT_YET_IDENTIFIABLE",
+  "missing_data": "Leave missing clocks, settlements, and quotes missing. Do not impute with a later outcome.",
+  "sealed_austin_cohorts": "do not open",
+  "monitoring": "No repeated significance looks are authorized by this file. Confirmatory inference waits on a pre-specified prospective window.",
+  "live_authorization": "REQUIRED_USER_INPUT"
+}

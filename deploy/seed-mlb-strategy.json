@@ -1,0 +1,17 @@
+{
+  "games": [
+    {
+      "game_id": 10,
+      "phase": "GameLocked",
+      "first_80": null,
+      "confirmed_81": false,
+      "first_89": null,
+      "paused_above_max": false,
+      "assigned_position_id": null,
+      "last_fingerprint": null,
+      "last_exchange_ts": null,
+      "stop_watch_emitted": false,
+      "ordering_ambiguous": false
+    }
+  ]
+}

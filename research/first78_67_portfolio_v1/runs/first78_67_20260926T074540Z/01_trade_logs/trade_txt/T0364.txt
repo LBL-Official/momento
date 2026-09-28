@@ -1,0 +1,10 @@
+trade T0364  NBA  Los Angeles C at Phoenix
+contract KXNBAGAME-26FEB01LACPHX-LAC  slice Q3
+signal 2026-02-01T18:31:00-08:00 PST  exit 2026-02-01T19:51:58-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 6429  principal_cents 501462
+entry_fee_cents 1931  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 141438  net_cents 139507
+strategy_result POSITIVE  net_r 1.856677047565812238813915728
+Assumed fill. Not a maker fill. Not live P&L.

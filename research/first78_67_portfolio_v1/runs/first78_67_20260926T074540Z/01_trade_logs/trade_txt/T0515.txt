@@ -1,0 +1,10 @@
+trade T0515  NCAAB  Alabama at Georgia
+contract KXNCAAMBGAME-26MAR03ALAUGA-UGA  slice H2_1
+signal 2026-03-03T16:54:00-08:00 PST  exit 2026-03-03T17:15:00-08:00 PST
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 9922  principal_cents 773916
+entry_fee_cents 2980  exit_fee_cents 3840
+exit STOP at 67c  terminal yes
+gross_cents -109142  net_cents -115962
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

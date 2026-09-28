@@ -1,0 +1,10 @@
+trade T0046  NBA  Chicago at Utah
+contract KXNBAGAME-25NOV16CHIUTA-CHI  slice Q2
+signal 2025-11-16T18:07:00-08:00 PST  exit 2025-11-16T19:06:00-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 2114  principal_cents 164892
+entry_fee_cents 635  exit_fee_cents 818
+exit STOP at 67c  terminal no
+gross_cents -23254  net_cents -24707
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

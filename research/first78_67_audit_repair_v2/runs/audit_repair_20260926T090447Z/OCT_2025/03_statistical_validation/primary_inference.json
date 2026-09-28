@@ -1,0 +1,18 @@
+{
+  "REF": {
+    "status": "ESTIMATED",
+    "n_days": 13,
+    "observed_mean_cents_per_contract": 5.005900682492711,
+    "one_sided_p": 0.061938061938061936,
+    "draws_used": 1000,
+    "null": "centered studentized cluster bootstrap"
+  },
+  "JOINT_2_FEE_007": {
+    "status": "ESTIMATED",
+    "n_days": 13,
+    "observed_mean_cents_per_contract": 0.5833784790347265,
+    "one_sided_p": 0.41358641358641357,
+    "draws_used": 1000,
+    "null": "centered studentized cluster bootstrap"
+  }
+}

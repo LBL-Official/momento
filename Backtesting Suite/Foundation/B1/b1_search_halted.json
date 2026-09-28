@@ -1,0 +1,5 @@
+{
+  "halted": true,
+  "reason": "features.sqlite missing after successful W8 recon. Run --extract then --search.",
+  "recon_ok": true
+}

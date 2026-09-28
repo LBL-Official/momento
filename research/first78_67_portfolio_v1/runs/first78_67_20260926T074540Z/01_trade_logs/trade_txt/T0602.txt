@@ -1,0 +1,10 @@
+trade T0602  NBA  Orlando at Charlotte
+contract KXNBAGAME-26MAR19ORLCHA-CHA  slice Q2
+signal 2026-03-19T16:47:00-07:00 PDT  exit 2026-03-19T18:56:00-07:00 PDT
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 14816  principal_cents 1155648
+entry_fee_cents 4450  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 325952  net_cents 321502
+strategy_result POSITIVE  net_r 1.856686629051911826702625910
+Assumed fill. Not a maker fill. Not live P&L.

@@ -1,0 +1,60 @@
+{
+  "run": "/Users/user/Desktop/Momento/research/first78_67_portfolio_v1/runs/first78_67_20260926T074540Z",
+  "files": 824,
+  "empty_files": [],
+  "parse_errors": [],
+  "checks": 6472,
+  "failures": [],
+  "n": 647,
+  "unique_games": 647,
+  "sport_counts": {
+    "NBA": 382,
+    "NCAAB": 265
+  },
+  "net_dollars": 235488.18,
+  "gross_dollars": 256120.15,
+  "fees_dollars": 20631.97,
+  "ending_cash_dollars": 255488.18,
+  "max_open": 6,
+  "source_reextracted_candidates": 647,
+  "source_replay_matches": 647,
+  "fixed_1538_net_dollars": 53150.28,
+  "realized_dd": {
+    "fraction": 0.06510609301009918,
+    "dollars": 8801.5,
+    "peak_index": 1505,
+    "trough_index": 1549
+  },
+  "all_close_mark_dd": {
+    "fraction": 0.0743521472327211,
+    "dollars": 10178.89,
+    "peak_index": 19129,
+    "trough_index": 19432
+  },
+  "mark_points": 24947,
+  "mark_points_with_stale": 3553,
+  "max_mark_age_seconds": 7556,
+  "calendar_sharpe_unannualized": 0.6738011779145018,
+  "calendar_sharpe_annualized": 12.872953429031897,
+  "calendar_days": 152,
+  "zero_equity_change_days": 12,
+  "entry_overshoots": 434,
+  "average_entry_bid": 79.85162287480681,
+  "average_stop_gap": 3.4637223974763405,
+  "max_stop_gap": 42,
+  "stops_after_settlement": 0,
+  "unfiltered_stops_earlier": 224,
+  "nextbar_same_as_stop": 1,
+  "paired_net_dollars": -51075.03,
+  "paired_mean_cents_per_contract": -0.12935337660699528,
+  "positive_rate": 0.5100463678516228,
+  "mean_net_cents_per_contract": 5.341488594369198,
+  "stop_then_win": 212,
+  "terminal_win_rate": 0.8377125193199382,
+  "assessment": "CONDITIONAL_ACCOUNTING_REPRODUCED; EXECUTION_AND_INFERENCE_NOT_VALIDATED",
+  "invalidated_claims": [
+    "primary calendar Monte Carlo",
+    "p-values and Holm significance",
+    "causal next-bar replay"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "held_out": "VALIDATION",
+  "model": "l2_logistic_game_state",
+  "rows": [
+    {
+      "feature": "estimated_possessions_remaining",
+      "mean": 0.004234951734781753,
+      "std": 0.0015378024311568958
+    },
+    {
+      "feature": "official_time_remaining_s",
+      "mean": 0.0018931133388784883,
+      "std": 0.0011774891193918264
+    },
+    {
+      "feature": "score_differential",
+      "mean": -0.0009846400298045787,
+      "std": 0.00040649674929706066
+    },
+    {
+      "feature": "quarter",
+      "mean": 0.0006387350743880694,
+      "std": 0.0004798768058981969
+    },
+    {
+      "feature": "possession_number",
+      "mean": 0.0003617679938865692,
+      "std": 0.0003709702124815927
+    },
+    {
+      "feature": "game_elapsed_seconds",
+      "mean": -7.652668565643894e-05,
+      "std": 0.00043821876913709157
+    },
+    {
+      "feature": "game_completion_pct",
+      "mean": -4.0143024035371734e-05,
+      "std": 0.0005330017418958765
+    }
+  ]
+}

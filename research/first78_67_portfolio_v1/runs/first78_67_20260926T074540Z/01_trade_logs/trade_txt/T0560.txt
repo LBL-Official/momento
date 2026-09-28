@@ -1,0 +1,10 @@
+trade T0560  NCAAB  Syracuse at SMU
+contract KXNCAAMBGAME-26MAR10SYRSMU-SMU  slice H2_1
+signal 2026-03-10T14:41:00-07:00 PDT  exit 2026-03-10T15:51:40-07:00 PDT
+assumed entry 78c  observed close 82c  overshoot 4c
+contracts 11788  principal_cents 919464
+entry_fee_cents 3540  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 259336  net_cents 255796
+strategy_result POSITIVE  net_r 1.856688684038615083109530377
+Assumed fill. Not a maker fill. Not live P&L.

@@ -1,0 +1,122 @@
+[
+  {
+    "condition": "p_start_35_49=NO&base_class=RISP",
+    "n": 116,
+    "test_ev": 7.0,
+    "test_n": 20,
+    "train_ev": -7.4186046511627906,
+    "val_ev": -33.0
+  },
+  {
+    "condition": "p_start_lt50=NO&base_class=RISP",
+    "n": 112,
+    "test_ev": 6.473684210526316,
+    "test_n": 19,
+    "train_ev": -7.096385542168675,
+    "val_ev": -33.0
+  },
+  {
+    "condition": "p_start_ge50=YES&base_class=RISP",
+    "n": 112,
+    "test_ev": 6.473684210526316,
+    "test_n": 19,
+    "train_ev": -7.096385542168675,
+    "val_ev": -33.0
+  },
+  {
+    "condition": "p_start_40_50=NO&vel_1m_tertile=HIGH",
+    "n": 114,
+    "test_ev": -3.0,
+    "test_n": 20,
+    "train_ev": -13.0,
+    "val_ev": -25.857142857142858
+  },
+  {
+    "condition": "p_start_lt50=NO&vel_1m_tertile=HIGH",
+    "n": 112,
+    "test_ev": -2.0476190476190474,
+    "test_n": 21,
+    "train_ev": -12.87012987012987,
+    "val_ev": -25.857142857142858
+  },
+  {
+    "condition": "p_start_ge50=YES&vel_1m_tertile=HIGH",
+    "n": 112,
+    "test_ev": -2.0476190476190474,
+    "test_n": 21,
+    "train_ev": -12.87012987012987,
+    "val_ev": -25.857142857142858
+  },
+  {
+    "condition": "p_start_35_49=NO&vel_1m_tertile=HIGH",
+    "n": 113,
+    "test_ev": -2.0476190476190474,
+    "test_n": 21,
+    "train_ev": -12.487179487179487,
+    "val_ev": -25.857142857142858
+  },
+  {
+    "condition": "base_class=RISP&p_max_vs_83=PEAK_AT",
+    "n": 100,
+    "test_ev": 7.909090909090909,
+    "test_n": 11,
+    "train_ev": -7.358974358974359,
+    "val_ev": -28.454545454545453
+  },
+  {
+    "condition": "lead_ge3=NO&vel_1m_tertile=HIGH",
+    "n": 104,
+    "test_ev": -8.0,
+    "test_n": 20,
+    "train_ev": -12.72972972972973,
+    "val_ev": -23.0
+  },
+  {
+    "condition": "p_start_45_49=NO&base_class=RISP",
+    "n": 132,
+    "test_ev": 7.476190476190476,
+    "test_n": 21,
+    "train_ev": -7.0,
+    "val_ev": -28.454545454545453
+  },
+  {
+    "condition": "p_start_35_39=NO&personality=REVERSING",
+    "n": 80,
+    "test_ev": -4.052631578947368,
+    "test_n": 19,
+    "train_ev": -7.0,
+    "val_ev": -28.454545454545453
+  },
+  {
+    "condition": "personality=REVERSING",
+    "n": 82,
+    "test_ev": -3.0,
+    "test_n": 20,
+    "train_ev": -6.529411764705882,
+    "val_ev": -28.454545454545453
+  },
+  {
+    "condition": "p_start_lt30=NO&personality=REVERSING",
+    "n": 82,
+    "test_ev": -3.0,
+    "test_n": 20,
+    "train_ev": -6.529411764705882,
+    "val_ev": -28.454545454545453
+  },
+  {
+    "condition": "p_start_30_34=NO&personality=REVERSING",
+    "n": 82,
+    "test_ev": -3.0,
+    "test_n": 20,
+    "train_ev": -6.529411764705882,
+    "val_ev": -28.454545454545453
+  },
+  {
+    "condition": "p_start_40_44=NO&base_class=RISP",
+    "n": 159,
+    "test_ev": 6.285714285714286,
+    "test_n": 28,
+    "train_ev": -5.033898305084746,
+    "val_ev": -29.153846153846153
+  }
+]

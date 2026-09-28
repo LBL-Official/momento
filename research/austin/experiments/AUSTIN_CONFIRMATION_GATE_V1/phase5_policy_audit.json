@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "source_phase5": "AUSTIN_DRE_POLICY_V2",
+  "human_selected_policy": "NONE",
+  "policy_frozen": false,
+  "policy_freeze_present": false,
+  "phase5_finalization_hash": "067eccc691d02a675e2e87fd5a33f3f831a404b7b850ee19c2bc681bda7d8d44",
+  "confirmation_spend_authorized": false
+}

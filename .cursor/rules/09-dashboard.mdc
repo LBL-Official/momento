@@ -1,0 +1,79 @@
+---
+description: React trading dashboard rules
+globs: "dashboard/**/*.{ts,tsx}"
+alwaysApply: false
+---
+
+# Trading Dashboard
+
+The dashboard is an observability and control interface.
+
+It is NOT a source of trading authority.
+
+---
+
+## Architecture
+
+One central React application.
+
+Sports are pages/views:
+
+/mlb
+/nba
+/ncaab
+/nfl
+
+Shared components should be reused.
+
+---
+
+## Dashboard Must Show
+
+System:
+- environment
+- trading mode
+- connection state
+- last market-data timestamp
+- reconciliation state
+- kill switch
+
+Positions:
+- open positions
+- quantity
+- average entry
+- current market
+- unrealized P&L
+- realized P&L
+- exit state
+
+Orders:
+- working
+- filled
+- partially filled
+- cancelled
+- rejected
+- unknown
+
+Risk:
+- bankroll
+- exposure
+- limits
+- remaining capacity
+- daily trade count
+- daily P&L
+
+---
+
+## Safety
+
+UI controls that can affect trading must require explicit confirmation.
+
+Never make destructive trading actions one-click without confirmation.
+
+Dashboard must clearly distinguish:
+
+PAPER
+
+from:
+
+LIVE

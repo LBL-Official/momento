@@ -1,0 +1,22 @@
+{
+  "REF": {
+    "status": "ESTIMATED",
+    "n_days": 13,
+    "n_trades": 41,
+    "observed_mean_cents_per_contract": 5.412906501914133,
+    "studentized_observed": 1.548531342471987,
+    "draws_used": 2000,
+    "one_sided_p": 0.0384807596201899,
+    "note": "Centered studentized cluster bootstrap. Not the share of uncentered means <= 0."
+  },
+  "JOINT_2_FEE_007": {
+    "status": "ESTIMATED",
+    "n_days": 13,
+    "n_trades": 41,
+    "observed_mean_cents_per_contract": 1.0296095970435386,
+    "studentized_observed": 0.26875012465966414,
+    "draws_used": 2000,
+    "one_sided_p": 0.3538230884557721,
+    "note": "Centered studentized cluster bootstrap. Not the share of uncentered means <= 0."
+  }
+}

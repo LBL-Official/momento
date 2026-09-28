@@ -1,0 +1,26 @@
+{
+  "family": "C",
+  "method": "contiguous_local_day_blocks",
+  "block_days": 7,
+  "paths": 12255,
+  "seed": 20260926,
+  "quantile_index": "round(frac * (n - 1))",
+  "ending_equity_cents": {
+    "0.01": 12202627,
+    "0.05": 14740857,
+    "0.1": 16220979,
+    "0.25": 19198677,
+    "0.5": 22955486,
+    "0.75": 27561937,
+    "0.9": 32377016,
+    "0.95": 35498699,
+    "0.99": 41941672
+  },
+  "mean_ending_equity_cents": 23778077.431823745,
+  "monte_carlo_se_of_mean_cents": 58069.427943417926,
+  "count_ending_below_start": 0,
+  "plug_in_p_ending_below_start": 0.0,
+  "note": "A zero count makes the plug-in standard error of that proportion zero. That is not proof the probability is zero. Episode set is the 647 eligible candidates. Cap and cash are rerun. This file stores ending equity only.",
+  "one_year_distribution": "NOT_PRODUCED",
+  "nested_outer_refits": "NOT_RUN"
+}

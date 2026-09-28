@@ -1,0 +1,58 @@
+{
+  "note": "Execute scales with candidate observations, not raw StatsAPI JSON file count.",
+  "injected": [
+    {
+      "n_games": 1,
+      "status": "COMPLETE",
+      "population_n": 1,
+      "rows_scanned": 2,
+      "cold_s": 0.0013,
+      "warm_s": 0.0011,
+      "index_build_ms": 0,
+      "mode": "injected_candidates"
+    },
+    {
+      "n_games": 10,
+      "status": "COMPLETE",
+      "population_n": 10,
+      "rows_scanned": 20,
+      "cold_s": 0.0018,
+      "warm_s": 0.0019,
+      "index_build_ms": 0,
+      "mode": "injected_candidates"
+    },
+    {
+      "n_games": 100,
+      "status": "COMPLETE",
+      "population_n": 100,
+      "rows_scanned": 200,
+      "cold_s": 0.0088,
+      "warm_s": 0.0075,
+      "index_build_ms": 0,
+      "mode": "injected_candidates"
+    },
+    {
+      "n_games": 1000,
+      "status": "COMPLETE",
+      "population_n": 1000,
+      "rows_scanned": 2000,
+      "cold_s": 0.0733,
+      "warm_s": 0.0717,
+      "index_build_ms": 4,
+      "mode": "injected_candidates"
+    }
+  ],
+  "full_warehouse": {
+    "n_games": "full_available",
+    "status": "COMPLETE",
+    "population_n": 9,
+    "rows_scanned": 2511237,
+    "cold_s": 95.2068,
+    "warm_s": 0.3256,
+    "index_build_ms": 13200,
+    "cache_hit_result": false,
+    "mode": "canonical_csv_indexes",
+    "raw_json_parsed": false
+  },
+  "gate_17": "no raw-PBP parse on normal Execute"
+}

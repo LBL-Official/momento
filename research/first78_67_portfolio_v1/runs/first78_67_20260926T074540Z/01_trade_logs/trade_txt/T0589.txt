@@ -1,0 +1,10 @@
+trade T0589  NBA  New Orleans at Houston
+contract KXNBAGAME-26MAR13NOPHOU-HOU  slice Q2
+signal 2026-03-13T17:57:00-07:00 PDT  exit 2026-03-13T18:35:00-07:00 PDT
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 14107  principal_cents 1100346
+entry_fee_cents 4237  exit_fee_cents 5459
+exit STOP at 67c  terminal yes
+gross_cents -155177  net_cents -164873
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

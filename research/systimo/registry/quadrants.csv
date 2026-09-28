@@ -1,0 +1,5 @@
+quadrant_id,sport,heading,position,state,alias
+quad-1,NBA,Quad 1 — NBA North,upper-left,active,lbl-north
+quad-2,NCAAB,Quad 2 — NCAAB,upper-right,placeholder,
+quad-3,WNBA,Quad 3 — WNBA,lower-right,placeholder,
+quad-4,MLB,Quad 4 — MLB,lower-left,placeholder,

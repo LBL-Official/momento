@@ -1,0 +1,10 @@
+trade T0211  NBA  Orlando at Washington
+contract KXNBAGAME-26JAN06ORLWAS-WAS  slice Q3
+signal 2026-01-06T17:29:00-08:00 PST  exit 2026-01-06T18:09:00-08:00 PST
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 3546  principal_cents 276588
+entry_fee_cents 1065  exit_fee_cents 1373
+exit STOP at 67c  terminal yes
+gross_cents -39006  net_cents -41444
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

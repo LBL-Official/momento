@@ -1,0 +1,47 @@
+{
+  "schema_version": "jump_workbench_v1",
+  "queries": [
+    {
+      "id": "4cb0020d-a711-494b-b80e-956d3ff56cd6",
+      "kind": "query",
+      "warehouse_id": "ncaab",
+      "name": "untitled query",
+      "sql": "SELECT * FROM markets LIMIT 100",
+      "description": "",
+      "materialized": false,
+      "created_at": "2026-09-21T18:18:28Z",
+      "updated_at": "2026-09-21T18:18:28Z",
+      "live_execution": false
+    },
+    {
+      "id": "2e7b3641-cecc-4997-925a-9c5dbfa9193e",
+      "kind": "query",
+      "warehouse_id": "ncaab",
+      "name": "untitled query",
+      "sql": "SELECT * FROM markets LIMIT 100",
+      "description": "",
+      "materialized": false,
+      "created_at": "2026-09-21T18:18:40Z",
+      "updated_at": "2026-09-21T18:18:40Z",
+      "live_execution": false
+    }
+  ],
+  "views": [
+    {
+      "id": "e00dc777-68a6-4ca3-90ec-e710cf85ac72",
+      "kind": "view",
+      "warehouse_id": "ncaab",
+      "name": "untitled query",
+      "sql": "SELECT * FROM markets LIMIT 100",
+      "description": "",
+      "materialized": false,
+      "created_at": "2026-09-21T18:18:46Z",
+      "updated_at": "2026-09-21T18:18:46Z",
+      "live_execution": false
+    }
+  ],
+  "annotations": {},
+  "relationship_layouts": {},
+  "stats_cache": {},
+  "updated_at": "2026-09-21T18:18:46Z"
+}

@@ -1,0 +1,70 @@
+{
+  "NBA": {
+    "2025-2026": {
+      "path_key": "2025_2026",
+      "warehouse_sport": "NBA",
+      "warehouse_season": "2025-2026",
+      "label": "2025-2026"
+    },
+    "2026-2027": {
+      "path_key": "2026_2027",
+      "warehouse_sport": "NBA",
+      "warehouse_season": "2026-2027",
+      "label": "2026-2027"
+    }
+  },
+  "WNBA": {
+    "2025": {
+      "path_key": "2025",
+      "warehouse_sport": "WNBA",
+      "warehouse_season": "2025-2026",
+      "campaign_year": 2025,
+      "label": "2025"
+    },
+    "2026": {
+      "path_key": "2026",
+      "warehouse_sport": "WNBA",
+      "warehouse_season": "2025-2026",
+      "campaign_year": 2026,
+      "label": "2026"
+    }
+  },
+  "MLB": {
+    "2025-2026": {
+      "path_key": "2025_2026",
+      "warehouse_sport": "MLB",
+      "warehouse_season": "2025-2026",
+      "label": "2025-2026"
+    }
+  },
+  "ATP": {
+    "2025-2026": {
+      "path_key": "2025_2026",
+      "warehouse_sport": "TENNIS",
+      "warehouse_season": "2025-2026",
+      "label": "2025-2026"
+    }
+  },
+  "WTA": {
+    "2025-2026": {
+      "path_key": "2025_2026",
+      "warehouse_sport": "TENNIS",
+      "warehouse_season": "2025-2026",
+      "label": "2025-2026"
+    }
+  },
+  "NCAAB": {
+    "2025-2026": {
+      "path_key": "2025_2026",
+      "warehouse_sport": "NCAAB",
+      "warehouse_season": "2025-2026",
+      "label": "2025-2026"
+    },
+    "2026-2027": {
+      "path_key": "2026_2027",
+      "warehouse_sport": "NCAAB",
+      "warehouse_season": "2026-2027",
+      "label": "2026-2027"
+    }
+  }
+}

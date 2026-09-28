@@ -1,0 +1,92 @@
+[
+  {
+    "source": "kalshi_v1_lake",
+    "sport": "MLB",
+    "league": "MLB",
+    "classification": "REAL",
+    "path": "Backtesting Suite/Data-Real",
+    "present": true,
+    "observability": "OBSERVED",
+    "notes": "Primary W1 scan target. Default real root is Data-Real."
+  },
+  {
+    "source": "kalshi_demo_fixtures",
+    "sport": "MLB",
+    "league": "MLB",
+    "classification": "DEMO",
+    "path": "Backtesting Suite/Data",
+    "present": true,
+    "observability": "MODELED",
+    "notes": "Synthetic COMPLETE partitions for Sheets e2e. Not 2025-2026 MLB history."
+  },
+  {
+    "source": "repo_placeholder_Data",
+    "sport": "NA",
+    "league": "NA",
+    "classification": "EMPTY",
+    "path": "Data",
+    "present": true,
+    "observability": "UNAVAILABLE",
+    "notes": "Empty raw/normalized/replay dirs."
+  },
+  {
+    "source": "google_sheets_csv_mirrors",
+    "sport": "NA",
+    "league": "NA",
+    "classification": "LEGACY_V1_REPORTING",
+    "path": "Backtesting Suite/Google Sheets",
+    "present": true,
+    "observability": "DERIVED",
+    "notes": "Human control-plane mirrors. Not the lake."
+  },
+  {
+    "source": "legacy_first01_runs",
+    "sport": "MLB",
+    "league": "MLB",
+    "classification": "DERIVED_RESEARCH",
+    "path": "Backtesting Suite/Runs/FIRST01",
+    "present": true,
+    "observability": "MODELED",
+    "notes": "LEGACY_V1 run artifacts. Not raw truth."
+  },
+  {
+    "source": "mlb_pbp",
+    "sport": "MLB",
+    "league": "MLB",
+    "classification": "ABSENT",
+    "path": "(none)",
+    "present": false,
+    "observability": "UNAVAILABLE",
+    "notes": "No PBP files or crates. Do not invent."
+  },
+  {
+    "source": "historical_l2",
+    "sport": "MLB",
+    "league": "MLB",
+    "classification": "ABSENT",
+    "path": "(none)",
+    "present": false,
+    "observability": "UNAVAILABLE",
+    "notes": "Kalshi does not provide retrospective L2."
+  },
+  {
+    "source": "production_host_state",
+    "sport": "MLB",
+    "league": "MLB",
+    "classification": "NOT_IN_WORKSPACE",
+    "path": "/var/lib/momento/state (EC2, not this checkout)",
+    "present": false,
+    "observability": "UNAVAILABLE",
+    "notes": "Live observations are not copied into the research lake in W1."
+  },
+  {
+    "source": "nba_nhl_ncaab_adapters",
+    "sport": "MULTI",
+    "league": "MULTI",
+    "classification": "NOT_APPLICABLE",
+    "path": "(none)",
+    "present": false,
+    "observability": "NOT_APPLICABLE",
+    "notes": "Interfaces only. MLB first. No adapters implemented in W1."
+  }
+]

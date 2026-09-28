@@ -1,0 +1,21 @@
+[Unit]
+Description=Momento DATA-INGEST weekly worker (isolated from paper/live trading)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=momento
+Group=momento
+WorkingDirectory=/var/lib/momento
+Environment=MOMENTO_INGEST_CLOUD_STATUS=DEPLOYED
+Environment=RUST_LOG=info
+ExecStart=/usr/local/bin/momento-ingest-weekly.sh
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=momento-research-ingest
+TimeoutStartSec=7200
+Nice=10
+
+[Install]
+WantedBy=multi-user.target

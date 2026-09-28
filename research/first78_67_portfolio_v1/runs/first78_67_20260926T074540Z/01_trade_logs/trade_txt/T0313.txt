@@ -1,0 +1,10 @@
+trade T0313  NBA  Toronto at Portland
+contract KXNBAGAME-26JAN23TORPOR-TOR  slice Q2
+signal 2026-01-23T19:59:00-08:00 PST  exit 2026-01-23T20:32:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 5334  principal_cents 416052
+entry_fee_cents 1602  exit_fee_cents 2064
+exit STOP at 67c  terminal yes
+gross_cents -58674  net_cents -62340
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

@@ -1,0 +1,250 @@
+{
+  "nba_2q": {
+    "book": "NBA 2Q",
+    "n_trades": 314,
+    "n_run_mark_reached": 314,
+    "n_stop_55": 44,
+    "n_stop_45": 13,
+    "n_stop_40": 37,
+    "n_hold": 220,
+    "n_hedge_scenario": 57,
+    "n_hedge_losers": 27,
+    "n_hedge_winners": 30,
+    "cut_survivors_who_won": 18,
+    "always_8040": {
+      "n": 314,
+      "sum_cents": 1780,
+      "mean_cents": 5.6687898089171975
+    },
+    "always_hold": {
+      "n": 314,
+      "sum_cents": 1580,
+      "mean_cents": 5.031847133757962
+    },
+    "katy_vs_8040": {
+      "n": 314,
+      "sum_cents": 1365,
+      "mean_cents": 4.3471337579617835
+    },
+    "katy_path": {
+      "n": 314,
+      "sum_cents": 972,
+      "mean_cents": 3.0955414012738856
+    },
+    "overlay_theo": {
+      "n": 314,
+      "sum_cents": 1365,
+      "mean_cents": 4.3471337579617835
+    },
+    "overlay_obs": {
+      "n": 314,
+      "sum_cents": 972,
+      "mean_cents": 3.0955414012738856
+    },
+    "losers_hold": {
+      "n": 47,
+      "sum_cents": -3760,
+      "mean_cents": -80.0
+    },
+    "losers_katy_8040": {
+      "n": 47,
+      "sum_cents": -1545,
+      "mean_cents": -32.87234042553192
+    },
+    "delta_theo_mean": -1.321656050955414,
+    "delta_obs_mean": -2.573248407643312,
+    "reasons": {
+      "HOLD": 220,
+      "STOP_55": 44,
+      "STOP_40": 37,
+      "STOP_45": 13
+    },
+    "note": "SCENARIO \u2014 NOT OBSERVED FILL. Independent of Austin. Books are never combined."
+  },
+  "nba_3q": {
+    "book": "NBA 3Q",
+    "n_trades": 290,
+    "n_run_mark_reached": 290,
+    "n_stop_55": 51,
+    "n_stop_45": 8,
+    "n_stop_40": 31,
+    "n_hold": 200,
+    "n_hedge_scenario": 59,
+    "n_hedge_losers": 31,
+    "n_hedge_winners": 28,
+    "cut_survivors_who_won": 11,
+    "always_8040": {
+      "n": 290,
+      "sum_cents": 1060,
+      "mean_cents": 3.6551724137931036
+    },
+    "always_hold": {
+      "n": 290,
+      "sum_cents": 600,
+      "mean_cents": 2.0689655172413794
+    },
+    "katy_vs_8040": {
+      "n": 290,
+      "sum_cents": 1205,
+      "mean_cents": 4.155172413793103
+    },
+    "katy_path": {
+      "n": 290,
+      "sum_cents": 742,
+      "mean_cents": 2.5586206896551724
+    },
+    "overlay_theo": {
+      "n": 290,
+      "sum_cents": 1205,
+      "mean_cents": 4.155172413793103
+    },
+    "overlay_obs": {
+      "n": 290,
+      "sum_cents": 742,
+      "mean_cents": 2.5586206896551724
+    },
+    "losers_hold": {
+      "n": 52,
+      "sum_cents": -4160,
+      "mean_cents": -80.0
+    },
+    "losers_katy_8040": {
+      "n": 52,
+      "sum_cents": -1655,
+      "mean_cents": -31.826923076923077
+    },
+    "delta_theo_mean": 0.5,
+    "delta_obs_mean": -1.096551724137931,
+    "reasons": {
+      "HOLD": 200,
+      "STOP_55": 51,
+      "STOP_40": 31,
+      "STOP_45": 8
+    },
+    "note": "SCENARIO \u2014 NOT OBSERVED FILL. Independent of Austin. Books are never combined."
+  },
+  "ncaab_h1_2": {
+    "book": "NCAAB 1H second 10",
+    "n_trades": 193,
+    "n_run_mark_reached": 193,
+    "n_stop_55": 30,
+    "n_stop_45": 2,
+    "n_stop_40": 25,
+    "n_hold": 136,
+    "n_hedge_scenario": 32,
+    "n_hedge_losers": 17,
+    "n_hedge_winners": 15,
+    "cut_survivors_who_won": 6,
+    "always_8040": {
+      "n": 193,
+      "sum_cents": 800,
+      "mean_cents": 4.1450777202072535
+    },
+    "always_hold": {
+      "n": 193,
+      "sum_cents": 860,
+      "mean_cents": 4.455958549222798
+    },
+    "katy_vs_8040": {
+      "n": 193,
+      "sum_cents": 900,
+      "mean_cents": 4.66321243523316
+    },
+    "katy_path": {
+      "n": 193,
+      "sum_cents": 641,
+      "mean_cents": 3.321243523316062
+    },
+    "overlay_theo": {
+      "n": 193,
+      "sum_cents": 900,
+      "mean_cents": 4.66321243523316
+    },
+    "overlay_obs": {
+      "n": 193,
+      "sum_cents": 641,
+      "mean_cents": 3.321243523316062
+    },
+    "losers_hold": {
+      "n": 30,
+      "sum_cents": -2400,
+      "mean_cents": -80.0
+    },
+    "losers_katy_8040": {
+      "n": 30,
+      "sum_cents": -945,
+      "mean_cents": -31.5
+    },
+    "delta_theo_mean": 0.5181347150259067,
+    "delta_obs_mean": -0.8238341968911918,
+    "reasons": {
+      "HOLD": 136,
+      "STOP_40": 25,
+      "STOP_55": 30,
+      "STOP_45": 2
+    },
+    "note": "SCENARIO \u2014 NOT OBSERVED FILL. Independent of Austin. Books are never combined."
+  },
+  "ncaab_h2_1": {
+    "book": "NCAAB 2H first 10",
+    "n_trades": 139,
+    "n_run_mark_reached": 139,
+    "n_stop_55": 29,
+    "n_stop_45": 2,
+    "n_stop_40": 12,
+    "n_hold": 96,
+    "n_hedge_scenario": 31,
+    "n_hedge_losers": 11,
+    "n_hedge_winners": 20,
+    "cut_survivors_who_won": 12,
+    "always_8040": {
+      "n": 139,
+      "sum_cents": 920,
+      "mean_cents": 6.618705035971223
+    },
+    "always_hold": {
+      "n": 139,
+      "sum_cents": 680,
+      "mean_cents": 4.892086330935252
+    },
+    "katy_vs_8040": {
+      "n": 139,
+      "sum_cents": 645,
+      "mean_cents": 4.640287769784172
+    },
+    "katy_path": {
+      "n": 139,
+      "sum_cents": 412,
+      "mean_cents": 2.964028776978417
+    },
+    "overlay_theo": {
+      "n": 139,
+      "sum_cents": 645,
+      "mean_cents": 4.640287769784172
+    },
+    "overlay_obs": {
+      "n": 139,
+      "sum_cents": 412,
+      "mean_cents": 2.964028776978417
+    },
+    "losers_hold": {
+      "n": 21,
+      "sum_cents": -1680,
+      "mean_cents": -80.0
+    },
+    "losers_katy_8040": {
+      "n": 21,
+      "sum_cents": -675,
+      "mean_cents": -32.142857142857146
+    },
+    "delta_theo_mean": -1.9784172661870503,
+    "delta_obs_mean": -3.6546762589928057,
+    "reasons": {
+      "HOLD": 96,
+      "STOP_40": 12,
+      "STOP_55": 29,
+      "STOP_45": 2
+    },
+    "note": "SCENARIO \u2014 NOT OBSERVED FILL. Independent of Austin. Books are never combined."
+  }
+}

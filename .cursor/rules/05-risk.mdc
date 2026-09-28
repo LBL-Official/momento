@@ -1,0 +1,99 @@
+---
+description: Risk Decision Engine rules
+globs: "**/risk/**"
+alwaysApply: false
+---
+
+# Risk Decision Engine
+
+Risk is an independent authority.
+
+A strategy cannot authorize itself.
+
+---
+
+## Decision Model
+
+Every proposed trade produces exactly one explicit result:
+
+APPROVED
+or
+REJECTED
+
+Rejections must have machine-readable reasons.
+
+Examples:
+
+MAX_POSITION_EXCEEDED
+DAILY_TRADE_LIMIT
+DAILY_LOSS_LIMIT
+DUPLICATE_MARKET
+MARKET_NOT_ALLOWED
+STALE_DATA
+KILL_SWITCH
+INSUFFICIENT_CAPITAL
+INVALID_PRICE
+INVALID_QUANTITY
+RISK_STATE_UNKNOWN
+RECONCILIATION_REQUIRED
+
+---
+
+## Risk Calculations
+
+Risk calculations must use exact financial types.
+
+Never use approximate floating-point arithmetic for limits.
+
+---
+
+## Current MLB Test Configuration
+
+Initial experimental configuration:
+
+Bankroll:
+$50
+
+Maximum allocation per position:
+12.5%
+
+Maximum position:
+$6.25
+
+Maximum simultaneously open MLB positions:
+5
+
+Entry price:
+80–83 cents (maker-only)
+
+Entry:
+maker-only resting limit order
+
+These values belong in configuration, not hard-coded strategy logic.
+
+---
+
+## Risk vs Strategy
+
+Strategy determines:
+
+"Do I want to propose this trade?"
+
+Risk determines:
+
+"Are we allowed to take this exposure?"
+
+These must remain separate.
+
+---
+
+## No Silent Overrides
+
+Risk rules may only be overridden through explicitly designed mechanisms.
+
+Never introduce:
+
+if emergency:
+    bypass_risk()
+
+without explicit architecture and tests.

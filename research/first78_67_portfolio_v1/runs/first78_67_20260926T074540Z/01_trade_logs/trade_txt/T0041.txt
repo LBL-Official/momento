@@ -1,0 +1,10 @@
+trade T0041  NCAAB  Oklahoma at Nebraska
+contract KXNCAAMBGAME-25NOV15OKLANEB-OKLA  slice H1_2
+signal 2025-11-15T16:42:00-08:00 PST  exit 2025-11-15T16:56:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 2114  principal_cents 164892
+entry_fee_cents 635  exit_fee_cents 818
+exit STOP at 67c  terminal no
+gross_cents -23254  net_cents -24707
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

@@ -1,0 +1,66 @@
+{
+  "version": "downfall_state_v1",
+  "states": [
+    "PRE_ENTRY",
+    "HEALTHY",
+    "WATCH_NEGATIVE",
+    "PERSISTENCE_2",
+    "PERSISTENCE_3PLUS",
+    "RECOVERING",
+    "HEALTHY_AFTER_RECOVERY",
+    "UNRESOLVED"
+  ],
+  "forbidden_core_states": [
+    "CRITICAL",
+    "EXIT",
+    "FAILURE",
+    "TERMINAL"
+  ],
+  "rules": {
+    "PRE_ENTRY": "empty history; no locked FIRST80 position yet",
+    "HEALTHY": "EV>=0 and this segment has never entered distress",
+    "WATCH_NEGATIVE": "EV<0 and first valid negative of the current streak",
+    "PERSISTENCE_2": "current and immediately previous adjacent valid PRIMARY both EV<0",
+    "PERSISTENCE_3PLUS": "current plus at least two immediately previous adjacent valids EV<0",
+    "RECOVERING": "previous valid EV<0 and current EV>=0",
+    "HEALTHY_AFTER_RECOVERY": "after RECOVERING, subsequent valid rows that stay EV>=0",
+    "UNRESOLVED": "current PRIMARY has no valid EV, or continuity cannot be established"
+  },
+  "gap_rule": "An unavailable/invalid PRIMARY checkpoint emits UNRESOLVED and breaks the streak. The next valid row starts a new segment: HEALTHY or WATCH_NEGATIVE. Recovery memory does not survive a gap. Persistence is never inferred across a gap.",
+  "overlays": {
+    "CI_STATE": [
+      "CI_POSITIVE",
+      "CI_CROSSES_ZERO",
+      "CI_NEGATIVE",
+      "CI_UNAVAILABLE"
+    ],
+    "SUPPORT_STATE": [
+      "NORMAL_SUPPORT",
+      "LOW_HISTORICAL_SUPPORT",
+      "SUPPORT_UNAVAILABLE"
+    ],
+    "note": "Overlays do not modify core_state."
+  },
+  "archetypes_first_match": [
+    "UNRESOLVED_PATH",
+    "STABLE_HEALTHY",
+    "PERSISTENCE_TO_RECOVERY",
+    "NEGATIVE_TO_PERSISTENCE_3PLUS",
+    "NEGATIVE_TO_PERSISTENCE_2",
+    "SINGLE_NEGATIVE_RECOVERY",
+    "NEGATIVE_TO_RECOVERY"
+  ],
+  "archetype_rules": {
+    "UNRESOLVED_PATH": "no valid core state other than UNRESOLVED, or WATCH with no later branch",
+    "STABLE_HEALTHY": "never WATCH_NEGATIVE",
+    "PERSISTENCE_TO_RECOVERY": "reached PERSISTENCE_2 or PERSISTENCE_3PLUS, later RECOVERING",
+    "NEGATIVE_TO_PERSISTENCE_3PLUS": "reached PERSISTENCE_3PLUS, never RECOVERING",
+    "NEGATIVE_TO_PERSISTENCE_2": "reached PERSISTENCE_2, never PERSISTENCE_3PLUS, never RECOVERING",
+    "SINGLE_NEGATIVE_RECOVERY": "WATCH then RECOVERING, never PERSISTENCE_2",
+    "NEGATIVE_TO_RECOVERY": "WATCH then RECOVERING after other observed distress not covered above"
+  },
+  "no_threshold_search": true,
+  "no_hazard_model": true,
+  "price_does_not_define_core": true,
+  "score_does_not_define_core": true
+}

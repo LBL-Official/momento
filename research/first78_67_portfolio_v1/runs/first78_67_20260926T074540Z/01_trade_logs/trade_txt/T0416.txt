@@ -1,0 +1,10 @@
+trade T0416  NCAAB  Missouri at Texas A&M
+contract KXNCAAMBGAME-26FEB11MIZZTXAM-TXAM  slice H1_2
+signal 2026-02-11T18:36:00-08:00 PST  exit 2026-02-11T19:33:00-08:00 PST
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 7016  principal_cents 547248
+entry_fee_cents 2107  exit_fee_cents 2715
+exit STOP at 67c  terminal no
+gross_cents -77176  net_cents -81998
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

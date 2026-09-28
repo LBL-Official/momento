@@ -1,0 +1,14 @@
+{
+  "by_hypothesis": {
+    "BENCH_ALL_FIRST83": null,
+    "BENCH_NO_ENTRY": null,
+    "CAND_A_40_49": null,
+    "CAND_B_MOVE30_OUTS0_VOL1M_LOW": null,
+    "CAND_C_LEAD2_MOVE30_VOL1M_LOW": null,
+    "CAND_D_TWORUN_MOVE30_VOL1M_LOW": null,
+    "CAND_E_MOVEFINE_VOL_LOW": null,
+    "CAND_F_INNING7_PEAK_AT": null
+  },
+  "h0": "candidate membership has no relationship with settlement outcome",
+  "status": "PROSPECTIVE_DATA_NOT_YET_AVAILABLE"
+}

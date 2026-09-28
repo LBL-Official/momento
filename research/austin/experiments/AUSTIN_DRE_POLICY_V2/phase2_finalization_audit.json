@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "finalized": {
+    "phase": "PHASE_2",
+    "status": "FINALIZED",
+    "audit_id": "AUSTIN_PERSISTENCE_MECHANISM_V1",
+    "actionability_gate": "NOT_MET",
+    "gate_a_persistence_economics": "MIXED",
+    "gate_b_pit_distinguishability": "SUPPORTED",
+    "gate_c_timing": "MIXED",
+    "gate_d_data_integrity": "EXPECTED_FROM_CANONICAL_TIMING",
+    "report_hash": "152bf411e3182568a44ea512c14b08c00e7d17cc0f176ccfcfaf043d27bc3177",
+    "statistics_hash": "cd6a72c517cdd61fac68d7fd59df29553ecf22bc9fc15415e6bb6bd15a2ac937",
+    "manifest_hash": "0f65712ab07f5e71a614f28a665c9434642fbde20ac078c57aeb340efa159b74",
+    "policy_status": "UNFROZEN",
+    "confirmation_A": "NOT_RUN",
+    "confirmation_B": "NOT_RUN",
+    "finalized_for_waterfall": true,
+    "historical_artifacts_modified": false
+  },
+  "historical_artifacts_modified": false
+}

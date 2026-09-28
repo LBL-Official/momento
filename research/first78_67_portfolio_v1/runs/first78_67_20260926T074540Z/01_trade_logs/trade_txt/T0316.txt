@@ -1,0 +1,10 @@
+trade T0316  NCAAB  Miami (FL) at Syracuse
+contract KXNCAAMBGAME-26JAN24MIASYR-MIA  slice H2_1
+signal 2026-01-24T12:36:00-08:00 PST  exit 2026-01-24T13:40:00-08:00 PST
+assumed entry 78c  observed close 81c  overshoot 3c
+contracts 5334  principal_cents 416052
+entry_fee_cents 1602  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 117348  net_cents 115746
+strategy_result POSITIVE  net_r 1.856689124157844080846968239
+Assumed fill. Not a maker fill. Not live P&L.

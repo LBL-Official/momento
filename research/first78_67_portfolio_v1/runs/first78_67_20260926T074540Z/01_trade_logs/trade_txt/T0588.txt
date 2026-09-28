@@ -1,0 +1,10 @@
+trade T0588  NCAAB  Miami (FL) at Virginia
+contract KXNCAAMBGAME-26MAR13MIAUVA-UVA  slice H1_2
+signal 2026-03-13T16:49:00-07:00 PDT  exit 2026-03-13T18:31:58-07:00 PDT
+assumed entry 78c  observed close 81c  overshoot 3c
+contracts 14107  principal_cents 1100346
+entry_fee_cents 4237  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 310354  net_cents 306117
+strategy_result POSITIVE  net_r 1.856683629217640244309256215
+Assumed fill. Not a maker fill. Not live P&L.

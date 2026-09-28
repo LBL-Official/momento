@@ -1,0 +1,539 @@
+{
+  "status": "OBSERVED",
+  "kind": "experiment",
+  "product": "Katy Texas",
+  "experiment_id": "KATY_TEXAS_V1",
+  "slug": "late-underwater-41-70-ev5",
+  "number": 1,
+  "title": "Late underwater 41\u201370 / EV < 5",
+  "href": "#/katy/late-underwater-41-70-ev5",
+  "live_execution": false,
+  "submits": false,
+  "fill_status": "FILL_UNAVAILABLE",
+  "candle_path_not_fill": true,
+  "policy_frozen": false,
+  "confirmation_accessed": false,
+  "confirmation_A": "SEALED_UNSPENT",
+  "confirmation_B": "SEALED_UNSPENT",
+  "phase5_policy": "NONE",
+  "austin_never_filters_entry": true,
+  "austin_refit": false,
+  "components": {
+    "dallas": {
+      "role": "clock + yes_bid path at the run mark",
+      "page": "#/dallas",
+      "note": "Dallas UI stays 2Q/3Q. Katy may read later 4Q path on the same 604 trades."
+    },
+    "houston": {
+      "desk": "Houston",
+      "identity": "HOUSTON_TAKER_OTHER_SIDE_V1",
+      "role": "TAKER_OTHER_SIDE_SCENARIO",
+      "standalone_page": false,
+      "live_execution": false,
+      "submits": false,
+      "l2": "SOURCE_UNAVAILABLE",
+      "no_ask": "SOURCE_UNAVAILABLE",
+      "declared_no_taker_price": "DECLARED_COMPLEMENT_OF_YES_BID",
+      "formula": "no_taker_cents = 100 - yes_bid; lock_vs_entry = yes_bid - 80",
+      "fill_status": "FILL_UNAVAILABLE",
+      "fee_model": "UNAVAILABLE",
+      "candle_path_not_fill": true,
+      "note": "Houston is declared inside Katy. It is not warehouse L2 and not a Kalshi taker fill."
+    },
+    "austin": {
+      "role": "frozen hold-80-to-settlement EV at the run-mark snapshot. Model is not refit.",
+      "hedge_if": "austin_ev_cents < 5 and yes_bid in [41, 70]",
+      "missing_ev": "AUSTIN_EV_UNAVAILABLE \u2192 no hedge",
+      "page": "#/austin",
+      "optimize": "threshold and price-range search only. Not a retrain."
+    }
+  },
+  "rule": {
+    "entry": "FIRST80 already happened. Katy does not skip or create entry.",
+    "nba_run_mark": "4Q, 9:00 remaining (540s); first snapshot remaining<=540",
+    "ncaab_run_mark": "2H, 7:30 remaining (450s); first snapshot remaining<=450",
+    "price_band": [
+      41,
+      70
+    ],
+    "underwater_min_cents": 10,
+    "austin_ev_lt": 5,
+    "houston_action": "full other-side taker scenario at declared 100-yes_bid",
+    "not_fort_worth": "Fort Worth is maker-40 at 41-42. Katy is a different scenario."
+  },
+  "books": {
+    "ncaab_h1_2_discovery": {
+      "book": "NCAAB H1_2 DISCOVERY",
+      "n_trades": 96,
+      "n_run_mark_reached": 96,
+      "n_in_price_band": 20,
+      "n_hedge_scenario": 16,
+      "n_hedge_losers": 5,
+      "n_hedge_winners": 11,
+      "n_hold_in_band": 4,
+      "n_ev_unavailable_in_band": 0,
+      "n_not_underwater": 74,
+      "n_through_band": 2,
+      "used_remaining": {
+        "min": 360,
+        "median": 360,
+        "max": 447
+      },
+      "katy_path": {
+        "n": 96,
+        "sum_cents": 287,
+        "mean_cents": 2.9895833333333335
+      },
+      "katy_vs_8040": {
+        "n": 96,
+        "sum_cents": 267,
+        "mean_cents": 2.78125
+      },
+      "always_hold": {
+        "n": 96,
+        "sum_cents": 420,
+        "mean_cents": 4.375
+      },
+      "always_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "hedge_subset_lock": {
+        "n": 16,
+        "sum_cents": -313,
+        "mean_cents": -19.5625
+      },
+      "hedge_subset_had_held": {
+        "n": 16,
+        "sum_cents": -180,
+        "mean_cents": -11.25
+      },
+      "hedge_subset_had_8040": {
+        "n": 16,
+        "sum_cents": -340,
+        "mean_cents": -21.25
+      },
+      "losers_hold": {
+        "n": 15,
+        "sum_cents": -1200,
+        "mean_cents": -80.0
+      },
+      "losers_katy": {
+        "n": 15,
+        "sum_cents": -899,
+        "mean_cents": -59.93333333333333
+      },
+      "losers_katy_8040": {
+        "n": 15,
+        "sum_cents": -499,
+        "mean_cents": -33.266666666666666
+      },
+      "note": "SCENARIO \u2014 NOT OBSERVED FILL. Members are never combined with another book."
+    },
+    "ncaab_h2_1_discovery": {
+      "book": "NCAAB H2_1 DISCOVERY",
+      "n_trades": 69,
+      "n_run_mark_reached": 69,
+      "n_in_price_band": 36,
+      "n_hedge_scenario": 1,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 1,
+      "n_hold_in_band": 0,
+      "n_ev_unavailable_in_band": 35,
+      "n_not_underwater": 31,
+      "n_through_band": 2,
+      "used_remaining": {
+        "min": 360,
+        "median": 360,
+        "max": 448
+      },
+      "katy_path": {
+        "n": 69,
+        "sum_cents": 144,
+        "mean_cents": 2.0869565217391304
+      },
+      "katy_vs_8040": {
+        "n": 69,
+        "sum_cents": 324,
+        "mean_cents": 4.695652173913044
+      },
+      "always_hold": {
+        "n": 69,
+        "sum_cents": 180,
+        "mean_cents": 2.608695652173913
+      },
+      "always_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "hedge_subset_lock": {
+        "n": 1,
+        "sum_cents": -16,
+        "mean_cents": -16.0
+      },
+      "hedge_subset_had_held": {
+        "n": 1,
+        "sum_cents": 20,
+        "mean_cents": 20.0
+      },
+      "hedge_subset_had_8040": {
+        "n": 1,
+        "sum_cents": 20,
+        "mean_cents": 20.0
+      },
+      "losers_hold": {
+        "n": 12,
+        "sum_cents": -960,
+        "mean_cents": -80.0
+      },
+      "losers_katy": {
+        "n": 12,
+        "sum_cents": -960,
+        "mean_cents": -80.0
+      },
+      "losers_katy_8040": {
+        "n": 12,
+        "sum_cents": -480,
+        "mean_cents": -40.0
+      },
+      "note": "SCENARIO \u2014 NOT OBSERVED FILL. Members are never combined with another book."
+    },
+    "nba_604_in_sample": {
+      "book": "NBA_604",
+      "n_trades": 604,
+      "n_run_mark_reached": 603,
+      "n_in_price_band": 91,
+      "n_hedge_scenario": 75,
+      "n_hedge_losers": 27,
+      "n_hedge_winners": 48,
+      "n_hold_in_band": 16,
+      "n_ev_unavailable_in_band": 0,
+      "n_not_underwater": 465,
+      "n_through_band": 47,
+      "used_remaining": {
+        "min": 0,
+        "median": 522,
+        "max": 540
+      },
+      "katy_path": {
+        "n": 603,
+        "sum_cents": 1677,
+        "mean_cents": 2.781094527363184
+      },
+      "katy_vs_8040": {
+        "n": 603,
+        "sum_cents": 2637,
+        "mean_cents": 4.373134328358209
+      },
+      "always_hold": {
+        "n": 603,
+        "sum_cents": 2160,
+        "mean_cents": 3.582089552238806
+      },
+      "always_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "hedge_subset_lock": {
+        "n": 75,
+        "sum_cents": -1683,
+        "mean_cents": -22.44
+      },
+      "hedge_subset_had_held": {
+        "n": 75,
+        "sum_cents": -1200,
+        "mean_cents": -16.0
+      },
+      "hedge_subset_had_8040": {
+        "n": 75,
+        "sum_cents": -1500,
+        "mean_cents": -20.0
+      },
+      "losers_hold": {
+        "n": 99,
+        "sum_cents": -7920,
+        "mean_cents": -80.0
+      },
+      "losers_katy": {
+        "n": 99,
+        "sum_cents": -6383,
+        "mean_cents": -64.47474747474747
+      },
+      "losers_katy_8040": {
+        "n": 99,
+        "sum_cents": -3503,
+        "mean_cents": -35.38383838383838
+      },
+      "note": "SCENARIO \u2014 NOT OBSERVED FILL. Members are never combined with another book."
+    }
+  },
+  "ncaab_h1_2_discovery": {
+    "experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+    "label": "NCAAB H1_2 DISCOVERY",
+    "cohort": "DISCOVERY",
+    "confirmation_accessed": false,
+    "run_mark": {
+      "period": 2,
+      "remaining_s": 450,
+      "label": "NCAAB 2H 7:30 remaining"
+    },
+    "grid_note": "7:30 is off the 2-minute PRIMARY_GRID. First period=2 remaining<=450 is used; modal clock is 360 (6:00).",
+    "summary": {
+      "book": "NCAAB H1_2 DISCOVERY",
+      "n_trades": 96,
+      "n_run_mark_reached": 96,
+      "n_in_price_band": 20,
+      "n_hedge_scenario": 16,
+      "n_hedge_losers": 5,
+      "n_hedge_winners": 11,
+      "n_hold_in_band": 4,
+      "n_ev_unavailable_in_band": 0,
+      "n_not_underwater": 74,
+      "n_through_band": 2,
+      "used_remaining": {
+        "min": 360,
+        "median": 360,
+        "max": 447
+      },
+      "katy_path": {
+        "n": 96,
+        "sum_cents": 287,
+        "mean_cents": 2.9895833333333335
+      },
+      "katy_vs_8040": {
+        "n": 96,
+        "sum_cents": 267,
+        "mean_cents": 2.78125
+      },
+      "always_hold": {
+        "n": 96,
+        "sum_cents": 420,
+        "mean_cents": 4.375
+      },
+      "always_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "hedge_subset_lock": {
+        "n": 16,
+        "sum_cents": -313,
+        "mean_cents": -19.5625
+      },
+      "hedge_subset_had_held": {
+        "n": 16,
+        "sum_cents": -180,
+        "mean_cents": -11.25
+      },
+      "hedge_subset_had_8040": {
+        "n": 16,
+        "sum_cents": -340,
+        "mean_cents": -21.25
+      },
+      "losers_hold": {
+        "n": 15,
+        "sum_cents": -1200,
+        "mean_cents": -80.0
+      },
+      "losers_katy": {
+        "n": 15,
+        "sum_cents": -899,
+        "mean_cents": -59.93333333333333
+      },
+      "losers_katy_8040": {
+        "n": 15,
+        "sum_cents": -499,
+        "mean_cents": -33.266666666666666
+      },
+      "note": "SCENARIO \u2014 NOT OBSERVED FILL. Members are never combined with another book."
+    }
+  },
+  "ncaab_h2_1_discovery": {
+    "experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+    "label": "NCAAB H2_1 DISCOVERY",
+    "cohort": "DISCOVERY",
+    "confirmation_accessed": false,
+    "run_mark": {
+      "period": 2,
+      "remaining_s": 450,
+      "label": "NCAAB 2H 7:30 remaining"
+    },
+    "grid_note": "7:30 is off the 2-minute PRIMARY_GRID. First period=2 remaining<=450 is used; modal clock is 360 (6:00).",
+    "summary": {
+      "book": "NCAAB H2_1 DISCOVERY",
+      "n_trades": 69,
+      "n_run_mark_reached": 69,
+      "n_in_price_band": 36,
+      "n_hedge_scenario": 1,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 1,
+      "n_hold_in_band": 0,
+      "n_ev_unavailable_in_band": 35,
+      "n_not_underwater": 31,
+      "n_through_band": 2,
+      "used_remaining": {
+        "min": 360,
+        "median": 360,
+        "max": 448
+      },
+      "katy_path": {
+        "n": 69,
+        "sum_cents": 144,
+        "mean_cents": 2.0869565217391304
+      },
+      "katy_vs_8040": {
+        "n": 69,
+        "sum_cents": 324,
+        "mean_cents": 4.695652173913044
+      },
+      "always_hold": {
+        "n": 69,
+        "sum_cents": 180,
+        "mean_cents": 2.608695652173913
+      },
+      "always_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "hedge_subset_lock": {
+        "n": 1,
+        "sum_cents": -16,
+        "mean_cents": -16.0
+      },
+      "hedge_subset_had_held": {
+        "n": 1,
+        "sum_cents": 20,
+        "mean_cents": 20.0
+      },
+      "hedge_subset_had_8040": {
+        "n": 1,
+        "sum_cents": 20,
+        "mean_cents": 20.0
+      },
+      "losers_hold": {
+        "n": 12,
+        "sum_cents": -960,
+        "mean_cents": -80.0
+      },
+      "losers_katy": {
+        "n": 12,
+        "sum_cents": -960,
+        "mean_cents": -80.0
+      },
+      "losers_katy_8040": {
+        "n": 12,
+        "sum_cents": -480,
+        "mean_cents": -40.0
+      },
+      "note": "SCENARIO \u2014 NOT OBSERVED FILL. Members are never combined with another book."
+    }
+  },
+  "nba_604_in_sample": {
+    "experiment_id": "choosin_nba_2q3q_604",
+    "label": "NBA 604 Q2/Q3 FIRST80 continued to 4Q",
+    "cohort": "IN_SAMPLE_604",
+    "confirmation_accessed": false,
+    "dallas_page_remains": "2Q/3Q snapshots only. Katy reads later path on the same 604 trades.",
+    "run_mark": {
+      "period": 4,
+      "remaining_s": 540,
+      "label": "NBA 4Q 9:00 remaining"
+    },
+    "grid_note": "9:00 is off the 2-minute clock grid. First Q4 remaining<=540 is used; typical clock is near 480 (8:00).",
+    "summary": {
+      "book": "NBA_604",
+      "n_trades": 604,
+      "n_run_mark_reached": 603,
+      "n_in_price_band": 91,
+      "n_hedge_scenario": 75,
+      "n_hedge_losers": 27,
+      "n_hedge_winners": 48,
+      "n_hold_in_band": 16,
+      "n_ev_unavailable_in_band": 0,
+      "n_not_underwater": 465,
+      "n_through_band": 47,
+      "used_remaining": {
+        "min": 0,
+        "median": 522,
+        "max": 540
+      },
+      "katy_path": {
+        "n": 603,
+        "sum_cents": 1677,
+        "mean_cents": 2.781094527363184
+      },
+      "katy_vs_8040": {
+        "n": 603,
+        "sum_cents": 2637,
+        "mean_cents": 4.373134328358209
+      },
+      "always_hold": {
+        "n": 603,
+        "sum_cents": 2160,
+        "mean_cents": 3.582089552238806
+      },
+      "always_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "hedge_subset_lock": {
+        "n": 75,
+        "sum_cents": -1683,
+        "mean_cents": -22.44
+      },
+      "hedge_subset_had_held": {
+        "n": 75,
+        "sum_cents": -1200,
+        "mean_cents": -16.0
+      },
+      "hedge_subset_had_8040": {
+        "n": 75,
+        "sum_cents": -1500,
+        "mean_cents": -20.0
+      },
+      "losers_hold": {
+        "n": 99,
+        "sum_cents": -7920,
+        "mean_cents": -80.0
+      },
+      "losers_katy": {
+        "n": 99,
+        "sum_cents": -6383,
+        "mean_cents": -64.47474747474747
+      },
+      "losers_katy_8040": {
+        "n": 99,
+        "sum_cents": -3503,
+        "mean_cents": -35.38383838383838
+      },
+      "note": "SCENARIO \u2014 NOT OBSERVED FILL. Members are never combined with another book."
+    }
+  },
+  "row_counts": {
+    "ncaab_h1_2": 96,
+    "ncaab_h2_1": 69,
+    "nba_604": 604
+  },
+  "card": {
+    "number": 1,
+    "experiment_id": "KATY_TEXAS_V1",
+    "slug": "late-underwater-41-70-ev5",
+    "href": "#/katy/late-underwater-41-70-ev5",
+    "title": "Late underwater 41\u201370 / EV < 5",
+    "question": "If FIRST80 is already on and yes_bid is 41\u201370 at 4Q 9:00 / 2H 7:30, does Austin EV < 5 plus a Houston taker lock cut loser damage?",
+    "marks": {
+      "nba": "4Q 9:00 remaining (540s; off-grid, first remaining \u2264 540)",
+      "ncaab": "2H 7:30 remaining (450s; off-grid, first remaining \u2264 450)"
+    },
+    "rule": "yes_bid in [41, 70] and Austin EV < 5",
+    "status": "MEASURED",
+    "one_line": "Loser tails improve on A/NBA; net path EV loses to hold on all three books (A 2.9895833333333335 vs hold 4.375; B 2.0869565217391304 vs 2.608695652173913; NBA 2.781094527363184 vs 3.582089552238806)."
+  },
+  "combined_headline_forbidden": true,
+  "note": "Katy experiment 1. Houston taker lock is declared, not a fill. Confirmation unspent. Execution disabled."
+}

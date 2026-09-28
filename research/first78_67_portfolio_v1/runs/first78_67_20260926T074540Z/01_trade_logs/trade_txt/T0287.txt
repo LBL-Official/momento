@@ -1,0 +1,10 @@
+trade T0287  NCAAB  Kansas St. at Oklahoma St.
+contract KXNCAAMBGAME-26JAN17KSUOKST-OKST  slice H2_1
+signal 2026-01-17T19:34:00-08:00 PST  exit 2026-01-17T19:37:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 4545  principal_cents 354510
+entry_fee_cents 1365  exit_fee_cents 1759
+exit STOP at 67c  terminal yes
+gross_cents -49995  net_cents -53119
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

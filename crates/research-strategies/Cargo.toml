@@ -1,0 +1,21 @@
+[package]
+name = "momento-research-strategies"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "Versioned research strategy models for the Momento backtesting lab."
+
+[lints]
+workspace = true
+
+[dependencies]
+chrono.workspace = true
+momento-core.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+chrono-tz.workspace = true

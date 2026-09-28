@@ -1,0 +1,980 @@
+{
+  "package_id": "asked_six_first80_80_40",
+  "decomposed_at": "2026-09-11T17:40:42Z",
+  "code_version": "superasi_v1.0.0",
+  "semantics_version": "1.0.0",
+  "live_execution": false,
+  "settings": {
+    "fill_algorithm": "FIRST_BARRIER_CLOSE",
+    "fee_scenario": "CURRENT",
+    "adverse_p": "73",
+    "window": "\u00b15"
+  },
+  "four_cell": {
+    "n": 1182,
+    "cells": {
+      "W_and_not_T40": 883,
+      "W_and_T40": 108,
+      "L_and_not_T40": 0,
+      "L_and_T40": 191
+    },
+    "p": {
+      "numer": 991,
+      "denom": 1182,
+      "status": "OBSERVED"
+    },
+    "alpha": {
+      "numer": 227,
+      "denom": 5910,
+      "status": "DERIVED",
+      "K": {
+        "numer": 4,
+        "denom": 5
+      }
+    },
+    "s_W": {
+      "numer": 883,
+      "denom": 991,
+      "status": "OBSERVED"
+    },
+    "s_L": {
+      "numer": 0,
+      "denom": 1,
+      "status": "OBSERVED"
+    },
+    "S": {
+      "numer": 883,
+      "denom": 1182,
+      "status": "OBSERVED"
+    },
+    "note": "S is the SuperASI production-rule WR. Do not conflate S with terminal p.",
+    "status": "OBSERVED"
+  },
+  "gross_pre_superasi": null,
+  "fill_algorithms": {
+    "LEDGER_RULE": {
+      "id": "LEDGER_RULE",
+      "definition": "L_x = barrier price (ledger). NOT A FILL.",
+      "n_path_loss": 299,
+      "n_available": 299,
+      "n_unavailable": 0,
+      "mean_L": {
+        "numer": 40,
+        "denom": 1,
+        "status": "DERIVED"
+      },
+      "mean_exit": {
+        "numer": 11960,
+        "denom": 299,
+        "status": "OBSERVED"
+      },
+      "EV": {
+        "numer": 950,
+        "denom": 197,
+        "status": "DERIVED"
+      },
+      "G": 20,
+      "S": {
+        "numer": 883,
+        "denom": 1182
+      },
+      "research_status": "RESEARCH EXIT MIX",
+      "not_a_fill": true,
+      "active_default": false
+    },
+    "FIRST_BARRIER_CLOSE": {
+      "id": "FIRST_BARRIER_CLOSE",
+      "definition": "L_x = first tradable close \u2264 barrier. NOT A FILL.",
+      "n_path_loss": 299,
+      "n_available": 299,
+      "n_unavailable": 0,
+      "mean_L": {
+        "numer": 13602,
+        "denom": 299,
+        "status": "DERIVED"
+      },
+      "mean_exit": {
+        "numer": 10318,
+        "denom": 299,
+        "status": "OBSERVED"
+      },
+      "EV": {
+        "numer": 2029,
+        "denom": 591,
+        "status": "DERIVED"
+      },
+      "G": 20,
+      "S": {
+        "numer": 883,
+        "denom": 1182
+      },
+      "research_status": "RESEARCH EXIT MIX",
+      "not_a_fill": true,
+      "active_default": true
+    },
+    "PRINTED_OR_CLOSE": {
+      "id": "PRINTED_OR_CLOSE",
+      "definition": "40\u00a2 if printed on the stop bar, else first through-close. NOT A FILL.",
+      "n_path_loss": 299,
+      "n_available": 299,
+      "n_unavailable": 0,
+      "mean_L": {
+        "numer": 13602,
+        "denom": 299,
+        "status": "DERIVED"
+      },
+      "mean_exit": {
+        "numer": 10318,
+        "denom": 299,
+        "status": "OBSERVED"
+      },
+      "EV": {
+        "numer": 2029,
+        "denom": 591,
+        "status": "DERIVED"
+      },
+      "G": 20,
+      "S": {
+        "numer": 883,
+        "denom": 1182
+      },
+      "research_status": "RESEARCH EXIT MIX",
+      "not_a_fill": true,
+      "active_default": false
+    },
+    "PLUS_1M": {
+      "id": "PLUS_1M",
+      "definition": "L_x = close one minute after the stop bar. Missing = UNAVAILABLE.",
+      "n_path_loss": 299,
+      "n_available": 299,
+      "n_unavailable": 0,
+      "mean_L": {
+        "numer": 13818,
+        "denom": 299,
+        "status": "DERIVED"
+      },
+      "mean_exit": {
+        "numer": 10102,
+        "denom": 299,
+        "status": "OBSERVED"
+      },
+      "EV": {
+        "numer": 1921,
+        "denom": 591,
+        "status": "DERIVED"
+      },
+      "G": 20,
+      "S": {
+        "numer": 883,
+        "denom": 1182
+      },
+      "research_status": "RESEARCH EXIT MIX",
+      "not_a_fill": true,
+      "active_default": false
+    },
+    "PLUS_5M": {
+      "id": "PLUS_5M",
+      "definition": "L_x = close five minutes after the stop bar. Missing = UNAVAILABLE.",
+      "n_path_loss": 299,
+      "n_available": 297,
+      "n_unavailable": 2,
+      "mean_L": {
+        "numer": 1276,
+        "denom": 27,
+        "status": "DERIVED"
+      },
+      "mean_exit": {
+        "numer": 9724,
+        "denom": 297,
+        "status": "OBSERVED"
+      },
+      "EV": {
+        "numer": 47648,
+        "denom": 15957,
+        "status": "DERIVED"
+      },
+      "G": 20,
+      "S": {
+        "numer": 883,
+        "denom": 1182
+      },
+      "research_status": "RESEARCH EXIT MIX",
+      "not_a_fill": true,
+      "active_default": false
+    },
+    "MIN_5M": {
+      "id": "MIN_5M",
+      "definition": "L_x = minimum close in +1\u2026+5 minutes. Missing all = UNAVAILABLE.",
+      "n_path_loss": 299,
+      "n_available": 299,
+      "n_unavailable": 0,
+      "mean_L": {
+        "numer": 16684,
+        "denom": 299,
+        "status": "DERIVED"
+      },
+      "mean_exit": {
+        "numer": 7236,
+        "denom": 299,
+        "status": "OBSERVED"
+      },
+      "EV": {
+        "numer": 488,
+        "denom": 591,
+        "status": "DERIVED"
+      },
+      "G": 20,
+      "S": {
+        "numer": 883,
+        "denom": 1182
+      },
+      "research_status": "RESEARCH EXIT MIX",
+      "not_a_fill": true,
+      "active_default": false
+    },
+    "PLANNING_2_5": {
+      "id": "PLANNING_2_5",
+      "definition": "Implied L such that EV = +2.50\u00a2. PLANNING / NOT MEASURED.",
+      "n_path_loss": 299,
+      "n_available": null,
+      "n_unavailable": null,
+      "mean_L": {
+        "numer": 14705,
+        "denom": 299,
+        "status": "MODEL-ASSUMED"
+      },
+      "mean_exit": {
+        "numer": 9215,
+        "denom": 299,
+        "status": "MODEL-ASSUMED"
+      },
+      "EV": {
+        "numer": 5,
+        "denom": 2,
+        "status": "MODEL-ASSUMED"
+      },
+      "G": 20,
+      "S": {
+        "numer": 883,
+        "denom": 1182
+      },
+      "research_status": "PLANNING / NOT MEASURED",
+      "not_a_fill": true
+    },
+    "FAST_GAP_TAKER": {
+      "id": "FAST_GAP_TAKER",
+      "definition": "FAST_GAP uses first through-close as TAKER; else FIRST_BARRIER_CLOSE.",
+      "n_path_loss": 299,
+      "n_available": 299,
+      "n_unavailable": 0,
+      "mean_L": {
+        "numer": 13602,
+        "denom": 299,
+        "status": "DERIVED"
+      },
+      "mean_exit": {
+        "numer": 10318,
+        "denom": 299,
+        "status": "OBSERVED"
+      },
+      "EV": {
+        "numer": 2029,
+        "denom": 591,
+        "status": "DERIVED"
+      },
+      "G": 20,
+      "S": {
+        "numer": 883,
+        "denom": 1182
+      },
+      "research_status": "RESEARCH EXIT MIX",
+      "not_a_fill": true,
+      "active_default": false
+    }
+  },
+  "active_mix": {
+    "id": "FIRST_BARRIER_CLOSE",
+    "definition": "L_x = first tradable close \u2264 barrier. NOT A FILL.",
+    "n_path_loss": 299,
+    "n_available": 299,
+    "n_unavailable": 0,
+    "mean_L": {
+      "numer": 13602,
+      "denom": 299,
+      "status": "DERIVED"
+    },
+    "mean_exit": {
+      "numer": 10318,
+      "denom": 299,
+      "status": "OBSERVED"
+    },
+    "EV": {
+      "numer": 2029,
+      "denom": 591,
+      "status": "DERIVED"
+    },
+    "G": 20,
+    "S": {
+      "numer": 883,
+      "denom": 1182
+    },
+    "research_status": "RESEARCH EXIT MIX",
+    "not_a_fill": true,
+    "active_default": true
+  },
+  "entry_cents": 80,
+  "gain_cents": 20,
+  "gain_status": "OBSERVED",
+  "fees": {
+    "status": "ESTIMATED",
+    "maker_count": 0,
+    "taker_count": 245,
+    "unavailable_count": 54,
+    "n_trades": 1182,
+    "quotes": {
+      "one_contract_80_maker": {
+        "amount_e6": 2800,
+        "amount_cents": 0.28,
+        "status": "ESTIMATED",
+        "model_id": "PUBLISHED_SCHEDULE_ESTIMATE",
+        "note": "quadratic maker entry; M=1"
+      },
+      "one_contract_80_taker": {
+        "amount_e6": 11200,
+        "amount_cents": 1.12,
+        "status": "ESTIMATED",
+        "model_id": "PUBLISHED_SCHEDULE_ESTIMATE",
+        "note": "quadratic taker entry; M=1"
+      },
+      "one_contract_40_maker": {
+        "amount_e6": 4200,
+        "amount_cents": 0.42,
+        "status": "ESTIMATED",
+        "model_id": "PUBLISHED_SCHEDULE_ESTIMATE",
+        "note": "quadratic maker entry; M=1"
+      },
+      "one_contract_40_taker": {
+        "amount_e6": 16801,
+        "amount_cents": 1.6801,
+        "status": "ESTIMATED",
+        "model_id": "PUBLISHED_SCHEDULE_ESTIMATE",
+        "note": "quadratic taker entry; M=1"
+      }
+    }
+  },
+  "net_estimate": {
+    "gross_EV": {
+      "numer": 2029,
+      "denom": 591,
+      "status": "DERIVED"
+    },
+    "estimated_fee_cents": 1.5709,
+    "fee_status": "ESTIMATED",
+    "note": "NET ESTIMATE = research EV minus ESTIMATED fee. Not executed P&L."
+  },
+  "adverse_terminal": {
+    "label": "ADVERSE TERMINAL",
+    "kind": "STRESS TEST",
+    "not_a_forecast": true,
+    "not_a_model": true,
+    "not_a_signal": true,
+    "p_key": "73",
+    "p": {
+      "numer": 73,
+      "denom": 100,
+      "status": "MODEL-ASSUMED"
+    },
+    "s_W": {
+      "numer": 883,
+      "denom": 991,
+      "status": "OBSERVED",
+      "held": true
+    },
+    "s_L": {
+      "numer": 0,
+      "denom": 1,
+      "status": "OBSERVED",
+      "held": true
+    },
+    "S_stressed": {
+      "numer": 64459,
+      "denom": 99100,
+      "status": "DERIVED"
+    },
+    "held_s_W": true,
+    "held_s_L": true,
+    "note": "Changing adverse p must not modify s_W or s_L.",
+    "EV_adverse": {
+      "numer": -42861031,
+      "denom": 14815450,
+      "status": "HYPOTHETICAL"
+    },
+    "G": 20,
+    "L": {
+      "numer": 13602,
+      "denom": 299
+    }
+  },
+  "path_windows": {
+    "path_loss_n": 299,
+    "n_window_rows": 3285,
+    "offsets": {
+      "-5": {
+        "n": 299,
+        "sum": 18262,
+        "mean": {
+          "numer": 18262,
+          "denom": 299,
+          "status": "OBSERVED"
+        },
+        "median": 60
+      },
+      "-4": {
+        "n": 299,
+        "sum": 17582,
+        "mean": {
+          "numer": 17582,
+          "denom": 299,
+          "status": "OBSERVED"
+        },
+        "median": 58
+      },
+      "-3": {
+        "n": 299,
+        "sum": 17022,
+        "mean": {
+          "numer": 17022,
+          "denom": 299,
+          "status": "OBSERVED"
+        },
+        "median": 55
+      },
+      "-2": {
+        "n": 299,
+        "sum": 16167,
+        "mean": {
+          "numer": 16167,
+          "denom": 299,
+          "status": "OBSERVED"
+        },
+        "median": 52
+      },
+      "-1": {
+        "n": 299,
+        "sum": 14663,
+        "mean": {
+          "numer": 14663,
+          "denom": 299,
+          "status": "OBSERVED"
+        },
+        "median": 48
+      },
+      "0": {
+        "n": 299,
+        "sum": 10318,
+        "mean": {
+          "numer": 10318,
+          "denom": 299,
+          "status": "OBSERVED"
+        },
+        "median": 37
+      },
+      "1": {
+        "n": 299,
+        "sum": 10102,
+        "mean": {
+          "numer": 10102,
+          "denom": 299,
+          "status": "OBSERVED"
+        },
+        "median": 35
+      },
+      "2": {
+        "n": 299,
+        "sum": 10023,
+        "mean": {
+          "numer": 10023,
+          "denom": 299,
+          "status": "OBSERVED"
+        },
+        "median": 34
+      },
+      "3": {
+        "n": 299,
+        "sum": 10031,
+        "mean": {
+          "numer": 10031,
+          "denom": 299,
+          "status": "OBSERVED"
+        },
+        "median": 34
+      },
+      "4": {
+        "n": 297,
+        "sum": 9945,
+        "mean": {
+          "numer": 9945,
+          "denom": 297,
+          "status": "OBSERVED"
+        },
+        "median": 34
+      },
+      "5": {
+        "n": 297,
+        "sum": 9724,
+        "mean": {
+          "numer": 9724,
+          "denom": 297,
+          "status": "OBSERVED"
+        },
+        "median": 32
+      }
+    },
+    "pre_t40_38_40_trades": 1,
+    "note": "CANDLE PATH \u2260 FILL. Missing minutes are UNAVAILABLE.",
+    "status": "OBSERVED"
+  },
+  "liquidity": {
+    "taker": 299,
+    "maker": 0,
+    "unavailable": 0,
+    "rows": [
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": false,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": false,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": false,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "status": "DERIVED",
+        "note": "bid=40 >= sell limit=40: immediately executable. NOT A STOP. A 40/45 sell while the bid is 50\u201360 is a TAKE."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": false,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": false,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": false,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "status": "DERIVED",
+        "note": "bid=40 >= sell limit=40: immediately executable. NOT A STOP. A 40/45 sell while the bid is 50\u201360 is a TAKE."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": true,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": true,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": false,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": true,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": true,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": false,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": true,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": true,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": true,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": true,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": false,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": true,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": true,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": true,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": true,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": true,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": true,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": false,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": false,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": true,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": true,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": true,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": false,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": false,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "status": "DERIVED",
+        "note": "bid=40 >= sell limit=40: immediately executable. NOT A STOP. A 40/45 sell while the bid is 50\u201360 is a TAKE."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": true,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": true,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": false,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": true,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": true,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": false,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": true,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": true,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": false,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": false,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": true,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": true,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": true,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": true,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": true,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": true,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      },
+      {
+        "classification": "TAKER",
+        "is_stop": false,
+        "fast_gap": true,
+        "first_close_through_barrier": true,
+        "status": "DERIVED",
+        "note": "FAST_GAP or first close already through the barrier is TAKER. NOT A FILL."
+      }
+    ],
+    "note": "Sample of classifications. FAST_GAP = TAKER. bid\u2265limit is NOT A STOP."
+  },
+  "distribution": {
+    "status": "DERIVED",
+    "n": 1182,
+    "mean": {
+      "numer": 3809,
+      "denom": 1182
+    },
+    "median": 18,
+    "sample_sd": 26.056612653736437,
+    "p5": -43,
+    "p25": -40,
+    "p50": 18,
+    "p75": 20,
+    "p95": 20,
+    "worst": -47,
+    "best": 20,
+    "note": "Observed candle exit\u2212entry cents. CANDLE PATH \u2260 FILL."
+  },
+  "capital_overlay": {
+    "status": "MODEL-ASSUMED",
+    "bankroll_dollars": 20000,
+    "allocation_pct": 5,
+    "allocation_dollars": 1000,
+    "note": "FIXED ALLOCATION. NOT COMPOUNDED. NOT RISK ENGINE. NOT EXECUTED P&L."
+  },
+  "caveats": [
+    "LIVE EXECUTION = FALSE",
+    "CANDLE PATH \u2260 ACTUAL FILL",
+    "LEDGER PRICE \u2260 PROVEN FILL",
+    "FEE MODEL = ESTIMATED",
+    "MEASUREMENT \u2260 EDGE",
+    "DECOMPOSITION \u2260 SIGNAL",
+    "S \u2260 terminal p",
+    "path loss \u2260 terminal loss"
+  ],
+  "stop_path_status": "OK",
+  "question_hash": null,
+  "dataset_version": null,
+  "checksums": {
+    "trades": "0a9ed2947758387aa90381d7bf8b221c8e1acec1e925d893ea74d177a82b3c1e"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "BASE_GRADE": "F",
+  "abase_filename": "SuperasiABase[frt].csv",
+  "abase_payload_sha256": "3872baa2f47a87735daa937c4b9afd83f1368860eee129d1ad33b75e29aa25a6",
+  "abase_sha256": "ec0a0d0ed1f0ef978c33e5c990e46cb28b5552860320b554254b65413397f696",
+  "allocation_bps": 500,
+  "artifact": "superasi_abase",
+  "bankroll_cents": 2000000,
+  "borderline": true,
+  "components": {
+    "coverage": "A+",
+    "research_evidence": "F",
+    "robustness": "A",
+    "theoretical_alignment": "F",
+    "validation": "A+"
+  },
+  "created_at": "2026-09-25T06:47:26Z",
+  "desk_settings_source": "disk",
+  "floor_cents": 1500000,
+  "folder": "frt",
+  "grade_config_version": "grade_config_v1",
+  "phase": "A",
+  "result_id": "frt",
+  "roller_filename": "Roller[frt].csv",
+  "source_csv_sha256": "9f557d6f927bab5575b0501d4365fe8c681c92e8093526c0f243287ef41184cf",
+  "source_lab_id": "f2bfaa8a4107485ea1ba6c8e3d08b583",
+  "strategy_name": "frt",
+  "superasi_version": "superasi_abase_v1.0.0",
+  "target_cents": 3000000
+}

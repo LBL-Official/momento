@@ -1,0 +1,9 @@
+{
+  "family": "E",
+  "method": "bounded_price_and_fee_stress_grid",
+  "probabilities": "NOT_ESTIMATED",
+  "grid": "05_profitability_dissection/stresses.csv",
+  "ordering_and_all_in": "05_profitability_dissection/ordering_and_all_in.csv",
+  "failed_stop_or_gap_through_probability": "NOT_ESTIMATED",
+  "note": "A winning settlement stays $1. A losing settlement stays $0. These rows are assumptions, not a fitted distribution of slippage."
+}

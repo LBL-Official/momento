@@ -1,0 +1,10 @@
+trade T0443  NCAAB  Auburn at Mississippi St.
+contract KXNCAAMBGAME-26FEB18AUBMSST-MSST  slice H1_2
+signal 2026-02-18T18:51:00-08:00 PST  exit 2026-02-18T19:27:00-08:00 PST
+assumed entry 78c  observed close 85c  overshoot 7c
+contracts 8037  principal_cents 626886
+entry_fee_cents 2414  exit_fee_cents 3110
+exit STOP at 67c  terminal yes
+gross_cents -88407  net_cents -93931
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

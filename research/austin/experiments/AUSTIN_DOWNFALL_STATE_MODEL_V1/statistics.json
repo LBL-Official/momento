@@ -1,0 +1,4536 @@
+{
+  "model_id": "AUSTIN_DOWNFALL_STATE_MODEL_V1",
+  "phase": "PHASE_3",
+  "policy_status": "UNFROZEN",
+  "policy_selected": "NONE",
+  "confirmation_accessed": false,
+  "hazard_model_built": false,
+  "A": {
+    "experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+    "n_discovery": 96,
+    "populations": [
+      {
+        "core_state": "HEALTHY",
+        "N_state_rows": 471,
+        "N_trades_entering": 68,
+        "pct_discovery_trades": 0.7083333333333334
+      },
+      {
+        "core_state": "WATCH_NEGATIVE",
+        "N_state_rows": 95,
+        "N_trades_entering": 67,
+        "pct_discovery_trades": 0.6979166666666666
+      },
+      {
+        "core_state": "PERSISTENCE_2",
+        "N_state_rows": 63,
+        "N_trades_entering": 52,
+        "pct_discovery_trades": 0.5416666666666666
+      },
+      {
+        "core_state": "PERSISTENCE_3PLUS",
+        "N_state_rows": 359,
+        "N_trades_entering": 49,
+        "pct_discovery_trades": 0.5104166666666666
+      },
+      {
+        "core_state": "RECOVERING",
+        "N_state_rows": 69,
+        "N_trades_entering": 51,
+        "pct_discovery_trades": 0.53125
+      },
+      {
+        "core_state": "HEALTHY_AFTER_RECOVERY",
+        "N_state_rows": 110,
+        "N_trades_entering": 21,
+        "pct_discovery_trades": 0.21875
+      },
+      {
+        "core_state": "UNRESOLVED",
+        "N_state_rows": 178,
+        "N_trades_entering": 74,
+        "pct_discovery_trades": 0.7708333333333334
+      }
+    ],
+    "economics": [
+      {
+        "N_trades": 68,
+        "N_wins": 59,
+        "N_losses": 9,
+        "win_rate": 0.8676470588235294,
+        "loss_rate": 0.1323529411764706,
+        "mean_pnl_hold_after_state": 6.764705882352941,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 13.661764705882353,
+        "mean_future_MFE": 10.264705882352942,
+        "recover_ge_50": 1.0,
+        "recover_ge_60": 1.0,
+        "recover_ge_70": 0.9852941176470589,
+        "recover_ge_80": 0.9264705882352942,
+        "mean_current_price": 84.20588235294117,
+        "mean_price_travel": 2.1470588235294117,
+        "mean_minutes_to_T40": 0.0,
+        "mean_minutes_to_worst_price": 5.294117647058823,
+        "mean_minutes_to_settlement": 20.676470588235293,
+        "mean_adverse_cents_remaining": 13.661764705882353,
+        "core_state": "HEALTHY"
+      },
+      {
+        "N_trades": 67,
+        "N_wins": 53,
+        "N_losses": 14,
+        "win_rate": 0.7910447761194029,
+        "loss_rate": 0.208955223880597,
+        "mean_pnl_hold_after_state": -0.8955223880597015,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 11.681818181818182,
+        "mean_future_MFE": 15.287878787878787,
+        "recover_ge_50": 1.0,
+        "recover_ge_60": 0.9545454545454546,
+        "recover_ge_70": 0.8787878787878788,
+        "recover_ge_80": 0.7878787878787878,
+        "mean_current_price": 74.31343283582089,
+        "mean_price_travel": -7.6716417910447765,
+        "mean_minutes_to_T40": 0.08955223880597014,
+        "mean_minutes_to_worst_price": 5.014925373134329,
+        "mean_minutes_to_settlement": 17.761194029850746,
+        "mean_adverse_cents_remaining": 11.681818181818182,
+        "core_state": "WATCH_NEGATIVE"
+      },
+      {
+        "N_trades": 52,
+        "N_wins": 43,
+        "N_losses": 9,
+        "win_rate": 0.8269230769230769,
+        "loss_rate": 0.17307692307692307,
+        "mean_pnl_hold_after_state": 2.6923076923076925,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 0.9807692307692307,
+        "mean_future_MAE": 11.58,
+        "mean_future_MFE": 12.86,
+        "recover_ge_50": 0.98,
+        "recover_ge_60": 0.9,
+        "recover_ge_70": 0.84,
+        "recover_ge_80": 0.8,
+        "mean_current_price": 76.11538461538461,
+        "mean_price_travel": -5.961538461538462,
+        "mean_minutes_to_T40": 0.0784313725490196,
+        "mean_minutes_to_worst_price": 4.230769230769231,
+        "mean_minutes_to_settlement": 16.76923076923077,
+        "mean_adverse_cents_remaining": 11.58,
+        "core_state": "PERSISTENCE_2"
+      },
+      {
+        "N_trades": 49,
+        "N_wins": 41,
+        "N_losses": 8,
+        "win_rate": 0.8367346938775511,
+        "loss_rate": 0.16326530612244897,
+        "mean_pnl_hold_after_state": 3.673469387755102,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 11.291666666666666,
+        "mean_future_MFE": 13.625,
+        "recover_ge_50": 0.9791666666666666,
+        "recover_ge_60": 0.8958333333333334,
+        "recover_ge_70": 0.8541666666666666,
+        "recover_ge_80": 0.8125,
+        "mean_current_price": 76.36734693877551,
+        "mean_price_travel": -5.73469387755102,
+        "mean_minutes_to_T40": 0.08163265306122448,
+        "mean_minutes_to_worst_price": 3.5918367346938775,
+        "mean_minutes_to_settlement": 15.10204081632653,
+        "mean_adverse_cents_remaining": 11.291666666666666,
+        "core_state": "PERSISTENCE_3PLUS"
+      },
+      {
+        "N_trades": 51,
+        "N_wins": 44,
+        "N_losses": 7,
+        "win_rate": 0.8627450980392157,
+        "loss_rate": 0.13725490196078433,
+        "mean_pnl_hold_after_state": 6.2745098039215685,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 0.9803921568627451,
+        "mean_future_MAE": 17.161290322580644,
+        "mean_future_MFE": 9.935483870967742,
+        "recover_ge_50": 1.0,
+        "recover_ge_60": 1.0,
+        "recover_ge_70": 0.967741935483871,
+        "recover_ge_80": 0.8387096774193549,
+        "mean_current_price": 88.47058823529412,
+        "mean_price_travel": 6.470588235294118,
+        "mean_minutes_to_T40": 0.08,
+        "mean_minutes_to_worst_price": 3.019607843137255,
+        "mean_minutes_to_settlement": 8.03921568627451,
+        "mean_adverse_cents_remaining": 17.161290322580644,
+        "core_state": "RECOVERING"
+      },
+      {
+        "N_trades": 21,
+        "N_wins": 16,
+        "N_losses": 5,
+        "win_rate": 0.7619047619047619,
+        "loss_rate": 0.23809523809523808,
+        "mean_pnl_hold_after_state": -3.8095238095238093,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 20.789473684210527,
+        "mean_future_MFE": 2.210526315789474,
+        "recover_ge_50": 0.9473684210526315,
+        "recover_ge_60": 0.8947368421052632,
+        "recover_ge_70": 0.8421052631578947,
+        "recover_ge_80": 0.6842105263157895,
+        "mean_current_price": 83.33333333333333,
+        "mean_price_travel": 1.619047619047619,
+        "mean_minutes_to_T40": 0.19047619047619047,
+        "mean_minutes_to_worst_price": 4.190476190476191,
+        "mean_minutes_to_settlement": 11.80952380952381,
+        "mean_adverse_cents_remaining": 20.789473684210527,
+        "core_state": "HEALTHY_AFTER_RECOVERY"
+      },
+      {
+        "N_trades": 74,
+        "N_wins": 64,
+        "N_losses": 10,
+        "win_rate": 0.8648648648648649,
+        "loss_rate": 0.13513513513513514,
+        "mean_pnl_hold_after_state": 6.486486486486487,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 12.202702702702704,
+        "mean_future_MFE": 27.594594594594593,
+        "recover_ge_50": 1.0,
+        "recover_ge_60": 1.0,
+        "recover_ge_70": 0.9459459459459459,
+        "recover_ge_80": 0.8783783783783784,
+        "mean_current_price": 65.87837837837837,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": 4.54054054054054,
+        "mean_minutes_to_worst_price": 7.297297297297297,
+        "mean_minutes_to_settlement": 25.054054054054053,
+        "mean_adverse_cents_remaining": 12.202702702702704,
+        "core_state": "UNRESOLVED"
+      }
+    ],
+    "contrasts": [
+      {
+        "contrast": "WATCH_NEGATIVE vs HEALTHY",
+        "left_state": "WATCH_NEGATIVE",
+        "right_state": "HEALTHY",
+        "metric": "pnl",
+        "n_left": 67,
+        "n_right": 68,
+        "observed_delta": -7.6602282704126425,
+        "ci": [
+          -14.876631716325893,
+          -1.018471419979193
+        ],
+        "classification": "SUPPORTED"
+      },
+      {
+        "contrast": "WATCH_NEGATIVE vs HEALTHY",
+        "left_state": "WATCH_NEGATIVE",
+        "right_state": "HEALTHY",
+        "metric": "loss_rate",
+        "n_left": 67,
+        "n_right": 68,
+        "observed_delta": 0.07660228270412642,
+        "ci": [
+          0.010184714199791932,
+          0.14876631716325892
+        ],
+        "classification": "SUPPORTED"
+      },
+      {
+        "contrast": "WATCH_NEGATIVE vs HEALTHY",
+        "left_state": "WATCH_NEGATIVE",
+        "right_state": "HEALTHY",
+        "metric": "mae",
+        "n_left": 67,
+        "n_right": 68,
+        "observed_delta": -1.9799465240641716,
+        "ci": [
+          -9.130255505015779,
+          4.859673917823885
+        ],
+        "classification": "MIXED"
+      },
+      {
+        "contrast": "WATCH_NEGATIVE vs HEALTHY",
+        "left_state": "WATCH_NEGATIVE",
+        "right_state": "HEALTHY",
+        "metric": "mfe",
+        "n_left": 67,
+        "n_right": 68,
+        "observed_delta": 5.023172905525845,
+        "ci": [
+          1.5414716819221963,
+          9.426254641272534
+        ],
+        "classification": "SUPPORTED"
+      },
+      {
+        "contrast": "WATCH_NEGATIVE vs HEALTHY",
+        "left_state": "WATCH_NEGATIVE",
+        "right_state": "HEALTHY",
+        "metric": "recover_ge_80",
+        "n_left": 67,
+        "n_right": 68,
+        "observed_delta": -0.1503511852502195,
+        "ci": [
+          -0.24396393369175623,
+          -0.06767660329176485
+        ],
+        "classification": "SUPPORTED"
+      },
+      {
+        "contrast": "PERSISTENCE_2 vs WATCH_NEGATIVE",
+        "left_state": "PERSISTENCE_2",
+        "right_state": "WATCH_NEGATIVE",
+        "metric": "pnl",
+        "n_left": 52,
+        "n_right": 67,
+        "observed_delta": 3.587830080367394,
+        "ci": [
+          -2.026079917870963,
+          10.069206787192487
+        ],
+        "classification": "MIXED"
+      },
+      {
+        "contrast": "PERSISTENCE_2 vs WATCH_NEGATIVE",
+        "left_state": "PERSISTENCE_2",
+        "right_state": "WATCH_NEGATIVE",
+        "metric": "loss_rate",
+        "n_left": 52,
+        "n_right": 67,
+        "observed_delta": -0.035878300803673935,
+        "ci": [
+          -0.10069206787192488,
+          0.020260799178709606
+        ],
+        "classification": "MIXED"
+      },
+      {
+        "contrast": "PERSISTENCE_2 vs WATCH_NEGATIVE",
+        "left_state": "PERSISTENCE_2",
+        "right_state": "WATCH_NEGATIVE",
+        "metric": "mae",
+        "n_left": 52,
+        "n_right": 67,
+        "observed_delta": -0.10181818181818159,
+        "ci": [
+          -4.116515151515153,
+          4.3257844325272
+        ],
+        "classification": "MIXED"
+      },
+      {
+        "contrast": "PERSISTENCE_2 vs WATCH_NEGATIVE",
+        "left_state": "PERSISTENCE_2",
+        "right_state": "WATCH_NEGATIVE",
+        "metric": "mfe",
+        "n_left": 52,
+        "n_right": 67,
+        "observed_delta": -2.4278787878787877,
+        "ci": [
+          -6.04668682856369,
+          0.4328939393939394
+        ],
+        "classification": "MIXED"
+      },
+      {
+        "contrast": "PERSISTENCE_2 vs WATCH_NEGATIVE",
+        "left_state": "PERSISTENCE_2",
+        "right_state": "WATCH_NEGATIVE",
+        "metric": "recover_ge_80",
+        "n_left": 52,
+        "n_right": 67,
+        "observed_delta": -0.006888633754305373,
+        "ci": [
+          -0.07886980193372764,
+          0.061361461921163464
+        ],
+        "classification": "MIXED"
+      },
+      {
+        "contrast": "PERSISTENCE_3PLUS vs PERSISTENCE_2",
+        "left_state": "PERSISTENCE_3PLUS",
+        "right_state": "PERSISTENCE_2",
+        "metric": "pnl",
+        "n_left": 49,
+        "n_right": 52,
+        "observed_delta": 0.9811616954474096,
+        "ci": [
+          -1.4423076923076925,
+          4.967948717948719
+        ],
+        "classification": "MIXED"
+      },
+      {
+        "contrast": "PERSISTENCE_3PLUS vs PERSISTENCE_2",
+        "left_state": "PERSISTENCE_3PLUS",
+        "right_state": "PERSISTENCE_2",
+        "metric": "loss_rate",
+        "n_left": 49,
+        "n_right": 52,
+        "observed_delta": -0.009811616954474106,
+        "ci": [
+          -0.04967948717948718,
+          0.014423076923076927
+        ],
+        "classification": "MIXED"
+      },
+      {
+        "contrast": "PERSISTENCE_3PLUS vs PERSISTENCE_2",
+        "left_state": "PERSISTENCE_3PLUS",
+        "right_state": "PERSISTENCE_2",
+        "metric": "mae",
+        "n_left": 49,
+        "n_right": 52,
+        "observed_delta": -0.288333333333334,
+        "ci": [
+          -1.4142959183673456,
+          0.6636758893280635
+        ],
+        "classification": "MIXED"
+      },
+      {
+        "contrast": "PERSISTENCE_3PLUS vs PERSISTENCE_2",
+        "left_state": "PERSISTENCE_3PLUS",
+        "right_state": "PERSISTENCE_2",
+        "metric": "mfe",
+        "n_left": 49,
+        "n_right": 52,
+        "observed_delta": 0.7650000000000006,
+        "ci": [
+          0.13979166666666548,
+          1.6561843971631176
+        ],
+        "classification": "SUPPORTED"
+      },
+      {
+        "contrast": "PERSISTENCE_3PLUS vs PERSISTENCE_2",
+        "left_state": "PERSISTENCE_3PLUS",
+        "right_state": "PERSISTENCE_2",
+        "metric": "recover_ge_80",
+        "n_left": 49,
+        "n_right": 52,
+        "observed_delta": 0.026687598116169498,
+        "ci": [
+          -0.005281674208144779,
+          0.071605787829192
+        ],
+        "classification": "MIXED"
+      },
+      {
+        "contrast": "RECOVERING vs PERSISTENCE_2",
+        "left_state": "RECOVERING",
+        "right_state": "PERSISTENCE_2",
+        "metric": "pnl",
+        "n_left": 51,
+        "n_right": 52,
+        "observed_delta": 3.582202111613876,
+        "ci": [
+          -6.932717742127827,
+          14.17453062712643
+        ],
+        "classification": "MIXED"
+      },
+      {
+        "contrast": "RECOVERING vs PERSISTENCE_2",
+        "left_state": "RECOVERING",
+        "right_state": "PERSISTENCE_2",
+        "metric": "loss_rate",
+        "n_left": 51,
+        "n_right": 52,
+        "observed_delta": -0.03582202111613875,
+        "ci": [
+          -0.1417453062712643,
+          0.06932717742127827
+        ],
+        "classification": "MIXED"
+      },
+      {
+        "contrast": "RECOVERING vs PERSISTENCE_2",
+        "left_state": "RECOVERING",
+        "right_state": "PERSISTENCE_2",
+        "metric": "mae",
+        "n_left": 51,
+        "n_right": 52,
+        "observed_delta": 5.581290322580644,
+        "ci": [
+          -6.5262588417329805,
+          16.596649420660196
+        ],
+        "classification": "MIXED"
+      },
+      {
+        "contrast": "RECOVERING vs PERSISTENCE_2",
+        "left_state": "RECOVERING",
+        "right_state": "PERSISTENCE_2",
+        "metric": "mfe",
+        "n_left": 51,
+        "n_right": 52,
+        "observed_delta": -2.9245161290322574,
+        "ci": [
+          -8.86754025829886,
+          3.3094603610674986
+        ],
+        "classification": "MIXED"
+      },
+      {
+        "contrast": "RECOVERING vs PERSISTENCE_2",
+        "left_state": "RECOVERING",
+        "right_state": "PERSISTENCE_2",
+        "metric": "recover_ge_80",
+        "n_left": 51,
+        "n_right": 52,
+        "observed_delta": -0.25942684766214186,
+        "ci": [
+          -0.4431930154739281,
+          -0.07644820971867018
+        ],
+        "classification": "SUPPORTED"
+      },
+      {
+        "contrast": "HEALTHY_AFTER_RECOVERY vs PERSISTENCE_2",
+        "left_state": "HEALTHY_AFTER_RECOVERY",
+        "right_state": "PERSISTENCE_2",
+        "metric": "pnl",
+        "n_left": 21,
+        "n_right": 52,
+        "observed_delta": -6.501831501831502,
+        "ci": [
+          -26.531339808650735,
+          12.710314388913462
+        ],
+        "classification": "MIXED"
+      },
+      {
+        "contrast": "HEALTHY_AFTER_RECOVERY vs PERSISTENCE_2",
+        "left_state": "HEALTHY_AFTER_RECOVERY",
+        "right_state": "PERSISTENCE_2",
+        "metric": "loss_rate",
+        "n_left": 21,
+        "n_right": 52,
+        "observed_delta": 0.06501831501831501,
+        "ci": [
+          -0.12710314388913457,
+          0.2653133980865073
+        ],
+        "classification": "MIXED"
+      },
+      {
+        "contrast": "HEALTHY_AFTER_RECOVERY vs PERSISTENCE_2",
+        "left_state": "HEALTHY_AFTER_RECOVERY",
+        "right_state": "PERSISTENCE_2",
+        "metric": "mae",
+        "n_left": 21,
+        "n_right": 52,
+        "observed_delta": 9.209473684210527,
+        "ci": [
+          -4.030892857142859,
+          22.126622162022702
+        ],
+        "classification": "MIXED"
+      },
+      {
+        "contrast": "HEALTHY_AFTER_RECOVERY vs PERSISTENCE_2",
+        "left_state": "HEALTHY_AFTER_RECOVERY",
+        "right_state": "PERSISTENCE_2",
+        "metric": "mfe",
+        "n_left": 21,
+        "n_right": 52,
+        "observed_delta": -10.649473684210525,
+        "ci": [
+          -21.442711459583833,
+          -1.6944373401534534
+        ],
+        "classification": "SUPPORTED"
+      },
+      {
+        "contrast": "HEALTHY_AFTER_RECOVERY vs PERSISTENCE_2",
+        "left_state": "HEALTHY_AFTER_RECOVERY",
+        "right_state": "PERSISTENCE_2",
+        "metric": "recover_ge_80",
+        "n_left": 21,
+        "n_right": 52,
+        "observed_delta": -0.1501831501831502,
+        "ci": [
+          -0.37148247978436655,
+          0.08334090909090912
+        ],
+        "classification": "MIXED"
+      }
+    ],
+    "ordering": {
+      "classification": "NOT_SUPPORTED",
+      "monotonic": false,
+      "by_metric": {
+        "mean_pnl_hold_after_state": false,
+        "loss_rate": false,
+        "mean_future_MAE": false,
+        "mean_future_MFE": false,
+        "recover_ge_80": false
+      },
+      "note": "REPORT NOT MONOTONIC"
+    },
+    "transition_counts": [
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "PRE_ENTRY",
+        "count": 0
+      },
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "HEALTHY",
+        "count": 0
+      },
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 0
+      },
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "PERSISTENCE_2",
+        "count": 0
+      },
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 0
+      },
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "RECOVERING",
+        "count": 0
+      },
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 0
+      },
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "UNRESOLVED",
+        "count": 0
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "PRE_ENTRY",
+        "count": 0
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "HEALTHY",
+        "count": 398
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 37
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "PERSISTENCE_2",
+        "count": 0
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 0
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "RECOVERING",
+        "count": 0
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 0
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "UNRESOLVED",
+        "count": 0
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "PRE_ENTRY",
+        "count": 0
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "HEALTHY",
+        "count": 0
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 0
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "PERSISTENCE_2",
+        "count": 63
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 0
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "RECOVERING",
+        "count": 27
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 0
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "UNRESOLVED",
+        "count": 0
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "PRE_ENTRY",
+        "count": 0
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "HEALTHY",
+        "count": 0
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 0
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "PERSISTENCE_2",
+        "count": 0
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 56
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "RECOVERING",
+        "count": 5
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 0
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "UNRESOLVED",
+        "count": 0
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "PRE_ENTRY",
+        "count": 0
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "HEALTHY",
+        "count": 0
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 0
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "PERSISTENCE_2",
+        "count": 0
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 303
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "RECOVERING",
+        "count": 37
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 0
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "UNRESOLVED",
+        "count": 0
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "PRE_ENTRY",
+        "count": 0
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "HEALTHY",
+        "count": 0
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 13
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "PERSISTENCE_2",
+        "count": 0
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 0
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "RECOVERING",
+        "count": 0
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 27
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "UNRESOLVED",
+        "count": 0
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "PRE_ENTRY",
+        "count": 0
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "HEALTHY",
+        "count": 0
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 14
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "PERSISTENCE_2",
+        "count": 0
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 0
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "RECOVERING",
+        "count": 0
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 83
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "UNRESOLVED",
+        "count": 0
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "PRE_ENTRY",
+        "count": 0
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "HEALTHY",
+        "count": 0
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 0
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "PERSISTENCE_2",
+        "count": 0
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 0
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "RECOVERING",
+        "count": 0
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 0
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "UNRESOLVED",
+        "count": 0
+      }
+    ],
+    "transition_rates": [
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "PRE_ENTRY",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "HEALTHY",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "PERSISTENCE_2",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "RECOVERING",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "UNRESOLVED",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "PRE_ENTRY",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "HEALTHY",
+        "count": 398,
+        "conditional_frequency": 0.9149425287356322
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 37,
+        "conditional_frequency": 0.08505747126436781
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "PERSISTENCE_2",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "RECOVERING",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "UNRESOLVED",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "PRE_ENTRY",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "HEALTHY",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "PERSISTENCE_2",
+        "count": 63,
+        "conditional_frequency": 0.7
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "RECOVERING",
+        "count": 27,
+        "conditional_frequency": 0.3
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "UNRESOLVED",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "PRE_ENTRY",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "HEALTHY",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "PERSISTENCE_2",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 56,
+        "conditional_frequency": 0.9180327868852459
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "RECOVERING",
+        "count": 5,
+        "conditional_frequency": 0.08196721311475409
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "UNRESOLVED",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "PRE_ENTRY",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "HEALTHY",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "PERSISTENCE_2",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 303,
+        "conditional_frequency": 0.8911764705882353
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "RECOVERING",
+        "count": 37,
+        "conditional_frequency": 0.10882352941176471
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "UNRESOLVED",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "PRE_ENTRY",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "HEALTHY",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 13,
+        "conditional_frequency": 0.325
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "PERSISTENCE_2",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "RECOVERING",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 27,
+        "conditional_frequency": 0.675
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "UNRESOLVED",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "PRE_ENTRY",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "HEALTHY",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 14,
+        "conditional_frequency": 0.14432989690721648
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "PERSISTENCE_2",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "RECOVERING",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 83,
+        "conditional_frequency": 0.8556701030927835
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "UNRESOLVED",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "PRE_ENTRY",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "HEALTHY",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "PERSISTENCE_2",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "RECOVERING",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "UNRESOLVED",
+        "count": 0,
+        "conditional_frequency": null
+      }
+    ],
+    "transition_economics": [
+      {
+        "N_trades": 20,
+        "N_wins": 15,
+        "N_losses": 5,
+        "win_rate": 0.75,
+        "loss_rate": 0.25,
+        "mean_pnl_hold_after_state": -5.0,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 17.9,
+        "mean_future_MFE": 9.9,
+        "recover_ge_50": null,
+        "recover_ge_60": null,
+        "recover_ge_70": null,
+        "recover_ge_80": 0.75,
+        "mean_current_price": null,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": null,
+        "mean_minutes_to_worst_price": null,
+        "mean_minutes_to_settlement": null,
+        "mean_adverse_cents_remaining": null,
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "RECOVERING",
+        "transition": "WATCH_NEGATIVE \u2192 RECOVERING"
+      },
+      {
+        "N_trades": 52,
+        "N_wins": 43,
+        "N_losses": 9,
+        "win_rate": 0.8269230769230769,
+        "loss_rate": 0.17307692307692307,
+        "mean_pnl_hold_after_state": 2.6923076923076925,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 0.9807692307692307,
+        "mean_future_MAE": 11.58,
+        "mean_future_MFE": 12.86,
+        "recover_ge_50": null,
+        "recover_ge_60": null,
+        "recover_ge_70": null,
+        "recover_ge_80": 0.8,
+        "mean_current_price": null,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": null,
+        "mean_minutes_to_worst_price": null,
+        "mean_minutes_to_settlement": null,
+        "mean_adverse_cents_remaining": null,
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "PERSISTENCE_2",
+        "transition": "WATCH_NEGATIVE \u2192 PERSISTENCE_2"
+      },
+      {
+        "N_trades": 5,
+        "N_wins": 5,
+        "N_losses": 0,
+        "win_rate": 1.0,
+        "loss_rate": 0.0,
+        "mean_pnl_hold_after_state": 20.0,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": -2.2,
+        "mean_future_MFE": 22.2,
+        "recover_ge_50": null,
+        "recover_ge_60": null,
+        "recover_ge_70": null,
+        "recover_ge_80": 1.0,
+        "mean_current_price": null,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": null,
+        "mean_minutes_to_worst_price": null,
+        "mean_minutes_to_settlement": null,
+        "mean_adverse_cents_remaining": null,
+        "from_state": "PERSISTENCE_2",
+        "to_state": "RECOVERING",
+        "transition": "PERSISTENCE_2 \u2192 RECOVERING"
+      },
+      {
+        "N_trades": 49,
+        "N_wins": 41,
+        "N_losses": 8,
+        "win_rate": 0.8367346938775511,
+        "loss_rate": 0.16326530612244897,
+        "mean_pnl_hold_after_state": 3.673469387755102,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 11.291666666666666,
+        "mean_future_MFE": 13.625,
+        "recover_ge_50": null,
+        "recover_ge_60": null,
+        "recover_ge_70": null,
+        "recover_ge_80": 0.8125,
+        "mean_current_price": null,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": null,
+        "mean_minutes_to_worst_price": null,
+        "mean_minutes_to_settlement": null,
+        "mean_adverse_cents_remaining": null,
+        "from_state": "PERSISTENCE_2",
+        "to_state": "PERSISTENCE_3PLUS",
+        "transition": "PERSISTENCE_2 \u2192 PERSISTENCE_3PLUS"
+      }
+    ],
+    "transition_branches": [
+      {
+        "contrast": "WATCH_NEGATIVE \u2192 RECOVERING vs WATCH_NEGATIVE \u2192 PERSISTENCE_2",
+        "left_transition": "WATCH_NEGATIVE \u2192 RECOVERING",
+        "right_transition": "WATCH_NEGATIVE \u2192 PERSISTENCE_2",
+        "metric": "pnl",
+        "n_left": 20,
+        "n_right": 52,
+        "observed_delta": -7.6923076923076925,
+        "ci": [
+          -28.024376417233558,
+          12.302025224351182
+        ],
+        "classification": "MIXED"
+      },
+      {
+        "contrast": "WATCH_NEGATIVE \u2192 RECOVERING vs WATCH_NEGATIVE \u2192 PERSISTENCE_2",
+        "left_transition": "WATCH_NEGATIVE \u2192 RECOVERING",
+        "right_transition": "WATCH_NEGATIVE \u2192 PERSISTENCE_2",
+        "metric": "loss_rate",
+        "n_left": 20,
+        "n_right": 52,
+        "observed_delta": 0.07692307692307693,
+        "ci": [
+          -0.12302025224351198,
+          0.2802437641723356
+        ],
+        "classification": "MIXED"
+      },
+      {
+        "contrast": "PERSISTENCE_2 \u2192 RECOVERING vs PERSISTENCE_2 \u2192 PERSISTENCE_3PLUS",
+        "left_transition": "PERSISTENCE_2 \u2192 RECOVERING",
+        "right_transition": "PERSISTENCE_2 \u2192 PERSISTENCE_3PLUS",
+        "metric": "pnl",
+        "n_left": 5,
+        "n_right": 49,
+        "observed_delta": 16.3265306122449,
+        "ci": [
+          7.741304347826091,
+          27.083333333333332
+        ],
+        "classification": "SUPPORTED"
+      },
+      {
+        "contrast": "PERSISTENCE_2 \u2192 RECOVERING vs PERSISTENCE_2 \u2192 PERSISTENCE_3PLUS",
+        "left_transition": "PERSISTENCE_2 \u2192 RECOVERING",
+        "right_transition": "PERSISTENCE_2 \u2192 PERSISTENCE_3PLUS",
+        "metric": "loss_rate",
+        "n_left": 5,
+        "n_right": 49,
+        "observed_delta": -0.16326530612244897,
+        "ci": [
+          -0.2708333333333333,
+          -0.07741304347826154
+        ],
+        "classification": "SUPPORTED"
+      }
+    ],
+    "archetype_economics": [
+      {
+        "N_trades": 29,
+        "N_wins": 28,
+        "N_losses": 1,
+        "win_rate": 0.9655172413793104,
+        "loss_rate": 0.034482758620689655,
+        "mean_pnl_hold_after_state": 16.551724137931036,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": -2.413793103448276,
+        "mean_future_MFE": 36.86206896551724,
+        "recover_ge_50": null,
+        "recover_ge_60": null,
+        "recover_ge_70": null,
+        "recover_ge_80": 0.9655172413793104,
+        "mean_current_price": null,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": null,
+        "mean_minutes_to_worst_price": null,
+        "mean_minutes_to_settlement": null,
+        "mean_adverse_cents_remaining": null,
+        "archetype": "STABLE_HEALTHY",
+        "mean_maximum_state_depth": 0.0,
+        "mean_time_spent_negative": 0.0
+      },
+      {
+        "N_trades": 14,
+        "N_wins": 10,
+        "N_losses": 4,
+        "win_rate": 0.7142857142857143,
+        "loss_rate": 0.2857142857142857,
+        "mean_pnl_hold_after_state": -8.571428571428571,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 11.071428571428571,
+        "mean_future_MFE": 18.857142857142858,
+        "recover_ge_50": null,
+        "recover_ge_60": null,
+        "recover_ge_70": null,
+        "recover_ge_80": 0.7857142857142857,
+        "mean_current_price": null,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": null,
+        "mean_minutes_to_worst_price": null,
+        "mean_minutes_to_settlement": null,
+        "mean_adverse_cents_remaining": null,
+        "archetype": "SINGLE_NEGATIVE_RECOVERY",
+        "mean_maximum_state_depth": 1.0,
+        "mean_time_spent_negative": 1.7142857142857142
+      },
+      {
+        "N_trades": 0,
+        "N_wins": 0,
+        "N_losses": 0,
+        "win_rate": null,
+        "loss_rate": null,
+        "mean_pnl_hold_after_state": null,
+        "median_pnl_hold_after_state": null,
+        "T40_rate": null,
+        "mean_future_MAE": null,
+        "mean_future_MFE": null,
+        "recover_ge_50": null,
+        "recover_ge_60": null,
+        "recover_ge_70": null,
+        "recover_ge_80": null,
+        "mean_current_price": null,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": null,
+        "mean_minutes_to_worst_price": null,
+        "mean_minutes_to_settlement": null,
+        "mean_adverse_cents_remaining": null,
+        "archetype": "NEGATIVE_TO_RECOVERY",
+        "mean_maximum_state_depth": null,
+        "mean_time_spent_negative": null
+      },
+      {
+        "N_trades": 1,
+        "N_wins": 1,
+        "N_losses": 0,
+        "win_rate": 1.0,
+        "loss_rate": 0.0,
+        "mean_pnl_hold_after_state": 20.0,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 0.0,
+        "mean_future_MFE": 0.0,
+        "recover_ge_50": null,
+        "recover_ge_60": null,
+        "recover_ge_70": null,
+        "recover_ge_80": 0.0,
+        "mean_current_price": null,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": null,
+        "mean_minutes_to_worst_price": null,
+        "mean_minutes_to_settlement": null,
+        "mean_adverse_cents_remaining": null,
+        "archetype": "NEGATIVE_TO_PERSISTENCE_2",
+        "mean_maximum_state_depth": 2.0,
+        "mean_time_spent_negative": 2.0
+      },
+      {
+        "N_trades": 14,
+        "N_wins": 8,
+        "N_losses": 6,
+        "win_rate": 0.5714285714285714,
+        "loss_rate": 0.42857142857142855,
+        "mean_pnl_hold_after_state": -22.857142857142858,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 21.5,
+        "mean_future_MFE": 1.7857142857142858,
+        "recover_ge_50": null,
+        "recover_ge_60": null,
+        "recover_ge_70": null,
+        "recover_ge_80": 0.42857142857142855,
+        "mean_current_price": null,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": null,
+        "mean_minutes_to_worst_price": null,
+        "mean_minutes_to_settlement": null,
+        "mean_adverse_cents_remaining": null,
+        "archetype": "NEGATIVE_TO_PERSISTENCE_3PLUS",
+        "mean_maximum_state_depth": 3.0,
+        "mean_time_spent_negative": 10.0
+      },
+      {
+        "N_trades": 37,
+        "N_wins": 34,
+        "N_losses": 3,
+        "win_rate": 0.918918918918919,
+        "loss_rate": 0.08108108108108109,
+        "mean_pnl_hold_after_state": 11.891891891891891,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 8.513513513513514,
+        "mean_future_MFE": 19.45945945945946,
+        "recover_ge_50": null,
+        "recover_ge_60": null,
+        "recover_ge_70": null,
+        "recover_ge_80": 0.9459459459459459,
+        "mean_current_price": null,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": null,
+        "mean_minutes_to_worst_price": null,
+        "mean_minutes_to_settlement": null,
+        "mean_adverse_cents_remaining": null,
+        "archetype": "PERSISTENCE_TO_RECOVERY",
+        "mean_maximum_state_depth": 2.945945945945946,
+        "mean_time_spent_negative": 9.45945945945946
+      },
+      {
+        "N_trades": 1,
+        "N_wins": 0,
+        "N_losses": 1,
+        "win_rate": 0.0,
+        "loss_rate": 1.0,
+        "mean_pnl_hold_after_state": -80.0,
+        "median_pnl_hold_after_state": -80.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": null,
+        "mean_future_MFE": null,
+        "recover_ge_50": null,
+        "recover_ge_60": null,
+        "recover_ge_70": null,
+        "recover_ge_80": null,
+        "mean_current_price": null,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": null,
+        "mean_minutes_to_worst_price": null,
+        "mean_minutes_to_settlement": null,
+        "mean_adverse_cents_remaining": null,
+        "archetype": "UNRESOLVED_PATH",
+        "mean_maximum_state_depth": 1.0,
+        "mean_time_spent_negative": 1.0
+      }
+    ],
+    "depth": [
+      {
+        "N_trades": 68,
+        "N_wins": 59,
+        "N_losses": 9,
+        "win_rate": 0.8676470588235294,
+        "loss_rate": 0.1323529411764706,
+        "mean_pnl_hold_after_state": 6.764705882352941,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 13.661764705882353,
+        "mean_future_MFE": 10.264705882352942,
+        "recover_ge_50": 1.0,
+        "recover_ge_60": 1.0,
+        "recover_ge_70": 0.9852941176470589,
+        "recover_ge_80": 0.9264705882352942,
+        "mean_current_price": 84.20588235294117,
+        "mean_price_travel": 2.1470588235294117,
+        "mean_minutes_to_T40": 0.0,
+        "mean_minutes_to_worst_price": 5.294117647058823,
+        "mean_minutes_to_settlement": 20.676470588235293,
+        "mean_adverse_cents_remaining": 13.661764705882353,
+        "core_state": "HEALTHY",
+        "state_depth": 0,
+        "economically_ordered": false,
+        "note": "STATE DEPTH NOT ECONOMICALLY ORDERED"
+      },
+      {
+        "N_trades": 67,
+        "N_wins": 53,
+        "N_losses": 14,
+        "win_rate": 0.7910447761194029,
+        "loss_rate": 0.208955223880597,
+        "mean_pnl_hold_after_state": -0.8955223880597015,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 11.681818181818182,
+        "mean_future_MFE": 15.287878787878787,
+        "recover_ge_50": 1.0,
+        "recover_ge_60": 0.9545454545454546,
+        "recover_ge_70": 0.8787878787878788,
+        "recover_ge_80": 0.7878787878787878,
+        "mean_current_price": 74.31343283582089,
+        "mean_price_travel": -7.6716417910447765,
+        "mean_minutes_to_T40": 0.08955223880597014,
+        "mean_minutes_to_worst_price": 5.014925373134329,
+        "mean_minutes_to_settlement": 17.761194029850746,
+        "mean_adverse_cents_remaining": 11.681818181818182,
+        "core_state": "WATCH_NEGATIVE",
+        "state_depth": 1,
+        "economically_ordered": false,
+        "note": "STATE DEPTH NOT ECONOMICALLY ORDERED"
+      },
+      {
+        "N_trades": 52,
+        "N_wins": 43,
+        "N_losses": 9,
+        "win_rate": 0.8269230769230769,
+        "loss_rate": 0.17307692307692307,
+        "mean_pnl_hold_after_state": 2.6923076923076925,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 0.9807692307692307,
+        "mean_future_MAE": 11.58,
+        "mean_future_MFE": 12.86,
+        "recover_ge_50": 0.98,
+        "recover_ge_60": 0.9,
+        "recover_ge_70": 0.84,
+        "recover_ge_80": 0.8,
+        "mean_current_price": 76.11538461538461,
+        "mean_price_travel": -5.961538461538462,
+        "mean_minutes_to_T40": 0.0784313725490196,
+        "mean_minutes_to_worst_price": 4.230769230769231,
+        "mean_minutes_to_settlement": 16.76923076923077,
+        "mean_adverse_cents_remaining": 11.58,
+        "core_state": "PERSISTENCE_2",
+        "state_depth": 2,
+        "economically_ordered": false,
+        "note": "STATE DEPTH NOT ECONOMICALLY ORDERED"
+      },
+      {
+        "N_trades": 49,
+        "N_wins": 41,
+        "N_losses": 8,
+        "win_rate": 0.8367346938775511,
+        "loss_rate": 0.16326530612244897,
+        "mean_pnl_hold_after_state": 3.673469387755102,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 11.291666666666666,
+        "mean_future_MFE": 13.625,
+        "recover_ge_50": 0.9791666666666666,
+        "recover_ge_60": 0.8958333333333334,
+        "recover_ge_70": 0.8541666666666666,
+        "recover_ge_80": 0.8125,
+        "mean_current_price": 76.36734693877551,
+        "mean_price_travel": -5.73469387755102,
+        "mean_minutes_to_T40": 0.08163265306122448,
+        "mean_minutes_to_worst_price": 3.5918367346938775,
+        "mean_minutes_to_settlement": 15.10204081632653,
+        "mean_adverse_cents_remaining": 11.291666666666666,
+        "core_state": "PERSISTENCE_3PLUS",
+        "state_depth": 3,
+        "economically_ordered": false,
+        "note": "STATE DEPTH NOT ECONOMICALLY ORDERED"
+      }
+    ],
+    "ci_overlay": [
+      {
+        "core_state": "HEALTHY",
+        "n_CI_NEGATIVE": 0,
+        "n_CI_CROSSES_ZERO": 11,
+        "mean_pnl_CI_NEGATIVE": null,
+        "mean_pnl_CI_CROSSES_ZERO": 10.909090909090908,
+        "observed_delta": null,
+        "ci": [
+          null,
+          null
+        ],
+        "classification": "INSUFFICIENT_SAMPLE",
+        "note": "CI overlay does not modify core_state."
+      },
+      {
+        "core_state": "WATCH_NEGATIVE",
+        "n_CI_NEGATIVE": 32,
+        "n_CI_CROSSES_ZERO": 35,
+        "mean_pnl_CI_NEGATIVE": -8.125,
+        "mean_pnl_CI_CROSSES_ZERO": 5.714285714285714,
+        "observed_delta": -13.839285714285715,
+        "ci": [
+          -32.595982142857146,
+          4.464858058608058
+        ],
+        "classification": "MIXED",
+        "note": "CI overlay does not modify core_state."
+      },
+      {
+        "core_state": "PERSISTENCE_2",
+        "n_CI_NEGATIVE": 16,
+        "n_CI_CROSSES_ZERO": 36,
+        "mean_pnl_CI_NEGATIVE": -17.5,
+        "mean_pnl_CI_CROSSES_ZERO": 11.666666666666666,
+        "observed_delta": -29.166666666666664,
+        "ci": [
+          -55.76279602750191,
+          -3.7593984962406006
+        ],
+        "classification": "SUPPORTED",
+        "note": "CI overlay does not modify core_state."
+      },
+      {
+        "core_state": "PERSISTENCE_3PLUS",
+        "n_CI_NEGATIVE": 13,
+        "n_CI_CROSSES_ZERO": 36,
+        "mean_pnl_CI_NEGATIVE": -18.46153846153846,
+        "mean_pnl_CI_CROSSES_ZERO": 11.666666666666666,
+        "observed_delta": -30.128205128205124,
+        "ci": [
+          -58.845189238486086,
+          -2.388786764705884
+        ],
+        "classification": "SUPPORTED",
+        "note": "CI overlay does not modify core_state."
+      },
+      {
+        "core_state": "RECOVERING",
+        "n_CI_NEGATIVE": 0,
+        "n_CI_CROSSES_ZERO": 24,
+        "mean_pnl_CI_NEGATIVE": null,
+        "mean_pnl_CI_CROSSES_ZERO": -0.8333333333333334,
+        "observed_delta": null,
+        "ci": [
+          null,
+          null
+        ],
+        "classification": "INSUFFICIENT_SAMPLE",
+        "note": "CI overlay does not modify core_state."
+      },
+      {
+        "core_state": "HEALTHY_AFTER_RECOVERY",
+        "n_CI_NEGATIVE": 0,
+        "n_CI_CROSSES_ZERO": 16,
+        "mean_pnl_CI_NEGATIVE": null,
+        "mean_pnl_CI_CROSSES_ZERO": -5.0,
+        "observed_delta": null,
+        "ci": [
+          null,
+          null
+        ],
+        "classification": "INSUFFICIENT_SAMPLE",
+        "note": "CI overlay does not modify core_state."
+      },
+      {
+        "core_state": "UNRESOLVED",
+        "n_CI_NEGATIVE": 0,
+        "n_CI_CROSSES_ZERO": 0,
+        "mean_pnl_CI_NEGATIVE": null,
+        "mean_pnl_CI_CROSSES_ZERO": null,
+        "observed_delta": null,
+        "ci": [
+          null,
+          null
+        ],
+        "classification": "INSUFFICIENT_SAMPLE",
+        "note": "CI overlay does not modify core_state."
+      }
+    ],
+    "support_overlay": [
+      {
+        "core_state": "HEALTHY",
+        "N_trades": 68,
+        "LOW_HISTORICAL_SUPPORT_rate": 0.029411764705882353,
+        "mean_ESS": 24.80856707067594,
+        "mean_distance": 1.0264621547882395,
+        "median_distance": 1.002365763144714,
+        "mean_feature_coverage": 0.9356351236146633,
+        "note": "Low-support rows remain included."
+      },
+      {
+        "core_state": "WATCH_NEGATIVE",
+        "N_trades": 67,
+        "LOW_HISTORICAL_SUPPORT_rate": 0.0,
+        "mean_ESS": 24.717819573070305,
+        "mean_distance": 1.1695386468256908,
+        "median_distance": 1.1718123218553167,
+        "mean_feature_coverage": 0.9569543586415746,
+        "note": "Low-support rows remain included."
+      },
+      {
+        "core_state": "PERSISTENCE_2",
+        "N_trades": 52,
+        "LOW_HISTORICAL_SUPPORT_rate": 0.0,
+        "mean_ESS": 24.799840867848477,
+        "mean_distance": 1.4635157992119017,
+        "median_distance": 1.4810805269221219,
+        "mean_feature_coverage": 0.9551282051282052,
+        "note": "Low-support rows remain included."
+      },
+      {
+        "core_state": "PERSISTENCE_3PLUS",
+        "N_trades": 49,
+        "LOW_HISTORICAL_SUPPORT_rate": 0.0,
+        "mean_ESS": 24.82286436279043,
+        "mean_distance": 1.4965979748077067,
+        "median_distance": 1.5152612994595662,
+        "mean_feature_coverage": 0.9529724933451642,
+        "note": "Low-support rows remain included."
+      },
+      {
+        "core_state": "RECOVERING",
+        "N_trades": 51,
+        "LOW_HISTORICAL_SUPPORT_rate": 0.0196078431372549,
+        "mean_ESS": 24.575825642753387,
+        "mean_distance": 1.0706625545529669,
+        "median_distance": 1.0913896290720202,
+        "mean_feature_coverage": 0.9766979255470304,
+        "note": "Low-support rows remain included."
+      },
+      {
+        "core_state": "HEALTHY_AFTER_RECOVERY",
+        "N_trades": 21,
+        "LOW_HISTORICAL_SUPPORT_rate": 0.0,
+        "mean_ESS": 24.85058129683237,
+        "mean_distance": 1.3785355392505347,
+        "median_distance": 1.3962371520238803,
+        "mean_feature_coverage": 0.9537612146307799,
+        "note": "Low-support rows remain included."
+      },
+      {
+        "core_state": "UNRESOLVED",
+        "N_trades": 74,
+        "LOW_HISTORICAL_SUPPORT_rate": 0.0,
+        "mean_ESS": null,
+        "mean_distance": null,
+        "median_distance": null,
+        "mean_feature_coverage": 0.30434782608695654,
+        "note": "Low-support rows remain included."
+      }
+    ],
+    "remaining_damage": [
+      {
+        "N_trades": 67,
+        "N_wins": 53,
+        "N_losses": 14,
+        "win_rate": 0.7910447761194029,
+        "loss_rate": 0.208955223880597,
+        "mean_pnl_hold_after_state": -0.8955223880597015,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 11.681818181818182,
+        "mean_future_MFE": 15.287878787878787,
+        "recover_ge_50": 1.0,
+        "recover_ge_60": 0.9545454545454546,
+        "recover_ge_70": 0.8787878787878788,
+        "recover_ge_80": 0.7878787878787878,
+        "mean_current_price": 74.31343283582089,
+        "mean_price_travel": -7.6716417910447765,
+        "mean_minutes_to_T40": 0.08955223880597014,
+        "mean_minutes_to_worst_price": 5.014925373134329,
+        "mean_minutes_to_settlement": 17.761194029850746,
+        "mean_adverse_cents_remaining": 11.681818181818182,
+        "core_state": "WATCH_NEGATIVE",
+        "mean_price_at_state": 74.31343283582089
+      },
+      {
+        "N_trades": 52,
+        "N_wins": 43,
+        "N_losses": 9,
+        "win_rate": 0.8269230769230769,
+        "loss_rate": 0.17307692307692307,
+        "mean_pnl_hold_after_state": 2.6923076923076925,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 0.9807692307692307,
+        "mean_future_MAE": 11.58,
+        "mean_future_MFE": 12.86,
+        "recover_ge_50": 0.98,
+        "recover_ge_60": 0.9,
+        "recover_ge_70": 0.84,
+        "recover_ge_80": 0.8,
+        "mean_current_price": 76.11538461538461,
+        "mean_price_travel": -5.961538461538462,
+        "mean_minutes_to_T40": 0.0784313725490196,
+        "mean_minutes_to_worst_price": 4.230769230769231,
+        "mean_minutes_to_settlement": 16.76923076923077,
+        "mean_adverse_cents_remaining": 11.58,
+        "core_state": "PERSISTENCE_2",
+        "mean_price_at_state": 76.11538461538461
+      },
+      {
+        "N_trades": 49,
+        "N_wins": 41,
+        "N_losses": 8,
+        "win_rate": 0.8367346938775511,
+        "loss_rate": 0.16326530612244897,
+        "mean_pnl_hold_after_state": 3.673469387755102,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 11.291666666666666,
+        "mean_future_MFE": 13.625,
+        "recover_ge_50": 0.9791666666666666,
+        "recover_ge_60": 0.8958333333333334,
+        "recover_ge_70": 0.8541666666666666,
+        "recover_ge_80": 0.8125,
+        "mean_current_price": 76.36734693877551,
+        "mean_price_travel": -5.73469387755102,
+        "mean_minutes_to_T40": 0.08163265306122448,
+        "mean_minutes_to_worst_price": 3.5918367346938775,
+        "mean_minutes_to_settlement": 15.10204081632653,
+        "mean_adverse_cents_remaining": 11.291666666666666,
+        "core_state": "PERSISTENCE_3PLUS",
+        "mean_price_at_state": 76.36734693877551
+      },
+      {
+        "N_trades": 51,
+        "N_wins": 44,
+        "N_losses": 7,
+        "win_rate": 0.8627450980392157,
+        "loss_rate": 0.13725490196078433,
+        "mean_pnl_hold_after_state": 6.2745098039215685,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 0.9803921568627451,
+        "mean_future_MAE": 17.161290322580644,
+        "mean_future_MFE": 9.935483870967742,
+        "recover_ge_50": 1.0,
+        "recover_ge_60": 1.0,
+        "recover_ge_70": 0.967741935483871,
+        "recover_ge_80": 0.8387096774193549,
+        "mean_current_price": 88.47058823529412,
+        "mean_price_travel": 6.470588235294118,
+        "mean_minutes_to_T40": 0.08,
+        "mean_minutes_to_worst_price": 3.019607843137255,
+        "mean_minutes_to_settlement": 8.03921568627451,
+        "mean_adverse_cents_remaining": 17.161290322580644,
+        "core_state": "RECOVERING",
+        "mean_price_at_state": 88.47058823529412
+      }
+    ],
+    "timing_summary": [
+      {
+        "N_trades": 53,
+        "N_wins": 53,
+        "N_losses": 0,
+        "win_rate": 1.0,
+        "loss_rate": 0.0,
+        "mean_pnl_hold_after_state": 20.0,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 4.415094339622642,
+        "mean_future_MFE": 16.962264150943398,
+        "recover_ge_50": 1.0,
+        "recover_ge_60": 0.9811320754716981,
+        "recover_ge_70": 0.9622641509433962,
+        "recover_ge_80": 0.9056603773584906,
+        "mean_current_price": 77.58490566037736,
+        "mean_price_travel": -4.490566037735849,
+        "mean_minutes_to_T40": 0.11320754716981132,
+        "mean_minutes_to_worst_price": 2.830188679245283,
+        "mean_minutes_to_settlement": 18.641509433962263,
+        "mean_adverse_cents_remaining": 4.415094339622642,
+        "core_state": "WATCH_NEGATIVE",
+        "eventual_result": "WIN"
+      },
+      {
+        "N_trades": 14,
+        "N_wins": 0,
+        "N_losses": 14,
+        "win_rate": 0.0,
+        "loss_rate": 1.0,
+        "mean_pnl_hold_after_state": -80.0,
+        "median_pnl_hold_after_state": -80.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 41.30769230769231,
+        "mean_future_MFE": 8.461538461538462,
+        "recover_ge_50": 1.0,
+        "recover_ge_60": 0.8461538461538461,
+        "recover_ge_70": 0.5384615384615384,
+        "recover_ge_80": 0.3076923076923077,
+        "mean_current_price": 61.92857142857143,
+        "mean_price_travel": -19.714285714285715,
+        "mean_minutes_to_T40": 0.0,
+        "mean_minutes_to_worst_price": 13.285714285714286,
+        "mean_minutes_to_settlement": 14.428571428571429,
+        "mean_adverse_cents_remaining": 41.30769230769231,
+        "core_state": "WATCH_NEGATIVE",
+        "eventual_result": "LOSS"
+      },
+      {
+        "N_trades": 43,
+        "N_wins": 43,
+        "N_losses": 0,
+        "win_rate": 1.0,
+        "loss_rate": 0.0,
+        "mean_pnl_hold_after_state": 20.0,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 0.9767441860465116,
+        "mean_future_MAE": 4.666666666666667,
+        "mean_future_MFE": 14.857142857142858,
+        "recover_ge_50": 0.9761904761904762,
+        "recover_ge_60": 0.9285714285714286,
+        "recover_ge_70": 0.9285714285714286,
+        "recover_ge_80": 0.8809523809523809,
+        "mean_current_price": 78.11627906976744,
+        "mean_price_travel": -4.069767441860465,
+        "mean_minutes_to_T40": 0.09523809523809523,
+        "mean_minutes_to_worst_price": 2.511627906976744,
+        "mean_minutes_to_settlement": 17.441860465116278,
+        "mean_adverse_cents_remaining": 4.666666666666667,
+        "core_state": "PERSISTENCE_2",
+        "eventual_result": "WIN"
+      },
+      {
+        "N_trades": 9,
+        "N_wins": 0,
+        "N_losses": 9,
+        "win_rate": 0.0,
+        "loss_rate": 1.0,
+        "mean_pnl_hold_after_state": -80.0,
+        "median_pnl_hold_after_state": -80.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 47.875,
+        "mean_future_MFE": 2.375,
+        "recover_ge_50": 1.0,
+        "recover_ge_60": 0.75,
+        "recover_ge_70": 0.375,
+        "recover_ge_80": 0.375,
+        "mean_current_price": 66.55555555555556,
+        "mean_price_travel": -15.0,
+        "mean_minutes_to_T40": 0.0,
+        "mean_minutes_to_worst_price": 12.444444444444445,
+        "mean_minutes_to_settlement": 13.555555555555555,
+        "mean_adverse_cents_remaining": 47.875,
+        "core_state": "PERSISTENCE_2",
+        "eventual_result": "LOSS"
+      },
+      {
+        "N_trades": 41,
+        "N_wins": 41,
+        "N_losses": 0,
+        "win_rate": 1.0,
+        "loss_rate": 0.0,
+        "mean_pnl_hold_after_state": 20.0,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 3.8780487804878048,
+        "mean_future_MFE": 15.487804878048781,
+        "recover_ge_50": 0.975609756097561,
+        "recover_ge_60": 0.926829268292683,
+        "recover_ge_70": 0.926829268292683,
+        "recover_ge_80": 0.8780487804878049,
+        "mean_current_price": 77.60975609756098,
+        "mean_price_travel": -4.585365853658536,
+        "mean_minutes_to_T40": 0.0975609756097561,
+        "mean_minutes_to_worst_price": 1.853658536585366,
+        "mean_minutes_to_settlement": 15.463414634146341,
+        "mean_adverse_cents_remaining": 3.8780487804878048,
+        "core_state": "PERSISTENCE_3PLUS",
+        "eventual_result": "WIN"
+      },
+      {
+        "N_trades": 8,
+        "N_wins": 0,
+        "N_losses": 8,
+        "win_rate": 0.0,
+        "loss_rate": 1.0,
+        "mean_pnl_hold_after_state": -80.0,
+        "median_pnl_hold_after_state": -80.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 54.714285714285715,
+        "mean_future_MFE": 2.7142857142857144,
+        "recover_ge_50": 1.0,
+        "recover_ge_60": 0.7142857142857143,
+        "recover_ge_70": 0.42857142857142855,
+        "recover_ge_80": 0.42857142857142855,
+        "mean_current_price": 70.0,
+        "mean_price_travel": -11.625,
+        "mean_minutes_to_T40": 0.0,
+        "mean_minutes_to_worst_price": 12.5,
+        "mean_minutes_to_settlement": 13.25,
+        "mean_adverse_cents_remaining": 54.714285714285715,
+        "core_state": "PERSISTENCE_3PLUS",
+        "eventual_result": "LOSS"
+      },
+      {
+        "N_trades": 44,
+        "N_wins": 44,
+        "N_losses": 0,
+        "win_rate": 1.0,
+        "loss_rate": 0.0,
+        "mean_pnl_hold_after_state": 20.0,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 0.9772727272727273,
+        "mean_future_MAE": 5.041666666666667,
+        "mean_future_MFE": 12.916666666666666,
+        "recover_ge_50": 1.0,
+        "recover_ge_60": 1.0,
+        "recover_ge_70": 1.0,
+        "recover_ge_80": 0.9583333333333334,
+        "mean_current_price": 90.06818181818181,
+        "mean_price_travel": 7.909090909090909,
+        "mean_minutes_to_T40": 0.09302325581395349,
+        "mean_minutes_to_worst_price": 1.4090909090909092,
+        "mean_minutes_to_settlement": 7.136363636363637,
+        "mean_adverse_cents_remaining": 5.041666666666667,
+        "core_state": "RECOVERING",
+        "eventual_result": "WIN"
+      },
+      {
+        "N_trades": 7,
+        "N_wins": 0,
+        "N_losses": 7,
+        "win_rate": 0.0,
+        "loss_rate": 1.0,
+        "mean_pnl_hold_after_state": -80.0,
+        "median_pnl_hold_after_state": -80.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 58.714285714285715,
+        "mean_future_MFE": -0.2857142857142857,
+        "recover_ge_50": 1.0,
+        "recover_ge_60": 1.0,
+        "recover_ge_70": 0.8571428571428571,
+        "recover_ge_80": 0.42857142857142855,
+        "mean_current_price": 78.42857142857143,
+        "mean_price_travel": -2.5714285714285716,
+        "mean_minutes_to_T40": 0.0,
+        "mean_minutes_to_worst_price": 13.142857142857142,
+        "mean_minutes_to_settlement": 13.714285714285714,
+        "mean_adverse_cents_remaining": 58.714285714285715,
+        "core_state": "RECOVERING",
+        "eventual_result": "LOSS"
+      },
+      {
+        "N_trades": 16,
+        "N_wins": 16,
+        "N_losses": 0,
+        "win_rate": 1.0,
+        "loss_rate": 0.0,
+        "mean_pnl_hold_after_state": 20.0,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 10.928571428571429,
+        "mean_future_MFE": 8.285714285714286,
+        "recover_ge_50": 1.0,
+        "recover_ge_60": 0.9285714285714286,
+        "recover_ge_70": 0.9285714285714286,
+        "recover_ge_80": 0.9285714285714286,
+        "mean_current_price": 86.6875,
+        "mean_price_travel": 4.6875,
+        "mean_minutes_to_T40": 0.25,
+        "mean_minutes_to_worst_price": 2.25,
+        "mean_minutes_to_settlement": 12.125,
+        "mean_adverse_cents_remaining": 10.928571428571429,
+        "core_state": "HEALTHY_AFTER_RECOVERY",
+        "eventual_result": "WIN"
+      },
+      {
+        "N_trades": 5,
+        "N_wins": 0,
+        "N_losses": 5,
+        "win_rate": 0.0,
+        "loss_rate": 1.0,
+        "mean_pnl_hold_after_state": -80.0,
+        "median_pnl_hold_after_state": -80.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 48.4,
+        "mean_future_MFE": -14.8,
+        "recover_ge_50": 0.8,
+        "recover_ge_60": 0.8,
+        "recover_ge_70": 0.6,
+        "recover_ge_80": 0.0,
+        "mean_current_price": 72.6,
+        "mean_price_travel": -8.2,
+        "mean_minutes_to_T40": 0.0,
+        "mean_minutes_to_worst_price": 10.4,
+        "mean_minutes_to_settlement": 10.8,
+        "mean_adverse_cents_remaining": 48.4,
+        "core_state": "HEALTHY_AFTER_RECOVERY",
+        "eventual_result": "LOSS"
+      }
+    ],
+    "timing_gate": "SUPPORTED"
+  },
+  "B": {
+    "experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+    "n_discovery": 69,
+    "populations": [
+      {
+        "core_state": "HEALTHY",
+        "N_state_rows": 78,
+        "N_trades_entering": 51,
+        "pct_discovery_trades": 0.7391304347826086
+      },
+      {
+        "core_state": "WATCH_NEGATIVE",
+        "N_state_rows": 24,
+        "N_trades_entering": 22,
+        "pct_discovery_trades": 0.3188405797101449
+      },
+      {
+        "core_state": "PERSISTENCE_2",
+        "N_state_rows": 6,
+        "N_trades_entering": 6,
+        "pct_discovery_trades": 0.08695652173913043
+      },
+      {
+        "core_state": "PERSISTENCE_3PLUS",
+        "N_state_rows": 9,
+        "N_trades_entering": 5,
+        "pct_discovery_trades": 0.07246376811594203
+      },
+      {
+        "core_state": "RECOVERING",
+        "N_state_rows": 0,
+        "N_trades_entering": 0,
+        "pct_discovery_trades": 0.0
+      },
+      {
+        "core_state": "HEALTHY_AFTER_RECOVERY",
+        "N_state_rows": 0,
+        "N_trades_entering": 0,
+        "pct_discovery_trades": 0.0
+      },
+      {
+        "core_state": "UNRESOLVED",
+        "N_state_rows": 429,
+        "N_trades_entering": 69,
+        "pct_discovery_trades": 1.0
+      }
+    ],
+    "economics": [
+      {
+        "N_trades": 51,
+        "N_wins": 49,
+        "N_losses": 2,
+        "win_rate": 0.9607843137254902,
+        "loss_rate": 0.0392156862745098,
+        "mean_pnl_hold_after_state": 16.07843137254902,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 0.9803921568627451,
+        "mean_future_MAE": 24.40740740740741,
+        "mean_future_MFE": 5.555555555555555,
+        "recover_ge_50": 0.9629629629629629,
+        "recover_ge_60": 0.9629629629629629,
+        "recover_ge_70": 0.9259259259259259,
+        "recover_ge_80": 0.8518518518518519,
+        "mean_current_price": 92.17647058823529,
+        "mean_price_travel": 10.117647058823529,
+        "mean_minutes_to_T40": 0.0,
+        "mean_minutes_to_worst_price": 1.411764705882353,
+        "mean_minutes_to_settlement": 5.1568627450980395,
+        "mean_adverse_cents_remaining": 24.40740740740741,
+        "core_state": "HEALTHY"
+      },
+      {
+        "N_trades": 22,
+        "N_wins": 10,
+        "N_losses": 12,
+        "win_rate": 0.45454545454545453,
+        "loss_rate": 0.5454545454545454,
+        "mean_pnl_hold_after_state": -34.54545454545455,
+        "median_pnl_hold_after_state": -80.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 17.714285714285715,
+        "mean_future_MFE": 1.7857142857142858,
+        "recover_ge_50": 0.7142857142857143,
+        "recover_ge_60": 0.6428571428571429,
+        "recover_ge_70": 0.5714285714285714,
+        "recover_ge_80": 0.35714285714285715,
+        "mean_current_price": 52.72727272727273,
+        "mean_price_travel": -29.40909090909091,
+        "mean_minutes_to_T40": 0.0,
+        "mean_minutes_to_worst_price": 1.3636363636363635,
+        "mean_minutes_to_settlement": 3.772727272727273,
+        "mean_adverse_cents_remaining": 17.714285714285715,
+        "core_state": "WATCH_NEGATIVE"
+      },
+      {
+        "N_trades": 6,
+        "N_wins": 2,
+        "N_losses": 4,
+        "win_rate": 0.3333333333333333,
+        "loss_rate": 0.6666666666666666,
+        "mean_pnl_hold_after_state": -46.666666666666664,
+        "median_pnl_hold_after_state": -80.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 0.0,
+        "mean_future_MFE": 1.4,
+        "recover_ge_50": 0.2,
+        "recover_ge_60": 0.0,
+        "recover_ge_70": 0.0,
+        "recover_ge_80": 0.0,
+        "mean_current_price": 33.833333333333336,
+        "mean_price_travel": -48.333333333333336,
+        "mean_minutes_to_T40": 0.0,
+        "mean_minutes_to_worst_price": 0.0,
+        "mean_minutes_to_settlement": 3.1666666666666665,
+        "mean_adverse_cents_remaining": 0.0,
+        "core_state": "PERSISTENCE_2"
+      },
+      {
+        "N_trades": 5,
+        "N_wins": 2,
+        "N_losses": 3,
+        "win_rate": 0.4,
+        "loss_rate": 0.6,
+        "mean_pnl_hold_after_state": -40.0,
+        "median_pnl_hold_after_state": -80.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 0.0,
+        "mean_future_MFE": 3.5,
+        "recover_ge_50": 0.0,
+        "recover_ge_60": 0.0,
+        "recover_ge_70": 0.0,
+        "recover_ge_80": 0.0,
+        "mean_current_price": 37.6,
+        "mean_price_travel": -44.6,
+        "mean_minutes_to_T40": 0.0,
+        "mean_minutes_to_worst_price": 0.0,
+        "mean_minutes_to_settlement": 1.8,
+        "mean_adverse_cents_remaining": 0.0,
+        "core_state": "PERSISTENCE_3PLUS"
+      },
+      {
+        "N_trades": 0,
+        "N_wins": 0,
+        "N_losses": 0,
+        "win_rate": null,
+        "loss_rate": null,
+        "mean_pnl_hold_after_state": null,
+        "median_pnl_hold_after_state": null,
+        "T40_rate": null,
+        "mean_future_MAE": null,
+        "mean_future_MFE": null,
+        "recover_ge_50": null,
+        "recover_ge_60": null,
+        "recover_ge_70": null,
+        "recover_ge_80": null,
+        "mean_current_price": null,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": null,
+        "mean_minutes_to_worst_price": null,
+        "mean_minutes_to_settlement": null,
+        "mean_adverse_cents_remaining": null,
+        "core_state": "RECOVERING"
+      },
+      {
+        "N_trades": 0,
+        "N_wins": 0,
+        "N_losses": 0,
+        "win_rate": null,
+        "loss_rate": null,
+        "mean_pnl_hold_after_state": null,
+        "median_pnl_hold_after_state": null,
+        "T40_rate": null,
+        "mean_future_MAE": null,
+        "mean_future_MFE": null,
+        "recover_ge_50": null,
+        "recover_ge_60": null,
+        "recover_ge_70": null,
+        "recover_ge_80": null,
+        "mean_current_price": null,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": null,
+        "mean_minutes_to_worst_price": null,
+        "mean_minutes_to_settlement": null,
+        "mean_adverse_cents_remaining": null,
+        "core_state": "HEALTHY_AFTER_RECOVERY"
+      },
+      {
+        "N_trades": 69,
+        "N_wins": 57,
+        "N_losses": 12,
+        "win_rate": 0.8260869565217391,
+        "loss_rate": 0.17391304347826086,
+        "mean_pnl_hold_after_state": 2.608695652173913,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 0.8985507246376812,
+        "mean_future_MAE": 8.391304347826088,
+        "mean_future_MFE": 25.536231884057973,
+        "recover_ge_50": 0.9565217391304348,
+        "recover_ge_60": 0.9130434782608695,
+        "recover_ge_70": 0.8405797101449275,
+        "recover_ge_80": 0.7246376811594203,
+        "mean_current_price": 63.21739130434783,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": 10.096774193548388,
+        "mean_minutes_to_worst_price": 2.260869565217391,
+        "mean_minutes_to_settlement": 13.521739130434783,
+        "mean_adverse_cents_remaining": 8.391304347826088,
+        "core_state": "UNRESOLVED"
+      }
+    ],
+    "contrasts": [
+      {
+        "contrast": "WATCH_NEGATIVE vs HEALTHY",
+        "left_state": "WATCH_NEGATIVE",
+        "right_state": "HEALTHY",
+        "metric": "pnl",
+        "n_left": 22,
+        "n_right": 51,
+        "observed_delta": -50.623885918003566,
+        "ci": [
+          -72.7790404040404,
+          -30.427616747181972
+        ],
+        "classification": "SUPPORTED"
+      },
+      {
+        "contrast": "WATCH_NEGATIVE vs HEALTHY",
+        "left_state": "WATCH_NEGATIVE",
+        "right_state": "HEALTHY",
+        "metric": "loss_rate",
+        "n_left": 22,
+        "n_right": 51,
+        "observed_delta": 0.5062388591800356,
+        "ci": [
+          0.3042761674718197,
+          0.727790404040404
+        ],
+        "classification": "SUPPORTED"
+      },
+      {
+        "contrast": "WATCH_NEGATIVE vs HEALTHY",
+        "left_state": "WATCH_NEGATIVE",
+        "right_state": "HEALTHY",
+        "metric": "mae",
+        "n_left": 22,
+        "n_right": 51,
+        "observed_delta": -6.693121693121693,
+        "ci": [
+          -17.455166666666667,
+          5.987933862433861
+        ],
+        "classification": "MIXED"
+      },
+      {
+        "contrast": "WATCH_NEGATIVE vs HEALTHY",
+        "left_state": "WATCH_NEGATIVE",
+        "right_state": "HEALTHY",
+        "metric": "mfe",
+        "n_left": 22,
+        "n_right": 51,
+        "observed_delta": -3.7698412698412698,
+        "ci": [
+          -13.489762253875156,
+          5.942035170711641
+        ],
+        "classification": "MIXED"
+      },
+      {
+        "contrast": "WATCH_NEGATIVE vs HEALTHY",
+        "left_state": "WATCH_NEGATIVE",
+        "right_state": "HEALTHY",
+        "metric": "recover_ge_80",
+        "n_left": 22,
+        "n_right": 51,
+        "observed_delta": -0.2237076648841355,
+        "ci": [
+          -0.4571535982814179,
+          -0.006750000000000155
+        ],
+        "classification": "SUPPORTED"
+      },
+      {
+        "contrast": "PERSISTENCE_2 vs WATCH_NEGATIVE",
+        "left_state": "PERSISTENCE_2",
+        "right_state": "WATCH_NEGATIVE",
+        "metric": "pnl",
+        "n_left": 6,
+        "n_right": 22,
+        "observed_delta": -12.121212121212118,
+        "ci": [
+          -50.0,
+          25.462121212121204
+        ],
+        "classification": "MIXED"
+      },
+      {
+        "contrast": "PERSISTENCE_2 vs WATCH_NEGATIVE",
+        "left_state": "PERSISTENCE_2",
+        "right_state": "WATCH_NEGATIVE",
+        "metric": "loss_rate",
+        "n_left": 6,
+        "n_right": 22,
+        "observed_delta": 0.12121212121212122,
+        "ci": [
+          -0.2546212121212121,
+          0.5
+        ],
+        "classification": "MIXED"
+      },
+      {
+        "contrast": "PERSISTENCE_2 vs WATCH_NEGATIVE",
+        "left_state": "PERSISTENCE_2",
+        "right_state": "WATCH_NEGATIVE",
+        "metric": "mae",
+        "n_left": 6,
+        "n_right": 22,
+        "observed_delta": -17.714285714285715,
+        "ci": [
+          -29.942857142857143,
+          -8.278571428571427
+        ],
+        "classification": "SUPPORTED"
+      },
+      {
+        "contrast": "PERSISTENCE_2 vs WATCH_NEGATIVE",
+        "left_state": "PERSISTENCE_2",
+        "right_state": "WATCH_NEGATIVE",
+        "metric": "mfe",
+        "n_left": 6,
+        "n_right": 22,
+        "observed_delta": -0.3857142857142859,
+        "ci": [
+          -9.878571428571428,
+          9.107142857142858
+        ],
+        "classification": "MIXED"
+      },
+      {
+        "contrast": "PERSISTENCE_2 vs WATCH_NEGATIVE",
+        "left_state": "PERSISTENCE_2",
+        "right_state": "WATCH_NEGATIVE",
+        "metric": "recover_ge_80",
+        "n_left": 6,
+        "n_right": 22,
+        "observed_delta": -0.22727272727272727,
+        "ci": [
+          -0.4090909090909091,
+          -0.045454545454545456
+        ],
+        "classification": "SUPPORTED"
+      },
+      {
+        "contrast": "PERSISTENCE_3PLUS vs PERSISTENCE_2",
+        "left_state": "PERSISTENCE_3PLUS",
+        "right_state": "PERSISTENCE_2",
+        "metric": "pnl",
+        "n_left": 5,
+        "n_right": 6,
+        "observed_delta": 6.666666666666664,
+        "ci": [
+          0.0,
+          33.33333333333333
+        ],
+        "classification": "MIXED"
+      },
+      {
+        "contrast": "PERSISTENCE_3PLUS vs PERSISTENCE_2",
+        "left_state": "PERSISTENCE_3PLUS",
+        "right_state": "PERSISTENCE_2",
+        "metric": "loss_rate",
+        "n_left": 5,
+        "n_right": 6,
+        "observed_delta": -0.06666666666666665,
+        "ci": [
+          -0.3333333333333333,
+          0.0
+        ],
+        "classification": "MIXED"
+      },
+      {
+        "contrast": "PERSISTENCE_3PLUS vs PERSISTENCE_2",
+        "left_state": "PERSISTENCE_3PLUS",
+        "right_state": "PERSISTENCE_2",
+        "metric": "mae",
+        "n_left": 5,
+        "n_right": 6,
+        "observed_delta": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "classification": "MIXED"
+      },
+      {
+        "contrast": "PERSISTENCE_3PLUS vs PERSISTENCE_2",
+        "left_state": "PERSISTENCE_3PLUS",
+        "right_state": "PERSISTENCE_2",
+        "metric": "mfe",
+        "n_left": 5,
+        "n_right": 6,
+        "observed_delta": 2.1,
+        "ci": [
+          0.0,
+          5.6
+        ],
+        "classification": "MIXED"
+      },
+      {
+        "contrast": "PERSISTENCE_3PLUS vs PERSISTENCE_2",
+        "left_state": "PERSISTENCE_3PLUS",
+        "right_state": "PERSISTENCE_2",
+        "metric": "recover_ge_80",
+        "n_left": 5,
+        "n_right": 6,
+        "observed_delta": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "classification": "MIXED"
+      },
+      {
+        "contrast": "RECOVERING vs PERSISTENCE_2",
+        "left_state": "RECOVERING",
+        "right_state": "PERSISTENCE_2",
+        "metric": "pnl",
+        "n_left": 0,
+        "n_right": 6,
+        "observed_delta": null,
+        "ci": [
+          null,
+          null
+        ],
+        "classification": "INSUFFICIENT_SAMPLE"
+      },
+      {
+        "contrast": "RECOVERING vs PERSISTENCE_2",
+        "left_state": "RECOVERING",
+        "right_state": "PERSISTENCE_2",
+        "metric": "loss_rate",
+        "n_left": 0,
+        "n_right": 6,
+        "observed_delta": null,
+        "ci": [
+          null,
+          null
+        ],
+        "classification": "INSUFFICIENT_SAMPLE"
+      },
+      {
+        "contrast": "RECOVERING vs PERSISTENCE_2",
+        "left_state": "RECOVERING",
+        "right_state": "PERSISTENCE_2",
+        "metric": "mae",
+        "n_left": 0,
+        "n_right": 6,
+        "observed_delta": null,
+        "ci": [
+          null,
+          null
+        ],
+        "classification": "INSUFFICIENT_SAMPLE"
+      },
+      {
+        "contrast": "RECOVERING vs PERSISTENCE_2",
+        "left_state": "RECOVERING",
+        "right_state": "PERSISTENCE_2",
+        "metric": "mfe",
+        "n_left": 0,
+        "n_right": 6,
+        "observed_delta": null,
+        "ci": [
+          null,
+          null
+        ],
+        "classification": "INSUFFICIENT_SAMPLE"
+      },
+      {
+        "contrast": "RECOVERING vs PERSISTENCE_2",
+        "left_state": "RECOVERING",
+        "right_state": "PERSISTENCE_2",
+        "metric": "recover_ge_80",
+        "n_left": 0,
+        "n_right": 6,
+        "observed_delta": null,
+        "ci": [
+          null,
+          null
+        ],
+        "classification": "INSUFFICIENT_SAMPLE"
+      },
+      {
+        "contrast": "HEALTHY_AFTER_RECOVERY vs PERSISTENCE_2",
+        "left_state": "HEALTHY_AFTER_RECOVERY",
+        "right_state": "PERSISTENCE_2",
+        "metric": "pnl",
+        "n_left": 0,
+        "n_right": 6,
+        "observed_delta": null,
+        "ci": [
+          null,
+          null
+        ],
+        "classification": "INSUFFICIENT_SAMPLE"
+      },
+      {
+        "contrast": "HEALTHY_AFTER_RECOVERY vs PERSISTENCE_2",
+        "left_state": "HEALTHY_AFTER_RECOVERY",
+        "right_state": "PERSISTENCE_2",
+        "metric": "loss_rate",
+        "n_left": 0,
+        "n_right": 6,
+        "observed_delta": null,
+        "ci": [
+          null,
+          null
+        ],
+        "classification": "INSUFFICIENT_SAMPLE"
+      },
+      {
+        "contrast": "HEALTHY_AFTER_RECOVERY vs PERSISTENCE_2",
+        "left_state": "HEALTHY_AFTER_RECOVERY",
+        "right_state": "PERSISTENCE_2",
+        "metric": "mae",
+        "n_left": 0,
+        "n_right": 6,
+        "observed_delta": null,
+        "ci": [
+          null,
+          null
+        ],
+        "classification": "INSUFFICIENT_SAMPLE"
+      },
+      {
+        "contrast": "HEALTHY_AFTER_RECOVERY vs PERSISTENCE_2",
+        "left_state": "HEALTHY_AFTER_RECOVERY",
+        "right_state": "PERSISTENCE_2",
+        "metric": "mfe",
+        "n_left": 0,
+        "n_right": 6,
+        "observed_delta": null,
+        "ci": [
+          null,
+          null
+        ],
+        "classification": "INSUFFICIENT_SAMPLE"
+      },
+      {
+        "contrast": "HEALTHY_AFTER_RECOVERY vs PERSISTENCE_2",
+        "left_state": "HEALTHY_AFTER_RECOVERY",
+        "right_state": "PERSISTENCE_2",
+        "metric": "recover_ge_80",
+        "n_left": 0,
+        "n_right": 6,
+        "observed_delta": null,
+        "ci": [
+          null,
+          null
+        ],
+        "classification": "INSUFFICIENT_SAMPLE"
+      }
+    ],
+    "ordering": {
+      "classification": "MIXED",
+      "monotonic": false,
+      "by_metric": {
+        "mean_pnl_hold_after_state": false,
+        "loss_rate": false,
+        "mean_future_MAE": false,
+        "mean_future_MFE": false,
+        "recover_ge_80": true
+      },
+      "note": "REPORT NOT MONOTONIC"
+    },
+    "transition_counts": [
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "PRE_ENTRY",
+        "count": 0
+      },
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "HEALTHY",
+        "count": 0
+      },
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 0
+      },
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "PERSISTENCE_2",
+        "count": 0
+      },
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 0
+      },
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "RECOVERING",
+        "count": 0
+      },
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 0
+      },
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "UNRESOLVED",
+        "count": 0
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "PRE_ENTRY",
+        "count": 0
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "HEALTHY",
+        "count": 6
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 3
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "PERSISTENCE_2",
+        "count": 0
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 0
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "RECOVERING",
+        "count": 0
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 0
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "UNRESOLVED",
+        "count": 0
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "PRE_ENTRY",
+        "count": 0
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "HEALTHY",
+        "count": 0
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 0
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "PERSISTENCE_2",
+        "count": 6
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 0
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "RECOVERING",
+        "count": 0
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 0
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "UNRESOLVED",
+        "count": 0
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "PRE_ENTRY",
+        "count": 0
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "HEALTHY",
+        "count": 0
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 0
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "PERSISTENCE_2",
+        "count": 0
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 5
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "RECOVERING",
+        "count": 0
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 0
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "UNRESOLVED",
+        "count": 0
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "PRE_ENTRY",
+        "count": 0
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "HEALTHY",
+        "count": 0
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 0
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "PERSISTENCE_2",
+        "count": 0
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 4
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "RECOVERING",
+        "count": 0
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 0
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "UNRESOLVED",
+        "count": 0
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "PRE_ENTRY",
+        "count": 0
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "HEALTHY",
+        "count": 0
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 0
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "PERSISTENCE_2",
+        "count": 0
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 0
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "RECOVERING",
+        "count": 0
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 0
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "UNRESOLVED",
+        "count": 0
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "PRE_ENTRY",
+        "count": 0
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "HEALTHY",
+        "count": 0
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 0
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "PERSISTENCE_2",
+        "count": 0
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 0
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "RECOVERING",
+        "count": 0
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 0
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "UNRESOLVED",
+        "count": 0
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "PRE_ENTRY",
+        "count": 0
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "HEALTHY",
+        "count": 0
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 0
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "PERSISTENCE_2",
+        "count": 0
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 0
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "RECOVERING",
+        "count": 0
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 0
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "UNRESOLVED",
+        "count": 0
+      }
+    ],
+    "transition_rates": [
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "PRE_ENTRY",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "HEALTHY",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "PERSISTENCE_2",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "RECOVERING",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "PRE_ENTRY",
+        "to_state": "UNRESOLVED",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "PRE_ENTRY",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "HEALTHY",
+        "count": 6,
+        "conditional_frequency": 0.6666666666666666
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 3,
+        "conditional_frequency": 0.3333333333333333
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "PERSISTENCE_2",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "RECOVERING",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "HEALTHY",
+        "to_state": "UNRESOLVED",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "PRE_ENTRY",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "HEALTHY",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "PERSISTENCE_2",
+        "count": 6,
+        "conditional_frequency": 1.0
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "RECOVERING",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "UNRESOLVED",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "PRE_ENTRY",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "HEALTHY",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "PERSISTENCE_2",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 5,
+        "conditional_frequency": 1.0
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "RECOVERING",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "UNRESOLVED",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "PRE_ENTRY",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "HEALTHY",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "PERSISTENCE_2",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 4,
+        "conditional_frequency": 1.0
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "RECOVERING",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "PERSISTENCE_3PLUS",
+        "to_state": "UNRESOLVED",
+        "count": 0,
+        "conditional_frequency": 0.0
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "PRE_ENTRY",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "HEALTHY",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "PERSISTENCE_2",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "RECOVERING",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "RECOVERING",
+        "to_state": "UNRESOLVED",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "PRE_ENTRY",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "HEALTHY",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "PERSISTENCE_2",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "RECOVERING",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "HEALTHY_AFTER_RECOVERY",
+        "to_state": "UNRESOLVED",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "PRE_ENTRY",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "HEALTHY",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "WATCH_NEGATIVE",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "PERSISTENCE_2",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "PERSISTENCE_3PLUS",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "RECOVERING",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "HEALTHY_AFTER_RECOVERY",
+        "count": 0,
+        "conditional_frequency": null
+      },
+      {
+        "from_state": "UNRESOLVED",
+        "to_state": "UNRESOLVED",
+        "count": 0,
+        "conditional_frequency": null
+      }
+    ],
+    "transition_economics": [
+      {
+        "N_trades": 0,
+        "N_wins": 0,
+        "N_losses": 0,
+        "win_rate": null,
+        "loss_rate": null,
+        "mean_pnl_hold_after_state": null,
+        "median_pnl_hold_after_state": null,
+        "T40_rate": null,
+        "mean_future_MAE": null,
+        "mean_future_MFE": null,
+        "recover_ge_50": null,
+        "recover_ge_60": null,
+        "recover_ge_70": null,
+        "recover_ge_80": null,
+        "mean_current_price": null,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": null,
+        "mean_minutes_to_worst_price": null,
+        "mean_minutes_to_settlement": null,
+        "mean_adverse_cents_remaining": null,
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "RECOVERING",
+        "transition": "WATCH_NEGATIVE \u2192 RECOVERING"
+      },
+      {
+        "N_trades": 6,
+        "N_wins": 2,
+        "N_losses": 4,
+        "win_rate": 0.3333333333333333,
+        "loss_rate": 0.6666666666666666,
+        "mean_pnl_hold_after_state": -46.666666666666664,
+        "median_pnl_hold_after_state": -80.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 0.0,
+        "mean_future_MFE": 1.4,
+        "recover_ge_50": null,
+        "recover_ge_60": null,
+        "recover_ge_70": null,
+        "recover_ge_80": 0.0,
+        "mean_current_price": null,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": null,
+        "mean_minutes_to_worst_price": null,
+        "mean_minutes_to_settlement": null,
+        "mean_adverse_cents_remaining": null,
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "PERSISTENCE_2",
+        "transition": "WATCH_NEGATIVE \u2192 PERSISTENCE_2"
+      },
+      {
+        "N_trades": 0,
+        "N_wins": 0,
+        "N_losses": 0,
+        "win_rate": null,
+        "loss_rate": null,
+        "mean_pnl_hold_after_state": null,
+        "median_pnl_hold_after_state": null,
+        "T40_rate": null,
+        "mean_future_MAE": null,
+        "mean_future_MFE": null,
+        "recover_ge_50": null,
+        "recover_ge_60": null,
+        "recover_ge_70": null,
+        "recover_ge_80": null,
+        "mean_current_price": null,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": null,
+        "mean_minutes_to_worst_price": null,
+        "mean_minutes_to_settlement": null,
+        "mean_adverse_cents_remaining": null,
+        "from_state": "PERSISTENCE_2",
+        "to_state": "RECOVERING",
+        "transition": "PERSISTENCE_2 \u2192 RECOVERING"
+      },
+      {
+        "N_trades": 5,
+        "N_wins": 2,
+        "N_losses": 3,
+        "win_rate": 0.4,
+        "loss_rate": 0.6,
+        "mean_pnl_hold_after_state": -40.0,
+        "median_pnl_hold_after_state": -80.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 0.0,
+        "mean_future_MFE": 3.5,
+        "recover_ge_50": null,
+        "recover_ge_60": null,
+        "recover_ge_70": null,
+        "recover_ge_80": 0.0,
+        "mean_current_price": null,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": null,
+        "mean_minutes_to_worst_price": null,
+        "mean_minutes_to_settlement": null,
+        "mean_adverse_cents_remaining": null,
+        "from_state": "PERSISTENCE_2",
+        "to_state": "PERSISTENCE_3PLUS",
+        "transition": "PERSISTENCE_2 \u2192 PERSISTENCE_3PLUS"
+      }
+    ],
+    "transition_branches": [
+      {
+        "contrast": "WATCH_NEGATIVE \u2192 RECOVERING vs WATCH_NEGATIVE \u2192 PERSISTENCE_2",
+        "left_transition": "WATCH_NEGATIVE \u2192 RECOVERING",
+        "right_transition": "WATCH_NEGATIVE \u2192 PERSISTENCE_2",
+        "metric": "pnl",
+        "n_left": 0,
+        "n_right": 6,
+        "observed_delta": null,
+        "ci": [
+          null,
+          null
+        ],
+        "classification": "INSUFFICIENT_SAMPLE"
+      },
+      {
+        "contrast": "WATCH_NEGATIVE \u2192 RECOVERING vs WATCH_NEGATIVE \u2192 PERSISTENCE_2",
+        "left_transition": "WATCH_NEGATIVE \u2192 RECOVERING",
+        "right_transition": "WATCH_NEGATIVE \u2192 PERSISTENCE_2",
+        "metric": "loss_rate",
+        "n_left": 0,
+        "n_right": 6,
+        "observed_delta": null,
+        "ci": [
+          null,
+          null
+        ],
+        "classification": "INSUFFICIENT_SAMPLE"
+      },
+      {
+        "contrast": "PERSISTENCE_2 \u2192 RECOVERING vs PERSISTENCE_2 \u2192 PERSISTENCE_3PLUS",
+        "left_transition": "PERSISTENCE_2 \u2192 RECOVERING",
+        "right_transition": "PERSISTENCE_2 \u2192 PERSISTENCE_3PLUS",
+        "metric": "pnl",
+        "n_left": 0,
+        "n_right": 5,
+        "observed_delta": null,
+        "ci": [
+          null,
+          null
+        ],
+        "classification": "INSUFFICIENT_SAMPLE"
+      },
+      {
+        "contrast": "PERSISTENCE_2 \u2192 RECOVERING vs PERSISTENCE_2 \u2192 PERSISTENCE_3PLUS",
+        "left_transition": "PERSISTENCE_2 \u2192 RECOVERING",
+        "right_transition": "PERSISTENCE_2 \u2192 PERSISTENCE_3PLUS",
+        "metric": "loss_rate",
+        "n_left": 0,
+        "n_right": 5,
+        "observed_delta": null,
+        "ci": [
+          null,
+          null
+        ],
+        "classification": "INSUFFICIENT_SAMPLE"
+      }
+    ],
+    "archetype_economics": [
+      {
+        "N_trades": 41,
+        "N_wins": 41,
+        "N_losses": 0,
+        "win_rate": 1.0,
+        "loss_rate": 0.0,
+        "mean_pnl_hold_after_state": 20.0,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 0.975609756097561,
+        "mean_future_MAE": 2.682926829268293,
+        "mean_future_MFE": 32.80487804878049,
+        "recover_ge_50": null,
+        "recover_ge_60": null,
+        "recover_ge_70": null,
+        "recover_ge_80": 0.975609756097561,
+        "mean_current_price": null,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": null,
+        "mean_minutes_to_worst_price": null,
+        "mean_minutes_to_settlement": null,
+        "mean_adverse_cents_remaining": null,
+        "archetype": "STABLE_HEALTHY",
+        "mean_maximum_state_depth": 0.0,
+        "mean_time_spent_negative": 0.0
+      },
+      {
+        "N_trades": 0,
+        "N_wins": 0,
+        "N_losses": 0,
+        "win_rate": null,
+        "loss_rate": null,
+        "mean_pnl_hold_after_state": null,
+        "median_pnl_hold_after_state": null,
+        "T40_rate": null,
+        "mean_future_MAE": null,
+        "mean_future_MFE": null,
+        "recover_ge_50": null,
+        "recover_ge_60": null,
+        "recover_ge_70": null,
+        "recover_ge_80": null,
+        "mean_current_price": null,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": null,
+        "mean_minutes_to_worst_price": null,
+        "mean_minutes_to_settlement": null,
+        "mean_adverse_cents_remaining": null,
+        "archetype": "SINGLE_NEGATIVE_RECOVERY",
+        "mean_maximum_state_depth": null,
+        "mean_time_spent_negative": null
+      },
+      {
+        "N_trades": 0,
+        "N_wins": 0,
+        "N_losses": 0,
+        "win_rate": null,
+        "loss_rate": null,
+        "mean_pnl_hold_after_state": null,
+        "median_pnl_hold_after_state": null,
+        "T40_rate": null,
+        "mean_future_MAE": null,
+        "mean_future_MFE": null,
+        "recover_ge_50": null,
+        "recover_ge_60": null,
+        "recover_ge_70": null,
+        "recover_ge_80": null,
+        "mean_current_price": null,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": null,
+        "mean_minutes_to_worst_price": null,
+        "mean_minutes_to_settlement": null,
+        "mean_adverse_cents_remaining": null,
+        "archetype": "NEGATIVE_TO_RECOVERY",
+        "mean_maximum_state_depth": null,
+        "mean_time_spent_negative": null
+      },
+      {
+        "N_trades": 1,
+        "N_wins": 0,
+        "N_losses": 1,
+        "win_rate": 0.0,
+        "loss_rate": 1.0,
+        "mean_pnl_hold_after_state": -80.0,
+        "median_pnl_hold_after_state": -80.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 14.0,
+        "mean_future_MFE": -14.0,
+        "recover_ge_50": null,
+        "recover_ge_60": null,
+        "recover_ge_70": null,
+        "recover_ge_80": 0.0,
+        "mean_current_price": null,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": null,
+        "mean_minutes_to_worst_price": null,
+        "mean_minutes_to_settlement": null,
+        "mean_adverse_cents_remaining": null,
+        "archetype": "NEGATIVE_TO_PERSISTENCE_2",
+        "mean_maximum_state_depth": 2.0,
+        "mean_time_spent_negative": 2.0
+      },
+      {
+        "N_trades": 5,
+        "N_wins": 2,
+        "N_losses": 3,
+        "win_rate": 0.4,
+        "loss_rate": 0.6,
+        "mean_pnl_hold_after_state": -40.0,
+        "median_pnl_hold_after_state": -80.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 19.8,
+        "mean_future_MFE": -3.4,
+        "recover_ge_50": null,
+        "recover_ge_60": null,
+        "recover_ge_70": null,
+        "recover_ge_80": 0.0,
+        "mean_current_price": null,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": null,
+        "mean_minutes_to_worst_price": null,
+        "mean_minutes_to_settlement": null,
+        "mean_adverse_cents_remaining": null,
+        "archetype": "NEGATIVE_TO_PERSISTENCE_3PLUS",
+        "mean_maximum_state_depth": 3.0,
+        "mean_time_spent_negative": 4.0
+      },
+      {
+        "N_trades": 0,
+        "N_wins": 0,
+        "N_losses": 0,
+        "win_rate": null,
+        "loss_rate": null,
+        "mean_pnl_hold_after_state": null,
+        "median_pnl_hold_after_state": null,
+        "T40_rate": null,
+        "mean_future_MAE": null,
+        "mean_future_MFE": null,
+        "recover_ge_50": null,
+        "recover_ge_60": null,
+        "recover_ge_70": null,
+        "recover_ge_80": null,
+        "mean_current_price": null,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": null,
+        "mean_minutes_to_worst_price": null,
+        "mean_minutes_to_settlement": null,
+        "mean_adverse_cents_remaining": null,
+        "archetype": "PERSISTENCE_TO_RECOVERY",
+        "mean_maximum_state_depth": null,
+        "mean_time_spent_negative": null
+      },
+      {
+        "N_trades": 22,
+        "N_wins": 14,
+        "N_losses": 8,
+        "win_rate": 0.6363636363636364,
+        "loss_rate": 0.36363636363636365,
+        "mean_pnl_hold_after_state": -16.363636363636363,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 0.7272727272727273,
+        "mean_future_MAE": 9.642857142857142,
+        "mean_future_MFE": 4.0,
+        "recover_ge_50": null,
+        "recover_ge_60": null,
+        "recover_ge_70": null,
+        "recover_ge_80": 0.35714285714285715,
+        "mean_current_price": null,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": null,
+        "mean_minutes_to_worst_price": null,
+        "mean_minutes_to_settlement": null,
+        "mean_adverse_cents_remaining": null,
+        "archetype": "UNRESOLVED_PATH",
+        "mean_maximum_state_depth": 1.0,
+        "mean_time_spent_negative": 0.7727272727272727
+      }
+    ],
+    "depth": [
+      {
+        "N_trades": 51,
+        "N_wins": 49,
+        "N_losses": 2,
+        "win_rate": 0.9607843137254902,
+        "loss_rate": 0.0392156862745098,
+        "mean_pnl_hold_after_state": 16.07843137254902,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 0.9803921568627451,
+        "mean_future_MAE": 24.40740740740741,
+        "mean_future_MFE": 5.555555555555555,
+        "recover_ge_50": 0.9629629629629629,
+        "recover_ge_60": 0.9629629629629629,
+        "recover_ge_70": 0.9259259259259259,
+        "recover_ge_80": 0.8518518518518519,
+        "mean_current_price": 92.17647058823529,
+        "mean_price_travel": 10.117647058823529,
+        "mean_minutes_to_T40": 0.0,
+        "mean_minutes_to_worst_price": 1.411764705882353,
+        "mean_minutes_to_settlement": 5.1568627450980395,
+        "mean_adverse_cents_remaining": 24.40740740740741,
+        "core_state": "HEALTHY",
+        "state_depth": 0,
+        "economically_ordered": false,
+        "note": "STATE DEPTH NOT ECONOMICALLY ORDERED"
+      },
+      {
+        "N_trades": 22,
+        "N_wins": 10,
+        "N_losses": 12,
+        "win_rate": 0.45454545454545453,
+        "loss_rate": 0.5454545454545454,
+        "mean_pnl_hold_after_state": -34.54545454545455,
+        "median_pnl_hold_after_state": -80.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 17.714285714285715,
+        "mean_future_MFE": 1.7857142857142858,
+        "recover_ge_50": 0.7142857142857143,
+        "recover_ge_60": 0.6428571428571429,
+        "recover_ge_70": 0.5714285714285714,
+        "recover_ge_80": 0.35714285714285715,
+        "mean_current_price": 52.72727272727273,
+        "mean_price_travel": -29.40909090909091,
+        "mean_minutes_to_T40": 0.0,
+        "mean_minutes_to_worst_price": 1.3636363636363635,
+        "mean_minutes_to_settlement": 3.772727272727273,
+        "mean_adverse_cents_remaining": 17.714285714285715,
+        "core_state": "WATCH_NEGATIVE",
+        "state_depth": 1,
+        "economically_ordered": false,
+        "note": "STATE DEPTH NOT ECONOMICALLY ORDERED"
+      },
+      {
+        "N_trades": 6,
+        "N_wins": 2,
+        "N_losses": 4,
+        "win_rate": 0.3333333333333333,
+        "loss_rate": 0.6666666666666666,
+        "mean_pnl_hold_after_state": -46.666666666666664,
+        "median_pnl_hold_after_state": -80.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 0.0,
+        "mean_future_MFE": 1.4,
+        "recover_ge_50": 0.2,
+        "recover_ge_60": 0.0,
+        "recover_ge_70": 0.0,
+        "recover_ge_80": 0.0,
+        "mean_current_price": 33.833333333333336,
+        "mean_price_travel": -48.333333333333336,
+        "mean_minutes_to_T40": 0.0,
+        "mean_minutes_to_worst_price": 0.0,
+        "mean_minutes_to_settlement": 3.1666666666666665,
+        "mean_adverse_cents_remaining": 0.0,
+        "core_state": "PERSISTENCE_2",
+        "state_depth": 2,
+        "economically_ordered": false,
+        "note": "STATE DEPTH NOT ECONOMICALLY ORDERED"
+      },
+      {
+        "N_trades": 5,
+        "N_wins": 2,
+        "N_losses": 3,
+        "win_rate": 0.4,
+        "loss_rate": 0.6,
+        "mean_pnl_hold_after_state": -40.0,
+        "median_pnl_hold_after_state": -80.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 0.0,
+        "mean_future_MFE": 3.5,
+        "recover_ge_50": 0.0,
+        "recover_ge_60": 0.0,
+        "recover_ge_70": 0.0,
+        "recover_ge_80": 0.0,
+        "mean_current_price": 37.6,
+        "mean_price_travel": -44.6,
+        "mean_minutes_to_T40": 0.0,
+        "mean_minutes_to_worst_price": 0.0,
+        "mean_minutes_to_settlement": 1.8,
+        "mean_adverse_cents_remaining": 0.0,
+        "core_state": "PERSISTENCE_3PLUS",
+        "state_depth": 3,
+        "economically_ordered": false,
+        "note": "STATE DEPTH NOT ECONOMICALLY ORDERED"
+      }
+    ],
+    "ci_overlay": [
+      {
+        "core_state": "HEALTHY",
+        "n_CI_NEGATIVE": 0,
+        "n_CI_CROSSES_ZERO": 20,
+        "mean_pnl_CI_NEGATIVE": null,
+        "mean_pnl_CI_CROSSES_ZERO": 10.0,
+        "observed_delta": null,
+        "ci": [
+          null,
+          null
+        ],
+        "classification": "INSUFFICIENT_SAMPLE",
+        "note": "CI overlay does not modify core_state."
+      },
+      {
+        "core_state": "WATCH_NEGATIVE",
+        "n_CI_NEGATIVE": 16,
+        "n_CI_CROSSES_ZERO": 6,
+        "mean_pnl_CI_NEGATIVE": -48.75,
+        "mean_pnl_CI_CROSSES_ZERO": 3.3333333333333335,
+        "observed_delta": -52.083333333333336,
+        "ci": [
+          -84.625,
+          -6.9983552631579125
+        ],
+        "classification": "SUPPORTED",
+        "note": "CI overlay does not modify core_state."
+      },
+      {
+        "core_state": "PERSISTENCE_2",
+        "n_CI_NEGATIVE": 5,
+        "n_CI_CROSSES_ZERO": 1,
+        "mean_pnl_CI_NEGATIVE": -40.0,
+        "mean_pnl_CI_CROSSES_ZERO": -80.0,
+        "observed_delta": 40.0,
+        "ci": [
+          0.0,
+          80.0
+        ],
+        "classification": "INSUFFICIENT_SAMPLE",
+        "note": "CI overlay does not modify core_state."
+      },
+      {
+        "core_state": "PERSISTENCE_3PLUS",
+        "n_CI_NEGATIVE": 4,
+        "n_CI_CROSSES_ZERO": 1,
+        "mean_pnl_CI_NEGATIVE": -30.0,
+        "mean_pnl_CI_CROSSES_ZERO": -80.0,
+        "observed_delta": 50.0,
+        "ci": [
+          0.0,
+          100.0
+        ],
+        "classification": "INSUFFICIENT_SAMPLE",
+        "note": "CI overlay does not modify core_state."
+      },
+      {
+        "core_state": "RECOVERING",
+        "n_CI_NEGATIVE": 0,
+        "n_CI_CROSSES_ZERO": 0,
+        "mean_pnl_CI_NEGATIVE": null,
+        "mean_pnl_CI_CROSSES_ZERO": null,
+        "observed_delta": null,
+        "ci": [
+          null,
+          null
+        ],
+        "classification": "INSUFFICIENT_SAMPLE",
+        "note": "CI overlay does not modify core_state."
+      },
+      {
+        "core_state": "HEALTHY_AFTER_RECOVERY",
+        "n_CI_NEGATIVE": 0,
+        "n_CI_CROSSES_ZERO": 0,
+        "mean_pnl_CI_NEGATIVE": null,
+        "mean_pnl_CI_CROSSES_ZERO": null,
+        "observed_delta": null,
+        "ci": [
+          null,
+          null
+        ],
+        "classification": "INSUFFICIENT_SAMPLE",
+        "note": "CI overlay does not modify core_state."
+      },
+      {
+        "core_state": "UNRESOLVED",
+        "n_CI_NEGATIVE": 0,
+        "n_CI_CROSSES_ZERO": 0,
+        "mean_pnl_CI_NEGATIVE": null,
+        "mean_pnl_CI_CROSSES_ZERO": null,
+        "observed_delta": null,
+        "ci": [
+          null,
+          null
+        ],
+        "classification": "INSUFFICIENT_SAMPLE",
+        "note": "CI overlay does not modify core_state."
+      }
+    ],
+    "support_overlay": [
+      {
+        "core_state": "HEALTHY",
+        "N_trades": 51,
+        "LOW_HISTORICAL_SUPPORT_rate": 0.0,
+        "mean_ESS": 24.233563076929016,
+        "mean_distance": 0.7826407787884194,
+        "median_distance": 0.7899426388217688,
+        "mean_feature_coverage": 0.9701619778346121,
+        "note": "Low-support rows remain included."
+      },
+      {
+        "core_state": "WATCH_NEGATIVE",
+        "N_trades": 22,
+        "LOW_HISTORICAL_SUPPORT_rate": 0.0,
+        "mean_ESS": 23.55047938842176,
+        "mean_distance": 1.033166142049562,
+        "median_distance": 1.0525816658021465,
+        "mean_feature_coverage": 0.9940711462450594,
+        "note": "Low-support rows remain included."
+      },
+      {
+        "core_state": "PERSISTENCE_2",
+        "N_trades": 6,
+        "LOW_HISTORICAL_SUPPORT_rate": 0.0,
+        "mean_ESS": 23.682395292008767,
+        "mean_distance": 1.0333468461364208,
+        "median_distance": 1.081081998219204,
+        "mean_feature_coverage": 1.0,
+        "note": "Low-support rows remain included."
+      },
+      {
+        "core_state": "PERSISTENCE_3PLUS",
+        "N_trades": 5,
+        "LOW_HISTORICAL_SUPPORT_rate": 0.0,
+        "mean_ESS": 23.68531940346776,
+        "mean_distance": 0.9149113194586758,
+        "median_distance": 0.9485369843654018,
+        "mean_feature_coverage": 1.0,
+        "note": "Low-support rows remain included."
+      },
+      {
+        "core_state": "RECOVERING",
+        "N_trades": 0,
+        "LOW_HISTORICAL_SUPPORT_rate": null,
+        "mean_ESS": null,
+        "mean_distance": null,
+        "median_distance": null,
+        "mean_feature_coverage": null,
+        "note": "Low-support rows remain included."
+      },
+      {
+        "core_state": "HEALTHY_AFTER_RECOVERY",
+        "N_trades": 0,
+        "LOW_HISTORICAL_SUPPORT_rate": null,
+        "mean_ESS": null,
+        "mean_distance": null,
+        "median_distance": null,
+        "mean_feature_coverage": null,
+        "note": "Low-support rows remain included."
+      },
+      {
+        "core_state": "UNRESOLVED",
+        "N_trades": 69,
+        "LOW_HISTORICAL_SUPPORT_rate": 0.0,
+        "mean_ESS": null,
+        "mean_distance": null,
+        "median_distance": null,
+        "mean_feature_coverage": 0.3043478260869566,
+        "note": "Low-support rows remain included."
+      }
+    ],
+    "remaining_damage": [
+      {
+        "N_trades": 22,
+        "N_wins": 10,
+        "N_losses": 12,
+        "win_rate": 0.45454545454545453,
+        "loss_rate": 0.5454545454545454,
+        "mean_pnl_hold_after_state": -34.54545454545455,
+        "median_pnl_hold_after_state": -80.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 17.714285714285715,
+        "mean_future_MFE": 1.7857142857142858,
+        "recover_ge_50": 0.7142857142857143,
+        "recover_ge_60": 0.6428571428571429,
+        "recover_ge_70": 0.5714285714285714,
+        "recover_ge_80": 0.35714285714285715,
+        "mean_current_price": 52.72727272727273,
+        "mean_price_travel": -29.40909090909091,
+        "mean_minutes_to_T40": 0.0,
+        "mean_minutes_to_worst_price": 1.3636363636363635,
+        "mean_minutes_to_settlement": 3.772727272727273,
+        "mean_adverse_cents_remaining": 17.714285714285715,
+        "core_state": "WATCH_NEGATIVE",
+        "mean_price_at_state": 52.72727272727273
+      },
+      {
+        "N_trades": 6,
+        "N_wins": 2,
+        "N_losses": 4,
+        "win_rate": 0.3333333333333333,
+        "loss_rate": 0.6666666666666666,
+        "mean_pnl_hold_after_state": -46.666666666666664,
+        "median_pnl_hold_after_state": -80.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 0.0,
+        "mean_future_MFE": 1.4,
+        "recover_ge_50": 0.2,
+        "recover_ge_60": 0.0,
+        "recover_ge_70": 0.0,
+        "recover_ge_80": 0.0,
+        "mean_current_price": 33.833333333333336,
+        "mean_price_travel": -48.333333333333336,
+        "mean_minutes_to_T40": 0.0,
+        "mean_minutes_to_worst_price": 0.0,
+        "mean_minutes_to_settlement": 3.1666666666666665,
+        "mean_adverse_cents_remaining": 0.0,
+        "core_state": "PERSISTENCE_2",
+        "mean_price_at_state": 33.833333333333336
+      },
+      {
+        "N_trades": 5,
+        "N_wins": 2,
+        "N_losses": 3,
+        "win_rate": 0.4,
+        "loss_rate": 0.6,
+        "mean_pnl_hold_after_state": -40.0,
+        "median_pnl_hold_after_state": -80.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 0.0,
+        "mean_future_MFE": 3.5,
+        "recover_ge_50": 0.0,
+        "recover_ge_60": 0.0,
+        "recover_ge_70": 0.0,
+        "recover_ge_80": 0.0,
+        "mean_current_price": 37.6,
+        "mean_price_travel": -44.6,
+        "mean_minutes_to_T40": 0.0,
+        "mean_minutes_to_worst_price": 0.0,
+        "mean_minutes_to_settlement": 1.8,
+        "mean_adverse_cents_remaining": 0.0,
+        "core_state": "PERSISTENCE_3PLUS",
+        "mean_price_at_state": 37.6
+      },
+      {
+        "N_trades": 0,
+        "N_wins": 0,
+        "N_losses": 0,
+        "win_rate": null,
+        "loss_rate": null,
+        "mean_pnl_hold_after_state": null,
+        "median_pnl_hold_after_state": null,
+        "T40_rate": null,
+        "mean_future_MAE": null,
+        "mean_future_MFE": null,
+        "recover_ge_50": null,
+        "recover_ge_60": null,
+        "recover_ge_70": null,
+        "recover_ge_80": null,
+        "mean_current_price": null,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": null,
+        "mean_minutes_to_worst_price": null,
+        "mean_minutes_to_settlement": null,
+        "mean_adverse_cents_remaining": null,
+        "core_state": "RECOVERING",
+        "mean_price_at_state": null
+      }
+    ],
+    "timing_summary": [
+      {
+        "N_trades": 10,
+        "N_wins": 10,
+        "N_losses": 0,
+        "win_rate": 1.0,
+        "loss_rate": 0.0,
+        "mean_pnl_hold_after_state": 20.0,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 13.25,
+        "mean_future_MFE": 10.625,
+        "recover_ge_50": 0.75,
+        "recover_ge_60": 0.75,
+        "recover_ge_70": 0.75,
+        "recover_ge_80": 0.625,
+        "mean_current_price": 75.2,
+        "mean_price_travel": -7.6,
+        "mean_minutes_to_T40": 0.0,
+        "mean_minutes_to_worst_price": 1.0,
+        "mean_minutes_to_settlement": 5.0,
+        "mean_adverse_cents_remaining": 13.25,
+        "core_state": "WATCH_NEGATIVE",
+        "eventual_result": "WIN"
+      },
+      {
+        "N_trades": 12,
+        "N_wins": 0,
+        "N_losses": 12,
+        "win_rate": 0.0,
+        "loss_rate": 1.0,
+        "mean_pnl_hold_after_state": -80.0,
+        "median_pnl_hold_after_state": -80.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 23.666666666666668,
+        "mean_future_MFE": -10.0,
+        "recover_ge_50": 0.6666666666666666,
+        "recover_ge_60": 0.5,
+        "recover_ge_70": 0.3333333333333333,
+        "recover_ge_80": 0.0,
+        "mean_current_price": 34.0,
+        "mean_price_travel": -47.583333333333336,
+        "mean_minutes_to_T40": 0.0,
+        "mean_minutes_to_worst_price": 1.6666666666666667,
+        "mean_minutes_to_settlement": 2.75,
+        "mean_adverse_cents_remaining": 23.666666666666668,
+        "core_state": "WATCH_NEGATIVE",
+        "eventual_result": "LOSS"
+      },
+      {
+        "N_trades": 2,
+        "N_wins": 2,
+        "N_losses": 0,
+        "win_rate": 1.0,
+        "loss_rate": 0.0,
+        "mean_pnl_hold_after_state": 20.0,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 0.0,
+        "mean_future_MFE": 0.0,
+        "recover_ge_50": 0.0,
+        "recover_ge_60": 0.0,
+        "recover_ge_70": 0.0,
+        "recover_ge_80": 0.0,
+        "mean_current_price": 46.0,
+        "mean_price_travel": -36.0,
+        "mean_minutes_to_T40": 0.0,
+        "mean_minutes_to_worst_price": 0.0,
+        "mean_minutes_to_settlement": 3.0,
+        "mean_adverse_cents_remaining": 0.0,
+        "core_state": "PERSISTENCE_2",
+        "eventual_result": "WIN"
+      },
+      {
+        "N_trades": 4,
+        "N_wins": 0,
+        "N_losses": 4,
+        "win_rate": 0.0,
+        "loss_rate": 1.0,
+        "mean_pnl_hold_after_state": -80.0,
+        "median_pnl_hold_after_state": -80.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 0.0,
+        "mean_future_MFE": 2.3333333333333335,
+        "recover_ge_50": 0.3333333333333333,
+        "recover_ge_60": 0.0,
+        "recover_ge_70": 0.0,
+        "recover_ge_80": 0.0,
+        "mean_current_price": 27.75,
+        "mean_price_travel": -54.5,
+        "mean_minutes_to_T40": 0.0,
+        "mean_minutes_to_worst_price": 0.0,
+        "mean_minutes_to_settlement": 3.25,
+        "mean_adverse_cents_remaining": 0.0,
+        "core_state": "PERSISTENCE_2",
+        "eventual_result": "LOSS"
+      },
+      {
+        "N_trades": 2,
+        "N_wins": 2,
+        "N_losses": 0,
+        "win_rate": 1.0,
+        "loss_rate": 0.0,
+        "mean_pnl_hold_after_state": 20.0,
+        "median_pnl_hold_after_state": 20.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 0.0,
+        "mean_future_MFE": 0.0,
+        "recover_ge_50": 0.0,
+        "recover_ge_60": 0.0,
+        "recover_ge_70": 0.0,
+        "recover_ge_80": 0.0,
+        "mean_current_price": 46.0,
+        "mean_price_travel": -36.0,
+        "mean_minutes_to_T40": 0.0,
+        "mean_minutes_to_worst_price": 0.0,
+        "mean_minutes_to_settlement": 1.0,
+        "mean_adverse_cents_remaining": 0.0,
+        "core_state": "PERSISTENCE_3PLUS",
+        "eventual_result": "WIN"
+      },
+      {
+        "N_trades": 3,
+        "N_wins": 0,
+        "N_losses": 3,
+        "win_rate": 0.0,
+        "loss_rate": 1.0,
+        "mean_pnl_hold_after_state": -80.0,
+        "median_pnl_hold_after_state": -80.0,
+        "T40_rate": 1.0,
+        "mean_future_MAE": 0.0,
+        "mean_future_MFE": 7.0,
+        "recover_ge_50": 0.0,
+        "recover_ge_60": 0.0,
+        "recover_ge_70": 0.0,
+        "recover_ge_80": 0.0,
+        "mean_current_price": 32.0,
+        "mean_price_travel": -50.333333333333336,
+        "mean_minutes_to_T40": 0.0,
+        "mean_minutes_to_worst_price": 0.0,
+        "mean_minutes_to_settlement": 2.3333333333333335,
+        "mean_adverse_cents_remaining": 0.0,
+        "core_state": "PERSISTENCE_3PLUS",
+        "eventual_result": "LOSS"
+      },
+      {
+        "N_trades": 0,
+        "N_wins": 0,
+        "N_losses": 0,
+        "win_rate": null,
+        "loss_rate": null,
+        "mean_pnl_hold_after_state": null,
+        "median_pnl_hold_after_state": null,
+        "T40_rate": null,
+        "mean_future_MAE": null,
+        "mean_future_MFE": null,
+        "recover_ge_50": null,
+        "recover_ge_60": null,
+        "recover_ge_70": null,
+        "recover_ge_80": null,
+        "mean_current_price": null,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": null,
+        "mean_minutes_to_worst_price": null,
+        "mean_minutes_to_settlement": null,
+        "mean_adverse_cents_remaining": null,
+        "core_state": "RECOVERING",
+        "eventual_result": "WIN"
+      },
+      {
+        "N_trades": 0,
+        "N_wins": 0,
+        "N_losses": 0,
+        "win_rate": null,
+        "loss_rate": null,
+        "mean_pnl_hold_after_state": null,
+        "median_pnl_hold_after_state": null,
+        "T40_rate": null,
+        "mean_future_MAE": null,
+        "mean_future_MFE": null,
+        "recover_ge_50": null,
+        "recover_ge_60": null,
+        "recover_ge_70": null,
+        "recover_ge_80": null,
+        "mean_current_price": null,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": null,
+        "mean_minutes_to_worst_price": null,
+        "mean_minutes_to_settlement": null,
+        "mean_adverse_cents_remaining": null,
+        "core_state": "RECOVERING",
+        "eventual_result": "LOSS"
+      },
+      {
+        "N_trades": 0,
+        "N_wins": 0,
+        "N_losses": 0,
+        "win_rate": null,
+        "loss_rate": null,
+        "mean_pnl_hold_after_state": null,
+        "median_pnl_hold_after_state": null,
+        "T40_rate": null,
+        "mean_future_MAE": null,
+        "mean_future_MFE": null,
+        "recover_ge_50": null,
+        "recover_ge_60": null,
+        "recover_ge_70": null,
+        "recover_ge_80": null,
+        "mean_current_price": null,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": null,
+        "mean_minutes_to_worst_price": null,
+        "mean_minutes_to_settlement": null,
+        "mean_adverse_cents_remaining": null,
+        "core_state": "HEALTHY_AFTER_RECOVERY",
+        "eventual_result": "WIN"
+      },
+      {
+        "N_trades": 0,
+        "N_wins": 0,
+        "N_losses": 0,
+        "win_rate": null,
+        "loss_rate": null,
+        "mean_pnl_hold_after_state": null,
+        "median_pnl_hold_after_state": null,
+        "T40_rate": null,
+        "mean_future_MAE": null,
+        "mean_future_MFE": null,
+        "recover_ge_50": null,
+        "recover_ge_60": null,
+        "recover_ge_70": null,
+        "recover_ge_80": null,
+        "mean_current_price": null,
+        "mean_price_travel": null,
+        "mean_minutes_to_T40": null,
+        "mean_minutes_to_worst_price": null,
+        "mean_minutes_to_settlement": null,
+        "mean_adverse_cents_remaining": null,
+        "core_state": "HEALTHY_AFTER_RECOVERY",
+        "eventual_result": "LOSS"
+      }
+    ],
+    "timing_gate": "MIXED"
+  },
+  "alignment_verdict": {
+    "status": "EXPECTED_FROM_CANONICAL_TIMING",
+    "defect": false,
+    "potential_data_alignment_defect": false,
+    "n_trades": 69,
+    "n_clock_wall_mismatch": 61,
+    "n_aligned": 8,
+    "n_missing_source": 0,
+    "median_pbp_minus_entry_seconds": -18.0,
+    "median_wall_minus_entry_seconds": -827.0,
+    "note": "Alignment is observed, not repaired. A reconstruction change would require a new experiment version."
+  },
+  "interpretation": {
+    "gate_a_state_validity": "PASS",
+    "gate_b_economic_separation": "MIXED",
+    "gate_c_transition_information": "MIXED",
+    "gate_d_timing_remaining_damage": "MIXED",
+    "phase_4_justified": false,
+    "phase_4_decision": "VALID STATE MODEL BUT NOT YET A USEFUL DRE PATH MODEL",
+    "phase_4_classification": "MIXED",
+    "alignment_status": "EXPECTED_FROM_CANONICAL_TIMING",
+    "potential_data_alignment_defect": false,
+    "ordering_a": {
+      "classification": "NOT_SUPPORTED",
+      "monotonic": false,
+      "by_metric": {
+        "mean_pnl_hold_after_state": false,
+        "loss_rate": false,
+        "mean_future_MAE": false,
+        "mean_future_MFE": false,
+        "recover_ge_80": false
+      },
+      "note": "REPORT NOT MONOTONIC"
+    },
+    "ordering_b": {
+      "classification": "MIXED",
+      "monotonic": false,
+      "by_metric": {
+        "mean_pnl_hold_after_state": false,
+        "loss_rate": false,
+        "mean_future_MAE": false,
+        "mean_future_MFE": false,
+        "recover_ge_80": true
+      },
+      "note": "REPORT NOT MONOTONIC"
+    },
+    "hazard_model_built": false,
+    "policy_status": "UNFROZEN",
+    "confirmation_accessed": false
+  }
+}

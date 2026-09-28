@@ -1,0 +1,1793 @@
+{
+  "source": "https://statsapi.mlb.com schedule+feed/live",
+  "start": "2026-06-18",
+  "end": "2026-06-30",
+  "retrieved_at": "2026-08-26T08:13:37.939708Z",
+  "games_listed": 178,
+  "games_collected": 174,
+  "games_skipped_existing": 0,
+  "games_skipped_status": 4,
+  "errors": [],
+  "games": [
+    {
+      "official_date": "2026-06-18",
+      "game_pk": "824748",
+      "status": "Final",
+      "away_abbreviation": "TOR",
+      "home_abbreviation": "BOS",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-18/gamePk=824748.envelope.json",
+      "sha256": "b789a99617ef9af94a1efce21de69aef0fbc06c311f782b1b57cfc142c21e406",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-18",
+      "game_pk": "823772",
+      "status": "Final",
+      "away_abbreviation": "CLE",
+      "home_abbreviation": "MIL",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-18/gamePk=823772.envelope.json",
+      "sha256": "c0c67ecb3897f28e11d8b258ae7bcd40ea634de955128c75f72639492092e5ea",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-18",
+      "game_pk": "822889",
+      "status": "Final",
+      "away_abbreviation": "MIN",
+      "home_abbreviation": "TEX",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-18/gamePk=822889.envelope.json",
+      "sha256": "3cdd4c39ddd41ed25efdc8b0bf490f8b3ce6301455e8fecb1bfd9ac5dde457c3",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-18",
+      "game_pk": "823125",
+      "status": "Final",
+      "away_abbreviation": "BAL",
+      "home_abbreviation": "SEA",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-18/gamePk=823125.envelope.json",
+      "sha256": "39cac35095dc0ccf7b789a469d8cf4c4f37559f7c442ff9c80828ef4d5120a4b",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-18",
+      "game_pk": "823448",
+      "status": "Final",
+      "away_abbreviation": "NYM",
+      "home_abbreviation": "PHI",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-18/gamePk=823448.envelope.json",
+      "sha256": "d0e9158979806ce83c9a64d1e6e5098d86b82bba2d169f25df6e667c7375a841",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-18",
+      "game_pk": "823533",
+      "status": "Final",
+      "away_abbreviation": "CWS",
+      "home_abbreviation": "NYY",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-18/gamePk=823533.envelope.json",
+      "sha256": "b4424a570db90fc7f220ea71bf3dc0ffb3ae04356aedb16df8310c4c836e5618",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-18",
+      "game_pk": "824098",
+      "status": "Final",
+      "away_abbreviation": "STL",
+      "home_abbreviation": "KC",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-18/gamePk=824098.envelope.json",
+      "sha256": "54331153c607936d412d8095c571b77c05ce2b3e526bcfa1bb4dc34c68547876",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-18",
+      "game_pk": "824989",
+      "status": "Final",
+      "away_abbreviation": "LAA",
+      "home_abbreviation": "ATH",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-18/gamePk=824989.envelope.json",
+      "sha256": "d22c9ba514e50b15e7585a1232477d7e5a527730624a874b55c504a0f26e2495",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-18",
+      "game_pk": "824911",
+      "status": "Postponed",
+      "away_abbreviation": "SF",
+      "home_abbreviation": "ATL",
+      "envelope_path": "",
+      "sha256": "",
+      "skipped": true
+    },
+    {
+      "official_date": "2026-06-19",
+      "game_pk": "824663",
+      "status": "Final",
+      "away_abbreviation": "TOR",
+      "home_abbreviation": "CHC",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-19/gamePk=824663.envelope.json",
+      "sha256": "181c436c3154b3c287bf7f6dbd029f4a8f02c5531f67a5319d3a1e7d4ad9cf1b",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-19",
+      "game_pk": "824264",
+      "status": "Final",
+      "away_abbreviation": "CWS",
+      "home_abbreviation": "DET",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-19/gamePk=824264.envelope.json",
+      "sha256": "3f5611b5388f750ca24ced0ca7307befef2cbca728f5247a1a1f2e0609a5df80",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-19",
+      "game_pk": "823534",
+      "status": "Final",
+      "away_abbreviation": "CIN",
+      "home_abbreviation": "NYY",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-19/gamePk=823534.envelope.json",
+      "sha256": "53222028a28515816079a290f5c3e5b0ca4af4b03148cb6da21858f4cbcea076",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-19",
+      "game_pk": "822966",
+      "status": "Final",
+      "away_abbreviation": "WSH",
+      "home_abbreviation": "TB",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-19/gamePk=822966.envelope.json",
+      "sha256": "d22be4cdddec4f7aba75d27329d2efe7790b27033be62b03b15025265681793d",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-19",
+      "game_pk": "823853",
+      "status": "Final",
+      "away_abbreviation": "SF",
+      "home_abbreviation": "MIA",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-19/gamePk=823853.envelope.json",
+      "sha256": "d3bf3d4a4e8aa964a90f91eafdc16147c92edd4bb6d28c1d46fc4a71c3a86a0d",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-19",
+      "game_pk": "824910",
+      "status": "Final",
+      "away_abbreviation": "MIL",
+      "home_abbreviation": "ATL",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-19/gamePk=824910.envelope.json",
+      "sha256": "0d007a9468434ef9351113b3a72b434796ff573cc4cceb50f79cac9f1a3960d4",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-19",
+      "game_pk": "822886",
+      "status": "Final",
+      "away_abbreviation": "SD",
+      "home_abbreviation": "TEX",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-19/gamePk=822886.envelope.json",
+      "sha256": "12282fc3410c936b47ef3243d7db52ca947ba822dfb576f830d0d732be71e80b",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-19",
+      "game_pk": "824179",
+      "status": "Final",
+      "away_abbreviation": "CLE",
+      "home_abbreviation": "HOU",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-19/gamePk=824179.envelope.json",
+      "sha256": "956d9a7e7baacbec0fb7416a1f1ee913c7d37c0438cbd5344b4f1fb14c6caefc",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-19",
+      "game_pk": "824097",
+      "status": "Final",
+      "away_abbreviation": "STL",
+      "home_abbreviation": "KC",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-19/gamePk=824097.envelope.json",
+      "sha256": "bbbfbbb5af4182af92b83124fe8b7a786b4779cc81987af6be45cbdec3ef4137",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-19",
+      "game_pk": "824345",
+      "status": "Final",
+      "away_abbreviation": "PIT",
+      "home_abbreviation": "COL",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-19/gamePk=824345.envelope.json",
+      "sha256": "2b8d4e622797826027846d4114df48598a66f7978b69b1b89babde34c9d0b09c",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-19",
+      "game_pk": "824990",
+      "status": "Final",
+      "away_abbreviation": "LAA",
+      "home_abbreviation": "ATH",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-19/gamePk=824990.envelope.json",
+      "sha256": "66d6b17cea42bd92940948d5cab8b1b1097b0b20965f2f2f4896cad1ae123921",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-19",
+      "game_pk": "825069",
+      "status": "Final",
+      "away_abbreviation": "MIN",
+      "home_abbreviation": "AZ",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-19/gamePk=825069.envelope.json",
+      "sha256": "f176ad3594c9373947a8eb1c533cb780686dd8ee90b19786f00d52b3f002423d",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-19",
+      "game_pk": "823936",
+      "status": "Final",
+      "away_abbreviation": "BAL",
+      "home_abbreviation": "LAD",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-19/gamePk=823936.envelope.json",
+      "sha256": "3a9b26c442a8fe89e1019b023857df622dc17b7dc12c745a3b0d2f2928286e12",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-19",
+      "game_pk": "823124",
+      "status": "Final",
+      "away_abbreviation": "BOS",
+      "home_abbreviation": "SEA",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-19/gamePk=823124.envelope.json",
+      "sha256": "1dc95be967891f7a95220a64b626365aafa431b89ad920b33076672347aa85ad",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-20",
+      "game_pk": "824263",
+      "status": "Final",
+      "away_abbreviation": "CWS",
+      "home_abbreviation": "DET",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-20/gamePk=824263.envelope.json",
+      "sha256": "89b42a9741be5e05b2d83c34a1f269ac137cac775689529535ecfba53be9d151",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-20",
+      "game_pk": "823532",
+      "status": "Final",
+      "away_abbreviation": "CIN",
+      "home_abbreviation": "NYY",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-20/gamePk=823532.envelope.json",
+      "sha256": "088f33ecf5195877b9c085cb4e1189471557b12d05c169c54f06cbae3c9319e8",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-20",
+      "game_pk": "824665",
+      "status": "Final",
+      "away_abbreviation": "TOR",
+      "home_abbreviation": "CHC",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-20/gamePk=824665.envelope.json",
+      "sha256": "3d1b36ab520124e1d2993af0e4a0832f2927370385f20c41b5e723448aeef255",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-20",
+      "game_pk": "822885",
+      "status": "Final",
+      "away_abbreviation": "SD",
+      "home_abbreviation": "TEX",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-20/gamePk=822885.envelope.json",
+      "sha256": "4211856110a8782c2093cee09d55f6b760d8c7d16bcdf732a63ffce5eb8f9772",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-20",
+      "game_pk": "822967",
+      "status": "Final",
+      "away_abbreviation": "WSH",
+      "home_abbreviation": "TB",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-20/gamePk=822967.envelope.json",
+      "sha256": "34a7b30d832fa06f02198bfae8a92109b9655591bc14bf04136d44f13276cb0e",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-20",
+      "game_pk": "823854",
+      "status": "Final",
+      "away_abbreviation": "SF",
+      "home_abbreviation": "MIA",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-20/gamePk=823854.envelope.json",
+      "sha256": "604e099b5206994d12f0e73ea9d146e044d077b5fc0e01bf35297a8a1252d498",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-20",
+      "game_pk": "824909",
+      "status": "Final",
+      "away_abbreviation": "MIL",
+      "home_abbreviation": "ATL",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-20/gamePk=824909.envelope.json",
+      "sha256": "87d6e478aff147801c266dcc7f193db27e85283a9cf6d25f7eef5bb3cebaa796",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-20",
+      "game_pk": "824180",
+      "status": "Final",
+      "away_abbreviation": "CLE",
+      "home_abbreviation": "HOU",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-20/gamePk=824180.envelope.json",
+      "sha256": "3c9f1b856a62438060ea07a7ad3f8daac4b1cc6b69cf96478d788814f54b53d8",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-20",
+      "game_pk": "823447",
+      "status": "Final",
+      "away_abbreviation": "NYM",
+      "home_abbreviation": "PHI",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-20/gamePk=823447.envelope.json",
+      "sha256": "03e748e1f8b69fb18f8b76dee2968829e2797855c333da89729a5a85a5362e2b",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-20",
+      "game_pk": "824342",
+      "status": "Final",
+      "away_abbreviation": "PIT",
+      "home_abbreviation": "COL",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-20/gamePk=824342.envelope.json",
+      "sha256": "e20557032286afa1a56814e37805be3d4710d04f82ce833c657cb977f1ec490e",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-20",
+      "game_pk": "824988",
+      "status": "Final",
+      "away_abbreviation": "LAA",
+      "home_abbreviation": "ATH",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-20/gamePk=824988.envelope.json",
+      "sha256": "0d545ae3ada87f2e43c36e8e170e304c75181b0bc1e968531e30e4f2fb9d0903",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-20",
+      "game_pk": "823937",
+      "status": "Final",
+      "away_abbreviation": "BAL",
+      "home_abbreviation": "LAD",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-20/gamePk=823937.envelope.json",
+      "sha256": "dfb2a2bcb95d6a515afff7dac653d7accdc5fd0f76494ebba0ec7c496899c3bd",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-20",
+      "game_pk": "823126",
+      "status": "Final",
+      "away_abbreviation": "BOS",
+      "home_abbreviation": "SEA",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-20/gamePk=823126.envelope.json",
+      "sha256": "68f9ea59ff0656fc01a1465f88ced493c6d73eecc5870674233c6ce4c2fb8528",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-20",
+      "game_pk": "825068",
+      "status": "Final",
+      "away_abbreviation": "MIN",
+      "home_abbreviation": "AZ",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-20/gamePk=825068.envelope.json",
+      "sha256": "2154276f707d3bac4c90819dea2e98af1d70019b641fb2b792b1543ba15342e6",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-21",
+      "game_pk": "823531",
+      "status": "Final",
+      "away_abbreviation": "CIN",
+      "home_abbreviation": "NYY",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-21/gamePk=823531.envelope.json",
+      "sha256": "7c618eab6c70f205ecfb50d6a820d44c12c5fa4775901202d88d4bf47bff2062",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-21",
+      "game_pk": "824908",
+      "status": "Final",
+      "away_abbreviation": "MIL",
+      "home_abbreviation": "ATL",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-21/gamePk=824908.envelope.json",
+      "sha256": "12dbd70eaae3ec7859cceafd200598290e37105d39b0768827dea2e3cebf3920",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-21",
+      "game_pk": "822968",
+      "status": "Final",
+      "away_abbreviation": "WSH",
+      "home_abbreviation": "TB",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-21/gamePk=822968.envelope.json",
+      "sha256": "596b6a82b5cb43bf8c6fa1a16b67e35f6f837109556a104178870481a66b617c",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-21",
+      "game_pk": "824260",
+      "status": "Final",
+      "away_abbreviation": "CWS",
+      "home_abbreviation": "DET",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-21/gamePk=824260.envelope.json",
+      "sha256": "68af7ccfca861102016c9dda82aa40ee66ffa979491a3e8d327c9e7a6d95f62f",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-21",
+      "game_pk": "823852",
+      "status": "Final",
+      "away_abbreviation": "SF",
+      "home_abbreviation": "MIA",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-21/gamePk=823852.envelope.json",
+      "sha256": "a9e416dce9bb059aac4ddad374f4ef46f2b1171b4d6e126005cca8bd70721318",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-21",
+      "game_pk": "824177",
+      "status": "Final",
+      "away_abbreviation": "CLE",
+      "home_abbreviation": "HOU",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-21/gamePk=824177.envelope.json",
+      "sha256": "c8bb25bd84f5801e61fa95ed8d47f74383982c820aafe2c73238656809c9d0dc",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-21",
+      "game_pk": "824095",
+      "status": "Final",
+      "away_abbreviation": "STL",
+      "home_abbreviation": "KC",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-21/gamePk=824095.envelope.json",
+      "sha256": "dd079a4a743a9b59c3e7498af8d520407b94f6dbeef52609c611d039ca1ad79e",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-21",
+      "game_pk": "822883",
+      "status": "Final",
+      "away_abbreviation": "SD",
+      "home_abbreviation": "TEX",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-21/gamePk=822883.envelope.json",
+      "sha256": "4037da2853621ca6215aff9cdc5d4d59c4ddfcf6711e3485497be935070531da",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-21",
+      "game_pk": "824343",
+      "status": "Final",
+      "away_abbreviation": "PIT",
+      "home_abbreviation": "COL",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-21/gamePk=824343.envelope.json",
+      "sha256": "5bbe32d1919f874093205d8472d418f2c0708750ff0ecdb30b0e396ce2cd7d8a",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-21",
+      "game_pk": "825067",
+      "status": "Final",
+      "away_abbreviation": "MIN",
+      "home_abbreviation": "AZ",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-21/gamePk=825067.envelope.json",
+      "sha256": "fac75b6bd788d9900da03ec6eb9a5c4de2a57928c01ecc8c73aa0e178932eb72",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-21",
+      "game_pk": "824987",
+      "status": "Final",
+      "away_abbreviation": "LAA",
+      "home_abbreviation": "ATH",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-21/gamePk=824987.envelope.json",
+      "sha256": "0a3300a57fff9730e5632b758bb7d32dc15cb4e372695092566b4f2a1f932a7d",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-21",
+      "game_pk": "823934",
+      "status": "Final",
+      "away_abbreviation": "BAL",
+      "home_abbreviation": "LAD",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-21/gamePk=823934.envelope.json",
+      "sha256": "34ba3f047b9a05c3a3272d8ea321e96906efb693cfb6261bf8b6720d799c1a40",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-21",
+      "game_pk": "823123",
+      "status": "Final",
+      "away_abbreviation": "BOS",
+      "home_abbreviation": "SEA",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-21/gamePk=823123.envelope.json",
+      "sha256": "ef8e35f3151725f7202e53e242b462e627ce092bc4a8af4c8c1b218caa41af03",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-21",
+      "game_pk": "823449",
+      "status": "Final",
+      "away_abbreviation": "NYM",
+      "home_abbreviation": "PHI",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-21/gamePk=823449.envelope.json",
+      "sha256": "2f50b18a47263a1bfa2181cae9f64f670188b786820b8c42adb9cff34c1efec6",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-21",
+      "game_pk": "824664",
+      "status": "Postponed",
+      "away_abbreviation": "TOR",
+      "home_abbreviation": "CHC",
+      "envelope_path": "",
+      "sha256": "",
+      "skipped": true
+    },
+    {
+      "official_date": "2026-06-22",
+      "game_pk": "824261",
+      "status": "Final",
+      "away_abbreviation": "NYY",
+      "home_abbreviation": "DET",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-22/gamePk=824261.envelope.json",
+      "sha256": "898659e2973c4b411be83bf7b6ab0debaa46ab18154945e8e246efb38ef849b1",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-22",
+      "game_pk": "822964",
+      "status": "Final",
+      "away_abbreviation": "KC",
+      "home_abbreviation": "TB",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-22/gamePk=822964.envelope.json",
+      "sha256": "2e134e38c270b49a42247642edf8f286e4f5eda84efabc560e26d6f6b5d5dec9",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-22",
+      "game_pk": "823851",
+      "status": "Final",
+      "away_abbreviation": "TEX",
+      "home_abbreviation": "MIA",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-22/gamePk=823851.envelope.json",
+      "sha256": "1dc371688a16eed4ec7ee6954361799e3244550f9b95b129ec714c80d1773a94",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-22",
+      "game_pk": "822720",
+      "status": "Final",
+      "away_abbreviation": "PHI",
+      "home_abbreviation": "WSH",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-22/gamePk=822720.envelope.json",
+      "sha256": "f6a663b0416055d8014a959f59aa83f99b6561e4ad3b907c820db62ff8134397",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-22",
+      "game_pk": "822800",
+      "status": "Final",
+      "away_abbreviation": "HOU",
+      "home_abbreviation": "TOR",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-22/gamePk=822800.envelope.json",
+      "sha256": "0209ff972d9bc845cd3cd75fd40ad73951488702ecc77e3e80f10723013b7659",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-22",
+      "game_pk": "824502",
+      "status": "Final",
+      "away_abbreviation": "MIL",
+      "home_abbreviation": "CIN",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-22/gamePk=824502.envelope.json",
+      "sha256": "63f8ed2e9cd00dbfc985dc11b9ebf4e52d5e47d316a2534f4c8bef7bb69ba782",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-22",
+      "game_pk": "823692",
+      "status": "Final",
+      "away_abbreviation": "LAD",
+      "home_abbreviation": "MIN",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-22/gamePk=823692.envelope.json",
+      "sha256": "85d3272ab3769c77d4c73b9eeb89385c97d47946397abb018ba265906a555b27",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-22",
+      "game_pk": "824585",
+      "status": "Final",
+      "away_abbreviation": "CLE",
+      "home_abbreviation": "CWS",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-22/gamePk=824585.envelope.json",
+      "sha256": "b70ac72b7a31e0d7e1473dfddb5b791cb3948fe18862bf9495367dd19a5e94df",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-22",
+      "game_pk": "823040",
+      "status": "Final",
+      "away_abbreviation": "AZ",
+      "home_abbreviation": "STL",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-22/gamePk=823040.envelope.json",
+      "sha256": "68ecfd6f44cae6e8df56907ef5dcf4c34a66fb1cf491e68c5b2411260c26759c",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-22",
+      "game_pk": "824344",
+      "status": "Final",
+      "away_abbreviation": "BOS",
+      "home_abbreviation": "COL",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-22/gamePk=824344.envelope.json",
+      "sha256": "d6e066681c32f6c802d3c372269848db3b077418b99247ae86697c045fbd3bf7",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-22",
+      "game_pk": "824016",
+      "status": "Final",
+      "away_abbreviation": "BAL",
+      "home_abbreviation": "LAA",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-22/gamePk=824016.envelope.json",
+      "sha256": "a56abc8c2a0f4f21419af5e05e216983af16c818f8f6304c0c7da8ed37860ac3",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-22",
+      "game_pk": "823288",
+      "status": "Final",
+      "away_abbreviation": "ATL",
+      "home_abbreviation": "SD",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-22/gamePk=823288.envelope.json",
+      "sha256": "7bf26390b63c02caf67d100571e858700c0a5720c5c175894be63c61e362e525",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-22",
+      "game_pk": "823613",
+      "status": "Postponed",
+      "away_abbreviation": "CHC",
+      "home_abbreviation": "NYM",
+      "envelope_path": "",
+      "sha256": "",
+      "skipped": true
+    },
+    {
+      "official_date": "2026-06-23",
+      "game_pk": "822799",
+      "status": "Final",
+      "away_abbreviation": "HOU",
+      "home_abbreviation": "TOR",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-23/gamePk=822799.envelope.json",
+      "sha256": "cf298ba62f5b8cb603610817bec07e23f0600c72074cecd112321dbb572441a9",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-23",
+      "game_pk": "823365",
+      "status": "Final",
+      "away_abbreviation": "SEA",
+      "home_abbreviation": "PIT",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-23/gamePk=823365.envelope.json",
+      "sha256": "10e51f8e805e79789d726ddabdcf9253c382eb94fab13aa8fb4aaaa94e127175",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-23",
+      "game_pk": "822963",
+      "status": "Final",
+      "away_abbreviation": "KC",
+      "home_abbreviation": "TB",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-23/gamePk=822963.envelope.json",
+      "sha256": "453f5027dc86bd7d28a12fda3f094ad2e3818e5d64dbef391b7f4cd5d2e3884f",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-23",
+      "game_pk": "823849",
+      "status": "Final",
+      "away_abbreviation": "TEX",
+      "home_abbreviation": "MIA",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-23/gamePk=823849.envelope.json",
+      "sha256": "c0e99e1726f40d91888b0facfec738a5b088dea2bfeedcb301a46fa01008efae",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-23",
+      "game_pk": "824262",
+      "status": "Final",
+      "away_abbreviation": "NYY",
+      "home_abbreviation": "DET",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-23/gamePk=824262.envelope.json",
+      "sha256": "6cc961afcc4ac8e02d8044820e73515194630d29e3e802ceaa32dcf70be1c8ad",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-23",
+      "game_pk": "822718",
+      "status": "Final",
+      "away_abbreviation": "PHI",
+      "home_abbreviation": "WSH",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-23/gamePk=822718.envelope.json",
+      "sha256": "24c9147906b78fee7617a6ae6c84eb6c1db82cfe2b261c833ebfc62a45b4b5c6",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-23",
+      "game_pk": "823614",
+      "status": "Final",
+      "away_abbreviation": "CHC",
+      "home_abbreviation": "NYM",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-23/gamePk=823614.envelope.json",
+      "sha256": "dfc09a242ad83ad6ac0dece75aaebce355fdee5cdb92ab6f6bed503ed5975828",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-23",
+      "game_pk": "824501",
+      "status": "Final",
+      "away_abbreviation": "MIL",
+      "home_abbreviation": "CIN",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-23/gamePk=824501.envelope.json",
+      "sha256": "6a2559ab6dad83078e9eaf6db7f5905218060c4c2f1d825ed3dff5b19e78405b",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-23",
+      "game_pk": "823690",
+      "status": "Final",
+      "away_abbreviation": "LAD",
+      "home_abbreviation": "MIN",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-23/gamePk=823690.envelope.json",
+      "sha256": "bf7b0ebe230bf86c7ee62229ce2d964c2cdf28d8d558c98eb8664809af546bb8",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-23",
+      "game_pk": "824584",
+      "status": "Final",
+      "away_abbreviation": "CLE",
+      "home_abbreviation": "CWS",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-23/gamePk=824584.envelope.json",
+      "sha256": "12c1a01e13b3bda3b505691da0018575146a0482abad8000adb25c11ae28e7e5",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-23",
+      "game_pk": "823043",
+      "status": "Final",
+      "away_abbreviation": "AZ",
+      "home_abbreviation": "STL",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-23/gamePk=823043.envelope.json",
+      "sha256": "85df23af6d6566dfdc08a02683e552f739e7f4a49490c3bdcd2403ac998c57c3",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-23",
+      "game_pk": "824340",
+      "status": "Final",
+      "away_abbreviation": "BOS",
+      "home_abbreviation": "COL",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-23/gamePk=824340.envelope.json",
+      "sha256": "b3a786c6ae667804012638f67702ab802898af958ce8804e952d7523aeefc387",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-23",
+      "game_pk": "824017",
+      "status": "Final",
+      "away_abbreviation": "BAL",
+      "home_abbreviation": "LAA",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-23/gamePk=824017.envelope.json",
+      "sha256": "65a7dea86e2cd480d410c7bc62a64976ec5e07b8985fc1140a4916213561899e",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-23",
+      "game_pk": "823286",
+      "status": "Final",
+      "away_abbreviation": "ATL",
+      "home_abbreviation": "SD",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-23/gamePk=823286.envelope.json",
+      "sha256": "5ea1480d685d18d63eb468d8ab546662a6a0b24c3c85963e154ea3d6033b4631",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-23",
+      "game_pk": "823210",
+      "status": "Final",
+      "away_abbreviation": "ATH",
+      "home_abbreviation": "SF",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-23/gamePk=823210.envelope.json",
+      "sha256": "24ed3123abe5944163801b9d44e262d619c5881405551625c8564b3d66ebbf3f",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-24",
+      "game_pk": "823850",
+      "status": "Final",
+      "away_abbreviation": "TEX",
+      "home_abbreviation": "MIA",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-24/gamePk=823850.envelope.json",
+      "sha256": "2be02b2b746ec2dfc62b90a198f1f96f20ca217b57e3b1b91f4c235d3a694c47",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-24",
+      "game_pk": "823613",
+      "status": "Final",
+      "away_abbreviation": "CHC",
+      "home_abbreviation": "NYM",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-24/gamePk=823613.envelope.json",
+      "sha256": "3b14edf9a98350eef88d676309e0d0302c250d70cab7698310f27f69c125472d",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-24",
+      "game_pk": "823611",
+      "status": "Final",
+      "away_abbreviation": "CHC",
+      "home_abbreviation": "NYM",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-24/gamePk=823611.envelope.json",
+      "sha256": "ea679deb408f40621eaa41ab68a462e54bcc9eedc93410635974c4920b9ab507",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-24",
+      "game_pk": "824583",
+      "status": "Final",
+      "away_abbreviation": "CLE",
+      "home_abbreviation": "CWS",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-24/gamePk=824583.envelope.json",
+      "sha256": "9324b277c356d8cfbcb5f4d533bd3ad2872e548e75d7ff766d173c509a908828",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-24",
+      "game_pk": "824341",
+      "status": "Final",
+      "away_abbreviation": "BOS",
+      "home_abbreviation": "COL",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-24/gamePk=824341.envelope.json",
+      "sha256": "fd456418942d5b0730d96d5416ad36df6cad7818c479660e62e62aeed8b01b1d",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-24",
+      "game_pk": "824018",
+      "status": "Final",
+      "away_abbreviation": "BAL",
+      "home_abbreviation": "LAA",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-24/gamePk=824018.envelope.json",
+      "sha256": "da9ef1f8fd761aaa99e12b223767e7927e8357ff2dcdd7e5880fe149e8efd09f",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-24",
+      "game_pk": "823367",
+      "status": "Final",
+      "away_abbreviation": "SEA",
+      "home_abbreviation": "PIT",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-24/gamePk=823367.envelope.json",
+      "sha256": "34329d402ecc2bbf8d959d56658e8810a6aaaa77316cf4ba946b4ec4824ef682",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-24",
+      "game_pk": "822965",
+      "status": "Final",
+      "away_abbreviation": "KC",
+      "home_abbreviation": "TB",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-24/gamePk=822965.envelope.json",
+      "sha256": "bb1a7eaf7361b40c9e8a522a0ee5a7022aee51e0bcfa09fdacb015116bd67871",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-24",
+      "game_pk": "824259",
+      "status": "Final",
+      "away_abbreviation": "NYY",
+      "home_abbreviation": "DET",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-24/gamePk=824259.envelope.json",
+      "sha256": "899ace4524bfa651f9c5d897b185cfed66a6f60a2e6758bf8e832d78cc2e3fa5",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-24",
+      "game_pk": "822719",
+      "status": "Final",
+      "away_abbreviation": "PHI",
+      "home_abbreviation": "WSH",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-24/gamePk=822719.envelope.json",
+      "sha256": "9db570c90fb5ae70392e3523cffc3ef373fa0cf8f632deef2bfad589f1cef7b6",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-24",
+      "game_pk": "822798",
+      "status": "Final",
+      "away_abbreviation": "HOU",
+      "home_abbreviation": "TOR",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-24/gamePk=822798.envelope.json",
+      "sha256": "45f48c503ed1c9cde4149f396fe44c9b59205e86a09e6f07007039efec6fd308",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-24",
+      "game_pk": "824500",
+      "status": "Final",
+      "away_abbreviation": "MIL",
+      "home_abbreviation": "CIN",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-24/gamePk=824500.envelope.json",
+      "sha256": "b873b283bc8fde9c6a68acbbe067364328b72fa581d93531985073367cf56981",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-24",
+      "game_pk": "823691",
+      "status": "Final",
+      "away_abbreviation": "LAD",
+      "home_abbreviation": "MIN",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-24/gamePk=823691.envelope.json",
+      "sha256": "def946635bb6231244bf037c810ea3c4667fe76844320c0a8eab416ef6151d9d",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-24",
+      "game_pk": "823041",
+      "status": "Final",
+      "away_abbreviation": "AZ",
+      "home_abbreviation": "STL",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-24/gamePk=823041.envelope.json",
+      "sha256": "04ab4df7693632066050fbd45a9af7963e266602e72493da787c35262d75cef8",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-24",
+      "game_pk": "823284",
+      "status": "Final",
+      "away_abbreviation": "ATL",
+      "home_abbreviation": "SD",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-24/gamePk=823284.envelope.json",
+      "sha256": "682688d0c6a80e26865e594d735b05237839373110121fe5b02afec0374688cd",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-24",
+      "game_pk": "823208",
+      "status": "Final",
+      "away_abbreviation": "ATH",
+      "home_abbreviation": "SF",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-24/gamePk=823208.envelope.json",
+      "sha256": "d92955e7f774190f6f54fc90c6148d759f2219195f18362914d4f1b5a9ed984e",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-25",
+      "game_pk": "822961",
+      "status": "Final",
+      "away_abbreviation": "KC",
+      "home_abbreviation": "TB",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-25/gamePk=822961.envelope.json",
+      "sha256": "c8232f77288f28120a048bf1e4d0dc0c11804a010e2d6393afa7b7142445ab9e",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-25",
+      "game_pk": "823366",
+      "status": "Final",
+      "away_abbreviation": "SEA",
+      "home_abbreviation": "PIT",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-25/gamePk=823366.envelope.json",
+      "sha256": "510fb0cff66c8ec3ccd5bd8ee2620a25608ff77ac577c93b32cf26eaac7c7e7f",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-25",
+      "game_pk": "823209",
+      "status": "Final",
+      "away_abbreviation": "ATH",
+      "home_abbreviation": "SF",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-25/gamePk=823209.envelope.json",
+      "sha256": "975b33d0a2e9cc79340f19546f42d34152a10abdb612c01c0c21a6cbfcca05e4",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-25",
+      "game_pk": "824258",
+      "status": "Final",
+      "away_abbreviation": "HOU",
+      "home_abbreviation": "DET",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-25/gamePk=824258.envelope.json",
+      "sha256": "55affab2888b63558bb0b01b41629cafedd9cd624f2e218d4aa6f1a7da8e3527",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-25",
+      "game_pk": "822717",
+      "status": "Final",
+      "away_abbreviation": "PHI",
+      "home_abbreviation": "WSH",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-25/gamePk=822717.envelope.json",
+      "sha256": "5e6a5c771bf8a4738d54b9d8f7cce4c95772c2cbe2756178fb368001fa0fefd8",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-25",
+      "game_pk": "822797",
+      "status": "Final",
+      "away_abbreviation": "TEX",
+      "home_abbreviation": "TOR",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-25/gamePk=822797.envelope.json",
+      "sha256": "d92dff34456c2c5c69a9618874e1c3b59e9ca83b2d6cfd31e54041830aafc3fd",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-25",
+      "game_pk": "823612",
+      "status": "Final",
+      "away_abbreviation": "CHC",
+      "home_abbreviation": "NYM",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-25/gamePk=823612.envelope.json",
+      "sha256": "f8f741284cd817c54bcf32d809d3d187c1563734568c04b50a63d308511d91e7",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-25",
+      "game_pk": "824747",
+      "status": "Final",
+      "away_abbreviation": "NYY",
+      "home_abbreviation": "BOS",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-25/gamePk=824747.envelope.json",
+      "sha256": "6bdb1182e1fa5bd6a72a7ba53b2a944b07a5618ce190fbd955312bfa57262adb",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-25",
+      "game_pk": "823042",
+      "status": "Postponed",
+      "away_abbreviation": "AZ",
+      "home_abbreviation": "STL",
+      "envelope_path": "",
+      "sha256": "",
+      "skipped": true
+    },
+    {
+      "official_date": "2026-06-26",
+      "game_pk": "824255",
+      "status": "Final",
+      "away_abbreviation": "HOU",
+      "home_abbreviation": "DET",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-26/gamePk=824255.envelope.json",
+      "sha256": "090022c05c96c7d60b1cc9d464f73bd812a5c7aa80e146f8fe52ee24f743e6c5",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-26",
+      "game_pk": "823363",
+      "status": "Final",
+      "away_abbreviation": "CIN",
+      "home_abbreviation": "PIT",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-26/gamePk=823363.envelope.json",
+      "sha256": "bf510b74ef92dc9dafd4383eff50188aa289874f5509e66a2055b38497f66794",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-26",
+      "game_pk": "824824",
+      "status": "Final",
+      "away_abbreviation": "WSH",
+      "home_abbreviation": "BAL",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-26/gamePk=824824.envelope.json",
+      "sha256": "2a5042dfd28cf2177e6a4dc739448e79da19ec72559a2bbed574b5d25f2d9e0b",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-26",
+      "game_pk": "822796",
+      "status": "Final",
+      "away_abbreviation": "TEX",
+      "home_abbreviation": "TOR",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-26/gamePk=822796.envelope.json",
+      "sha256": "cf1854b77172bb6a2f33795875a929584e3938fb1deb100c39b8740ada8a5b5f",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-26",
+      "game_pk": "824423",
+      "status": "Final",
+      "away_abbreviation": "SEA",
+      "home_abbreviation": "CLE",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-26/gamePk=824423.envelope.json",
+      "sha256": "fc21a84693f0d881f525ed1f9eb07c7ff0d636020e63a9e0ac33353d7f4a2cf4",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-26",
+      "game_pk": "822962",
+      "status": "Final",
+      "away_abbreviation": "AZ",
+      "home_abbreviation": "TB",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-26/gamePk=822962.envelope.json",
+      "sha256": "326065369eaf021f1bfc62728400685e85f601cb2e119ae8ce36195a99d1273a",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-26",
+      "game_pk": "823610",
+      "status": "Final",
+      "away_abbreviation": "PHI",
+      "home_abbreviation": "NYM",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-26/gamePk=823610.envelope.json",
+      "sha256": "5431b6797785f20771a18eed445f633ad2a08a7381eab9462fafa486d299e27b",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-26",
+      "game_pk": "824743",
+      "status": "Final",
+      "away_abbreviation": "NYY",
+      "home_abbreviation": "BOS",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-26/gamePk=824743.envelope.json",
+      "sha256": "d6c866c553cc5fb2e63435e6609a83c2f4cd60905ad19fec76f4a05e9f8f6695",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-26",
+      "game_pk": "824582",
+      "status": "Final",
+      "away_abbreviation": "KC",
+      "home_abbreviation": "CWS",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-26/gamePk=824582.envelope.json",
+      "sha256": "b412ec7cb4d0172275747addb2b483b3e7a062f528f5bc4f31bcf1016357aeaf",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-26",
+      "game_pk": "823773",
+      "status": "Final",
+      "away_abbreviation": "CHC",
+      "home_abbreviation": "MIL",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-26/gamePk=823773.envelope.json",
+      "sha256": "db9817fb0f6c485201bd41e06c82931b35a7866a32b3fa528ec4c178f522f170",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-26",
+      "game_pk": "823688",
+      "status": "Final",
+      "away_abbreviation": "COL",
+      "home_abbreviation": "MIN",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-26/gamePk=823688.envelope.json",
+      "sha256": "6eed438b8dd36a1117d5f7154ce701d54ce2eeef5a688bbd0883ff68ffcdd8f9",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-26",
+      "game_pk": "823039",
+      "status": "Final",
+      "away_abbreviation": "MIA",
+      "home_abbreviation": "STL",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-26/gamePk=823039.envelope.json",
+      "sha256": "f36bd440d9355dbd4812dc6923cecbef7bd204217059bd7413eb1411a7bf55be",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-26",
+      "game_pk": "824014",
+      "status": "Final",
+      "away_abbreviation": "ATH",
+      "home_abbreviation": "LAA",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-26/gamePk=824014.envelope.json",
+      "sha256": "187b326fd2384a4d5f4799d9a80eabe7928af7a5fe04c3e7de6b10ad95f5135a",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-26",
+      "game_pk": "823285",
+      "status": "Final",
+      "away_abbreviation": "LAD",
+      "home_abbreviation": "SD",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-26/gamePk=823285.envelope.json",
+      "sha256": "5c8877f54c597d60f470cf3a36b11784637b275ce1be8923abb17726d9dda7b1",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-26",
+      "game_pk": "823206",
+      "status": "Final",
+      "away_abbreviation": "ATL",
+      "home_abbreviation": "SF",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-26/gamePk=823206.envelope.json",
+      "sha256": "400c16ee2010f0322f517cabda15469bf7fcc9fb40dc9ac8c91c936792526f6a",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-27",
+      "game_pk": "824257",
+      "status": "Final",
+      "away_abbreviation": "HOU",
+      "home_abbreviation": "DET",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-27/gamePk=824257.envelope.json",
+      "sha256": "68820b3060b2afe48cbc7acead8df1ee14f457b36db73070b39884cffaef58d4",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-27",
+      "game_pk": "824745",
+      "status": "Final",
+      "away_abbreviation": "NYY",
+      "home_abbreviation": "BOS",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-27/gamePk=824745.envelope.json",
+      "sha256": "191e943a43eabfc1652e2211b493de31579a1a53a47ed3ec4d510daf043b916d",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-27",
+      "game_pk": "822794",
+      "status": "Final",
+      "away_abbreviation": "TEX",
+      "home_abbreviation": "TOR",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-27/gamePk=822794.envelope.json",
+      "sha256": "d6eefce1c421ec42b2ca82e2d83a113a19b911e980fcc3d9021c347ca01242a7",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-27",
+      "game_pk": "823364",
+      "status": "Final",
+      "away_abbreviation": "CIN",
+      "home_abbreviation": "PIT",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-27/gamePk=823364.envelope.json",
+      "sha256": "bd09c8c0117836cf2e707f4e6b66c1c75eee22596ad962afc666e19ead0c9037",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-27",
+      "game_pk": "823609",
+      "status": "Final",
+      "away_abbreviation": "PHI",
+      "home_abbreviation": "NYM",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-27/gamePk=823609.envelope.json",
+      "sha256": "82659dae54a4a579e79e4f29c84c20601d4beb08cf61d8e6e04509bb947a1e53",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-27",
+      "game_pk": "824581",
+      "status": "Final",
+      "away_abbreviation": "KC",
+      "home_abbreviation": "CWS",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-27/gamePk=824581.envelope.json",
+      "sha256": "7a43dc7073d7d8beba6587794c297abf0aefe46c2ebd6beeef5ba73c966ccf8c",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-27",
+      "game_pk": "822960",
+      "status": "Final",
+      "away_abbreviation": "AZ",
+      "home_abbreviation": "TB",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-27/gamePk=822960.envelope.json",
+      "sha256": "2274ad772fbe10cf3a9ae14489da72436b1d3c3f04d2ffc6503c50618311819e",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-27",
+      "game_pk": "824825",
+      "status": "Final",
+      "away_abbreviation": "WSH",
+      "home_abbreviation": "BAL",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-27/gamePk=824825.envelope.json",
+      "sha256": "21bdcf3fafc3f717f64f652f7d34464b7a66eba5427ebc5625beb5713afe8121",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-27",
+      "game_pk": "824421",
+      "status": "Final",
+      "away_abbreviation": "SEA",
+      "home_abbreviation": "CLE",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-27/gamePk=824421.envelope.json",
+      "sha256": "773610b86b2b1909326bb204f36c11c23d5f07bd156887a6898e9729fc492df9",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-27",
+      "game_pk": "823689",
+      "status": "Final",
+      "away_abbreviation": "COL",
+      "home_abbreviation": "MIN",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-27/gamePk=823689.envelope.json",
+      "sha256": "cebc02a5ca83b6deb79debf7f1f028dff20c763e3a961d9714eb2b42eb69848a",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-27",
+      "game_pk": "823770",
+      "status": "Final",
+      "away_abbreviation": "CHC",
+      "home_abbreviation": "MIL",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-27/gamePk=823770.envelope.json",
+      "sha256": "77c2b390bfbc73f2ca36fc7cc481915c094a1a7097d5272bb48a1853e710ef94",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-27",
+      "game_pk": "823038",
+      "status": "Final",
+      "away_abbreviation": "MIA",
+      "home_abbreviation": "STL",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-27/gamePk=823038.envelope.json",
+      "sha256": "9fc595472feb7ad1d163a853e133fd001440cb6bed954bb328b023e2e3b1b115",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-27",
+      "game_pk": "823283",
+      "status": "Final",
+      "away_abbreviation": "LAD",
+      "home_abbreviation": "SD",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-27/gamePk=823283.envelope.json",
+      "sha256": "6b9807e9969778cfa26395a398f95cd8aaa89deae64a561b8f075d24a3a8aa61",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-27",
+      "game_pk": "823207",
+      "status": "Final",
+      "away_abbreviation": "ATL",
+      "home_abbreviation": "SF",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-27/gamePk=823207.envelope.json",
+      "sha256": "d39e0542eb4dba859a4d77c8e68154d111372e5e64e5af01e2b8c0bdbe9fdca5",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-27",
+      "game_pk": "824015",
+      "status": "Final",
+      "away_abbreviation": "ATH",
+      "home_abbreviation": "LAA",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-27/gamePk=824015.envelope.json",
+      "sha256": "c0ca040bee66c07f993deeb84732bb92b003df65bcc7b494492719613cfdcf10",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-28",
+      "game_pk": "824821",
+      "status": "Final",
+      "away_abbreviation": "WSH",
+      "home_abbreviation": "BAL",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-28/gamePk=824821.envelope.json",
+      "sha256": "45062ac32e13f4d375c74c3a630ec894a255ee553ed1793e3ac5c741e1ec8541",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-28",
+      "game_pk": "823362",
+      "status": "Final",
+      "away_abbreviation": "CIN",
+      "home_abbreviation": "PIT",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-28/gamePk=823362.envelope.json",
+      "sha256": "2b68e060f07f4ed8a44a1de2d941fd0e776acdf37c9bee1b0dd8a45bcfe7ee36",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-28",
+      "game_pk": "822795",
+      "status": "Final",
+      "away_abbreviation": "TEX",
+      "home_abbreviation": "TOR",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-28/gamePk=822795.envelope.json",
+      "sha256": "e2e0585eeb4b3e23e9ecde2b0daca13c7179ed2847e275c166037b56472259c7",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-28",
+      "game_pk": "824256",
+      "status": "Final",
+      "away_abbreviation": "HOU",
+      "home_abbreviation": "DET",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-28/gamePk=824256.envelope.json",
+      "sha256": "0d24a41bbaf415173801c1c92650a66dd0da14611c93b4add2b7b809ec5d4de3",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-28",
+      "game_pk": "824422",
+      "status": "Final",
+      "away_abbreviation": "SEA",
+      "home_abbreviation": "CLE",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-28/gamePk=824422.envelope.json",
+      "sha256": "e02ea79288981233c0ae49bafe815fa9668bbfd225e73e19fc2f3c45ca464313",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-28",
+      "game_pk": "822959",
+      "status": "Final",
+      "away_abbreviation": "AZ",
+      "home_abbreviation": "TB",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-28/gamePk=822959.envelope.json",
+      "sha256": "164ba76ecef87a4e347dd69715d77daefc9a39a2cdddcbe706bee4402703dfa3",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-28",
+      "game_pk": "823608",
+      "status": "Final",
+      "away_abbreviation": "PHI",
+      "home_abbreviation": "NYM",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-28/gamePk=823608.envelope.json",
+      "sha256": "d8e03b13806995a8b4d3ab91dd91294f36dde7dd50acd2dfcb8b4fe9f4d279e7",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-28",
+      "game_pk": "823686",
+      "status": "Final",
+      "away_abbreviation": "COL",
+      "home_abbreviation": "MIN",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-28/gamePk=823686.envelope.json",
+      "sha256": "082f0efa91f4e1e161bc0ae416dd3fca473861d2335d9938c9e867e00839fbb1",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-28",
+      "game_pk": "824580",
+      "status": "Final",
+      "away_abbreviation": "KC",
+      "home_abbreviation": "CWS",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-28/gamePk=824580.envelope.json",
+      "sha256": "e01307bf4ec58f922765cf6cb3574c8f077483361117c6f6e4f4ebb9d192886b",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-28",
+      "game_pk": "823769",
+      "status": "Final",
+      "away_abbreviation": "CHC",
+      "home_abbreviation": "MIL",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-28/gamePk=823769.envelope.json",
+      "sha256": "fac0b94d514457f56bba92c4d7a549e621d692236d5f0677d9a2cd354be74e3e",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-28",
+      "game_pk": "823037",
+      "status": "Final",
+      "away_abbreviation": "MIA",
+      "home_abbreviation": "STL",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-28/gamePk=823037.envelope.json",
+      "sha256": "cd7aa8dbc7dda91862edd2e527463e64100ec04df96bdf28f55a78a5a687d65e",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-28",
+      "game_pk": "824011",
+      "status": "Final",
+      "away_abbreviation": "ATH",
+      "home_abbreviation": "LAA",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-28/gamePk=824011.envelope.json",
+      "sha256": "fda920109647361825285887f41961be041c20712611d30947870a8284e05049",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-28",
+      "game_pk": "823204",
+      "status": "Final",
+      "away_abbreviation": "ATL",
+      "home_abbreviation": "SF",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-28/gamePk=823204.envelope.json",
+      "sha256": "0e3b75dc9232e47ef1dd93768556fdb6fb9a5566431e27c08c3ae53ed1d24e83",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-28",
+      "game_pk": "823281",
+      "status": "Final",
+      "away_abbreviation": "LAD",
+      "home_abbreviation": "SD",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-28/gamePk=823281.envelope.json",
+      "sha256": "457e3e9809deeead71f555b6c08993e561ff2c89ac7006a6acfdfa2ca240c1e8",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-28",
+      "game_pk": "824744",
+      "status": "Final",
+      "away_abbreviation": "NYY",
+      "home_abbreviation": "BOS",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-28/gamePk=824744.envelope.json",
+      "sha256": "2af14d79c921cb198b4e6a4fcb503078fd73c705acda1d3496324da4113efa27",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-29",
+      "game_pk": "824822",
+      "status": "Final",
+      "away_abbreviation": "CWS",
+      "home_abbreviation": "BAL",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-29/gamePk=824822.envelope.json",
+      "sha256": "e0703deec3d46142a4383f126a3c404e0055006c5be5777f5463bd444c8e24ef",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-29",
+      "game_pk": "823444",
+      "status": "Final",
+      "away_abbreviation": "PIT",
+      "home_abbreviation": "PHI",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-29/gamePk=823444.envelope.json",
+      "sha256": "75234440b302a2a238b80672c5402199a06d3c81bd4600098679edb82dcbf3ee",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-29",
+      "game_pk": "823529",
+      "status": "Final",
+      "away_abbreviation": "DET",
+      "home_abbreviation": "NYY",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-29/gamePk=823529.envelope.json",
+      "sha256": "e85ecb1fa938775a0d4d39290524a40c66278237086359e03f74957f138e12a2",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-29",
+      "game_pk": "822792",
+      "status": "Final",
+      "away_abbreviation": "NYM",
+      "home_abbreviation": "TOR",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-29/gamePk=822792.envelope.json",
+      "sha256": "56989529017438ceb950e3a0cdd5c76c2eee35459f59da64c125e55778706bf3",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-29",
+      "game_pk": "824741",
+      "status": "Final",
+      "away_abbreviation": "WSH",
+      "home_abbreviation": "BOS",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-29/gamePk=824741.envelope.json",
+      "sha256": "cff28af74a86ee6b7d029e88c7abc92a77b0cbcead48fd188e8d54a225956bea",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-29",
+      "game_pk": "824420",
+      "status": "Final",
+      "away_abbreviation": "TEX",
+      "home_abbreviation": "CLE",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-29/gamePk=824420.envelope.json",
+      "sha256": "32aa909c475850acc870a0a61af1a7f1f9936f86d9f42d98bcdf8d572f5ef6f6",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-29",
+      "game_pk": "823771",
+      "status": "Final",
+      "away_abbreviation": "CIN",
+      "home_abbreviation": "MIL",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-29/gamePk=823771.envelope.json",
+      "sha256": "39377850e2c6a6d8b786dd07ebb11ad5a18b3d163cacb10986ee4d1c5026efcf",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-29",
+      "game_pk": "824662",
+      "status": "Final",
+      "away_abbreviation": "SD",
+      "home_abbreviation": "CHC",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-29/gamePk=824662.envelope.json",
+      "sha256": "e658ddd917d17363e88ab3e3720c5e0e91b4f2885ea7ad03a56af83aa345a0a6",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-29",
+      "game_pk": "824176",
+      "status": "Final",
+      "away_abbreviation": "MIN",
+      "home_abbreviation": "HOU",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-29/gamePk=824176.envelope.json",
+      "sha256": "39f32694b7481e86cfbfa0207f680db3fa118a7ab6652c5cc8b126db718081a0",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-29",
+      "game_pk": "824339",
+      "status": "Final",
+      "away_abbreviation": "MIA",
+      "home_abbreviation": "COL",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-29/gamePk=824339.envelope.json",
+      "sha256": "19e19d9c90ad4f4d3726a8340f26f4f202949a82e5b8e4c470b4761b73cfc86b",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-29",
+      "game_pk": "824986",
+      "status": "Final",
+      "away_abbreviation": "LAD",
+      "home_abbreviation": "ATH",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-29/gamePk=824986.envelope.json",
+      "sha256": "ded9fa495879f9797e76d470ba24291cf8170813e953c825a066b4c77df1a76a",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-29",
+      "game_pk": "823121",
+      "status": "Final",
+      "away_abbreviation": "LAA",
+      "home_abbreviation": "SEA",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-29/gamePk=823121.envelope.json",
+      "sha256": "035091f590edb45e87fd826854ffc9ab76040111efa1af453114dc9abeee546a",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-29",
+      "game_pk": "825065",
+      "status": "Final",
+      "away_abbreviation": "SF",
+      "home_abbreviation": "AZ",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-29/gamePk=825065.envelope.json",
+      "sha256": "6d7813e20e7fac2fcef764d2aaa0b391cc3c98d01ff285765bbff049d62fd95d",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-30",
+      "game_pk": "824819",
+      "status": "Final",
+      "away_abbreviation": "CWS",
+      "home_abbreviation": "BAL",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-30/gamePk=824819.envelope.json",
+      "sha256": "70dab1ed2eab1b51c0bf9166154973d710b6be940d241a33617adb1fb10cb548",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-30",
+      "game_pk": "824418",
+      "status": "Final",
+      "away_abbreviation": "TEX",
+      "home_abbreviation": "CLE",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-30/gamePk=824418.envelope.json",
+      "sha256": "3438039d9255e6d6e80d216dd0d2f0bb7e81ed9d18b6db5dcc28d9d7642864e8",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-30",
+      "game_pk": "823445",
+      "status": "Final",
+      "away_abbreviation": "PIT",
+      "home_abbreviation": "PHI",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-30/gamePk=823445.envelope.json",
+      "sha256": "39a68f50b0ac046e479f754d5ea5978a075f4406e5563367c288158626a191f0",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-30",
+      "game_pk": "823528",
+      "status": "Final",
+      "away_abbreviation": "DET",
+      "home_abbreviation": "NYY",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-30/gamePk=823528.envelope.json",
+      "sha256": "67c4389325819766f6248ce600d163329eb0ba04e94320fb29390e4c1d017bc1",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-30",
+      "game_pk": "822793",
+      "status": "Final",
+      "away_abbreviation": "NYM",
+      "home_abbreviation": "TOR",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-30/gamePk=822793.envelope.json",
+      "sha256": "375eec27f25f524d4b39683d469c38412afd1cc61ce48acc6c4398935389bf31",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-30",
+      "game_pk": "824742",
+      "status": "Final",
+      "away_abbreviation": "WSH",
+      "home_abbreviation": "BOS",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-30/gamePk=824742.envelope.json",
+      "sha256": "dac5863303667407221233d2d0a851d48952224f10d4565324396cdde7a392e6",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-30",
+      "game_pk": "824907",
+      "status": "Final",
+      "away_abbreviation": "STL",
+      "home_abbreviation": "ATL",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-30/gamePk=824907.envelope.json",
+      "sha256": "c18cebfb20666ade57c5c370330bd17f57987c54cda2814c2b655834b921925f",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-30",
+      "game_pk": "824096",
+      "status": "Final",
+      "away_abbreviation": "TB",
+      "home_abbreviation": "KC",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-30/gamePk=824096.envelope.json",
+      "sha256": "d7b0f3dd20cc7d5de8f47d02b2fbb435f2122b51bcdce34b25bed3d9883d76ea",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-30",
+      "game_pk": "823768",
+      "status": "Final",
+      "away_abbreviation": "CIN",
+      "home_abbreviation": "MIL",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-30/gamePk=823768.envelope.json",
+      "sha256": "d20872bc3cdbe2526f9de4148e7c7d2cba8dfbac56ba4909fcfb7de7b06d08d4",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-30",
+      "game_pk": "824661",
+      "status": "Final",
+      "away_abbreviation": "SD",
+      "home_abbreviation": "CHC",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-30/gamePk=824661.envelope.json",
+      "sha256": "8001973c7ca2bad00924299a237a7e5c42e37c472d5d794bbd85f9f3c79264b8",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-30",
+      "game_pk": "824175",
+      "status": "Final",
+      "away_abbreviation": "MIN",
+      "home_abbreviation": "HOU",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-30/gamePk=824175.envelope.json",
+      "sha256": "ad0f90bbd56984d2f814d9adf2818285eb0640b6fdc79edd019663944154cd40",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-30",
+      "game_pk": "824338",
+      "status": "Final",
+      "away_abbreviation": "MIA",
+      "home_abbreviation": "COL",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-30/gamePk=824338.envelope.json",
+      "sha256": "e11cc9f5ecf1e12b3ae36e7e27a0990af019c7d58b9c3e0a018bdb4993829463",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-30",
+      "game_pk": "824984",
+      "status": "Final",
+      "away_abbreviation": "LAD",
+      "home_abbreviation": "ATH",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-30/gamePk=824984.envelope.json",
+      "sha256": "422b17c4ecd88c6b93340014ca1f930e4ce262a08da20bba57c1a3efb4e7d7e4",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-30",
+      "game_pk": "823122",
+      "status": "Final",
+      "away_abbreviation": "LAA",
+      "home_abbreviation": "SEA",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-30/gamePk=823122.envelope.json",
+      "sha256": "6e58468f898ef3b55e601388ee60148fd6e815248f337a321c63ec3c48314634",
+      "skipped": false
+    },
+    {
+      "official_date": "2026-06-30",
+      "game_pk": "825066",
+      "status": "Final",
+      "away_abbreviation": "SF",
+      "home_abbreviation": "AZ",
+      "envelope_path": "Backtesting Suite/Foundation/W2/raw/statsapi/date=2026-06-30/gamePk=825066.envelope.json",
+      "sha256": "c635cd431843113d88838d6b2ab7e5266037df0c20695bfa08d827002e09d4ae",
+      "skipped": false
+    }
+  ]
+}

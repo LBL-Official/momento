@@ -1,0 +1,37 @@
+[Unit]
+Description=Momento MLB Kalshi Demo engine for Jump bot %i
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=momento
+Group=momento
+WorkingDirectory=/var/lib/momento
+Environment=MOMENTO_CONFIG=/var/lib/momento/demo/%i/demo.toml
+Environment=MOMENTO_STATE_DIR=/var/lib/momento/demo/%i/state
+Environment=MOMENTO_KALSHI_ENV=demo
+Environment=MOMENTO_KALSHI_SECRET_FILE=/dev/shm/momento-kalshi-demo-%i.json
+Environment=JUMP_BOT_DEMO_SECRET_ID=momento/kalshi/demo
+Environment=AWS_DEFAULT_REGION=us-east-1
+Environment=AWS_REGION=us-east-1
+Environment=MOMENTO_AWS_REGION=us-east-1
+ExecStartPre=/usr/local/libexec/m-demo-fetch-secret.sh
+ExecStart=/usr/local/bin/momento-trading-engine-demo
+ExecStopPost=/bin/rm -f /dev/shm/momento-kalshi-demo-%i.json
+Restart=on-failure
+RestartPreventExitStatus=78
+RestartSec=5
+TimeoutStopSec=15
+MemoryMax=256M
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/momento/demo/%i
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=momento-demo-%i
+
+[Install]
+WantedBy=multi-user.target

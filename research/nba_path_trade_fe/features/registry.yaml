@@ -1,0 +1,138 @@
+# SSOT. Edit here, never invent a feature in code.
+# used_in: enter_skip | hedge_only | both
+# Family E never used_in enter_skip.
+version: 1
+state_fair_version: v1_logistic_prev_season
+features:
+  - name: time_to_80_sec
+    family: A
+    kind: raw
+    used_in: enter_skip
+    transform: none
+    note: "seconds from tip / period start to first P>=80"
+  - name: velocity_ratio_1_5
+    family: A
+    kind: raw
+    used_in: enter_skip
+    transform: none
+    note: "1-min rise / 5-min rise at t_s"
+  - name: max_uptick_gap_5m
+    family: A
+    kind: raw
+    used_in: enter_skip
+    transform: none
+    note: "largest consecutive uptick in last 5m, cents"
+  - name: overshoot_cents
+    family: A
+    kind: raw
+    used_in: enter_skip
+    transform: none
+    note: "first print >=80 minus 80"
+  - name: n_rebids_5m
+    family: A
+    kind: raw
+    used_in: enter_skip
+    transform: none
+    note: "count of own-side bid improvements in last 5m"
+  - name: spread_own
+    family: B
+    kind: raw
+    used_in: enter_skip
+    transform: none
+    note: "ask-bid own market at t_s; missing if no book"
+  - name: spread_opp
+    family: B
+    kind: raw
+    used_in: enter_skip
+    transform: none
+    note: "ask-bid opposite market at t_s"
+  - name: size_own_bid
+    family: B
+    kind: raw
+    used_in: enter_skip
+    transform: none
+    note: "visible bid size own; SOURCE_UNAVAILABLE if no L2"
+  - name: size_opp_bid
+    family: B
+    kind: raw
+    used_in: enter_skip
+    transform: none
+    note: "visible bid size opposite"
+  - name: book_features_missing
+    family: B
+    kind: raw
+    used_in: enter_skip
+    transform: none
+    note: "1 if any required book field absent; never fill economic 0"
+  - name: state_fair_price
+    family: C
+    kind: raw
+    used_in: enter_skip
+    transform: none
+    note: "f_nu in [0,100]; versioned; prior-season only"
+  - name: price_minus_state_fair
+    family: C
+    kind: raw
+    used_in: enter_skip
+    transform: none
+    note: "P_ts - state_fair_price"
+  - name: abs_price_minus_state_fair
+    family: C
+    kind: raw
+    used_in: enter_skip
+    transform: none
+    note: "abs(price_minus_state_fair)"
+  - name: impulse_x_disagreement
+    family: C
+    kind: interaction
+    used_in: enter_skip
+    transform: none
+    note: "REQUIRED. velocity_ratio_1_5 * max(0, price_minus_state_fair)"
+  - name: thin_x_disagreement
+    family: C
+    kind: interaction
+    used_in: enter_skip
+    transform: none
+    note: "REQUIRED. (spread_own+spread_opp) * abs_price_minus_state_fair"
+  - name: period
+    family: D
+    kind: raw
+    used_in: enter_skip
+    transform: none
+    note: "1-4 + OT; not in PCA"
+  - name: clock_bucket
+    family: D
+    kind: raw
+    used_in: enter_skip
+    transform: none
+    note: "secs remaining in period, coarse bucket"
+  - name: rest_days
+    family: D
+    kind: raw
+    used_in: enter_skip
+    transform: none
+    note: "days since last game for the priced team"
+  - name: hedge_spread_opp
+    family: E
+    kind: raw
+    used_in: hedge_only
+    transform: none
+    note: "opposite spread at first long touch of 55/50/45; post-entry"
+  - name: hedge_size_opp_bid
+    family: E
+    kind: raw
+    used_in: hedge_only
+    transform: none
+    note: "opposite bid size at hedge timestamps"
+  - name: hedge_minutes_to_first_55
+    family: E
+    kind: raw
+    used_in: hedge_only
+    transform: none
+    note: "minutes from fill to first long <=55"
+  - name: hedge_restable_38_42
+    family: E
+    kind: raw
+    used_in: hedge_only
+    transform: none
+    note: "1 if opposite book restable in 38-42 at that time"

@@ -1,0 +1,161 @@
+/** Phenomenon catalog — concepts, not runnable research objects. */
+
+export type Constructibility = "IMPLEMENTED" | "STRUCTURAL" | "NOT_CONSTRUCTIBLE" | "ABSENT";
+
+export type Phenomenon = {
+  id: string;
+  group: "Price Touch" | "Path" | "Terminal" | "Information" | "Fundamental";
+  name: string;
+  plainEnglish: string;
+  formalDefinition: string;
+  availableFields: string[];
+  compatiblePopulations: string[];
+  knownTemplates: string[];
+  constructibility: Constructibility;
+};
+
+export const PHENOMENA: Phenomenon[] = [
+  {
+    id: "FIRST80",
+    group: "Price Touch",
+    name: "FIRST80",
+    plainEnglish: "First authoritative qualifying touch at 80¢ on the tradable path.",
+    formalDefinition: "FIRST_PRICE_TOUCH at price_e4=8000 with quality gates; definition_versions.FIRST80 must be declared.",
+    availableFields: ["yes_bid_close", "entry_slice", "HIT80"],
+    compatiblePopulations: ["FIRST80", "NCAAB_FIRST80_P5"],
+    knownTemplates: ["FIRST80_Q3", "NCAAB_FIRST80_P5"],
+    constructibility: "IMPLEMENTED",
+  },
+  {
+    id: "FIRST_PRICE_TOUCH",
+    group: "Price Touch",
+    name: "FIRST PRICE TOUCH",
+    plainEnglish: "First time the observed close path reaches a stated price.",
+    formalDefinition: "anchor.event = FIRST_PRICE_TOUCH with explicit price_e4 (E4 integer).",
+    availableFields: ["price_e4", "price_field", "requires_seen_below"],
+    compatiblePopulations: ["FIRST80"],
+    knownTemplates: ["FIRST80_Q3"],
+    constructibility: "IMPLEMENTED",
+  },
+  {
+    id: "FIRST83",
+    group: "Price Touch",
+    name: "FIRST83",
+    plainEnglish: "First touch at 83¢ — not a locked Phase 0–6 population.",
+    formalDefinition: "Would require FIRST_PRICE_TOUCH @ 8300 with an authoritative binding.",
+    availableFields: ["price_e4"],
+    compatiblePopulations: [],
+    knownTemplates: ["FIRST83_Q3"],
+    constructibility: "ABSENT",
+  },
+  {
+    id: "T40",
+    group: "Path",
+    name: "T40",
+    plainEnglish: "Whether the path later prints a tradable close at or below 40¢.",
+    formalDefinition: "Path condition / artifact field T40; SURVIVE ≠ TERMINAL YES.",
+    availableFields: ["T40", "HIT40"],
+    compatiblePopulations: ["FIRST80", "NCAAB_FIRST80_P5"],
+    knownTemplates: ["FIRST80_Q3", "NCAAB_FIRST80_P5"],
+    constructibility: "IMPLEMENTED",
+  },
+  {
+    id: "BARRIER_SURVIVAL",
+    group: "Path",
+    name: "Barrier Survival",
+    plainEnglish: "Absence of later close ≤ stop — not a win.",
+    formalDefinition: "definition_version barrier_survival_v1 / NEVER_CLOSE_LE semantics.",
+    availableFields: ["T40", "stop_price_e4"],
+    compatiblePopulations: ["FIRST80"],
+    knownTemplates: ["FIRST80_Q3", "T40_ONLY_PATH"],
+    constructibility: "IMPLEMENTED",
+  },
+  {
+    id: "MAX_ADVERSE_PATH",
+    group: "Path",
+    name: "Maximum Adverse Path",
+    plainEnglish: "Worst observed adverse close excursion — requires bound path series.",
+    formalDefinition: "Not automatically available; needs authoritative path distribution.",
+    availableFields: [],
+    compatiblePopulations: [],
+    knownTemplates: ["PATH_VOL_PLACEHOLDER"],
+    constructibility: "NOT_CONSTRUCTIBLE",
+  },
+  {
+    id: "KALSHI_YES",
+    group: "Terminal",
+    name: "Kalshi YES",
+    plainEnglish: "Contract settles YES (W). Not box-score home win.",
+    formalDefinition: "terminal KALSHI_YES / field W; warehouse_frozen_v1.",
+    availableFields: ["W", "expiration_result_yes"],
+    compatiblePopulations: ["FIRST80", "NCAAB_FIRST80_P5"],
+    knownTemplates: ["FIRST80_Q3", "TERMINAL_YES_ONLY"],
+    constructibility: "IMPLEMENTED",
+  },
+  {
+    id: "SETTLEMENT",
+    group: "Terminal",
+    name: "Settlement",
+    plainEnglish: "Exchange settlement outcome for the bound market.",
+    formalDefinition: "Terminal condition family KALSHI_YES / KALSHI_NO.",
+    availableFields: ["W"],
+    compatiblePopulations: ["FIRST80"],
+    knownTemplates: ["TERMINAL_YES_ONLY", "TERMINAL_NO_ONLY"],
+    constructibility: "IMPLEMENTED",
+  },
+  {
+    id: "POINT_IN_TIME",
+    group: "Information",
+    name: "POINT-IN-TIME",
+    plainEnglish: "Only facts available before as_of (half-open I(t)).",
+    formalDefinition: "I(t) = { x | available_at(x) < t }.",
+    availableFields: ["as_of", "available_at"],
+    compatiblePopulations: [],
+    knownTemplates: ["POINT_IN_TIME_INSPECT"],
+    constructibility: "IMPLEMENTED",
+  },
+  {
+    id: "OBSERVATION_TIME",
+    group: "Information",
+    name: "OBSERVATION TIME",
+    plainEnglish: "Anchor at a chosen observation instant O_t.",
+    formalDefinition: "anchor.event = OBSERVATION_TIME; assemble_observation.",
+    availableFields: ["O_t"],
+    compatiblePopulations: [],
+    knownTemplates: ["OBSERVATION_TIME_BASE"],
+    constructibility: "IMPLEMENTED",
+  },
+  {
+    id: "AVAILABLE_INFORMATION",
+    group: "Information",
+    name: "Available Information",
+    plainEnglish: "What could have been known — not what is convenient now.",
+    formalDefinition: "Information regime + information_set on research_spec.",
+    availableFields: ["information_regime", "information_set"],
+    compatiblePopulations: [],
+    knownTemplates: ["CANDLE_1M_REGIME"],
+    constructibility: "IMPLEMENTED",
+  },
+  {
+    id: "FUNDAMENTAL_FT",
+    group: "Fundamental",
+    name: "Fundamental F_t",
+    plainEnglish: "Prior-only fundamental estimate. Not true probability.",
+    formalDefinition: "estimate_fundamental / definition 4.0.0-A.",
+    availableFields: ["F_t"],
+    compatiblePopulations: [],
+    knownTemplates: ["FUNDAMENTAL_FT_AT_OT"],
+    constructibility: "STRUCTURAL",
+  },
+  {
+    id: "BASIS",
+    group: "Fundamental",
+    name: "Basis",
+    plainEnglish: "Market–fundamental basis. Basis ≠ edge.",
+    formalDefinition: "market_fundamental_basis / 4.0.0-B.",
+    availableFields: ["basis"],
+    compatiblePopulations: [],
+    knownTemplates: ["BASIS_EXTREME_AT_OBSERVATION"],
+    constructibility: "STRUCTURAL",
+  },
+];

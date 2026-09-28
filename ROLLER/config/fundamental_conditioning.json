@@ -1,0 +1,50 @@
+{
+  "fundamental_schema_version": "4.0.0-A",
+  "default_schema": "core_v1",
+  "note": "MORE CONDITIONING ≠ BETTER ESTIMATION. Optional dimensions stay off unless a separately versioned schema enables them.",
+  "schemas": {
+    "core_v1": {
+      "conditioning_schema_version": "core_v1",
+      "subject": "home",
+      "score_orientation": "home_minus_away",
+      "clock": {
+        "source": "elapsed_game_seconds",
+        "raw_clock_meaning": "remaining_iso8601",
+        "width_seconds": 60,
+        "inclusivity": "width_floor: bucket = (elapsed // width) * width",
+        "overtime": "period>=5 uses 300-second OT periods inside elapsed_game_seconds",
+        "missing": "INVALID_CONDITION"
+      },
+      "score_margin": {
+        "source": "score_differential_home",
+        "edges": [-15, -5, 0, 5, 15],
+        "inclusivity": "[lo, hi)",
+        "missing": "INVALID_CONDITION"
+      },
+      "period": {
+        "source": "period",
+        "type": "identity",
+        "missing": "INVALID_CONDITION"
+      },
+      "dimensions": [
+        {"name": "period", "source": "period", "type": "identity"},
+        {"name": "clock_bucket", "source": "elapsed_game_seconds", "type": "width", "width": 60},
+        {"name": "score_margin_bucket", "source": "score_differential_home", "type": "edges", "edges": [-15, -5, 0, 5, 15]}
+      ]
+    }
+  },
+  "support": {
+    "minimum_observations": 3,
+    "minimum_unique_games": 2,
+    "minimum_unique_dates": 1,
+    "minimum_unique_seasons": 1,
+    "effective_n_status": "NOT_IMPLEMENTED"
+  },
+  "optional_dimensions_not_in_default": [
+    "home_away",
+    "possession",
+    "pre_game_strength",
+    "volatility",
+    "market_probability"
+  ]
+}

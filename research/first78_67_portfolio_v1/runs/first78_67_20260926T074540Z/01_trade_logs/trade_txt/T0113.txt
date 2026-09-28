@@ -1,0 +1,10 @@
+trade T0113  NCAAB  Iowa St. at Purdue
+contract KXNCAAMBGAME-25DEC06ISUPUR-ISU  slice H2_1
+signal 2025-12-06T10:14:00-08:00 PST  exit 2025-12-06T11:42:47-08:00 PST
+assumed entry 78c  observed close 82c  overshoot 4c
+contracts 2677  principal_cents 208806
+entry_fee_cents 804  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 58894  net_cents 58090
+strategy_result POSITIVE  net_r 1.856681688880365647073864544
+Assumed fill. Not a maker fill. Not live P&L.

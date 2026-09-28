@@ -1,0 +1,258 @@
+{
+  "ledger_version": "W3.LEDGER.1.0.0",
+  "note": "Statuses are evidence-only. This file is never batch-marked COMPLETE.",
+  "steps": [
+    {
+      "id": "CTO-W3-A1-S1",
+      "title": "source contract (consume committed only)",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A1-S2",
+      "title": "committed-artifact gate",
+      "status": "EVIDENCE_RECORDED",
+      "evidence": "committed envelopes=174"
+    },
+    {
+      "id": "CTO-W3-A1-S3",
+      "title": "provenance retained on events",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A1-S4",
+      "title": "checksum verification",
+      "status": "EVIDENCE_RECORDED",
+      "evidence": "checksum_failures=0"
+    },
+    {
+      "id": "CTO-W3-A2-S1",
+      "title": "game identity extraction",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A2-S2",
+      "title": "official gamePk validation",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A2-S3",
+      "title": "unmatched handling",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A2-S4",
+      "title": "ambiguous handling",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A3-S1",
+      "title": "event parsing (W2 parser)",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A3-S2",
+      "title": "event ordering",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A3-S3",
+      "title": "timestamps (PBP official ≠ retrieved_at)",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A3-S4",
+      "title": "event provenance",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A3-S5",
+      "title": "malformed-event handling",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A4-S1",
+      "title": "game metadata",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A4-S2",
+      "title": "inning progression",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A4-S3",
+      "title": "score",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A4-S4",
+      "title": "outs",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A4-S5",
+      "title": "count",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A4-S6",
+      "title": "bases/runners",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A4-S7",
+      "title": "batter/pitcher state",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A5-S1",
+      "title": "replay engine (W2 state machine)",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A5-S2",
+      "title": "state transitions",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A5-S3",
+      "title": "no-lookahead",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A5-S4",
+      "title": "deterministic output",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A6-S1",
+      "title": "2024–2025 processing",
+      "status": "UNAVAILABLE",
+      "evidence": "2024-2025: no local committed StatsAPI PBP"
+    },
+    {
+      "id": "CTO-W3-A6-S2",
+      "title": "2025–2026 processing",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A6-S3",
+      "title": "current/incremental processing",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A6-S4",
+      "title": "coverage reporting",
+      "status": "EVIDENCE_RECORDED",
+      "evidence": "reconstructed=174 valid=174 failed=0 postponed=4"
+    },
+    {
+      "id": "CTO-W3-A7-S1",
+      "title": "idempotency",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A7-S2",
+      "title": "duplicate handling",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A7-S3",
+      "title": "conflict handling",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A7-S4",
+      "title": "anomaly reporting",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A8-S1",
+      "title": "fixtures",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A8-S2",
+      "title": "unit tests",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A8-S3",
+      "title": "integration tests",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A8-S4",
+      "title": "real-data validation",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A8-S5",
+      "title": "workspace-relevant validation",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A9-S1",
+      "title": "evidence package",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A9-S2",
+      "title": "coverage report",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A9-S3",
+      "title": "limitations",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A9-S4",
+      "title": "W4 handoff",
+      "status": "NOT_STARTED",
+      "evidence": ""
+    },
+    {
+      "id": "CTO-W3-A9-S5",
+      "title": "CTO acceptance package",
+      "status": "NOT_STARTED",
+      "evidence": "CTO acceptance is not set by this runner"
+    }
+  ]
+}

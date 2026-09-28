@@ -1,0 +1,10 @@
+trade T0157  NBA  Detroit at Portland
+contract KXNBAGAME-25DEC22DETPOR-DET  slice Q2
+signal 2025-12-22T19:45:00-08:00 PST  exit 2025-12-22T21:20:00-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 3025  principal_cents 235950
+entry_fee_cents 909  exit_fee_cents 1171
+exit STOP at 67c  terminal yes
+gross_cents -33275  net_cents -35355
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

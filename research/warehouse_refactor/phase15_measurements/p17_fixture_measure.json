@@ -1,0 +1,70 @@
+{
+  "acquire_time": "2026-09-13T07:40:58Z",
+  "ingest_run_keys": [
+    "acquire_time",
+    "artifact",
+    "observation_basis",
+    "output_fingerprints",
+    "pbp_pit_aligned_to_candles",
+    "ran_stages",
+    "skipped_stages",
+    "source_fingerprint",
+    "source_hashes",
+    "source_paths",
+    "sport",
+    "transform_versions"
+  ],
+  "live_warehouse": "/Users/user/Desktop/Momento/ROLLER/data/nba/2025_2026/derived/warehouse",
+  "observation_basis": "TRADABLE_YES_BID",
+  "output_fingerprints": {
+    "games": "2705e523dab5716d8fdedae9010420422359d5944920218a5ad37e08bd01a588",
+    "links": "0241f9aefec4005c95c7ae4c5b9770ca8101e91c7d50de927f78ca825e30915b",
+    "markets": "6129c70ea89ae313e4d06a6b6b3b52ee9483a15cf25b5a04e15673366d52e190",
+    "observations": "cb939ff7b370dbd8258923a2b931ecb3fbde33bb52fed24db069db1ed673dca1",
+    "observations_content": "2025-10:220809432f97ea783c42cfe0ed0ce8d3a29336d0aabc44adb98af901694eed76",
+    "observations_rows": "2",
+    "pbp": "9a419d2c9bb07b2c880eb8c0423c7a050bc361f5e73ca9afd2b947841050b369",
+    "pbp_content": "2025-10:cb1df6f452382bafd7db856f10c7348f36007be7793ad91bd1a42034c6f89a53",
+    "pbp_rows": "2",
+    "settlements": "754beced874f946bf7fac36663479a68e94e2749ead0c224eaf959535e046549",
+    "settlements_content": "14f0fb1234b48e8485dc4e75d12a910506e75f7d353836221a9a2813464f7310",
+    "settlements_rows": "2"
+  },
+  "output_fingerprints_equal": true,
+  "pbp_pit_aligned_to_candles": false,
+  "published_is_live": false,
+  "published_root": "/private/var/folders/5r/qv1sgzc102lg7xhkr9kf5nxc0000gn/T/p17_measure_b028vrkr/ROLLER/data/nba/2025_2026/derived/warehouse",
+  "run1_s": 0.099513,
+  "run1_status": "PUBLISHED",
+  "run2_s": 0.001596,
+  "run2_status": "UNCHANGED",
+  "source_fingerprint": "ad047b4e76a82f8b4b14d3dce90376068f6c21f844dac652d16185457b67cab0",
+  "source_fingerprint_equal": true,
+  "source_hashes": {
+    "candles_month:2025-10": "2199a66d76d2865df1b9348f98d6e3ece3f1d9e24145fa42de48e030d236b1ca",
+    "canonical_games": "95e57a01dfd79e80c0ac1c39b62c050316bd28667ecedd52c51b2e72878403f4",
+    "canonical_markets": "13883a1a32a9e0e66c7c456c8c5d28a6771d530a9d88947502cf10ecf7f4dced",
+    "identity": "2ccd1ddb8552a6fcc20a8530d880ec7b87b863256c69e0482973b3ae9b8b9ecd",
+    "pbp_month:2025-10": "7f989be05725ab8225f5a1d102439d8696087dbf574fb4187a1deed0cb0fce92",
+    "suite_markets": "dc68864f104160a98190d6aa38b04f0a37f4f2531298d613a3bd6fe989de5dc5"
+  },
+  "source_paths": [
+    "data/nba/2025_2026/canonical/games.csv",
+    "data/nba/2025_2026/canonical/kalshi_markets.csv",
+    "meta/game_identity.csv",
+    "/var/folders/5r/qv1sgzc102lg7xhkr9kf5nxc0000gn/T/p17_measure_b028vrkr/Data/NBA/2025-2026/warehouse/normalized/nba/markets/markets.parquet",
+    "data/nba/2025_2026/canonical/kalshi_candles/month=2025-10.csv",
+    "data/nba/2025_2026/canonical/pbp/month=2025-10.csv"
+  ],
+  "tmp_root": "/var/folders/5r/qv1sgzc102lg7xhkr9kf5nxc0000gn/T/p17_measure_b028vrkr",
+  "transform_versions": {
+    "auto_ingest": "1.0.0",
+    "identity": "1.0.0",
+    "layout": "1.0.0",
+    "link": "1.0.0",
+    "observations": "1.0.0",
+    "orderbook": "1.0.0",
+    "pbp": "1.0.0",
+    "settlement": "1.0.0"
+  }
+}

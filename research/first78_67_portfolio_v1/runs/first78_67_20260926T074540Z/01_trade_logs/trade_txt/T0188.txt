@@ -1,0 +1,10 @@
+trade T0188  NBA  Philadelphia at Dallas
+contract KXNBAGAME-26JAN01PHIDAL-PHI  slice Q2
+signal 2026-01-01T18:33:00-08:00 PST  exit 2026-01-01T20:04:15-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 3297  principal_cents 257166
+entry_fee_cents 991  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 72534  net_cents 71543
+strategy_result POSITIVE  net_r 1.856620127679451912596667878
+Assumed fill. Not a maker fill. Not live P&L.

@@ -1,0 +1,10 @@
+trade T0393  NCAAB  Georgia at LSU
+contract KXNCAAMBGAME-26FEB07UGALSU-LSU  slice H1_2
+signal 2026-02-07T15:22:00-08:00 PST  exit 2026-02-07T15:29:00-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 6673  principal_cents 520494
+entry_fee_cents 2004  exit_fee_cents 2582
+exit STOP at 67c  terminal no
+gross_cents -73403  net_cents -77989
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

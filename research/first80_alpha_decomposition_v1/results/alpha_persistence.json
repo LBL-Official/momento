@@ -1,0 +1,36 @@
+{
+  "n_first80": 1230,
+  "n_games_in_pade": 1221,
+  "n_dropped_no_pade": 9,
+  "n_train_buckets": 92,
+  "min_games_per_bucket": 20,
+  "TRAIN_self": {
+    "n_rows": 53072,
+    "n_games": 501,
+    "n_buckets_used": 92,
+    "mean_alpha_row": -0.009289126338692413,
+    "mean_alpha_trade_balanced": -0.003956510318340039,
+    "frac_Fhat_gt_K": 0.430528338860416,
+    "note": "Fhat is TRAIN-only bucket frequency. Not observed fair value. Not a fill."
+  },
+  "VALIDATION": {
+    "n_rows": 51783,
+    "n_games": 479,
+    "n_buckets_used": 92,
+    "mean_alpha_row": -0.008951119624246674,
+    "mean_alpha_trade_balanced": -0.003762122982639564,
+    "frac_Fhat_gt_K": 0.4157542050479887,
+    "note": "Fhat is TRAIN-only bucket frequency. Not observed fair value. Not a fill."
+  },
+  "OOS": {
+    "n_rows": 25974,
+    "n_games": 237,
+    "n_buckets_used": 92,
+    "mean_alpha_row": -0.010764588287995877,
+    "mean_alpha_trade_balanced": -0.006154363518899853,
+    "frac_Fhat_gt_K": 0.374027874027874,
+    "note": "Fhat is TRAIN-only bucket frequency. Not observed fair value. Not a fill."
+  },
+  "anti_leakage": "TRAIN games only construct Fhat. VAL/OOS games are never in their own Fhat.",
+  "not": "directly observed alpha"
+}

@@ -1,0 +1,93 @@
+{
+  "BASE_GRADE": "F",
+  "DEBASE_GRADE": "F",
+  "abase_filename": "SuperasiABase[914.. ITI-01].csv",
+  "abase_sha256": "3ff042ad62ff7a05e6c818c0f178bba09dd73f4b1517a516bbc2150e651618ff",
+  "allocation_bps": 500,
+  "artifact": "superasi_bdebase",
+  "bankroll_cents": 2000000,
+  "bottleneck": "F",
+  "components": {
+    "coverage": "A+",
+    "research_evidence": "F",
+    "robustness": "A+",
+    "theoretical_alignment": "F",
+    "validation": "F"
+  },
+  "created_at": "2026-09-15T00:41:31Z",
+  "debase_filename": "SuperasiBDeBase[914.. ITI-01].csv",
+  "debase_payload_sha256": "4636cb20d2c9c67e5431ca7ecba780b11a79858afd021e1a5aa6a6933d4d59ec",
+  "debase_sha256": "0ae23ccbc346301b8d40e11c377352e7450aed5d30bf99f9a12e031155bf4724",
+  "desk_settings_source": "disk",
+  "floor_cents": 1500000,
+  "folder": "914.. ITI-01",
+  "grade_config_version": "grade_config_v1",
+  "phase": "B",
+  "phase_a_result_id": "914.. ITI-01",
+  "plan_hash": "984809b54927aacbec8f4411ee60a1babd1ffa720811f6ef1b4f8e5b9b0a3ccb",
+  "question": {
+    "accept_limitations": false,
+    "entry_conditions": [
+      {
+        "clock": null,
+        "event_definition": "TRADABLE_CLOSE_CROSS",
+        "id": "entry_mu1xbssh_vysak",
+        "nth": null,
+        "ordinal": "FIRST_TOUCH",
+        "period": null,
+        "price_e4": 1700,
+        "price_field": "yes_bid_close"
+      }
+    ],
+    "path_conditions": [
+      {
+        "id": "exit_mtug1t99_aq1lv",
+        "op": "REACH",
+        "outcome": "loss",
+        "price_e4": 1000,
+        "sequential": false
+      },
+      {
+        "id": "exit_mty0bwbw_mvfqe",
+        "op": "REACH",
+        "outcome": "win",
+        "price_e4": 6000,
+        "sequential": false
+      }
+    ],
+    "requested_dimensions": [
+      "HOLD_TO_SETTLEMENT"
+    ],
+    "terminal": "BOTH",
+    "universe": {
+      "date_from": "2025-03-18",
+      "date_to": "2026-09-01",
+      "game_data": [],
+      "leagues": [
+        "MLB"
+      ],
+      "market_data": [
+        "candles"
+      ],
+      "markets": [
+        "kalshi"
+      ],
+      "seasons": [
+        "2025-2026"
+      ],
+      "sports": [
+        "MLB"
+      ]
+    }
+  },
+  "question_sha256": "10ee8a79aa9b0eeb594940029b651aefdef56b735265528fb712cf5e7ebbc799",
+  "question_status": "PRESENT",
+  "result_hash": "7c365a87b7d484fa2e11bc7ad204e1fa5e6816f97e7bfd4d23f54ed178b832c6",
+  "result_id": "914.. ITI-01",
+  "roller_filename": "Roller[914.. ITI-01].csv",
+  "source_csv_sha256": "cc234ee6ccb92816285a1c0e99ba780f706ee1f0b6d1a716152707c30e870913",
+  "source_lab_id": "caefa1cb4dea4576869085f39e09baa9",
+  "strategy_name": "914.. ITI-01",
+  "superasi_version": "superasi_bdebase_v1.0.0",
+  "target_cents": 3000000
+}

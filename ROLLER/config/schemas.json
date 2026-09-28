@@ -1,0 +1,108 @@
+{
+  "common_timestamps": [
+    "event_timestamp",
+    "available_at",
+    "ingested_at"
+  ],
+  "availability_quality": ["OBSERVED", "CONSERVATIVE_PROXY"],
+  "lineage": [
+    "internal_game_id",
+    "source_dataset",
+    "source_file_hash",
+    "pipeline_version",
+    "derived_at"
+  ],
+  "datasets": {
+    "game_identity": {
+      "primary_key": ["internal_game_id"],
+      "columns": [
+        "internal_game_id", "sport", "season", "game_date",
+        "home_team_id", "away_team_id", "home_team_name", "away_team_name",
+        "source_game_id", "warehouse_game_id", "event_ticker",
+        "kalshi_market_yes_home", "kalshi_market_yes_away",
+        "mapping_status", "mapping_confidence", "created_at", "updated_at"
+      ]
+    },
+    "games": {
+      "primary_key": ["internal_game_id"],
+      "event_time_column": "event_timestamp",
+      "availability_time_column": "available_at"
+    },
+    "pbp": {
+      "primary_key": ["internal_game_id", "event_number"],
+      "event_time_column": "event_timestamp",
+      "availability_time_column": "available_at"
+    },
+    "kalshi_candles": {
+      "primary_key": ["internal_game_id", "ticker", "candle_timestamp"],
+      "event_time_column": "event_timestamp",
+      "availability_time_column": "available_at"
+    },
+    "polymarket_candles": {
+      "primary_key": ["internal_game_id", "token_id", "candle_timestamp"],
+      "event_time_column": "event_timestamp",
+      "availability_time_column": "available_at",
+      "notes": "Last-trade 1-minute samples from CLOB /prices-history. Not bid/ask OHLC."
+    },
+    "polymarket_markets": {
+      "primary_key": ["internal_game_id", "token_id"],
+      "event_time_column": "event_timestamp",
+      "availability_time_column": "available_at"
+    },
+    "kalshi_markets": {
+      "primary_key": ["internal_game_id", "ticker"],
+      "event_time_column": "event_timestamp",
+      "availability_time_column": "available_at"
+    },
+    "kalshi_last_trade": {
+      "primary_key": ["internal_game_id", "ticker", "candle_timestamp"],
+      "event_time_column": "event_timestamp",
+      "availability_time_column": "available_at",
+      "notes": "One-minute last chronological Kalshi print. Absent minutes are absent. Not yes_bid. Not a fill."
+    },
+    "kalshi_trades": {
+      "primary_key": ["internal_game_id", "trade_id"],
+      "event_time_column": "event_timestamp",
+      "availability_time_column": "available_at"
+    },
+    "kalshi_orderbook_snapshots": {
+      "primary_key": ["ticker", "captured_at"],
+      "event_time_column": "event_timestamp",
+      "availability_time_column": "available_at"
+    },
+    "first80_triggers": {
+      "primary_key": ["internal_game_id"],
+      "event_time_column": "first_80_timestamp",
+      "availability_time_column": "available_at",
+      "contains_future_information": true
+    },
+    "team_features": {
+      "primary_key": ["internal_game_id", "team_id"],
+      "event_time_column": "event_timestamp",
+      "availability_time_column": "available_at"
+    },
+    "d2d_daily": {
+      "primary_key": ["as_of_date", "team_id"],
+      "event_time_column": "as_of_date",
+      "availability_time_column": "available_at"
+    },
+    "game_state_features": {
+      "primary_key": ["internal_game_id"],
+      "event_time_column": "event_timestamp",
+      "availability_time_column": "available_at",
+      "contains_future_information": true
+    },
+    "terminal_labels": {
+      "contains_future_information": true
+    },
+    "horizon_labels": {
+      "contains_future_information": true
+    },
+    "path_labels": {
+      "contains_future_information": true
+    },
+    "barrier_labels": {
+      "contains_future_information": true
+    }
+  }
+}

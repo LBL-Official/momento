@@ -1,0 +1,772 @@
+{
+  "greek_architecture_version": "4.0.0-C",
+  "source_measurement_schema": {
+    "greek_schema_version": "4.0.0-B"
+  },
+  "note": "Measurement constitution. A Greek name does not authorize a measurement. The registry states what an object is permitted to be; it contains no estimators. V4B public keys are frozen. realized_market_volatility canonical_identity is market_absolute_variation.",
+  "edge_claim": false,
+  "non_interpretation": [
+    "GREEK NAME \u2260 MEASUREMENT AUTHORIZATION",
+    "DIRECT_DIFFERENCE \u2260 EMPIRICAL_DISCRETE_SENSITIVITY \u2260 PATH_DESCRIPTOR \u2260 CONDITIONAL_SURFACE \u2260 MICROSTRUCTURE",
+    "realized_market_volatility \u2260 sigma_K",
+    "canonical_identity market_absolute_variation \u2260 implied volatility",
+    "DATA EXISTS \u2260 MEASUREMENT IS VALID",
+    "NOT_YET_IMPLEMENTED \u2260 NOT_CONSTRUCTIBLE",
+    "MORE DERIVATION \u2260 MORE INFORMATION",
+    "\u0394/\u0393/\u0398/VEGA/\u039b/\u03a9/\u03a8/B/R \u2260 EDGE",
+    "R^M \u2260 CAUSAL RESIDUAL",
+    "R^M \u2260 MARKET ERROR",
+    "PURE THETA \u2260 NO-EVENT THETA",
+    "MEASUREMENT \u2260 EDGE",
+    "CANDLE PATH \u2260 EXECUTABLE PATH",
+    "V4C CREATES ZERO NEW EMPIRICAL NUMBERS"
+  ],
+  "objects": [
+    {
+      "family": "probability_greeks",
+      "measurement_name": "market_delta_1m",
+      "measurement_class": "DIRECT_DIFFERENCE",
+      "conditioning_schema": null,
+      "canonical_identity": "market_delta_1m",
+      "status": "IMPLEMENTED",
+      "information_regime": "CANDLE_1M",
+      "resolution": "60_SECOND_CANDLE",
+      "requires": [
+        "previous_visible_candle",
+        "current_visible_candle"
+      ],
+      "information_boundary": "candle_available_at < t",
+      "definition_version": "4.0.0-B",
+      "edge_claim": false
+    },
+    {
+      "family": "probability_greeks",
+      "measurement_name": "fundamental_delta",
+      "measurement_class": "DIRECT_DIFFERENCE",
+      "conditioning_schema": "core_v1",
+      "canonical_identity": "fundamental_delta",
+      "status": "IMPLEMENTED",
+      "information_regime": "CANDLE_1M",
+      "resolution": "60_SECOND_CANDLE",
+      "requires": [
+        "F_t",
+        "F_{t-1}"
+      ],
+      "information_boundary": "state_available_at < t",
+      "definition_version": "4.0.0-B",
+      "edge_claim": false
+    },
+    {
+      "family": "probability_greeks",
+      "measurement_name": "response_delta",
+      "measurement_class": "DIRECT_DIFFERENCE",
+      "conditioning_schema": "core_v1",
+      "canonical_identity": "response_delta",
+      "status": "IMPLEMENTED",
+      "information_regime": "CANDLE_1M",
+      "resolution": "60_SECOND_CANDLE",
+      "requires": [
+        "market_delta_1m",
+        "fundamental_delta"
+      ],
+      "information_boundary": "candle_available_at < t",
+      "definition_version": "4.0.0-B",
+      "edge_claim": false,
+      "not": [
+        "market_inefficiency"
+      ]
+    },
+    {
+      "family": "basis_greeks",
+      "measurement_name": "market_fundamental_basis",
+      "measurement_class": "DIRECT_DIFFERENCE",
+      "conditioning_schema": "core_v1",
+      "canonical_identity": "market_fundamental_basis",
+      "status": "IMPLEMENTED",
+      "information_regime": "CANDLE_1M",
+      "resolution": "60_SECOND_CANDLE",
+      "requires": [
+        "K_t",
+        "F_t"
+      ],
+      "information_boundary": "candle_available_at < t",
+      "definition_version": "4.0.0-B",
+      "edge_claim": false
+    },
+    {
+      "family": "basis_greeks",
+      "measurement_name": "basis_delta",
+      "measurement_class": "DIRECT_DIFFERENCE",
+      "conditioning_schema": "core_v1",
+      "canonical_identity": "basis_delta",
+      "status": "IMPLEMENTED",
+      "information_regime": "CANDLE_1M",
+      "resolution": "60_SECOND_CANDLE",
+      "requires": [
+        "B_t",
+        "B_{t-1}"
+      ],
+      "information_boundary": "candle_available_at < t",
+      "definition_version": "4.0.0-B",
+      "edge_claim": false
+    },
+    {
+      "family": "score_greeks",
+      "measurement_name": "score_delta",
+      "measurement_class": "EMPIRICAL_DISCRETE_SENSITIVITY",
+      "conditioning_schema": "core_v1",
+      "canonical_identity": "score_delta",
+      "informal_family": "DELTA_ANALOGUE",
+      "identity_kind": "path_ratio_dF_dS",
+      "status": "IMPLEMENTED",
+      "information_regime": "CANDLE_1M",
+      "resolution": "60_SECOND_CANDLE",
+      "requires": [
+        "fundamental_delta",
+        "S_t",
+        "S_{t-1}"
+      ],
+      "information_boundary": "state_available_at < t",
+      "definition_version": "4.0.0-B",
+      "edge_claim": false,
+      "not": [
+        "conditional_score_surface_delta"
+      ]
+    },
+    {
+      "family": "gamma_greeks",
+      "measurement_name": "discrete_gamma",
+      "measurement_class": "EMPIRICAL_DISCRETE_SENSITIVITY",
+      "conditioning_schema": "core_v1",
+      "canonical_identity": "discrete_gamma",
+      "informal_family": "GAMMA_ANALOGUE",
+      "identity_kind": "temporal_second_difference",
+      "status": "IMPLEMENTED",
+      "information_regime": "CANDLE_1M",
+      "resolution": "60_SECOND_CANDLE",
+      "requires": [
+        "fundamental_delta_t",
+        "fundamental_delta_{t-1}"
+      ],
+      "information_boundary": "state_available_at < t",
+      "definition_version": "4.0.0-B",
+      "edge_claim": false,
+      "not": [
+        "score_surface_gamma",
+        "d2F_dS2",
+        "black_scholes_gamma"
+      ]
+    },
+    {
+      "family": "theta_greeks",
+      "measurement_name": "theta_observed",
+      "measurement_class": "EMPIRICAL_DISCRETE_SENSITIVITY",
+      "conditioning_schema": "core_v1",
+      "canonical_identity": "theta_observed",
+      "informal_family": "THETA_ANALOGUE",
+      "identity_kind": "path_ratio_dF_dElapsed",
+      "status": "IMPLEMENTED",
+      "information_regime": "CANDLE_1M",
+      "resolution": "60_SECOND_CANDLE",
+      "requires": [
+        "fundamental_delta",
+        "elapsed_t",
+        "elapsed_{t-1}"
+      ],
+      "information_boundary": "state_available_at < t",
+      "definition_version": "4.0.0-B",
+      "edge_claim": false
+    },
+    {
+      "family": "theta_greeks",
+      "measurement_name": "pure_theta",
+      "measurement_class": "EMPIRICAL_DISCRETE_SENSITIVITY",
+      "conditioning_schema": "core_v1",
+      "canonical_identity": "pure_theta",
+      "informal_family": "THETA_ANALOGUE",
+      "identity_kind": "same_period_same_score_theta",
+      "status": "PARTIAL",
+      "information_regime": "CANDLE_1M",
+      "resolution": "60_SECOND_CANDLE",
+      "requires": [
+        "theta_observed",
+        "period_t",
+        "period_{t-1}",
+        "S_t",
+        "S_{t-1}"
+      ],
+      "information_boundary": "state_available_at < t",
+      "definition_version": "4.0.0-B",
+      "edge_claim": false,
+      "reason": "Exists only when period and S are unchanged. PARTIAL. PURE THETA \u2260 NO-EVENT THETA.",
+      "not": [
+        "no_event_theta",
+        "absence_of_basketball_events"
+      ]
+    },
+    {
+      "family": "range_greeks",
+      "measurement_name": "candle_range",
+      "measurement_class": "PATH_DESCRIPTOR",
+      "conditioning_schema": null,
+      "canonical_identity": "candle_range",
+      "status": "IMPLEMENTED",
+      "information_regime": "CANDLE_1M",
+      "resolution": "60_SECOND_CANDLE",
+      "requires": [
+        "C_t.yes_bid_high",
+        "C_t.yes_bid_low"
+      ],
+      "information_boundary": "candle_available_at < t",
+      "definition_version": "4.0.0-B",
+      "edge_claim": false
+    },
+    {
+      "family": "probability_greeks",
+      "measurement_name": "absolute_return",
+      "measurement_class": "DIRECT_DIFFERENCE",
+      "conditioning_schema": null,
+      "canonical_identity": "absolute_return",
+      "status": "IMPLEMENTED",
+      "information_regime": "CANDLE_1M",
+      "resolution": "60_SECOND_CANDLE",
+      "requires": [
+        "market_delta_1m"
+      ],
+      "information_boundary": "candle_available_at < t",
+      "definition_version": "4.0.0-B",
+      "edge_claim": false
+    },
+    {
+      "family": "volatility_greeks",
+      "measurement_name": "realized_market_volatility",
+      "measurement_class": "PATH_DESCRIPTOR",
+      "conditioning_schema": null,
+      "canonical_identity": "market_absolute_variation",
+      "informal_family": "VEGA_ANALOGUE",
+      "identity_kind": "sum_abs_close_to_close",
+      "status": "IMPLEMENTED",
+      "information_regime": "CANDLE_1M",
+      "resolution": "60_SECOND_CANDLE",
+      "requires": [
+        "visible_home_yes_bid_close_path"
+      ],
+      "information_boundary": "candle_available_at < t",
+      "definition_version": "4.0.0-B",
+      "edge_claim": false,
+      "reason": "Absolute variation of visible close-to-close movement. Not implied volatility or standard deviation.",
+      "not": [
+        "sigma_K",
+        "implied_volatility",
+        "standard_deviation"
+      ]
+    },
+    {
+      "family": "efficiency_greeks",
+      "measurement_name": "directional_efficiency",
+      "measurement_class": "PATH_DESCRIPTOR",
+      "conditioning_schema": null,
+      "canonical_identity": "directional_efficiency",
+      "status": "IMPLEMENTED",
+      "information_regime": "CANDLE_1M",
+      "resolution": "60_SECOND_CANDLE",
+      "requires": [
+        "C_t_OHLC"
+      ],
+      "information_boundary": "candle_available_at < t",
+      "definition_version": "4.0.0-B",
+      "edge_claim": false
+    },
+    {
+      "family": "state_greeks",
+      "measurement_name": "possession_delta",
+      "measurement_class": "CONDITIONAL_SURFACE",
+      "conditioning_schema": null,
+      "canonical_identity": "possession_delta",
+      "status": "NOT_YET_IMPLEMENTED",
+      "required_information_regime": "POSSESSION_STATE",
+      "resolution": "EVENT_TIMESTAMP",
+      "requires": [
+        "possession_state",
+        "possession_conditioned_F"
+      ],
+      "information_boundary": "event_available_at < t",
+      "definition_version": null,
+      "edge_claim": false,
+      "reason": "NBA V2 possessions=REAL is data capability only. POSSESSION_CONDITIONED_F is not validated. DATA EXISTS \u2260 MEASUREMENT IS VALID.",
+      "not": [
+        "infer_possession_from_candles",
+        "possessions_REAL_implies_implemented"
+      ]
+    },
+    {
+      "family": "state_greeks",
+      "measurement_name": "event_delta",
+      "measurement_class": "CONDITIONAL_SURFACE",
+      "conditioning_schema": null,
+      "canonical_identity": "event_delta",
+      "status": "NOT_YET_IMPLEMENTED",
+      "required_information_regime": "EVENT_SEQUENCE",
+      "resolution": "EVENT_TIMESTAMP",
+      "requires": [
+        "approved_event_conditioned_definition"
+      ],
+      "information_boundary": "event_available_at < t",
+      "definition_version": null,
+      "edge_claim": false,
+      "reason": "No approved event-conditioned estimator exists.",
+      "not": [
+        "candle_sequence_proxy"
+      ]
+    },
+    {
+      "family": "score_greeks",
+      "measurement_name": "conditional_score_surface_delta",
+      "measurement_class": "CONDITIONAL_SURFACE",
+      "conditioning_schema": null,
+      "canonical_identity": "conditional_score_surface_delta",
+      "status": "NOT_YET_IMPLEMENTED",
+      "required_information_regime": "CANDLE_1M",
+      "resolution": "60_SECOND_CANDLE",
+      "requires": [
+        "approved_score_surface_definition"
+      ],
+      "information_boundary": "state_available_at < t",
+      "definition_version": null,
+      "edge_claim": false,
+      "reason": "Distinct from path score_delta. No approved surface estimator exists.",
+      "not": [
+        "score_delta"
+      ]
+    },
+    {
+      "family": "gamma_greeks",
+      "measurement_name": "score_surface_gamma",
+      "measurement_class": "CONDITIONAL_SURFACE",
+      "conditioning_schema": null,
+      "canonical_identity": "score_surface_gamma",
+      "status": "NOT_YET_IMPLEMENTED",
+      "required_information_regime": "CANDLE_1M",
+      "resolution": "60_SECOND_CANDLE",
+      "requires": [
+        "approved_score_surface_curvature_definition"
+      ],
+      "information_boundary": "state_available_at < t",
+      "definition_version": null,
+      "edge_claim": false,
+      "reason": "Distinct from temporal discrete_gamma. No approved \u2202\u00b2F/\u2202S\u00b2 estimator exists.",
+      "not": [
+        "discrete_gamma"
+      ]
+    },
+    {
+      "family": "gamma_greeks",
+      "measurement_name": "time_gamma",
+      "measurement_class": "CONDITIONAL_SURFACE",
+      "conditioning_schema": null,
+      "canonical_identity": "time_gamma",
+      "status": "NOT_YET_IMPLEMENTED",
+      "required_information_regime": "CANDLE_1M",
+      "resolution": "60_SECOND_CANDLE",
+      "requires": [
+        "approved_time_gamma_definition"
+      ],
+      "information_boundary": "state_available_at < t",
+      "definition_version": null,
+      "edge_claim": false,
+      "reason": "No approved time-gamma estimator exists.",
+      "not": [
+        "discrete_gamma",
+        "theta_observed"
+      ]
+    },
+    {
+      "family": "volatility_greeks",
+      "measurement_name": "sigma_F",
+      "measurement_class": "CONDITIONAL_SURFACE",
+      "conditioning_schema": null,
+      "canonical_identity": "sigma_F",
+      "status": "NOT_YET_IMPLEMENTED",
+      "required_information_regime": "CANDLE_1M",
+      "resolution": "60_SECOND_CANDLE",
+      "requires": [
+        "approved_fundamental_volatility_definition"
+      ],
+      "information_boundary": "state_available_at < t",
+      "definition_version": null,
+      "edge_claim": false,
+      "reason": "No approved \u03c3_F estimator exists.",
+      "not": [
+        "realized_market_volatility"
+      ]
+    },
+    {
+      "family": "volatility_greeks",
+      "measurement_name": "sigma_K",
+      "measurement_class": "CONDITIONAL_SURFACE",
+      "conditioning_schema": null,
+      "canonical_identity": "sigma_K",
+      "status": "NOT_YET_IMPLEMENTED",
+      "required_information_regime": "TRADE_TICK",
+      "resolution": "TRADE_TIMESTAMP",
+      "requires": [
+        "approved_sigma_K_definition"
+      ],
+      "information_boundary": "trade_available_at < t",
+      "definition_version": null,
+      "edge_claim": false,
+      "reason": "Distinct from V4B absolute-variation realized_market_volatility. No approved \u03c3_K estimator exists.",
+      "not": [
+        "realized_market_volatility",
+        "candle_abs_variation_proxy"
+      ]
+    },
+    {
+      "family": "volatility_greeks",
+      "measurement_name": "volatility_difference",
+      "measurement_class": "CONDITIONAL_SURFACE",
+      "conditioning_schema": null,
+      "canonical_identity": "volatility_difference",
+      "status": "NOT_YET_IMPLEMENTED",
+      "required_information_regime": "TRADE_TICK",
+      "resolution": "TRADE_TIMESTAMP",
+      "requires": [
+        "sigma_F",
+        "sigma_K"
+      ],
+      "information_boundary": "trade_available_at < t",
+      "definition_version": null,
+      "edge_claim": false,
+      "reason": "Depends on unimplemented \u03c3 objects.",
+      "not": [
+        "realized_market_volatility"
+      ]
+    },
+    {
+      "family": "volatility_greeks",
+      "measurement_name": "volatility_ratio",
+      "measurement_class": "CONDITIONAL_SURFACE",
+      "conditioning_schema": null,
+      "canonical_identity": "volatility_ratio",
+      "status": "NOT_YET_IMPLEMENTED",
+      "required_information_regime": "TRADE_TICK",
+      "resolution": "TRADE_TIMESTAMP",
+      "requires": [
+        "sigma_F",
+        "sigma_K"
+      ],
+      "information_boundary": "trade_available_at < t",
+      "definition_version": null,
+      "edge_claim": false,
+      "reason": "Depends on unimplemented \u03c3 objects.",
+      "not": [
+        "realized_market_volatility"
+      ]
+    },
+    {
+      "family": "response_greeks",
+      "measurement_name": "response_beta",
+      "measurement_class": "CONDITIONAL_SURFACE",
+      "conditioning_schema": null,
+      "canonical_identity": "response_beta",
+      "status": "NOT_YET_IMPLEMENTED",
+      "required_information_regime": "CANDLE_1M",
+      "resolution": "60_SECOND_CANDLE",
+      "requires": [
+        "approved_response_beta_definition"
+      ],
+      "information_boundary": "measurement_available_at < t",
+      "definition_version": null,
+      "edge_claim": false,
+      "reason": "May become constructible under an approved methodology. No proxy permitted.",
+      "not": [
+        "response_delta"
+      ]
+    },
+    {
+      "family": "basis_greeks",
+      "measurement_name": "standardized_basis",
+      "measurement_class": "CONDITIONAL_SURFACE",
+      "conditioning_schema": null,
+      "canonical_identity": "standardized_basis",
+      "status": "NOT_YET_IMPLEMENTED",
+      "required_information_regime": "CANDLE_1M",
+      "resolution": "60_SECOND_CANDLE",
+      "requires": [
+        "approved_standardized_basis_definition"
+      ],
+      "information_boundary": "candle_available_at < t",
+      "definition_version": null,
+      "edge_claim": false,
+      "reason": "No approved standardized-basis estimator exists.",
+      "not": [
+        "market_fundamental_basis"
+      ]
+    },
+    {
+      "family": "basis_greeks",
+      "measurement_name": "basis_half_life",
+      "measurement_class": "CONDITIONAL_SURFACE",
+      "conditioning_schema": null,
+      "canonical_identity": "basis_half_life",
+      "status": "NOT_YET_IMPLEMENTED",
+      "required_information_regime": "CANDLE_1M",
+      "resolution": "60_SECOND_CANDLE",
+      "requires": [
+        "approved_basis_half_life_definition"
+      ],
+      "information_boundary": "candle_available_at < t",
+      "definition_version": null,
+      "edge_claim": false,
+      "reason": "No approved half-life estimator exists.",
+      "not": [
+        "basis_delta"
+      ]
+    },
+    {
+      "family": "theta_greeks",
+      "measurement_name": "no_event_theta",
+      "measurement_class": "CONDITIONAL_SURFACE",
+      "conditioning_schema": null,
+      "canonical_identity": "no_event_theta",
+      "status": "NOT_YET_IMPLEMENTED",
+      "required_information_regime": "EVENT_SEQUENCE",
+      "resolution": "EVENT_TIMESTAMP",
+      "requires": [
+        "validated_no_event_window",
+        "approved_no_event_theta_definition"
+      ],
+      "information_boundary": "event_available_at < t",
+      "definition_version": null,
+      "edge_claim": false,
+      "reason": "PURE THETA \u2260 NO-EVENT THETA. Requires event-sequence confirmation of no basketball events.",
+      "not": [
+        "pure_theta",
+        "theta_observed"
+      ]
+    },
+    {
+      "family": "probability_greeks",
+      "measurement_name": "market_delta_1s",
+      "measurement_class": "DIRECT_DIFFERENCE",
+      "conditioning_schema": null,
+      "canonical_identity": "market_delta_1s",
+      "status": "NOT_YET_IMPLEMENTED",
+      "required_information_regime": "SECOND_SNAPSHOT",
+      "resolution": "1_SECOND",
+      "requires": [
+        "second_snapshot_prices"
+      ],
+      "information_boundary": "book_snapshot_available_at < t",
+      "definition_version": null,
+      "edge_claim": false,
+      "reason": "Different identity from market_delta_1m. Candle sequence is not a second-level measurement.",
+      "not": [
+        "market_delta_1m",
+        "candle_sequence_proxy"
+      ]
+    },
+    {
+      "family": "residual_greeks",
+      "measurement_name": "residual_family_beyond_v4b",
+      "measurement_class": "CONDITIONAL_SURFACE",
+      "conditioning_schema": "core_v1",
+      "canonical_identity": "residual_family_beyond_v4b",
+      "status": "NOT_YET_IMPLEMENTED",
+      "required_information_regime": "CANDLE_1M",
+      "resolution": "60_SECOND_CANDLE",
+      "requires": [
+        "approved_residual_family_definition"
+      ],
+      "information_boundary": "measurement_available_at < t",
+      "definition_version": null,
+      "edge_claim": false,
+      "reason": "V4B R^M is the only residual family. Further residual families are reserved.",
+      "not": [
+        "v4b_residual"
+      ]
+    },
+    {
+      "family": "cross_greeks",
+      "measurement_name": "cross_delta_gamma",
+      "measurement_class": "CONDITIONAL_SURFACE",
+      "conditioning_schema": null,
+      "canonical_identity": "cross_delta_gamma",
+      "status": "NOT_YET_IMPLEMENTED",
+      "required_information_regime": "CANDLE_1M",
+      "resolution": "60_SECOND_CANDLE",
+      "requires": [
+        "approved_cross_greek_definition"
+      ],
+      "information_boundary": "measurement_available_at < t",
+      "definition_version": null,
+      "edge_claim": false,
+      "reason": "ARCHITECTURAL ONLY. No approved cross-Greek estimator exists.",
+      "not": [
+        "product_of_v4b_delta_and_gamma"
+      ]
+    },
+    {
+      "family": "cross_greeks",
+      "measurement_name": "cross_basis_volatility",
+      "measurement_class": "CONDITIONAL_SURFACE",
+      "conditioning_schema": null,
+      "canonical_identity": "cross_basis_volatility",
+      "status": "NOT_YET_IMPLEMENTED",
+      "required_information_regime": "CANDLE_1M",
+      "resolution": "60_SECOND_CANDLE",
+      "requires": [
+        "approved_cross_greek_definition"
+      ],
+      "information_boundary": "measurement_available_at < t",
+      "definition_version": null,
+      "edge_claim": false,
+      "reason": "ARCHITECTURAL ONLY. No approved cross-Greek estimator exists.",
+      "not": [
+        "product_of_v4b_basis_and_vol"
+      ]
+    },
+    {
+      "family": "cross_greeks",
+      "measurement_name": "cross_theta_score",
+      "measurement_class": "CONDITIONAL_SURFACE",
+      "conditioning_schema": null,
+      "canonical_identity": "cross_theta_score",
+      "status": "NOT_YET_IMPLEMENTED",
+      "required_information_regime": "CANDLE_1M",
+      "resolution": "60_SECOND_CANDLE",
+      "requires": [
+        "approved_cross_greek_definition"
+      ],
+      "information_boundary": "measurement_available_at < t",
+      "definition_version": null,
+      "edge_claim": false,
+      "reason": "ARCHITECTURAL ONLY. No approved cross-Greek estimator exists.",
+      "not": [
+        "product_of_v4b_theta_and_score"
+      ]
+    },
+    {
+      "family": "microstructure_greeks",
+      "measurement_name": "microprice",
+      "measurement_class": "MICROSTRUCTURE",
+      "conditioning_schema": null,
+      "canonical_identity": "microprice",
+      "status": "NOT_CONSTRUCTIBLE",
+      "required_information_regime": "FULL_ORDER_BOOK",
+      "resolution": "BOOK_SNAPSHOT",
+      "requires": [
+        "best_bid",
+        "best_ask",
+        "bid_depth",
+        "ask_depth"
+      ],
+      "information_boundary": "book_snapshot_available_at < t",
+      "definition_version": null,
+      "edge_claim": false,
+      "reason": "Current NBA warehouse provides 1-minute OHLC candles, not full order-book state.",
+      "not": [
+        "candle_high_low_proxy",
+        "candle_midpoint_proxy",
+        "volume_weighted_proxy"
+      ]
+    },
+    {
+      "family": "microstructure_greeks",
+      "measurement_name": "order_book_imbalance",
+      "measurement_class": "MICROSTRUCTURE",
+      "conditioning_schema": null,
+      "canonical_identity": "order_book_imbalance",
+      "status": "NOT_CONSTRUCTIBLE",
+      "required_information_regime": "FULL_ORDER_BOOK",
+      "resolution": "BOOK_SNAPSHOT",
+      "requires": [
+        "bid_depth",
+        "ask_depth"
+      ],
+      "information_boundary": "book_snapshot_available_at < t",
+      "definition_version": null,
+      "edge_claim": false,
+      "reason": "OHLC \u2260 ORDER BOOK.",
+      "not": [
+        "candle_volume_proxy",
+        "high_low_proxy"
+      ]
+    },
+    {
+      "family": "microstructure_greeks",
+      "measurement_name": "price_impact_lambda",
+      "measurement_class": "MICROSTRUCTURE",
+      "conditioning_schema": null,
+      "canonical_identity": "price_impact_lambda",
+      "status": "NOT_CONSTRUCTIBLE",
+      "required_information_regime": "FULL_ORDER_BOOK",
+      "resolution": "BOOK_SNAPSHOT",
+      "requires": [
+        "signed_flow",
+        "book_state"
+      ],
+      "information_boundary": "book_snapshot_available_at < t",
+      "definition_version": null,
+      "edge_claim": false,
+      "reason": "CANDLE RETURN \u2260 SIGNED FLOW.",
+      "not": [
+        "candle_return_proxy",
+        "volume_proxy"
+      ]
+    },
+    {
+      "family": "microstructure_greeks",
+      "measurement_name": "signed_flow_lambda",
+      "measurement_class": "MICROSTRUCTURE",
+      "conditioning_schema": null,
+      "canonical_identity": "signed_flow_lambda",
+      "status": "NOT_CONSTRUCTIBLE",
+      "required_information_regime": "TRADE_TICK",
+      "resolution": "TRADE_TIMESTAMP",
+      "requires": [
+        "signed_trade_flow"
+      ],
+      "information_boundary": "trade_available_at < t",
+      "definition_version": null,
+      "edge_claim": false,
+      "reason": "Candle volume is not signed order flow.",
+      "not": [
+        "candle_volume_proxy"
+      ]
+    },
+    {
+      "family": "microstructure_greeks",
+      "measurement_name": "psi_resilience",
+      "measurement_class": "MICROSTRUCTURE",
+      "conditioning_schema": null,
+      "canonical_identity": "psi_resilience",
+      "status": "NOT_CONSTRUCTIBLE",
+      "required_information_regime": "FULL_ORDER_BOOK",
+      "resolution": "BOOK_SNAPSHOT",
+      "requires": [
+        "queue_state",
+        "book_replenishment"
+      ],
+      "information_boundary": "book_snapshot_available_at < t",
+      "definition_version": null,
+      "edge_claim": false,
+      "reason": "VOLUME \u2260 QUEUE STATE.",
+      "not": [
+        "candle_volume_proxy"
+      ]
+    }
+  ],
+  "constitution": {
+    "role": "MEASUREMENT_CONSTITUTION",
+    "permits_existence_only_if": [
+      "DATA",
+      "PIT",
+      "INFORMATION_REGIME",
+      "APPROVED_DEFINITION",
+      "UNIQUE_IDENTITY",
+      "VALID_RESOLUTION",
+      "NO_FORBIDDEN_PROXY"
+    ]
+  }
+}

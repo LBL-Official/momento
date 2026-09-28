@@ -1,0 +1,10 @@
+trade T0210  NCAAB  Syracuse at Georgia Tech
+contract KXNCAAMBGAME-26JAN06SYRGT-SYR  slice H1_2
+signal 2026-01-06T16:47:00-08:00 PST  exit 2026-01-06T19:27:11-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 3546  principal_cents 276588
+entry_fee_cents 1065  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 78012  net_cents 76947
+strategy_result POSITIVE  net_r 1.856649937264742785445420326
+Assumed fill. Not a maker fill. Not live P&L.

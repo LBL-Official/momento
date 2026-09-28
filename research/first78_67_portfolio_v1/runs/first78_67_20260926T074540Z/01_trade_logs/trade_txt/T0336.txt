@@ -1,0 +1,10 @@
+trade T0336  NBA  Chicago at Indiana
+contract KXNBAGAME-26JAN28CHIIND-CHI  slice Q3
+signal 2026-01-28T17:53:00-08:00 PST  exit 2026-01-28T18:19:00-08:00 PST
+assumed entry 78c  observed close 82c  overshoot 4c
+contracts 5607  principal_cents 437346
+entry_fee_cents 1684  exit_fee_cents 2170
+exit STOP at 67c  terminal no
+gross_cents -61677  net_cents -65531
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

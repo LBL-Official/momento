@@ -1,0 +1,15 @@
+"""STAX — multi-strategy ROLLER research stack.
+
+LIVE EXECUTION = FALSE
+RESEARCH AUTOMATION ≠ EXECUTION
+AGGREGATION_METHOD = NONE
+"""
+
+from roller.stax.versions import (
+    AGGREGATION_METHOD,
+    CODE_VERSION,
+    LIVE_EXECUTION,
+    STAX_SCHEMA,
+)
+
+__all__ = ["AGGREGATION_METHOD", "CODE_VERSION", "LIVE_EXECUTION", "STAX_SCHEMA"]

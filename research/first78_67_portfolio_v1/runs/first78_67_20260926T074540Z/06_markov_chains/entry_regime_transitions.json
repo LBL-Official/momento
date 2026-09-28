@@ -1,0 +1,51 @@
+{
+  "family": "D",
+  "regime_definition": "pre-entry volatility only; LOW < 2pp, HIGH >= 2pp, UNKNOWN if insufficient",
+  "uses_future_exit": false,
+  "counts": {
+    "LOW": {
+      "HIGH": 96,
+      "LOW": 14,
+      "UNKNOWN": 1
+    },
+    "HIGH": {
+      "HIGH": 428,
+      "LOW": 98,
+      "UNKNOWN": 4
+    },
+    "UNKNOWN": {
+      "HIGH": 5
+    }
+  },
+  "probs": {
+    "LOW": {
+      "LOW": 0.12612612612612611,
+      "HIGH": 0.8648648648648649,
+      "UNKNOWN": 0.009009009009009009
+    },
+    "HIGH": {
+      "LOW": 0.18490566037735848,
+      "HIGH": 0.8075471698113208,
+      "UNKNOWN": 0.007547169811320755
+    },
+    "UNKNOWN": {
+      "LOW": 0.0,
+      "HIGH": 1.0,
+      "UNKNOWN": 0.0
+    }
+  },
+  "n_by_regime": {
+    "HIGH": 530,
+    "LOW": 112,
+    "UNKNOWN": 5
+  },
+  "mean_net_cents_by_regime": {
+    "HIGH": 36516.016981132074,
+    "LOW": 39028.767857142855,
+    "UNKNOWN": -35178.6
+  },
+  "label": "TRADE_SEQUENCE_RISK_ANALYSIS_NOT_A_SEVEN_SLOT_FORECAST",
+  "completion_order_file": "completion_order_transitions.json",
+  "entry_order_n": 647,
+  "completion_order_matches_exit_sort_n": 647
+}

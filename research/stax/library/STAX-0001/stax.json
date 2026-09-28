@@ -1,0 +1,117 @@
+{
+  "stax_id": "STAX-0001",
+  "schema_version": "stax_v1",
+  "name": "Current session result",
+  "description": "",
+  "created_at": "2026-09-11T14:47:35Z",
+  "updated_at": "2026-09-11T14:48:34Z",
+  "universe": {
+    "sport_family": "baseball",
+    "league_set": [
+      "MLB"
+    ],
+    "seasons": [
+      "2025-2026"
+    ],
+    "date_from": null,
+    "date_to": null
+  },
+  "timezone": "America/Los_Angeles",
+  "automation_enabled": true,
+  "automation_schedule": "00:00",
+  "latest_version": null,
+  "latest_status": "PENDING",
+  "last_run_at": null,
+  "next_run_at": "2026-09-12T07:00:00Z",
+  "working_members": [
+    {
+      "member_id": "STXM-0001",
+      "position": 1,
+      "display_id": "STX01-S01",
+      "label": "",
+      "save_id": null,
+      "roller_object_id": null,
+      "research_object_id": null,
+      "question": {
+        "universe": {
+          "sports": [
+            "baseball"
+          ],
+          "leagues": [
+            "MLB"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "market_data": [
+            "last_trade"
+          ],
+          "game_data": [],
+          "date_from": null,
+          "date_to": null
+        },
+        "entry_conditions": [
+          {
+            "id": "e1",
+            "ordinal": "FIRST_TOUCH",
+            "price_e4": 8000,
+            "period": null,
+            "clock": null,
+            "nth": 1,
+            "event_definition": "LAST_TRADE_CLOSE_CROSS",
+            "price_field": "last_close_e4",
+            "operation": "CROSS",
+            "direction": "up",
+            "period_windows": [
+              {
+                "period": "T7",
+                "clock": null
+              },
+              {
+                "period": "B7",
+                "clock": null
+              }
+            ]
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mtx1v4qy_yfnt3",
+            "op": "REACH",
+            "price_e4": 9000,
+            "sequential": false,
+            "outcome": "win"
+          }
+        ],
+        "terminal": "BOTH",
+        "requested_dimensions": [],
+        "accept_limitations": false,
+        "win_hold": true
+      },
+      "draft": null,
+      "research_spec": {},
+      "execution_path": "generic_query",
+      "reference_match": null,
+      "question_hash": "6320b5964bbe1f69b798d65704ac6dc6adc69bf1c0e628674d20bf2c154f387d",
+      "query_hash": "6320b5964bbe1f69b798d65704ac6dc6adc69bf1c0e628674d20bf2c154f387d",
+      "universe": {
+        "sport_family": "baseball",
+        "league_set": [
+          "MLB"
+        ],
+        "seasons": [
+          "2025-2026"
+        ],
+        "date_from": null,
+        "date_to": null
+      },
+      "definition_version": "1.0.0",
+      "status": "PENDING"
+    }
+  ],
+  "member_seq": 1,
+  "live_execution": false
+}

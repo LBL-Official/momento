@@ -1,0 +1,10 @@
+trade T0024  NBA  Minnesota at Sacramento
+contract KXNBAGAME-25NOV09MINSAC-MIN  slice Q2
+signal 2025-11-09T18:55:00-08:00 PST  exit 2025-11-09T21:13:45-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 1823  principal_cents 142194
+entry_fee_cents 548  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 40106  net_cents 39558
+strategy_result POSITIVE  net_r 1.856572957244098183695499132
+Assumed fill. Not a maker fill. Not live P&L.

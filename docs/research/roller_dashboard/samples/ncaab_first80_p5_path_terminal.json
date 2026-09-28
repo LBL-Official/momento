@@ -1,0 +1,76 @@
+{
+  "schema_version": "research_spec_v0",
+  "identity": {
+    "name": "NCAAB_FIRST80_P5_PATH_TERMINAL",
+    "description": "NCAAB P5∩P5 FIRST80 frozen population with T40 path and Kalshi terminal. Explicit NCAAB_FIRST80_P5 binding — not NBA FIRST80.",
+    "tags": ["NCAAB", "FIRST80", "P5", "path", "terminal"]
+  },
+  "universe": "BBALL1",
+  "population_binding": {
+    "leagues": ["NCAAB"],
+    "default_structural_slices": [],
+    "p5_vs_p5_only": true,
+    "selection": "all_matching",
+    "locked_population_id": null
+  },
+  "anchor": {
+    "event": "FIRST_PRICE_TOUCH",
+    "price_e4": 8000,
+    "price_field": "yes_bid_close",
+    "requires_seen_below": true,
+    "unresolved_parameters": []
+  },
+  "information_regime": "CANDLE_1M",
+  "information_set": "I_t_anchor",
+  "state_filters": {
+    "op": "AND",
+    "args": []
+  },
+  "path_conditions": [
+    {
+      "kind": "EVER_CLOSE_LE",
+      "price_e4": 4000,
+      "binding": "barrier_survival_v1"
+    }
+  ],
+  "terminal_conditions": [
+    {
+      "kind": "UNRESTRICTED",
+      "binding": "p5_half_barrier_survival_v1.W"
+    }
+  ],
+  "measurement_requests": [
+    {
+      "name": "t40_rate",
+      "binding": "barrier_survival_v1",
+      "not_edge": true
+    },
+    {
+      "name": "kalshi_yes_rate",
+      "binding": "p5_half_barrier_survival_v1",
+      "not_edge": true
+    }
+  ],
+  "sample_binding": {},
+  "definition_versions": {
+    "NCAAB_FIRST80_P5": "p5_half_barrier_survival_v1",
+    "T40": "barrier_survival_v1",
+    "terminal_W": "p5_half_barrier_survival_v1"
+  },
+  "dataset_versions": {
+    "ncaab_first80_p5_half_barrier_survival": "p5_half_barrier_survival_v1"
+  },
+  "execution_interpretation": "OBSERVABLE_PATH_ONLY",
+  "caveats": [
+    "CANDLE PATH ≠ FILL",
+    "SURVIVE ≠ TERMINAL_YES",
+    "MEASUREMENT ≠ EDGE",
+    "NCAAB_FIRST80_P5 ≠ NBA FIRST80",
+    "LIVE EXECUTION = FALSE"
+  ],
+  "economic_layer": null,
+  "portfolio_layer": null,
+  "persistence": {
+    "kind": "ephemeral"
+  }
+}

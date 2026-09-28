@@ -1,0 +1,24 @@
+[package]
+name = "momento-research-market"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "CTO-W4: Kalshi market-path reconstruction from committed artifacts. Not sync. Not live trading."
+
+[lints]
+workspace = true
+
+[dependencies]
+chrono.workspace = true
+chrono-tz.workspace = true
+momento-research-data.workspace = true
+momento-research-ingest.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+sha2 = "0.10.9"
+thiserror.workspace = true
+
+[dev-dependencies]
+tempfile = "3.20.0"

@@ -1,0 +1,10 @@
+trade T0016  NCAAB  Kansas at North Carolina
+contract KXNCAAMBGAME-25NOV07KUUNC-UNC  slice H2_1
+signal 2025-11-07T17:28:00-08:00 PST  exit 2025-11-07T19:01:51-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 1755  principal_cents 136890
+entry_fee_cents 528  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 38610  net_cents 38082
+strategy_result POSITIVE  net_r 1.856481255789011846146346219
+Assumed fill. Not a maker fill. Not live P&L.

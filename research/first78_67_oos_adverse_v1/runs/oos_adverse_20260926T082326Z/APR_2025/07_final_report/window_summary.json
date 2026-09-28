@@ -1,0 +1,246 @@
+{
+  "test_id": "APR_2025",
+  "coverage_status": "PARTIAL_RAW_TICKER_SUBSET",
+  "sport_status": {
+    "NBA": "HAS_CANDIDATES",
+    "NBA_events_in_window": 44,
+    "NCAAB": "COVERAGE_UNKNOWN",
+    "NCAAB_markets_in_window": 0
+  },
+  "candidates": 6,
+  "admitted": 6,
+  "rejected": 0,
+  "max_open": 1,
+  "identity": {
+    "gross_minus_fees": -5156,
+    "net": -5156,
+    "identity_ok": true,
+    "nba_net_cents": -5156,
+    "ncaab_net_cents": 0,
+    "fees_cents": 5156,
+    "gross_pnl_cents": 0
+  },
+  "ending_equity_cents": 1994844,
+  "mean_net_cents_per_contract": -0.5587342869527525,
+  "adverse_mean_net_cents_per_contract": -5.5151111111111115,
+  "adverse_net_pnl_cents": -49636,
+  "hold_net_pnl_cents": -107356,
+  "paired_stop_minus_hold_cents": 102200,
+  "cutoff_marked_equity_cents": 1994844,
+  "final_equity_cents": 1994844,
+  "inference_ref": {
+    "status": "P_VALUE_NOT_ESTIMABLE",
+    "reason": "FEWER_THAN_10_INDEPENDENT_DAYS",
+    "n_days": 4,
+    "n_trades": 6
+  },
+  "inference_adverse": {
+    "status": "P_VALUE_NOT_ESTIMABLE",
+    "reason": "FEWER_THAN_10_INDEPENDENT_DAYS",
+    "n_days": 4,
+    "n_trades": 6
+  },
+  "comparison": [
+    {
+      "population_id": "FIRST80_CONDITIONED_DIAGNOSTIC",
+      "candidates": 4,
+      "admitted": 4,
+      "portfolio_net_cents": 30796,
+      "note": "diagnostic label uses a later threshold"
+    },
+    {
+      "population_id": "OMITTED_NO_LATER_THRESHOLD",
+      "candidates": 2,
+      "admitted": 2,
+      "portfolio_net_cents": -35952,
+      "note": "diagnostic label uses a later threshold"
+    },
+    {
+      "population_id": "LEGACY_LOCK_INTERSECTION",
+      "candidates": 0,
+      "admitted": 0,
+      "portfolio_net_cents": null,
+      "note": "separate book; not the original locked universe"
+    }
+  ],
+  "stresses": [
+    {
+      "scenario_id": "REF",
+      "admitted": 6,
+      "rejected": 0,
+      "net_pnl_cents": -5156,
+      "ending_equity_cents": 1994844,
+      "max_open": 1,
+      "mean_net_cents_per_contract": -0.5587342869527525,
+      "note": null
+    },
+    {
+      "scenario_id": "ENTRY_1",
+      "admitted": 6,
+      "rejected": 0,
+      "net_pnl_cents": -14106,
+      "ending_equity_cents": 1985894,
+      "max_open": 1,
+      "mean_net_cents_per_contract": -1.5487483530961785,
+      "note": null
+    },
+    {
+      "scenario_id": "ENTRY_2",
+      "admitted": 6,
+      "rejected": 0,
+      "net_pnl_cents": -22844,
+      "ending_equity_cents": 1977156,
+      "max_open": 1,
+      "mean_net_cents_per_contract": -2.5382222222222226,
+      "note": null
+    },
+    {
+      "scenario_id": "EXIT_1",
+      "admitted": 6,
+      "rejected": 0,
+      "net_pnl_cents": -11340,
+      "ending_equity_cents": 1988660,
+      "max_open": 1,
+      "mean_net_cents_per_contract": -1.2288686605981798,
+      "note": null
+    },
+    {
+      "scenario_id": "EXIT_2",
+      "admitted": 6,
+      "rejected": 0,
+      "net_pnl_cents": -17528,
+      "ending_equity_cents": 1982472,
+      "max_open": 1,
+      "mean_net_cents_per_contract": -1.8994364976159517,
+      "note": null
+    },
+    {
+      "scenario_id": "JOINT_1",
+      "admitted": 6,
+      "rejected": 0,
+      "net_pnl_cents": -20214,
+      "ending_equity_cents": 1979786,
+      "max_open": 1,
+      "mean_net_cents_per_contract": -2.219367588932806,
+      "note": null
+    },
+    {
+      "scenario_id": "JOINT_2",
+      "admitted": 6,
+      "rejected": 0,
+      "net_pnl_cents": -34912,
+      "ending_equity_cents": 1965088,
+      "max_open": 1,
+      "mean_net_cents_per_contract": -3.8791111111111114,
+      "note": null
+    },
+    {
+      "scenario_id": "FEE_007",
+      "admitted": 6,
+      "rejected": 0,
+      "net_pnl_cents": -20612,
+      "ending_equity_cents": 1979388,
+      "max_open": 1,
+      "mean_net_cents_per_contract": -2.2336367576939744,
+      "note": null
+    },
+    {
+      "scenario_id": "JOINT_2_FEE_007",
+      "admitted": 6,
+      "rejected": 0,
+      "net_pnl_cents": -49636,
+      "ending_equity_cents": 1950364,
+      "max_open": 1,
+      "mean_net_cents_per_contract": -5.5151111111111115,
+      "note": null
+    },
+    {
+      "scenario_id": "CASH_DELAY_15",
+      "admitted": 6,
+      "rejected": 0,
+      "net_pnl_cents": -5156,
+      "ending_equity_cents": 1994844,
+      "max_open": 1,
+      "mean_net_cents_per_contract": -0.5587342869527525,
+      "note": null
+    },
+    {
+      "scenario_id": "CASH_DELAY_60",
+      "admitted": 6,
+      "rejected": 0,
+      "net_pnl_cents": -5156,
+      "ending_equity_cents": 1994844,
+      "max_open": 1,
+      "mean_net_cents_per_contract": -0.5587342869527525,
+      "note": null
+    },
+    {
+      "scenario_id": "STOP_FAIL_1",
+      "admitted": 6,
+      "net_pnl_cents": -5156,
+      "reported_figure": "MEAN_OF_30_PATHS",
+      "monte_carlo_se_cents": 0.0,
+      "max_open_example_path": 1,
+      "note": null
+    },
+    {
+      "scenario_id": "STOP_FAIL_5",
+      "admitted": 6,
+      "net_pnl_cents": -5156,
+      "reported_figure": "MEAN_OF_30_PATHS",
+      "monte_carlo_se_cents": 0.0,
+      "max_open_example_path": 1,
+      "note": null
+    },
+    {
+      "scenario_id": "LATENCY_60",
+      "admitted": 6,
+      "rejected": 0,
+      "net_pnl_cents": -2464,
+      "ending_equity_cents": 1997536,
+      "max_open": 1,
+      "mean_net_cents_per_contract": -0.22627492620251402,
+      "note": "skipped 0"
+    },
+    {
+      "scenario_id": "LATENCY_120",
+      "admitted": 6,
+      "rejected": 0,
+      "net_pnl_cents": -760,
+      "ending_equity_cents": 1999240,
+      "max_open": 1,
+      "mean_net_cents_per_contract": 0.1044181559869007,
+      "note": "skipped 0"
+    }
+  ],
+  "complete_batches": 0,
+  "partial_batches": 1,
+  "marked_drawdown": {
+    "max_drawdown_fraction": 0.028486674169296955,
+    "peak_index": 26738,
+    "trough_index": 38624,
+    "peak_equity_cents": 2001076,
+    "trough_equity_cents": 1944072,
+    "minutes_with_mark": 43200,
+    "minutes_missing": 0,
+    "grid": "ONE_MINUTE",
+    "with_initial_equity": {
+      "max_drawdown_fraction": 0.028486674169296955,
+      "peak_index": 26739,
+      "trough_index": 38625,
+      "peak_equity_cents": 2001076,
+      "trough_equity_cents": 1944072
+    }
+  },
+  "realized_drawdown": {
+    "max_drawdown_fraction": 0.02719499999999997,
+    "peak_index": 0,
+    "trough_index": 10,
+    "peak_equity_cents": 2000000,
+    "trough_equity_cents": 1945610
+  },
+  "judgment": {
+    "sample_selection": "weakens",
+    "execution": "weakens"
+  }
+}

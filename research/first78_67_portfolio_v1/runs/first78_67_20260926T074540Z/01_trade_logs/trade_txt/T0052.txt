@@ -1,0 +1,10 @@
+trade T0052  NBA  Houston at Cleveland
+contract KXNBAGAME-25NOV19HOUCLE-HOU  slice Q2
+signal 2025-11-19T16:53:00-08:00 PST  exit 2025-11-19T18:07:00-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 2196  principal_cents 171288
+entry_fee_cents 660  exit_fee_cents 850
+exit STOP at 67c  terminal yes
+gross_cents -24156  net_cents -25666
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

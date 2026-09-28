@@ -1,0 +1,30 @@
+{
+  "BASE_GRADE": "F",
+  "abase_filename": "SuperasiABase[ATP CROSS 65 REACH 85 40 JUL 2025 ITI-09].csv",
+  "abase_payload_sha256": "cb5991377fb413212b1d090434695b688837c5a56e521288e6a59636023c8084",
+  "abase_sha256": "02e4981b477a13013e4f0bf8487d6ccd2d5fc146faf1420fc6e8ca7c3e81d3da",
+  "allocation_bps": 500,
+  "artifact": "superasi_abase",
+  "bankroll_cents": 2000000,
+  "borderline": true,
+  "components": {
+    "coverage": "B",
+    "research_evidence": "F",
+    "robustness": "A",
+    "theoretical_alignment": "F",
+    "validation": "A+"
+  },
+  "created_at": "2026-09-21T18:16:35Z",
+  "desk_settings_source": "disk",
+  "floor_cents": 1500000,
+  "folder": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-09",
+  "grade_config_version": "grade_config_v1",
+  "phase": "A",
+  "result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-09",
+  "roller_filename": "Roller[ATP CROSS 65 REACH 85 40 JUL 2025 ITI-09].csv",
+  "source_csv_sha256": "d38e6c99b1933c6ebe21cbf03b357fce78d0ef2b0e3cd588fd429c6cd5cfcbf8",
+  "source_lab_id": "f48ed17c072e4d738f7221afc65a8ec4",
+  "strategy_name": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-09",
+  "superasi_version": "superasi_abase_v1.0.0",
+  "target_cents": 3000000
+}

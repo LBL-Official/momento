@@ -1,0 +1,10 @@
+trade T0006  NBA  Detroit at Memphis
+contract KXNBAGAME-25NOV03DETMEM-DET  slice Q2
+signal 2025-11-03T18:08:00-08:00 PST  exit 2025-11-03T20:14:34-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 1538  principal_cents 119964
+entry_fee_cents 462  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 33836  net_cents 33374
+strategy_result POSITIVE  net_r 1.856586559857587894971072541
+Assumed fill. Not a maker fill. Not live P&L.

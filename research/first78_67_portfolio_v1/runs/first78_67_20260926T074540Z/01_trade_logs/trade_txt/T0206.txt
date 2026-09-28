@@ -1,0 +1,10 @@
+trade T0206  NBA  Denver at Brooklyn
+contract KXNBAGAME-26JAN04DENBKN-BKN  slice Q3
+signal 2026-01-04T13:58:00-08:00 PST  exit 2026-01-04T15:24:09-08:00 PST
+assumed entry 78c  observed close 82c  overshoot 4c
+contracts 3546  principal_cents 276588
+entry_fee_cents 1065  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 78012  net_cents 76947
+strategy_result POSITIVE  net_r 1.856649937264742785445420326
+Assumed fill. Not a maker fill. Not live P&L.

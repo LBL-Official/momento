@@ -1,0 +1,10 @@
+trade T0609  NBA  Atlanta at Houston
+contract KXNBAGAME-26MAR20ATLHOU-HOU  slice Q2
+signal 2026-03-20T17:52:00-07:00 PDT  exit 2026-03-20T17:59:00-07:00 PDT
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 14816  principal_cents 1155648
+entry_fee_cents 4450  exit_fee_cents 5733
+exit STOP at 67c  terminal yes
+gross_cents -162976  net_cents -173159
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

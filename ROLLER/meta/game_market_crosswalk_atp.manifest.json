@@ -1,0 +1,27 @@
+{
+  "artifact": "game_market_crosswalk",
+  "canonical_tickers": 9256,
+  "crosswalk_sha256": "dc0014d9dbf2bf5d18b1166c230332f7a4e240971fa3cf2a9bb2882558015a94",
+  "games_with_linked_markets": 4628,
+  "identity_rule_version": "1.0.0",
+  "identity_tickers": 9255,
+  "input_hashes": {
+    "identity": "e42041b13fe581b9f57475b5072b3ea8d17a293a2004164d0c8f767ab9ddbe2b",
+    "kalshi_markets": "572ac1e6f52add33e2744d080e2d0715e5a4965b3aeede14d0a83eb32fa7ad5d",
+    "suite_markets": "18a48dd2422e3905e8da5589aa4fa85074a00318ba94d03837bf0c9ceb65472b"
+  },
+  "link_rule_version": "1.0.0",
+  "market_row_count": 9256,
+  "markets_sha256": "890934f0e02c890056f07c3c8828f9d88342c999a7da23d8fba4100c5d8e029b",
+  "provisional_layout": "/Users/user/Desktop/Momento/ROLLER/data/atp/2025_2026/derived/warehouse_v0",
+  "row_count": 9256,
+  "sport": "ATP",
+  "status_counts": {
+    "AMBIGUOUS": 0,
+    "INVALID": 0,
+    "LINKED": 9255,
+    "UNLINKED": 1
+  },
+  "suite_tickers": 9256,
+  "updated_at": "2026-09-15T01:26:08Z"
+}

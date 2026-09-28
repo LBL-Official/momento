@@ -1,0 +1,2274 @@
+{
+  "run_id": "4c864e2742274632ad00757dcd8dd58c",
+  "status": "COMPLETE",
+  "iti_version": "jump_a_iti_v1.0.0",
+  "debase_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40",
+  "source_folder": "ITI Stress Q4 CROSS 65 REACH 85 40",
+  "source_lab_id": "f00d4e6004084201ab590f99f6fe4fed",
+  "strategy_name": "ITI Stress Q4 CROSS 65 REACH 85 40",
+  "source_question_sha256": "ebfd7143f1fac322446097ace16ebdb7770642f59818c130fe37a467d7527cd5",
+  "source_snapshot": {
+    "lab_id": "f00d4e6004084201ab590f99f6fe4fed",
+    "phase_a_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40",
+    "phase_b_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40",
+    "BASE_GRADE": "F",
+    "DEBASE_GRADE": "F",
+    "result_hash": "9fb549a09f05517969b3a053f95963171b8b8da7143032ef8820da6bca546107",
+    "population": null,
+    "question_sha256": "ebfd7143f1fac322446097ace16ebdb7770642f59818c130fe37a467d7527cd5"
+  },
+  "orchestrator": "baseline",
+  "job_ms": 272996,
+  "slots": [
+    {
+      "slot_id": "ITI-00",
+      "label": "control",
+      "entry_steps": 0,
+      "win_steps": 0,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_iti_stress",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q4",
+            "price_e4": 6500,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win_iti_stress",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "loss_iti_stress",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-10-10",
+          "date_to": "2025-10-31",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "ebfd7143f1fac322446097ace16ebdb7770642f59818c130fe37a467d7527cd5",
+      "source_question_sha256": "ebfd7143f1fac322446097ace16ebdb7770642f59818c130fe37a467d7527cd5",
+      "entry_e4": 6500,
+      "win_e4": 8500,
+      "loss_e4": 4000,
+      "entry_cents": 65,
+      "win_cents": 85,
+      "loss_cents": 40,
+      "population": 23,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "c6d35626aaa343668cccc4acd742780c",
+      "phase_a_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-00",
+      "phase_b_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-00",
+      "executed": true,
+      "compile_ms": 0,
+      "execute_ms": 1557,
+      "result_hash": "9fb549a09f05517969b3a053f95963171b8b8da7143032ef8820da6bca546107",
+      "lab_ms": 252,
+      "base_ms": 397,
+      "debase_ms": 1928,
+      "slot_ms": 4137
+    },
+    {
+      "slot_id": "ITI-01",
+      "label": "E-3",
+      "entry_steps": -3,
+      "win_steps": 0,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_iti_stress",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q4",
+            "price_e4": 5600,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win_iti_stress",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "loss_iti_stress",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-10-10",
+          "date_to": "2025-10-31",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "66ffb1d6b6bd7e8345f2e456f3719f7773e720f7f85a7618f864bb0b6fe4af22",
+      "source_question_sha256": "ebfd7143f1fac322446097ace16ebdb7770642f59818c130fe37a467d7527cd5",
+      "entry_e4": 5600,
+      "win_e4": 8500,
+      "loss_e4": 4000,
+      "entry_cents": 56,
+      "win_cents": 85,
+      "loss_cents": 40,
+      "population": 14,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "2493365e6e8c43468013b417ecd0643a",
+      "phase_a_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-01",
+      "phase_b_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-01",
+      "executed": true,
+      "compile_ms": 0,
+      "execute_ms": 6472,
+      "result_hash": "1bdb8784ca51ce9464d3bcfc6e95284a279bf4c6f950faf5b7b65822c109f658",
+      "lab_ms": 387,
+      "base_ms": 776,
+      "debase_ms": 1570,
+      "slot_ms": 9207
+    },
+    {
+      "slot_id": "ITI-02",
+      "label": "E-2",
+      "entry_steps": -2,
+      "win_steps": 0,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_iti_stress",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q4",
+            "price_e4": 5900,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win_iti_stress",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "loss_iti_stress",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-10-10",
+          "date_to": "2025-10-31",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "0090070233693c3cdcc0f2668988d2ddbd2eb6ed7ad1a0fe4fdb4c665a153c6e",
+      "source_question_sha256": "ebfd7143f1fac322446097ace16ebdb7770642f59818c130fe37a467d7527cd5",
+      "entry_e4": 5900,
+      "win_e4": 8500,
+      "loss_e4": 4000,
+      "entry_cents": 59,
+      "win_cents": 85,
+      "loss_cents": 40,
+      "population": 15,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "58a738162bfb4e5eb9b4c57e2df71e0e",
+      "phase_a_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-02",
+      "phase_b_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-02",
+      "executed": true,
+      "compile_ms": 0,
+      "execute_ms": 7974,
+      "result_hash": "d0d2cc6f16eb5234240215768cedb527777bc88dc32d36390d3cc26ec182ded4",
+      "lab_ms": 373,
+      "base_ms": 471,
+      "debase_ms": 1543,
+      "slot_ms": 10362
+    },
+    {
+      "slot_id": "ITI-03",
+      "label": "E-1",
+      "entry_steps": -1,
+      "win_steps": 0,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_iti_stress",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q4",
+            "price_e4": 6200,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win_iti_stress",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "loss_iti_stress",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-10-10",
+          "date_to": "2025-10-31",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "38f3ba128997a3b3b739c2c7846051a2781ffd1e58e0d57d9f4e9ca2eb7ee741",
+      "source_question_sha256": "ebfd7143f1fac322446097ace16ebdb7770642f59818c130fe37a467d7527cd5",
+      "entry_e4": 6200,
+      "win_e4": 8500,
+      "loss_e4": 4000,
+      "entry_cents": 62,
+      "win_cents": 85,
+      "loss_cents": 40,
+      "population": 17,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "cc883482268b448b8704437192bf8c3f",
+      "phase_a_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-03",
+      "phase_b_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-03",
+      "executed": true,
+      "compile_ms": 0,
+      "execute_ms": 6892,
+      "result_hash": "f4e6e7253fc2d18064d35aeb95aab36e1eae7751e3352b5adb14afae482863ab",
+      "lab_ms": 282,
+      "base_ms": 395,
+      "debase_ms": 1470,
+      "slot_ms": 9041
+    },
+    {
+      "slot_id": "ITI-04",
+      "label": "E+1",
+      "entry_steps": 1,
+      "win_steps": 0,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_iti_stress",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q4",
+            "price_e4": 6800,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win_iti_stress",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "loss_iti_stress",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-10-10",
+          "date_to": "2025-10-31",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "4e4e717620a6765e22f57773c55a21267d2db1fc48f2f01fa80d93c9cffdc8bb",
+      "source_question_sha256": "ebfd7143f1fac322446097ace16ebdb7770642f59818c130fe37a467d7527cd5",
+      "entry_e4": 6800,
+      "win_e4": 8500,
+      "loss_e4": 4000,
+      "entry_cents": 68,
+      "win_cents": 85,
+      "loss_cents": 40,
+      "population": 27,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "795b9db93acc46f2a1abb476ec9e8946",
+      "phase_a_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-04",
+      "phase_b_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-04",
+      "executed": true,
+      "compile_ms": 0,
+      "execute_ms": 6900,
+      "result_hash": "0409a58e987bdc23b409211ac19da716cb88ea2158f46ab83c0de307f8773d6f",
+      "lab_ms": 261,
+      "base_ms": 398,
+      "debase_ms": 1523,
+      "slot_ms": 9083
+    },
+    {
+      "slot_id": "ITI-05",
+      "label": "E+2",
+      "entry_steps": 2,
+      "win_steps": 0,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_iti_stress",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q4",
+            "price_e4": 7100,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win_iti_stress",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "loss_iti_stress",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-10-10",
+          "date_to": "2025-10-31",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "8ba7ad5b305f52497425fcc09d47eeae2c338536505c009903b2175edb06f289",
+      "source_question_sha256": "ebfd7143f1fac322446097ace16ebdb7770642f59818c130fe37a467d7527cd5",
+      "entry_e4": 7100,
+      "win_e4": 8500,
+      "loss_e4": 4000,
+      "entry_cents": 71,
+      "win_cents": 85,
+      "loss_cents": 40,
+      "population": 30,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "b86e8e95dece4545a1803ce0131d5a01",
+      "phase_a_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-05",
+      "phase_b_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-05",
+      "executed": true,
+      "compile_ms": 0,
+      "execute_ms": 7616,
+      "result_hash": "416a2c883115f79ca748415171c8bd3a0ffbd6d264c3bd924f438a9db2c25078",
+      "lab_ms": 295,
+      "base_ms": 409,
+      "debase_ms": 1502,
+      "slot_ms": 9823
+    },
+    {
+      "slot_id": "ITI-06",
+      "label": "E+3",
+      "entry_steps": 3,
+      "win_steps": 0,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_iti_stress",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q4",
+            "price_e4": 7400,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win_iti_stress",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "loss_iti_stress",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-10-10",
+          "date_to": "2025-10-31",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "cd7a6f733ade9812006dd3dac55e1c7bae26b78939e3c594b69377f2595ae0e1",
+      "source_question_sha256": "ebfd7143f1fac322446097ace16ebdb7770642f59818c130fe37a467d7527cd5",
+      "entry_e4": 7400,
+      "win_e4": 8500,
+      "loss_e4": 4000,
+      "entry_cents": 74,
+      "win_cents": 85,
+      "loss_cents": 40,
+      "population": 33,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "197cdd957c99480f8ea2d184038cc17a",
+      "phase_a_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-06",
+      "phase_b_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-06",
+      "executed": true,
+      "compile_ms": 0,
+      "execute_ms": 6888,
+      "result_hash": "ea85a83764b66ce85845d37c8d6ebe9da3518d5bb1998e2f0208315413a8e90e",
+      "lab_ms": 283,
+      "base_ms": 412,
+      "debase_ms": 2087,
+      "slot_ms": 9672
+    },
+    {
+      "slot_id": "ITI-07",
+      "label": "W-3",
+      "entry_steps": 0,
+      "win_steps": -3,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_iti_stress",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q4",
+            "price_e4": 6500,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win_iti_stress",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 7300,
+            "sequential": false
+          },
+          {
+            "id": "loss_iti_stress",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-10-10",
+          "date_to": "2025-10-31",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "fd4100027c98bc510a6ecfff8a10760e75c0a63b1180815965d0ab4e822f65f7",
+      "source_question_sha256": "ebfd7143f1fac322446097ace16ebdb7770642f59818c130fe37a467d7527cd5",
+      "entry_e4": 6500,
+      "win_e4": 7300,
+      "loss_e4": 4000,
+      "entry_cents": 65,
+      "win_cents": 73,
+      "loss_cents": 40,
+      "population": 23,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "771b5034559c472ca4ec4d69d3c53745",
+      "phase_a_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-07",
+      "phase_b_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-07",
+      "executed": true,
+      "compile_ms": 0,
+      "execute_ms": 6402,
+      "result_hash": "2b46030692817b60873657681315f39450776e1df230b7e65a5e8737c9428f4a",
+      "lab_ms": 320,
+      "base_ms": 437,
+      "debase_ms": 1518,
+      "slot_ms": 8679
+    },
+    {
+      "slot_id": "ITI-08",
+      "label": "W-2",
+      "entry_steps": 0,
+      "win_steps": -2,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_iti_stress",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q4",
+            "price_e4": 6500,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win_iti_stress",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 7700,
+            "sequential": false
+          },
+          {
+            "id": "loss_iti_stress",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-10-10",
+          "date_to": "2025-10-31",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "5c1bbe4a158a9ff16d3938ad3b03165b63f8e2c5266c402594903025d893e937",
+      "source_question_sha256": "ebfd7143f1fac322446097ace16ebdb7770642f59818c130fe37a467d7527cd5",
+      "entry_e4": 6500,
+      "win_e4": 7700,
+      "loss_e4": 4000,
+      "entry_cents": 65,
+      "win_cents": 77,
+      "loss_cents": 40,
+      "population": 23,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "0cbbe44fa7f641b5b41f81fb691151b2",
+      "phase_a_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-08",
+      "phase_b_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-08",
+      "executed": true,
+      "compile_ms": 0,
+      "execute_ms": 7496,
+      "result_hash": "92f6fdfddf86a2b35e3d7a0acbc8f18ecfc5d2ebd3a4c5c5584a1a8c2ebe949f",
+      "lab_ms": 348,
+      "base_ms": 474,
+      "debase_ms": 1532,
+      "slot_ms": 9852
+    },
+    {
+      "slot_id": "ITI-09",
+      "label": "W-1",
+      "entry_steps": 0,
+      "win_steps": -1,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_iti_stress",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q4",
+            "price_e4": 6500,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win_iti_stress",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8100,
+            "sequential": false
+          },
+          {
+            "id": "loss_iti_stress",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-10-10",
+          "date_to": "2025-10-31",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "5ba0b533ad0f655bc6c7f7d3a9e6107ea8709c512ad6a5f095bac7e4213a7328",
+      "source_question_sha256": "ebfd7143f1fac322446097ace16ebdb7770642f59818c130fe37a467d7527cd5",
+      "entry_e4": 6500,
+      "win_e4": 8100,
+      "loss_e4": 4000,
+      "entry_cents": 65,
+      "win_cents": 81,
+      "loss_cents": 40,
+      "population": 23,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "4981e99fe1ab4ceeacd2e141161489d6",
+      "phase_a_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-09",
+      "phase_b_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-09",
+      "executed": true,
+      "compile_ms": 0,
+      "execute_ms": 8472,
+      "result_hash": "a1181d9fd531c4b1599be93433d4e98108ac54a6fc49a110f0a73c2619858812",
+      "lab_ms": 374,
+      "base_ms": 465,
+      "debase_ms": 1522,
+      "slot_ms": 10835
+    },
+    {
+      "slot_id": "ITI-10",
+      "label": "W+1",
+      "entry_steps": 0,
+      "win_steps": 1,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_iti_stress",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q4",
+            "price_e4": 6500,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win_iti_stress",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8900,
+            "sequential": false
+          },
+          {
+            "id": "loss_iti_stress",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-10-10",
+          "date_to": "2025-10-31",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "07ce2aef9923f7887cb6c863d099d91b8ab3ec8d612eb1f9458efc13c96e938a",
+      "source_question_sha256": "ebfd7143f1fac322446097ace16ebdb7770642f59818c130fe37a467d7527cd5",
+      "entry_e4": 6500,
+      "win_e4": 8900,
+      "loss_e4": 4000,
+      "entry_cents": 65,
+      "win_cents": 89,
+      "loss_cents": 40,
+      "population": 23,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "7dff76e08f2b46b8bf1ba5a8ae92a9ed",
+      "phase_a_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-10",
+      "phase_b_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-10",
+      "executed": true,
+      "compile_ms": 0,
+      "execute_ms": 7102,
+      "result_hash": "cdb3201f76d40d411b3e56dbf4bddc4af1ffede97018eca33f4a5fd13ffd005d",
+      "lab_ms": 389,
+      "base_ms": 447,
+      "debase_ms": 1507,
+      "slot_ms": 9447
+    },
+    {
+      "slot_id": "ITI-11",
+      "label": "W+2",
+      "entry_steps": 0,
+      "win_steps": 2,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_iti_stress",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q4",
+            "price_e4": 6500,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win_iti_stress",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 9300,
+            "sequential": false
+          },
+          {
+            "id": "loss_iti_stress",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-10-10",
+          "date_to": "2025-10-31",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "89094e865591ad808265316345aeb7e1a94f7cd2e6a99e8a9ca89722199b6ce0",
+      "source_question_sha256": "ebfd7143f1fac322446097ace16ebdb7770642f59818c130fe37a467d7527cd5",
+      "entry_e4": 6500,
+      "win_e4": 9300,
+      "loss_e4": 4000,
+      "entry_cents": 65,
+      "win_cents": 93,
+      "loss_cents": 40,
+      "population": 23,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "462d12a0b3ce45a68aca429145e1728c",
+      "phase_a_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-11",
+      "phase_b_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-11",
+      "executed": true,
+      "compile_ms": 0,
+      "execute_ms": 7396,
+      "result_hash": "3db07c584bc4fa4f646830b31168d88cc634aceb284a88007c464344153ae707",
+      "lab_ms": 384,
+      "base_ms": 564,
+      "debase_ms": 1548,
+      "slot_ms": 9895
+    },
+    {
+      "slot_id": "ITI-12",
+      "label": "W+3",
+      "entry_steps": 0,
+      "win_steps": 3,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_iti_stress",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q4",
+            "price_e4": 6500,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win_iti_stress",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 9700,
+            "sequential": false
+          },
+          {
+            "id": "loss_iti_stress",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-10-10",
+          "date_to": "2025-10-31",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "03974fe621669d871f7e77217cab5f4e3b410ecf297fa5c0b14ac7ef145138e0",
+      "source_question_sha256": "ebfd7143f1fac322446097ace16ebdb7770642f59818c130fe37a467d7527cd5",
+      "entry_e4": 6500,
+      "win_e4": 9700,
+      "loss_e4": 4000,
+      "entry_cents": 65,
+      "win_cents": 97,
+      "loss_cents": 40,
+      "population": 23,
+      "BASE_GRADE": "D",
+      "DEBASE_GRADE": "F",
+      "lab_id": "9772da9d651b4ae4a66ca64c16393e6b",
+      "phase_a_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-12",
+      "phase_b_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-12",
+      "executed": true,
+      "compile_ms": 0,
+      "execute_ms": 11033,
+      "result_hash": "6ea343ddff24f6e69d3841ad1f4dec16851665c447df9f9ffce2a73c347be371",
+      "lab_ms": 396,
+      "base_ms": 438,
+      "debase_ms": 1571,
+      "slot_ms": 13440
+    },
+    {
+      "slot_id": "ITI-13",
+      "label": "L-3",
+      "entry_steps": 0,
+      "win_steps": 0,
+      "loss_steps": -3,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_iti_stress",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q4",
+            "price_e4": 6500,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win_iti_stress",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "loss_iti_stress",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 3400,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-10-10",
+          "date_to": "2025-10-31",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "275927ee834c0b0189172160941d51345e41adeb190d059d016f364b93990535",
+      "source_question_sha256": "ebfd7143f1fac322446097ace16ebdb7770642f59818c130fe37a467d7527cd5",
+      "entry_e4": 6500,
+      "win_e4": 8500,
+      "loss_e4": 3400,
+      "entry_cents": 65,
+      "win_cents": 85,
+      "loss_cents": 34,
+      "population": 23,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "bb6370f0943a485b9474956a92db64b9",
+      "phase_a_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-13",
+      "phase_b_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-13",
+      "executed": true,
+      "compile_ms": 0,
+      "execute_ms": 8525,
+      "result_hash": "a80857937809ac6b28c6c69a3b667ac61a1c2228fb5d9aa3e5c478260b994412",
+      "lab_ms": 384,
+      "base_ms": 433,
+      "debase_ms": 1566,
+      "slot_ms": 10910
+    },
+    {
+      "slot_id": "ITI-14",
+      "label": "L-2",
+      "entry_steps": 0,
+      "win_steps": 0,
+      "loss_steps": -2,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_iti_stress",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q4",
+            "price_e4": 6500,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win_iti_stress",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "loss_iti_stress",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 3600,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-10-10",
+          "date_to": "2025-10-31",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "2b1a1e572718e3d098531fdf7bc32728ee017439edbcc287245757a9c8150f25",
+      "source_question_sha256": "ebfd7143f1fac322446097ace16ebdb7770642f59818c130fe37a467d7527cd5",
+      "entry_e4": 6500,
+      "win_e4": 8500,
+      "loss_e4": 3600,
+      "entry_cents": 65,
+      "win_cents": 85,
+      "loss_cents": 36,
+      "population": 23,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "fe1e927bcc7e411ca6163e0a965719e4",
+      "phase_a_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-14",
+      "phase_b_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-14",
+      "executed": true,
+      "compile_ms": 0,
+      "execute_ms": 5551,
+      "result_hash": "5ad33545b0749032256f841d94becee2246c9d99b56d7d7ed988f640a5dced1e",
+      "lab_ms": 386,
+      "base_ms": 454,
+      "debase_ms": 1568,
+      "slot_ms": 7961
+    },
+    {
+      "slot_id": "ITI-15",
+      "label": "L-1",
+      "entry_steps": 0,
+      "win_steps": 0,
+      "loss_steps": -1,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_iti_stress",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q4",
+            "price_e4": 6500,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win_iti_stress",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "loss_iti_stress",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 3800,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-10-10",
+          "date_to": "2025-10-31",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "51b02e108d8da80231bac672d2560ee32470c6de327bd9622bda5c9cd1c83cf0",
+      "source_question_sha256": "ebfd7143f1fac322446097ace16ebdb7770642f59818c130fe37a467d7527cd5",
+      "entry_e4": 6500,
+      "win_e4": 8500,
+      "loss_e4": 3800,
+      "entry_cents": 65,
+      "win_cents": 85,
+      "loss_cents": 38,
+      "population": 23,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "6059f81f03cf42c3bd5b3bc483c16e9c",
+      "phase_a_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-15",
+      "phase_b_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-15",
+      "executed": true,
+      "compile_ms": 0,
+      "execute_ms": 14888,
+      "result_hash": "c14775304985a60046a5a9155f7caa641f074993d5fe286c573ebacb42bfeb07",
+      "lab_ms": 387,
+      "base_ms": 449,
+      "debase_ms": 1568,
+      "slot_ms": 17294
+    },
+    {
+      "slot_id": "ITI-16",
+      "label": "L+1",
+      "entry_steps": 0,
+      "win_steps": 0,
+      "loss_steps": 1,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_iti_stress",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q4",
+            "price_e4": 6500,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win_iti_stress",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "loss_iti_stress",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4200,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-10-10",
+          "date_to": "2025-10-31",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "189fccf2a3b4589a88eeb59112b24f07c1f4dbf03db0e2f90bbf8de2fa7bbe4f",
+      "source_question_sha256": "ebfd7143f1fac322446097ace16ebdb7770642f59818c130fe37a467d7527cd5",
+      "entry_e4": 6500,
+      "win_e4": 8500,
+      "loss_e4": 4200,
+      "entry_cents": 65,
+      "win_cents": 85,
+      "loss_cents": 42,
+      "population": 23,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "4ed6df5ee905407bb9d4064efef5f007",
+      "phase_a_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-16",
+      "phase_b_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-16",
+      "executed": true,
+      "compile_ms": 0,
+      "execute_ms": 5065,
+      "result_hash": "761f8962d0e7081debace09230f594830b2331f5b79c4d37a9e231fe5db8b41e",
+      "lab_ms": 332,
+      "base_ms": 483,
+      "debase_ms": 1678,
+      "slot_ms": 7560
+    },
+    {
+      "slot_id": "ITI-17",
+      "label": "L+2",
+      "entry_steps": 0,
+      "win_steps": 0,
+      "loss_steps": 2,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_iti_stress",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q4",
+            "price_e4": 6500,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win_iti_stress",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "loss_iti_stress",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4400,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-10-10",
+          "date_to": "2025-10-31",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "fffd0b3f8456d9b830f99f5cec085f869822a7b774f9dbc9064b8c312b937223",
+      "source_question_sha256": "ebfd7143f1fac322446097ace16ebdb7770642f59818c130fe37a467d7527cd5",
+      "entry_e4": 6500,
+      "win_e4": 8500,
+      "loss_e4": 4400,
+      "entry_cents": 65,
+      "win_cents": 85,
+      "loss_cents": 44,
+      "population": 23,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "be17419084084590ad54cd98d855f50f",
+      "phase_a_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-17",
+      "phase_b_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-17",
+      "executed": true,
+      "compile_ms": 0,
+      "execute_ms": 10010,
+      "result_hash": "16d0f75e99193161ab7974b5f116e38cb444ddbd816d119c640621a3400a2590",
+      "lab_ms": 411,
+      "base_ms": 450,
+      "debase_ms": 1661,
+      "slot_ms": 12534
+    },
+    {
+      "slot_id": "ITI-18",
+      "label": "L+3",
+      "entry_steps": 0,
+      "win_steps": 0,
+      "loss_steps": 3,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_iti_stress",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q4",
+            "price_e4": 6500,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win_iti_stress",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "loss_iti_stress",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4600,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-10-10",
+          "date_to": "2025-10-31",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "1f643b55b7e6505ead08a9ac9ee3a3707269964edcdba99253958ed96aa1aade",
+      "source_question_sha256": "ebfd7143f1fac322446097ace16ebdb7770642f59818c130fe37a467d7527cd5",
+      "entry_e4": 6500,
+      "win_e4": 8500,
+      "loss_e4": 4600,
+      "entry_cents": 65,
+      "win_cents": 85,
+      "loss_cents": 46,
+      "population": 23,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "1e40919c018448eaac3d25ed431f7361",
+      "phase_a_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-18",
+      "phase_b_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-18",
+      "executed": true,
+      "compile_ms": 0,
+      "execute_ms": 11754,
+      "result_hash": "4c93f2b924814f500614655559c885244cb097f924de9adfa1d6ab62b08173b3",
+      "lab_ms": 475,
+      "base_ms": 576,
+      "debase_ms": 1690,
+      "slot_ms": 14497
+    },
+    {
+      "slot_id": "ITI-19",
+      "label": "E+1 W+1",
+      "entry_steps": 1,
+      "win_steps": 1,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_iti_stress",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q4",
+            "price_e4": 6800,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win_iti_stress",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8900,
+            "sequential": false
+          },
+          {
+            "id": "loss_iti_stress",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-10-10",
+          "date_to": "2025-10-31",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "20b09ccd4d4612e12ddf3090e578bf8dad5553940e9c497e117d2878144c8157",
+      "source_question_sha256": "ebfd7143f1fac322446097ace16ebdb7770642f59818c130fe37a467d7527cd5",
+      "entry_e4": 6800,
+      "win_e4": 8900,
+      "loss_e4": 4000,
+      "entry_cents": 68,
+      "win_cents": 89,
+      "loss_cents": 40,
+      "population": 27,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "8fe8a929fbff456ca7a10200772a5a44",
+      "phase_a_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-19",
+      "phase_b_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-19",
+      "executed": true,
+      "compile_ms": 0,
+      "execute_ms": 11450,
+      "result_hash": "5c3d9e21b3c627c5b9a4b0650e7f07314466211a1ef3eb03e7b3d6090705742b",
+      "lab_ms": 377,
+      "base_ms": 465,
+      "debase_ms": 1743,
+      "slot_ms": 14037
+    },
+    {
+      "slot_id": "ITI-20",
+      "label": "E-1 W-1",
+      "entry_steps": -1,
+      "win_steps": -1,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_iti_stress",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q4",
+            "price_e4": 6200,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win_iti_stress",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8100,
+            "sequential": false
+          },
+          {
+            "id": "loss_iti_stress",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-10-10",
+          "date_to": "2025-10-31",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "71b5330f6677fde29533f1d1911fda2f17774e2db82c6089eed317358fb8f6f6",
+      "source_question_sha256": "ebfd7143f1fac322446097ace16ebdb7770642f59818c130fe37a467d7527cd5",
+      "entry_e4": 6200,
+      "win_e4": 8100,
+      "loss_e4": 4000,
+      "entry_cents": 62,
+      "win_cents": 81,
+      "loss_cents": 40,
+      "population": 17,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "d93a2ddcbfdb4c699f352302c88dc7c0",
+      "phase_a_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-20",
+      "phase_b_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-20",
+      "executed": true,
+      "compile_ms": 0,
+      "execute_ms": 11495,
+      "result_hash": "dd25c49b1752d51ac2258308d91f981ff171fd8afdf838226ad8c08be4c62497",
+      "lab_ms": 405,
+      "base_ms": 468,
+      "debase_ms": 1751,
+      "slot_ms": 14123
+    },
+    {
+      "slot_id": "ITI-21",
+      "label": "E+1 L+1",
+      "entry_steps": 1,
+      "win_steps": 0,
+      "loss_steps": 1,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_iti_stress",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q4",
+            "price_e4": 6800,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win_iti_stress",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "loss_iti_stress",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4200,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-10-10",
+          "date_to": "2025-10-31",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "cd25569e798ddf71ace3d4826d429c06df8bc76be63d92b795aa2f62b9b4730d",
+      "source_question_sha256": "ebfd7143f1fac322446097ace16ebdb7770642f59818c130fe37a467d7527cd5",
+      "entry_e4": 6800,
+      "win_e4": 8500,
+      "loss_e4": 4200,
+      "entry_cents": 68,
+      "win_cents": 85,
+      "loss_cents": 42,
+      "population": 27,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "eeb13f21de5c4a0bb0de8401279f9bab",
+      "phase_a_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-21",
+      "phase_b_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-21",
+      "executed": true,
+      "compile_ms": 0,
+      "execute_ms": 5683,
+      "result_hash": "eebbb4b0aee8369e72f466c703328904bde18d88a698acec0a94646704e186f4",
+      "lab_ms": 319,
+      "base_ms": 473,
+      "debase_ms": 1772,
+      "slot_ms": 8249
+    },
+    {
+      "slot_id": "ITI-22",
+      "label": "E-1 L-1",
+      "entry_steps": -1,
+      "win_steps": 0,
+      "loss_steps": -1,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_iti_stress",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q4",
+            "price_e4": 6200,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win_iti_stress",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "loss_iti_stress",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 3800,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-10-10",
+          "date_to": "2025-10-31",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "0ec69e15e89296ae8621da5e6604a22208d75427439eea004e743b45279e9903",
+      "source_question_sha256": "ebfd7143f1fac322446097ace16ebdb7770642f59818c130fe37a467d7527cd5",
+      "entry_e4": 6200,
+      "win_e4": 8500,
+      "loss_e4": 3800,
+      "entry_cents": 62,
+      "win_cents": 85,
+      "loss_cents": 38,
+      "population": 17,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "42fb49f79a0343bd8b006ac418f59f79",
+      "phase_a_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-22",
+      "phase_b_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-22",
+      "executed": true,
+      "compile_ms": 0,
+      "execute_ms": 13826,
+      "result_hash": "35bc3df52d4e89161b936dadb46f21f99486d8ca0b7229d8c676c0ef13549311",
+      "lab_ms": 418,
+      "base_ms": 586,
+      "debase_ms": 1694,
+      "slot_ms": 16526
+    },
+    {
+      "slot_id": "ITI-23",
+      "label": "W+1 L-1",
+      "entry_steps": 0,
+      "win_steps": 1,
+      "loss_steps": -1,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_iti_stress",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q4",
+            "price_e4": 6500,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win_iti_stress",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8900,
+            "sequential": false
+          },
+          {
+            "id": "loss_iti_stress",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 3800,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-10-10",
+          "date_to": "2025-10-31",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "11c42872ddf9d1fa70da7597f31b81a3d4da87ce26c3b9af4ac948e9ab46e6ad",
+      "source_question_sha256": "ebfd7143f1fac322446097ace16ebdb7770642f59818c130fe37a467d7527cd5",
+      "entry_e4": 6500,
+      "win_e4": 8900,
+      "loss_e4": 3800,
+      "entry_cents": 65,
+      "win_cents": 89,
+      "loss_cents": 38,
+      "population": 23,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "dac6797e4563444a94badd8700954ed1",
+      "phase_a_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-23",
+      "phase_b_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-23",
+      "executed": true,
+      "compile_ms": 0,
+      "execute_ms": 14031,
+      "result_hash": "8781a402024ee6de787042deba5fa5a66a4cf80efd27718f1dcac430f9640548",
+      "lab_ms": 1075,
+      "base_ms": 632,
+      "debase_ms": 1833,
+      "slot_ms": 17574
+    },
+    {
+      "slot_id": "ITI-24",
+      "label": "W-1 L+1",
+      "entry_steps": 0,
+      "win_steps": -1,
+      "loss_steps": 1,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_iti_stress",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": "Q4",
+            "price_e4": 6500,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win_iti_stress",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8100,
+            "sequential": false
+          },
+          {
+            "id": "loss_iti_stress",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4200,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-10-10",
+          "date_to": "2025-10-31",
+          "game_data": [
+            "pbp"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "NBA"
+          ]
+        }
+      },
+      "question_sha256": "8aa0645c4c437d3d0d7247410c186b5de4b9f08b7856ea8dfde1549627d1ddfc",
+      "source_question_sha256": "ebfd7143f1fac322446097ace16ebdb7770642f59818c130fe37a467d7527cd5",
+      "entry_e4": 6500,
+      "win_e4": 8100,
+      "loss_e4": 4200,
+      "entry_cents": 65,
+      "win_cents": 81,
+      "loss_cents": 42,
+      "population": 23,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "e07e0e727fbf4f78a6a2a61d69211274",
+      "phase_a_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-24",
+      "phase_b_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-24",
+      "executed": true,
+      "compile_ms": 0,
+      "execute_ms": 5643,
+      "result_hash": "b9c45ce514a69114765e48cdcf4a6de28406dc8ff53be0081d2dfcb1c46f1627",
+      "lab_ms": 363,
+      "base_ms": 501,
+      "debase_ms": 1702,
+      "slot_ms": 8211
+    }
+  ],
+  "slot_n": 25,
+  "progress_done": 25,
+  "recommended_slot_id": "ITI-12",
+  "committed_slot_id": "ITI-12",
+  "commit_path": "/Users/user/Desktop/Momento/ROLLER/superasi_labs/phase_b/ITI Stress Q4 CROSS 65 REACH 85 40/ITI Stress Q4 CROSS 65 REACH 85 40_ITI",
+  "created_at": "2026-09-13T10:27:32Z",
+  "updated_at": "2026-09-13T10:32:05Z",
+  "cancel_requested": false,
+  "honesty": {
+    "risk_not": "candle_path_not_fill",
+    "fees": "UNAVAILABLE",
+    "slippage": "UNAVAILABLE",
+    "fills": "UNAVAILABLE",
+    "confirmation_2pct": "OPERATION_REQUIRED",
+    "pyramiding": "OPERATION_REQUIRED",
+    "live_execution": false
+  },
+  "caveats": [
+    "LIVE EXECUTION = FALSE",
+    "CANDLE PATH \u2260 ACTUAL FILL",
+    "2% CONFIRMATION = OPERATION_REQUIRED",
+    "PYRAMIDING = OPERATION_REQUIRED",
+    "RECOMMENDED GRADE \u2260 FILL"
+  ],
+  "live_execution": false
+}

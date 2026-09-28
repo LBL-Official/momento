@@ -1,0 +1,10 @@
+trade T0049  NCAAB  Michigan St. at Kentucky
+contract KXNCAAMBGAME-25NOV18MSUUK-MSU  slice H1_2
+signal 2025-11-18T16:15:00-08:00 PST  exit 2025-11-18T18:47:11-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 2114  principal_cents 164892
+entry_fee_cents 635  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 46508  net_cents 45873
+strategy_result POSITIVE  net_r 1.856680293034362731209778605
+Assumed fill. Not a maker fill. Not live P&L.

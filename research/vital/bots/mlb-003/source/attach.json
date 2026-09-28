@@ -1,0 +1,53 @@
+{
+  "attempted_at": "2026-09-15T20:34:26Z",
+  "autonomous": true,
+  "aws": {
+    "account": "895492487332",
+    "demo_secret": "CONFIRMED",
+    "demo_secret_name": "momento/kalshi/demo",
+    "detail": null,
+    "factory_toml_refused": true,
+    "http_200_not_running": true,
+    "instance_id": "i-0f0849d5829476c31",
+    "momento_live_untouched": true,
+    "read_only": true,
+    "region": "us-east-1",
+    "session": "CONFIRMED",
+    "status": "CONFIRMED",
+    "unit": null,
+    "unit_started": false
+  },
+  "environment": "DEMO",
+  "factory_path_used": false,
+  "http_200_not_running": true,
+  "kalshi_demo": {
+    "balance_cents": 2000,
+    "detail": null,
+    "environment": "DEMO",
+    "fill_n": 0,
+    "http_200_not_running": true,
+    "observed_at": "2026-09-15T20:34:18Z",
+    "ok": true,
+    "position_n": 0,
+    "read_only": true,
+    "status": "CONFIRMED",
+    "submits": false
+  },
+  "not_80_81": true,
+  "not_mlb_factory": true,
+  "submit": false,
+  "unit": {
+    "active": true,
+    "attempted": true,
+    "aws_runtime_id": "momento-demo@mlb-003.service",
+    "factory_path_used": false,
+    "ok": true,
+    "reason": null,
+    "secret_missing": false,
+    "state_dir": "/var/lib/momento/demo/mlb-003/state",
+    "unit": "momento-demo@mlb-003.service",
+    "unit_started": true
+  },
+  "unit_started": true,
+  "worker": "momento-demo@mlb-003.service"
+}

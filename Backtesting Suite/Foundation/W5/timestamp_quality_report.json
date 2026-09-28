@@ -1,0 +1,20 @@
+{
+  "pbp_timestamp_precision": "RFC3339 UTC from StatsAPI play startTime (seconds typical; source digits preserved)",
+  "kalshi_timestamp_precision": "RFC3339 created_time; fractional digits preserved in source string; not upgraded",
+  "market_ts_frac_0": 25,
+  "market_ts_frac_1_to_3": 22686,
+  "market_ts_frac_4_plus": 22962000,
+  "lag_min_ms": 0,
+  "lag_median_ms": 68681,
+  "lag_p95_ms": 217343,
+  "lag_max_ms": 25328652,
+  "quality": {
+    "EXACT": 155,
+    "UNAVAILABLE": 4954004,
+    "WITHIN_1S": 131778,
+    "WITHIN_3S": 262331,
+    "WITHIN_5S": 270500,
+    "WITHIN_INNING": 17365943
+  },
+  "clock_correction_applied": false
+}

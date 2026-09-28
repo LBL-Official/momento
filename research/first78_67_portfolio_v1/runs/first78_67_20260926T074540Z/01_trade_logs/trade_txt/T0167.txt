@@ -1,0 +1,10 @@
+trade T0167  NBA  Boston at Indiana
+contract KXNBAGAME-25DEC26BOSIND-BOS  slice Q2
+signal 2025-12-26T16:58:00-08:00 PST  exit 2025-12-26T18:54:11-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 2906  principal_cents 226668
+entry_fee_cents 873  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 63932  net_cents 63059
+strategy_result POSITIVE  net_r 1.856642327169944647273583795
+Assumed fill. Not a maker fill. Not live P&L.

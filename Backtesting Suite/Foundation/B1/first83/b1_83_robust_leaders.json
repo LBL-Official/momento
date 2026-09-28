@@ -1,0 +1,122 @@
+[
+  {
+    "class": "CANDIDATE",
+    "condition": "inning_grp=7&p_max_vs_83=PEAK_AT",
+    "selection_score": 12.542307692307693,
+    "test_ev": 2.4166666666666665,
+    "train_ev": 7.769230769230769,
+    "val_ev": 13.0
+  },
+  {
+    "class": "CANDIDATE",
+    "condition": "p_start_lt50=YES&inning_83=LATE_6_7",
+    "selection_score": 12.218421052631578,
+    "test_ev": 2.2941176470588234,
+    "train_ev": 6.473684210526316,
+    "val_ev": 17.0
+  },
+  {
+    "class": "CANDIDATE",
+    "condition": "p_start_ge50=NO&inning_83=LATE_6_7",
+    "selection_score": 12.218421052631578,
+    "test_ev": 2.2941176470588234,
+    "train_ev": 6.473684210526316,
+    "val_ev": 17.0
+  },
+  {
+    "class": "CANDIDATE",
+    "condition": "p_start_tertile=LOW&inning_83=LATE_6_7",
+    "selection_score": 12.218421052631578,
+    "test_ev": 2.2941176470588234,
+    "train_ev": 6.473684210526316,
+    "val_ev": 17.0
+  },
+  {
+    "class": "CANDIDATE",
+    "condition": "inning_grp=7&vol_1m_tertile=LOW",
+    "selection_score": 12.161827956989248,
+    "test_ev": 5.095238095238095,
+    "train_ev": 6.247311827956989,
+    "val_ev": 17.0
+  },
+  {
+    "class": "CANDIDATE",
+    "condition": "p_start_fine=40_44&p_max_vs_83=PEAK_AT",
+    "selection_score": 12.156338028169014,
+    "test_ev": 4.5,
+    "train_ev": 8.549295774647888,
+    "val_ev": 7.0
+  },
+  {
+    "class": "CANDIDATE",
+    "condition": "p_start_40_44=YES&p_max_vs_83=PEAK_AT",
+    "selection_score": 12.156338028169014,
+    "test_ev": 4.5,
+    "train_ev": 8.549295774647888,
+    "val_ev": 7.0
+  },
+  {
+    "class": "CANDIDATE",
+    "condition": "lead_ge2=YES&outs=0&vol_1m_tertile=LOW",
+    "selection_score": 12.124418604651162,
+    "test_ev": 10.93939393939394,
+    "train_ev": 7.6976744186046515,
+    "val_ev": 10.023255813953488
+  },
+  {
+    "class": "ROBUST",
+    "condition": "move_fine=30_35&vol_1m_tertile=LOW&vol_15m_tertile=LOW",
+    "selection_score": 12.075409836065573,
+    "test_ev": 4.254901960784314,
+    "train_ev": 9.0,
+    "val_ev": 8.80327868852459
+  },
+  {
+    "class": "CANDIDATE",
+    "condition": "p_start_35_49=YES&inning_83=LATE_6_7",
+    "selection_score": 12.072222222222221,
+    "test_ev": 1.8484848484848484,
+    "train_ev": 5.888888888888889,
+    "val_ev": 17.0
+  },
+  {
+    "class": "CANDIDATE",
+    "condition": "inning_83=LATE_6_7&start_move_gt30=YES",
+    "selection_score": 12.04626168224299,
+    "test_ev": 3.206896551724138,
+    "train_ev": 5.785046728971962,
+    "val_ev": 14.674418604651162
+  },
+  {
+    "class": "CANDIDATE",
+    "condition": "p_start_fine=45_49&vol_1m_tertile=LOW",
+    "selection_score": 12.03062015503876,
+    "test_ev": 2.5555555555555554,
+    "train_ev": 6.922480620155039,
+    "val_ev": 8.11111111111111
+  },
+  {
+    "class": "CANDIDATE",
+    "condition": "p_start_45_49=YES&vol_1m_tertile=LOW",
+    "selection_score": 12.03062015503876,
+    "test_ev": 2.5555555555555554,
+    "train_ev": 6.922480620155039,
+    "val_ev": 8.11111111111111
+  },
+  {
+    "class": "ROBUST",
+    "condition": "start_move_gt30=YES&outs=0&vol_1m_tertile=LOW",
+    "selection_score": 12.013594470046083,
+    "test_ev": 12.121951219512194,
+    "train_ev": 10.548387096774194,
+    "val_ev": 9.857142857142858
+  },
+  {
+    "class": "ROBUST",
+    "condition": "lead_signed=LEAD_2&start_move_gt30=YES&vol_1m_tertile=LOW",
+    "selection_score": 12.0,
+    "test_ev": 3.9565217391304346,
+    "train_ev": 8.735537190082646,
+    "val_ev": 13.0
+  }
+]

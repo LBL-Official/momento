@@ -1,0 +1,10 @@
+trade T0132  NCAAB  SMU at LSU
+contract KXNCAAMBGAME-25DEC13SMULSU-LSU  slice H1_2
+signal 2025-12-13T18:09:00-08:00 PST  exit 2025-12-13T18:23:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 2876  principal_cents 224328
+entry_fee_cents 864  exit_fee_cents 1113
+exit STOP at 67c  terminal yes
+gross_cents -31636  net_cents -33613
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

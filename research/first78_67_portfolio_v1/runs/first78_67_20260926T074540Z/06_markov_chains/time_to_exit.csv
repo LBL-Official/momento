@@ -1,0 +1,4 @@
+exit_reason,n,median_minutes,resolution
+STOP,317,24.0,"minute bar, not an exact execution time"
+WIN_SETTLEMENT,330,82.0,"minute bar, not an exact execution time"
+LOSS_SETTLEMENT,0,,"minute bar, not an exact execution time"

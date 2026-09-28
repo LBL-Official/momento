@@ -1,0 +1,8 @@
+field,layer,observability,notes
+canonical_game_id,identity,DERIVED,SHA-256 of source+source_game_id; never invented
+mlb_game_pk,identity,OBSERVED_OR_UNMAPPED,Null until official source observed
+outs_elapsed,event_time,DERIVED,v1-regulation-54
+actual_outs_remaining,event_time,UNAVAILABLE_AT_T,Knowable only at terminal without lookahead
+event_theta,event_time,NOT_COMPUTED,Empirical later; no W2 formula
+winner,outcome,OUTCOME_LABEL,Never on MlbGameState
+source_event_timestamp,clock,OBSERVED_OR_UNAVAILABLE,Not collector time; not Kalshi trade time

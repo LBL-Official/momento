@@ -1,0 +1,66 @@
+{
+  "Universe": {
+    "mean": 5.341488594369198,
+    "ci95": [
+      4.166444644862948,
+      6.5419648953985305
+    ],
+    "ci90": [
+      4.352955661030472,
+      6.342602624901773
+    ],
+    "days": 140,
+    "trades": 647,
+    "seed": 78267,
+    "replicates": 10000,
+    "method": "percentile bootstrap of local signal-day clusters; no p-value; conditional sample"
+  },
+  "NBA": {
+    "mean": 4.918658774673827,
+    "ci95": [
+      3.350149618918536,
+      6.523661278259732
+    ],
+    "ci90": [
+      3.6109168458332643,
+      6.236115579567883
+    ],
+    "days": 133,
+    "trades": 382,
+    "seed": 78267,
+    "replicates": 10000,
+    "method": "percentile bootstrap of local signal-day clusters; no p-value; conditional sample"
+  },
+  "NCAAB": {
+    "mean": 5.95100176842064,
+    "ci95": [
+      4.235613897937234,
+      7.744869205273886
+    ],
+    "ci90": [
+      4.510244461454714,
+      7.4507327834610075
+    ],
+    "days": 81,
+    "trades": 265,
+    "seed": 78267,
+    "replicates": 10000,
+    "method": "percentile bootstrap of local signal-day clusters; no p-value; conditional sample"
+  },
+  "paired_stop_minus_hold": {
+    "mean": -0.12935337660699528,
+    "ci95": [
+      -2.4988322964340526,
+      2.2364598931748314
+    ],
+    "ci90": [
+      -2.1230621545294968,
+      1.8415469119297547
+    ],
+    "days": 140,
+    "trades": 647,
+    "seed": 78267,
+    "replicates": 10000,
+    "method": "percentile bootstrap of local signal-day clusters; no p-value; conditional sample"
+  }
+}

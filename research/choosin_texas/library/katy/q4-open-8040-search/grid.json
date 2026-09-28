@@ -1,0 +1,2948 @@
+{
+  "ncaab_h1_2_discovery": [
+    {
+      "price_lo": 41,
+      "price_hi": 50,
+      "austin_ev_lt": -20.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 50,
+      "austin_ev_lt": -10.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 50,
+      "austin_ev_lt": 0.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 50,
+      "austin_ev_lt": 5.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 50,
+      "austin_ev_lt": 10.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 50,
+      "austin_ev_lt": 15.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 50,
+      "austin_ev_lt": 20.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 55,
+      "austin_ev_lt": -20.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 55,
+      "austin_ev_lt": -10.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 55,
+      "austin_ev_lt": 0.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 55,
+      "austin_ev_lt": 5.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 55,
+      "austin_ev_lt": 10.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 55,
+      "austin_ev_lt": 15.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 55,
+      "austin_ev_lt": 20.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 60,
+      "austin_ev_lt": -20.0,
+      "n_hedge": 4,
+      "n_hedge_losers": 2,
+      "n_hedge_winners": 2,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 248,
+        "mean_cents": 2.5833333333333335
+      },
+      "delta_sum_cents": 8,
+      "delta_mean_cents": 0.08333333333333333
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 60,
+      "austin_ev_lt": -10.0,
+      "n_hedge": 4,
+      "n_hedge_losers": 2,
+      "n_hedge_winners": 2,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 248,
+        "mean_cents": 2.5833333333333335
+      },
+      "delta_sum_cents": 8,
+      "delta_mean_cents": 0.08333333333333333
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 60,
+      "austin_ev_lt": 0.0,
+      "n_hedge": 5,
+      "n_hedge_losers": 2,
+      "n_hedge_winners": 3,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 268,
+        "mean_cents": 2.7916666666666665
+      },
+      "delta_sum_cents": 28,
+      "delta_mean_cents": 0.2916666666666667
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 60,
+      "austin_ev_lt": 5.0,
+      "n_hedge": 5,
+      "n_hedge_losers": 2,
+      "n_hedge_winners": 3,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 268,
+        "mean_cents": 2.7916666666666665
+      },
+      "delta_sum_cents": 28,
+      "delta_mean_cents": 0.2916666666666667
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 60,
+      "austin_ev_lt": 10.0,
+      "n_hedge": 5,
+      "n_hedge_losers": 2,
+      "n_hedge_winners": 3,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 268,
+        "mean_cents": 2.7916666666666665
+      },
+      "delta_sum_cents": 28,
+      "delta_mean_cents": 0.2916666666666667
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 60,
+      "austin_ev_lt": 15.0,
+      "n_hedge": 5,
+      "n_hedge_losers": 2,
+      "n_hedge_winners": 3,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 268,
+        "mean_cents": 2.7916666666666665
+      },
+      "delta_sum_cents": 28,
+      "delta_mean_cents": 0.2916666666666667
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 60,
+      "austin_ev_lt": 20.0,
+      "n_hedge": 5,
+      "n_hedge_losers": 2,
+      "n_hedge_winners": 3,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 268,
+        "mean_cents": 2.7916666666666665
+      },
+      "delta_sum_cents": 28,
+      "delta_mean_cents": 0.2916666666666667
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 65,
+      "austin_ev_lt": -20.0,
+      "n_hedge": 5,
+      "n_hedge_losers": 2,
+      "n_hedge_winners": 3,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 209,
+        "mean_cents": 2.1770833333333335
+      },
+      "delta_sum_cents": -31,
+      "delta_mean_cents": -0.3229166666666667
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 65,
+      "austin_ev_lt": -10.0,
+      "n_hedge": 6,
+      "n_hedge_losers": 2,
+      "n_hedge_winners": 4,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 171,
+        "mean_cents": 1.78125
+      },
+      "delta_sum_cents": -69,
+      "delta_mean_cents": -0.71875
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 65,
+      "austin_ev_lt": 0.0,
+      "n_hedge": 7,
+      "n_hedge_losers": 2,
+      "n_hedge_winners": 5,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 191,
+        "mean_cents": 1.9895833333333333
+      },
+      "delta_sum_cents": -49,
+      "delta_mean_cents": -0.5104166666666666
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 65,
+      "austin_ev_lt": 5.0,
+      "n_hedge": 8,
+      "n_hedge_losers": 2,
+      "n_hedge_winners": 6,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 154,
+        "mean_cents": 1.6041666666666667
+      },
+      "delta_sum_cents": -86,
+      "delta_mean_cents": -0.8958333333333334
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 65,
+      "austin_ev_lt": 10.0,
+      "n_hedge": 9,
+      "n_hedge_losers": 2,
+      "n_hedge_winners": 7,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 117,
+        "mean_cents": 1.21875
+      },
+      "delta_sum_cents": -123,
+      "delta_mean_cents": -1.28125
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 65,
+      "austin_ev_lt": 15.0,
+      "n_hedge": 9,
+      "n_hedge_losers": 2,
+      "n_hedge_winners": 7,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 117,
+        "mean_cents": 1.21875
+      },
+      "delta_sum_cents": -123,
+      "delta_mean_cents": -1.28125
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 65,
+      "austin_ev_lt": 20.0,
+      "n_hedge": 9,
+      "n_hedge_losers": 2,
+      "n_hedge_winners": 7,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 117,
+        "mean_cents": 1.21875
+      },
+      "delta_sum_cents": -123,
+      "delta_mean_cents": -1.28125
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 70,
+      "austin_ev_lt": -20.0,
+      "n_hedge": 8,
+      "n_hedge_losers": 4,
+      "n_hedge_winners": 4,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 293,
+        "mean_cents": 3.0520833333333335
+      },
+      "delta_sum_cents": 53,
+      "delta_mean_cents": 0.5520833333333334
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 70,
+      "austin_ev_lt": -10.0,
+      "n_hedge": 13,
+      "n_hedge_losers": 4,
+      "n_hedge_winners": 9,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 246,
+        "mean_cents": 2.5625
+      },
+      "delta_sum_cents": 6,
+      "delta_mean_cents": 0.0625
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 70,
+      "austin_ev_lt": 0.0,
+      "n_hedge": 14,
+      "n_hedge_losers": 4,
+      "n_hedge_winners": 10,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 266,
+        "mean_cents": 2.7708333333333335
+      },
+      "delta_sum_cents": 26,
+      "delta_mean_cents": 0.2708333333333333
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 70,
+      "austin_ev_lt": 5.0,
+      "n_hedge": 15,
+      "n_hedge_losers": 4,
+      "n_hedge_winners": 11,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 229,
+        "mean_cents": 2.3854166666666665
+      },
+      "delta_sum_cents": -11,
+      "delta_mean_cents": -0.11458333333333333
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 70,
+      "austin_ev_lt": 10.0,
+      "n_hedge": 17,
+      "n_hedge_losers": 5,
+      "n_hedge_winners": 12,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 222,
+        "mean_cents": 2.3125
+      },
+      "delta_sum_cents": -18,
+      "delta_mean_cents": -0.1875
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 70,
+      "austin_ev_lt": 15.0,
+      "n_hedge": 17,
+      "n_hedge_losers": 5,
+      "n_hedge_winners": 12,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 222,
+        "mean_cents": 2.3125
+      },
+      "delta_sum_cents": -18,
+      "delta_mean_cents": -0.1875
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 70,
+      "austin_ev_lt": 20.0,
+      "n_hedge": 18,
+      "n_hedge_losers": 6,
+      "n_hedge_winners": 12,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 250,
+        "mean_cents": 2.6041666666666665
+      },
+      "delta_sum_cents": 10,
+      "delta_mean_cents": 0.10416666666666667
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 75,
+      "austin_ev_lt": -20.0,
+      "n_hedge": 10,
+      "n_hedge_losers": 4,
+      "n_hedge_winners": 6,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 300,
+        "mean_cents": 3.125
+      },
+      "delta_sum_cents": 60,
+      "delta_mean_cents": 0.625
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 75,
+      "austin_ev_lt": -10.0,
+      "n_hedge": 15,
+      "n_hedge_losers": 4,
+      "n_hedge_winners": 11,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 253,
+        "mean_cents": 2.6354166666666665
+      },
+      "delta_sum_cents": 13,
+      "delta_mean_cents": 0.13541666666666666
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 75,
+      "austin_ev_lt": 0.0,
+      "n_hedge": 16,
+      "n_hedge_losers": 4,
+      "n_hedge_winners": 12,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 273,
+        "mean_cents": 2.84375
+      },
+      "delta_sum_cents": 33,
+      "delta_mean_cents": 0.34375
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 75,
+      "austin_ev_lt": 5.0,
+      "n_hedge": 17,
+      "n_hedge_losers": 4,
+      "n_hedge_winners": 13,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 236,
+        "mean_cents": 2.4583333333333335
+      },
+      "delta_sum_cents": -4,
+      "delta_mean_cents": -0.041666666666666664
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 75,
+      "austin_ev_lt": 10.0,
+      "n_hedge": 19,
+      "n_hedge_losers": 5,
+      "n_hedge_winners": 14,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 229,
+        "mean_cents": 2.3854166666666665
+      },
+      "delta_sum_cents": -11,
+      "delta_mean_cents": -0.11458333333333333
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 75,
+      "austin_ev_lt": 15.0,
+      "n_hedge": 22,
+      "n_hedge_losers": 7,
+      "n_hedge_winners": 15,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 268,
+        "mean_cents": 2.7916666666666665
+      },
+      "delta_sum_cents": 28,
+      "delta_mean_cents": 0.2916666666666667
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 75,
+      "austin_ev_lt": 20.0,
+      "n_hedge": 23,
+      "n_hedge_losers": 8,
+      "n_hedge_winners": 15,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 296,
+        "mean_cents": 3.0833333333333335
+      },
+      "delta_sum_cents": 56,
+      "delta_mean_cents": 0.5833333333333334
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 79,
+      "austin_ev_lt": -20.0,
+      "n_hedge": 11,
+      "n_hedge_losers": 4,
+      "n_hedge_winners": 7,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 278,
+        "mean_cents": 2.8958333333333335
+      },
+      "delta_sum_cents": 38,
+      "delta_mean_cents": 0.3958333333333333
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 79,
+      "austin_ev_lt": -10.0,
+      "n_hedge": 17,
+      "n_hedge_losers": 4,
+      "n_hedge_winners": 13,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 268,
+        "mean_cents": 2.7916666666666665
+      },
+      "delta_sum_cents": 28,
+      "delta_mean_cents": 0.2916666666666667
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 79,
+      "austin_ev_lt": 0.0,
+      "n_hedge": 21,
+      "n_hedge_losers": 4,
+      "n_hedge_winners": 17,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 221,
+        "mean_cents": 2.3020833333333335
+      },
+      "delta_sum_cents": -19,
+      "delta_mean_cents": -0.19791666666666666
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 79,
+      "austin_ev_lt": 5.0,
+      "n_hedge": 23,
+      "n_hedge_losers": 4,
+      "n_hedge_winners": 19,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 221,
+        "mean_cents": 2.3020833333333335
+      },
+      "delta_sum_cents": -19,
+      "delta_mean_cents": -0.19791666666666666
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 79,
+      "austin_ev_lt": 10.0,
+      "n_hedge": 25,
+      "n_hedge_losers": 5,
+      "n_hedge_winners": 20,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 214,
+        "mean_cents": 2.2291666666666665
+      },
+      "delta_sum_cents": -26,
+      "delta_mean_cents": -0.2708333333333333
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 79,
+      "austin_ev_lt": 15.0,
+      "n_hedge": 32,
+      "n_hedge_losers": 7,
+      "n_hedge_winners": 25,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 223,
+        "mean_cents": 2.3229166666666665
+      },
+      "delta_sum_cents": -17,
+      "delta_mean_cents": -0.17708333333333334
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 79,
+      "austin_ev_lt": 20.0,
+      "n_hedge": 34,
+      "n_hedge_losers": 8,
+      "n_hedge_winners": 26,
+      "baseline_8040": {
+        "n": 96,
+        "sum_cents": 240,
+        "mean_cents": 2.5
+      },
+      "mixed_8040": {
+        "n": 96,
+        "sum_cents": 288,
+        "mean_cents": 3.0
+      },
+      "delta_sum_cents": 48,
+      "delta_mean_cents": 0.5
+    }
+  ],
+  "ncaab_h2_1_discovery": [
+    {
+      "price_lo": 41,
+      "price_hi": 50,
+      "austin_ev_lt": -20.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 50,
+      "austin_ev_lt": -10.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 50,
+      "austin_ev_lt": 0.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 50,
+      "austin_ev_lt": 5.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 50,
+      "austin_ev_lt": 10.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 50,
+      "austin_ev_lt": 15.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 50,
+      "austin_ev_lt": 20.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 55,
+      "austin_ev_lt": -20.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 55,
+      "austin_ev_lt": -10.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 55,
+      "austin_ev_lt": 0.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 55,
+      "austin_ev_lt": 5.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 55,
+      "austin_ev_lt": 10.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 55,
+      "austin_ev_lt": 15.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 55,
+      "austin_ev_lt": 20.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 60,
+      "austin_ev_lt": -20.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 60,
+      "austin_ev_lt": -10.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 60,
+      "austin_ev_lt": 0.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 60,
+      "austin_ev_lt": 5.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 60,
+      "austin_ev_lt": 10.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 60,
+      "austin_ev_lt": 15.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 60,
+      "austin_ev_lt": 20.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 65,
+      "austin_ev_lt": -20.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 65,
+      "austin_ev_lt": -10.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 65,
+      "austin_ev_lt": 0.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 65,
+      "austin_ev_lt": 5.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 65,
+      "austin_ev_lt": 10.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 65,
+      "austin_ev_lt": 15.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 65,
+      "austin_ev_lt": 20.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 70,
+      "austin_ev_lt": -20.0,
+      "n_hedge": 1,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 1,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 326,
+        "mean_cents": 4.72463768115942
+      },
+      "delta_sum_cents": -34,
+      "delta_mean_cents": -0.4927536231884058
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 70,
+      "austin_ev_lt": -10.0,
+      "n_hedge": 1,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 1,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 326,
+        "mean_cents": 4.72463768115942
+      },
+      "delta_sum_cents": -34,
+      "delta_mean_cents": -0.4927536231884058
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 70,
+      "austin_ev_lt": 0.0,
+      "n_hedge": 1,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 1,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 326,
+        "mean_cents": 4.72463768115942
+      },
+      "delta_sum_cents": -34,
+      "delta_mean_cents": -0.4927536231884058
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 70,
+      "austin_ev_lt": 5.0,
+      "n_hedge": 1,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 1,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 326,
+        "mean_cents": 4.72463768115942
+      },
+      "delta_sum_cents": -34,
+      "delta_mean_cents": -0.4927536231884058
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 70,
+      "austin_ev_lt": 10.0,
+      "n_hedge": 1,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 1,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 326,
+        "mean_cents": 4.72463768115942
+      },
+      "delta_sum_cents": -34,
+      "delta_mean_cents": -0.4927536231884058
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 70,
+      "austin_ev_lt": 15.0,
+      "n_hedge": 1,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 1,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 326,
+        "mean_cents": 4.72463768115942
+      },
+      "delta_sum_cents": -34,
+      "delta_mean_cents": -0.4927536231884058
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 70,
+      "austin_ev_lt": 20.0,
+      "n_hedge": 1,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 1,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 326,
+        "mean_cents": 4.72463768115942
+      },
+      "delta_sum_cents": -34,
+      "delta_mean_cents": -0.4927536231884058
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 75,
+      "austin_ev_lt": -20.0,
+      "n_hedge": 1,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 1,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 326,
+        "mean_cents": 4.72463768115942
+      },
+      "delta_sum_cents": -34,
+      "delta_mean_cents": -0.4927536231884058
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 75,
+      "austin_ev_lt": -10.0,
+      "n_hedge": 1,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 1,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 326,
+        "mean_cents": 4.72463768115942
+      },
+      "delta_sum_cents": -34,
+      "delta_mean_cents": -0.4927536231884058
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 75,
+      "austin_ev_lt": 0.0,
+      "n_hedge": 1,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 1,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 326,
+        "mean_cents": 4.72463768115942
+      },
+      "delta_sum_cents": -34,
+      "delta_mean_cents": -0.4927536231884058
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 75,
+      "austin_ev_lt": 5.0,
+      "n_hedge": 1,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 1,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 326,
+        "mean_cents": 4.72463768115942
+      },
+      "delta_sum_cents": -34,
+      "delta_mean_cents": -0.4927536231884058
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 75,
+      "austin_ev_lt": 10.0,
+      "n_hedge": 1,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 1,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 326,
+        "mean_cents": 4.72463768115942
+      },
+      "delta_sum_cents": -34,
+      "delta_mean_cents": -0.4927536231884058
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 75,
+      "austin_ev_lt": 15.0,
+      "n_hedge": 1,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 1,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 326,
+        "mean_cents": 4.72463768115942
+      },
+      "delta_sum_cents": -34,
+      "delta_mean_cents": -0.4927536231884058
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 75,
+      "austin_ev_lt": 20.0,
+      "n_hedge": 1,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 1,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 326,
+        "mean_cents": 4.72463768115942
+      },
+      "delta_sum_cents": -34,
+      "delta_mean_cents": -0.4927536231884058
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 79,
+      "austin_ev_lt": -20.0,
+      "n_hedge": 1,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 1,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 326,
+        "mean_cents": 4.72463768115942
+      },
+      "delta_sum_cents": -34,
+      "delta_mean_cents": -0.4927536231884058
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 79,
+      "austin_ev_lt": -10.0,
+      "n_hedge": 2,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 2,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 305,
+        "mean_cents": 4.420289855072464
+      },
+      "delta_sum_cents": -55,
+      "delta_mean_cents": -0.7971014492753623
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 79,
+      "austin_ev_lt": 0.0,
+      "n_hedge": 2,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 2,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 305,
+        "mean_cents": 4.420289855072464
+      },
+      "delta_sum_cents": -55,
+      "delta_mean_cents": -0.7971014492753623
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 79,
+      "austin_ev_lt": 5.0,
+      "n_hedge": 2,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 2,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 305,
+        "mean_cents": 4.420289855072464
+      },
+      "delta_sum_cents": -55,
+      "delta_mean_cents": -0.7971014492753623
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 79,
+      "austin_ev_lt": 10.0,
+      "n_hedge": 2,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 2,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 305,
+        "mean_cents": 4.420289855072464
+      },
+      "delta_sum_cents": -55,
+      "delta_mean_cents": -0.7971014492753623
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 79,
+      "austin_ev_lt": 15.0,
+      "n_hedge": 2,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 2,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 305,
+        "mean_cents": 4.420289855072464
+      },
+      "delta_sum_cents": -55,
+      "delta_mean_cents": -0.7971014492753623
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 79,
+      "austin_ev_lt": 20.0,
+      "n_hedge": 2,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 2,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 305,
+        "mean_cents": 4.420289855072464
+      },
+      "delta_sum_cents": -55,
+      "delta_mean_cents": -0.7971014492753623
+    }
+  ],
+  "nba_604_in_sample": [
+    {
+      "price_lo": 41,
+      "price_hi": 50,
+      "austin_ev_lt": -20.0,
+      "n_hedge": 10,
+      "n_hedge_losers": 5,
+      "n_hedge_winners": 5,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2643,
+        "mean_cents": 4.383084577114428
+      },
+      "delta_sum_cents": -177,
+      "delta_mean_cents": -0.2935323383084577
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 50,
+      "austin_ev_lt": -10.0,
+      "n_hedge": 11,
+      "n_hedge_losers": 6,
+      "n_hedge_winners": 5,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2646,
+        "mean_cents": 4.388059701492537
+      },
+      "delta_sum_cents": -174,
+      "delta_mean_cents": -0.2885572139303483
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 50,
+      "austin_ev_lt": 0.0,
+      "n_hedge": 12,
+      "n_hedge_losers": 7,
+      "n_hedge_winners": 5,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2653,
+        "mean_cents": 4.39966832504146
+      },
+      "delta_sum_cents": -167,
+      "delta_mean_cents": -0.2769485903814262
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 50,
+      "austin_ev_lt": 5.0,
+      "n_hedge": 14,
+      "n_hedge_losers": 7,
+      "n_hedge_winners": 7,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2606,
+        "mean_cents": 4.321724709784411
+      },
+      "delta_sum_cents": -214,
+      "delta_mean_cents": -0.3548922056384743
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 50,
+      "austin_ev_lt": 10.0,
+      "n_hedge": 14,
+      "n_hedge_losers": 7,
+      "n_hedge_winners": 7,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2606,
+        "mean_cents": 4.321724709784411
+      },
+      "delta_sum_cents": -214,
+      "delta_mean_cents": -0.3548922056384743
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 50,
+      "austin_ev_lt": 15.0,
+      "n_hedge": 15,
+      "n_hedge_losers": 7,
+      "n_hedge_winners": 8,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2611,
+        "mean_cents": 4.330016583747927
+      },
+      "delta_sum_cents": -209,
+      "delta_mean_cents": -0.3466003316749585
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 50,
+      "austin_ev_lt": 20.0,
+      "n_hedge": 15,
+      "n_hedge_losers": 7,
+      "n_hedge_winners": 8,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2611,
+        "mean_cents": 4.330016583747927
+      },
+      "delta_sum_cents": -209,
+      "delta_mean_cents": -0.3466003316749585
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 55,
+      "austin_ev_lt": -20.0,
+      "n_hedge": 16,
+      "n_hedge_losers": 10,
+      "n_hedge_winners": 6,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2718,
+        "mean_cents": 4.507462686567164
+      },
+      "delta_sum_cents": -102,
+      "delta_mean_cents": -0.1691542288557214
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 55,
+      "austin_ev_lt": -10.0,
+      "n_hedge": 21,
+      "n_hedge_losers": 14,
+      "n_hedge_winners": 7,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2717,
+        "mean_cents": 4.505804311774461
+      },
+      "delta_sum_cents": -103,
+      "delta_mean_cents": -0.17081260364842454
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 55,
+      "austin_ev_lt": 0.0,
+      "n_hedge": 24,
+      "n_hedge_losers": 16,
+      "n_hedge_winners": 8,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2750,
+        "mean_cents": 4.560530679933665
+      },
+      "delta_sum_cents": -70,
+      "delta_mean_cents": -0.11608623548922056
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 55,
+      "austin_ev_lt": 5.0,
+      "n_hedge": 26,
+      "n_hedge_losers": 16,
+      "n_hedge_winners": 10,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2703,
+        "mean_cents": 4.482587064676617
+      },
+      "delta_sum_cents": -117,
+      "delta_mean_cents": -0.19402985074626866
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 55,
+      "austin_ev_lt": 10.0,
+      "n_hedge": 26,
+      "n_hedge_losers": 16,
+      "n_hedge_winners": 10,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2703,
+        "mean_cents": 4.482587064676617
+      },
+      "delta_sum_cents": -117,
+      "delta_mean_cents": -0.19402985074626866
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 55,
+      "austin_ev_lt": 15.0,
+      "n_hedge": 27,
+      "n_hedge_losers": 16,
+      "n_hedge_winners": 11,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2708,
+        "mean_cents": 4.490878938640133
+      },
+      "delta_sum_cents": -112,
+      "delta_mean_cents": -0.1857379767827529
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 55,
+      "austin_ev_lt": 20.0,
+      "n_hedge": 27,
+      "n_hedge_losers": 16,
+      "n_hedge_winners": 11,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2708,
+        "mean_cents": 4.490878938640133
+      },
+      "delta_sum_cents": -112,
+      "delta_mean_cents": -0.1857379767827529
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 60,
+      "austin_ev_lt": -20.0,
+      "n_hedge": 17,
+      "n_hedge_losers": 11,
+      "n_hedge_winners": 6,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2737,
+        "mean_cents": 4.538971807628524
+      },
+      "delta_sum_cents": -83,
+      "delta_mean_cents": -0.13764510779436154
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 60,
+      "austin_ev_lt": -10.0,
+      "n_hedge": 25,
+      "n_hedge_losers": 16,
+      "n_hedge_winners": 9,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2731,
+        "mean_cents": 4.529021558872305
+      },
+      "delta_sum_cents": -89,
+      "delta_mean_cents": -0.14759535655058043
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 60,
+      "austin_ev_lt": 0.0,
+      "n_hedge": 32,
+      "n_hedge_losers": 20,
+      "n_hedge_winners": 12,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2778,
+        "mean_cents": 4.606965174129353
+      },
+      "delta_sum_cents": -42,
+      "delta_mean_cents": -0.06965174129353234
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 60,
+      "austin_ev_lt": 5.0,
+      "n_hedge": 34,
+      "n_hedge_losers": 20,
+      "n_hedge_winners": 14,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2731,
+        "mean_cents": 4.529021558872305
+      },
+      "delta_sum_cents": -89,
+      "delta_mean_cents": -0.14759535655058043
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 60,
+      "austin_ev_lt": 10.0,
+      "n_hedge": 36,
+      "n_hedge_losers": 21,
+      "n_hedge_winners": 15,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2706,
+        "mean_cents": 4.487562189054726
+      },
+      "delta_sum_cents": -114,
+      "delta_mean_cents": -0.1890547263681592
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 60,
+      "austin_ev_lt": 15.0,
+      "n_hedge": 37,
+      "n_hedge_losers": 21,
+      "n_hedge_winners": 16,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2711,
+        "mean_cents": 4.495854063018242
+      },
+      "delta_sum_cents": -109,
+      "delta_mean_cents": -0.18076285240464346
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 60,
+      "austin_ev_lt": 20.0,
+      "n_hedge": 37,
+      "n_hedge_losers": 21,
+      "n_hedge_winners": 16,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2711,
+        "mean_cents": 4.495854063018242
+      },
+      "delta_sum_cents": -109,
+      "delta_mean_cents": -0.18076285240464346
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 65,
+      "austin_ev_lt": -20.0,
+      "n_hedge": 19,
+      "n_hedge_losers": 11,
+      "n_hedge_winners": 8,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2726,
+        "mean_cents": 4.5207296849087895
+      },
+      "delta_sum_cents": -94,
+      "delta_mean_cents": -0.1558872305140962
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 65,
+      "austin_ev_lt": -10.0,
+      "n_hedge": 33,
+      "n_hedge_losers": 17,
+      "n_hedge_winners": 16,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2674,
+        "mean_cents": 4.434494195688226
+      },
+      "delta_sum_cents": -146,
+      "delta_mean_cents": -0.24212271973466004
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 65,
+      "austin_ev_lt": 0.0,
+      "n_hedge": 45,
+      "n_hedge_losers": 21,
+      "n_hedge_winners": 24,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2590,
+        "mean_cents": 4.295190713101161
+      },
+      "delta_sum_cents": -230,
+      "delta_mean_cents": -0.3814262023217247
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 65,
+      "austin_ev_lt": 5.0,
+      "n_hedge": 53,
+      "n_hedge_losers": 24,
+      "n_hedge_winners": 29,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2623,
+        "mean_cents": 4.349917081260365
+      },
+      "delta_sum_cents": -197,
+      "delta_mean_cents": -0.32669983416252074
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 65,
+      "austin_ev_lt": 10.0,
+      "n_hedge": 59,
+      "n_hedge_losers": 27,
+      "n_hedge_winners": 32,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2627,
+        "mean_cents": 4.356550580431177
+      },
+      "delta_sum_cents": -193,
+      "delta_mean_cents": -0.3200663349917081
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 65,
+      "austin_ev_lt": 15.0,
+      "n_hedge": 60,
+      "n_hedge_losers": 27,
+      "n_hedge_winners": 33,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2632,
+        "mean_cents": 4.364842454394693
+      },
+      "delta_sum_cents": -188,
+      "delta_mean_cents": -0.3117744610281924
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 65,
+      "austin_ev_lt": 20.0,
+      "n_hedge": 60,
+      "n_hedge_losers": 27,
+      "n_hedge_winners": 33,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2632,
+        "mean_cents": 4.364842454394693
+      },
+      "delta_sum_cents": -188,
+      "delta_mean_cents": -0.3117744610281924
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 70,
+      "austin_ev_lt": -20.0,
+      "n_hedge": 26,
+      "n_hedge_losers": 14,
+      "n_hedge_winners": 12,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2805,
+        "mean_cents": 4.651741293532338
+      },
+      "delta_sum_cents": -15,
+      "delta_mean_cents": -0.024875621890547265
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 70,
+      "austin_ev_lt": -10.0,
+      "n_hedge": 45,
+      "n_hedge_losers": 21,
+      "n_hedge_winners": 24,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2714,
+        "mean_cents": 4.500829187396351
+      },
+      "delta_sum_cents": -106,
+      "delta_mean_cents": -0.175787728026534
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 70,
+      "austin_ev_lt": 0.0,
+      "n_hedge": 63,
+      "n_hedge_losers": 25,
+      "n_hedge_winners": 38,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2557,
+        "mean_cents": 4.240464344941957
+      },
+      "delta_sum_cents": -263,
+      "delta_mean_cents": -0.4361525704809287
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 70,
+      "austin_ev_lt": 5.0,
+      "n_hedge": 72,
+      "n_hedge_losers": 29,
+      "n_hedge_winners": 43,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2619,
+        "mean_cents": 4.343283582089552
+      },
+      "delta_sum_cents": -201,
+      "delta_mean_cents": -0.3333333333333333
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 70,
+      "austin_ev_lt": 10.0,
+      "n_hedge": 81,
+      "n_hedge_losers": 33,
+      "n_hedge_winners": 48,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2647,
+        "mean_cents": 4.389718076285241
+      },
+      "delta_sum_cents": -173,
+      "delta_mean_cents": -0.28689883913764513
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 70,
+      "austin_ev_lt": 15.0,
+      "n_hedge": 83,
+      "n_hedge_losers": 33,
+      "n_hedge_winners": 50,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2619,
+        "mean_cents": 4.343283582089552
+      },
+      "delta_sum_cents": -201,
+      "delta_mean_cents": -0.3333333333333333
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 70,
+      "austin_ev_lt": 20.0,
+      "n_hedge": 85,
+      "n_hedge_losers": 33,
+      "n_hedge_winners": 52,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2553,
+        "mean_cents": 4.233830845771144
+      },
+      "delta_sum_cents": -267,
+      "delta_mean_cents": -0.4427860696517413
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 75,
+      "austin_ev_lt": -20.0,
+      "n_hedge": 31,
+      "n_hedge_losers": 16,
+      "n_hedge_winners": 15,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2851,
+        "mean_cents": 4.728026533996683
+      },
+      "delta_sum_cents": 31,
+      "delta_mean_cents": 0.05140961857379768
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 75,
+      "austin_ev_lt": -10.0,
+      "n_hedge": 57,
+      "n_hedge_losers": 26,
+      "n_hedge_winners": 31,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2819,
+        "mean_cents": 4.674958540630183
+      },
+      "delta_sum_cents": -1,
+      "delta_mean_cents": -0.001658374792703151
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 75,
+      "austin_ev_lt": 0.0,
+      "n_hedge": 83,
+      "n_hedge_losers": 32,
+      "n_hedge_winners": 51,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2625,
+        "mean_cents": 4.353233830845771
+      },
+      "delta_sum_cents": -195,
+      "delta_mean_cents": -0.32338308457711445
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 75,
+      "austin_ev_lt": 5.0,
+      "n_hedge": 93,
+      "n_hedge_losers": 36,
+      "n_hedge_winners": 57,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2662,
+        "mean_cents": 4.414593698175787
+      },
+      "delta_sum_cents": -158,
+      "delta_mean_cents": -0.2620232172470978
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 75,
+      "austin_ev_lt": 10.0,
+      "n_hedge": 110,
+      "n_hedge_losers": 41,
+      "n_hedge_winners": 69,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2539,
+        "mean_cents": 4.2106135986733
+      },
+      "delta_sum_cents": -281,
+      "delta_mean_cents": -0.4660033167495854
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 75,
+      "austin_ev_lt": 15.0,
+      "n_hedge": 113,
+      "n_hedge_losers": 41,
+      "n_hedge_winners": 72,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2486,
+        "mean_cents": 4.122719734660033
+      },
+      "delta_sum_cents": -334,
+      "delta_mean_cents": -0.5538971807628524
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 75,
+      "austin_ev_lt": 20.0,
+      "n_hedge": 118,
+      "n_hedge_losers": 41,
+      "n_hedge_winners": 77,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2400,
+        "mean_cents": 3.9800995024875623
+      },
+      "delta_sum_cents": -420,
+      "delta_mean_cents": -0.6965174129353234
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 79,
+      "austin_ev_lt": -20.0,
+      "n_hedge": 36,
+      "n_hedge_losers": 17,
+      "n_hedge_winners": 19,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2856,
+        "mean_cents": 4.736318407960199
+      },
+      "delta_sum_cents": 36,
+      "delta_mean_cents": 0.05970149253731343
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 79,
+      "austin_ev_lt": -10.0,
+      "n_hedge": 65,
+      "n_hedge_losers": 28,
+      "n_hedge_winners": 37,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2817,
+        "mean_cents": 4.6716417910447765
+      },
+      "delta_sum_cents": -3,
+      "delta_mean_cents": -0.004975124378109453
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 79,
+      "austin_ev_lt": 0.0,
+      "n_hedge": 100,
+      "n_hedge_losers": 38,
+      "n_hedge_winners": 62,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2658,
+        "mean_cents": 4.407960199004975
+      },
+      "delta_sum_cents": -162,
+      "delta_mean_cents": -0.26865671641791045
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 79,
+      "austin_ev_lt": 5.0,
+      "n_hedge": 115,
+      "n_hedge_losers": 43,
+      "n_hedge_winners": 72,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2708,
+        "mean_cents": 4.490878938640133
+      },
+      "delta_sum_cents": -112,
+      "delta_mean_cents": -0.1857379767827529
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 79,
+      "austin_ev_lt": 10.0,
+      "n_hedge": 139,
+      "n_hedge_losers": 48,
+      "n_hedge_winners": 91,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2488,
+        "mean_cents": 4.126036484245439
+      },
+      "delta_sum_cents": -332,
+      "delta_mean_cents": -0.5505804311774462
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 79,
+      "austin_ev_lt": 15.0,
+      "n_hedge": 148,
+      "n_hedge_losers": 49,
+      "n_hedge_winners": 99,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2416,
+        "mean_cents": 4.006633499170813
+      },
+      "delta_sum_cents": -404,
+      "delta_mean_cents": -0.6699834162520729
+    },
+    {
+      "price_lo": 41,
+      "price_hi": 79,
+      "austin_ev_lt": 20.0,
+      "n_hedge": 156,
+      "n_hedge_losers": 50,
+      "n_hedge_winners": 106,
+      "baseline_8040": {
+        "n": 603,
+        "sum_cents": 2820,
+        "mean_cents": 4.676616915422885
+      },
+      "mixed_8040": {
+        "n": 603,
+        "sum_cents": 2325,
+        "mean_cents": 3.855721393034826
+      },
+      "delta_sum_cents": -495,
+      "delta_mean_cents": -0.8208955223880597
+    }
+  ]
+}

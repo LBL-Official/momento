@@ -1,0 +1,62 @@
+---
+description: DRE — Dynamic Risk Engine research desk and V1 portfolio objective
+alwaysApply: true
+---
+
+# DRE — Dynamic Risk Engine
+
+Post-entry hold-reason research. Not Vital. Not `crates/risk`.
+Not a Choosin Texas page.
+
+```
+LIVE EXECUTION = FALSE
+CANDLE PATH ≠ FILL
+PRESERVE αP > 0, THEN ΔP → ΔP*(Xt)
+THEORETICAL HEDGE ≠ EXECUTABLE HEDGE ≠ ECONOMICALLY BENEFICIAL HEDGE
+Δ↓ ⇏ α↑
+Phase 3 ≠ execution policy
+asked-six 1182 ≠ derived four 936 ≠ NBA 604
+Λα ≠ Δ ≠ Γ ≠ β
+```
+
+Dashboard: `frontend/dynamic-risk-engine` on `:5191` (product **Drevo**;
+legacy alias DRE).
+API: `/dre/*` on ROLLER `:8791` (`/drevo/*` alias).
+Library: `research/dre/` and `research/drevo/`.
+SSOT: `research/dre/PORTFOLIO_OBJECTIVE_V1.md`.
+Greeks: `research/dre/GREEK_STACK_V1.md`.
+How-to: `docs/operations/DREVO.md` (legacy `docs/operations/DRE.md`).
+
+## Aim
+
+Preserve demonstrated positive alpha first. Then choose the
+optimal directional exposure for the current state. Do not
+blindly force delta to zero.
+
+Risk is not inherently bad. Uncompensated risk is bad.
+
+## Forward feed
+
+```
+Choosin Texas  →  TradeBreakdown   (N=936)
+Austin         →  PositionStratum  (N=604)
+Positman       →  PositmanPositionPlan  (quantity × route proposal)
+               →  Drevo
+```
+
+`/dre` wraps those two packages only. Missing is `UNAVAILABLE`.
+Never `$0`. Live feed `UNAVAILABLE`.
+
+## Absolute
+
+- Do not invent `Λα`, hazard rates, `ΔP*(Xt)`, or a live `Xt`.
+- Do not invent ACCEPT thresholds. V0 economic gate is `POLICY_UNRESOLVED`.
+- Do not treat Austin Phase 3 as hold / hedge / reduce / exit.
+- Do not remount this inside Choosin Texas or `frontend/roller-terminal`.
+- Do not call `crates/risk` the Dynamic Risk Engine.
+- Do not mix N universes.
+- Do not edit `first80.py`, live FIRST01 / 80/81/83/89, `book.json`.
+- Do not start W9 or warehouse Phase 21.
+- Do not fabricate L2 or treat candle path as a fill.
+- Formalize surfaces in this order: frozen alpha → conditional
+  alpha → delta → state volatility → tail hazard → then `Λα`.

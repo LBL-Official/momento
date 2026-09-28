@@ -1,0 +1,27 @@
+{
+  "artifact": "game_market_crosswalk",
+  "canonical_tickers": 1698,
+  "crosswalk_sha256": "86de1f9560ed5999bfda4019262b160d342a2d5cf76c73c662fd03cb294f975f",
+  "games_with_linked_markets": 5280,
+  "identity_rule_version": "1.0.0",
+  "identity_tickers": 10547,
+  "input_hashes": {
+    "identity": "29c91687302db79fa0ef693bb5b4a2951d02efd6d74e59ea764b1a444cf038f4",
+    "kalshi_markets": "bcd6158ada6fda80ddf6cd445732f112b8a3aaeb9e3f12276583eb6817361e24",
+    "suite_markets": "cd50d1586afa2b63e6838add5d981ee457ec4699aa411dfebcdcba58383c93d9"
+  },
+  "link_rule_version": "1.0.0",
+  "market_row_count": 10560,
+  "markets_sha256": "3fb334a30a054a3e15b87ad736d560a1da54b982a2c5201eb70c83e3e328f720",
+  "provisional_layout": "/Users/user/Desktop/Momento/ROLLER/data/ncaab/2025_2026/derived/warehouse_v0",
+  "row_count": 10560,
+  "sport": "NCAAB",
+  "status_counts": {
+    "AMBIGUOUS": 0,
+    "INVALID": 0,
+    "LINKED": 10547,
+    "UNLINKED": 13
+  },
+  "suite_tickers": 10560,
+  "updated_at": "2026-09-15T00:23:02Z"
+}

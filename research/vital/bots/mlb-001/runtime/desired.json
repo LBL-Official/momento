@@ -1,0 +1,4 @@
+{
+  "detail": "Vital does not claim the host is running until observe confirms it",
+  "lifecycle": "OBSERVATION_UNAVAILABLE"
+}

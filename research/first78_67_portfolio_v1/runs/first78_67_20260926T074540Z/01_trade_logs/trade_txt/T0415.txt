@@ -1,0 +1,10 @@
+trade T0415  NBA  Detroit at Toronto
+contract KXNBAGAME-26FEB11DETTOR-DET  slice Q2
+signal 2026-02-11T17:39:00-08:00 PST  exit 2026-02-11T19:22:10-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 7016  principal_cents 547248
+entry_fee_cents 2107  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 154352  net_cents 152245
+strategy_result POSITIVE  net_r 1.856691626625039635113051538
+Assumed fill. Not a maker fill. Not live P&L.

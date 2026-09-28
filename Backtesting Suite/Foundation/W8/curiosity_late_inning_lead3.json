@@ -1,0 +1,59 @@
+{
+  "live_semantics": {
+    "one_per_game": true,
+    "buy_at_first_80_alone": false,
+    "sequence": "first team >=80 binds; same-side >=81 confirm; maker 80-83 entry; stop = 50% of entry VWAP AFTER fill; GAME_LOCK does not sell",
+    "observability": "TRADE_PRINT_NOT_YES_BID",
+    "filter": "W6 state at first80: inning in {7,8,9} AND bound team lead >= 3"
+  },
+  "checks": {
+    "opportunities_one_per_game": true,
+    "ordering_violations": 0,
+    "stop_prints_before_first80": 0
+  },
+  "funnel": {
+    "first80": 1558,
+    "first80_lead_ge3": 408,
+    "first80_no_w6": 19,
+    "first80_inning_7_9": 219,
+    "first80_late_and_lead3": 8,
+    "late_lead3_entry": 4,
+    "late_lead3_no_entry": 4
+  },
+  "cohort": {
+    "n": 4,
+    "wins": 4,
+    "losses": 0,
+    "hit_rate": 1.0,
+    "stopped": 0,
+    "stopped_winners": 0,
+    "stopped_losers": 0,
+    "hold_unit_usd": 0.76,
+    "hold_sized_usd": 5.32,
+    "stop_unit_usd": 0.76,
+    "stop_sized_usd": 5.32
+  },
+  "by_inning": {
+    "7": {
+      "n": 3,
+      "wins": 3,
+      "hold_usd": 3.99,
+      "stop_usd": 3.99,
+      "stopped": 0
+    },
+    "8": {
+      "n": 1,
+      "wins": 1,
+      "hold_usd": 1.33,
+      "stop_usd": 1.33,
+      "stopped": 0
+    },
+    "9": {
+      "n": 0,
+      "wins": 0,
+      "hold_usd": 0.0,
+      "stop_usd": 0.0,
+      "stopped": 0
+    }
+  }
+}

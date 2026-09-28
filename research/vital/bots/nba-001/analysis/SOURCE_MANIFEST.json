@@ -1,0 +1,68 @@
+{
+  "recorded_at": "2026-09-22",
+  "recorded_before_ranking": true,
+  "confirmation_outcomes_accessed": false,
+  "protected_sha256": {
+    "ROLLER/roller/choosin_texas/locks.py": "5c0a1e5f21e5897f8fb3f4b50c18c51c6199e99e9b02ba9014ed1572a63c34b0",
+    "ROLLER/roller/choosin_texas/locks_asked_six.py": "0339d8b867764d556485c16432b37ddea7aec7e8c3975d3d591e51e5cbb1ae6a",
+    "ROLLER/roller/choosin_texas/locks75.py": "1297d3a7a61ca8b25840998131de8c8628a79a613be4e769c44c0805f08385bb",
+    "ROLLER/roller/choosin_texas/locks77.py": "0c4a09cff68ba226aec012c7bd21d11990b3d5e091708d388cd1b62e81841797",
+    "ROLLER/roller/choosin_texas/locks81.py": "50b400fbe27d492047a03febfdd8c0520fd2e79dba52f6e50d3566e208c70567",
+    "ROLLER/roller/choosin_texas/locks83.py": "11b37736b4859f365284a6d71be7369ca2c541d3064c025b332e9fac29a6be98",
+    "ROLLER/roller/austin/locks.py": "05dca042db7d7957fc0cd910b71afce23d9e591e172f8722b10a48a1c363bc1a",
+    "ROLLER/roller/nba_8040_reverse_features/locks.py": "9cad4c35fd20cae3cde33eabf0654aa8004d42cba79cb0ed6e04e6e7ddb50213",
+    "research/choosin_texas/library/nba_2q_regular_8040_1lot_2026_27/book.json": "4da5fdd3a48d2a5513ab6e9452657a790514fbef389a05d0385cfaba009b8cf6",
+    "research/austin/experiments/AUSTIN_CONFIRMATION_GATE_V1/MANIFEST.json": "1669c236defa15b2b4362b8033269a753336000a1e115f0890baec0a4fbdffad",
+    "research/austin/experiments/AUSTIN_CONFIRMATION_GATE_V1/confirmation_cohort_audit.json": "0698c43671897e974afbc241b4850e6bd0b630831d8d31ca19f83f192d999477",
+    "ROLLER/roller/research/first80.py": "ba895f677938b8e1a33c2eb5d5a9835e8312a007ad207bcfee25f3f32eecb44f",
+    "deploy/momento-live.service": "e405d99a39e623fbf6417956570ae782f5de78d657b27674cf8097a4b536f8de"
+  },
+  "mlb_tree": {
+    "path": "research/vital/bots/mlb-001/",
+    "file_count": 22,
+    "sha256": "31602ac1adfe73b3e233ee1cc8ee1c7cd01e651d6e9d193b49a52a3ead91d3a8",
+    "hash_method": "sha256 of relative path bytes then file bytes, paths sorted"
+  },
+  "sealed_confirmation_hashes": {
+    "A_confirmation_hash": "4bc027bddba0f723b914b2d80e0ff49ae0eb0bff94711860e310737941e0f0e4",
+    "B_confirmation_hash": "1ce8a0b2f3d3ee88d34cb0e4833cf3369aa776fc75bff912d7e2f3b2a4173c51",
+    "austin_model_hash": "4a47bf9ad3a2fcd4bb092a77cf93d534e308423deec29e33b6e6bad85c76431c",
+    "state_schema_hash": "96018aec5e8d3da8374632ae139b0a25761b4d485da394a46b0f5e3159079307",
+    "hazard_schema_hash": "b16bf075c323c926497beeba9bf6d51496eb348d40b306a8a99bfb8e9932c72e",
+    "phase5_finalization_hash": "067eccc691d02a675e2e87fd5a33f3f831a404b7b850ee19c2bc681bda7d8d44",
+    "A_status": "SEALED_UNSPENT",
+    "B_status": "SEALED_UNSPENT",
+    "A_n": 97,
+    "B_n": 70,
+    "outcomes_opened": false
+  },
+  "cohorts": {
+    "nba_2q3q": {
+      "n": 604,
+      "s": 450,
+      "q2_n": 314,
+      "q3_n": 290,
+      "window_start": "2025-10-10",
+      "window_end": "2026-06-13",
+      "book_cents_identity": 2840,
+      "role": "ranking_tape"
+    },
+    "nba_2q_regular": {
+      "n": 280,
+      "s": 218,
+      "window_start": "2025-10-22",
+      "window_end": "2026-04-12",
+      "tape_season": "2025-26",
+      "measure_season": "2026-27",
+      "pathname": "research/choosin_texas/library/nba_2q_regular_8040_1lot_2026_27/book.json",
+      "observation_note": "pathname is the prospective registration; these rows are 2025-26 regular-season games and are not pooled into 604",
+      "role": "registered_book_not_ranking_pool"
+    }
+  },
+  "fee_source": {
+    "read_on": "2026-09-22",
+    "rounding": "https://docs.kalshi.com/getting_started/fee_rounding",
+    "series_fee_changes": "https://docs.kalshi.com/api-reference/exchange/get-series-fee-changes",
+    "KXNBAGAME_maker_multiplier": "UNAVAILABLE"
+  }
+}

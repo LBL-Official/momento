@@ -1,0 +1,30 @@
+{
+  "BASE_GRADE": "F",
+  "abase_filename": "SuperasiABase[ITI Stress Q4 CROSS 65 REACH 85 40 ITI-01].csv",
+  "abase_payload_sha256": "a34367bf55f10364b3a03ed1c463c5d831a43173766c9bec37ba994dc50f02c3",
+  "abase_sha256": "75342e886e86816fbc64b2879f6011e7c90264ba7b0c448c900e3a05e016116f",
+  "allocation_bps": 500,
+  "artifact": "superasi_abase",
+  "bankroll_cents": 2000000,
+  "borderline": false,
+  "components": {
+    "coverage": "C",
+    "research_evidence": "F",
+    "robustness": "D",
+    "theoretical_alignment": "F",
+    "validation": "F"
+  },
+  "created_at": "2026-09-13T10:32:19Z",
+  "desk_settings_source": "disk",
+  "floor_cents": 1500000,
+  "folder": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-01__0c8a4bd2",
+  "grade_config_version": "grade_config_v1",
+  "phase": "A",
+  "result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-01__0c8a4bd2",
+  "roller_filename": "Roller[ITI Stress Q4 CROSS 65 REACH 85 40 ITI-01].csv",
+  "source_csv_sha256": "d8a1e1de2c695c55d67cb832dac7fdd84ef60077e4fd33e2eed7fd47f94e5075",
+  "source_lab_id": "0c8a4bd231bf41d2a1485124778ee58f",
+  "strategy_name": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-01",
+  "superasi_version": "superasi_abase_v1.0.0",
+  "target_cents": 3000000
+}

@@ -1,0 +1,180 @@
+{
+  "schema_version": "4.0.0-B",
+  "greek_schema_version": "4.0.0-B",
+  "note": "V4B empirical measurements. Distinct from V3 roller/greeks wrappers.",
+  "families": [
+    {
+      "name": "market_delta_1m",
+      "family": "delta",
+      "version": "v1",
+      "definition": "Signed close-to-close home yes_bid_close change over the configured interval.",
+      "formula": "K_t - K_{t-1} in integer E4; null unless interval_seconds == expected_interval_seconds",
+      "required_inputs": ["C_t.yes_bid_close", "C_{t-1}.yes_bid_close", "interval_seconds"],
+      "information_boundary": "backward",
+      "contains_future_information": false,
+      "implementation_status": "IMPLEMENTED",
+      "path_information_status": "UNORDERED_SUMMARY"
+    },
+    {
+      "name": "fundamental_delta",
+      "family": "delta",
+      "version": "v1",
+      "definition": "Change in prior-only F between independently constructed cutoffs.",
+      "formula": "F_t_e4 - F_{t-1,e4} exact rational; each F from db.fundamental at its own observation_id",
+      "required_inputs": ["F_t", "F_{t-1}"],
+      "information_boundary": "backward",
+      "contains_future_information": false,
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "name": "response_delta",
+      "family": "delta",
+      "version": "v1",
+      "definition": "Observed market movement minus modeled fundamental movement.",
+      "formula": "market_delta_1m - fundamental_delta",
+      "required_inputs": ["market_delta_1m", "fundamental_delta"],
+      "information_boundary": "backward",
+      "contains_future_information": false,
+      "implementation_status": "IMPLEMENTED",
+      "not": "market inefficiency"
+    },
+    {
+      "name": "market_fundamental_basis",
+      "family": "basis",
+      "version": "v1",
+      "definition": "Exact E4-scaled K_t - F_t. Distinct from V3 basis.py NOT_YET_IMPLEMENTED.",
+      "formula": "B_t = (K_e4 * n - wins * 10000) / n",
+      "required_inputs": ["K_t", "F_t.numerator", "F_t.denominator"],
+      "information_boundary": "backward",
+      "contains_future_information": false,
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "name": "basis_delta",
+      "family": "basis",
+      "version": "v1",
+      "definition": "Change in basis across the same interval as market_delta_1m.",
+      "formula": "B_t - B_{t-1}",
+      "required_inputs": ["B_t", "B_{t-1}"],
+      "information_boundary": "backward",
+      "contains_future_information": false,
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "name": "score_delta",
+      "family": "score",
+      "version": "v1",
+      "definition": "Fundamental E4 change per unit home-minus-away score differential change.",
+      "formula": "ΔF_t / ΔS_t where S = home - away; null if ΔS = 0",
+      "required_inputs": ["fundamental_delta", "S_t", "S_{t-1}"],
+      "information_boundary": "backward",
+      "contains_future_information": false,
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "name": "discrete_gamma",
+      "family": "gamma",
+      "version": "v1",
+      "definition": "Temporal second difference of sequential fundamental deltas. Not score-surface curvature.",
+      "formula": "ΔF_t - ΔF_{t-1}",
+      "required_inputs": ["fundamental_delta_t", "fundamental_delta_{t-1}"],
+      "information_boundary": "backward",
+      "contains_future_information": false,
+      "implementation_status": "IMPLEMENTED",
+      "not": ["d2F_dS2", "black_scholes_gamma"]
+    },
+    {
+      "name": "theta_observed",
+      "family": "theta",
+      "version": "v1",
+      "definition": "Fundamental E4 change per elapsed game-clock second.",
+      "formula": "ΔF / Δelapsed_game_seconds; null if Δelapsed = 0",
+      "required_inputs": ["fundamental_delta", "elapsed_t", "elapsed_{t-1}"],
+      "information_boundary": "backward",
+      "contains_future_information": false,
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "name": "pure_theta",
+      "family": "theta",
+      "version": "v1",
+      "definition": "theta_observed when period and S are unchanged. PARTIAL. Not no-event theta.",
+      "formula": "theta_observed if period and S held else MIXED_INTERVAL",
+      "required_inputs": ["theta_observed", "period_t", "period_{t-1}", "S_t", "S_{t-1}"],
+      "information_boundary": "backward",
+      "contains_future_information": false,
+      "implementation_status": "IMPLEMENTED",
+      "interpretation": "PARTIAL"
+    },
+    {
+      "name": "candle_range",
+      "family": "range",
+      "version": "v1",
+      "definition": "High minus low on the latest visible home candle.",
+      "formula": "yes_bid_high - yes_bid_low",
+      "required_inputs": ["C_t.yes_bid_high", "C_t.yes_bid_low"],
+      "information_boundary": "backward",
+      "contains_future_information": false,
+      "implementation_status": "IMPLEMENTED",
+      "path_information_status": "UNORDERED_SUMMARY"
+    },
+    {
+      "name": "absolute_return",
+      "family": "delta",
+      "version": "v1",
+      "definition": "Unsigned E4 movement. Not a second signed market delta.",
+      "formula": "abs(market_delta_1m)",
+      "required_inputs": ["market_delta_1m"],
+      "information_boundary": "backward",
+      "contains_future_information": false,
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "name": "realized_market_volatility",
+      "family": "volatility",
+      "version": "v1",
+      "definition": "Rolling sum of absolute close-to-close movement. Absolute-variation proxy, not IV or stdev.",
+      "formula": "sum |K_i - K_{i-1}| over configured visible closes",
+      "required_inputs": ["visible home yes_bid_close path"],
+      "information_boundary": "backward",
+      "contains_future_information": false,
+      "implementation_status": "IMPLEMENTED",
+      "path_information_status": "UNORDERED_SUMMARY",
+      "not": ["implied_volatility", "standard_deviation", "sqrt_sum_squared_returns"]
+    },
+    {
+      "name": "directional_efficiency",
+      "family": "efficiency",
+      "version": "v1",
+      "definition": "Absolute open-to-close over high-low on the latest visible home candle.",
+      "formula": "abs(close-open)/(high-low); null if high==low",
+      "required_inputs": ["C_t OHLC"],
+      "information_boundary": "backward",
+      "contains_future_information": false,
+      "implementation_status": "IMPLEMENTED",
+      "path_information_status": "UNORDERED_SUMMARY"
+    },
+    {
+      "name": "v4b_baseline",
+      "family": "baseline",
+      "version": "v1",
+      "definition": "E[M | core_v1] over other games with measurement_available_at_i < t.",
+      "formula": "exact rational mean of eligible historical measurements",
+      "required_inputs": ["core_v1", "measurement_available_at", "internal_game_id"],
+      "information_boundary": "forward",
+      "contains_future_information": true,
+      "implementation_status": "IMPLEMENTED"
+    },
+    {
+      "name": "v4b_residual",
+      "family": "residual",
+      "version": "v1",
+      "definition": "M - E[M | core_v1]. Insufficient support is null, not 0.",
+      "formula": "R = M - expected; standardized only if MAD > 0",
+      "required_inputs": ["observed measurement", "v4b_baseline"],
+      "information_boundary": "forward",
+      "contains_future_information": true,
+      "implementation_status": "IMPLEMENTED"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "202511": {
+    "through": 202510,
+    "version": "v1_logistic_prior_yyyymm"
+  },
+  "202512": {
+    "through": 202511,
+    "version": "v1_logistic_prior_yyyymm"
+  },
+  "202601": {
+    "through": 202600,
+    "version": "v1_logistic_prior_yyyymm"
+  },
+  "202602": {
+    "through": 202601,
+    "version": "v1_logistic_prior_yyyymm"
+  },
+  "202603": {
+    "through": 202602,
+    "version": "v1_logistic_prior_yyyymm"
+  },
+  "202604": {
+    "through": 202603,
+    "version": "v1_logistic_prior_yyyymm"
+  }
+}

@@ -1,0 +1,10 @@
+trade T0198  NCAAB  Duke at Florida St.
+contract KXNCAAMBGAME-26JAN03DUKEFSU-DUKE  slice H1_2
+signal 2026-01-03T13:42:00-08:00 PST  exit 2026-01-03T15:46:09-08:00 PST
+assumed entry 78c  observed close 83c  overshoot 5c
+contracts 3592  principal_cents 280176
+entry_fee_cents 1079  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 79024  net_cents 77945
+strategy_result POSITIVE  net_r 1.856673256949572425621114314
+Assumed fill. Not a maker fill. Not live P&L.

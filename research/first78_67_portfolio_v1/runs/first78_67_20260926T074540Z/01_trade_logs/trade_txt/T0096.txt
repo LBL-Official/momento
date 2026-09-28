@@ -1,0 +1,10 @@
+trade T0096  NCAAB  Missouri at Notre Dame
+contract KXNCAAMBGAME-25DEC02MIZZND-MIZZ  slice H1_2
+signal 2025-12-02T18:57:00-08:00 PST  exit 2025-12-02T19:16:00-08:00 PST
+assumed entry 78c  observed close 81c  overshoot 3c
+contracts 2429  principal_cents 189462
+entry_fee_cents 730  exit_fee_cents 940
+exit STOP at 67c  terminal no
+gross_cents -26719  net_cents -28389
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

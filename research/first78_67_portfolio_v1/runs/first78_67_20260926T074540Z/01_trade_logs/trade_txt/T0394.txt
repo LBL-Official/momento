@@ -1,0 +1,10 @@
+trade T0394  NCAAB  Clemson at California
+contract KXNCAAMBGAME-26FEB07CLEMCAL-CLEM  slice H1_2
+signal 2026-02-07T17:29:00-08:00 PST  exit 2026-02-07T20:06:51-08:00 PST
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 6673  principal_cents 520494
+entry_fee_cents 2004  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 146806  net_cents 144802
+strategy_result POSITIVE  net_r 1.856697739424790675608098578
+Assumed fill. Not a maker fill. Not live P&L.

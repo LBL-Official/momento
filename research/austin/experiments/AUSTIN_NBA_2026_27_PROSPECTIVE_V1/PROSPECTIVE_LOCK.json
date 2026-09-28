@@ -1,0 +1,55 @@
+{
+  "phase": "PHASE_7",
+  "phase_id": "AUSTIN_DRE_PHASE_7",
+  "experiment_id": "AUSTIN_NBA_2026_27_PROSPECTIVE_V1",
+  "prospective_lock_timestamp": "2026-09-18T08:34:54.037026+00:00",
+  "Austin_model": "austin_v2",
+  "austin_manifest_hash": "4a47bf9ad3a2fcd4bb092a77cf93d534e308423deec29e33b6e6bad85c76431c",
+  "training_n_trades": 604,
+  "training_n_snapshots": 48752,
+  "K": 25,
+  "state_schema_version": "downfall_state_v1",
+  "state_schema_hash": "96018aec5e8d3da8374632ae139b0a25761b4d485da394a46b0f5e3159079307",
+  "hazard_schema_version": "loss_hazard_recovery_v1",
+  "hazard_schema_hash": "b16bf075c323c926497beeba9bf6d51496eb348d40b306a8a99bfb8e9932c72e",
+  "page3_strategy_id": "nba_2q_regular_8040_1lot_2026_27",
+  "page3_book_hash": "4da5fdd3a48d2a5513ab6e9452657a790514fbef389a05d0385cfaba009b8cf6",
+  "page3_status": "RESEARCH_REGISTERED",
+  "observation_schedule": "EVERY_2_GAME_CLOCK_MINUTES",
+  "reporting_checkpoints": [
+    25,
+    50,
+    100,
+    "season-end"
+  ],
+  "scoring_definitions": {
+    "ev": [
+      "MAE",
+      "RMSE",
+      "sign_agreement",
+      "spearman_ev_vs_hold_pnl"
+    ],
+    "hazard": [
+      "brier",
+      "log_loss",
+      "calibration",
+      "roc_auc_if_both_classes",
+      "pr_auc_if_defined"
+    ],
+    "recovery": [
+      "eligible_N",
+      "recovery_N",
+      "unavailable_N",
+      "brier",
+      "log_loss",
+      "calibration"
+    ]
+  },
+  "no_ingest_at_arm": true,
+  "no_historical_backfill": true,
+  "austin_never_filters_entry": true,
+  "policy_status": "NO_POLICY_FROZEN",
+  "execution_enabled": false,
+  "submits": false,
+  "prospective_lock_hash": "f34ca9d70f2e0962465b947849558e3a5973e9b23c510c8bf3a0ff97b0217654"
+}

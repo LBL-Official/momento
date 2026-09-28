@@ -1,0 +1,9 @@
+hypothesis_id,condition,historical_test_ev,prospective_n,prospective_ev,classification
+CAND_A_40_49,start_price_band=40_49,2.41,0,,INSUFFICIENT_DATA
+CAND_B_MOVE30_OUTS0_VOL1M_LOW,start_move_gt30=YES&outs=0&vol_1m_tertile=LOW,12.12,0,,INSUFFICIENT_DATA
+CAND_C_LEAD2_MOVE30_VOL1M_LOW,lead_signed=LEAD_2&start_move_gt30=YES&vol_1m_tertile=LOW,3.96,0,,INSUFFICIENT_DATA
+CAND_D_TWORUN_MOVE30_VOL1M_LOW,score_bucket=TWO_RUN&start_move_gt30=YES&vol_1m_tertile=LOW,3.96,0,,INSUFFICIENT_DATA
+CAND_E_MOVEFINE_VOL_LOW,move_fine=30_35&vol_1m_tertile=LOW&vol_15m_tertile=LOW,4.25,0,,INSUFFICIENT_DATA
+CAND_F_INNING7_PEAK_AT,inning_grp=7&p_max_vs_83=PEAK_AT,2.42,0,,INSUFFICIENT_DATA
+BENCH_ALL_FIRST83,,1.43,0,,INSUFFICIENT_DATA
+BENCH_NO_ENTRY,NO_ENTRY,0,0,0.0000,INSUFFICIENT_DATA

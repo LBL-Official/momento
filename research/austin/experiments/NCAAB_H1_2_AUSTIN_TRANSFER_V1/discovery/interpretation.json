@@ -1,0 +1,554 @@
+{
+  "suite_id": "AUSTIN_NCAAB_TRANSFER_V1",
+  "experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+  "slice": "H1_2",
+  "n_lock": 193,
+  "cohort": "DISCOVERY",
+  "policy_status": "UNFROZEN",
+  "confirmation_result": "NOT RUN",
+  "bootstrap": {
+    "cluster": "internal_game_id",
+    "seed": 80,
+    "B": 1000
+  },
+  "coverage": {
+    "n_trades": 96,
+    "n_primary": 1345,
+    "n_valid_ordering_states": 1167,
+    "valid_states_per_trade": 12.15625,
+    "path_complete": 22,
+    "path_partial": 74,
+    "path_unavailable": 0,
+    "primary_query_mode": {
+      "PRE_80": 178,
+      "POST_80": 1167
+    },
+    "primary_knn_status": {
+      "INSUFFICIENT_SAMPLE": 178,
+      "OBSERVED": 1167
+    },
+    "primary_reason": {
+      "NO_ENTRY_IN_FITTED_SPACE": 178,
+      "": 1167
+    },
+    "primary_pre80_wall_before_entry": 178,
+    "primary_pre80_when_minus_entry_sec": {
+      "n": 178,
+      "median": -1692.0,
+      "p25": -2023.0,
+      "p75": -1472.25,
+      "min": -2908.0,
+      "max": -4.0
+    },
+    "primary_pre80_clocks": {
+      "P1_120": 63,
+      "P1_240": 50,
+      "P1_360": 41,
+      "P1_480": 21,
+      "P1_0": 3
+    },
+    "valid_per_trade_min": 11,
+    "valid_per_trade_max": 15,
+    "diagnosis": "PRIMARY_GRID clock-eligible rows reconstructed as PRE_80 because PBP/bar timestamp < asked-six entry_timestamp. Warehouse price/score are present. KNN is not missing; NO_ENTRY_IN_FITTED_SPACE is the PRE_80 gate. This is clock-vs-wall alignment, not an absent parquet tree.",
+    "missing_warehouse_not_the_cause": true
+  },
+  "warning": {
+    "n_trades": 96,
+    "n_WARNING_AVAILABLE": 5,
+    "n_WARNING_TOO_LATE": 62,
+    "n_NO_WARNING": 29,
+    "n_PATH_UNAVAILABLE": 0,
+    "median_warning_available": {
+      "field": "warning_to_settlement | WARNING_AVAILABLE",
+      "n": 5,
+      "median": 20.0,
+      "p25": 18.0,
+      "p75": 20.0,
+      "missing_not_zero": true
+    },
+    "median_warning_too_late": {
+      "field": "warning_to_settlement | WARNING_TOO_LATE",
+      "n": 62,
+      "median": 20.0,
+      "p25": 18.0,
+      "p75": 20.0,
+      "missing_not_zero": true
+    },
+    "median_first_negative_to_T40": {
+      "field": "warning_to_t40 | first negative EV",
+      "n": 67,
+      "median": 0.0,
+      "p25": 0.0,
+      "p75": 0.0,
+      "missing_not_zero": true
+    },
+    "median_first_negative_to_worst_price": {
+      "field": "warning_to_worst | first negative EV",
+      "n": 67,
+      "median": 0.0,
+      "p25": 0.0,
+      "p75": 9.0,
+      "missing_not_zero": true
+    },
+    "median_first_negative_to_settlement": {
+      "field": "warning_to_settlement | first negative EV (AVAILABLE + TOO_LATE)",
+      "n": 67,
+      "median": 20.0,
+      "p25": 18.0,
+      "p75": 20.0,
+      "missing_not_zero": true
+    },
+    "label": "Discovery report median_minutes is median_first_negative_to_settlement over AVAILABLE+TOO_LATE. It is not median_warning_available. If AVAILABLE=0 the reported median is a TOO_LATE-only figure."
+  },
+  "ordering": {
+    "n_valid_states": 1167,
+    "n_trades_with_valid_state": 96,
+    "state_ev_ordering": {
+      "method": "clustered_bootstrap",
+      "cluster": "internal_game_id",
+      "seed": 80,
+      "B": 1000,
+      "contrast": "mean(positive) - mean(negative)",
+      "n_games": 96,
+      "n_rows": 1167,
+      "n_positive": 650,
+      "n_negative": 517,
+      "observed_delta": 2.753161731885136,
+      "mean_delta": 2.1736730368735993,
+      "ci": [
+        -8.267520449127913,
+        13.641564628672574
+      ],
+      "excludes_zero": false,
+      "claim": "mean hold_after | EV>=0  minus  mean hold_after | EV<0",
+      "status": "MIXED"
+    },
+    "state_deterioration_ordering": {
+      "method": "clustered_bootstrap",
+      "cluster": "internal_game_id",
+      "seed": 80,
+      "B": 1000,
+      "contrast": "mean(positive) - mean(negative)",
+      "n_games": 96,
+      "n_rows": 1167,
+      "n_positive": 714,
+      "n_negative": 453,
+      "observed_delta": 2.8734672677017827,
+      "mean_delta": 2.874622237476196,
+      "ci": [
+        -9.970154236180266,
+        15.533124453339425
+      ],
+      "excludes_zero": false,
+      "claim": "mean hold_after | not deteriorated  minus  mean hold_after | EV-EV_entry<=-8",
+      "status": "MIXED"
+    },
+    "trade_first_valid_checkpoint": {
+      "method": "clustered_bootstrap",
+      "cluster": "internal_game_id",
+      "seed": 80,
+      "B": 1000,
+      "contrast": "mean(positive) - mean(negative)",
+      "n_games": 96,
+      "n_rows": 96,
+      "n_positive": 68,
+      "n_negative": 28,
+      "observed_delta": 8.193277310924369,
+      "mean_delta": 8.083968363768104,
+      "ci": [
+        -7.621602426289926,
+        24.958802816901407
+      ],
+      "excludes_zero": false,
+      "claim": "one row per trade; first valid PRIMARY EV sign; value = hold_after at that checkpoint",
+      "status": "MIXED"
+    },
+    "trade_ever_negative_vs_settlement_hold": {
+      "method": "clustered_bootstrap",
+      "cluster": "internal_game_id",
+      "seed": 80,
+      "B": 1000,
+      "contrast": "mean(positive) - mean(negative)",
+      "n_games": 96,
+      "n_rows": 96,
+      "n_positive": 29,
+      "n_negative": 67,
+      "observed_delta": 17.44724652599074,
+      "mean_delta": 17.34411279458041,
+      "ci": [
+        5.604395604395604,
+        29.6339593114241
+      ],
+      "excludes_zero": true,
+      "claim": "one row per trade; never-negative vs ever-negative; value = BASELINE_HOLD",
+      "status": "SUPPORTED"
+    },
+    "first_negative_subsequent_hold": {
+      "n": 67,
+      "mean": -0.8955223880597015,
+      "median": 20.0,
+      "ev_cents": -0.8955223880597015,
+      "std": 40.963078101212155,
+      "p10": -80.0,
+      "p25": 20.0,
+      "p75": 20.0,
+      "p90": 20.0,
+      "min": -80.0,
+      "max": 20.0,
+      "total": -60.0
+    }
+  },
+  "scoring": {
+    "not_a_single_accuracy": true,
+    "label": "Austin outputs a continuous conditional EV, not a binary winner/loser call. MAE/RMSE/sign/rank are the proper scores. The ever-EV<0 final-loss table is a crude classifier and is not Austin accuracy. A dumb always-win rule already equals the discovery win rate.",
+    "n_valid_states": 1167,
+    "n_trades_scored": 96,
+    "n_trades_unscored_missing_valid_state": 0,
+    "mae_cents": {
+      "method": "clustered_bootstrap",
+      "cluster": "internal_game_id",
+      "seed": 80,
+      "B": 1000,
+      "n_games": 96,
+      "n_rows": 1167,
+      "observed": 28.14146085795147,
+      "mean": 28.415747124028677,
+      "ci": [
+        23.50361003675476,
+        33.50004880894671
+      ]
+    },
+    "rmse_cents": {
+      "observed": 39.60257149298472,
+      "n": 1167
+    },
+    "sign_accuracy_ev_gt_0_vs_hold_gt_0": {
+      "method": "clustered_bootstrap",
+      "cluster": "internal_game_id",
+      "seed": 80,
+      "B": 1000,
+      "n_games": 96,
+      "n_rows": 1167,
+      "observed": 0.5526992287917738,
+      "mean": 0.5491928311254899,
+      "ci": [
+        0.46986852332931045,
+        0.6335793802333322
+      ],
+      "zeros_excluded": 0,
+      "definition": "share of states with EV\u22600 and hold\u22600 where sign(EV)==sign(hold)"
+    },
+    "spearman_ev_vs_hold": {
+      "method": "clustered_bootstrap",
+      "cluster": "internal_game_id",
+      "seed": 80,
+      "B": 1000,
+      "n_games": 96,
+      "n_rows": 1167,
+      "observed": 0.054731082227841454,
+      "mean": 0.07325416250165981,
+      "ci": [
+        -0.07903068670122355,
+        0.22521236716982146
+      ],
+      "excludes_zero": false
+    },
+    "state_loss_detection": {
+      "definition": "predict bad = EV<0; realized bad = subsequent hold < 0",
+      "precision": {
+        "method": "clustered_bootstrap",
+        "cluster": "internal_game_id",
+        "seed": 80,
+        "B": 1000,
+        "n_games": 96,
+        "n_success": 89,
+        "n_denom": 517,
+        "observed": 0.172147001934236,
+        "mean": 0.17182822275349693,
+        "ci": [
+          0.07938654967789996,
+          0.2828872570918025
+        ]
+      },
+      "recall": {
+        "method": "clustered_bootstrap",
+        "cluster": "internal_game_id",
+        "seed": 80,
+        "B": 1000,
+        "n_games": 96,
+        "n_success": 89,
+        "n_denom": 183,
+        "observed": 0.48633879781420764,
+        "mean": 0.4770499200109006,
+        "ci": [
+          0.2999660633484163,
+          0.6573514806789454
+        ]
+      },
+      "specificity": {
+        "method": "clustered_bootstrap",
+        "cluster": "internal_game_id",
+        "seed": 80,
+        "B": 1000,
+        "n_games": 96,
+        "n_success": 556,
+        "n_denom": 984,
+        "observed": 0.5650406504065041,
+        "mean": 0.5627752525318813,
+        "ci": [
+          0.472164220267219,
+          0.6536674524992282
+        ]
+      }
+    },
+    "crude_final_loss_classifier": {
+      "definition": "flag = any valid PRIMARY EV<0; truth = eventual loss. NOT Austin accuracy.",
+      "tp_losses_detected": 14,
+      "fp_winners_flagged": 53,
+      "fn_losses_missed": 1,
+      "tn_winners_unflagged": 28,
+      "n": 96,
+      "precision": {
+        "method": "clustered_bootstrap",
+        "cluster": "internal_game_id",
+        "seed": 80,
+        "B": 1000,
+        "n_games": 96,
+        "n_success": 14,
+        "n_denom": 67,
+        "observed": 0.208955223880597,
+        "mean": 0.2108709205882196,
+        "ci": [
+          0.11591233071988596,
+          0.3188405797101449
+        ]
+      },
+      "recall": {
+        "method": "clustered_bootstrap",
+        "cluster": "internal_game_id",
+        "seed": 80,
+        "B": 1000,
+        "n_games": 96,
+        "n_success": 14,
+        "n_denom": 15,
+        "observed": 0.9333333333333333,
+        "mean": 0.928936762967817,
+        "ci": [
+          0.7777777777777778,
+          1.0
+        ]
+      },
+      "specificity": {
+        "method": "clustered_bootstrap",
+        "cluster": "internal_game_id",
+        "seed": 80,
+        "B": 1000,
+        "n_games": 96,
+        "n_success": 28,
+        "n_denom": 81,
+        "observed": 0.345679012345679,
+        "mean": 0.34380487256123443,
+        "ci": [
+          0.24705519244734933,
+          0.450142405063291
+        ]
+      },
+      "classification_accuracy": 0.4375,
+      "naive_always_win_accuracy": 0.84375,
+      "accuracy_minus_naive": -0.40625
+    },
+    "warning_before_damage": {
+      "definition": "AVAILABLE warning = first negative EV while price>42 and T40 not already. damaged = eventual loss or T40.",
+      "precision_available_for_damage": {
+        "method": "clustered_bootstrap",
+        "cluster": "internal_game_id",
+        "seed": 80,
+        "B": 1000,
+        "n_games": 96,
+        "n_success": 0,
+        "n_denom": 5,
+        "observed": 0.0,
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "recall_available_among_losses": {
+        "method": "clustered_bootstrap",
+        "cluster": "internal_game_id",
+        "seed": 80,
+        "B": 1000,
+        "n_games": 96,
+        "n_success": 0,
+        "n_denom": 15,
+        "observed": 0.0,
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "recall_available_among_damaged": {
+        "method": "clustered_bootstrap",
+        "cluster": "internal_game_id",
+        "seed": 80,
+        "B": 1000,
+        "n_games": 96,
+        "n_success": 0,
+        "n_denom": 28,
+        "observed": 0.0,
+        "mean": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "n_available": 5,
+      "n_too_late": 62,
+      "n_none": 29,
+      "n_lost": 15,
+      "n_damaged": 28
+    }
+  },
+  "calibration": {
+    "status": "SEPARATED",
+    "table": [
+      {
+        "band": "< -10\u00a2",
+        "n": 298,
+        "mean_predicted_ev": -31.693107946189883,
+        "mean_realized_hold": -3.1543624161073827,
+        "median_realized_hold": 20.0
+      },
+      {
+        "band": "-10 to 0\u00a2",
+        "n": 219,
+        "mean_predicted_ev": -5.001567630423115,
+        "mean_realized_hold": 10.867579908675799,
+        "median_realized_hold": 20.0
+      },
+      {
+        "band": "0 to +5\u00a2",
+        "n": 109,
+        "mean_predicted_ev": 2.8211809300697746,
+        "mean_realized_hold": 2.5688073394495414,
+        "median_realized_hold": 20.0
+      },
+      {
+        "band": "+5 to +10\u00a2",
+        "n": 75,
+        "mean_predicted_ev": 8.069284025035993,
+        "mean_realized_hold": 5.333333333333333,
+        "median_realized_hold": 20.0
+      },
+      {
+        "band": "> +10\u00a2",
+        "n": 466,
+        "mean_predicted_ev": 16.263689150337544,
+        "mean_realized_hold": 6.266094420600858,
+        "median_realized_hold": 20.0
+      }
+    ]
+  },
+  "first_negative": {
+    "n_first_negative_trades": 67,
+    "n_eventually_win": 53,
+    "n_eventually_lose": 14,
+    "win_share": 0.7910447761194029,
+    "settlement_hold": {
+      "n": 67,
+      "mean": -0.8955223880597015,
+      "median": 20.0,
+      "ev_cents": -0.8955223880597015,
+      "std": 40.963078101212155,
+      "p10": -80.0,
+      "p25": 20.0,
+      "p75": 20.0,
+      "p90": 20.0,
+      "min": -80.0,
+      "max": 20.0,
+      "total": -60.0
+    },
+    "hold_after_first_negative": {
+      "n": 67,
+      "mean": -0.8955223880597015,
+      "median": 20.0,
+      "ev_cents": -0.8955223880597015,
+      "std": 40.963078101212155,
+      "p10": -80.0,
+      "p25": 20.0,
+      "p75": 20.0,
+      "p90": 20.0,
+      "min": -80.0,
+      "max": 20.0,
+      "total": -60.0
+    },
+    "subsequent_mae": {
+      "n": 62,
+      "mean": 9.516129032258064,
+      "median": 0.0,
+      "ev_cents": 9.516129032258064,
+      "std": 27.79830277605054,
+      "p10": -18.0,
+      "p25": -7.5,
+      "p75": 15.5,
+      "p90": 59.49999999999999,
+      "min": -31.0,
+      "max": 84.0,
+      "total": 590.0
+    },
+    "subsequent_mfe": {
+      "n": 62,
+      "mean": 12.548387096774194,
+      "median": 12.5,
+      "ev_cents": 12.548387096774194,
+      "std": 18.468118225702348,
+      "p10": -1.8999999999999995,
+      "p25": 5.25,
+      "p75": 20.0,
+      "p90": 34.0,
+      "min": -65.0,
+      "max": 56.0,
+      "total": 778.0
+    },
+    "recovered_to_60": {
+      "n": 54,
+      "n_known": 67,
+      "share": 0.8059701492537313
+    },
+    "recovered_to_70": {
+      "n": 51,
+      "n_known": 67,
+      "share": 0.7611940298507462
+    },
+    "recovered_to_80": {
+      "n": 48,
+      "n_known": 67,
+      "share": 0.7164179104477612
+    },
+    "later_hit_t40": {
+      "n": 66,
+      "n_known": 67,
+      "share": 0.9850746268656716
+    },
+    "deterioration_class": {
+      "TEMPORARY_DETERIORATION": 47,
+      "PERSISTENT_DETERIORATION": 15,
+      "UNRESOLVED_NO_LATER_VALID_EV": 5,
+      "definition": "TEMPORARY = later valid PRIMARY EV >= 0 exists. PERSISTENT = later valid PRIMARY EV exists and all stay < 0. UNRESOLVED = no later valid PRIMARY EV. Descriptive only. Not a policy."
+    },
+    "temporary_win_lose": {
+      "n": 47,
+      "win": 43,
+      "lose": 4
+    },
+    "persistent_win_lose": {
+      "n": 15,
+      "win": 7,
+      "lose": 8
+    }
+  },
+  "submits": false,
+  "note": "Discovery interpretation only. No query_match. No POLICY_FREEZE. No confirmation."
+}

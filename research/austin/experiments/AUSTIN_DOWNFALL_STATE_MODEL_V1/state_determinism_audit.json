@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "n_checked": 165,
+  "n_failed": 0,
+  "note": "Same discovery PRIMARY history produces the same core_state sequence."
+}

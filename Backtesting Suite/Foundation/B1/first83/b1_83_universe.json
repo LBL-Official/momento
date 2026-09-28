@@ -1,0 +1,20 @@
+{
+  "universe": "FIRST_EXACT_83_TRADE",
+  "definition": "First W7 TRADE print at exactly 83¢ per game. Bound to the W8 market/side when that opportunity exists; otherwise the earliest 83¢ TRADE (timestamp, market_id, side, observation_id). One snapshot per game. Features use only path/state at or before that timestamp. Not first-in-band 80–83. TRADE print ≠ fill.",
+  "w7_games": 3384,
+  "w8_bound_games": 2884,
+  "snapshots_written": 2906,
+  "unique_games": 2906,
+  "skipped_no_83": 386,
+  "skipped_bound_contract_no_83": 92,
+  "unbound_yes_or_earliest": 313,
+  "features_sqlite": "Backtesting Suite/Foundation/B1/first83/features.sqlite",
+  "fill_status": "TRADE_PRINT_MODELED",
+  "feature_schema_version": "B1.FEATURE.1.1.0",
+  "engine_version": "B1.ENGINE.1.1.0",
+  "notes": [
+    "Does not overwrite B1/features.sqlite (first-in-band 80–83).",
+    "Games that never print 83¢ are not 83¢ observations.",
+    "No L2 invented. No live FIRST01 change."
+  ]
+}

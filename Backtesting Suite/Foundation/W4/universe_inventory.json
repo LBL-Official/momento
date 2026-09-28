@@ -1,0 +1,59 @@
+{
+  "waterfall": "CTO-W4",
+  "artifact_version": "W4.1.0",
+  "inventory_kind": "DISCOVERY_PREFIX_SCAN",
+  "source_run": "ingest-20260826T095038Z-2bc3d10b5833",
+  "sport": "MLB",
+  "series": "KXMLBGAME",
+  "unique_markets": 8428,
+  "unique_event_tickers": 4214,
+  "unique_mapped_games_game_pk": 2377,
+  "date_start": "2025-04-16",
+  "date_end": "2026-08-25",
+  "partition_dates": 335,
+  "calendar_span_days": 496,
+  "seasons": {
+    "2025": 4428,
+    "2026": 4000
+  },
+  "identity": {
+    "MATCHED": 4754,
+    "UNMATCHED": 3674,
+    "UNMATCHED_PBP_NO_TICKER": 560
+  },
+  "completeness_landed": {
+    "MARKET_METADATA_ONLY": 8190,
+    "TRADES_ONLY": 238
+  },
+  "completeness_by_identity": {
+    "MATCHED": {
+      "MARKET_METADATA_ONLY": 4754
+    },
+    "UNMATCHED": {
+      "MARKET_METADATA_ONLY": 3436,
+      "TRADES_ONLY": 238
+    }
+  },
+  "coupled_events_both_yes": 4214,
+  "coupled_events_one_yes": 0,
+  "trade_files": 238,
+  "candle_observed_files": 0,
+  "l2_complete_files": 0,
+  "l2_historical_unavailable": 8428,
+  "settlement_metadata_present": 0,
+  "malformed_candlestick_payloads": 354,
+  "missing_landing_files": 0,
+  "already_known_duplicates": 354,
+  "lake_mlb_complete_days": 13,
+  "lake_mlb_missing_days": 22,
+  "notes": [
+    "NO L2 = DO NOT INVENT L2. TRADES_ONLY is a valid price-path research universe.",
+    "Price-path reconstruct covers observation-bearing markets only; metadata-only excluded from paths, not discarded from identity.",
+    "Mapped pairs remain MARKET_METADATA_ONLY until DATA-INGEST lands trades for MATCHED tickers.",
+    "2024 Kalshi UNAVAILABLE: catalog begins ~2025-04-16.",
+    "W4 price-path foundation COMPLETE. W5 (event↔market sync) is not started."
+  ],
+  "w4_gate": "COMPLETE",
+  "price_paths_reconstructed": 238,
+  "reconstructable_trades_only": 238
+}

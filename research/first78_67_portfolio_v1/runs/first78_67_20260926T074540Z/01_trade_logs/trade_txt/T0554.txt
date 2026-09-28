@@ -1,0 +1,10 @@
+trade T0554  NCAAB  Iowa at Nebraska
+contract KXNCAAMBGAME-26MAR08IOWANEB-NEB  slice H2_1
+signal 2026-03-08T14:43:00-07:00 PDT  exit 2026-03-08T14:56:00-07:00 PDT
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 11788  principal_cents 919464
+entry_fee_cents 3540  exit_fee_cents 4562
+exit STOP at 67c  terminal yes
+gross_cents -129668  net_cents -137770
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

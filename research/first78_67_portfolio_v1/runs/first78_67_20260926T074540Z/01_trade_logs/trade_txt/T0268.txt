@@ -1,0 +1,10 @@
+trade T0268  NBA  Milwaukee at San Antonio
+contract KXNBAGAME-26JAN15MILSAS-SAS  slice Q2
+signal 2026-01-15T17:59:00-08:00 PST  exit 2026-01-15T19:42:54-08:00 PST
+assumed entry 78c  observed close 81c  overshoot 3c
+contracts 4217  principal_cents 328926
+entry_fee_cents 1267  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 92774  net_cents 91507
+strategy_result POSITIVE  net_r 1.856653004910116463092967577
+Assumed fill. Not a maker fill. Not live P&L.

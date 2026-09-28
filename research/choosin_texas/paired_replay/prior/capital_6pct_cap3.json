@@ -1,0 +1,48 @@
+{
+  "status": "PRIOR",
+  "policy_id": "CAPITAL_6PCT_CAP3",
+  "note": "CAPITAL_6PCT_CAP3 only. Both books size the initial position at 6% entry premium, 1500 contracts. 80/40 through-close P&L is 11164842 cents. This is not PLANNED_RISK_CAP3, whose 80/40 through-close P&L is 5335376 cents in planned_risk_cap3.json.",
+  "live_authorized": false,
+  "capital_policy": {
+    "id": "CAPITAL_6PCT_CAP3",
+    "accepted_both": 814,
+    "books": {
+      "80/40": {
+        "accepted": 820,
+        "stopped": 209,
+        "survivors": 611,
+        "through_close_pnl_cents": 11164842,
+        "ending_cash_cents": 13164842,
+        "max_concurrent": 3,
+        "reasons": {
+          "ADMITTED": 819,
+          "SAME_EVENT": 0,
+          "POSITION_CAP": 116,
+          "SKIP_CAPITAL_BUDGET": 0,
+          "SKIP_CASH": 0,
+          "RESIZED_CAPITAL_BUDGET": 1,
+          "RESIZED_CASH": 0
+        },
+        "initial_full_position_contracts": 1500
+      },
+      "80/65": {
+        "accepted": 865,
+        "stopped": 388,
+        "survivors": 477,
+        "through_close_pnl_cents": 8119467,
+        "ending_cash_cents": 10119467,
+        "max_concurrent": 3,
+        "reasons": {
+          "ADMITTED": 865,
+          "SAME_EVENT": 0,
+          "POSITION_CAP": 71,
+          "SKIP_CAPITAL_BUDGET": 0,
+          "SKIP_CASH": 0,
+          "RESIZED_CAPITAL_BUDGET": 0,
+          "RESIZED_CASH": 0
+        },
+        "initial_full_position_contracts": 1500
+      }
+    }
+  }
+}

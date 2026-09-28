@@ -1,0 +1,12 @@
+{
+  "research_bankroll_usd": 50,
+  "allocation_pct": 12.5,
+  "entry_budget_usd": 6.25,
+  "max_concurrent": 5,
+  "max_same_day_observed": 14,
+  "mean_same_day": 5.514150943396227,
+  "unfiltered_taken_if_cap5": 853,
+  "unfiltered_skipped_if_cap5": 316,
+  "weekly_primary": 33.26422764227642,
+  "note": "Research parameters. Not live MLB allocations. Not optimized on OOS. Fees NOT production FeeModel."
+}

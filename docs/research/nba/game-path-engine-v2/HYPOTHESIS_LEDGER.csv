@@ -1,0 +1,29 @@
+hypothesis_id,family,name,definition,direction_if_true,role,status,notes
+H1,lead_stability,stable_large_lead,lead_size>=15 AND current_lead_duration_s>=300,LOWER_Q,confirmatory,PRE_REGISTERED,Stable dominance vs same price
+H2,game_volatility,volatile_game,lead_changes>=train_median AND score_diff_stdev>=train_median,HIGHER_Q,confirmatory,PRE_REGISTERED,High lead-change + score vol
+H3,comeback,recent_comeback,max_deficit_overcome>=10 AND time_since_max_deficit_s<=300,HIGHER_Q,confirmatory,PRE_REGISTERED,80 after major deficit
+H4,lead_decay,collapsing_lead,team_is_leading AND distance_from_max_lead>=8,HIGHER_Q,confirmatory,PRE_REGISTERED,Below historical max lead
+H5,late_game,late_large_lead,quarter==4 AND lead_size>=15,LOWER_Q,confirmatory,PRE_REGISTERED,Late structural stability
+H6,game_market,disagreement,GAME_MARKET_ALIGNMENT in MARKET_LEADING_GAME|GAME_WORSENING_MARKET_FLAT,HIGHER_Q,confirmatory,PRE_REGISTERED,Price without score support
+H7,market_route,violent_reprice,minutes_50_to_80<=train_p25 vs >=train_p75,TWO_SIDED,confirmatory,PRE_REGISTERED,Violent vs gradual into 80
+U1,time,quarter,P(40|Q1..OT),UNSPECIFIED,univariate,PRE_REGISTERED,Level-1
+U2,score,score_diff_frozen_bucket,Frozen 7-bin differential,UNSPECIFIED,univariate,PRE_REGISTERED,Boundaries frozen a priori
+U3,score,score_diff_train_quantile,TRAIN-only quantile bins applied forward,UNSPECIFIED,univariate,PRE_REGISTERED,Discovery on TRAIN only
+U4,pace,points_per_minute,LOW/NORMAL/HIGH/EXTREME from TRAIN,UNSPECIFIED,univariate,PRE_REGISTERED,P(40|80,pace) not P(win|pace)
+U5,lead,lead_changes,Count before first-80,HIGHER_IF_HIGH,univariate,PRE_REGISTERED,
+U6,lead,current_lead_duration,Seconds current leader has held lead,LOWER_IF_LONG,univariate,PRE_REGISTERED,
+U7,vol,score_diff_stdev,Path stdev of score differential,HIGHER_IF_HIGH,univariate,PRE_REGISTERED,
+U8,comeback,comeback_magnitude,current_diff - historical_min_diff,HIGHER_IF_HIGH,univariate,PRE_REGISTERED,
+U9,decay,lead_decay,historical_max_lead - current_lead,HIGHER_IF_HIGH,univariate,PRE_REGISTERED,
+U10,market,feat_vol_5m_cents,V1-style 5m candle vol,UNSPECIFIED,univariate,PRE_REGISTERED,Integrated not isolated
+U11,market,feat_momentum_5m_cents,V1-style 5m momentum,UNSPECIFIED,univariate,PRE_REGISTERED,
+U12,market,minutes_50_to_80,Route to 80 when observable,UNSPECIFIED,univariate,PRE_REGISTERED,
+I1,interaction,quarter_x_score_diff,Q4 x small lead etc,UNSPECIFIED,two_way,PRE_REGISTERED,Economic logic; min TRAIN n
+I2,interaction,quarter_x_score_vol,Late x volatile,UNSPECIFIED,two_way,PRE_REGISTERED,
+I3,interaction,score_diff_x_lead_changes,Lead size x churn,UNSPECIFIED,two_way,PRE_REGISTERED,
+I4,interaction,lead_stability_x_market_vol,Stable lead x market vol,UNSPECIFIED,two_way,PRE_REGISTERED,
+I5,interaction,comeback_x_time_remaining,Comeback magnitude x remaining,UNSPECIFIED,two_way,PRE_REGISTERED,
+I6,interaction,market_mom_x_score_mom,Signed market vs score momentum,UNSPECIFIED,two_way,PRE_REGISTERED,
+T1,tree,depth2_discovery,max_depth=2 min_leaf=40 TRAIN only,UNSPECIFIED,discovery,PRE_REGISTERED,Leaves frozen then VAL/OOS; not auto rules
+T2,target,Y_40_CLOSE,Primary close-path 40,n/a,target,PRE_REGISTERED,TARGET_ONLY
+T3,target,Y_40_WICK,Post-entry wick 40,n/a,target,PRE_REGISTERED,EXECUTION_STRESS

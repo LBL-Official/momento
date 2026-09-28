@@ -1,0 +1,18 @@
+{
+  "events": 381928,
+  "games_discovered": 5006,
+  "games_failed": 33,
+  "games_successful": 4973,
+  "generation_timestamp": "2026-08-28T17:20:03.139903+00:00",
+  "generation_timestamp_note": "manifest only; never part of state identity",
+  "reconstruction_version": "W6.REPLAY.1.0.0",
+  "schema_version": "W6.SCHEMA.1.0.0",
+  "source_dataset": "mlb_statsapi landing envelopes",
+  "source_version": "W3 ingest / PARSER_VERSION on events",
+  "states": 386901,
+  "transitions": 381928,
+  "validation_fail": 33,
+  "validation_pass": 4973,
+  "w6_gate": "COMPLETE_WITH_FAILURES",
+  "waterfall": "CTO-W6"
+}

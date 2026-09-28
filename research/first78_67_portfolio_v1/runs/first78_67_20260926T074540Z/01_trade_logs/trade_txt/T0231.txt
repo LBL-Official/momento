@@ -1,0 +1,10 @@
+trade T0231  NBA  Houston at Portland
+contract KXNBAGAME-26JAN09HOUPOR-HOU  slice Q3
+signal 2026-01-09T20:42:00-08:00 PST  exit 2026-01-09T21:14:00-08:00 PST
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 3963  principal_cents 309114
+entry_fee_cents 1191  exit_fee_cents 1534
+exit STOP at 67c  terminal no
+gross_cents -43593  net_cents -46318
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

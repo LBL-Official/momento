@@ -1,0 +1,10 @@
+{
+  "game_id": "1",
+  "market_id": "2",
+  "ticker": "KXMLBGAME-FIXTURE-YES",
+  "event_ticker": "KXMLBGAME-FIXTURE",
+  "series": "KXMLBGAME",
+  "mlb_game_pk": null,
+  "match_status": "UNMAPPED",
+  "open_time": null
+}

@@ -1,0 +1,55 @@
+{
+  "answer": "INSUFFICIENT DATA",
+  "cutoff_locked_test_end": "2026-06-27",
+  "dataset_id": "B1_FIRST83_PROSPECTIVE",
+  "dataset_version": "v1",
+  "do_not_retune_on_holdout": true,
+  "engine_version": "B1.ENGINE.1.1.0",
+  "exit": "HOLD_TO_SETTLEMENT",
+  "feature_schema_version": "B1.FEATURE.1.1.0",
+  "fill_status": "TRADE_PRINT_MODELED",
+  "frozen_candidate_ids": [
+    "CAND_A_40_49",
+    "CAND_B_MOVE30_OUTS0_VOL1M_LOW",
+    "CAND_C_LEAD2_MOVE30_VOL1M_LOW",
+    "CAND_D_TWORUN_MOVE30_VOL1M_LOW",
+    "CAND_E_MOVEFINE_VOL_LOW",
+    "CAND_F_INNING7_PEAK_AT"
+  ],
+  "l2_status": "UNAVAILABLE_SOURCE",
+  "locked_train_tertiles": {
+    "note": "Prospective rows must reuse these TRAIN cuts. Never refit on the holdout.",
+    "path_dist": {
+      "low_max": 174,
+      "mid_max": 371,
+      "source": "LOCKED_TRAIN"
+    },
+    "vol_15m": {
+      "low_max": 2,
+      "mid_max": 3,
+      "source": "LOCKED_TRAIN"
+    },
+    "vol_1m": {
+      "low_max": 1,
+      "mid_max": 2,
+      "source": "LOCKED_TRAIN"
+    },
+    "vol_30m": {
+      "low_max": 2,
+      "mid_max": 3,
+      "source": "LOCKED_TRAIN"
+    },
+    "vol_z": {
+      "low_max": -592,
+      "mid_max": -47,
+      "source": "LOCKED_TRAIN"
+    }
+  },
+  "production_count": 0,
+  "prospective_end": "2026-08-26",
+  "prospective_start": "2026-06-28",
+  "research_mode": "B1_FIRST83_PROSPECTIVE/v1",
+  "stake": "qty = 625 // 83 = 7",
+  "status": "PROSPECTIVE_DATA_NOT_YET_AVAILABLE",
+  "universe": "FIRST_EXACT_83_TRADE"
+}

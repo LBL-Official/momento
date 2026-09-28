@@ -1,0 +1,10 @@
+trade T0579  NCAAB  Iowa at Ohio St.
+contract KXNCAAMBGAME-26MAR12IOWAOSU-OSU  slice H2_1
+signal 2026-03-12T10:21:00-07:00 PDT  exit 2026-03-12T12:21:45-07:00 PDT
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 12628  principal_cents 984984
+entry_fee_cents 3793  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 277816  net_cents 274023
+strategy_result POSITIVE  net_r 1.856675339458492560370761851
+Assumed fill. Not a maker fill. Not live P&L.

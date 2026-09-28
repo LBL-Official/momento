@@ -1,0 +1,137 @@
+---
+description: Core engineering rules for the Momento trading platform
+alwaysApply: true
+---
+
+# Momento — Core Engineering Rules
+
+## Mission
+
+Momento is a production-grade algorithmic sports prediction and execution
+platform.
+
+The system is designed to eventually trade MLB, NBA, NCAAB, and NFL markets
+through Kalshi.
+
+MLB is the first production implementation.
+
+Correctness, safety, auditability, determinism, and fault tolerance take
+priority over development speed.
+
+Never sacrifice trading safety for convenience.
+
+---
+
+## Absolute Rules
+
+1. Never invent financial behavior.
+2. Never silently change trading logic.
+3. Never bypass the Risk Decision Engine.
+4. Never allow strategy code to directly submit orders to Kalshi.
+5. Never assume an order was filled merely because an order was submitted.
+6. Never assume a requested exit price was executable.
+7. Never use floating-point arithmetic for money, prices, quantities, fees,
+   or P&L where exact arithmetic is required.
+8. Never hard-code credentials, API keys, secrets, or private account data.
+9. Never enable live trading accidentally.
+10. Never remove or weaken a safety check merely to make tests pass.
+11. Never modify historical results to make a strategy appear more profitable.
+12. Never use future information in backtests or replay simulations.
+13. Never hide errors that could affect trading state.
+14. Never silently recover from an inconsistent order or position state.
+15. Never introduce a dependency without explaining why it is required.
+
+---
+
+## Financial Safety
+
+All financial quantities must have explicit types.
+
+Money, prices, contract quantities, fees, realized P&L, unrealized P&L,
+and exposure must not be represented using arbitrary `f64` values.
+
+Prefer integer representations or dedicated domain types.
+
+Example:
+
+Money:
+- USD cents represented as an integer where appropriate.
+
+Kalshi contract price:
+- exact integer representation of cents.
+
+Contract quantity:
+- integer.
+
+Never compare financial floating-point values using naive equality.
+
+---
+
+## Explicit State
+
+Trading systems must model state explicitly.
+
+Do not rely on implicit state hidden in booleans or scattered variables.
+
+Prefer explicit state machines for:
+
+- orders
+- positions
+- execution
+- connection state
+- trading mode
+- reconciliation
+- strategy lifecycle
+
+Every state transition should be explainable from an event.
+
+---
+
+## Auditability
+
+Every meaningful trading decision must be reconstructable.
+
+Record:
+
+- timestamp
+- market
+- strategy
+- signal
+- model information used
+- risk decision
+- order intent
+- order submission
+- order acknowledgement
+- fills
+- cancellations
+- position changes
+- exits
+- fees
+- settlement
+- errors
+- connection events
+
+Do not overwrite historical trading events.
+
+Prefer append-only event records.
+
+---
+
+## Development Philosophy
+
+Build the smallest correct component first.
+
+Do not generate large amounts of speculative code.
+
+Before implementing a substantial subsystem:
+
+1. explain the design
+2. identify interfaces
+3. identify invariants
+4. identify failure modes
+5. identify tests
+6. implement
+7. test
+8. review
+
+When requirements are ambiguous, stop and ask rather than inventing trading behavior.

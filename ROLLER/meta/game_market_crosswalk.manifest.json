@@ -1,0 +1,27 @@
+{
+  "artifact": "game_market_crosswalk",
+  "canonical_tickers": 2704,
+  "crosswalk_sha256": "521fa0af3c674935518a42f8de499b548b94b71f6a20e45f305f2f5aaab982d8",
+  "games_with_linked_markets": 1362,
+  "identity_rule_version": "1.0.0",
+  "identity_tickers": 2724,
+  "input_hashes": {
+    "identity": "68059138ae00f94088fe220320a5f61b3e90c3ee523396236f65337bcaa0f4a9",
+    "kalshi_markets": "083323247fde115cbceadd5af7cd5cfdc77c0a7088d6ee1c8e3fbda19cbcfc14",
+    "suite_markets": "ad8137c29d51dde84fecc1217186d899a46d8ac0b78da97c694b57aea518a5fe"
+  },
+  "link_rule_version": "1.0.0",
+  "market_row_count": 2724,
+  "markets_sha256": "f52b9c320e30f526c1de46ad5626b3522d5f8ba507c44dbd7ef3216ed0da7b05",
+  "provisional_layout": "/Users/user/Desktop/Momento/ROLLER/data/nba/2025_2026/derived/warehouse_v0",
+  "row_count": 2724,
+  "sport": "NBA",
+  "status_counts": {
+    "AMBIGUOUS": 0,
+    "INVALID": 0,
+    "LINKED": 2724,
+    "UNLINKED": 0
+  },
+  "suite_tickers": 2724,
+  "updated_at": "2026-09-13T06:05:01Z"
+}

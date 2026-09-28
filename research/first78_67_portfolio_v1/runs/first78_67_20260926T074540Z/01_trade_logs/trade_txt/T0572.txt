@@ -1,0 +1,10 @@
+trade T0572  NCAAB  Ole Miss at Texas
+contract KXNCAAMBGAME-26MAR11MISSTEX-MISS  slice H2_1
+signal 2026-03-11T17:33:00-07:00 PDT  exit 2026-03-11T17:56:00-07:00 PDT
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 13140  principal_cents 1024920
+entry_fee_cents 3946  exit_fee_cents 5085
+exit STOP at 67c  terminal yes
+gross_cents -144540  net_cents -153571
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

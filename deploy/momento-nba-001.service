@@ -1,0 +1,39 @@
+[Unit]
+Description=Momento NBA Bot 001 FIRST78_67 worker (data + shadow; no submission adapter)
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=300
+StartLimitBurst=10
+
+[Service]
+Type=simple
+User=momento
+Group=momento
+WorkingDirectory=/var/lib/momento/nba-001
+Environment=MOMENTO_NBA_CONFIG=/etc/momento/nba-001.toml
+Environment=MOMENTO_NBA_STATE_DIR=/var/lib/momento/nba-001
+Environment=MOMENTO_KALSHI_SECRET_FILE=/dev/shm/momento-kalshi-nba-001.json
+Environment=AWS_DEFAULT_REGION=us-east-1
+Environment=AWS_REGION=us-east-1
+ExecStartPre=/usr/local/libexec/nba001-fetch-secret.sh
+ExecStart=/usr/local/bin/momento-nba-001 run
+ExecStopPost=/bin/rm -f /dev/shm/momento-kalshi-nba-001.json
+Restart=always
+RestartPreventExitStatus=78
+RestartSec=10
+TimeoutStopSec=15
+MemoryHigh=80M
+MemoryMax=96M
+CPUQuota=25%
+Nice=10
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/momento/nba-001
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=momento-nba-001
+
+[Install]
+WantedBy=multi-user.target

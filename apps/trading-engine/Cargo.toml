@@ -1,0 +1,23 @@
+[package]
+name = "momento-trading-engine"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "Trading engine composition root for paper and production live MLB + WNBA."
+
+[lints]
+workspace = true
+
+[dependencies]
+momento-core.workspace = true
+momento-execution.workspace = true
+momento-kalshi.workspace = true
+momento-positions.workspace = true
+momento-risk.workspace = true
+momento-strategy-mlb.workspace = true
+momento-strategy-wnba.workspace = true
+momento-strategy-research-iti.workspace = true
+serde.workspace = true
+serde_json.workspace = true

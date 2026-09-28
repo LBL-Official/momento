@@ -1,0 +1,6 @@
+{
+  "rows": 217811,
+  "missing_rows": 29468,
+  "reason": "PATH_NOT_IN_SAVED_ARTIFACT",
+  "note": "The full grid is retained in memory for the drawdown report. The CSV sample is the first and last five rows. Bid marks are missing because the saved trade file has no quote path."
+}

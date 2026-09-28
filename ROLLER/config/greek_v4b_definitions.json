@@ -1,0 +1,106 @@
+{
+  "greek_schema_version": "4.0.0-B",
+  "k_field": "yes_bid_close",
+  "k_units": "integer_e4",
+  "expected_interval_seconds": 60,
+  "score_state": {
+    "convention": "S_t = home_score_t - away_score_t",
+    "source": "score_differential_home",
+    "delta": "ΔS_t = S_t - S_{t-1}",
+    "not": ["total_points", "home_points_only", "abs_margin"]
+  },
+  "note": "Empirical measurements. Not Black-Scholes. Not edge. Not signals.",
+  "non_interpretation": [
+    "Δ ≠ EDGE",
+    "Γ ≠ EDGE",
+    "Θ ≠ EDGE",
+    "BASIS ≠ EDGE",
+    "RESIDUAL ≠ EDGE",
+    "PURE THETA ≠ NO-EVENT THETA"
+  ],
+  "realized_market_volatility": {
+    "definition": "configured rolling sum of absolute close-to-close yes_bid_close movement on visible home candles",
+    "window_closes": 10,
+    "formula": "sum |K_i - K_{i-1}| over the last window_closes visible closes with available_at < cutoff",
+    "not": [
+      "implied_volatility",
+      "standard_deviation",
+      "sqrt_sum_squared_returns",
+      "continuous_time_volatility"
+    ]
+  },
+  "absolute_return": {
+    "definition": "abs(market_delta_1m)",
+    "units": "unsigned_e4",
+    "null_iff": "market_delta_1m is null"
+  },
+  "discrete_gamma": {
+    "definition": "ΔF_t - ΔF_{t-1}",
+    "equivalent": "F_t - 2 F_{t-1} + F_{t-2} on compatible intervals",
+    "kind": "temporal_second_difference",
+    "not": [
+      "score_surface_curvature",
+      "d2F_dS2",
+      "black_scholes_gamma"
+    ]
+  },
+  "pure_theta": {
+    "definition": "theta_observed restricted to unchanged period and unchanged S",
+    "interpretation": "PARTIAL",
+    "conditions": ["period_t == period_{t-1}", "S_t == S_{t-1}"],
+    "otherwise": "MIXED_INTERVAL",
+    "not": "absence of basketball events"
+  },
+  "baseline": {
+    "conditioning_schema_version": "core_v1",
+    "eligibility": "same core_v1 cell AND measurement_available_at_i < t AND game_i != game_t",
+    "dispersion": "mean_absolute_deviation_exact_rational",
+    "effective_n_status": "NOT_IMPLEMENTED",
+    "forbidden_conditioners": [
+      "other_v4b_measurements",
+      "residuals",
+      "future_realized_volatility",
+      "future_gamma",
+      "baseline_outputs",
+      "future_path_summaries"
+    ]
+  },
+  "support": {
+    "minimum_observations": 3,
+    "minimum_unique_games": 2,
+    "minimum_unique_dates": 1,
+    "minimum_unique_seasons": 1,
+    "effective_n_status": "NOT_IMPLEMENTED"
+  },
+  "null_reasons": [
+    "MISSING_K",
+    "MISSING_F",
+    "NO_PRIOR_CANDLE",
+    "NO_PRIOR_F",
+    "TIME_GAP",
+    "PERIOD_OR_SEQUENCE_GAP",
+    "ZERO_SCORE_DELTA",
+    "ZERO_ELAPSED",
+    "ZERO_RANGE",
+    "MIXED_INTERVAL",
+    "INSUFFICIENT_SUPPORT",
+    "INSUFFICIENT_HISTORY",
+    "RECONCILIATION_FAILED",
+    "NOT_SUPPORTED"
+  ],
+  "families": [
+    "market_delta_1m",
+    "fundamental_delta",
+    "response_delta",
+    "market_fundamental_basis",
+    "basis_delta",
+    "score_delta",
+    "discrete_gamma",
+    "theta_observed",
+    "pure_theta",
+    "candle_range",
+    "absolute_return",
+    "realized_market_volatility",
+    "directional_efficiency"
+  ]
+}

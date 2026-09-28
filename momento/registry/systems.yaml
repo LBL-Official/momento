@@ -1,0 +1,907 @@
+# Momento Systems V0 — canonical 19-system registry (15 tournament + 4 infrastructure).
+# SSOT for frontend and backend. Do not hardcode a second map.
+# LIVE EXECUTION = FALSE. Architecture freeze only. No HTTP façade yet.
+
+schema_version: momento_systems_registry_v1
+code_version: momento_systems_v0.1.0
+live_execution: false
+system_count: 19
+
+systems:
+  - id: database
+    display_name: Database
+    short_name: Database
+    bracket_round: first
+    bracket_position: 1
+    purpose: Canonical historical and point-in-time memory. Answers what happened. Does not decide whether something is a good trade.
+    status: COMPLETE
+    version: roller_warehouse_phases_0_20
+    implementation_paths:
+      - ROLLER/roller/warehouse/
+      - ROLLER/roller/research_query/
+      - ROLLER/data/
+      - ROLLER/roller/base_terminal_efficiency/
+      - crates/research-path/
+      - crates/research-state/
+    research_paths:
+      - research/warehouse_refactor/
+      - docs/research/research_query/
+      - ROLLER/docs/DATA_LINEAGE.md
+    frontend_target:
+      kind: separate_app
+      url: http://127.0.0.1:5179
+      product: ROLLER
+    backend_target:
+      kind: existing_api
+      host: 127.0.0.1
+      port: 8791
+      namespaces:
+        - /warehouse-research
+        - /research-query
+    api_namespace: /warehouse-research
+    upstream_systems:
+      - data_ingestion
+    downstream_systems:
+      - data_modeling
+    input_contracts:
+      - Fill
+      - ExecutionReport
+      - PositionReconciliation
+    output_contracts:
+      - GameState
+      - MarketState
+    health_check: GET /health
+    feature_flags:
+      - LIVE_EXECUTION=FALSE
+    live_capability: false
+    migration_sources:
+      - ROLLER warehouse
+      - ROLLER research_query
+      - historical W0-W8 research crates
+    notes: LEAVE plus Phase 2 adapter. Confirm and Run stays on /warehouse-research. first80.py is frozen measurement, not a live signal. base_terminal_efficiency is empirical attach, not Game Modeling. Do not start warehouse Phase 21.
+    submodules:
+      - historical_engine_w0_w8
+      - base_terminal_efficiency
+
+  - id: data_analysis
+    display_name: Data Analysis
+    short_name: Data Analysis
+    bracket_round: first
+    bracket_position: 2
+    purpose: Statistical decomposition and research interrogation of measured populations. Answers what the historical evidence says.
+    status: COMPLETE
+    version: superasi_v1.0.0
+    implementation_paths:
+      - ROLLER/roller/superasi/
+      - ROLLER/roller/stax/
+      - crates/research-engine/
+      - apps/research-api/
+    research_paths:
+      - research/superasi/
+      - research/stax/
+      - research/first75_terminal_path_decomp/
+      - docs/research/superasi/
+    frontend_target:
+      kind: same_app_mode
+      url: http://127.0.0.1:5179/?app=superasi
+      product: SuperASI
+      mode: superasi
+    backend_target:
+      kind: existing_api
+      host: 127.0.0.1
+      port: 8791
+      namespaces:
+        - /superasi
+        - /stax
+    api_namespace: /superasi
+    upstream_systems: []
+    downstream_systems:
+      - data_modeling
+    input_contracts:
+      - GameState
+      - MarketState
+    output_contracts:
+      - PathModelSnapshot
+      - TerminalModelSnapshot
+    health_check: GET /health
+    feature_flags:
+      - LIVE_EXECUTION=FALSE
+    live_capability: false
+    migration_sources:
+      - SuperASI
+      - STAX
+      - Research Engine v1
+    notes: LEAVE plus Phase 2 adapter. SuperASI deconstructs path and terminal efficiency of measured populations. Those outputs feed Data Modeling and Game Modeling. Do not move SuperASI into second-round systems. STAX and Research Engine v1 are submodules, not 18th systems. ITI is a research catalog, not a live Kalshi signal.
+    submodules:
+      - stax
+      - research_engine_v1
+      - v4b_v4c_greeks
+      - superasi_iti
+
+  - id: fair_odds_modeling
+    display_name: Fair Odds Modeling
+    short_name: Fair Odds Modeling
+    bracket_round: first
+    bracket_position: 3
+    purpose: External or market-derived terminal probability. Answers what probability the external market is implying.
+    status: PARTIAL
+    version: v0.1.0
+    implementation_paths:
+      - ROLLER/roller/ontologic_x/
+      - frontend/momento-systems/src/OntologicX.tsx
+      - research/ontologic_x/fixtures/baseline.json
+    research_paths:
+      - docs/architecture/MOMENTO_SYSTEMS_ROADMAP.md
+    frontend_target:
+      kind: momento_page
+      url: http://127.0.0.1:5190/#/ontologic-x
+      product: Momento
+    backend_target:
+      kind: registry_only
+      host: 127.0.0.1
+      port: 8791
+      namespaces:
+        - /momento/ontologic-x
+    api_namespace: /momento/systems/fair_odds_modeling
+    upstream_systems: []
+    downstream_systems:
+      - game_modeling
+    input_contracts:
+      - OddsSnapshot
+    output_contracts:
+      - OddsSnapshot
+    health_check: UNKNOWN
+    feature_flags:
+      - LIVE_EXECUTION=FALSE
+    live_capability: false
+    migration_sources: []
+    notes: Ontologic X on #/ontologic-x. The active book is BetOnline, labeled on every quote. William Hill remains a separate provider. A scheduled game stays when BetOnline has not posted a price. The lifecycle dry-run object stays model none.
+
+  - id: in_house_odds_modeling
+    display_name: In House Odds Modeling
+    short_name: In House Odds Modeling
+    bracket_round: first
+    bracket_position: 4
+    purpose: Momento's own game-probability models. Answers what probability Momento's model assigns.
+    status: PARTIAL
+    version: XIB-NBA-V1
+    implementation_paths:
+      - apps/terminal-efficiency/
+    research_paths:
+      - docs/research/terminal_efficiency/
+    frontend_target:
+      kind: momento_page
+      url: http://127.0.0.1:5190/#/ontologic-y
+      product: Momento
+    backend_target:
+      kind: registry_only
+      host: 127.0.0.1
+      port: 8791
+      namespaces: []
+    api_namespace: /momento/systems/in_house_odds_modeling
+    upstream_systems: []
+    downstream_systems:
+      - game_modeling
+    input_contracts:
+      - GameState
+    output_contracts:
+      - OddsSnapshot
+    health_check: RESEARCH_ONLY
+    feature_flags:
+      - LIVE_EXECUTION=FALSE
+      - PHASE_7_NOT_AUTHORIZED
+    live_capability: false
+    migration_sources:
+      - apps/terminal-efficiency XIB/MCD
+    notes: Ontologic Y on #/ontologic-y. XIB-NBA-V1 was found and is MODEL_INCOMPATIBLE. Probabilities and partitions stay unavailable. The offline lifecycle object stays NOT_IMPLEMENTED. Phase 7 is NOT AUTHORIZED.
+
+  - id: trade_breakdown
+    display_name: Trade Breakdown
+    short_name: Trade Breakdown
+    bracket_round: first
+    bracket_position: 5
+    purpose: Economics of the trade itself. Entry, payout, risk, reward, fees, 40-stop legacy benchmark, bankroll, breakeven, EV.
+    status: COMPLETE
+    version: choosin_texas_v1
+    implementation_paths:
+      - ROLLER/roller/choosin_texas/
+      - frontend/choosin-texas/
+    research_paths:
+      - research/choosin_texas/
+      - docs/research/lebronner/TABLES.md
+      - docs/operations/CHOOSIN_TEXAS.md
+    frontend_target:
+      kind: separate_app
+      url: http://127.0.0.1:5182#/
+      product: Choosin Texas
+    backend_target:
+      kind: existing_api
+      host: 127.0.0.1
+      port: 8791
+      namespaces:
+        - /choosin-texas
+    api_namespace: /choosin-texas
+    upstream_systems: []
+    downstream_systems:
+      - dynamic_risk_engine
+    input_contracts:
+      - TradeSignal
+    output_contracts:
+      - TradeBreakdown
+    health_check: GET /choosin-texas/health
+    feature_flags:
+      - LIVE_EXECUTION=FALSE
+    live_capability: false
+    migration_sources:
+      - Choosin Texas
+    notes: LEAVE plus Phase 2 adapter. Locked N=936 derived four. 80/55 uses N=905. asked-six 1182 is complement only. Ledger EV is candle-path theoretical. 40-stop is a legacy benchmark, not deleted. Book page stays here. Dallas points at Data Modeling. Do not remount inside roller-terminal.
+
+  - id: position_stratification
+    display_name: Position Stratification
+    short_name: Position Stratification
+    bracket_round: first
+    bracket_position: 6
+    purpose: Classify what type of FIRST80 position this is via game-state buckets, PCA, KNN neighborhoods, and regime labels.
+    status: PARTIAL
+    version: austin_pca_knn_n604
+    implementation_paths:
+      - ROLLER/roller/austin/
+      - ROLLER/roller/nba_8040_reverse_features/
+    research_paths:
+      - research/austin/
+      - research/nba_8040_reverse_features/
+    frontend_target:
+      kind: hash_route
+      url: http://127.0.0.1:5182#/austin
+      product: Austin
+    backend_target:
+      kind: existing_api
+      host: 127.0.0.1
+      port: 8791
+      namespaces:
+        - /austin
+    api_namespace: /austin
+    upstream_systems: []
+    downstream_systems:
+      - dynamic_risk_engine
+    input_contracts:
+      - GameState
+      - MarketState
+      - TradeBreakdown
+    output_contracts:
+      - PositionStratum
+    health_check: GET /austin/health
+    feature_flags:
+      - LIVE_EXECUTION=FALSE
+      - LIVE_FEED=UNAVAILABLE
+    live_capability: false
+    migration_sources:
+      - Austin PCA+KNN
+      - nba_8040_reverse_features
+    notes: ADAPTER, no git mv. Same package as Dynamic Risk Engine. This row owns the PCA/KNN representation and #/austin. N=604 only. Never BUY/SKIP. Do not mix 936/1182/1230/797.
+
+  - id: hedging_analysis
+    display_name: Hedging Analysis
+    short_name: Hedging Analysis
+    bracket_round: first
+    bracket_position: 7
+    purpose: When and how much exposure should change. Studies hedge timing, partial reduction, costs, and residual terminal exposure.
+    status: PARTIAL
+    version: v0.1.0-research
+    visual_subtitle: Ballhog
+    implementation_paths:
+      - ROLLER/roller/ballhog/
+      - frontend/ballhog/
+      - ROLLER/roller/austin/hedge.py
+      - ROLLER/roller/nba_path_fe/hedge.py
+      - ROLLER/roller/momento/bdr.py
+    research_paths:
+      - research/ballhog/
+      - research/bdr/
+      - docs/research/BDR_80_40_BARRIER_DEFENSE.md
+      - docs/research/DUAL_LEG_MAKER_LOCK_POSITION_MANAGEMENT.md
+      - docs/research/BDR_LIQUIDATION_CORRIDOR.md
+      - docs/research/BDR_ACQUISITION_CORRIDOR.md
+      - docs/research/BDR_77_RIDGE.md
+      - docs/research/BDR_STAGED_ACQUISITION.md
+      - research/first80_alpha_decomposition_v1/reports/MODULE_D_HEDGE_STATE_ANALYSIS.md
+      - frontend/first80-hedge-frontier-v2/
+      - frontend/first80-hedge-execution-v3/
+      - frontend/a1-hybrid-hedge/
+    frontend_target:
+      kind: separate_app
+      url: http://127.0.0.1:5192/
+      product: Ballhog
+    backend_target:
+      kind: existing_api
+      host: 127.0.0.1
+      port: 8791
+      namespaces:
+        - /ballhog
+    api_namespace: /ballhog
+    upstream_systems: []
+    downstream_systems:
+      - position_management
+    input_contracts:
+      - RiskAssessment
+      - PositionSnapshot
+    output_contracts:
+      - HedgeAnalysis
+    health_check: GET /ballhog/health
+    feature_flags:
+      - LIVE_EXECUTION=FALSE
+      - FILL_UNAVAILABLE
+    live_capability: false
+    migration_sources:
+      - Austin hedge 41/42
+      - nba_path_fe Family E
+      - FIRST80 hedge audit UIs
+    notes: POINTER. Ballhog :5192 is the product Frontend (WHEN / q* / rho* / Δ*). BDR #/bdr remains the write-up library, not a 20th system and not live. Existing work is opponent-YES@40 maker and Family E features. Architecture target LONG YES then BUY NO as taker is not implemented. Do not collapse those hedges. Family E never enters enter_skip. Does not submit.
+
+  - id: relative_value_hedging
+    display_name: Relative Value Hedging
+    short_name: Relative Value Hedging
+    bracket_round: first
+    bracket_position: 8
+    purpose: Whether a hedge instrument is rich or cheap relative to the base position. Pluggable research framework. tk_relative_value_v1 is a formula, not market truth.
+    status: PARTIAL
+    version: tk_relative_value_v1
+    visual_subtitle: TK Ultra
+    implementation_paths:
+      - ROLLER/roller/momento/relative_value.py
+      - ROLLER/roller/momento/tk_ultra.py
+      - ROLLER/roller/tk_ultra/
+    research_paths:
+      - research/tk_ultra/
+      - docs/architecture/MOMENTO_SYSTEMS_ROADMAP.md
+      - docs/momento/DATAFLOW.md
+    frontend_target:
+      kind: momento_page
+      url: http://127.0.0.1:5190/#/tk-ultra
+      product: TK Ultra
+    backend_target:
+      kind: existing_api
+      host: 127.0.0.1
+      port: 8791
+      namespaces:
+        - /momento/tk-ultra
+    api_namespace: /momento/tk-ultra
+    upstream_systems: []
+    downstream_systems:
+      - position_management
+    input_contracts:
+      - MarketState
+      - HedgeAnalysis
+    output_contracts:
+      - RVHedgeAssessment
+    health_check: GET /momento/tk-ultra
+    feature_flags:
+      - LIVE_EXECUTION=FALSE
+    live_capability: false
+    migration_sources:
+      - TK Ultra source letter
+    notes: RESEARCH OBJECT. TK Ultra #/tk-ultra is this system's Frontend. GENERIC_RV is tk_relative_value_v1 (futures ratio). BINARY_COMPLEMENT_V0 is FIRST80 A/B YES with structural β=-1. Independent Austin (604) and Choosin (936) adapters. Optional in-process BallhogHedgeIntent sibling via handle_intent; not upstream evidence. Do not claim the formula is truth. Missing is UNAVAILABLE, never $0. Do not invent B from 100-A as GENERIC_RV. Position Management stays NOT_IMPLEMENTED. This is not roadmap program 13 Relative Value HFT.
+
+  - id: data_modeling
+    display_name: Data Modeling
+    short_name: Data Modeling
+    bracket_round: second
+    bracket_position: 9
+    purpose: Path efficiency. Given where this contract is now, how have contracts historically moved from here.
+    status: PARTIAL
+    version: v0.1.0-research
+    implementation_paths:
+      - ROLLER/roller/jump/drive.py
+      - ROLLER/roller/superasi/path_windows.py
+      - ROLLER/roller/superasi/decompose.py
+      - ROLLER/roller/choosin_texas/nba_path.py
+      - ROLLER/roller/choosin_texas/dallas.py
+      - ROLLER/roller/nba_path_fe/
+    research_paths:
+      - research/nba_path_trade_fe/
+      - research/first75_terminal_path_decomp/
+      - research/ncaab_conditional_path_decomp/
+      - docs/jump/JUMP_REWORK_RECON.md
+    frontend_target:
+      kind: same_app
+      url: http://127.0.0.1:5179/?app=jump
+      product: Jump
+    backend_target:
+      kind: existing_api
+      host: 127.0.0.1
+      port: 8791
+      namespaces:
+        - /jump
+    api_namespace: /jump
+    upstream_systems:
+      - database
+      - data_analysis
+    downstream_systems:
+      - signal_generation
+    input_contracts:
+      - GameState
+      - MarketState
+      - PathModelSnapshot
+    output_contracts:
+      - PathModelSnapshot
+    health_check: RESEARCH_ONLY
+    feature_flags:
+      - LIVE_EXECUTION=FALSE
+    live_capability: false
+    migration_sources:
+      - SuperASI path decomp
+      - Choosin path ladder and Dallas
+      - nba_path_fe
+      - first75 archive
+    notes: Jump is the Data Modeling filesystem (ROLLER + SuperASI pointers). Do not move SuperASI. nba_path_fe enter/skip is INACTIVE_NO_RESIDUAL_EDGE. Dallas #/dallas is path evidence hosted in Choosin Texas. Jump does not create bots.
+
+  - id: game_modeling
+    display_name: Game Modeling
+    short_name: Game Modeling
+    bracket_round: second
+    bracket_position: 10
+    purpose: Terminal efficiency. Given game state, what should this binary contract ultimately be worth.
+    status: PARTIAL
+    version: v0.1.0-research
+    implementation_paths:
+      - ROLLER/roller/superasi/decompose.py
+      - apps/terminal-efficiency/
+    research_paths:
+      - research/superasi/EV_DECOMPOSITION.md
+      - docs/research/terminal_efficiency/
+    frontend_target:
+      kind: momento_page
+      url: http://127.0.0.1:5190/#/systems/game_modeling
+      product: Momento
+    backend_target:
+      kind: registry_only
+      host: 127.0.0.1
+      port: 8791
+      namespaces: []
+    api_namespace: /momento/systems/game_modeling
+    upstream_systems:
+      - fair_odds_modeling
+      - in_house_odds_modeling
+    downstream_systems:
+      - signal_generation
+    input_contracts:
+      - OddsSnapshot
+      - GameState
+      - MarketState
+    output_contracts:
+      - TerminalModelSnapshot
+    health_check: RESEARCH_ONLY
+    feature_flags:
+      - LIVE_EXECUTION=FALSE
+      - PHASE_7_NOT_AUTHORIZED
+    live_capability: false
+    migration_sources:
+      - SuperASI terminal decomp
+      - XIB frozen objects
+    notes: POINTER. SuperASI terminal decomp is empirical P(W|trigger) vs K on measured books. XIB F_t vs K_t is NOT AUTHORIZED. base_terminal_efficiency is Database measurement, not this system.
+
+  - id: dynamic_risk_engine
+    display_name: Drevo
+    short_name: Drevo
+    visual_subtitle: Dynamic Risk Engine
+    bracket_round: second
+    bracket_position: 11
+    purpose: Post-entry hold question. The trade was opened for reason X. Does the reason for continuing to hold still exist.
+    status: PARTIAL
+    version: austin_dre_phase_4_research
+    implementation_paths:
+      - ROLLER/roller/dre/
+      - frontend/dynamic-risk-engine/
+      - ROLLER/roller/austin/experiments/
+    research_paths:
+      - research/dre/
+      - research/dre/PORTFOLIO_OBJECTIVE_V1.md
+      - research/austin/experiments/
+      - docs/research/MOMENTO_DYNAMIC_RISK_ENGINE_V7.md
+      - frontend/dre-v7/
+      - frontend/pade-v1/
+    frontend_target:
+      kind: separate_app
+      url: http://127.0.0.1:5191/
+      product: Drevo
+    backend_target:
+      kind: existing_api
+      host: 127.0.0.1
+      port: 8791
+      namespaces:
+        - /dre
+        - /drevo
+    api_namespace: /dre
+    upstream_systems:
+      - trade_breakdown
+      - position_stratification
+    downstream_systems:
+      - algorithmic_execution
+    input_contracts:
+      - TradeBreakdown
+      - PositionStratum
+      - PositionSnapshot
+    output_contracts:
+      - RiskAssessment
+    health_check: GET /dre/health
+    feature_flags:
+      - LIVE_EXECUTION=FALSE
+      - LIVE_FEED=UNAVAILABLE
+      - PHASE_3_NOT_EXECUTION_POLICY
+    live_capability: false
+    migration_sources:
+      - Austin Risk
+      - DRE v2-v7
+      - PADE v1
+    notes: Canonical product Drevo. Legacy alias DRE / /dre / frontend/dynamic-risk-engine. Frontend :5191. Backend /dre wraps Choosin+Austin and consumes Positman plans. V1 objective SSOT research/dre/PORTFOLIO_OBJECTIVE_V1.md. Do not invent ACCEPT thresholds or Λα. execution_authorized is false.
+
+  - id: position_management
+    display_name: Positman
+    short_name: Positman
+    visual_subtitle: Position Management
+    bracket_round: second
+    bracket_position: 12
+    purpose: Current exposure versus target exposure. Decides how much exposure the portfolio should have. Does not place orders.
+    status: PARTIAL
+    version: v0.1.0-research
+    implementation_paths:
+      - ROLLER/roller/positman/
+      - ROLLER/roller/momento/position_management.py
+      - ROLLER/roller/austin/fort_worth.py
+    research_paths:
+      - research/positman/
+      - research/austin/artifacts/fort_worth_contract.json
+    frontend_target:
+      kind: separate_app
+      url: http://127.0.0.1:5194/
+      product: Positman
+    backend_target:
+      kind: existing_api
+      host: 127.0.0.1
+      port: 8791
+      namespaces:
+        - /positman
+    api_namespace: /positman
+    upstream_systems:
+      - hedging_analysis
+      - relative_value_hedging
+    downstream_systems:
+      - algorithmic_execution
+    input_contracts:
+      - HedgeAnalysis
+      - RVHedgeAssessment
+      - PositionSnapshot
+    output_contracts:
+      - TargetExposure
+      - PositmanPositionPlan
+    health_check: GET /positman/health
+    feature_flags:
+      - LIVE_EXECUTION=FALSE
+    live_capability: false
+    migration_sources:
+      - Fort Worth policy contract
+    notes: Canonical product Positman. Deterministic compositor of BallhogHedgeIntent × TKUltraRVAssessment. Does not recompute siblings. Does not place orders. target_from_research remains the old momento lifecycle fixture. Fort Worth is policy text. #/fort-worth is not this desk.
+
+  - id: signal_generation
+    display_name: Signal Generation
+    short_name: Signal Generation
+    bracket_round: final_four
+    bracket_position: 13
+    purpose: Where path information meets terminal information. Owns why a trade opportunity exists. Does not hide execution logic.
+    visual_subtitle: Stryke
+    status: PARTIAL
+    version: stryke_first78_67_v1
+    implementation_paths:
+      - ROLLER/roller/stryke/
+      - frontend/stryke/
+      - ROLLER/roller/research/first80.py
+      - ROLLER/roller/austin/fort_worth.py
+      - ROLLER/roller/superasi/iti/
+    research_paths:
+      - research/stryke/
+      - research/jump/signals/FIRST78_67/
+      - docs/research/lebronner/TABLES.md
+      - research/jump/
+    frontend_target:
+      kind: separate_app
+      url: http://127.0.0.1:5195/
+      product: Stryke
+    backend_target:
+      kind: existing_api
+      host: 127.0.0.1
+      port: 8791
+      namespaces:
+        - /stryke
+    api_namespace: /momento/systems/signal_generation
+    upstream_systems:
+      - data_modeling
+      - game_modeling
+    downstream_systems:
+      - momento_systems
+    input_contracts:
+      - PathModelSnapshot
+      - TerminalModelSnapshot
+    output_contracts:
+      - TradeSignal
+    health_check: GET /stryke/health
+    feature_flags:
+      - LIVE_EXECUTION=FALSE
+    live_capability: false
+    migration_sources:
+      - first80.py touch-80
+      - Fort Worth unfiltered entry policy
+      - SuperASI ITI catalog
+    notes: Product Stryke on :5195. The market sheet is FIRST78_67. The bot contract reads that sheet and stays NOT_DEPLOYED. first80.py stays frozen. Do not change 80/81/83/89. ITI is not a live Kalshi signal. No NBA live signal exists.
+
+  - id: algorithmic_execution
+    display_name: Algorithmic Execution
+    short_name: Algorithmic Execution
+    visual_subtitle: (Momento Live Trading Bot)
+    bracket_round: final_four
+    bracket_position: 14
+    purpose: Quad 1 desk for NBA Bot 001 (FIRST78_67). Worker momento-nba-001.service collects production data, evaluates admission, and runs the SHADOW hedge path. Execution is gated. The deployed build links no submission adapter; the source adapter is fixture/demo only with production orders compiled out.
+    status: NOT_IMPLEMENTED
+    version: nba_001_first78_67_v1
+    implementation_paths:
+      - ROLLER/roller/momento/execution.py
+      - ROLLER/roller/momento/nba_001_runtime.py
+      - strategies/nba/
+      - apps/nba-001/
+    research_paths:
+      - docs/momento/EXECUTION_BOUNDARY.md
+      - research/vital/bots/nba-001/
+      - docs/operations/NBA_001.md
+    frontend_target:
+      kind: momento_page
+      url: http://127.0.0.1:5190/#/execution/nba
+      product: Momento
+    backend_target:
+      kind: registry_only
+      host: 127.0.0.1
+      port: 8791
+      namespaces: []
+    api_namespace: /momento/systems/algorithmic_execution
+    upstream_systems:
+      - dynamic_risk_engine
+      - position_management
+    downstream_systems:
+      - momento_systems
+    input_contracts:
+      - RiskAssessment
+      - TargetExposure
+      - TradeSignal
+    output_contracts:
+      - ExecutionIntent
+      - ExecutionReport
+      - Fill
+      - PositionReconciliation
+    health_check: NOT_IMPLEMENTED
+    feature_flags:
+      - LIVE_EXECUTION=FALSE
+      - NBA_SUBMISSION_NOT_IMPLEMENTED
+      - NBA_001_WORKER_OBSERVE_SHADOW
+      - MLB_001_REFERENCE_ONLY
+    live_capability: false
+    migration_sources: []
+    reference_only:
+      - MLB 001 / Vital / trading-engine / crates/risk are reference patterns only
+    notes: NO NBA SUBMISSION IMPLEMENTATION. NBA Bot 001 worker momento-nba-001.service (apps/nba-001, strategies/nba) reads production market data and GET-only account state, records local intents and blockers, and runs a SHADOW hedge path. The deployed build links no submission adapter and cannot place, amend, or cancel orders; the source adapter is fixture/demo only with production orders compiled out. The desk at #/execution/nba reads its status.json over read-only SSM (/momento/execution/nba/runtime). execution_authorized is false. Do not modify MLB 001. Quad 4 execution is unchanged. submits is false.
+
+  - id: momento_systems
+    display_name: Momento Systems
+    short_name: Momento Systems
+    bracket_round: champion
+    bracket_position: 15
+    purpose: Orchestrator. Complete trade-lifecycle state and what should happen next. Not a prediction model.
+    status: PARTIAL
+    version: v0.1.0-architecture-freeze
+    implementation_paths:
+      - ROLLER/roller/momento/
+      - momento/registry/systems.yaml
+      - ROLLER/roller/jump/
+    research_paths:
+      - docs/momento/
+      - research/jump/
+    frontend_target:
+      kind: momento_page
+      url: http://127.0.0.1:5190/
+      product: Momento
+    backend_target:
+      kind: registry_only
+      host: 127.0.0.1
+      port: 8791
+      namespaces: []
+    api_namespace: /momento
+    upstream_systems:
+      - signal_generation
+      - algorithmic_execution
+    downstream_systems: []
+    input_contracts:
+      - TradeSignal
+      - ExecutionReport
+      - RiskAssessment
+      - TargetExposure
+    output_contracts:
+      - SystemHealth
+    health_check: UNKNOWN
+    feature_flags:
+      - LIVE_EXECUTION=FALSE
+    live_capability: false
+    migration_sources:
+      - Jump operating terminal
+    notes: PARTIAL desk. Registry, /momento façade, and :5190 bracket exist. No complete trade-lifecycle orchestrator. Jump is a submodule, not an 18th system. This row is not the 16-program capability roadmap.
+
+  - id: system_maintenance
+    display_name: System Maintenance
+    short_name: System Maintenance
+    visual_subtitle: Systimo
+    bracket_round: infrastructure
+    bracket_position: 16
+    purpose: Observes and maintains the architecture. Process health, APIs, freshness, versions, flags, failed jobs. UNKNOWN is acceptable.
+    status: PARTIAL
+    version: systimo_v0
+    implementation_paths:
+      - ROLLER/roller/systimo/
+      - frontend/systimo/
+      - ROLLER/roller/ls/
+      - ROLLER/scripts/ls_api.py
+      - frontend/momento-ls/
+      - ROLLER/roller/vital/observe.py
+    research_paths:
+      - research/systimo/
+      - docs/operations/SYSTIMO.md
+      - docs/operations/MOMENTO_LS.md
+    frontend_target:
+      kind: separate_app
+      url: http://127.0.0.1:5193/
+      product: Systimo
+    backend_target:
+      kind: existing_api
+      host: 127.0.0.1
+      port: 8791
+      namespaces:
+        - /systimo
+    api_namespace: /systimo
+    upstream_systems: []
+    downstream_systems: []
+    input_contracts:
+      - SystemHealth
+    output_contracts:
+      - SystemHealth
+    health_check: GET /systimo/health
+    feature_flags:
+      - LIVE_EXECUTION=FALSE
+    live_capability: false
+    migration_sources:
+      - Systimo
+      - Momento LS
+      - Vital observe
+      - ROLLER /health
+    notes: Product Frontend is Systimo :5193 /systimo. Momento LS :5181/:8792 is the live-host observe adapter, not the product UI. Not ROLLER/roller/maintenance, which is ingest orchestration. Does not submit. Does not set VITAL_AWS_CONTROL. No fake green statuses.
+
+  - id: data_ingestion
+    display_name: Data Ingestion
+    short_name: Data Ingestion
+    bracket_round: infrastructure
+    bracket_position: 17
+    purpose: Feeds canonical information into the system. NBA, markets, PBP, external odds, scheduling, freshness, retry, missing-data reporting.
+    status: PARTIAL
+    version: ingest_scripts_plus_research_ingest
+    implementation_paths:
+      - ROLLER/roller/ingest/
+      - ROLLER/scripts/ingest_kalshi.py
+      - ROLLER/scripts/ingest_polymarket.py
+      - ROLLER/scripts/ingest_pbp.py
+      - ROLLER/roller/auto_roller/
+      - ROLLER/roller/maintenance/update.py
+      - crates/research-ingest/
+      - apps/research-ingest/
+    research_paths:
+      - docs/research/architecture-decisions/ADR-0021-continuous-ingestion-plane.md
+      - docs/research/backtesting_rebuild/ingest/
+    frontend_target:
+      kind: momento_page
+      url: http://127.0.0.1:5190/#/ingest
+      product: Momento
+    backend_target:
+      kind: existing_api
+      host: 127.0.0.1
+      port: 8791
+      namespaces:
+        - /auto-roller
+    api_namespace: /auto-roller
+    upstream_systems: []
+    downstream_systems:
+      - database
+    input_contracts: []
+    output_contracts:
+      - GameState
+      - MarketState
+    health_check: GET /auto-roller/status
+    feature_flags:
+      - LIVE_EXECUTION=FALSE
+    live_capability: false
+    migration_sources:
+      - ROLLER ingest scripts
+      - research-ingest
+      - auto_roller
+      - ROLLER/roller/maintenance
+    notes: ADAPTER plus POINTER. Autojest is not built. Autoingest program is not built. ROLLER/roller/maintenance/update.py is ingest, not System Maintenance. Polymarket basis is LAST_TRADE_PRINT. Do not merge venues into one quote.
+
+  - id: trade_reconciliation
+    display_name: Trade Reconciliation
+    short_name: Trade Reconciliation
+    bracket_round: infrastructure
+    bracket_position: 18
+    purpose: Reconciles intended trades against observed fills, positions, and exchange state. UNKNOWN until exchange state is read. Does not submit.
+    status: NOT_IMPLEMENTED
+    version: v0.1.0-contract
+    implementation_paths:
+      - ROLLER/roller/momento/execution.py
+      - ROLLER/roller/momento/contracts.py
+    research_paths:
+      - docs/momento/FIRST80_LIFECYCLE.md
+      - research/vital/EXECUTION_LEDGER_RECON.md
+    frontend_target:
+      kind: momento_page
+      url: http://127.0.0.1:5190/#/reconciliation
+      product: Momento
+    backend_target:
+      kind: registry_only
+      host: 127.0.0.1
+      port: 8791
+      namespaces: []
+    api_namespace: /momento/systems/trade_reconciliation
+    upstream_systems: []
+    downstream_systems: []
+    input_contracts:
+      - ExecutionReport
+      - Fill
+      - PositionSnapshot
+    output_contracts:
+      - PositionReconciliation
+    health_check: NOT_IMPLEMENTED
+    feature_flags:
+      - LIVE_EXECUTION=FALSE
+    live_capability: false
+    migration_sources:
+      - Momento PositionReconciliation contract
+      - Vital MLB execution ledger observe-only
+    notes: NOT IMPLEMENTED. Observe-only contract. Not Vital. Not an OMS. Does not invent fills. Does not submit. MLB 001 ledger is reference_only. No producer edge — same as System Maintenance.
+
+  - id: system_orchestration
+    display_name: Orchestra
+    short_name: Orchestra
+    visual_subtitle: System Orchestration
+    bracket_round: infrastructure
+    bracket_position: 19
+    purpose: Runtime job and pipeline orchestration for the desk. Schedules, retries, and control-plane sequencing. Not the Momento Systems champion box.
+    status: NOT_IMPLEMENTED
+    version: v0.1.0-contract
+    implementation_paths:
+      - ROLLER/roller/momento/
+    research_paths:
+      - docs/momento/ARCHITECTURE.md
+      - research/systimo/SYSTIMO_ORCHESTRA_QUERY_CONTRACT.md
+    frontend_target:
+      kind: momento_page
+      url: http://127.0.0.1:5190/#/orchestra
+      product: Orchestra
+    backend_target:
+      kind: registry_only
+      host: 127.0.0.1
+      port: 8791
+      namespaces: []
+    api_namespace: /momento/systems/system_orchestration
+    upstream_systems: []
+    downstream_systems: []
+    input_contracts:
+      - SystemHealth
+    output_contracts:
+      - SystemHealth
+    health_check: NOT_IMPLEMENTED
+    feature_flags:
+      - LIVE_EXECUTION=FALSE
+    live_capability: false
+    migration_sources: []
+    notes: NOT IMPLEMENTED. Bottom-layer runtime orchestration. Distinct from champion Momento Systems (trade-lifecycle architecture). Does not submit. Do not start momento-live.service. No producer edge — same as System Maintenance.

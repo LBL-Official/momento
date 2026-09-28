@@ -1,0 +1,699 @@
+{
+  "all_folds_r_in_band": false,
+  "ambition": {
+    "claimable": false,
+    "hit": false,
+    "next_milestone": "p_K > p0 with r in [0.12,0.25]; not p_K>=0.82",
+    "p_K": 0.82,
+    "r": 0.18
+  },
+  "candle_path_is_not_a_fill": true,
+  "conclusion": "Residual enter/skip at \u03c4=0.77 with current A+B+C (no L2, candle fills) does not raise EV vs take-all touch-80. Rejects are not failure-enriched: the decision surface scrambles winners rather than cutting losers. EV-max under no-overfit is BASELINE: take the touch-80 enter/skip=ALWAYS (no second filter), subject to existing desk execution (78\u201382 / bail-40), until a decision-layer tighten recovers p_K>p0 with r\u2208[0.12,0.25] and p_R<p0 on game-purged WF. Ambition p_K\u22650.82 is not claimable and is not the next milestone. Next milestone is p_K>p0 with r in band. If that cannot be hit without new features, archive the filter as inactive \u2014 do not keep tuning forever.",
+  "decision_grid": {
+    "adaptive_knn": false,
+    "any_success": false,
+    "grid": "tau_decision_layer_v1",
+    "k": 25,
+    "rows": [
+      {
+        "folds": [
+          {
+            "era": "2025-12",
+            "n": 174.0,
+            "n_keep": 52.0,
+            "p_0": 0.6724137931034483,
+            "p_K": 0.6923076923076923,
+            "p_R": 0.6639344262295082,
+            "r": 0.7011494252873562,
+            "r_in_band": false
+          },
+          {
+            "era": "2026-01",
+            "n": 205.0,
+            "n_keep": 49.0,
+            "p_0": 0.7219512195121951,
+            "p_K": 0.6938775510204082,
+            "p_R": 0.7307692307692307,
+            "r": 0.7609756097560976,
+            "r_in_band": false
+          },
+          {
+            "era": "2026-02",
+            "n": 155.0,
+            "n_keep": 31.0,
+            "p_0": 0.6967741935483871,
+            "p_K": 0.5483870967741935,
+            "p_R": 0.7338709677419355,
+            "r": 0.8,
+            "r_in_band": false
+          },
+          {
+            "era": "2026-03",
+            "n": 175.0,
+            "n_keep": 26.0,
+            "p_0": 0.7371428571428571,
+            "p_K": 0.8461538461538461,
+            "p_R": 0.7181208053691275,
+            "r": 0.8514285714285714,
+            "r_in_band": false
+          },
+          {
+            "era": "2026-04",
+            "n": 88.0,
+            "n_keep": 15.0,
+            "p_0": 0.7727272727272727,
+            "p_K": 0.6666666666666666,
+            "p_R": 0.7945205479452054,
+            "r": 0.8295454545454546,
+            "r_in_band": false
+          }
+        ],
+        "k": 25,
+        "meets_recover_criteria": false,
+        "pooled": {
+          "n": 797.0,
+          "p_0": 0.7151819322459222,
+          "p_K": 0.6878612716763006,
+          "p_R": 0.7227564102564102,
+          "r": 0.7829360100376411
+        },
+        "recover_misses": [
+          "r_band",
+          "p_K_not_above_p0",
+          "p_R_not_below_p0"
+        ],
+        "tau": 0.8,
+        "tau_in_promotion_band": true
+      },
+      {
+        "folds": [
+          {
+            "era": "2025-12",
+            "n": 174.0,
+            "n_keep": 36.0,
+            "p_0": 0.6724137931034483,
+            "p_K": 0.75,
+            "p_R": 0.6521739130434783,
+            "r": 0.7931034482758621,
+            "r_in_band": false
+          },
+          {
+            "era": "2026-01",
+            "n": 205.0,
+            "n_keep": 40.0,
+            "p_0": 0.7219512195121951,
+            "p_K": 0.725,
+            "p_R": 0.7212121212121212,
+            "r": 0.8048780487804879,
+            "r_in_band": false
+          },
+          {
+            "era": "2026-02",
+            "n": 155.0,
+            "n_keep": 22.0,
+            "p_0": 0.6967741935483871,
+            "p_K": 0.5454545454545454,
+            "p_R": 0.7218045112781954,
+            "r": 0.8580645161290322,
+            "r_in_band": false
+          },
+          {
+            "era": "2026-03",
+            "n": 175.0,
+            "n_keep": 18.0,
+            "p_0": 0.7371428571428571,
+            "p_K": 0.7777777777777778,
+            "p_R": 0.732484076433121,
+            "r": 0.8971428571428571,
+            "r_in_band": false
+          },
+          {
+            "era": "2026-04",
+            "n": 88.0,
+            "n_keep": 13.0,
+            "p_0": 0.7727272727272727,
+            "p_K": 0.6153846153846154,
+            "p_R": 0.8,
+            "r": 0.8522727272727273,
+            "r_in_band": false
+          }
+        ],
+        "k": 25,
+        "meets_recover_criteria": false,
+        "pooled": {
+          "n": 797.0,
+          "p_0": 0.7151819322459222,
+          "p_K": 0.6976744186046512,
+          "p_R": 0.718562874251497,
+          "r": 0.8381430363864492
+        },
+        "recover_misses": [
+          "r_band",
+          "p_K_not_above_p0",
+          "p_R_not_below_p0"
+        ],
+        "tau": 0.82,
+        "tau_in_promotion_band": true
+      },
+      {
+        "folds": [
+          {
+            "era": "2025-12",
+            "n": 174.0,
+            "n_keep": 24.0,
+            "p_0": 0.6724137931034483,
+            "p_K": 0.625,
+            "p_R": 0.68,
+            "r": 0.8620689655172413,
+            "r_in_band": false
+          },
+          {
+            "era": "2026-01",
+            "n": 205.0,
+            "n_keep": 24.0,
+            "p_0": 0.7219512195121951,
+            "p_K": 0.6666666666666666,
+            "p_R": 0.7292817679558011,
+            "r": 0.8829268292682927,
+            "r_in_band": false
+          },
+          {
+            "era": "2026-02",
+            "n": 155.0,
+            "n_keep": 14.0,
+            "p_0": 0.6967741935483871,
+            "p_K": 0.5,
+            "p_R": 0.7163120567375887,
+            "r": 0.9096774193548387,
+            "r_in_band": false
+          },
+          {
+            "era": "2026-03",
+            "n": 175.0,
+            "n_keep": 7.0,
+            "p_0": 0.7371428571428571,
+            "p_K": 0.8571428571428571,
+            "p_R": 0.7321428571428571,
+            "r": 0.96,
+            "r_in_band": false
+          },
+          {
+            "era": "2026-04",
+            "n": 88.0,
+            "n_keep": 9.0,
+            "p_0": 0.7727272727272727,
+            "p_K": 0.5555555555555556,
+            "p_R": 0.7974683544303798,
+            "r": 0.8977272727272727,
+            "r_in_band": false
+          }
+        ],
+        "k": 25,
+        "meets_recover_criteria": false,
+        "pooled": {
+          "n": 797.0,
+          "p_0": 0.7151819322459222,
+          "p_K": 0.6282051282051282,
+          "p_R": 0.7246175243393602,
+          "r": 0.9021329987452948
+        },
+        "recover_misses": [
+          "r_band",
+          "p_K_not_above_p0",
+          "p_R_not_below_p0"
+        ],
+        "tau": 0.84,
+        "tau_in_promotion_band": true
+      },
+      {
+        "folds": [
+          {
+            "era": "2025-12",
+            "n": 174.0,
+            "n_keep": 14.0,
+            "p_0": 0.6724137931034483,
+            "p_K": 0.6428571428571429,
+            "p_R": 0.675,
+            "r": 0.9195402298850575,
+            "r_in_band": false
+          },
+          {
+            "era": "2026-01",
+            "n": 205.0,
+            "n_keep": 14.0,
+            "p_0": 0.7219512195121951,
+            "p_K": 0.7142857142857143,
+            "p_R": 0.7225130890052356,
+            "r": 0.9317073170731707,
+            "r_in_band": false
+          },
+          {
+            "era": "2026-02",
+            "n": 155.0,
+            "n_keep": 9.0,
+            "p_0": 0.6967741935483871,
+            "p_K": 0.5555555555555556,
+            "p_R": 0.7054794520547946,
+            "r": 0.9419354838709677,
+            "r_in_band": false
+          },
+          {
+            "era": "2026-03",
+            "n": 175.0,
+            "n_keep": 4.0,
+            "p_0": 0.7371428571428571,
+            "p_K": 0.75,
+            "p_R": 0.7368421052631579,
+            "r": 0.9771428571428571,
+            "r_in_band": false
+          },
+          {
+            "era": "2026-04",
+            "n": 88.0,
+            "n_keep": 4.0,
+            "p_0": 0.7727272727272727,
+            "p_K": 1.0,
+            "p_R": 0.7619047619047619,
+            "r": 0.9545454545454546,
+            "r_in_band": false
+          }
+        ],
+        "k": 25,
+        "meets_recover_criteria": false,
+        "pooled": {
+          "n": 797.0,
+          "p_0": 0.7151819322459222,
+          "p_K": 0.6888888888888889,
+          "p_R": 0.7167553191489362,
+          "r": 0.9435382685069009
+        },
+        "recover_misses": [
+          "r_band",
+          "p_K_not_above_p0",
+          "p_R_not_below_p0"
+        ],
+        "tau": 0.86,
+        "tau_in_promotion_band": false
+      },
+      {
+        "folds": [
+          {
+            "era": "2025-12",
+            "n": 174.0,
+            "n_keep": 8.0,
+            "p_0": 0.6724137931034483,
+            "p_K": 0.75,
+            "p_R": 0.6686746987951807,
+            "r": 0.9540229885057472,
+            "r_in_band": false
+          },
+          {
+            "era": "2026-01",
+            "n": 205.0,
+            "n_keep": 6.0,
+            "p_0": 0.7219512195121951,
+            "p_K": 0.6666666666666666,
+            "p_R": 0.7236180904522613,
+            "r": 0.9707317073170731,
+            "r_in_band": false
+          },
+          {
+            "era": "2026-02",
+            "n": 155.0,
+            "n_keep": 6.0,
+            "p_0": 0.6967741935483871,
+            "p_K": 0.5,
+            "p_R": 0.7046979865771812,
+            "r": 0.9612903225806452,
+            "r_in_band": false
+          },
+          {
+            "era": "2026-03",
+            "n": 175.0,
+            "n_keep": 0.0,
+            "p_0": 0.7371428571428571,
+            "p_K": null,
+            "p_R": 0.7371428571428571,
+            "r": 1.0,
+            "r_in_band": false
+          },
+          {
+            "era": "2026-04",
+            "n": 88.0,
+            "n_keep": 2.0,
+            "p_0": 0.7727272727272727,
+            "p_K": 1.0,
+            "p_R": 0.7674418604651163,
+            "r": 0.9772727272727273,
+            "r_in_band": false
+          }
+        ],
+        "k": 25,
+        "meets_recover_criteria": false,
+        "pooled": {
+          "n": 797.0,
+          "p_0": 0.7151819322459222,
+          "p_K": 0.6818181818181818,
+          "p_R": 0.7161290322580646,
+          "r": 0.972396486825596
+        },
+        "recover_misses": [
+          "r_band",
+          "p_K_not_above_p0",
+          "p_R_not_below_p0"
+        ],
+        "tau": 0.88,
+        "tau_in_promotion_band": false
+      },
+      {
+        "folds": [
+          {
+            "era": "2025-12",
+            "n": 174.0,
+            "n_keep": 4.0,
+            "p_0": 0.6724137931034483,
+            "p_K": 0.75,
+            "p_R": 0.6705882352941176,
+            "r": 0.9770114942528736,
+            "r_in_band": false
+          },
+          {
+            "era": "2026-01",
+            "n": 205.0,
+            "n_keep": 2.0,
+            "p_0": 0.7219512195121951,
+            "p_K": 0.0,
+            "p_R": 0.729064039408867,
+            "r": 0.9902439024390244,
+            "r_in_band": false
+          },
+          {
+            "era": "2026-02",
+            "n": 155.0,
+            "n_keep": 2.0,
+            "p_0": 0.6967741935483871,
+            "p_K": 0.5,
+            "p_R": 0.6993464052287581,
+            "r": 0.9870967741935484,
+            "r_in_band": false
+          },
+          {
+            "era": "2026-03",
+            "n": 175.0,
+            "n_keep": 0.0,
+            "p_0": 0.7371428571428571,
+            "p_K": null,
+            "p_R": 0.7371428571428571,
+            "r": 1.0,
+            "r_in_band": false
+          },
+          {
+            "era": "2026-04",
+            "n": 88.0,
+            "n_keep": 1.0,
+            "p_0": 0.7727272727272727,
+            "p_K": 1.0,
+            "p_R": 0.7701149425287356,
+            "r": 0.9886363636363636,
+            "r_in_band": false
+          }
+        ],
+        "k": 25,
+        "meets_recover_criteria": false,
+        "pooled": {
+          "n": 797.0,
+          "p_0": 0.7151819322459222,
+          "p_K": 0.5555555555555556,
+          "p_R": 0.7170050761421319,
+          "r": 0.9887076537013801
+        },
+        "recover_misses": [
+          "r_band",
+          "p_K_not_above_p0",
+          "p_R_not_below_p0"
+        ],
+        "tau": 0.9,
+        "tau_in_promotion_band": false
+      }
+    ],
+    "taus": [
+      0.8,
+      0.82,
+      0.84,
+      0.86,
+      0.88,
+      0.9
+    ],
+    "winner": null
+  },
+  "enter_skip_has_hedge_columns": false,
+  "fee_model": {
+    "id": "KALSHI_FEE_MODEL_UNRESOLVED",
+    "note": "Production KalshiFeeModel is UNRESOLVED in crates/risk (ZeroFeeModel only). Do not treat placeholder cents as venue fees.",
+    "status": "UNAVAILABLE"
+  },
+  "filter_status": "INACTIVE_NO_RESIDUAL_EDGE",
+  "folds": [
+    {
+      "adaptive_knn": true,
+      "band_compliance_claimed": false,
+      "era": "2025-12",
+      "ev_base": null,
+      "ev_kept": null,
+      "k": 25.0,
+      "m_pcs": 4.0,
+      "n": 174.0,
+      "n_keep": 66.0,
+      "n_reject": 108.0,
+      "n_test": 174.0,
+      "n_train": 329.0,
+      "p_0": 0.6724137931034483,
+      "p_K": 0.6818181818181818,
+      "p_K_identity": 0.6818181818181819,
+      "p_R": 0.6666666666666666,
+      "pca_flips": {
+        "pc1": 1,
+        "pc2": 1
+      },
+      "promoted": [],
+      "r": 0.6206896551724138,
+      "r_in_band": false,
+      "status": "OK",
+      "tau": 0.77,
+      "tau_in_spec_band": true,
+      "tau_mode": "spec_band"
+    },
+    {
+      "adaptive_knn": true,
+      "band_compliance_claimed": false,
+      "era": "2026-01",
+      "ev_base": null,
+      "ev_kept": null,
+      "k": 15.0,
+      "m_pcs": 4.0,
+      "n": 205.0,
+      "n_keep": 69.0,
+      "n_reject": 136.0,
+      "n_test": 205.0,
+      "n_train": 503.0,
+      "p_0": 0.7219512195121951,
+      "p_K": 0.7246376811594203,
+      "p_K_identity": 0.7246376811594202,
+      "p_R": 0.7205882352941176,
+      "pca_flips": {
+        "pc1": -1,
+        "pc2": 1
+      },
+      "promoted": [],
+      "r": 0.6634146341463414,
+      "r_in_band": false,
+      "status": "OK",
+      "tau": 0.77,
+      "tau_in_spec_band": true,
+      "tau_mode": "spec_band"
+    },
+    {
+      "adaptive_knn": true,
+      "band_compliance_claimed": false,
+      "era": "2026-02",
+      "ev_base": null,
+      "ev_kept": null,
+      "k": 15.0,
+      "m_pcs": 4.0,
+      "n": 155.0,
+      "n_keep": 41.0,
+      "n_reject": 114.0,
+      "n_test": 155.0,
+      "n_train": 708.0,
+      "p_0": 0.6967741935483871,
+      "p_K": 0.5853658536585366,
+      "p_K_identity": 0.5853658536585367,
+      "p_R": 0.7368421052631579,
+      "pca_flips": {
+        "pc1": 1,
+        "pc2": 1
+      },
+      "promoted": [],
+      "r": 0.7354838709677419,
+      "r_in_band": false,
+      "status": "OK",
+      "tau": 0.77,
+      "tau_in_spec_band": true,
+      "tau_mode": "spec_band"
+    },
+    {
+      "adaptive_knn": true,
+      "band_compliance_claimed": false,
+      "era": "2026-03",
+      "ev_base": null,
+      "ev_kept": null,
+      "k": 15.0,
+      "m_pcs": 4.0,
+      "n": 175.0,
+      "n_keep": 40.0,
+      "n_reject": 135.0,
+      "n_test": 175.0,
+      "n_train": 862.0,
+      "p_0": 0.7371428571428571,
+      "p_K": 0.75,
+      "p_K_identity": 0.75,
+      "p_R": 0.7333333333333333,
+      "pca_flips": {
+        "pc1": 1,
+        "pc2": 1
+      },
+      "promoted": [],
+      "r": 0.7714285714285715,
+      "r_in_band": false,
+      "status": "OK",
+      "tau": 0.77,
+      "tau_in_spec_band": true,
+      "tau_mode": "spec_band"
+    },
+    {
+      "adaptive_knn": true,
+      "band_compliance_claimed": false,
+      "era": "2026-04",
+      "ev_base": null,
+      "ev_kept": null,
+      "k": 15.0,
+      "m_pcs": 4.0,
+      "n": 88.0,
+      "n_keep": 27.0,
+      "n_reject": 61.0,
+      "n_test": 88.0,
+      "n_train": 1038.0,
+      "p_0": 0.7727272727272727,
+      "p_K": 0.7037037037037037,
+      "p_K_identity": 0.7037037037037036,
+      "p_R": 0.8032786885245902,
+      "pca_flips": {
+        "pc1": 1,
+        "pc2": 1
+      },
+      "promoted": [],
+      "r": 0.6931818181818181,
+      "r_in_band": false,
+      "status": "OK",
+      "tau": 0.77,
+      "tau_in_spec_band": true,
+      "tau_mode": "spec_band"
+    }
+  ],
+  "hedge_rows": 1128,
+  "l2": "SOURCE_UNAVAILABLE",
+  "label_basis": "candle_path_proxy",
+  "leakage": {
+    "ok": null
+  },
+  "max_pcs": 4,
+  "n_episodes": 1547,
+  "n_filled": 1128,
+  "n_folds": 5,
+  "n_games": 1311,
+  "note": "RESEARCH ONLY. Touch-80 kept. Not a live rule. Candle path \u2260 fill on warehouse. Failed promotion \u2192 tighten, do not expand. Band compliance requires \u03c4 \u2208 [0.77, 0.84]; out_of_band_synthetic forces promotion FAILED. Pooled r cannot hide fold r_in_band failures. Synthetic fail \u2260 permission to expand. Real p0 required before p_K\u22650.82 claims.",
+  "pca_stability": {
+    "n_fits": 5,
+    "pc1_mean_abs_cos": null,
+    "pc2_mean_abs_cos": null
+  },
+  "periods_stored": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "pooled": {
+    "all_folds_r_in_band": false,
+    "ev_base": null,
+    "ev_kept": null,
+    "fold_r_failures": [
+      "2025-12",
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04"
+    ],
+    "n": 797.0,
+    "n_folds_r_out_of_band": 5.0,
+    "n_keep": 243.0,
+    "n_reject": 554.0,
+    "p_0": 0.7151819322459222,
+    "p_K": 0.691358024691358,
+    "p_K_identity": 0.691358024691358,
+    "p_R": 0.7256317689530686,
+    "r": 0.6951066499372648,
+    "r_in_band": false
+  },
+  "promoted_residuals": [],
+  "promotion": "FAILED",
+  "promotion_blockers": [
+    "fold_r_out_of_band",
+    "pooled_r_out_of_band",
+    "p_K_below_ambition",
+    "p_R_above_max"
+  ],
+  "q2_policy_filter": false,
+  "r_in_band_pooled": false,
+  "recommended_research_policy": "Unfiltered touch-80 (desk 78\u201382 / bail-40 only). Second filter inactive.",
+  "representation": "pcs_plus_knn",
+  "sealed_real_data": false,
+  "source": "WAREHOUSE_2025_2026",
+  "state_fair": {
+    "202511": {
+      "through": 202510,
+      "version": "v1_logistic_prior_yyyymm"
+    },
+    "202512": {
+      "through": 202511,
+      "version": "v1_logistic_prior_yyyymm"
+    },
+    "202601": {
+      "through": 202512,
+      "version": "v1_logistic_prior_yyyymm"
+    },
+    "202602": {
+      "through": 202601,
+      "version": "v1_logistic_prior_yyyymm"
+    },
+    "202603": {
+      "through": 202602,
+      "version": "v1_logistic_prior_yyyymm"
+    },
+    "202604": {
+      "through": 202603,
+      "version": "v1_logistic_prior_yyyymm"
+    }
+  },
+  "tau_modes": [
+    "spec_band"
+  ],
+  "tau_out_of_band_eras": [],
+  "warehouse_gate": {
+    "ambition_claimable": false,
+    "raw_present": true,
+    "reason": "filter_status=INACTIVE_NO_RESIDUAL_EDGE; p_K>=0.82 not claimable"
+  },
+  "warehouse_raw_present": true
+}

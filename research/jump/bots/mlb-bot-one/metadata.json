@@ -1,0 +1,33 @@
+{
+  "aws_runtime_id": "momento-live.service",
+  "bot_id": "mlb-bot-one",
+  "bots_version": "jump_b_bots_v1.0.0",
+  "created_at": "2026-08-01T00:00:00Z",
+  "engine_pointer": "apps/trading-engine",
+  "environment": "PRODUCTION",
+  "factory_id": "mlb_factory_v1",
+  "factory_version": "mlb_factory_v1.0.0",
+  "iti_version": null,
+  "kind": "grandfathered",
+  "live_armed_confirmed": true,
+  "name": "MLB Bot 001",
+  "notes": "Existing MLB desk. Predates Jump. Not created through ITI.",
+  "observation": {
+    "aws_runtime_id": "momento-live.service",
+    "detail": null,
+    "environment": "PRODUCTION",
+    "health": "HEALTHY",
+    "live_armed_confirmed": true,
+    "observed": true,
+    "source": "vital",
+    "status": "RUNNING",
+    "vital_bot_id": "mlb-001"
+  },
+  "slot_id": null,
+  "status": "RUNNING",
+  "strategy_fingerprint": null,
+  "strategy_folder": null,
+  "strategy_pointer": "strategies/mlb",
+  "updated_at": "2026-09-16T21:24:49Z",
+  "vital_bot_id": "mlb-001"
+}

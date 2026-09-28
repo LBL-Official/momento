@@ -1,0 +1,7 @@
+{
+  "team_features": {
+    "rolling_windows": [5, 10],
+    "include": ["wins", "losses", "win_pct"],
+    "order_by": "result_available_at"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "coverage_version": "W4.COVERAGE.1.0.0",
+  "window_start": "2026-06-18",
+  "window_end": "2026-06-18",
+  "reconstructed_tickers": 18,
+  "paths_by_completeness": {
+    "TRADES_ONLY": 18
+  },
+  "identity_mapped": 0,
+  "identity_unmatched": 18,
+  "identity_ambiguous": 0,
+  "coupled_episodes": 9,
+  "coupled_both_yes": 9,
+  "coupled_missing_side": 0,
+  "starting_price_unverified": 18,
+  "starting_price_verified": 0,
+  "lifetime_open_to_settlement": 0,
+  "lifetime_settlement_day_only": 0,
+  "lifetime_unknown": 18,
+  "blocked_on_ingest_observations": 0,
+  "ingest_only_pit_snapshots": 8,
+  "completeness_claimed": true,
+  "notes": [
+    "merged Data-Real COMPLETE raw for 2026-06-18",
+    "W5 handoff: market path exists; event↔market sync is not done",
+    "FULL_L2 not claimed. 2024 Kalshi not claimed.",
+    "identity consumed from Backtesting Suite/Foundation/Ingest/runs/ingest-20260826T095038Z-2bc3d10b5833/game_market_pairs.json (8428 tickers indexed)"
+  ]
+}

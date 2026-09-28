@@ -1,0 +1,2138 @@
+{
+  "written_utc": "2026-09-06T05:38:46.053249+00:00",
+  "research_only": true,
+  "candle_path_not_fill": true,
+  "live_execution_changed": false,
+  "universe": "KXWNBAGAME FIRST80 with ESPN PBP entry in Q2 or Q3",
+  "quarter_definition": "ESPN PBP period of last play with observed wall <= first_80_timestamp; WNBA regulation 4 x 10:00",
+  "last_5_definition": "first tradable yes_bid_close <= 40 while period==4 and period remaining <= 5:00. OT is not last-5 regulation.",
+  "excluded_from_q23": {
+    "Q1": 127,
+    "Q4": 83,
+    "OT": 2,
+    "UNALIGNED": 131
+  },
+  "partition": {
+    "Q4": 83,
+    "Q3": 119,
+    "Q2": 127,
+    "Q1": 127,
+    "UNALIGNED": 131,
+    "OT": 2
+  },
+  "q2": {
+    "n": 127,
+    "W": 105,
+    "T40": 38,
+    "win_no_t40": 89,
+    "win_t40": 16,
+    "loss_no_t40": 0,
+    "loss_t40": 22,
+    "p_win_pct": 82.6772,
+    "strategy_win_rate_pct": 70.0787,
+    "strategy_win_rate_ci95": [
+      61.6208,
+      77.3577
+    ],
+    "gross_ev_R": 0.1024,
+    "gross_ev_cents": 2.0472
+  },
+  "q3": {
+    "n": 119,
+    "W": 100,
+    "T40": 25,
+    "win_no_t40": 94,
+    "win_t40": 6,
+    "loss_no_t40": 0,
+    "loss_t40": 19,
+    "p_win_pct": 84.0336,
+    "strategy_win_rate_pct": 78.9916,
+    "strategy_win_rate_ci95": [
+      70.8242,
+      85.3457
+    ],
+    "gross_ev_R": 0.3697,
+    "gross_ev_cents": 7.395
+  },
+  "q23": {
+    "n": 246,
+    "W": 205,
+    "T40": 63,
+    "win_no_t40": 183,
+    "win_t40": 22,
+    "loss_no_t40": 0,
+    "loss_t40": 41,
+    "p_win_pct": 83.3333,
+    "strategy_win_rate_pct": 74.3902,
+    "strategy_win_rate_ci95": [
+      68.5899,
+      79.4405
+    ],
+    "gross_ev_R": 0.2317,
+    "gross_ev_cents": 4.6341
+  },
+  "splits_q23": {
+    "IN_SAMPLE": {
+      "n": 120,
+      "W": 101,
+      "T40": 30,
+      "win_no_t40": 90,
+      "win_t40": 11,
+      "loss_no_t40": 0,
+      "loss_t40": 19,
+      "p_win_pct": 84.1667,
+      "strategy_win_rate_pct": 75.0,
+      "strategy_win_rate_ci95": [
+        66.5587,
+        81.8903
+      ],
+      "gross_ev_R": 0.25,
+      "gross_ev_cents": 5.0
+    },
+    "VALIDATION": {
+      "n": 77,
+      "W": 66,
+      "T40": 17,
+      "win_no_t40": 60,
+      "win_t40": 6,
+      "loss_no_t40": 0,
+      "loss_t40": 11,
+      "p_win_pct": 85.7143,
+      "strategy_win_rate_pct": 77.9221,
+      "strategy_win_rate_ci95": [
+        67.4567,
+        85.7337
+      ],
+      "gross_ev_R": 0.3377,
+      "gross_ev_cents": 6.7532
+    },
+    "OOS": {
+      "n": 49,
+      "W": 38,
+      "T40": 16,
+      "win_no_t40": 33,
+      "win_t40": 5,
+      "loss_no_t40": 0,
+      "loss_t40": 11,
+      "p_win_pct": 77.551,
+      "strategy_win_rate_pct": 67.3469,
+      "strategy_win_rate_ci95": [
+        53.3789,
+        78.7927
+      ],
+      "gross_ev_R": 0.0204,
+      "gross_ev_cents": 0.4082
+    }
+  },
+  "last_5_minutes_40_losers": {
+    "Q2": {
+      "n_losers": 22,
+      "n_t40": 38,
+      "n_last_5_q4": 13,
+      "pct_of_losers": 59.09,
+      "pct_of_t40": 34.21,
+      "pct_of_slice": 10.24
+    },
+    "Q3": {
+      "n_losers": 19,
+      "n_t40": 25,
+      "n_last_5_q4": 13,
+      "pct_of_losers": 68.42,
+      "pct_of_t40": 52.0,
+      "pct_of_slice": 10.92
+    },
+    "Q2\u222aQ3": {
+      "n_losers": 41,
+      "n_t40": 63,
+      "n_last_5_q4": 26,
+      "pct_of_losers": 63.41,
+      "pct_of_t40": 41.27,
+      "pct_of_slice": 10.57
+    }
+  },
+  "late_clock": {
+    "Q2": {
+      "bucket": "Q2",
+      "label": "Q2",
+      "n": 127,
+      "n_winners": 105,
+      "n_losers": 22,
+      "n_t40": 38,
+      "n_t40_before_last_6": 8,
+      "n_t40_last_6_or_ot": 14,
+      "n_t40_last_6_regulation": 13,
+      "pct_losers_last_6_or_ot": 63.64,
+      "pct_losers_before_last_6": 36.36,
+      "cumulative_at_most_k_min": [
+        {
+          "at_most_min": 6,
+          "label": "\u22646:00 4Q remaining",
+          "n": 13,
+          "pct_of_losers": 59.09,
+          "pct_of_t40": 34.21,
+          "pct_of_slice": 10.24
+        },
+        {
+          "at_most_min": 5,
+          "label": "\u22645:00 4Q remaining",
+          "n": 13,
+          "pct_of_losers": 59.09,
+          "pct_of_t40": 34.21,
+          "pct_of_slice": 10.24
+        },
+        {
+          "at_most_min": 4,
+          "label": "\u22644:00 4Q remaining",
+          "n": 12,
+          "pct_of_losers": 54.55,
+          "pct_of_t40": 31.58,
+          "pct_of_slice": 9.45
+        },
+        {
+          "at_most_min": 3,
+          "label": "\u22643:00 4Q remaining",
+          "n": 8,
+          "pct_of_losers": 36.36,
+          "pct_of_t40": 21.05,
+          "pct_of_slice": 6.3
+        },
+        {
+          "at_most_min": 2,
+          "label": "\u22642:00 4Q remaining",
+          "n": 6,
+          "pct_of_losers": 27.27,
+          "pct_of_t40": 15.79,
+          "pct_of_slice": 4.72
+        },
+        {
+          "at_most_min": 1,
+          "label": "\u22641:00 4Q remaining",
+          "n": 6,
+          "pct_of_losers": 27.27,
+          "pct_of_t40": 15.79,
+          "pct_of_slice": 4.72
+        }
+      ],
+      "discrete_bins": [
+        {
+          "bin": "BEFORE_LAST_6",
+          "n": 8,
+          "pct_of_losers": 36.36
+        },
+        {
+          "bin": "5:01\u20136:00",
+          "n": 0,
+          "pct_of_losers": 0.0
+        },
+        {
+          "bin": "4:01\u20135:00",
+          "n": 1,
+          "pct_of_losers": 4.55
+        },
+        {
+          "bin": "3:01\u20134:00",
+          "n": 4,
+          "pct_of_losers": 18.18
+        },
+        {
+          "bin": "2:01\u20133:00",
+          "n": 2,
+          "pct_of_losers": 9.09
+        },
+        {
+          "bin": "1:01\u20132:00",
+          "n": 0,
+          "pct_of_losers": 0.0
+        },
+        {
+          "bin": "0:00\u20131:00",
+          "n": 6,
+          "pct_of_losers": 27.27
+        },
+        {
+          "bin": "OT",
+          "n": 1,
+          "pct_of_losers": 4.55
+        }
+      ],
+      "late_games": [
+        {
+          "ticker": "KXWNBAGAME-25AUG17INDCONN-CONN",
+          "event_id": "KXWNBAGAME-25AUG17INDCONN",
+          "game_date": "2025-08-17",
+          "team": "Connecticut",
+          "t40_period": 4,
+          "t40_period_remaining_s": 1.4,
+          "t40_remaining_clock": "00:01",
+          "t40_closing_clock": "00:01",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25SEP18INDATL-ATL",
+          "event_id": "KXWNBAGAME-25SEP18INDATL",
+          "game_date": "2025-09-18",
+          "team": "Atlanta",
+          "t40_period": 4,
+          "t40_period_remaining_s": 7.4,
+          "t40_remaining_clock": "00:07",
+          "t40_closing_clock": "00:07",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26MAY09ATLMIN-MIN",
+          "event_id": "KXWNBAGAME-26MAY09ATLMIN",
+          "game_date": "2026-05-09",
+          "team": "Minnesota",
+          "t40_period": 4,
+          "t40_period_remaining_s": 12.0,
+          "t40_remaining_clock": "00:12",
+          "t40_closing_clock": "00:12",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26MAY12MINPHX-PHX",
+          "event_id": "KXWNBAGAME-26MAY12MINPHX",
+          "game_date": "2026-05-12",
+          "team": "Phoenix",
+          "t40_period": 4,
+          "t40_period_remaining_s": 25.6,
+          "t40_remaining_clock": "00:26",
+          "t40_closing_clock": "00:26",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26MAY14MINDAL-DAL",
+          "event_id": "KXWNBAGAME-26MAY14MINDAL",
+          "game_date": "2026-05-14",
+          "team": "Dallas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 51.0,
+          "t40_remaining_clock": "00:51",
+          "t40_closing_clock": "00:51",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25AUG21CHINY-NY",
+          "event_id": "KXWNBAGAME-25AUG21CHINY",
+          "game_date": "2025-08-21",
+          "team": "New York",
+          "t40_period": 4,
+          "t40_period_remaining_s": 56.9,
+          "t40_remaining_clock": "00:57",
+          "t40_closing_clock": "00:57",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26MAY12NYPDX-NY",
+          "event_id": "KXWNBAGAME-26MAY12NYPDX",
+          "game_date": "2026-05-12",
+          "team": "New York",
+          "t40_period": 4,
+          "t40_period_remaining_s": 153.0,
+          "t40_remaining_clock": "02:33",
+          "t40_closing_clock": "02:33",
+          "bin": "2:01\u20133:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25JUL13WSHSEA-SEA",
+          "event_id": "KXWNBAGAME-25JUL13WSHSEA",
+          "game_date": "2025-07-13",
+          "team": "Seattle",
+          "t40_period": 4,
+          "t40_period_remaining_s": 154.0,
+          "t40_remaining_clock": "02:34",
+          "t40_closing_clock": "02:34",
+          "bin": "2:01\u20133:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26JUN19TORCONN-CONN",
+          "event_id": "KXWNBAGAME-26JUN19TORCONN",
+          "game_date": "2026-06-19",
+          "team": "Connecticut",
+          "t40_period": 4,
+          "t40_period_remaining_s": 185.0,
+          "t40_remaining_clock": "03:05",
+          "t40_closing_clock": "03:05",
+          "bin": "3:01\u20134:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26AUG28WSHLA-WSH",
+          "event_id": "KXWNBAGAME-26AUG28WSHLA",
+          "game_date": "2026-08-28",
+          "team": "Washington",
+          "t40_period": 4,
+          "t40_period_remaining_s": 191.0,
+          "t40_remaining_clock": "03:11",
+          "t40_closing_clock": "03:11",
+          "bin": "3:01\u20134:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25JUN26LAIND-IND",
+          "event_id": "KXWNBAGAME-25JUN26LAIND",
+          "game_date": "2025-06-26",
+          "team": "Indiana",
+          "t40_period": 4,
+          "t40_period_remaining_s": 218.0,
+          "t40_remaining_clock": "03:38",
+          "t40_closing_clock": "03:38",
+          "bin": "3:01\u20134:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25SEP06PHXCONN-PHX",
+          "event_id": "KXWNBAGAME-25SEP06PHXCONN",
+          "game_date": "2025-09-06",
+          "team": "Phoenix",
+          "t40_period": 4,
+          "t40_period_remaining_s": 220.0,
+          "t40_remaining_clock": "03:40",
+          "t40_closing_clock": "03:40",
+          "bin": "3:01\u20134:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26JUL29GSPHX-GS",
+          "event_id": "KXWNBAGAME-26JUL29GSPHX",
+          "game_date": "2026-07-29",
+          "team": "Golden State",
+          "t40_period": 4,
+          "t40_period_remaining_s": 250.0,
+          "t40_remaining_clock": "04:10",
+          "t40_closing_clock": "04:10",
+          "bin": "4:01\u20135:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25SEP23PHXMIN-MIN",
+          "event_id": "KXWNBAGAME-25SEP23PHXMIN",
+          "game_date": "2025-09-23",
+          "team": "Minnesota",
+          "t40_period": 5,
+          "t40_period_remaining_s": 176.0,
+          "t40_remaining_clock": "02:56",
+          "t40_closing_clock": null,
+          "bin": "OT",
+          "in_last_6": true
+        }
+      ],
+      "games": [
+        {
+          "ticker": "KXWNBAGAME-25AUG17INDCONN-CONN",
+          "event_id": "KXWNBAGAME-25AUG17INDCONN",
+          "game_date": "2025-08-17",
+          "team": "Connecticut",
+          "t40_period": 4,
+          "t40_period_remaining_s": 1.4,
+          "t40_remaining_clock": "00:01",
+          "t40_closing_clock": "00:01",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25SEP18INDATL-ATL",
+          "event_id": "KXWNBAGAME-25SEP18INDATL",
+          "game_date": "2025-09-18",
+          "team": "Atlanta",
+          "t40_period": 4,
+          "t40_period_remaining_s": 7.4,
+          "t40_remaining_clock": "00:07",
+          "t40_closing_clock": "00:07",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26MAY09ATLMIN-MIN",
+          "event_id": "KXWNBAGAME-26MAY09ATLMIN",
+          "game_date": "2026-05-09",
+          "team": "Minnesota",
+          "t40_period": 4,
+          "t40_period_remaining_s": 12.0,
+          "t40_remaining_clock": "00:12",
+          "t40_closing_clock": "00:12",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26MAY12MINPHX-PHX",
+          "event_id": "KXWNBAGAME-26MAY12MINPHX",
+          "game_date": "2026-05-12",
+          "team": "Phoenix",
+          "t40_period": 4,
+          "t40_period_remaining_s": 25.6,
+          "t40_remaining_clock": "00:26",
+          "t40_closing_clock": "00:26",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26MAY14MINDAL-DAL",
+          "event_id": "KXWNBAGAME-26MAY14MINDAL",
+          "game_date": "2026-05-14",
+          "team": "Dallas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 51.0,
+          "t40_remaining_clock": "00:51",
+          "t40_closing_clock": "00:51",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25AUG21CHINY-NY",
+          "event_id": "KXWNBAGAME-25AUG21CHINY",
+          "game_date": "2025-08-21",
+          "team": "New York",
+          "t40_period": 4,
+          "t40_period_remaining_s": 56.9,
+          "t40_remaining_clock": "00:57",
+          "t40_closing_clock": "00:57",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26MAY12NYPDX-NY",
+          "event_id": "KXWNBAGAME-26MAY12NYPDX",
+          "game_date": "2026-05-12",
+          "team": "New York",
+          "t40_period": 4,
+          "t40_period_remaining_s": 153.0,
+          "t40_remaining_clock": "02:33",
+          "t40_closing_clock": "02:33",
+          "bin": "2:01\u20133:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25JUL13WSHSEA-SEA",
+          "event_id": "KXWNBAGAME-25JUL13WSHSEA",
+          "game_date": "2025-07-13",
+          "team": "Seattle",
+          "t40_period": 4,
+          "t40_period_remaining_s": 154.0,
+          "t40_remaining_clock": "02:34",
+          "t40_closing_clock": "02:34",
+          "bin": "2:01\u20133:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26JUN19TORCONN-CONN",
+          "event_id": "KXWNBAGAME-26JUN19TORCONN",
+          "game_date": "2026-06-19",
+          "team": "Connecticut",
+          "t40_period": 4,
+          "t40_period_remaining_s": 185.0,
+          "t40_remaining_clock": "03:05",
+          "t40_closing_clock": "03:05",
+          "bin": "3:01\u20134:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26AUG28WSHLA-WSH",
+          "event_id": "KXWNBAGAME-26AUG28WSHLA",
+          "game_date": "2026-08-28",
+          "team": "Washington",
+          "t40_period": 4,
+          "t40_period_remaining_s": 191.0,
+          "t40_remaining_clock": "03:11",
+          "t40_closing_clock": "03:11",
+          "bin": "3:01\u20134:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25JUN26LAIND-IND",
+          "event_id": "KXWNBAGAME-25JUN26LAIND",
+          "game_date": "2025-06-26",
+          "team": "Indiana",
+          "t40_period": 4,
+          "t40_period_remaining_s": 218.0,
+          "t40_remaining_clock": "03:38",
+          "t40_closing_clock": "03:38",
+          "bin": "3:01\u20134:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25SEP06PHXCONN-PHX",
+          "event_id": "KXWNBAGAME-25SEP06PHXCONN",
+          "game_date": "2025-09-06",
+          "team": "Phoenix",
+          "t40_period": 4,
+          "t40_period_remaining_s": 220.0,
+          "t40_remaining_clock": "03:40",
+          "t40_closing_clock": "03:40",
+          "bin": "3:01\u20134:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26JUL29GSPHX-GS",
+          "event_id": "KXWNBAGAME-26JUL29GSPHX",
+          "game_date": "2026-07-29",
+          "team": "Golden State",
+          "t40_period": 4,
+          "t40_period_remaining_s": 250.0,
+          "t40_remaining_clock": "04:10",
+          "t40_closing_clock": "04:10",
+          "bin": "4:01\u20135:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25SEP23PHXMIN-MIN",
+          "event_id": "KXWNBAGAME-25SEP23PHXMIN",
+          "game_date": "2025-09-23",
+          "team": "Minnesota",
+          "t40_period": 5,
+          "t40_period_remaining_s": 176.0,
+          "t40_remaining_clock": "02:56",
+          "t40_closing_clock": null,
+          "bin": "OT",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25JUN01PHXLA-LA",
+          "event_id": "KXWNBAGAME-25JUN01PHXLA",
+          "game_date": "2025-06-01",
+          "team": "Los Angeles",
+          "t40_period": 3,
+          "t40_period_remaining_s": 38.1,
+          "t40_remaining_clock": "10:38",
+          "t40_closing_clock": null,
+          "bin": "BEFORE_LAST_6",
+          "in_last_6": false
+        },
+        {
+          "ticker": "KXWNBAGAME-25AUG10WSHDAL-DAL",
+          "event_id": "KXWNBAGAME-25AUG10WSHDAL",
+          "game_date": "2025-08-10",
+          "team": "Dallas",
+          "t40_period": 3,
+          "t40_period_remaining_s": 249.0,
+          "t40_remaining_clock": "14:09",
+          "t40_closing_clock": null,
+          "bin": "BEFORE_LAST_6",
+          "in_last_6": false
+        },
+        {
+          "ticker": "KXWNBAGAME-26AUG06LVIND-IND",
+          "event_id": "KXWNBAGAME-26AUG06LVIND",
+          "game_date": "2026-08-06",
+          "team": "Indiana",
+          "t40_period": 3,
+          "t40_period_remaining_s": 278.0,
+          "t40_remaining_clock": "14:38",
+          "t40_closing_clock": null,
+          "bin": "BEFORE_LAST_6",
+          "in_last_6": false
+        },
+        {
+          "ticker": "KXWNBAGAME-26JUL18NYIND-NY",
+          "event_id": "KXWNBAGAME-26JUL18NYIND",
+          "game_date": "2026-07-18",
+          "team": "New York",
+          "t40_period": 3,
+          "t40_period_remaining_s": 300.0,
+          "t40_remaining_clock": "15:00",
+          "t40_closing_clock": null,
+          "bin": "BEFORE_LAST_6",
+          "in_last_6": false
+        },
+        {
+          "ticker": "KXWNBAGAME-26MAY23PDXTOR-TOR",
+          "event_id": "KXWNBAGAME-26MAY23PDXTOR",
+          "game_date": "2026-05-23",
+          "team": "Toronto",
+          "t40_period": 3,
+          "t40_period_remaining_s": 302.0,
+          "t40_remaining_clock": "15:02",
+          "t40_closing_clock": null,
+          "bin": "BEFORE_LAST_6",
+          "in_last_6": false
+        },
+        {
+          "ticker": "KXWNBAGAME-26MAY28LVDAL-LV",
+          "event_id": "KXWNBAGAME-26MAY28LVDAL",
+          "game_date": "2026-05-28",
+          "team": "Las Vegas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 392.0,
+          "t40_remaining_clock": "06:32",
+          "t40_closing_clock": "06:32",
+          "bin": "BEFORE_LAST_6",
+          "in_last_6": false
+        },
+        {
+          "ticker": "KXWNBAGAME-25JUN19PHXNY-NY",
+          "event_id": "KXWNBAGAME-25JUN19PHXNY",
+          "game_date": "2025-06-19",
+          "team": "New York",
+          "t40_period": 4,
+          "t40_period_remaining_s": 398.0,
+          "t40_remaining_clock": "06:38",
+          "t40_closing_clock": "06:38",
+          "bin": "BEFORE_LAST_6",
+          "in_last_6": false
+        },
+        {
+          "ticker": "KXWNBAGAME-26MAY23LALV-LV",
+          "event_id": "KXWNBAGAME-26MAY23LALV",
+          "game_date": "2026-05-23",
+          "team": "Las Vegas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 542.0,
+          "t40_remaining_clock": "09:02",
+          "t40_closing_clock": "09:02",
+          "bin": "BEFORE_LAST_6",
+          "in_last_6": false
+        }
+      ]
+    },
+    "Q3": {
+      "bucket": "Q3",
+      "label": "Q3",
+      "n": 119,
+      "n_winners": 100,
+      "n_losers": 19,
+      "n_t40": 25,
+      "n_t40_before_last_6": 5,
+      "n_t40_last_6_or_ot": 14,
+      "n_t40_last_6_regulation": 14,
+      "pct_losers_last_6_or_ot": 73.68,
+      "pct_losers_before_last_6": 26.32,
+      "cumulative_at_most_k_min": [
+        {
+          "at_most_min": 6,
+          "label": "\u22646:00 4Q remaining",
+          "n": 14,
+          "pct_of_losers": 73.68,
+          "pct_of_t40": 56.0,
+          "pct_of_slice": 11.76
+        },
+        {
+          "at_most_min": 5,
+          "label": "\u22645:00 4Q remaining",
+          "n": 13,
+          "pct_of_losers": 68.42,
+          "pct_of_t40": 52.0,
+          "pct_of_slice": 10.92
+        },
+        {
+          "at_most_min": 4,
+          "label": "\u22644:00 4Q remaining",
+          "n": 13,
+          "pct_of_losers": 68.42,
+          "pct_of_t40": 52.0,
+          "pct_of_slice": 10.92
+        },
+        {
+          "at_most_min": 3,
+          "label": "\u22643:00 4Q remaining",
+          "n": 11,
+          "pct_of_losers": 57.89,
+          "pct_of_t40": 44.0,
+          "pct_of_slice": 9.24
+        },
+        {
+          "at_most_min": 2,
+          "label": "\u22642:00 4Q remaining",
+          "n": 9,
+          "pct_of_losers": 47.37,
+          "pct_of_t40": 36.0,
+          "pct_of_slice": 7.56
+        },
+        {
+          "at_most_min": 1,
+          "label": "\u22641:00 4Q remaining",
+          "n": 8,
+          "pct_of_losers": 42.11,
+          "pct_of_t40": 32.0,
+          "pct_of_slice": 6.72
+        }
+      ],
+      "discrete_bins": [
+        {
+          "bin": "BEFORE_LAST_6",
+          "n": 5,
+          "pct_of_losers": 26.32
+        },
+        {
+          "bin": "5:01\u20136:00",
+          "n": 1,
+          "pct_of_losers": 5.26
+        },
+        {
+          "bin": "4:01\u20135:00",
+          "n": 0,
+          "pct_of_losers": 0.0
+        },
+        {
+          "bin": "3:01\u20134:00",
+          "n": 2,
+          "pct_of_losers": 10.53
+        },
+        {
+          "bin": "2:01\u20133:00",
+          "n": 2,
+          "pct_of_losers": 10.53
+        },
+        {
+          "bin": "1:01\u20132:00",
+          "n": 1,
+          "pct_of_losers": 5.26
+        },
+        {
+          "bin": "0:00\u20131:00",
+          "n": 8,
+          "pct_of_losers": 42.11
+        },
+        {
+          "bin": "OT",
+          "n": 0,
+          "pct_of_losers": 0.0
+        }
+      ],
+      "late_games": [
+        {
+          "ticker": "KXWNBAGAME-26JUL29ATLDAL-DAL",
+          "event_id": "KXWNBAGAME-26JUL29ATLDAL",
+          "game_date": "2026-07-29",
+          "team": "Dallas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 0.0,
+          "t40_remaining_clock": "00:00",
+          "t40_closing_clock": "00:00",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26JUL22LVWSH-LV",
+          "event_id": "KXWNBAGAME-26JUL22LVWSH",
+          "game_date": "2026-07-22",
+          "team": "Las Vegas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 12.8,
+          "t40_remaining_clock": "00:13",
+          "t40_closing_clock": "00:13",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26JUL20NYDAL-DAL",
+          "event_id": "KXWNBAGAME-26JUL20NYDAL",
+          "game_date": "2026-07-20",
+          "team": "Dallas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 12.9,
+          "t40_remaining_clock": "00:13",
+          "t40_closing_clock": "00:13",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26JUN21WSHMIN-MIN",
+          "event_id": "KXWNBAGAME-26JUN21WSHMIN",
+          "game_date": "2026-06-21",
+          "team": "Minnesota",
+          "t40_period": 4,
+          "t40_period_remaining_s": 19.3,
+          "t40_remaining_clock": "00:19",
+          "t40_closing_clock": "00:19",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26AUG16INDATL-ATL",
+          "event_id": "KXWNBAGAME-26AUG16INDATL",
+          "game_date": "2026-08-16",
+          "team": "Atlanta",
+          "t40_period": 4,
+          "t40_period_remaining_s": 21.7,
+          "t40_remaining_clock": "00:22",
+          "t40_closing_clock": "00:22",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25SEP16LVSEA-LV",
+          "event_id": "KXWNBAGAME-25SEP16LVSEA",
+          "game_date": "2025-09-16",
+          "team": "Las Vegas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 31.0,
+          "t40_remaining_clock": "00:31",
+          "t40_closing_clock": "00:31",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25JUL10LVWSH-LV",
+          "event_id": "KXWNBAGAME-25JUL10LVWSH",
+          "game_date": "2025-07-10",
+          "team": "Las Vegas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 39.1,
+          "t40_remaining_clock": "00:39",
+          "t40_closing_clock": "00:39",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26AUG16PDXPHX-PHX",
+          "event_id": "KXWNBAGAME-26AUG16PDXPHX",
+          "game_date": "2026-08-16",
+          "team": "Phoenix",
+          "t40_period": 4,
+          "t40_period_remaining_s": 54.9,
+          "t40_remaining_clock": "00:55",
+          "t40_closing_clock": "00:55",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26JUN17SEAPDX-SEA",
+          "event_id": "KXWNBAGAME-26JUN17SEAPDX",
+          "game_date": "2026-06-17",
+          "team": "Seattle",
+          "t40_period": 4,
+          "t40_period_remaining_s": 77.0,
+          "t40_remaining_clock": "01:17",
+          "t40_closing_clock": "01:17",
+          "bin": "1:01\u20132:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26AUG05DALWSH-DAL",
+          "event_id": "KXWNBAGAME-26AUG05DALWSH",
+          "game_date": "2026-08-05",
+          "team": "Dallas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 131.0,
+          "t40_remaining_clock": "02:11",
+          "t40_closing_clock": "02:11",
+          "bin": "2:01\u20133:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25SEP17MINGSV-GSV",
+          "event_id": "KXWNBAGAME-25SEP17MINGSV",
+          "game_date": "2025-09-17",
+          "team": "Golden State",
+          "t40_period": 4,
+          "t40_period_remaining_s": 150.0,
+          "t40_remaining_clock": "02:30",
+          "t40_closing_clock": "02:30",
+          "bin": "2:01\u20133:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25SEP28MINPHX-MIN",
+          "event_id": "KXWNBAGAME-25SEP28MINPHX",
+          "game_date": "2025-09-28",
+          "team": "Minnesota",
+          "t40_period": 4,
+          "t40_period_remaining_s": 199.0,
+          "t40_remaining_clock": "03:19",
+          "t40_closing_clock": "03:19",
+          "bin": "3:01\u20134:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26JUN06INDNY-IND",
+          "event_id": "KXWNBAGAME-26JUN06INDNY",
+          "game_date": "2026-06-06",
+          "team": "Indiana",
+          "t40_period": 4,
+          "t40_period_remaining_s": 240.0,
+          "t40_remaining_clock": "04:00",
+          "t40_closing_clock": "04:00",
+          "bin": "3:01\u20134:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25JUN17ATLNY-ATL",
+          "event_id": "KXWNBAGAME-25JUN17ATLNY",
+          "game_date": "2025-06-17",
+          "team": "Atlanta",
+          "t40_period": 4,
+          "t40_period_remaining_s": 313.0,
+          "t40_remaining_clock": "05:13",
+          "t40_closing_clock": "05:13",
+          "bin": "5:01\u20136:00",
+          "in_last_6": true
+        }
+      ],
+      "games": [
+        {
+          "ticker": "KXWNBAGAME-26JUL29ATLDAL-DAL",
+          "event_id": "KXWNBAGAME-26JUL29ATLDAL",
+          "game_date": "2026-07-29",
+          "team": "Dallas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 0.0,
+          "t40_remaining_clock": "00:00",
+          "t40_closing_clock": "00:00",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26JUL22LVWSH-LV",
+          "event_id": "KXWNBAGAME-26JUL22LVWSH",
+          "game_date": "2026-07-22",
+          "team": "Las Vegas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 12.8,
+          "t40_remaining_clock": "00:13",
+          "t40_closing_clock": "00:13",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26JUL20NYDAL-DAL",
+          "event_id": "KXWNBAGAME-26JUL20NYDAL",
+          "game_date": "2026-07-20",
+          "team": "Dallas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 12.9,
+          "t40_remaining_clock": "00:13",
+          "t40_closing_clock": "00:13",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26JUN21WSHMIN-MIN",
+          "event_id": "KXWNBAGAME-26JUN21WSHMIN",
+          "game_date": "2026-06-21",
+          "team": "Minnesota",
+          "t40_period": 4,
+          "t40_period_remaining_s": 19.3,
+          "t40_remaining_clock": "00:19",
+          "t40_closing_clock": "00:19",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26AUG16INDATL-ATL",
+          "event_id": "KXWNBAGAME-26AUG16INDATL",
+          "game_date": "2026-08-16",
+          "team": "Atlanta",
+          "t40_period": 4,
+          "t40_period_remaining_s": 21.7,
+          "t40_remaining_clock": "00:22",
+          "t40_closing_clock": "00:22",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25SEP16LVSEA-LV",
+          "event_id": "KXWNBAGAME-25SEP16LVSEA",
+          "game_date": "2025-09-16",
+          "team": "Las Vegas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 31.0,
+          "t40_remaining_clock": "00:31",
+          "t40_closing_clock": "00:31",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25JUL10LVWSH-LV",
+          "event_id": "KXWNBAGAME-25JUL10LVWSH",
+          "game_date": "2025-07-10",
+          "team": "Las Vegas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 39.1,
+          "t40_remaining_clock": "00:39",
+          "t40_closing_clock": "00:39",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26AUG16PDXPHX-PHX",
+          "event_id": "KXWNBAGAME-26AUG16PDXPHX",
+          "game_date": "2026-08-16",
+          "team": "Phoenix",
+          "t40_period": 4,
+          "t40_period_remaining_s": 54.9,
+          "t40_remaining_clock": "00:55",
+          "t40_closing_clock": "00:55",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26JUN17SEAPDX-SEA",
+          "event_id": "KXWNBAGAME-26JUN17SEAPDX",
+          "game_date": "2026-06-17",
+          "team": "Seattle",
+          "t40_period": 4,
+          "t40_period_remaining_s": 77.0,
+          "t40_remaining_clock": "01:17",
+          "t40_closing_clock": "01:17",
+          "bin": "1:01\u20132:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26AUG05DALWSH-DAL",
+          "event_id": "KXWNBAGAME-26AUG05DALWSH",
+          "game_date": "2026-08-05",
+          "team": "Dallas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 131.0,
+          "t40_remaining_clock": "02:11",
+          "t40_closing_clock": "02:11",
+          "bin": "2:01\u20133:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25SEP17MINGSV-GSV",
+          "event_id": "KXWNBAGAME-25SEP17MINGSV",
+          "game_date": "2025-09-17",
+          "team": "Golden State",
+          "t40_period": 4,
+          "t40_period_remaining_s": 150.0,
+          "t40_remaining_clock": "02:30",
+          "t40_closing_clock": "02:30",
+          "bin": "2:01\u20133:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25SEP28MINPHX-MIN",
+          "event_id": "KXWNBAGAME-25SEP28MINPHX",
+          "game_date": "2025-09-28",
+          "team": "Minnesota",
+          "t40_period": 4,
+          "t40_period_remaining_s": 199.0,
+          "t40_remaining_clock": "03:19",
+          "t40_closing_clock": "03:19",
+          "bin": "3:01\u20134:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26JUN06INDNY-IND",
+          "event_id": "KXWNBAGAME-26JUN06INDNY",
+          "game_date": "2026-06-06",
+          "team": "Indiana",
+          "t40_period": 4,
+          "t40_period_remaining_s": 240.0,
+          "t40_remaining_clock": "04:00",
+          "t40_closing_clock": "04:00",
+          "bin": "3:01\u20134:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25JUN17ATLNY-ATL",
+          "event_id": "KXWNBAGAME-25JUN17ATLNY",
+          "game_date": "2025-06-17",
+          "team": "Atlanta",
+          "t40_period": 4,
+          "t40_period_remaining_s": 313.0,
+          "t40_remaining_clock": "05:13",
+          "t40_closing_clock": "05:13",
+          "bin": "5:01\u20136:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25AUG12DALIND-IND",
+          "event_id": "KXWNBAGAME-25AUG12DALIND",
+          "game_date": "2025-08-12",
+          "team": "Indiana",
+          "t40_period": 3,
+          "t40_period_remaining_s": 96.0,
+          "t40_remaining_clock": "11:36",
+          "t40_closing_clock": null,
+          "bin": "BEFORE_LAST_6",
+          "in_last_6": false
+        },
+        {
+          "ticker": "KXWNBAGAME-26AUG23WSHPDX-PDX",
+          "event_id": "KXWNBAGAME-26AUG23WSHPDX",
+          "game_date": "2026-08-23",
+          "team": "Portland",
+          "t40_period": 4,
+          "t40_period_remaining_s": 422.0,
+          "t40_remaining_clock": "07:02",
+          "t40_closing_clock": "07:02",
+          "bin": "BEFORE_LAST_6",
+          "in_last_6": false
+        },
+        {
+          "ticker": "KXWNBAGAME-25AUG01LASEA-SEA",
+          "event_id": "KXWNBAGAME-25AUG01LASEA",
+          "game_date": "2025-08-01",
+          "team": "Seattle",
+          "t40_period": 4,
+          "t40_period_remaining_s": 460.0,
+          "t40_remaining_clock": "07:40",
+          "t40_closing_clock": "07:40",
+          "bin": "BEFORE_LAST_6",
+          "in_last_6": false
+        },
+        {
+          "ticker": "KXWNBAGAME-25JUN20SEALV-LV",
+          "event_id": "KXWNBAGAME-25JUN20SEALV",
+          "game_date": "2025-06-20",
+          "team": "Las Vegas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 479.0,
+          "t40_remaining_clock": "07:59",
+          "t40_closing_clock": "07:59",
+          "bin": "BEFORE_LAST_6",
+          "in_last_6": false
+        },
+        {
+          "ticker": "KXWNBAGAME-25JUN11MINSEA-MIN",
+          "event_id": "KXWNBAGAME-25JUN11MINSEA",
+          "game_date": "2025-06-11",
+          "team": "Minnesota",
+          "t40_period": 4,
+          "t40_period_remaining_s": 587.0,
+          "t40_remaining_clock": "09:47",
+          "t40_closing_clock": "09:47",
+          "bin": "BEFORE_LAST_6",
+          "in_last_6": false
+        }
+      ]
+    },
+    "Q2\u222aQ3": {
+      "bucket": "Q2\u222aQ3",
+      "label": "Q2\u222aQ3",
+      "n": 246,
+      "n_winners": 205,
+      "n_losers": 41,
+      "n_t40": 63,
+      "n_t40_before_last_6": 13,
+      "n_t40_last_6_or_ot": 28,
+      "n_t40_last_6_regulation": 27,
+      "pct_losers_last_6_or_ot": 68.29,
+      "pct_losers_before_last_6": 31.71,
+      "cumulative_at_most_k_min": [
+        {
+          "at_most_min": 6,
+          "label": "\u22646:00 4Q remaining",
+          "n": 27,
+          "pct_of_losers": 65.85,
+          "pct_of_t40": 42.86,
+          "pct_of_slice": 10.98
+        },
+        {
+          "at_most_min": 5,
+          "label": "\u22645:00 4Q remaining",
+          "n": 26,
+          "pct_of_losers": 63.41,
+          "pct_of_t40": 41.27,
+          "pct_of_slice": 10.57
+        },
+        {
+          "at_most_min": 4,
+          "label": "\u22644:00 4Q remaining",
+          "n": 25,
+          "pct_of_losers": 60.98,
+          "pct_of_t40": 39.68,
+          "pct_of_slice": 10.16
+        },
+        {
+          "at_most_min": 3,
+          "label": "\u22643:00 4Q remaining",
+          "n": 19,
+          "pct_of_losers": 46.34,
+          "pct_of_t40": 30.16,
+          "pct_of_slice": 7.72
+        },
+        {
+          "at_most_min": 2,
+          "label": "\u22642:00 4Q remaining",
+          "n": 15,
+          "pct_of_losers": 36.59,
+          "pct_of_t40": 23.81,
+          "pct_of_slice": 6.1
+        },
+        {
+          "at_most_min": 1,
+          "label": "\u22641:00 4Q remaining",
+          "n": 14,
+          "pct_of_losers": 34.15,
+          "pct_of_t40": 22.22,
+          "pct_of_slice": 5.69
+        }
+      ],
+      "discrete_bins": [
+        {
+          "bin": "BEFORE_LAST_6",
+          "n": 13,
+          "pct_of_losers": 31.71
+        },
+        {
+          "bin": "5:01\u20136:00",
+          "n": 1,
+          "pct_of_losers": 2.44
+        },
+        {
+          "bin": "4:01\u20135:00",
+          "n": 1,
+          "pct_of_losers": 2.44
+        },
+        {
+          "bin": "3:01\u20134:00",
+          "n": 6,
+          "pct_of_losers": 14.63
+        },
+        {
+          "bin": "2:01\u20133:00",
+          "n": 4,
+          "pct_of_losers": 9.76
+        },
+        {
+          "bin": "1:01\u20132:00",
+          "n": 1,
+          "pct_of_losers": 2.44
+        },
+        {
+          "bin": "0:00\u20131:00",
+          "n": 14,
+          "pct_of_losers": 34.15
+        },
+        {
+          "bin": "OT",
+          "n": 1,
+          "pct_of_losers": 2.44
+        }
+      ],
+      "late_games": [
+        {
+          "ticker": "KXWNBAGAME-26JUL29ATLDAL-DAL",
+          "event_id": "KXWNBAGAME-26JUL29ATLDAL",
+          "game_date": "2026-07-29",
+          "team": "Dallas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 0.0,
+          "t40_remaining_clock": "00:00",
+          "t40_closing_clock": "00:00",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25AUG17INDCONN-CONN",
+          "event_id": "KXWNBAGAME-25AUG17INDCONN",
+          "game_date": "2025-08-17",
+          "team": "Connecticut",
+          "t40_period": 4,
+          "t40_period_remaining_s": 1.4,
+          "t40_remaining_clock": "00:01",
+          "t40_closing_clock": "00:01",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25SEP18INDATL-ATL",
+          "event_id": "KXWNBAGAME-25SEP18INDATL",
+          "game_date": "2025-09-18",
+          "team": "Atlanta",
+          "t40_period": 4,
+          "t40_period_remaining_s": 7.4,
+          "t40_remaining_clock": "00:07",
+          "t40_closing_clock": "00:07",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26MAY09ATLMIN-MIN",
+          "event_id": "KXWNBAGAME-26MAY09ATLMIN",
+          "game_date": "2026-05-09",
+          "team": "Minnesota",
+          "t40_period": 4,
+          "t40_period_remaining_s": 12.0,
+          "t40_remaining_clock": "00:12",
+          "t40_closing_clock": "00:12",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26JUL22LVWSH-LV",
+          "event_id": "KXWNBAGAME-26JUL22LVWSH",
+          "game_date": "2026-07-22",
+          "team": "Las Vegas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 12.8,
+          "t40_remaining_clock": "00:13",
+          "t40_closing_clock": "00:13",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26JUL20NYDAL-DAL",
+          "event_id": "KXWNBAGAME-26JUL20NYDAL",
+          "game_date": "2026-07-20",
+          "team": "Dallas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 12.9,
+          "t40_remaining_clock": "00:13",
+          "t40_closing_clock": "00:13",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26JUN21WSHMIN-MIN",
+          "event_id": "KXWNBAGAME-26JUN21WSHMIN",
+          "game_date": "2026-06-21",
+          "team": "Minnesota",
+          "t40_period": 4,
+          "t40_period_remaining_s": 19.3,
+          "t40_remaining_clock": "00:19",
+          "t40_closing_clock": "00:19",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26AUG16INDATL-ATL",
+          "event_id": "KXWNBAGAME-26AUG16INDATL",
+          "game_date": "2026-08-16",
+          "team": "Atlanta",
+          "t40_period": 4,
+          "t40_period_remaining_s": 21.7,
+          "t40_remaining_clock": "00:22",
+          "t40_closing_clock": "00:22",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26MAY12MINPHX-PHX",
+          "event_id": "KXWNBAGAME-26MAY12MINPHX",
+          "game_date": "2026-05-12",
+          "team": "Phoenix",
+          "t40_period": 4,
+          "t40_period_remaining_s": 25.6,
+          "t40_remaining_clock": "00:26",
+          "t40_closing_clock": "00:26",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25SEP16LVSEA-LV",
+          "event_id": "KXWNBAGAME-25SEP16LVSEA",
+          "game_date": "2025-09-16",
+          "team": "Las Vegas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 31.0,
+          "t40_remaining_clock": "00:31",
+          "t40_closing_clock": "00:31",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25JUL10LVWSH-LV",
+          "event_id": "KXWNBAGAME-25JUL10LVWSH",
+          "game_date": "2025-07-10",
+          "team": "Las Vegas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 39.1,
+          "t40_remaining_clock": "00:39",
+          "t40_closing_clock": "00:39",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26MAY14MINDAL-DAL",
+          "event_id": "KXWNBAGAME-26MAY14MINDAL",
+          "game_date": "2026-05-14",
+          "team": "Dallas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 51.0,
+          "t40_remaining_clock": "00:51",
+          "t40_closing_clock": "00:51",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26AUG16PDXPHX-PHX",
+          "event_id": "KXWNBAGAME-26AUG16PDXPHX",
+          "game_date": "2026-08-16",
+          "team": "Phoenix",
+          "t40_period": 4,
+          "t40_period_remaining_s": 54.9,
+          "t40_remaining_clock": "00:55",
+          "t40_closing_clock": "00:55",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25AUG21CHINY-NY",
+          "event_id": "KXWNBAGAME-25AUG21CHINY",
+          "game_date": "2025-08-21",
+          "team": "New York",
+          "t40_period": 4,
+          "t40_period_remaining_s": 56.9,
+          "t40_remaining_clock": "00:57",
+          "t40_closing_clock": "00:57",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26JUN17SEAPDX-SEA",
+          "event_id": "KXWNBAGAME-26JUN17SEAPDX",
+          "game_date": "2026-06-17",
+          "team": "Seattle",
+          "t40_period": 4,
+          "t40_period_remaining_s": 77.0,
+          "t40_remaining_clock": "01:17",
+          "t40_closing_clock": "01:17",
+          "bin": "1:01\u20132:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26AUG05DALWSH-DAL",
+          "event_id": "KXWNBAGAME-26AUG05DALWSH",
+          "game_date": "2026-08-05",
+          "team": "Dallas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 131.0,
+          "t40_remaining_clock": "02:11",
+          "t40_closing_clock": "02:11",
+          "bin": "2:01\u20133:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25SEP17MINGSV-GSV",
+          "event_id": "KXWNBAGAME-25SEP17MINGSV",
+          "game_date": "2025-09-17",
+          "team": "Golden State",
+          "t40_period": 4,
+          "t40_period_remaining_s": 150.0,
+          "t40_remaining_clock": "02:30",
+          "t40_closing_clock": "02:30",
+          "bin": "2:01\u20133:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26MAY12NYPDX-NY",
+          "event_id": "KXWNBAGAME-26MAY12NYPDX",
+          "game_date": "2026-05-12",
+          "team": "New York",
+          "t40_period": 4,
+          "t40_period_remaining_s": 153.0,
+          "t40_remaining_clock": "02:33",
+          "t40_closing_clock": "02:33",
+          "bin": "2:01\u20133:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25JUL13WSHSEA-SEA",
+          "event_id": "KXWNBAGAME-25JUL13WSHSEA",
+          "game_date": "2025-07-13",
+          "team": "Seattle",
+          "t40_period": 4,
+          "t40_period_remaining_s": 154.0,
+          "t40_remaining_clock": "02:34",
+          "t40_closing_clock": "02:34",
+          "bin": "2:01\u20133:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26JUN19TORCONN-CONN",
+          "event_id": "KXWNBAGAME-26JUN19TORCONN",
+          "game_date": "2026-06-19",
+          "team": "Connecticut",
+          "t40_period": 4,
+          "t40_period_remaining_s": 185.0,
+          "t40_remaining_clock": "03:05",
+          "t40_closing_clock": "03:05",
+          "bin": "3:01\u20134:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26AUG28WSHLA-WSH",
+          "event_id": "KXWNBAGAME-26AUG28WSHLA",
+          "game_date": "2026-08-28",
+          "team": "Washington",
+          "t40_period": 4,
+          "t40_period_remaining_s": 191.0,
+          "t40_remaining_clock": "03:11",
+          "t40_closing_clock": "03:11",
+          "bin": "3:01\u20134:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25SEP28MINPHX-MIN",
+          "event_id": "KXWNBAGAME-25SEP28MINPHX",
+          "game_date": "2025-09-28",
+          "team": "Minnesota",
+          "t40_period": 4,
+          "t40_period_remaining_s": 199.0,
+          "t40_remaining_clock": "03:19",
+          "t40_closing_clock": "03:19",
+          "bin": "3:01\u20134:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25JUN26LAIND-IND",
+          "event_id": "KXWNBAGAME-25JUN26LAIND",
+          "game_date": "2025-06-26",
+          "team": "Indiana",
+          "t40_period": 4,
+          "t40_period_remaining_s": 218.0,
+          "t40_remaining_clock": "03:38",
+          "t40_closing_clock": "03:38",
+          "bin": "3:01\u20134:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25SEP06PHXCONN-PHX",
+          "event_id": "KXWNBAGAME-25SEP06PHXCONN",
+          "game_date": "2025-09-06",
+          "team": "Phoenix",
+          "t40_period": 4,
+          "t40_period_remaining_s": 220.0,
+          "t40_remaining_clock": "03:40",
+          "t40_closing_clock": "03:40",
+          "bin": "3:01\u20134:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26JUN06INDNY-IND",
+          "event_id": "KXWNBAGAME-26JUN06INDNY",
+          "game_date": "2026-06-06",
+          "team": "Indiana",
+          "t40_period": 4,
+          "t40_period_remaining_s": 240.0,
+          "t40_remaining_clock": "04:00",
+          "t40_closing_clock": "04:00",
+          "bin": "3:01\u20134:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26JUL29GSPHX-GS",
+          "event_id": "KXWNBAGAME-26JUL29GSPHX",
+          "game_date": "2026-07-29",
+          "team": "Golden State",
+          "t40_period": 4,
+          "t40_period_remaining_s": 250.0,
+          "t40_remaining_clock": "04:10",
+          "t40_closing_clock": "04:10",
+          "bin": "4:01\u20135:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25JUN17ATLNY-ATL",
+          "event_id": "KXWNBAGAME-25JUN17ATLNY",
+          "game_date": "2025-06-17",
+          "team": "Atlanta",
+          "t40_period": 4,
+          "t40_period_remaining_s": 313.0,
+          "t40_remaining_clock": "05:13",
+          "t40_closing_clock": "05:13",
+          "bin": "5:01\u20136:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25SEP23PHXMIN-MIN",
+          "event_id": "KXWNBAGAME-25SEP23PHXMIN",
+          "game_date": "2025-09-23",
+          "team": "Minnesota",
+          "t40_period": 5,
+          "t40_period_remaining_s": 176.0,
+          "t40_remaining_clock": "02:56",
+          "t40_closing_clock": null,
+          "bin": "OT",
+          "in_last_6": true
+        }
+      ],
+      "games": [
+        {
+          "ticker": "KXWNBAGAME-26JUL29ATLDAL-DAL",
+          "event_id": "KXWNBAGAME-26JUL29ATLDAL",
+          "game_date": "2026-07-29",
+          "team": "Dallas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 0.0,
+          "t40_remaining_clock": "00:00",
+          "t40_closing_clock": "00:00",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25AUG17INDCONN-CONN",
+          "event_id": "KXWNBAGAME-25AUG17INDCONN",
+          "game_date": "2025-08-17",
+          "team": "Connecticut",
+          "t40_period": 4,
+          "t40_period_remaining_s": 1.4,
+          "t40_remaining_clock": "00:01",
+          "t40_closing_clock": "00:01",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25SEP18INDATL-ATL",
+          "event_id": "KXWNBAGAME-25SEP18INDATL",
+          "game_date": "2025-09-18",
+          "team": "Atlanta",
+          "t40_period": 4,
+          "t40_period_remaining_s": 7.4,
+          "t40_remaining_clock": "00:07",
+          "t40_closing_clock": "00:07",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26MAY09ATLMIN-MIN",
+          "event_id": "KXWNBAGAME-26MAY09ATLMIN",
+          "game_date": "2026-05-09",
+          "team": "Minnesota",
+          "t40_period": 4,
+          "t40_period_remaining_s": 12.0,
+          "t40_remaining_clock": "00:12",
+          "t40_closing_clock": "00:12",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26JUL22LVWSH-LV",
+          "event_id": "KXWNBAGAME-26JUL22LVWSH",
+          "game_date": "2026-07-22",
+          "team": "Las Vegas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 12.8,
+          "t40_remaining_clock": "00:13",
+          "t40_closing_clock": "00:13",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26JUL20NYDAL-DAL",
+          "event_id": "KXWNBAGAME-26JUL20NYDAL",
+          "game_date": "2026-07-20",
+          "team": "Dallas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 12.9,
+          "t40_remaining_clock": "00:13",
+          "t40_closing_clock": "00:13",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26JUN21WSHMIN-MIN",
+          "event_id": "KXWNBAGAME-26JUN21WSHMIN",
+          "game_date": "2026-06-21",
+          "team": "Minnesota",
+          "t40_period": 4,
+          "t40_period_remaining_s": 19.3,
+          "t40_remaining_clock": "00:19",
+          "t40_closing_clock": "00:19",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26AUG16INDATL-ATL",
+          "event_id": "KXWNBAGAME-26AUG16INDATL",
+          "game_date": "2026-08-16",
+          "team": "Atlanta",
+          "t40_period": 4,
+          "t40_period_remaining_s": 21.7,
+          "t40_remaining_clock": "00:22",
+          "t40_closing_clock": "00:22",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26MAY12MINPHX-PHX",
+          "event_id": "KXWNBAGAME-26MAY12MINPHX",
+          "game_date": "2026-05-12",
+          "team": "Phoenix",
+          "t40_period": 4,
+          "t40_period_remaining_s": 25.6,
+          "t40_remaining_clock": "00:26",
+          "t40_closing_clock": "00:26",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25SEP16LVSEA-LV",
+          "event_id": "KXWNBAGAME-25SEP16LVSEA",
+          "game_date": "2025-09-16",
+          "team": "Las Vegas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 31.0,
+          "t40_remaining_clock": "00:31",
+          "t40_closing_clock": "00:31",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25JUL10LVWSH-LV",
+          "event_id": "KXWNBAGAME-25JUL10LVWSH",
+          "game_date": "2025-07-10",
+          "team": "Las Vegas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 39.1,
+          "t40_remaining_clock": "00:39",
+          "t40_closing_clock": "00:39",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26MAY14MINDAL-DAL",
+          "event_id": "KXWNBAGAME-26MAY14MINDAL",
+          "game_date": "2026-05-14",
+          "team": "Dallas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 51.0,
+          "t40_remaining_clock": "00:51",
+          "t40_closing_clock": "00:51",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26AUG16PDXPHX-PHX",
+          "event_id": "KXWNBAGAME-26AUG16PDXPHX",
+          "game_date": "2026-08-16",
+          "team": "Phoenix",
+          "t40_period": 4,
+          "t40_period_remaining_s": 54.9,
+          "t40_remaining_clock": "00:55",
+          "t40_closing_clock": "00:55",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25AUG21CHINY-NY",
+          "event_id": "KXWNBAGAME-25AUG21CHINY",
+          "game_date": "2025-08-21",
+          "team": "New York",
+          "t40_period": 4,
+          "t40_period_remaining_s": 56.9,
+          "t40_remaining_clock": "00:57",
+          "t40_closing_clock": "00:57",
+          "bin": "0:00\u20131:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26JUN17SEAPDX-SEA",
+          "event_id": "KXWNBAGAME-26JUN17SEAPDX",
+          "game_date": "2026-06-17",
+          "team": "Seattle",
+          "t40_period": 4,
+          "t40_period_remaining_s": 77.0,
+          "t40_remaining_clock": "01:17",
+          "t40_closing_clock": "01:17",
+          "bin": "1:01\u20132:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26AUG05DALWSH-DAL",
+          "event_id": "KXWNBAGAME-26AUG05DALWSH",
+          "game_date": "2026-08-05",
+          "team": "Dallas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 131.0,
+          "t40_remaining_clock": "02:11",
+          "t40_closing_clock": "02:11",
+          "bin": "2:01\u20133:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25SEP17MINGSV-GSV",
+          "event_id": "KXWNBAGAME-25SEP17MINGSV",
+          "game_date": "2025-09-17",
+          "team": "Golden State",
+          "t40_period": 4,
+          "t40_period_remaining_s": 150.0,
+          "t40_remaining_clock": "02:30",
+          "t40_closing_clock": "02:30",
+          "bin": "2:01\u20133:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26MAY12NYPDX-NY",
+          "event_id": "KXWNBAGAME-26MAY12NYPDX",
+          "game_date": "2026-05-12",
+          "team": "New York",
+          "t40_period": 4,
+          "t40_period_remaining_s": 153.0,
+          "t40_remaining_clock": "02:33",
+          "t40_closing_clock": "02:33",
+          "bin": "2:01\u20133:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25JUL13WSHSEA-SEA",
+          "event_id": "KXWNBAGAME-25JUL13WSHSEA",
+          "game_date": "2025-07-13",
+          "team": "Seattle",
+          "t40_period": 4,
+          "t40_period_remaining_s": 154.0,
+          "t40_remaining_clock": "02:34",
+          "t40_closing_clock": "02:34",
+          "bin": "2:01\u20133:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26JUN19TORCONN-CONN",
+          "event_id": "KXWNBAGAME-26JUN19TORCONN",
+          "game_date": "2026-06-19",
+          "team": "Connecticut",
+          "t40_period": 4,
+          "t40_period_remaining_s": 185.0,
+          "t40_remaining_clock": "03:05",
+          "t40_closing_clock": "03:05",
+          "bin": "3:01\u20134:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26AUG28WSHLA-WSH",
+          "event_id": "KXWNBAGAME-26AUG28WSHLA",
+          "game_date": "2026-08-28",
+          "team": "Washington",
+          "t40_period": 4,
+          "t40_period_remaining_s": 191.0,
+          "t40_remaining_clock": "03:11",
+          "t40_closing_clock": "03:11",
+          "bin": "3:01\u20134:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25SEP28MINPHX-MIN",
+          "event_id": "KXWNBAGAME-25SEP28MINPHX",
+          "game_date": "2025-09-28",
+          "team": "Minnesota",
+          "t40_period": 4,
+          "t40_period_remaining_s": 199.0,
+          "t40_remaining_clock": "03:19",
+          "t40_closing_clock": "03:19",
+          "bin": "3:01\u20134:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25JUN26LAIND-IND",
+          "event_id": "KXWNBAGAME-25JUN26LAIND",
+          "game_date": "2025-06-26",
+          "team": "Indiana",
+          "t40_period": 4,
+          "t40_period_remaining_s": 218.0,
+          "t40_remaining_clock": "03:38",
+          "t40_closing_clock": "03:38",
+          "bin": "3:01\u20134:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25SEP06PHXCONN-PHX",
+          "event_id": "KXWNBAGAME-25SEP06PHXCONN",
+          "game_date": "2025-09-06",
+          "team": "Phoenix",
+          "t40_period": 4,
+          "t40_period_remaining_s": 220.0,
+          "t40_remaining_clock": "03:40",
+          "t40_closing_clock": "03:40",
+          "bin": "3:01\u20134:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26JUN06INDNY-IND",
+          "event_id": "KXWNBAGAME-26JUN06INDNY",
+          "game_date": "2026-06-06",
+          "team": "Indiana",
+          "t40_period": 4,
+          "t40_period_remaining_s": 240.0,
+          "t40_remaining_clock": "04:00",
+          "t40_closing_clock": "04:00",
+          "bin": "3:01\u20134:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-26JUL29GSPHX-GS",
+          "event_id": "KXWNBAGAME-26JUL29GSPHX",
+          "game_date": "2026-07-29",
+          "team": "Golden State",
+          "t40_period": 4,
+          "t40_period_remaining_s": 250.0,
+          "t40_remaining_clock": "04:10",
+          "t40_closing_clock": "04:10",
+          "bin": "4:01\u20135:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25JUN17ATLNY-ATL",
+          "event_id": "KXWNBAGAME-25JUN17ATLNY",
+          "game_date": "2025-06-17",
+          "team": "Atlanta",
+          "t40_period": 4,
+          "t40_period_remaining_s": 313.0,
+          "t40_remaining_clock": "05:13",
+          "t40_closing_clock": "05:13",
+          "bin": "5:01\u20136:00",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25SEP23PHXMIN-MIN",
+          "event_id": "KXWNBAGAME-25SEP23PHXMIN",
+          "game_date": "2025-09-23",
+          "team": "Minnesota",
+          "t40_period": 5,
+          "t40_period_remaining_s": 176.0,
+          "t40_remaining_clock": "02:56",
+          "t40_closing_clock": null,
+          "bin": "OT",
+          "in_last_6": true
+        },
+        {
+          "ticker": "KXWNBAGAME-25JUN01PHXLA-LA",
+          "event_id": "KXWNBAGAME-25JUN01PHXLA",
+          "game_date": "2025-06-01",
+          "team": "Los Angeles",
+          "t40_period": 3,
+          "t40_period_remaining_s": 38.1,
+          "t40_remaining_clock": "10:38",
+          "t40_closing_clock": null,
+          "bin": "BEFORE_LAST_6",
+          "in_last_6": false
+        },
+        {
+          "ticker": "KXWNBAGAME-25AUG12DALIND-IND",
+          "event_id": "KXWNBAGAME-25AUG12DALIND",
+          "game_date": "2025-08-12",
+          "team": "Indiana",
+          "t40_period": 3,
+          "t40_period_remaining_s": 96.0,
+          "t40_remaining_clock": "11:36",
+          "t40_closing_clock": null,
+          "bin": "BEFORE_LAST_6",
+          "in_last_6": false
+        },
+        {
+          "ticker": "KXWNBAGAME-25AUG10WSHDAL-DAL",
+          "event_id": "KXWNBAGAME-25AUG10WSHDAL",
+          "game_date": "2025-08-10",
+          "team": "Dallas",
+          "t40_period": 3,
+          "t40_period_remaining_s": 249.0,
+          "t40_remaining_clock": "14:09",
+          "t40_closing_clock": null,
+          "bin": "BEFORE_LAST_6",
+          "in_last_6": false
+        },
+        {
+          "ticker": "KXWNBAGAME-26AUG06LVIND-IND",
+          "event_id": "KXWNBAGAME-26AUG06LVIND",
+          "game_date": "2026-08-06",
+          "team": "Indiana",
+          "t40_period": 3,
+          "t40_period_remaining_s": 278.0,
+          "t40_remaining_clock": "14:38",
+          "t40_closing_clock": null,
+          "bin": "BEFORE_LAST_6",
+          "in_last_6": false
+        },
+        {
+          "ticker": "KXWNBAGAME-26JUL18NYIND-NY",
+          "event_id": "KXWNBAGAME-26JUL18NYIND",
+          "game_date": "2026-07-18",
+          "team": "New York",
+          "t40_period": 3,
+          "t40_period_remaining_s": 300.0,
+          "t40_remaining_clock": "15:00",
+          "t40_closing_clock": null,
+          "bin": "BEFORE_LAST_6",
+          "in_last_6": false
+        },
+        {
+          "ticker": "KXWNBAGAME-26MAY23PDXTOR-TOR",
+          "event_id": "KXWNBAGAME-26MAY23PDXTOR",
+          "game_date": "2026-05-23",
+          "team": "Toronto",
+          "t40_period": 3,
+          "t40_period_remaining_s": 302.0,
+          "t40_remaining_clock": "15:02",
+          "t40_closing_clock": null,
+          "bin": "BEFORE_LAST_6",
+          "in_last_6": false
+        },
+        {
+          "ticker": "KXWNBAGAME-26MAY28LVDAL-LV",
+          "event_id": "KXWNBAGAME-26MAY28LVDAL",
+          "game_date": "2026-05-28",
+          "team": "Las Vegas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 392.0,
+          "t40_remaining_clock": "06:32",
+          "t40_closing_clock": "06:32",
+          "bin": "BEFORE_LAST_6",
+          "in_last_6": false
+        },
+        {
+          "ticker": "KXWNBAGAME-25JUN19PHXNY-NY",
+          "event_id": "KXWNBAGAME-25JUN19PHXNY",
+          "game_date": "2025-06-19",
+          "team": "New York",
+          "t40_period": 4,
+          "t40_period_remaining_s": 398.0,
+          "t40_remaining_clock": "06:38",
+          "t40_closing_clock": "06:38",
+          "bin": "BEFORE_LAST_6",
+          "in_last_6": false
+        },
+        {
+          "ticker": "KXWNBAGAME-26AUG23WSHPDX-PDX",
+          "event_id": "KXWNBAGAME-26AUG23WSHPDX",
+          "game_date": "2026-08-23",
+          "team": "Portland",
+          "t40_period": 4,
+          "t40_period_remaining_s": 422.0,
+          "t40_remaining_clock": "07:02",
+          "t40_closing_clock": "07:02",
+          "bin": "BEFORE_LAST_6",
+          "in_last_6": false
+        },
+        {
+          "ticker": "KXWNBAGAME-25AUG01LASEA-SEA",
+          "event_id": "KXWNBAGAME-25AUG01LASEA",
+          "game_date": "2025-08-01",
+          "team": "Seattle",
+          "t40_period": 4,
+          "t40_period_remaining_s": 460.0,
+          "t40_remaining_clock": "07:40",
+          "t40_closing_clock": "07:40",
+          "bin": "BEFORE_LAST_6",
+          "in_last_6": false
+        },
+        {
+          "ticker": "KXWNBAGAME-25JUN20SEALV-LV",
+          "event_id": "KXWNBAGAME-25JUN20SEALV",
+          "game_date": "2025-06-20",
+          "team": "Las Vegas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 479.0,
+          "t40_remaining_clock": "07:59",
+          "t40_closing_clock": "07:59",
+          "bin": "BEFORE_LAST_6",
+          "in_last_6": false
+        },
+        {
+          "ticker": "KXWNBAGAME-26MAY23LALV-LV",
+          "event_id": "KXWNBAGAME-26MAY23LALV",
+          "game_date": "2026-05-23",
+          "team": "Las Vegas",
+          "t40_period": 4,
+          "t40_period_remaining_s": 542.0,
+          "t40_remaining_clock": "09:02",
+          "t40_closing_clock": "09:02",
+          "bin": "BEFORE_LAST_6",
+          "in_last_6": false
+        },
+        {
+          "ticker": "KXWNBAGAME-25JUN11MINSEA-MIN",
+          "event_id": "KXWNBAGAME-25JUN11MINSEA",
+          "game_date": "2025-06-11",
+          "team": "Minnesota",
+          "t40_period": 4,
+          "t40_period_remaining_s": 587.0,
+          "t40_remaining_clock": "09:47",
+          "t40_closing_clock": "09:47",
+          "bin": "BEFORE_LAST_6",
+          "in_last_6": false
+        }
+      ]
+    }
+  }
+}

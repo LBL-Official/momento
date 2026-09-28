@@ -1,0 +1,10 @@
+trade T0458  NBA  Houston at New York
+contract KXNBAGAME-26FEB21HOUNYK-NYK  slice Q2
+signal 2026-02-21T18:13:00-08:00 PST  exit 2026-02-21T18:28:00-08:00 PST
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 8146  principal_cents 635388
+entry_fee_cents 2447  exit_fee_cents 3152
+exit STOP at 67c  terminal yes
+gross_cents -89606  net_cents -95205
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

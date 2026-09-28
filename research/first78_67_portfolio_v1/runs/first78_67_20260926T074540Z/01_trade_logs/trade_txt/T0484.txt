@@ -1,0 +1,10 @@
+trade T0484  NBA  Boston at Denver
+contract KXNBAGAME-26FEB25BOSDEN-DEN  slice Q3
+signal 2026-02-25T20:59:00-08:00 PST  exit 2026-02-25T21:47:46-08:00 PST
+assumed entry 78c  observed close 84c  overshoot 6c
+contracts 8894  principal_cents 693732
+entry_fee_cents 2671  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 195668  net_cents 192997
+strategy_result POSITIVE  net_r 1.856686580661298546374594745
+Assumed fill. Not a maker fill. Not live P&L.

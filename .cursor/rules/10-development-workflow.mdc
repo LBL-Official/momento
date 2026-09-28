@@ -1,0 +1,99 @@
+---
+description: Development workflow for Cursor agents working on Momento
+alwaysApply: true
+---
+
+# Development Workflow
+
+## Before Coding
+
+For any substantial change:
+
+1. Inspect relevant existing code.
+2. Identify dependencies.
+3. Explain proposed approach.
+4. Identify risks.
+5. Identify tests.
+6. Then implement.
+
+Do not rewrite unrelated files.
+
+---
+
+## Small Commits
+
+Prefer small, logically isolated changes.
+
+Example:
+
+commit:
+"Add Order domain model"
+
+then:
+
+"Add Kalshi order adapter"
+
+then:
+
+"Add order lifecycle state machine"
+
+rather than one enormous change.
+
+---
+
+## Never Guess External APIs
+
+If Kalshi API behavior is uncertain:
+
+- inspect official documentation
+- inspect existing adapter code
+- write a small integration test
+- do not invent endpoint names or request formats
+
+---
+
+## No Premature Abstraction
+
+Do not create generic frameworks before there is a demonstrated need.
+
+However, shared infrastructure between sports should remain centralized.
+
+---
+
+## No Premature Optimization
+
+Rust is selected for performance, but correctness comes first.
+
+Measure before optimizing.
+
+When optimizing trading latency, record actual measurements.
+
+---
+
+## Before Completing a Task
+
+Run appropriate:
+
+cargo fmt
+cargo check
+cargo test
+cargo clippy
+
+and frontend checks where applicable.
+
+Report failures honestly.
+
+Never claim tests passed if they were not run.
+
+---
+
+## Agent Communication
+
+When a requirement affects financial behavior, explicitly state:
+
+- what behavior changes
+- why
+- which risk boundary is affected
+- which tests cover it
+
+Do not silently change trading behavior.

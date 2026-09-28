@@ -1,0 +1,56 @@
+{
+  "id": "mlb-001-production-baseline-2026-09-17",
+  "frozen_at": "2026-09-17T23:36:06Z",
+  "recorded_at": "2026-09-17T23:36:30Z",
+  "service": "momento-live.service",
+  "host": "i-0f0849d5829476c31",
+  "region": "us-east-1",
+  "execution": "factory_engine",
+  "status": "live-armed",
+  "reconciliation": "Healthy",
+  "order_submission": "enabled",
+  "binary": {
+    "path": "/usr/local/bin/momento-trading-engine",
+    "sha256": "66ca5420273779b6706e873c4a6640ef4fd603dd0bb02e9d044ee18077c2f3fd",
+    "arch": "aarch64",
+    "bytes": 8091344,
+    "artifact": "s3://momento-paper-artifacts-895492487332/m10/mlb-001-production-baseline/momento-trading-engine",
+    "sha256_object": "s3://momento-paper-artifacts-895492487332/m10/mlb-001-production-baseline/SHA256"
+  },
+  "code": [
+    "2026-09-16 fill-ingest fix",
+    "2026-09-16 reconciliation fix",
+    "2026-09-17 leftover-fill ignore",
+    "2026-09-17 automated desk housekeeping"
+  ],
+  "strategy": {
+    "entry": "80_to_81_yes_bid",
+    "band_cents": [80, 83],
+    "lock_cents": 89,
+    "cap": 5,
+    "submit": "Kalshi Create V2"
+  },
+  "previous_baseline": {
+    "sha256": "8dd481e354dfcf5fa8cdce0a7dbd1eca890dfa91bf89aa00560288bfdf6e84d0",
+    "artifact": "s3://momento-paper-artifacts-895492487332/m10/mlb-001-production-baseline-20260916/momento-trading-engine",
+    "reason": "2026-09-16 factory bot after fill-ingest + recon. Predates leftover ignore and automated housekeeping. Host backup: /usr/local/bin/momento-trading-engine.8dd481e3.bak"
+  },
+  "historical_not_baseline": {
+    "sha256": "fb939b622483553a5cb7d9c066944c5ec0065290d2eae9d478e71f078e9e00f8",
+    "artifact": "s3://momento-paper-artifacts-895492487332/m10/momento-trading-engine",
+    "reason": "2026-09-03 binary that traded 2026-09-13. Predates fill-ingest and recon. Do not recover from this object."
+  },
+  "protections": {
+    "process": "systemd Restart=always RestartSec=5 StartLimitIntervalSec=300 StartLimitBurst=10 RestartPreventExitStatus=78",
+    "state": "run_desk_housekeeping every heartbeat: leftover fills DuplicateIgnored; Settled known reservations drop; release_ambiguous only if no live uncertainty; housekeeping_ok; no force-Healthy path",
+    "binary": "install this SHA from the baseline prefix; never Mac-cross-compile; never guess"
+  },
+  "do_not": [
+    "rollback fb939b62",
+    "restart to force a trade",
+    "edit live-runtime.json",
+    "invent fills",
+    "change 80/81/83/89",
+    "enable VITAL_AWS_CONTROL by default"
+  ]
+}

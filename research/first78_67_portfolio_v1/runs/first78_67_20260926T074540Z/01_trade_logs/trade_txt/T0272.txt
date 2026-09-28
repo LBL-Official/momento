@@ -1,0 +1,10 @@
+trade T0272  NBA  Atlanta at Portland
+contract KXNBAGAME-26JAN15ATLPOR-ATL  slice Q3
+signal 2026-01-15T20:41:00-08:00 PST  exit 2026-01-15T20:49:00-08:00 PST
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 4379  principal_cents 341562
+entry_fee_cents 1316  exit_fee_cents 1695
+exit STOP at 67c  terminal no
+gross_cents -48169  net_cents -51180
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

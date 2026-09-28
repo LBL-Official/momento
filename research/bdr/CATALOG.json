@@ -1,0 +1,83 @@
+{
+  "schema": "bdr_catalog_v1",
+  "live_execution": false,
+  "system_id": "hedging_analysis",
+  "title": "BDR # MOMENTO SYSTEMS",
+  "subtitle": "Staged acquisition · 77 ridge · barrier defense · synthetic exit",
+  "note": "Hedging Analysis frontend on :5190. Not an 18th system. Not live. Candle path is not a fill.",
+  "documents": [
+    {
+      "slug": "program",
+      "number": 1,
+      "title": "80→40 Barrier Defense & Synthetic Exit Program",
+      "kind": "program",
+      "path": "docs/research/BDR_80_40_BARRIER_DEFENSE.md",
+      "blurb": "Head-quant problem definition: treat 40 as a barrier to defend, not the moment liquidation begins. Direct exit vs synthetic opponent hedge."
+    },
+    {
+      "slug": "dual-leg-lock",
+      "number": 2,
+      "title": "Dual-leg maker lock — position-management problem brief",
+      "kind": "engineer_brief",
+      "path": "docs/research/DUAL_LEG_MAKER_LOCK_POSITION_MANAGEMENT.md",
+      "blurb": "Engineer contract: A/B clocks, ARM 55 / join 44 / H_MAX 60 / abort 20, state machine, Risk complementary-pair RFC, MLB 2026-08-25 3¢ IOC."
+    },
+    {
+      "slug": "liquidation-corridor",
+      "number": 3,
+      "title": "80 → Dynamic Exit Corridor",
+      "kind": "mandate",
+      "path": "docs/research/BDR_LIQUIDATION_CORRIDOR.md",
+      "blurb": "Derived four N=936, not asked-six. 25–50¢ is an EV plateau (~0.35¢ wide). 40 is not special. Live concept: 80 → Dynamic Exit Corridor. 30–45 core; 20 is fail-safe."
+    },
+    {
+      "slug": "acquisition-corridor",
+      "number": 4,
+      "title": "75 → Acquisition Corridor",
+      "kind": "thesis",
+      "path": "docs/research/BDR_ACQUISITION_CORRIDOR.md",
+      "blurb": "Policy vs policy: start working at 75 versus wait until FIRST80. Theoretical 35–45 hurdle is 0.38–0.57¢. VWAP / fill% / missed >85 are NOT_RUN. FIRST75 opens the window; FIRST80 stays the phenomenon."
+    },
+    {
+      "slug": "asked-six-liquidation",
+      "number": 5,
+      "title": "Asked-six 80/40 liquidation calibration",
+      "kind": "related",
+      "path": "research/first80_asked_six_80_40_liquidation/REPORT.md",
+      "blurb": "Asked-six liquidation calibration on disk. Complement context only. Not the derived-four 936 book."
+    },
+    {
+      "slug": "loss-review-2026-08-25",
+      "number": 6,
+      "title": "2026-08-25 live loss review (CHC @ 3¢)",
+      "kind": "related",
+      "path": "docs/desk/2026-08-25-loss-review.md",
+      "blurb": "Desk loss review. Not a fill tape for the 75 acquisition thesis."
+    },
+    {
+      "slug": "a1-hybrid-hedge",
+      "number": 7,
+      "title": "A1 hybrid hedge report",
+      "kind": "related",
+      "path": "docs/research/A1_HYBRID_HEDGE_REPORT.md",
+      "blurb": "A1 hybrid hedge research. Not a live hedge authorization."
+    },
+    {
+      "slug": "77-ridge",
+      "number": 8,
+      "title": "77 → Economic Ridge / EV Surface",
+      "kind": "thesis",
+      "path": "docs/research/BDR_77_RIDGE.md",
+      "blurb": "FIRST77 77/35–45 is one candle-path ridge (boxed 77/40 +5.1222¢). Full 74–81 EV surface is NOT_RUN. Candle path ≠ fill. Not BUY@77 / STOP@40."
+    },
+    {
+      "slug": "staged-acquisition",
+      "number": 9,
+      "title": "77 Arms · Confirmation States · Liquidation Manifold",
+      "kind": "thesis",
+      "path": "docs/research/BDR_STAGED_ACQUISITION.md",
+      "blurb": "77 vs 80 best cells differ by 0.0188¢. 83 may be confirmation, not entry. Exit is a manifold. Common-intersection ladder is NOT_RUN. Candle path ≠ fill."
+    }
+  ],
+  "related": []
+}

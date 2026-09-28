@@ -1,0 +1,23 @@
+{
+  "raw_data_not_overwritten": true,
+  "existing_manifests_verified": true,
+  "historical_source_inventory_exists": true,
+  "coverage_vocabulary_exists": true,
+  "availability_2025_2026_measured": true,
+  "candle_vs_tick_vs_l2_preserved": true,
+  "collector_vs_exchange_timestamp_preserved": true,
+  "provenance_model_exists": true,
+  "observability_model_exists": true,
+  "canonical_manifest_exists": true,
+  "data_anomalies_reported": true,
+  "missing_data_reported": true,
+  "local_drive_artifacts_generated": true,
+  "local_sheets_reporting_generated": true,
+  "w1_reproducible": true,
+  "w1_documentation_complete": true,
+  "no_production_code_changed": true,
+  "no_live_strategy_changed": true,
+  "no_risk_behavior_changed": true,
+  "no_execution_behavior_changed": true,
+  "no_production_orders_transmitted": true
+}

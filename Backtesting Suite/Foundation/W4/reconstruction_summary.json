@@ -1,0 +1,180 @@
+{
+  "waterfall": "CTO-W4",
+  "artifact_version": "W4.0.0",
+  "generated_at": "2026-08-26T18:47:07.552540Z",
+  "run_id": "w4-20260826T184707Z",
+  "date": "2026-06-18",
+  "committed_envelopes": 18,
+  "reconstructed": 18,
+  "failed": 0,
+  "coupled_episodes": 9,
+  "completeness_claimed": true,
+  "coverage": {
+    "coverage_version": "W4.COVERAGE.1.0.0",
+    "window_start": "2026-06-18",
+    "window_end": "2026-06-18",
+    "reconstructed_tickers": 18,
+    "paths_by_completeness": {
+      "TRADES_ONLY": 18
+    },
+    "identity_mapped": 0,
+    "identity_unmatched": 18,
+    "identity_ambiguous": 0,
+    "coupled_episodes": 9,
+    "coupled_both_yes": 9,
+    "coupled_missing_side": 0,
+    "starting_price_unverified": 18,
+    "starting_price_verified": 0,
+    "lifetime_open_to_settlement": 0,
+    "lifetime_settlement_day_only": 0,
+    "lifetime_unknown": 18,
+    "blocked_on_ingest_observations": 0,
+    "ingest_only_pit_snapshots": 8,
+    "completeness_claimed": true,
+    "notes": [
+      "merged Data-Real COMPLETE raw for 2026-06-18",
+      "W5 handoff: market path exists; event↔market sync is not done",
+      "FULL_L2 not claimed. 2024 Kalshi not claimed.",
+      "identity consumed from Backtesting Suite/Foundation/Ingest/runs/ingest-20260826T095038Z-2bc3d10b5833/game_market_pairs.json (8428 tickers indexed)"
+    ]
+  },
+  "anomalies": [
+    {
+      "ticker": "",
+      "code": "LAKE",
+      "message": "merged Data-Real COMPLETE raw for 2026-06-18"
+    },
+    {
+      "ticker": "KXMLBGAME-26JUN181335TORBOS-BOS",
+      "code": "UNSORTED_TRADES",
+      "message": "t_game points were not venue-time ordered; sorted"
+    },
+    {
+      "ticker": "KXMLBGAME-26JUN181335TORBOS-TOR",
+      "code": "UNSORTED_TRADES",
+      "message": "t_game points were not venue-time ordered; sorted"
+    },
+    {
+      "ticker": "KXMLBGAME-26JUN181410CLEMIL-CLE",
+      "code": "UNSORTED_TRADES",
+      "message": "t_game points were not venue-time ordered; sorted"
+    },
+    {
+      "ticker": "KXMLBGAME-26JUN181410CLEMIL-MIL",
+      "code": "UNSORTED_TRADES",
+      "message": "t_game points were not venue-time ordered; sorted"
+    },
+    {
+      "ticker": "KXMLBGAME-26JUN181435MINTEX-MIN",
+      "code": "UNSORTED_TRADES",
+      "message": "t_game points were not venue-time ordered; sorted"
+    },
+    {
+      "ticker": "KXMLBGAME-26JUN181435MINTEX-TEX",
+      "code": "UNSORTED_TRADES",
+      "message": "t_game points were not venue-time ordered; sorted"
+    },
+    {
+      "ticker": "KXMLBGAME-26JUN181610BALSEA-BAL",
+      "code": "UNSORTED_TRADES",
+      "message": "t_game points were not venue-time ordered; sorted"
+    },
+    {
+      "ticker": "KXMLBGAME-26JUN181610BALSEA-SEA",
+      "code": "UNSORTED_TRADES",
+      "message": "t_game points were not venue-time ordered; sorted"
+    },
+    {
+      "ticker": "KXMLBGAME-26JUN181840NYMPHI-NYM",
+      "code": "UNSORTED_TRADES",
+      "message": "t_game points were not venue-time ordered; sorted"
+    },
+    {
+      "ticker": "KXMLBGAME-26JUN181840NYMPHI-NYM",
+      "code": "DUPLICATE_TRADE_ID",
+      "message": "10550 duplicate trade_ids dropped (kept first)"
+    },
+    {
+      "ticker": "KXMLBGAME-26JUN181840NYMPHI-PHI",
+      "code": "UNSORTED_TRADES",
+      "message": "t_game points were not venue-time ordered; sorted"
+    },
+    {
+      "ticker": "KXMLBGAME-26JUN181840NYMPHI-PHI",
+      "code": "DUPLICATE_TRADE_ID",
+      "message": "9582 duplicate trade_ids dropped (kept first)"
+    },
+    {
+      "ticker": "KXMLBGAME-26JUN181905CWSNYY-CWS",
+      "code": "UNSORTED_TRADES",
+      "message": "t_game points were not venue-time ordered; sorted"
+    },
+    {
+      "ticker": "KXMLBGAME-26JUN181905CWSNYY-CWS",
+      "code": "DUPLICATE_TRADE_ID",
+      "message": "7668 duplicate trade_ids dropped (kept first)"
+    },
+    {
+      "ticker": "KXMLBGAME-26JUN181905CWSNYY-NYY",
+      "code": "UNSORTED_TRADES",
+      "message": "t_game points were not venue-time ordered; sorted"
+    },
+    {
+      "ticker": "KXMLBGAME-26JUN181905CWSNYY-NYY",
+      "code": "DUPLICATE_TRADE_ID",
+      "message": "8201 duplicate trade_ids dropped (kept first)"
+    },
+    {
+      "ticker": "KXMLBGAME-26JUN181915SFATL-ATL",
+      "code": "UNSORTED_TRADES",
+      "message": "t_game points were not venue-time ordered; sorted"
+    },
+    {
+      "ticker": "KXMLBGAME-26JUN181915SFATL-SF",
+      "code": "UNSORTED_TRADES",
+      "message": "t_game points were not venue-time ordered; sorted"
+    },
+    {
+      "ticker": "KXMLBGAME-26JUN181940STLKC-KC",
+      "code": "UNSORTED_TRADES",
+      "message": "t_game points were not venue-time ordered; sorted"
+    },
+    {
+      "ticker": "KXMLBGAME-26JUN181940STLKC-KC",
+      "code": "DUPLICATE_TRADE_ID",
+      "message": "3177 duplicate trade_ids dropped (kept first)"
+    },
+    {
+      "ticker": "KXMLBGAME-26JUN181940STLKC-STL",
+      "code": "UNSORTED_TRADES",
+      "message": "t_game points were not venue-time ordered; sorted"
+    },
+    {
+      "ticker": "KXMLBGAME-26JUN181940STLKC-STL",
+      "code": "DUPLICATE_TRADE_ID",
+      "message": "4698 duplicate trade_ids dropped (kept first)"
+    },
+    {
+      "ticker": "KXMLBGAME-26JUN182140LAAATH-ATH",
+      "code": "UNSORTED_TRADES",
+      "message": "t_game points were not venue-time ordered; sorted"
+    },
+    {
+      "ticker": "KXMLBGAME-26JUN182140LAAATH-ATH",
+      "code": "DUPLICATE_TRADE_ID",
+      "message": "6330 duplicate trade_ids dropped (kept first)"
+    },
+    {
+      "ticker": "KXMLBGAME-26JUN182140LAAATH-LAA",
+      "code": "UNSORTED_TRADES",
+      "message": "t_game points were not venue-time ordered; sorted"
+    },
+    {
+      "ticker": "KXMLBGAME-26JUN182140LAAATH-LAA",
+      "code": "DUPLICATE_TRADE_ID",
+      "message": "6631 duplicate trade_ids dropped (kept first)"
+    }
+  ],
+  "blockers": [],
+  "out_dir": "Backtesting Suite/Foundation/W4"
+}

@@ -1,0 +1,96 @@
+{
+  "BASE_GRADE": "F",
+  "DEBASE_GRADE": "F",
+  "abase_filename": "SuperasiABase[ITI Stress Q4 CROSS 65 REACH 85 40 ITI-15].csv",
+  "abase_sha256": "ea952545ce409ae9415ce585c9748c71fa130aa46fbe5e0a0d94cbc44f1e93da",
+  "allocation_bps": 500,
+  "artifact": "superasi_bdebase",
+  "bankroll_cents": 2000000,
+  "bottleneck": "F",
+  "components": {
+    "coverage": "C",
+    "research_evidence": "F",
+    "robustness": "D",
+    "theoretical_alignment": "F",
+    "validation": "F"
+  },
+  "created_at": "2026-09-13T10:30:12Z",
+  "debase_filename": "SuperasiBDeBase[ITI Stress Q4 CROSS 65 REACH 85 40 ITI-15].csv",
+  "debase_payload_sha256": "368ac2d4394804705ff4149d80a7cf0f1d98787ff8b08143e4f6012a19ff4093",
+  "debase_sha256": "0f583da9d46457141f3335c84fd47f0469a2b887e8a365d96bb1023ded5596d7",
+  "desk_settings_source": "disk",
+  "floor_cents": 1500000,
+  "folder": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-15",
+  "grade_config_version": "grade_config_v1",
+  "phase": "B",
+  "phase_a_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-15",
+  "plan_hash": "158f511b1a6511c3de28b93211e1bbd8494233294b2e556ceb61a7125c7c1962",
+  "question": {
+    "accept_limitations": false,
+    "entry_conditions": [
+      {
+        "clock": null,
+        "event_definition": "TRADABLE_CLOSE_CROSS",
+        "id": "entry_iti_stress",
+        "nth": null,
+        "operation": "CROSS",
+        "ordinal": "FIRST_TOUCH",
+        "period": "Q4",
+        "price_e4": 6500,
+        "price_field": "yes_bid_close"
+      }
+    ],
+    "path_conditions": [
+      {
+        "id": "win_iti_stress",
+        "op": "REACH",
+        "outcome": "win",
+        "price_e4": 8500,
+        "sequential": false
+      },
+      {
+        "id": "loss_iti_stress",
+        "op": "REACH",
+        "outcome": "loss",
+        "price_e4": 3800,
+        "sequential": false
+      }
+    ],
+    "requested_dimensions": [
+      "HOLD_TO_SETTLEMENT"
+    ],
+    "terminal": "BOTH",
+    "universe": {
+      "date_from": "2025-10-10",
+      "date_to": "2025-10-31",
+      "game_data": [
+        "pbp"
+      ],
+      "leagues": [
+        "NBA"
+      ],
+      "market_data": [
+        "candles"
+      ],
+      "markets": [
+        "kalshi"
+      ],
+      "seasons": [
+        "2025-2026"
+      ],
+      "sports": [
+        "NBA"
+      ]
+    }
+  },
+  "question_sha256": "51b02e108d8da80231bac672d2560ee32470c6de327bd9622bda5c9cd1c83cf0",
+  "question_status": "PRESENT",
+  "result_hash": "c14775304985a60046a5a9155f7caa641f074993d5fe286c573ebacb42bfeb07",
+  "result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-15",
+  "roller_filename": "Roller[ITI Stress Q4 CROSS 65 REACH 85 40 ITI-15].csv",
+  "source_csv_sha256": "d12b2c5616c95e5770b3d00059003ec4536fd7cf89405118ccadc630a3bd681e",
+  "source_lab_id": "6059f81f03cf42c3bd5b3bc483c16e9c",
+  "strategy_name": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-15",
+  "superasi_version": "superasi_bdebase_v1.0.0",
+  "target_cents": 3000000
+}

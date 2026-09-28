@@ -1,0 +1,10 @@
+trade T0520  NCAAB  Kansas at Arizona St.
+contract KXNCAAMBGAME-26MAR03KUASU-ASU  slice H1_2
+signal 2026-03-03T19:06:00-08:00 PST  exit 2026-03-03T19:43:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 9922  principal_cents 773916
+entry_fee_cents 2980  exit_fee_cents 3840
+exit STOP at 67c  terminal yes
+gross_cents -109142  net_cents -115962
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

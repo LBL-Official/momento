@@ -1,0 +1,10 @@
+trade T0526  NCAAB  Stanford at Notre Dame
+contract KXNCAAMBGAME-26MAR04STANND-STAN  slice H2_1
+signal 2026-03-04T18:43:00-08:00 PST  exit 2026-03-04T20:36:26-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 10304  principal_cents 803712
+entry_fee_cents 3095  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 226688  net_cents 223593
+strategy_result POSITIVE  net_r 1.856683772607244282796073938
+Assumed fill. Not a maker fill. Not live P&L.

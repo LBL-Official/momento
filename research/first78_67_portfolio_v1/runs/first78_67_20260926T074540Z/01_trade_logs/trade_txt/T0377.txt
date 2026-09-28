@@ -1,0 +1,10 @@
+trade T0377  NBA  Denver at New York
+contract KXNBAGAME-26FEB04DENNYK-NYK  slice Q3
+signal 2026-02-04T17:58:00-08:00 PST  exit 2026-02-04T18:13:00-08:00 PST
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 6508  principal_cents 507624
+entry_fee_cents 1955  exit_fee_cents 2519
+exit STOP at 67c  terminal yes
+gross_cents -71588  net_cents -76062
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

@@ -1,0 +1,27 @@
+[package]
+name = "momento-kalshi"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "Kalshi adapter: demo transport, production read-only auth, and production trading transport."
+
+[lints]
+workspace = true
+
+[dependencies]
+base64 = "0.22"
+chrono.workspace = true
+momento-core.workspace = true
+rand = { version = "0.8", features = ["std", "std_rng"] }
+rsa = { version = "0.9.8", features = ["pem", "std", "sha2"] }
+serde.workspace = true
+serde_json.workspace = true
+tungstenite = { version = "0.26.2", default-features = false, features = ["handshake", "rustls-tls-webpki-roots"] }
+ureq = { version = "2.12.1", default-features = false, features = ["tls", "json"] }
+
+[dev-dependencies]
+momento-pnl.workspace = true
+momento-positions.workspace = true
+momento-strategy-mlb.workspace = true

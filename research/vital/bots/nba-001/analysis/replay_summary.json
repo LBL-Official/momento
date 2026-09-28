@@ -1,0 +1,327 @@
+{
+  "submits": false,
+  "live_execution": false,
+  "fill_executable": false,
+  "fill_status": "FILL_UNAVAILABLE",
+  "maker_multiplier_selection": 1,
+  "maker_multiplier_source": "UNAVAILABLE",
+  "preservation": {
+    "protected_mismatch": [],
+    "mlb_tree_match": true,
+    "outcomes_accessed": false
+  },
+  "decision": {
+    "status": "PROVISIONAL",
+    "candidate": "q2",
+    "lower_bound": "0.001707304041251258371141175433",
+    "fill_executable": false,
+    "hedge_eligible": false,
+    "mean_claim": "UNSUPPORTED",
+    "point": "0.007637620095875937220842398594",
+    "union_point": "0.003524392604618953413500056008",
+    "union_lower": "-0.002851350163016043468746085139"
+  },
+  "layers": {
+    "conservative": {
+      "union": {
+        "weeks_at_or_above_1_5pct": 16,
+        "weeks_observed": 36,
+        "exit_basis": {
+          "FIRST_CLOSE_AT_OR_BELOW_40": 72,
+          "POST_ENTRY_MIN_NOT_FIRST_CLOSE": 0,
+          "THEORETICAL_EXIT_AT_40": 0,
+          "CANDLE_SETTLEMENT": 181
+        },
+        "entries": 248,
+        "skip_reasons": {
+          "STALE_MARK": 5
+        },
+        "phase_realized_cents": {
+          "PRESEASON": -49204,
+          "REGULAR_SEASON": 537724,
+          "PLAYOFFS": -180337,
+          "FINALS": -95502
+        },
+        "ending_cash_cents": 2212681,
+        "open_positions": 0,
+        "fill_observed": false,
+        "basis": "CANDLE_PATH_NOT_A_FILL",
+        "weeks": 36,
+        "missing_weeks": 0,
+        "bootstrap_4": {
+          "status": "OK",
+          "block": 4,
+          "draws": 2000,
+          "seed": 604,
+          "weeks": 36,
+          "point": "0.003524392604618953413500056008",
+          "lower": "-0.002851350163016043468746085139",
+          "rank": 200
+        },
+        "bootstrap_1": {
+          "status": "OK",
+          "block": 1,
+          "draws": 2000,
+          "seed": 604,
+          "weeks": 36,
+          "point": "0.003524392604618953413500056008",
+          "lower": "-0.004324040794589890941565894628",
+          "rank": 200
+        },
+        "bootstrap_8": {
+          "status": "OK",
+          "block": 8,
+          "draws": 2000,
+          "seed": 604,
+          "weeks": 36,
+          "point": "0.003524392604618953413500056008",
+          "lower": "-0.001037210231522136483833374770",
+          "rank": 200
+        }
+      },
+      "q2": {
+        "weeks_at_or_above_1_5pct": 12,
+        "weeks_observed": 36,
+        "exit_basis": {
+          "FIRST_CLOSE_AT_OR_BELOW_40": 38,
+          "POST_ENTRY_MIN_NOT_FIRST_CLOSE": 0,
+          "THEORETICAL_EXIT_AT_40": 0,
+          "CANDLE_SETTLEMENT": 115
+        },
+        "entries": 151,
+        "skip_reasons": {
+          "STALE_MARK": 2
+        },
+        "phase_realized_cents": {
+          "PRESEASON": 48052,
+          "REGULAR_SEASON": 789169,
+          "PLAYOFFS": -138435,
+          "FINALS": -111615
+        },
+        "ending_cash_cents": 2587171,
+        "open_positions": 0,
+        "fill_observed": false,
+        "basis": "CANDLE_PATH_NOT_A_FILL",
+        "weeks": 36,
+        "missing_weeks": 0,
+        "bootstrap_4": {
+          "status": "OK",
+          "block": 4,
+          "draws": 2000,
+          "seed": 604,
+          "weeks": 36,
+          "point": "0.007637620095875937220842398594",
+          "lower": "0.001707304041251258371141175433",
+          "rank": 200
+        },
+        "bootstrap_1": {
+          "status": "OK",
+          "block": 1,
+          "draws": 2000,
+          "seed": 604,
+          "weeks": 36,
+          "point": "0.007637620095875937220842398594",
+          "lower": "0.001433925041116586620125239703",
+          "rank": 200
+        },
+        "bootstrap_8": {
+          "status": "OK",
+          "block": 8,
+          "draws": 2000,
+          "seed": 604,
+          "weeks": 36,
+          "point": "0.007637620095875937220842398594",
+          "lower": "0.004068403812338794990944981144",
+          "rank": 200
+        }
+      },
+      "q3": {
+        "weeks_at_or_above_1_5pct": 7,
+        "weeks_observed": 36,
+        "exit_basis": {
+          "FIRST_CLOSE_AT_OR_BELOW_40": 34,
+          "POST_ENTRY_MIN_NOT_FIRST_CLOSE": 0,
+          "THEORETICAL_EXIT_AT_40": 0,
+          "CANDLE_SETTLEMENT": 66
+        },
+        "entries": 100,
+        "skip_reasons": {},
+        "phase_realized_cents": {
+          "PRESEASON": -95009,
+          "REGULAR_SEASON": -156925,
+          "PLAYOFFS": -43465
+        },
+        "ending_cash_cents": 1704601,
+        "open_positions": 0,
+        "fill_observed": false,
+        "basis": "CANDLE_PATH_NOT_A_FILL",
+        "weeks": 36,
+        "missing_weeks": 0,
+        "bootstrap_4": {
+          "status": "OK",
+          "block": 4,
+          "draws": 2000,
+          "seed": 604,
+          "weeks": 36,
+          "point": "-0.004111184550726920744307939139",
+          "lower": "-0.007414851455580035871136383494",
+          "rank": 200
+        },
+        "bootstrap_1": {
+          "status": "OK",
+          "block": 1,
+          "draws": 2000,
+          "seed": 604,
+          "weeks": 36,
+          "point": "-0.004111184550726920744307939139",
+          "lower": "-0.009389178046000817329890566539",
+          "rank": 200
+        },
+        "bootstrap_8": {
+          "status": "OK",
+          "block": 8,
+          "draws": 2000,
+          "seed": 604,
+          "weeks": 36,
+          "point": "-0.004111184550726920744307939139",
+          "lower": "-0.007291064043874544897423215233",
+          "rank": 200
+        }
+      }
+    },
+    "theoretical": {
+      "union": {
+        "weeks_at_or_above_1_5pct": 16,
+        "weeks_observed": 29,
+        "exit_basis": {
+          "FIRST_CLOSE_AT_OR_BELOW_40": 0,
+          "POST_ENTRY_MIN_NOT_FIRST_CLOSE": 0,
+          "THEORETICAL_EXIT_AT_40": 154,
+          "CANDLE_SETTLEMENT": 450
+        },
+        "entries": 587,
+        "skip_reasons": {
+          "STALE_MARK": 15,
+          "SLOT_FULL": 2
+        },
+        "phase_realized_cents": {
+          "PRESEASON": -49790,
+          "REGULAR_SEASON": 2477413,
+          "PLAYOFFS": -45355,
+          "FINALS": -271934
+        },
+        "ending_cash_cents": 4110334,
+        "open_positions": 0,
+        "fill_observed": false,
+        "basis": "CANDLE_PATH_NOT_A_FILL",
+        "weeks": 36,
+        "missing_weeks": 7,
+        "bootstrap_4": {
+          "status": "UNAVAILABLE",
+          "reason": "INCOMPLETE_WEEKLY_SERIES",
+          "block": 4
+        },
+        "bootstrap_1": {
+          "status": "UNAVAILABLE",
+          "reason": "INCOMPLETE_WEEKLY_SERIES",
+          "block": 1
+        },
+        "bootstrap_8": {
+          "status": "UNAVAILABLE",
+          "reason": "INCOMPLETE_WEEKLY_SERIES",
+          "block": 8
+        }
+      },
+      "q2": {
+        "weeks_at_or_above_1_5pct": 18,
+        "weeks_observed": 31,
+        "exit_basis": {
+          "FIRST_CLOSE_AT_OR_BELOW_40": 0,
+          "POST_ENTRY_MIN_NOT_FIRST_CLOSE": 0,
+          "THEORETICAL_EXIT_AT_40": 75,
+          "CANDLE_SETTLEMENT": 239
+        },
+        "entries": 309,
+        "skip_reasons": {
+          "STALE_MARK": 5
+        },
+        "phase_realized_cents": {
+          "PRESEASON": -2928,
+          "REGULAR_SEASON": 1995473,
+          "PLAYOFFS": -113335,
+          "FINALS": -240684
+        },
+        "ending_cash_cents": 3638526,
+        "open_positions": 0,
+        "fill_observed": false,
+        "basis": "CANDLE_PATH_NOT_A_FILL",
+        "weeks": 36,
+        "missing_weeks": 5,
+        "bootstrap_4": {
+          "status": "UNAVAILABLE",
+          "reason": "INCOMPLETE_WEEKLY_SERIES",
+          "block": 4
+        },
+        "bootstrap_1": {
+          "status": "UNAVAILABLE",
+          "reason": "INCOMPLETE_WEEKLY_SERIES",
+          "block": 1
+        },
+        "bootstrap_8": {
+          "status": "UNAVAILABLE",
+          "reason": "INCOMPLETE_WEEKLY_SERIES",
+          "block": 8
+        }
+      },
+      "q3": {
+        "weeks_at_or_above_1_5pct": 13,
+        "weeks_observed": 34,
+        "exit_basis": {
+          "FIRST_CLOSE_AT_OR_BELOW_40": 0,
+          "POST_ENTRY_MIN_NOT_FIRST_CLOSE": 0,
+          "THEORETICAL_EXIT_AT_40": 79,
+          "CANDLE_SETTLEMENT": 211
+        },
+        "entries": 287,
+        "skip_reasons": {
+          "STALE_MARK": 3
+        },
+        "phase_realized_cents": {
+          "PRESEASON": -46975,
+          "REGULAR_SEASON": 230901,
+          "PLAYOFFS": 40735
+        },
+        "ending_cash_cents": 2224661,
+        "open_positions": 0,
+        "fill_observed": false,
+        "basis": "CANDLE_PATH_NOT_A_FILL",
+        "weeks": 36,
+        "missing_weeks": 2,
+        "bootstrap_4": {
+          "status": "UNAVAILABLE",
+          "reason": "INCOMPLETE_WEEKLY_SERIES",
+          "block": 4
+        },
+        "bootstrap_1": {
+          "status": "UNAVAILABLE",
+          "reason": "INCOMPLETE_WEEKLY_SERIES",
+          "block": 1
+        },
+        "bootstrap_8": {
+          "status": "UNAVAILABLE",
+          "reason": "INCOMPLETE_WEEKLY_SERIES",
+          "block": 8
+        }
+      }
+    }
+  },
+  "hedge": {
+    "fill_credited": false,
+    "fill_status": "FILL_UNAVAILABLE",
+    "triggers_close_at_or_below_42": 443,
+    "fallback_exits_at_later_close_at_or_below_40": 442,
+    "held_to_settlement_after_trigger": 1,
+    "ranking_input": false
+  },
+  "n": 604
+}

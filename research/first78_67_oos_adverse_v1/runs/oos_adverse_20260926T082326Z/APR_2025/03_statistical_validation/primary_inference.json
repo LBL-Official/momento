@@ -1,0 +1,14 @@
+{
+  "REF": {
+    "status": "P_VALUE_NOT_ESTIMABLE",
+    "reason": "FEWER_THAN_10_INDEPENDENT_DAYS",
+    "n_days": 4,
+    "n_trades": 6
+  },
+  "JOINT_2_FEE_007": {
+    "status": "P_VALUE_NOT_ESTIMABLE",
+    "reason": "FEWER_THAN_10_INDEPENDENT_DAYS",
+    "n_days": 4,
+    "n_trades": 6
+  }
+}

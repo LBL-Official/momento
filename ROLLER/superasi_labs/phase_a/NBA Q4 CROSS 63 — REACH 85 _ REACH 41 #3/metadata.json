@@ -1,0 +1,25 @@
+{
+  "BASE_GRADE": "F",
+  "abase_filename": "SuperasiABase[NBA Q4 CROSS 63 \u2014 REACH 85 _ REACH 41 #3].csv",
+  "abase_payload_sha256": "8ce11265a809462b5e5c373d59255a3d7c1d4f67dbe7087a5b7b6c9d95c28b4d",
+  "abase_sha256": "1279b99205271a62e66624dc6782707965d5f356a172d389290b93095b9a5017",
+  "artifact": "superasi_abase",
+  "borderline": false,
+  "components": {
+    "coverage": "C",
+    "research_evidence": "F",
+    "robustness": "D",
+    "theoretical_alignment": "F",
+    "validation": "F"
+  },
+  "created_at": "2026-09-13T09:32:39Z",
+  "folder": "NBA Q4 CROSS 63 \u2014 REACH 85 _ REACH 41 #3",
+  "grade_config_version": "grade_config_v1",
+  "phase": "A",
+  "result_id": "NBA Q4 CROSS 63 \u2014 REACH 85 _ REACH 41 #3",
+  "roller_filename": "RollerNBA Q4 CROSS 63 \u2014 REACH 85 _ REACH 41 #3.csv",
+  "source_csv_sha256": "9f1eac86bff05bcbdebfa3673473cf46d6c70ba3567da037ccaec113f0ab4870",
+  "source_lab_id": "e9b05c3013d943d6875242a0b2c016b6",
+  "strategy_name": "NBA Q4 CROSS 63 \u2014 REACH 85 _ REACH 41 #3",
+  "superasi_version": "superasi_abase_v1.0.0"
+}

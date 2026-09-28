@@ -1,0 +1,18 @@
+[package]
+name = "momento-strategy-research-iti"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "Research ITI First Touch / REACH. Emits TradeIntent only. Not 80/81."
+
+[lints]
+workspace = true
+
+[dependencies]
+momento-core.workspace = true
+serde.workspace = true
+
+[dev-dependencies]
+chrono.workspace = true

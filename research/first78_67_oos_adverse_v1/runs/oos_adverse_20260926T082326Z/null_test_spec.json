@@ -1,0 +1,12 @@
+{
+  "estimand": "unweighted mean of net_pnl_cents/contracts on admitted PRIMARY_EX_ANTE trades",
+  "null": "estimand = 0",
+  "alternative": "estimand > 0",
+  "cluster": "America/Los_Angeles signal date",
+  "procedure": "Resample clusters with replacement. For each draw compute T*. Studentize the centered draw (T* - T) / se*. The observed statistic is T / se. The one-sided p-value is the share of studentized centered draws at least as large as the observed studentized statistic, with the usual +1 numerator and +1 denominator. This is not the share of uncentered bootstrap means that are <= 0.",
+  "minimum_independent_days": 10,
+  "draws": 2000,
+  "if_support_fails": "P_VALUE_NOT_ESTIMABLE",
+  "holm": "only across the primary family members that returned a numeric p-value",
+  "timing_null": "NOT_IDENTIFIABLE"
+}

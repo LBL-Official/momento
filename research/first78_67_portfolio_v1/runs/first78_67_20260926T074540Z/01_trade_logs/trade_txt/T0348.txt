@@ -1,0 +1,10 @@
+trade T0348  NBA  Toronto at Orlando
+contract KXNBAGAME-26JAN30TORORL-TOR  slice Q3
+signal 2026-01-30T18:39:00-08:00 PST  exit 2026-01-30T18:52:00-08:00 PST
+assumed entry 78c  observed close 84c  overshoot 6c
+contracts 5823  principal_cents 454194
+entry_fee_cents 1749  exit_fee_cents 2254
+exit STOP at 67c  terminal no
+gross_cents -64053  net_cents -68056
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

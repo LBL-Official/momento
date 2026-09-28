@@ -1,0 +1,99 @@
+{
+  "candle_rows": 20617911,
+  "rows_without_clock": 369780,
+  "by_sport": {
+    "MLB": {
+      "games": 5208,
+      "games_with_primary_clock": 5153,
+      "games_unmeasurable_clock": 55,
+      "games_schedule_exception": 0,
+      "games_ambiguous_map": 0,
+      "games_utc_date_rollover": 0,
+      "games_stored_match_not_implementable": 0,
+      "tickers": 8580,
+      "first_observed_above_70": 83,
+      "missing_endpoint_above_70": 0,
+      "pregame_first80_crossing": 0,
+      "already_above_80_at_first_valid": 2,
+      "listing_time": "UNAVAILABLE",
+      "history_before_first_raw": "UNKNOWN"
+    },
+    "NBA": {
+      "games": 1362,
+      "games_with_primary_clock": 1362,
+      "games_unmeasurable_clock": 0,
+      "games_schedule_exception": 0,
+      "games_ambiguous_map": 0,
+      "games_utc_date_rollover": 21,
+      "games_stored_match_not_implementable": 2,
+      "tickers": 2704,
+      "first_observed_above_70": 359,
+      "missing_endpoint_above_70": 0,
+      "pregame_first80_crossing": 280,
+      "already_above_80_at_first_valid": 132,
+      "listing_time": "UNAVAILABLE",
+      "history_before_first_raw": "UNKNOWN"
+    },
+    "NCAAB": {
+      "games": 5280,
+      "games_with_primary_clock": 5280,
+      "games_unmeasurable_clock": 0,
+      "games_schedule_exception": 0,
+      "games_ambiguous_map": 0,
+      "games_utc_date_rollover": 0,
+      "games_stored_match_not_implementable": 0,
+      "tickers": 1698,
+      "first_observed_above_70": 322,
+      "missing_endpoint_above_70": 10,
+      "pregame_first80_crossing": 121,
+      "already_above_80_at_first_valid": 166,
+      "listing_time": "UNAVAILABLE",
+      "history_before_first_raw": "UNKNOWN"
+    },
+    "WNBA": {
+      "games": 612,
+      "games_with_primary_clock": 612,
+      "games_unmeasurable_clock": 0,
+      "games_schedule_exception": 0,
+      "games_ambiguous_map": 0,
+      "games_utc_date_rollover": 0,
+      "games_stored_match_not_implementable": 314,
+      "tickers": 1220,
+      "first_observed_above_70": 180,
+      "missing_endpoint_above_70": 46,
+      "pregame_first80_crossing": 383,
+      "already_above_80_at_first_valid": 61,
+      "listing_time": "UNAVAILABLE",
+      "history_before_first_raw": "UNKNOWN"
+    }
+  },
+  "parquet_inventory": {
+    "NBA": {
+      "games": 1362,
+      "observation_rows": 6165183,
+      "orderbook_data_available": false,
+      "observation_basis": "TRADABLE_YES_BID"
+    },
+    "NCAAB": {
+      "games": 5280,
+      "observation_rows": 13429581,
+      "orderbook_data_available": false,
+      "observation_basis": [
+        "TRADABLE_YES_BID"
+      ]
+    },
+    "MLB": {
+      "games": 5208,
+      "observation_rows": null,
+      "orderbook_data_available": false,
+      "observation_basis": [
+        "LAST_TRADE_PRINT",
+        "TRADABLE_YES_BID"
+      ]
+    },
+    "WNBA_2025": null,
+    "WNBA_2026": null
+  },
+  "cohort_source": "canonical kalshi_candles CSV",
+  "parquet_in_cohort_n": false
+}

@@ -1,0 +1,362 @@
+{
+  "registry_version": "vocab_v0",
+  "schema_version": "research_spec_v0",
+  "notes": [
+    "Semantic bridge: language → concepts → parameters → research_spec.",
+    "Not a dropdown substitute for mathematics.",
+    "Ambiguous terms remain unresolved — never invent thresholds.",
+    "SURVIVE must_not_equate TERMINAL_YES.",
+    "MEASUREMENT concepts must_not_equate EDGE."
+  ],
+  "concepts": [
+    {
+      "concept": "FIRST_PRICE_TOUCH",
+      "synonyms": [
+        "first touch",
+        "first reached",
+        "first hit",
+        "first printed",
+        "first 80",
+        "first eighty",
+        "FIRST80",
+        "first price touch"
+      ],
+      "required_parameters": ["price_e4"],
+      "default_parameters": {
+        "price_field": "yes_bid_close",
+        "requires_seen_below": true
+      },
+      "binds_to": {
+        "engine": "roller.research.first80.scan_ticker",
+        "alt_engine": "apps.nba-data.scripts.nba_80_40_execution_audit.scan",
+        "definition_version_choices": ["warehouse_frozen_v1", "roller_4.1.0-R"]
+      },
+      "must_not_equate": ["TERMINAL_YES", "SURVIVE", "EDGE", "FILL"],
+      "unresolved_if_ambiguous": false
+    },
+    {
+      "concept": "SURVIVE",
+      "synonyms": [
+        "survived",
+        "never stopped",
+        "did not hit stop",
+        "no stop",
+        "path survival"
+      ],
+      "required_parameters": ["stop_price_e4"],
+      "binds_to": {
+        "engine": "path_condition.NEVER_CLOSE_LE",
+        "definition_version": "barrier_survival_v1"
+      },
+      "must_not_equate": ["TERMINAL_YES", "TERMINAL_NO", "WON", "EDGE"],
+      "unresolved_if_ambiguous": false,
+      "definition_note": "Absence of later tradable close ≤ stop. Not Kalshi settlement."
+    },
+    {
+      "concept": "STOP_T40",
+      "synonyms": ["stop", "stop loss", "hit 40", "touched 40", "T40"],
+      "required_parameters": [],
+      "default_parameters": { "price_e4": 4000, "price_field": "yes_bid_close" },
+      "binds_to": {
+        "engine": "path_condition.EVER_CLOSE_LE",
+        "definition_version": "barrier_survival_v1"
+      },
+      "must_not_equate": ["WICK_STOP", "TERMINAL_NO", "FILL"],
+      "unresolved_if_ambiguous": false,
+      "definition_note": "Primary = close path ≤ 40¢. Wick is secondary."
+    },
+    {
+      "concept": "TERMINAL_YES",
+      "synonyms": ["won", "expired yes", "settled yes", "kalshi yes", "W"],
+      "required_parameters": [],
+      "binds_to": {
+        "engine": "terminal_condition.KALSHI_YES",
+        "definition_version": "warehouse_frozen_v1"
+      },
+      "must_not_equate": ["SURVIVE", "BOX_HOME_WIN", "EDGE"],
+      "unresolved_if_ambiguous": false
+    },
+    {
+      "concept": "TERMINAL_NO",
+      "synonyms": ["lost", "expired no", "settled no"],
+      "required_parameters": [],
+      "binds_to": {
+        "engine": "terminal_condition.KALSHI_NO",
+        "definition_version": "warehouse_frozen_v1"
+      },
+      "must_not_equate": ["STOP_T40", "SURVIVE", "EDGE"],
+      "unresolved_if_ambiguous": false
+    },
+    {
+      "concept": "ASKED_SIX",
+      "synonyms": ["asked six", "asked-six", "mid-game default slices"],
+      "required_parameters": [],
+      "binds_to": {
+        "engine": "roller.state.clock.ASKED_SIX",
+        "definition_version": "4.1.0-R",
+        "expands_to": ["Q2", "Q3", "H1_2", "H2_1"]
+      },
+      "must_not_equate": ["late game", "Q4"],
+      "unresolved_if_ambiguous": false
+    },
+    {
+      "concept": "PERIOD_Q1",
+      "synonyms": ["Q1", "first quarter", "1st quarter"],
+      "required_parameters": [],
+      "binds_to": { "field": "period", "value": "Q1" },
+      "must_not_equate": [],
+      "unresolved_if_ambiguous": false
+    },
+    {
+      "concept": "PERIOD_Q2",
+      "synonyms": ["Q2", "second quarter", "2nd quarter"],
+      "required_parameters": [],
+      "binds_to": { "field": "period", "value": "Q2" },
+      "must_not_equate": [],
+      "unresolved_if_ambiguous": false
+    },
+    {
+      "concept": "PERIOD_Q3",
+      "synonyms": ["Q3", "third quarter", "3rd quarter"],
+      "required_parameters": [],
+      "binds_to": { "field": "period", "value": "Q3" },
+      "must_not_equate": [],
+      "unresolved_if_ambiguous": false
+    },
+    {
+      "concept": "PERIOD_Q4",
+      "synonyms": ["Q4", "fourth quarter", "4th quarter"],
+      "required_parameters": [],
+      "binds_to": { "field": "period", "value": "Q4" },
+      "must_not_equate": ["late game"],
+      "unresolved_if_ambiguous": false,
+      "definition_note": "Q4 is exact. 'Late game' is not automatically Q4."
+    },
+    {
+      "concept": "NCAAB_H1_2",
+      "synonyms": ["H1_2", "late first half"],
+      "required_parameters": [],
+      "binds_to": { "field": "entry_slice", "value": "H1_2" },
+      "must_not_equate": [],
+      "unresolved_if_ambiguous": false
+    },
+    {
+      "concept": "NCAAB_H2_1",
+      "synonyms": ["H2_1", "early second half"],
+      "required_parameters": [],
+      "binds_to": { "field": "entry_slice", "value": "H2_1" },
+      "must_not_equate": [],
+      "unresolved_if_ambiguous": false
+    },
+    {
+      "concept": "PRICE_E4",
+      "synonyms": ["cents", "¢", "price"],
+      "required_parameters": ["value"],
+      "binds_to": { "unit": "E4_integer" },
+      "must_not_equate": [],
+      "unresolved_if_ambiguous": false,
+      "definition_note": "80¢ = 8000 E4. Never float dollars for authoritative prices."
+    },
+    {
+      "concept": "CLOCK_REMAINING",
+      "synonyms": ["clock remaining", "time remaining", "under five minutes", "less than 5 minutes"],
+      "required_parameters": ["seconds"],
+      "binds_to": { "field": "period_remaining_s" },
+      "must_not_equate": [],
+      "unresolved_if_ambiguous": false,
+      "value_parsers": {
+        "under five minutes": { "operator": "lt", "seconds": 300 },
+        "less than 5 minutes": { "operator": "lt", "seconds": 300 }
+      }
+    },
+    {
+      "concept": "SCORE_MARGIN",
+      "synonyms": ["score margin", "margin", "lead", "trail"],
+      "required_parameters": ["value_or_range"],
+      "binds_to": { "field": "score_margin" },
+      "must_not_equate": [],
+      "unresolved_if_ambiguous": false
+    },
+    {
+      "concept": "CANDLE_1M",
+      "synonyms": ["one minute candle", "1m candle", "candle path"],
+      "required_parameters": [],
+      "binds_to": { "information_regime": "CANDLE_1M" },
+      "must_not_equate": ["FILL", "L2", "BOOK"],
+      "unresolved_if_ambiguous": false
+    },
+    {
+      "concept": "OBSERVABLE_PATH_ONLY",
+      "synonyms": ["observable path", "candle path only", "not fills"],
+      "required_parameters": [],
+      "binds_to": { "execution_interpretation": "OBSERVABLE_PATH_ONLY" },
+      "must_not_equate": ["EXECUTION_VALIDATED", "FILL"],
+      "unresolved_if_ambiguous": false
+    },
+    {
+      "concept": "OBSERVATION_TIME",
+      "synonyms": ["observation", "at time t", "O_t"],
+      "required_parameters": [],
+      "binds_to": {
+        "engine": "roller.state.observation.assemble_observation",
+        "definition_version": "2.0.0"
+      },
+      "must_not_equate": ["FIRST_PRICE_TOUCH", "EDGE"],
+      "unresolved_if_ambiguous": false
+    },
+    {
+      "concept": "FUNDAMENTAL_F_T",
+      "synonyms": ["F_t", "fundamental", "fundamental probability"],
+      "required_parameters": [],
+      "binds_to": {
+        "engine": "roller.fundamental.estimator.estimate_fundamental",
+        "definition_version": "4.0.0-A"
+      },
+      "must_not_equate": ["TRUE_PROBABILITY", "EDGE", "MARKET_PRICE"],
+      "unresolved_if_ambiguous": false
+    },
+    {
+      "concept": "BASIS",
+      "synonyms": ["basis", "market fundamental basis", "market-fundamental basis"],
+      "required_parameters": [],
+      "binds_to": {
+        "engine": "roller.v4b.measurements",
+        "name": "market_fundamental_basis",
+        "definition_version": "4.0.0-B"
+      },
+      "must_not_equate": ["EDGE", "ALPHA"],
+      "unresolved_if_ambiguous": false
+    },
+    {
+      "concept": "RESIDUAL",
+      "synonyms": ["residual", "response residual"],
+      "required_parameters": [],
+      "binds_to": {
+        "engine": "roller.greeks.residual.compute_residual",
+        "definition_version": "3.0.0"
+      },
+      "must_not_equate": ["EDGE"],
+      "unresolved_if_ambiguous": false
+    },
+    {
+      "concept": "DELTA_MARKET",
+      "synonyms": ["delta", "Δ", "market delta"],
+      "required_parameters": [],
+      "binds_to": {
+        "engine": "roller.v4b.measurements",
+        "name": "market_delta_1m",
+        "definition_version": "4.0.0-B"
+      },
+      "must_not_equate": ["EDGE"],
+      "unresolved_if_ambiguous": false,
+      "definition_note": "Empirical market delta measurement. Not trading edge."
+    },
+    {
+      "concept": "GAMMA_DISCRETE",
+      "synonyms": ["gamma", "Γ", "discrete gamma"],
+      "required_parameters": [],
+      "binds_to": {
+        "engine": "roller.v4b.measurements",
+        "name": "discrete_gamma",
+        "definition_version": "4.0.0-B"
+      },
+      "must_not_equate": ["EDGE"],
+      "unresolved_if_ambiguous": false
+    },
+    {
+      "concept": "THETA_OBSERVED",
+      "synonyms": ["theta", "Θ", "observed theta"],
+      "required_parameters": [],
+      "binds_to": {
+        "engine": "roller.v4b.measurements",
+        "name": "theta_observed",
+        "definition_version": "4.0.0-B"
+      },
+      "must_not_equate": ["EDGE"],
+      "unresolved_if_ambiguous": false
+    },
+    {
+      "concept": "PRICE_MOVE",
+      "synonyms": ["price move", "moved", "dropped", "rallied"],
+      "required_parameters": ["direction", "magnitude_e4"],
+      "binds_to": { "anchor.event": "PRICE_MOVE" },
+      "must_not_equate": ["EDGE"],
+      "unresolved_if_ambiguous": false,
+      "definition_note": "Requires explicit magnitude_e4. Synonyms like 'sharply' do not set magnitude."
+    },
+    {
+      "concept": "BIG_MOVE",
+      "synonyms": ["big move", "large move", "sharply", "unusually large", "more than normal"],
+      "required_parameters": ["magnitude_definition"],
+      "binds_to": null,
+      "must_not_equate": [],
+      "unresolved_if_ambiguous": true,
+      "clarification_options": [
+        { "id": "abs_5c", "label": "Absolute ≥ 5¢ (500 E4)" },
+        { "id": "abs_10c", "label": "Absolute ≥ 10¢ (1000 E4)" },
+        { "id": "abs_15c", "label": "Absolute ≥ 15¢ (1500 E4)" },
+        { "id": "state_conditioned_sigma", "label": "State-conditioned sigma (requires authoritative binding)" },
+        { "id": "custom", "label": "Custom threshold (E4)" }
+      ]
+    },
+    {
+      "concept": "LATE_GAME",
+      "synonyms": ["late game", "late", "closing minutes"],
+      "required_parameters": ["late_definition"],
+      "binds_to": null,
+      "must_not_equate": ["PERIOD_Q4", "ASKED_SIX"],
+      "unresolved_if_ambiguous": true,
+      "clarification_options": [
+        { "id": "Q4", "label": "Q4" },
+        { "id": "last_5m", "label": "Last 5 minutes of period" },
+        { "id": "last_2m", "label": "Last 2 minutes of period" },
+        { "id": "custom", "label": "Custom clock / period rule" }
+      ]
+    },
+    {
+      "concept": "FAVORITE",
+      "synonyms": ["favorite", "fav"],
+      "required_parameters": ["favorite_definition"],
+      "binds_to": null,
+      "must_not_equate": [],
+      "unresolved_if_ambiguous": true,
+      "clarification_options": [
+        { "id": "yes_bid_ge_60", "label": "YES bid ≥ 60¢ at anchor" },
+        { "id": "yes_bid_ge_70", "label": "YES bid ≥ 70¢ at anchor" },
+        { "id": "pregame_favorite", "label": "Pregame favorite (requires authoritative field)" },
+        { "id": "custom", "label": "Custom definition" }
+      ]
+    },
+    {
+      "concept": "WHAT_HAPPENED_NEXT",
+      "synonyms": ["what happened next", "then what", "forward path", "after that"],
+      "required_parameters": ["measurement_requests"],
+      "binds_to": null,
+      "must_not_equate": ["EDGE", "BACKTEST_PROFIT"],
+      "unresolved_if_ambiguous": true,
+      "clarification_options": [
+        { "id": "forward_return_dist", "label": "Forward return distribution" },
+        { "id": "barrier_touches", "label": "Barrier touch rates (explicit levels)" },
+        { "id": "terminal_W", "label": "Terminal Kalshi YES/NO" },
+        { "id": "response_measurement", "label": "Named ROLLER response / Greek measurement" },
+        { "id": "custom", "label": "Custom measurement_requests" }
+      ],
+      "definition_note": "Requires explicit measurement_requests. Not a trade."
+    },
+    {
+      "concept": "EDGE",
+      "synonyms": ["edge", "alpha", "inefficiency", "mispricing"],
+      "required_parameters": [],
+      "binds_to": null,
+      "must_not_equate": ["DELTA_MARKET", "GAMMA_DISCRETE", "THETA_OBSERVED", "BASIS", "FUNDAMENTAL_F_T", "SURVIVE"],
+      "unresolved_if_ambiguous": true,
+      "clarification_options": [
+        {
+          "id": "refuse",
+          "label": "Do not claim edge — run empirical measurements only"
+        }
+      ],
+      "definition_note": "Not an empirical measurement available in Phase 0–4. Terminal must not invent edge."
+    }
+  ]
+}

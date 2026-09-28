@@ -1,0 +1,64 @@
+{
+  "policy_id": "nba-001",
+  "version": "nba-001-v0",
+  "alias": "nba-first80-001",
+  "display_name": "NBA Bot 001",
+  "decision_status": "PROVISIONAL",
+  "candidate": "q2",
+  "mean_claim": "UNSUPPORTED",
+  "live_execution": false,
+  "submits": false,
+  "execution_authorized": false,
+  "runtime": "NOT_DEPLOYED",
+  "series": "KXNBAGAME",
+  "fill_status": "FILL_UNAVAILABLE",
+  "fill_executable": false,
+  "universe": {
+    "ranking_tape": "nba_2q3q",
+    "n": 604,
+    "s": 450,
+    "q2_n": 314,
+    "q3_n": 290,
+    "window_start": "2025-10-10",
+    "window_end": "2026-06-13"
+  },
+  "entry": {
+    "observable": "one_minute_tradable_yes_bid_close",
+    "entry_cents": 80,
+    "above_entry_close": "INFEASIBLE_MAKER",
+    "stop_cents": 40,
+    "stop_print": "first_later_close_at_or_below_40"
+  },
+  "portfolio": {
+    "bankroll_cents": 2000000,
+    "allocation_bps": 400,
+    "max_lifecycles": 5,
+    "one_entry_per_game": true,
+    "tie_break": "decision_timestamp_then_game_id_utf8",
+    "week_boundary": "America/New_York Monday 00:00",
+    "mark_stale_after_seconds": 180
+  },
+  "fee": {
+    "source_read_on": "2026-09-22",
+    "selection_maker_multiplier": 1,
+    "series_maker_multiplier": "UNAVAILABLE",
+    "settlement_matched_order_fee_cents": 0
+  },
+  "confidence": {
+    "estimand": "mean_net_weekly_return",
+    "block": 4,
+    "draws": 2000,
+    "seed": 604,
+    "threshold": "0.015",
+    "q2_point": "0.007637620095875937220842398594",
+    "q2_lower": "0.001707304041251258371141175433",
+    "union_point": "0.003524392604618953413500056008",
+    "union_lower": "-0.002851350163016043468746085139",
+    "q3_lower": "-0.007414851455580035871136383494"
+  },
+  "hedge": {
+    "role": "diagnostic",
+    "ranking_input": false,
+    "fill_credited": false
+  }
+}

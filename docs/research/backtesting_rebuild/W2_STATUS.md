@@ -1,0 +1,12 @@
+# W2 Status
+
+```text
+W2-E: COMPLETE for StatsAPI 2026-06-18..30 (174/174 GameState replay VALID)
+W2-B: COMPLETE (168 MAPPED, 4 UNMATCHED, 2 AMBIGUOUS doubleheader)
+W2-F: event-time inputs populated; Event Theta VALUE UNAVAILABLE (W9 / ADR-0010)
+2025 PBP: MISSING_HISTORICAL_SOURCE
+DATA-REAL WRITES: 0
+W3: NOT STARTED
+```
+
+Canonical closeout: [W2_COMPLETION_REPORT.md](W2_COMPLETION_REPORT.md)

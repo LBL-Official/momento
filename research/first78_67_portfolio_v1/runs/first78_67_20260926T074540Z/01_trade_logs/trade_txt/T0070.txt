@@ -1,0 +1,10 @@
+trade T0070  NBA  Cleveland at Toronto
+contract KXNBAGAME-25NOV24CLETOR-TOR  slice Q3
+signal 2025-11-24T17:45:00-08:00 PST  exit 2025-11-24T18:59:20-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 2280  principal_cents 177840
+entry_fee_cents 685  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 50160  net_cents 49475
+strategy_result POSITIVE  net_r 1.856612128489942960072050435
+Assumed fill. Not a maker fill. Not live P&L.

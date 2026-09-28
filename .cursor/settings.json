@@ -1,0 +1,10 @@
+{
+  "plugins": {
+    "redis-development": {
+      "enabled": true
+    },
+    "deploy-on-aws": {
+      "enabled": true
+    }
+  }
+}

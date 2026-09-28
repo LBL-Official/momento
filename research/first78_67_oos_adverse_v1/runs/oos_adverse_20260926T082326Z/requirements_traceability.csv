@@ -1,0 +1,13 @@
+requirement,location,status
+contract before either result table,contract.json,written before the runner emits window tables
+independent windows,src/oos_adverse/scenarios.py,separate replays from 2000000 cents
+CONTRACT_WISE_FIRST,eligibility.py via first78.select,headline
+UNPROVEN_FIRST and CHRONOLOGY_UNRESOLVED,src/oos_adverse/eligibility.py,not booked as wins
+PRIMARY_EX_ANTE without a future 80 field,src/oos_adverse/eligibility.py,tested by source assertion
+FIRST80 diagnostic separate,src/oos_adverse/diagnostic_first80.py,label and separate replay
+oracle isolated from baseline ids,src/oos_adverse/oracle.py,baseline loop rejects ORACLE ids
+1538-contract fixture,tests/test_oos.py,arithmetic only
+cash delay and stop-fail slot,tests/test_oos.py,receivable and cap
+minute drawdown distinct from event equity,src/oos_adverse/inference.py,tested
+centered studentized null or P_VALUE_NOT_ESTIMABLE,null_test_spec.json,frozen
+launch stays NOT_YET_IDENTIFIABLE,contract.json,not armed by a rising balance

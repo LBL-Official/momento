@@ -1,0 +1,44 @@
+{
+  "args": {
+    "bootstrap_reps": 10000,
+    "max_depth": 4,
+    "min_test": 15,
+    "min_train": 50,
+    "min_val": 10,
+    "permutation_reps": 2000,
+    "seed": 42
+  },
+  "candidates_stored": 6128,
+  "duplicate_policy": "B1 extract is one primary 83¢ TRADE snapshot per game. Metrics aggregate by game_id.",
+  "engine_version": "B1.ENGINE.1.1.0",
+  "feature_schema_version": "B1.FEATURE.1.1.0",
+  "features_considered": 49,
+  "features_in_registry": 49,
+  "fill_status": "TRADE_PRINT_MODELED",
+  "generated_by_depth": {
+    "1": 153,
+    "2": 5732,
+    "3": 243,
+    "4": 0,
+    "5": 0
+  },
+  "max_entries_per_game": 1,
+  "n_83_games": 2906,
+  "n_83_snapshots": 2906,
+  "search_space_share": {
+    "1": 0.024967362924281984,
+    "2": 0.935378590078329,
+    "3": 0.03965404699738903,
+    "4": 0.0,
+    "5": 0.0
+  },
+  "split": {
+    "test_end": "2026-06-27",
+    "train_before": "2025-10-07",
+    "validation_before": "2026-05-03"
+  },
+  "test_evaluated": 6128,
+  "train_pass": 3491,
+  "train_val_pass": 1726,
+  "transformations_considered": 153
+}

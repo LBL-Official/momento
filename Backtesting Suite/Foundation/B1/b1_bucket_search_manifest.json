@@ -1,0 +1,39 @@
+{
+  "b1_run": {
+    "dataset_version": "B1.ENTRY_SNAPSHOT.2",
+    "engine_version": "B1.ENGINE.1.1.0",
+    "feature_schema_version": "B1.FEATURE.1.1.0",
+    "generated_at": "2026-08-29T17:27:19.281193+00:00",
+    "run_id": "b1-20260829T172719Z",
+    "w5_dataset_version": "W5.COHORT.PBP_PLUS_MATCHED_TRADES.1",
+    "w6_run_id": "w6-20260828T172003Z",
+    "w7_run_id": "w7-20260828T215506Z",
+    "w8_run_id": "w8-20260829T074403Z"
+  },
+  "bootstrap": {
+    "n": 1000,
+    "seed": 42,
+    "unit": "GAME"
+  },
+  "candidates_tested": 8894,
+  "engine_version": "B1.ENGINE.1.1.0",
+  "executable_fill_confirmed": false,
+  "feature_schema_version": "B1.FEATURE.1.1.0",
+  "fill_status": "TRADE_PRINT_MODELED",
+  "integrity": {
+    "duplicate_games": 0,
+    "gate": "COMPLETE",
+    "l2_used": false,
+    "recon_254_ok": true,
+    "train_test_overlap": 0
+  },
+  "multiple_testing": "BH FDR q=0.10 on TRAIN one-sided P(mean PnL <= 0)",
+  "split": {
+    "method": "chronological unique official_date 60/20/20",
+    "test_end": "2026-06-27",
+    "train_before": "2025-10-07",
+    "validation_before": "2026-05-03"
+  },
+  "stake": "qty = 625 // entry_cents; uncompounded vs $50",
+  "thresholds": "TRAIN tertiles only; frozen on VAL/TEST"
+}

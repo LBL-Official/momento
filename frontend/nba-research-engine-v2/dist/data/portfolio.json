@@ -1,0 +1,9 @@
+{
+  "max_same_day": 14,
+  "mean_same_day": 5.514150943396227,
+  "days": 212,
+  "note": "Research concurrency diagnostic. Not live capital. Not optimized on OOS.",
+  "weekly_first80_primary": 33.26422764227642,
+  "expected_weekly_unfiltered": 33.26422764227642,
+  "capital_note": "Research bankroll parameters \u2014 not live MLB allocations."
+}

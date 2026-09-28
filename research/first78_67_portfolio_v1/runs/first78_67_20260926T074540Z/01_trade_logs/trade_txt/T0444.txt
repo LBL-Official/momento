@@ -1,0 +1,10 @@
+trade T0444  NCAAB  Utah at West Virginia
+contract KXNCAAMBGAME-26FEB18UTAHWVU-UTAH  slice H2_1
+signal 2026-02-18T19:07:00-08:00 PST  exit 2026-02-18T19:28:00-08:00 PST
+assumed entry 78c  observed close 81c  overshoot 3c
+contracts 8037  principal_cents 626886
+entry_fee_cents 2414  exit_fee_cents 3110
+exit STOP at 67c  terminal yes
+gross_cents -88407  net_cents -93931
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

@@ -1,0 +1,122 @@
+/target/
+**/*.rs.bk
+Cargo.lock.bak
+.DS_Store
+.env
+.env.*
+!.env.example
+credentials*
+*.pem
+*.key
+secrets/
+client_secret*.json
+**/gcp-oauth*.json
+Backtesting Suite/Runs/
+Backtesting Suite/Data/**/raw/
+Backtesting Suite/Data/**/orderbook/
+Backtesting Suite/Data/**/trades/
+Backtesting Suite/Google Sheets/*.csv
+!.cursor/mcp.json.example
+dashboard/node_modules/
+dashboard/dist/
+frontend/research-console/node_modules/
+frontend/research-console/dist/
+frontend/roller-terminal/node_modules/
+frontend/roller-terminal/dist/
+frontend/vital-terminal/node_modules/
+frontend/vital-terminal/dist/
+frontend/momento-ls/node_modules/
+frontend/momento-ls/dist/
+frontend/choosin-texas/node_modules/
+frontend/choosin-texas/dist/
+frontend/dynamic-risk-engine/node_modules/
+frontend/dynamic-risk-engine/dist/
+frontend/stryke/node_modules/
+frontend/stryke/dist/
+artifacts/research-engine/
+Backtesting Suite/Foundation/B1/first83/features.sqlite
+Backtesting Suite/Foundation/B1/first83/features.sqlite-wal
+Backtesting Suite/Foundation/B1/first83/features.sqlite-shm
+Backtesting Suite/Foundation/B1/prospective83/features.sqlite
+Backtesting Suite/Foundation/B1/prospective83/features.sqlite-wal
+Backtesting Suite/Foundation/B1/prospective83/features.sqlite-shm
+Backtesting Suite/Foundation/W2/raw/
+Backtesting Suite/Foundation/Ingest/landing/
+Backtesting Suite/Foundation/Ingest/runs/
+Backtesting Suite/Foundation/Ingest/state/
+Backtesting Suite/Foundation/Ingest/committed/
+Backtesting Suite/Foundation/W4/paths/
+Backtesting Suite/Foundation/W4/price_path_compact.jsonl
+Backtesting Suite/Foundation/W4/matched_price_path_compact.jsonl
+Backtesting Suite/Foundation/W5/sync.sqlite
+Backtesting Suite/Foundation/W5/sync.sqlite-wal
+Backtesting Suite/Foundation/W5/sync.sqlite-shm
+Backtesting Suite/Foundation/W6/state.sqlite
+Backtesting Suite/Foundation/W6/state.sqlite-wal
+Backtesting Suite/Foundation/W6/state.sqlite-shm
+Backtesting Suite/Foundation/W7/path.sqlite
+Backtesting Suite/Foundation/W7/path.sqlite-wal
+Backtesting Suite/Foundation/W7/path.sqlite-shm
+Backtesting Suite/Foundation/W8/replay.sqlite
+Backtesting Suite/Foundation/W8/replay.sqlite-wal
+Backtesting Suite/Foundation/W8/replay.sqlite-shm
+Backtesting Suite/Foundation/B1/features.sqlite
+Backtesting Suite/Foundation/B1/features.sqlite-wal
+Backtesting Suite/Foundation/B1/features.sqlite-shm
+Backtesting Suite/Foundation/W6/game_states/game_index.jsonl
+!data/raw/.gitkeep
+!data/normalized/.gitkeep
+!data/replay/.gitkeep
+
+# Dependencies and build output
+node_modules/
+target/
+.venv/
+venv/
+__pycache__/
+
+# Local secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local databases and logs
+*.sqlite
+*.sqlite-*
+*.db
+*.db-wal
+*.db-shm
+*.log
+logs/
+.DS_Store
+
+# Local historical market data
+/Backtesting Suite/Data-Real/
+*.parquet
+
+/Backtesting Suite/Data/
+/Backtesting Suite/Data-Real/
+/ROLLER/data/
+/docs/research/ncaab_conditional_path_decomp/events.jsonl
+/research/ncaab_conditional_path_decomp/events.jsonl
+*.parquet
+node_modules/
+target/
+.venv/
+venv/
+__pycache__/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.sqlite
+*.sqlite-*
+*.db
+*.db-wal
+*.db-shm
+*.log
+logs/
+.DS_Store

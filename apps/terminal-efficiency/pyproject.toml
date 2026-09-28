@@ -1,0 +1,33 @@
+[project]
+name = "terminal-efficiency"
+version = "0.1.0"
+description = "Isolated Terminal Efficiency Intelligence Layer (Phases 0–6). Research only."
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.1",
+    "pyarrow>=14",
+    "scikit-learn>=1.4",
+    "lightgbm>=4.3",
+    "matplotlib>=3.8",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+terminal-efficiency = "terminal_efficiency.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["terminal_efficiency*"]
+
+[tool.setuptools.package-data]
+terminal_efficiency = ["frozen_artifacts/manifests/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

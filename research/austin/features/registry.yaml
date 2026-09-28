@@ -1,0 +1,710 @@
+# SSOT. Edit here. Austin features at snapshot t.
+# outcome_derived features never enter PCA / KNN.
+version: 1
+feature_schema_version: austin_features_v1
+default_knn:
+  - entry_price_cents
+  - current_price_cents
+  - price_travel
+  - distance_from_80
+  - score_differential
+  - score_differential_travel
+  - score_travel
+  - time_since_entry
+  - seconds_remaining
+  - quarter
+  - quarter_progress
+  - price_x_score_diff
+  - score_diff_x_time
+  - entry_price_x_score_diff
+features:
+  - name: entry_price
+    description: FIRST80 yes bid at entry
+    source: asked_six
+    unit: dollars
+    availability: entry
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: entry_price_decimal
+    description: entry_price as 0-1
+    source: derived
+    unit: probability_like
+    availability: entry
+    transform: cents_to_decimal
+    normalization: none
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: entry_price_cents
+    description: entry yes bid
+    source: asked_six
+    unit: cents
+    availability: entry
+    transform: none
+    normalization: zscore
+    used_in_pca: true
+    used_in_knn: true
+    outcome_derived: false
+  - name: distance_from_50
+    description: entry_price_cents - 50
+    source: derived
+    unit: cents
+    availability: entry
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: distance_from_50_abs
+    description: abs(entry_price_cents - 50)
+    source: derived
+    unit: cents
+    availability: entry
+    transform: abs
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: distance_from_80
+    description: entry_price_cents - 80
+    source: derived
+    unit: cents
+    availability: entry
+    transform: none
+    normalization: zscore
+    used_in_pca: true
+    used_in_knn: true
+    outcome_derived: false
+  - name: entry_price_distance_from_trigger
+    description: entry_price_cents - 80
+    source: derived
+    unit: cents
+    availability: entry
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: current_price_cents
+    description: favorite yes bid at snapshot t
+    source: warehouse_bar_or_query
+    unit: cents
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: true
+    used_in_knn: true
+    outcome_derived: false
+  - name: price_travel
+    description: current_price_cents - entry_price_cents
+    source: derived
+    unit: cents
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: true
+    used_in_knn: true
+    outcome_derived: false
+  - name: price_travel_pct
+    description: price_travel / entry_price_cents
+    source: derived
+    unit: ratio
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: max_price_after_entry
+    description: max favorite close on [entry, t]
+    source: warehouse_path
+    unit: cents
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: min_price_after_entry
+    description: min favorite close on [entry, t]
+    source: warehouse_path
+    unit: cents
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: max_favorable_move
+    description: max(0, max_price - entry) on [entry, t]
+    source: derived
+    unit: cents
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: max_adverse_move
+    description: max(0, entry - min_price) on [entry, t]
+    source: derived
+    unit: cents
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: max_favorable_move_pct
+    description: max_favorable_move / entry_price_cents
+    source: derived
+    unit: ratio
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: max_adverse_move_pct
+    description: max_adverse_move / entry_price_cents
+    source: derived
+    unit: ratio
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: path_range
+    description: max_price_after_entry - min_price_after_entry
+    source: derived
+    unit: cents
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: time_to_max_favorable_move
+    description: seconds from entry to max price on [entry, t]
+    source: warehouse_path
+    unit: seconds
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: time_to_max_adverse_move
+    description: seconds from entry to min price on [entry, t]
+    source: warehouse_path
+    unit: seconds
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: price_velocity_1
+    description: cents over prior 1 bar
+    source: warehouse_path_or_query_lookback
+    unit: cents_per_bar
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: price_velocity_2
+    description: cents over prior 2 bars
+    source: warehouse_path_or_query_lookback
+    unit: cents_per_bar
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: price_velocity_3
+    description: cents over prior 3 bars
+    source: warehouse_path_or_query_lookback
+    unit: cents_per_bar
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: price_velocity_5
+    description: cents over prior 5 bars
+    source: warehouse_path_or_query_lookback
+    unit: cents_per_bar
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: price_velocity_10
+    description: cents over prior 10 bars
+    source: warehouse_path_or_query_lookback
+    unit: cents_per_bar
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: price_acceleration
+    description: velocity_1 - prior velocity_1
+    source: warehouse_path_or_query_lookback
+    unit: cents_per_bar2
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: price_direction
+    description: sign of price_travel
+    source: derived
+    unit: sign
+    availability: snapshot
+    transform: none
+    normalization: none
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: price_reversal_count
+    description: direction changes on [entry, t]
+    source: warehouse_path
+    unit: count
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: home_score
+    description: home score at t
+    source: pbp_or_query
+    unit: points
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: away_score
+    description: away score at t
+    source: pbp_or_query
+    unit: points
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: score
+    description: home + away at t
+    source: derived
+    unit: points
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: score_differential
+    description: favorite - opponent at t
+    source: derived
+    unit: points
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: true
+    used_in_knn: true
+    outcome_derived: false
+  - name: favorite_score
+    description: bought-side score at t
+    source: derived
+    unit: points
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: opponent_score
+    description: other-side score at t
+    source: derived
+    unit: points
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: score_travel
+    description: total points at t minus total at entry
+    source: derived
+    unit: points
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: true
+    used_in_knn: true
+    outcome_derived: false
+  - name: score_differential_travel
+    description: score_diff at t minus score_diff at entry
+    source: derived
+    unit: points
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: true
+    used_in_knn: true
+    outcome_derived: false
+  - name: points_per_minute
+    description: score_travel / minutes since entry
+    source: derived
+    unit: points_per_minute
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: favorite_points_per_minute
+    description: favorite score travel / minutes since entry
+    source: derived
+    unit: points_per_minute
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: opponent_points_per_minute
+    description: opponent score travel / minutes since entry
+    source: derived
+    unit: points_per_minute
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: score_diff_velocity
+    description: score_differential_travel / minutes since entry
+    source: derived
+    unit: points_per_minute
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: points_last_30s
+    description: total points in last 30s
+    source: pbp_or_query_lookback
+    unit: points
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: points_last_60s
+    description: total points in last 60s
+    source: pbp_or_query_lookback
+    unit: points
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: points_last_120s
+    description: total points in last 120s
+    source: pbp_or_query_lookback
+    unit: points
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: score_diff_change_last_30s
+    description: favorite margin change last 30s
+    source: pbp_or_query_lookback
+    unit: points
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: score_diff_change_last_60s
+    description: favorite margin change last 60s
+    source: pbp_or_query_lookback
+    unit: points
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: score_diff_change_last_120s
+    description: favorite margin change last 120s
+    source: pbp_or_query_lookback
+    unit: points
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: score_diff_slope
+    description: OLS slope of favorite margin vs time on [entry, t]
+    source: pbp_path
+    unit: points_per_second
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: score_diff_acceleration
+    description: change in score_diff_slope
+    source: pbp_path
+    unit: points_per_second2
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: lead_changes
+    description: favorite-lead sign changes on [entry, t]
+    source: pbp_path
+    unit: count
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: tie_count
+    description: times margin hit 0 on [entry, t]
+    source: pbp_path
+    unit: count
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: lead_growth
+    description: max(0, current_lead - entry_lead)
+    source: derived
+    unit: points
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: lead_shrinkage
+    description: max(0, entry_lead - current_lead)
+    source: derived
+    unit: points
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: largest_lead_since_entry
+    description: max favorite margin on [entry, t]
+    source: pbp_path
+    unit: points
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: largest_deficit_since_entry
+    description: min favorite margin on [entry, t]
+    source: pbp_path
+    unit: points
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: current_lead_vs_max_lead
+    description: current margin minus largest lead since entry
+    source: derived
+    unit: points
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: quarter
+    description: current quarter 2 or 3 when known
+    source: asked_six_or_pbp_or_query
+    unit: period
+    availability: snapshot
+    transform: none
+    normalization: none
+    used_in_pca: true
+    used_in_knn: true
+    outcome_derived: false
+  - name: seconds_remaining
+    description: period clock remaining at t
+    source: pbp_or_query
+    unit: seconds
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: true
+    used_in_knn: true
+    outcome_derived: false
+  - name: minutes_remaining
+    description: seconds_remaining / 60
+    source: derived
+    unit: minutes
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: normalized_quarter_time
+    description: 1 - seconds_remaining / 720
+    source: derived
+    unit: ratio
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: normalized_game_time
+    description: elapsed regulation seconds / 2880
+    source: derived
+    unit: ratio
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: time_since_entry
+    description: seconds from entry to t
+    source: derived
+    unit: seconds
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: true
+    used_in_knn: true
+    outcome_derived: false
+  - name: quarter_progress
+    description: same as normalized_quarter_time
+    source: derived
+    unit: ratio
+    availability: snapshot
+    transform: none
+    normalization: zscore
+    used_in_pca: true
+    used_in_knn: true
+    outcome_derived: false
+  - name: time_bucket
+    description: early / middle / late from quarter_progress
+    source: derived
+    unit: bucket
+    availability: snapshot
+    transform: bucket
+    normalization: none
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: price_x_score_diff
+    description: current_price_cents * score_differential
+    source: interaction
+    unit: mixed
+    availability: snapshot
+    transform: product
+    normalization: zscore
+    used_in_pca: true
+    used_in_knn: true
+    outcome_derived: false
+  - name: price_x_time
+    description: current_price_cents * time_since_entry
+    source: interaction
+    unit: mixed
+    availability: snapshot
+    transform: product
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: score_diff_x_time
+    description: score_differential * time_since_entry
+    source: interaction
+    unit: mixed
+    availability: snapshot
+    transform: product
+    normalization: zscore
+    used_in_pca: true
+    used_in_knn: true
+    outcome_derived: false
+  - name: score_travel_x_time
+    description: score_travel * time_since_entry
+    source: interaction
+    unit: mixed
+    availability: snapshot
+    transform: product
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: price_travel_x_score_diff_travel
+    description: price_travel * score_differential_travel
+    source: interaction
+    unit: mixed
+    availability: snapshot
+    transform: product
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false
+  - name: entry_price_x_score_diff
+    description: entry_price_cents * score_differential
+    source: interaction
+    unit: mixed
+    availability: snapshot
+    transform: product
+    normalization: zscore
+    used_in_pca: true
+    used_in_knn: true
+    outcome_derived: false
+  - name: entry_price_x_time
+    description: entry_price_cents * time_since_entry
+    source: interaction
+    unit: mixed
+    availability: snapshot
+    transform: product
+    normalization: zscore
+    used_in_pca: false
+    used_in_knn: false
+    outcome_derived: false

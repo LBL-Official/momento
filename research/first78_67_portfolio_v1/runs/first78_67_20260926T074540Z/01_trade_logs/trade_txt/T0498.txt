@@ -1,0 +1,10 @@
+trade T0498  NCAAB  SMU at Stanford
+contract KXNCAAMBGAME-26FEB28SMUSTAN-STAN  slice H2_1
+signal 2026-02-28T16:15:00-08:00 PST  exit 2026-02-28T18:08:06-08:00 PST
+assumed entry 78c  observed close 83c  overshoot 5c
+contracts 9461  principal_cents 737958
+entry_fee_cents 2842  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 208142  net_cents 205300
+strategy_result POSITIVE  net_r 1.856675167760956463544775444
+Assumed fill. Not a maker fill. Not live P&L.

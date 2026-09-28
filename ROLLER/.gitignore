@@ -1,0 +1,13 @@
+.venv/
+data/.cache/
+data/**/canonical/pbp/
+data/**/canonical/kalshi_candles/
+data/**/derived/*.csv
+reports/daily_updates/*.json
+reports/integrity/*.json
+labs/
+risk_results/
+config/desk_settings.json
+__pycache__/
+.pytest_cache/
+*.pyc

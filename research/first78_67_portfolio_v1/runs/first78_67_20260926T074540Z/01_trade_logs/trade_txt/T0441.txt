@@ -1,0 +1,10 @@
+trade T0441  NCAAB  Arkansas at Alabama
+contract KXNCAAMBGAME-26FEB18ARKALA-ARK  slice H2_1
+signal 2026-02-18T17:06:00-08:00 PST  exit 2026-02-18T17:32:00-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 7379  principal_cents 575562
+entry_fee_cents 2216  exit_fee_cents 2856
+exit STOP at 67c  terminal no
+gross_cents -81169  net_cents -86241
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

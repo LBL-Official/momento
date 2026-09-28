@@ -1,0 +1,130 @@
+---
+description: Rust engineering standards for Momento
+globs: "**/*.rs"
+alwaysApply: false
+---
+
+# Rust Standards
+
+Momento's trading engine is Rust-first.
+
+Prioritize correctness and deterministic behavior over premature micro-optimization.
+
+---
+
+## Toolchain
+
+Use the repository's pinned Rust toolchain.
+
+Do not silently change toolchain versions.
+
+---
+
+## Quality
+
+Code must compile without warnings where practical.
+
+Use:
+
+cargo fmt
+cargo check
+cargo test
+cargo clippy
+
+before declaring substantial work complete.
+
+---
+
+## Errors
+
+Never use:
+
+unwrap()
+expect()
+
+in production trading paths unless the invariant is genuinely impossible
+to violate and the reason is documented.
+
+Prefer typed errors.
+
+Errors should preserve useful context.
+
+---
+
+## Async
+
+Use asynchronous code for network I/O.
+
+Do not block async runtimes with:
+- blocking file operations
+- synchronous network calls
+- long CPU-bound calculations
+
+Move CPU-heavy work appropriately.
+
+---
+
+## Concurrency
+
+Avoid shared mutable state where possible.
+
+Prefer:
+- ownership
+- message passing
+- immutable data
+- explicit actors/tasks
+- channels
+
+When shared state is required, document:
+- ownership
+- synchronization
+- invariants
+- possible race conditions
+
+---
+
+## Domain Types
+
+Prefer strong domain types over primitive obsession.
+
+Examples:
+
+Money
+Price
+Contracts
+MarketId
+OrderId
+PositionId
+StrategyId
+ClientOrderId
+
+Do not pass arbitrary strings everywhere.
+
+---
+
+## Serialization
+
+External API structures should be separate from internal domain structures.
+
+Do not allow Kalshi JSON structures to become the application's domain model.
+
+Use explicit adapters.
+
+---
+
+## Logging
+
+Use structured logging.
+
+Never log:
+- API secrets
+- private keys
+- authentication tokens
+
+Useful logs should contain stable identifiers such as:
+- market_id
+- order_id
+- client_order_id
+- strategy_id
+- position_id
+- event_id

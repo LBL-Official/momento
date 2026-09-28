@@ -1,0 +1,10 @@
+trade T0244  NBA  Dallas at Chicago
+contract KXNBAGAME-26JAN10DALCHI-CHI  slice Q2
+signal 2026-01-10T17:42:00-08:00 PST  exit 2026-01-10T19:39:07-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 4011  principal_cents 312858
+entry_fee_cents 1205  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 88242  net_cents 87037
+strategy_result POSITIVE  net_r 1.856670506420922394300098127
+Assumed fill. Not a maker fill. Not live P&L.

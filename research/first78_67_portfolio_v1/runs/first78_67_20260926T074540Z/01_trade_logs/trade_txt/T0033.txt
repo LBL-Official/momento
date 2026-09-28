@@ -1,0 +1,10 @@
+trade T0033  NBA  Milwaukee at Charlotte
+contract KXNBAGAME-25NOV12MILCHA-CHA  slice Q3
+signal 2025-11-12T17:27:00-08:00 PST  exit 2025-11-12T19:04:12-08:00 PST
+assumed entry 78c  observed close 83c  overshoot 5c
+contracts 1987  principal_cents 154986
+entry_fee_cents 597  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 43714  net_cents 43117
+strategy_result POSITIVE  net_r 1.856650734185936356198596219
+Assumed fill. Not a maker fill. Not live P&L.

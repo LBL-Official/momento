@@ -1,0 +1,10 @@
+trade T0014  NBA  Houston at San Antonio
+contract KXNBAGAME-25NOV07HOUSAS-HOU  slice Q2
+signal 2025-11-07T17:26:00-08:00 PST  exit 2025-11-07T17:42:00-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 1755  principal_cents 136890
+entry_fee_cents 528  exit_fee_cents 680
+exit STOP at 67c  terminal no
+gross_cents -19305  net_cents -20513
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

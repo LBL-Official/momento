@@ -1,0 +1,10 @@
+trade T0170  NBA  Phoenix at New Orleans
+contract KXNBAGAME-25DEC26PHXNOP-PHX  slice Q3
+signal 2025-12-26T18:30:00-08:00 PST  exit 2025-12-26T18:47:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 2906  principal_cents 226668
+entry_fee_cents 873  exit_fee_cents 1125
+exit STOP at 67c  terminal yes
+gross_cents -31966  net_cents -33964
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

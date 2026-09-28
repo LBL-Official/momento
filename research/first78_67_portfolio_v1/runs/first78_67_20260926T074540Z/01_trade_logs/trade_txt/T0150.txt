@@ -1,0 +1,10 @@
+trade T0150  NCAAB  Stanford at Colorado
+contract KXNCAAMBGAME-25DEC20STANCOLO-STAN  slice H2_1
+signal 2025-12-20T18:26:00-08:00 PST  exit 2025-12-20T20:06:19-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 2913  principal_cents 227214
+entry_fee_cents 875  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 64086  net_cents 63211
+strategy_result POSITIVE  net_r 1.856635140692004934500381836
+Assumed fill. Not a maker fill. Not live P&L.

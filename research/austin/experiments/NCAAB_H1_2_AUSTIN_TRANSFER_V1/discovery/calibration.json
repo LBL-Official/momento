@@ -1,0 +1,40 @@
+{
+  "status": "SEPARATED",
+  "table": [
+    {
+      "band": "< -10\u00a2",
+      "n": 298,
+      "mean_predicted_ev": -31.693107946189883,
+      "mean_realized_hold": -3.1543624161073827,
+      "median_realized_hold": 20.0
+    },
+    {
+      "band": "-10 to 0\u00a2",
+      "n": 219,
+      "mean_predicted_ev": -5.001567630423115,
+      "mean_realized_hold": 10.867579908675799,
+      "median_realized_hold": 20.0
+    },
+    {
+      "band": "0 to +5\u00a2",
+      "n": 109,
+      "mean_predicted_ev": 2.8211809300697746,
+      "mean_realized_hold": 2.5688073394495414,
+      "median_realized_hold": 20.0
+    },
+    {
+      "band": "+5 to +10\u00a2",
+      "n": 75,
+      "mean_predicted_ev": 8.069284025035993,
+      "mean_realized_hold": 5.333333333333333,
+      "median_realized_hold": 20.0
+    },
+    {
+      "band": "> +10\u00a2",
+      "n": 466,
+      "mean_predicted_ev": 16.263689150337544,
+      "mean_realized_hold": 6.266094420600858,
+      "median_realized_hold": 20.0
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "FIRST01": {
+    "id": "ENTRY_BAND_80_83|FIRST01|score_bucket=MULTI_RUN",
+    "n_test_games": 222,
+    "status": "PROMISING_BUT_UNCONFIRMED",
+    "test_pnl_usd": 66.01,
+    "test_sharpe": 0.160623834781091
+  },
+  "HARD_STOP_60": {
+    "id": "ENTRY_BAND_80_83|HARD_STOP_60|score_bucket=MULTI_RUN",
+    "n_test_games": 222,
+    "status": "PROMISING_BUT_UNCONFIRMED",
+    "test_pnl_usd": 46.27,
+    "test_sharpe": 0.1450090754618592
+  },
+  "HARD_STOP_65": {
+    "id": "ENTRY_BAND_80_83|HARD_STOP_65|score_bucket=MULTI_RUN",
+    "n_test_games": 222,
+    "status": "PROMISING_BUT_UNCONFIRMED",
+    "test_pnl_usd": 39.41,
+    "test_sharpe": 0.13809643467709412
+  },
+  "HARD_STOP_70": {
+    "id": "ENTRY_BAND_80_83|HARD_STOP_70|score_bucket=MULTI_RUN",
+    "n_test_games": 222,
+    "status": "PROMISING_BUT_UNCONFIRMED",
+    "test_pnl_usd": 27.02,
+    "test_sharpe": 0.10743369682291526
+  },
+  "HARD_STOP_75": {
+    "id": "ENTRY_BAND_80_83|HARD_STOP_75|score_bucket=MULTI_RUN",
+    "n_test_games": 222,
+    "status": "PROMISING_BUT_UNCONFIRMED",
+    "test_pnl_usd": 17.85,
+    "test_sharpe": 0.08814180536578582
+  },
+  "HOLD_TO_SETTLEMENT": {
+    "id": "ENTRY_81|HOLD_TO_SETTLEMENT|personality=CHOPPY&vol_5m_tertile=MID",
+    "n_test_games": 69,
+    "status": "REJECTED",
+    "test_pnl_usd": 70.77,
+    "test_sharpe": 0.7132609890297331
+  },
+  "HORIZON_15M": {
+    "id": "ENTRY_BAND_80_83|HORIZON_15M|score_bucket=MULTI_RUN&start_move_tertile=LOW",
+    "n_test_games": 34,
+    "status": "PROMISING_BUT_UNCONFIRMED",
+    "test_pnl_usd": 14.07,
+    "test_sharpe": 1.0778476498878893
+  },
+  "HORIZON_1M": {
+    "id": "ENTRY_BAND_80_83|HORIZON_1M|score_bucket=MULTI_RUN&start_move_tertile=LOW",
+    "n_test_games": 34,
+    "status": "PROMISING_BUT_UNCONFIRMED",
+    "test_pnl_usd": 10.78,
+    "test_sharpe": 1.5648557335529503
+  },
+  "HORIZON_30M": {
+    "id": "ENTRY_BAND_80_83|HORIZON_30M|score_bucket=MULTI_RUN&start_move_tertile=LOW",
+    "n_test_games": 34,
+    "status": "PROMISING_BUT_UNCONFIRMED",
+    "test_pnl_usd": 17.78,
+    "test_sharpe": 1.0080365646315077
+  },
+  "HORIZON_5M": {
+    "id": "ENTRY_BAND_80_83|HORIZON_5M|score_bucket=MULTI_RUN",
+    "n_test_games": 222,
+    "status": "ROBUST_CANDIDATE",
+    "test_pnl_usd": 59.64,
+    "test_sharpe": 0.716188221831808
+  },
+  "LIVE_50PCT_STOP": {
+    "id": "ENTRY_BAND_80_83|LIVE_50PCT_STOP|score_bucket=MULTI_RUN",
+    "n_test_games": 222,
+    "status": "PROMISING_BUT_UNCONFIRMED",
+    "test_pnl_usd": 66.01,
+    "test_sharpe": 0.160623834781091
+  }
+}

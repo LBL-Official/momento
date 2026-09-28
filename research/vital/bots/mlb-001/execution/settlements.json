@@ -1,0 +1,398 @@
+{
+  "read_only": true,
+  "source": "kalshi_public_market",
+  "tickers": {
+    "KXMLBGAME-26AUG291915TEXMIL-MIL": {
+      "result": "yes",
+      "settlement_ts": "2026-08-30T02:02:51.284378Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26AUG291915TEXMIL-MIL"
+    },
+    "KXMLBGAME-26AUG292205BALATH-BAL": {
+      "result": "yes",
+      "settlement_ts": "2026-08-30T05:02:51.235873Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26AUG292205BALATH-BAL"
+    },
+    "KXMLBGAME-26SEP011840SFPIT-PIT": {
+      "result": "yes",
+      "settlement_ts": "2026-09-02T02:27:31.209545Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP011840SFPIT-PIT"
+    },
+    "KXMLBGAME-26SEP011845ATLWSH-WSH": {
+      "result": "yes",
+      "settlement_ts": "2026-09-02T01:37:31.331787Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP011845ATLWSH-WSH"
+    },
+    "KXMLBGAME-26SEP031235SFPIT-PIT": {
+      "result": "yes",
+      "settlement_ts": "2026-09-03T19:27:35.076705Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP031235SFPIT-PIT"
+    },
+    "KXMLBGAME-26SEP031915BOSBAL-BAL": {
+      "result": "no",
+      "settlement_ts": "2026-09-04T02:02:55.583429Z",
+      "settlement_value_cents": 0,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP031915BOSBAL-BAL"
+    },
+    "KXMLBGAME-26SEP032140ATHSEA-SEA": {
+      "result": "no",
+      "settlement_ts": "2026-09-04T05:12:45.533741Z",
+      "settlement_value_cents": 0,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP032140ATHSEA-SEA"
+    },
+    "KXMLBGAME-26SEP041410DETCLEG1-DET": {
+      "result": "no",
+      "settlement_ts": "2026-09-04T22:07:45.557668Z",
+      "settlement_value_cents": 0,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP041410DETCLEG1-DET"
+    },
+    "KXMLBGAME-26SEP041845LAAPIT-PIT": {
+      "result": "yes",
+      "settlement_ts": "2026-09-05T01:52:45.504Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP041845LAAPIT-PIT"
+    },
+    "KXMLBGAME-26SEP041915DETCLEG2-DET": {
+      "result": "no",
+      "settlement_ts": "2026-09-05T02:47:35.658079Z",
+      "settlement_value_cents": 0,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP041915DETCLEG2-DET"
+    },
+    "KXMLBGAME-26SEP042010AZHOU-HOU": {
+      "result": "yes",
+      "settlement_ts": "2026-09-05T02:52:35.505527Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP042010AZHOU-HOU"
+    },
+    "KXMLBGAME-26SEP042010TORKC-TOR": {
+      "result": "yes",
+      "settlement_ts": "2026-09-05T02:42:45.491675Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP042010TORKC-TOR"
+    },
+    "KXMLBGAME-26SEP051840LAAPIT-LAA": {
+      "result": "yes",
+      "settlement_ts": "2026-09-06T01:27:35.650106Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP051840LAAPIT-LAA"
+    },
+    "KXMLBGAME-26SEP051910MINCWS-CWS": {
+      "result": "no",
+      "settlement_ts": "2026-09-06T02:02:55.49592Z",
+      "settlement_value_cents": 0,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP051910MINCWS-CWS"
+    },
+    "KXMLBGAME-26SEP051915AZHOU-HOU": {
+      "result": "no",
+      "settlement_ts": "2026-09-06T02:42:35.620095Z",
+      "settlement_value_cents": 0,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP051915AZHOU-HOU"
+    },
+    "KXMLBGAME-26SEP052110WSHLAD-LAD": {
+      "result": "yes",
+      "settlement_ts": "2026-09-06T04:12:45.557488Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP052110WSHLAD-LAD"
+    },
+    "KXMLBGAME-26SEP061210MILCIN-CIN": {
+      "result": "yes",
+      "settlement_ts": "2026-09-06T19:32:55.552226Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP061210MILCIN-CIN"
+    },
+    "KXMLBGAME-26SEP061310ATLPHI-PHI": {
+      "result": "no",
+      "settlement_ts": "2026-09-06T20:02:55.544592Z",
+      "settlement_value_cents": 0,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP061310ATLPHI-PHI"
+    },
+    "KXMLBGAME-26SEP061435TBTEX-TB": {
+      "result": "no",
+      "settlement_ts": "2026-09-06T21:52:45.518678Z",
+      "settlement_value_cents": 0,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP061435TBTEX-TB"
+    },
+    "KXMLBGAME-26SEP061610NYYSD-SD": {
+      "result": "yes",
+      "settlement_ts": "2026-09-06T22:47:35.556475Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP061610NYYSD-SD"
+    },
+    "KXMLBGAME-26SEP081905COLNYY-NYY": {
+      "result": "yes",
+      "settlement_ts": "2026-09-09T01:57:35.563938Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP081905COLNYY-NYY"
+    },
+    "KXMLBGAME-26SEP091840NYMMIA-NYM": {
+      "result": "yes",
+      "settlement_ts": "2026-09-10T02:27:35.572721Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP091840NYMMIA-NYM"
+    },
+    "KXMLBGAME-26SEP091845LAABOS-LAA": {
+      "result": "yes",
+      "settlement_ts": "2026-09-10T01:37:25.662466Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP091845LAABOS-LAA"
+    },
+    "KXMLBGAME-26SEP092210CINLAD-LAD": {
+      "result": "yes",
+      "settlement_ts": "2026-09-10T04:57:25.577093Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP092210CINLAD-LAD"
+    },
+    "KXMLBGAME-26SEP111905NYMNYY-NYY": {
+      "result": "yes",
+      "settlement_ts": "2026-09-12T02:12:48.46448Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP111905NYMNYY-NYY"
+    },
+    "KXMLBGAME-26SEP111910KCBOS-KC": {
+      "result": "yes",
+      "settlement_ts": "2026-09-12T02:02:58.486758Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP111910KCBOS-KC"
+    },
+    "KXMLBGAME-26SEP111915PHIATL-PHI": {
+      "result": "no",
+      "settlement_ts": "2026-09-12T03:17:38.516947Z",
+      "settlement_value_cents": 0,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP111915PHIATL-PHI"
+    },
+    "KXMLBGAME-26SEP112015CWSSTL-STL": {
+      "result": "yes",
+      "settlement_ts": "2026-09-12T04:27:28.525117Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP112015CWSSTL-STL"
+    },
+    "KXMLBGAME-26SEP121310COLDET-COL": {
+      "result": "no",
+      "settlement_ts": "2026-09-12T20:38:28.426098Z",
+      "settlement_value_cents": 0,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP121310COLDET-COL"
+    },
+    "KXMLBGAME-26SEP121335NYMNYY-NYM": {
+      "result": "yes",
+      "settlement_ts": "2026-09-12T20:27:38.528504Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP121335NYMNYY-NYM"
+    },
+    "KXMLBGAME-26SEP121420PITCHC-CHC": {
+      "result": "yes",
+      "settlement_ts": "2026-09-12T20:57:28.428726Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP121420PITCHC-CHC"
+    },
+    "KXMLBGAME-26SEP121610CLEMIN-MIN": {
+      "result": "yes",
+      "settlement_ts": "2026-09-12T22:57:28.568448Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP121610CLEMIN-MIN"
+    },
+    "KXMLBGAME-26SEP121610KCBOS-BOS": {
+      "result": "yes",
+      "settlement_ts": "2026-09-12T22:37:38.408999Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP121610KCBOS-BOS"
+    },
+    "KXMLBGAME-26SEP121915CWSSTL-STL": {
+      "result": "no",
+      "settlement_ts": "2026-09-13T02:57:28.43525Z",
+      "settlement_value_cents": 0,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP121915CWSSTL-STL"
+    },
+    "KXMLBGAME-26SEP131340HOUTB-TB": {
+      "result": "yes",
+      "settlement_ts": "2026-09-13T20:27:38.410653Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP131340HOUTB-TB"
+    },
+    "KXMLBGAME-26SEP131340LADMIA-LAD": {
+      "result": "no",
+      "settlement_ts": "2026-09-13T20:48:38.472719Z",
+      "settlement_value_cents": 0,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP131340LADMIA-LAD"
+    },
+    "KXMLBGAME-26SEP131410CINMIL-MIL": {
+      "result": "no",
+      "settlement_ts": "2026-09-13T20:52:38.566817Z",
+      "settlement_value_cents": 0,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP131410CINMIL-MIL"
+    },
+    "KXMLBGAME-26SEP161840ATHTB-TB": {
+      "result": "yes",
+      "settlement_ts": "2026-09-17T01:13:18.433764Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP161840ATHTB-TB"
+    },
+    "KXMLBGAME-26SEP161840MILPIT-MIL": {
+      "result": "yes",
+      "settlement_ts": "2026-09-17T01:57:28.478183Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP161840MILPIT-MIL"
+    },
+    "KXMLBGAME-26SEP161845PHIWSH-PHI": {
+      "result": "yes",
+      "settlement_ts": "2026-09-17T01:43:08.432612Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP161845PHIWSH-PHI"
+    },
+    "KXMLBGAME-26SEP162010KCHOU-KC": {
+      "result": "yes",
+      "settlement_ts": "2026-09-17T03:12:38.426375Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP162010KCHOU-KC"
+    },
+    "KXMLBGAME-26SEP162140MIAAZ-MIA": {
+      "result": "yes",
+      "settlement_ts": "2026-09-17T04:42:38.561376Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP162140MIAAZ-MIA"
+    },
+    "KXMLBGAME-26SEP171940DETCWS-CWS": {
+      "result": "yes",
+      "settlement_ts": "2026-09-18T02:22:54.539377Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP171940DETCWS-CWS"
+    },
+    "KXMLBGAME-26SEP172005BOSTEX-TEX": {
+      "result": "no",
+      "settlement_ts": "2026-09-18T03:13:14.576042Z",
+      "settlement_value_cents": 0,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP172005BOSTEX-TEX"
+    },
+    "KXMLBGAME-26SEP172138MINLAA-LAA": {
+      "result": "yes",
+      "settlement_ts": "2026-09-18T04:43:04.770011Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP172138MINLAA-LAA"
+    },
+    "KXMLBGAME-26SEP181905MILBAL-MIL": {
+      "result": "yes",
+      "settlement_ts": "2026-09-19T02:57:34.617303Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP181905MILBAL-MIL"
+    },
+    "KXMLBGAME-26SEP181910BOSTB-BOS": {
+      "result": "yes",
+      "settlement_ts": "2026-09-19T02:03:44.544923Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP181910BOSTB-BOS"
+    },
+    "KXMLBGAME-26SEP182010SEACOL-SEA": {
+      "result": "yes",
+      "settlement_ts": "2026-09-19T03:27:34.538986Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP182010SEACOL-SEA"
+    },
+    "KXMLBGAME-26SEP182215SFLAD-LAD": {
+      "result": "yes",
+      "settlement_ts": "2026-09-19T05:05:34.687392Z",
+      "settlement_value_cents": 100,
+      "source": "kalshi_public_market",
+      "status": "CONFIRMED",
+      "ticker": "KXMLBGAME-26SEP182215SFLAD-LAD"
+    }
+  }
+}

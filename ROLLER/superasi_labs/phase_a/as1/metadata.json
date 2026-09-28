@@ -1,0 +1,30 @@
+{
+  "BASE_GRADE": "A-",
+  "abase_filename": "SuperasiABase[as1].csv",
+  "abase_payload_sha256": "4f340710619fe59120f73e62479b92aa7e83146e007743ef91be0a2e6b2c2f57",
+  "abase_sha256": "26cfa5c82aee4c1a94e7cf7f73424f9d6b3a5cb017e280c2252bb23798465646",
+  "allocation_bps": 500,
+  "artifact": "superasi_abase",
+  "bankroll_cents": 2000000,
+  "borderline": true,
+  "components": {
+    "coverage": "A+",
+    "research_evidence": "A+",
+    "robustness": "A-",
+    "theoretical_alignment": "A+",
+    "validation": "A+"
+  },
+  "created_at": "2026-09-16T21:47:20Z",
+  "desk_settings_source": "disk",
+  "floor_cents": 1500000,
+  "folder": "as1",
+  "grade_config_version": "grade_config_v1",
+  "phase": "A",
+  "result_id": "as1",
+  "roller_filename": "Roller[as1].csv",
+  "source_csv_sha256": "9b681ab7eedec26fb78de3c86a72e7cef212f03f593a6b6a764f6138e1780f72",
+  "source_lab_id": "a63edfb839d54059b6a7f572d921cfe6",
+  "strategy_name": "as1",
+  "superasi_version": "superasi_abase_v1.0.0",
+  "target_cents": 3000000
+}

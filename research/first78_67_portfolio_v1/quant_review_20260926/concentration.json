@@ -1,0 +1,9 @@
+{
+  "top5_game_share_net": 0.08309865064140375,
+  "top10_game_share_net": 0.15760451331357692,
+  "top5_signal_day_share_net": 0.24152906528047394,
+  "top10_signal_day_share_net": 0.3903311835014394,
+  "days": 140,
+  "losing_signal_days": 36,
+  "note": "Realized final trade P&L attributed to entry date; not daily MTM return"
+}

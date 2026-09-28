@@ -1,0 +1,27 @@
+{
+  "artifact": "game_market_crosswalk",
+  "canonical_tickers": 8940,
+  "crosswalk_sha256": "0c4c079d5b7df1705dfc7903ffb11346e4dd490fb574b0dd60e8d1543ca1dbda",
+  "games_with_linked_markets": 4470,
+  "identity_rule_version": "1.0.0",
+  "identity_tickers": 8939,
+  "input_hashes": {
+    "identity": "e42041b13fe581b9f57475b5072b3ea8d17a293a2004164d0c8f767ab9ddbe2b",
+    "kalshi_markets": "572ac1e6f52add33e2744d080e2d0715e5a4965b3aeede14d0a83eb32fa7ad5d",
+    "suite_markets": "729e6877406bbcc29692ffc638c30d04484cb6492c975c794b9e488912ba8ede"
+  },
+  "link_rule_version": "1.0.0",
+  "market_row_count": 8940,
+  "markets_sha256": "b8d898068e39e65414500e0448be93141a2856056e9f0121e58fdbf6fea50d1f",
+  "provisional_layout": "/Users/user/Desktop/Momento/ROLLER/data/wta/2025_2026/derived/warehouse_v0",
+  "row_count": 8940,
+  "sport": "WTA",
+  "status_counts": {
+    "AMBIGUOUS": 0,
+    "INVALID": 0,
+    "LINKED": 8939,
+    "UNLINKED": 1
+  },
+  "suite_tickers": 8940,
+  "updated_at": "2026-09-15T01:26:09Z"
+}

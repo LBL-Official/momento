@@ -1,0 +1,82 @@
+---
+description: Momento 19-system bracket — ownership architecture freeze
+alwaysApply: true
+---
+
+# Momento 19-system bracket
+
+Ownership architecture. Not the 16-row program board.
+
+```
+LIVE EXECUTION = FALSE
+CANDLE PATH ≠ FILL
+19 SYSTEMS ≠ 19 MICROSERVICES
+15 TOURNAMENT + 4 INFRASTRUCTURE
+asked-six 1182 ≠ derived four 936 ≠ NBA 604
+crates/risk ≠ Austin DRE
+Austin opponent-YES@40 maker ≠ YES + BUY NO taker
+momento_systems champion ≠ system_orchestration
+trade_reconciliation ≠ Vital OMS
+```
+
+SSOT: `momento/registry/systems.yaml`
+Docs: `docs/momento/ARCHITECTURE.md`
+Loader: `ROLLER/roller/momento/`
+Agent rule lives here.
+
+The program board remains
+`docs/architecture/MOMENTO_SYSTEMS_ROADMAP.md`.
+Do not rewrite it into this bracket.
+
+## Absolute
+
+- Do not create a 20th top-level system.
+- Do not move working engines for folder aesthetics.
+- Do not edit `first80.py`, live FIRST01 / 80/81/83/89, `book.json`,
+  W9, warehouse Phase 21, or MLB 001.
+- Do not start/stop `momento-live.service` or set `VITAL_AWS_CONTROL`.
+- Do not invent fair odds, RV residuals, fills, or L2.
+- Do not remount Choosin Texas, Vital, Systimo, or Momento LS inside
+  `frontend/roller-terminal`.
+- Do not call `crates/risk` the Dynamic Risk Engine.
+- Do not claim Austin Phase 3 is an execution policy.
+- Do not mix N universes.
+- Do not treat System Orchestration as the champion Momento Systems box.
+- Do not treat Trade Reconciliation as Vital or as an OMS.
+
+## Ownership
+
+- Database = ROLLER
+- Data Analysis = SuperASI
+- Data Modeling = Jump (`?app=jump` Drive)
+- Trade Breakdown = Choosin Texas
+- Position Stratification = Austin `#/austin`
+- Dynamic Risk Engine = DRE `:5191` (`/dre` wraps Choosin + Austin).
+  V1 objective SSOT `research/dre/PORTFOLIO_OBJECTIVE_V1.md`.
+  Preserve αP > 0, then ΔP → ΔP*(Xt). Do not invent Λα.
+- Algorithmic Execution = NOT_IMPLEMENTED submission on `:5190`.
+  NBA Bot 001 (`nba-001`, FIRST78_67) is deployed as
+  `momento-nba-001.service`: collecting, SHADOW, execution gated. The
+  deployed build links no submission adapter. The source adapter is
+  fixture/demo only (production orders compiled out). Do not deploy an
+  adapter build to the production host or compile production orders in
+  without a resolved `execution_contract.json` and explicit owner approval.
+  Do not open Vital `:5180` as this Frontend.
+  MLB 001 is reference_only.
+- System Maintenance = Systimo Frontend `:5193` `/systimo`.
+  Momento LS `:5181` `:8792` remains the live-host observe adapter.
+- Data Ingestion = ingest scripts + auto_roller
+- Trade Reconciliation = observe-only `PositionReconciliation`. Not Vital.
+- System Orchestration = runtime job/pipeline sequencing. NOT_IMPLEMENTED.
+  Distinct from champion Momento Systems.
+- STAX / Research Engine v1 are submodules, not new systems
+- Jump is the Data Modeling frontend, not a 20th system
+
+Prefer adapters and pointers. `git mv` only when safe.
+`/momento/*` is on `:8791`. Bracket UI is `frontend/momento-systems` on `:5190`.
+Hedging Analysis Frontend is Ballhog `:5192`. BDR `#/bdr` remains
+the write-up library.
+Relative Value Hedging Frontend is TK Ultra `#/tk-ultra`
+(`GENERIC_RV` + `BINARY_COMPLEMENT_V0`). Optional Ballhog sibling via
+`handle_intent`. Neither is a 20th system. Not live. Freeze:
+`docs/momento/ARCHITECTURE_FREEZE_V0.md`.

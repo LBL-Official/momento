@@ -1,0 +1,90 @@
+{
+  "n_trades": 569,
+  "fee_model_status": "UNAVAILABLE",
+  "fill_model_status": "FILL_UNAVAILABLE",
+  "scenario_label": "SCENARIO \u2014 NOT OBSERVED FILL RATE",
+  "hedge_price_cents": 67,
+  "triggers": {
+    "69": {
+      "trigger": 69,
+      "hedge_price": 67,
+      "n_triggered_path": 489,
+      "n_price_reached": 126,
+      "path_based_mean_pnl_cents": 14.69244288224956,
+      "scenarios": [
+        {
+          "fill_rate": 1.0,
+          "label": "SCENARIO \u2014 NOT OBSERVED FILL RATE",
+          "mean_net_pnl_cents": 14.69244288224956
+        },
+        {
+          "fill_rate": 0.75,
+          "label": "SCENARIO \u2014 NOT OBSERVED FILL RATE",
+          "mean_net_pnl_cents": 12.389279437609842
+        },
+        {
+          "fill_rate": 0.5,
+          "label": "SCENARIO \u2014 NOT OBSERVED FILL RATE",
+          "mean_net_pnl_cents": 10.086115992970123
+        },
+        {
+          "fill_rate": 0.25,
+          "label": "SCENARIO \u2014 NOT OBSERVED FILL RATE",
+          "mean_net_pnl_cents": 7.782952548330404
+        },
+        {
+          "fill_rate": 0.0,
+          "label": "SCENARIO \u2014 NOT OBSERVED FILL RATE",
+          "mean_net_pnl_cents": 5.479789103690686
+        }
+      ],
+      "hedge_fill_status": "FILL_UNAVAILABLE"
+    },
+    "68": {
+      "trigger": 68,
+      "hedge_price": 67,
+      "n_triggered_path": 486,
+      "n_price_reached": 126,
+      "path_based_mean_pnl_cents": 14.69244288224956,
+      "scenarios": [
+        {
+          "fill_rate": 1.0,
+          "label": "SCENARIO \u2014 NOT OBSERVED FILL RATE",
+          "mean_net_pnl_cents": 14.69244288224956
+        },
+        {
+          "fill_rate": 0.75,
+          "label": "SCENARIO \u2014 NOT OBSERVED FILL RATE",
+          "mean_net_pnl_cents": 12.389279437609842
+        },
+        {
+          "fill_rate": 0.5,
+          "label": "SCENARIO \u2014 NOT OBSERVED FILL RATE",
+          "mean_net_pnl_cents": 10.086115992970123
+        },
+        {
+          "fill_rate": 0.25,
+          "label": "SCENARIO \u2014 NOT OBSERVED FILL RATE",
+          "mean_net_pnl_cents": 7.782952548330404
+        },
+        {
+          "fill_rate": 0.0,
+          "label": "SCENARIO \u2014 NOT OBSERVED FILL RATE",
+          "mean_net_pnl_cents": 5.479789103690686
+        }
+      ],
+      "hedge_fill_status": "FILL_UNAVAILABLE"
+    }
+  },
+  "resolution": {
+    "TRIGGER_RESOLUTION": "1m_close",
+    "definition_69": "first favorite close <= 69 after the 78 entry",
+    "definition_68": "first favorite close <= 68 after the 78 entry",
+    "n_first_le_69": 489,
+    "n_first_le_68": 486,
+    "n_69_without_68": 105,
+    "n_same_bar_69_and_68": 384,
+    "note": "1m closes can skip a 69-only print. Hedge price is 67. Candle path is not a fill."
+  },
+  "candle_path_not_fill": true
+}

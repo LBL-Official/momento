@@ -1,0 +1,25 @@
+{
+  "BASE_GRADE": "F",
+  "abase_filename": "SuperasiABase[NBA Q2 ABOVE 65 \u2014 REACH 85 _ DROP_TO 41 #1].csv",
+  "abase_payload_sha256": "fec4b1e617af7466218119f4c6964d69bbc0b9a9cdf6dcde088fc9c9656b8a67",
+  "abase_sha256": "e4653266bf60a4052d1741ff32ff0dc34359ec68517409af7d4012b6145bf565",
+  "artifact": "superasi_abase",
+  "borderline": true,
+  "components": {
+    "coverage": "A+",
+    "research_evidence": "F",
+    "robustness": "D",
+    "theoretical_alignment": "F",
+    "validation": "F"
+  },
+  "created_at": "2026-09-13T09:33:35Z",
+  "folder": "NBA Q2 ABOVE 65 \u2014 REACH 85 _ DROP_TO 41 #1",
+  "grade_config_version": "grade_config_v1",
+  "phase": "A",
+  "result_id": "NBA Q2 ABOVE 65 \u2014 REACH 85 _ DROP_TO 41 #1",
+  "roller_filename": "RollerNBA Q2 ABOVE 65 \u2014 REACH 85 _ DROP_TO 41 #1.csv",
+  "source_csv_sha256": "d5e2e1b637a60893afb438ea4830fb6023e2103155f94855b7ee2de23ce67b49",
+  "source_lab_id": "55634238115d4f69a60e36383cc0efc1",
+  "strategy_name": "NBA Q2 ABOVE 65 \u2014 REACH 85 _ DROP_TO 41 #1",
+  "superasi_version": "superasi_abase_v1.0.0"
+}

@@ -1,0 +1,46 @@
+{
+  "program": "A1_HYBRID_HEDGE_V1",
+  "universe_version": "A1_UNIVERSE_V1",
+  "dataset_version": "FIRST80_V3OPP_V4LEDGER_2025_2026",
+  "code_version": "UNKNOWN",
+  "timing": "STRICT_NEXT_BAR (V3 t > first_80_timestamp)",
+  "ncaab": "P5_VS_P5",
+  "fees": "GROSS_FEES_UNRESOLVED",
+  "live_execution_changed": false,
+  "config_hash": "d7d2e9e55d9a426a",
+  "nba_n": 1230,
+  "ncaab_p5_n": 721,
+  "ncaab_warehouse_not_used": 4099,
+  "repro": {
+    "nba": {
+      "sport": "nba",
+      "ok": true,
+      "n": 1230,
+      "hold": 2.8455,
+      "stop": 4.3902,
+      "v1": 5.1707,
+      "expected": {
+        "n": 1230,
+        "hold": 2.8455,
+        "stop": 4.3902,
+        "v1": 5.1707
+      },
+      "label": "REPRODUCED FROZEN FIRST80 / V4 LEDGER"
+    },
+    "ncaab": {
+      "sport": "ncaab",
+      "ok": true,
+      "n": 721,
+      "hold": 3.3564,
+      "stop": 4.3551,
+      "v1": 4.3551,
+      "expected": {
+        "n": 721,
+        "hold": 3.3564,
+        "stop": 4.3551,
+        "v1": 4.3551
+      },
+      "label": "REPRODUCED FROZEN FIRST80 / V4 LEDGER"
+    }
+  }
+}

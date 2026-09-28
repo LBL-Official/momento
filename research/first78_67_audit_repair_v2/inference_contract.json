@@ -1,0 +1,34 @@
+{
+  "written_before_repaired_result_tables": true,
+  "primary_estimand": "equal-weight mean of net_pnl_cents / contracts across admitted trades",
+  "cluster": "local candidate-entry day in America/Los_Angeles",
+  "unequal_day_sizes": "Each trade keeps equal weight inside the pooled mean. Day resampling changes how often a day's trades appear. The day is the dependence unit, not a second equal-weight estimand.",
+  "portfolio_net": "separate path endpoint, not the primary estimand",
+  "null": "centered studentized cluster bootstrap. t* = (mean* - observed_mean) / se*. One-sided share of t* >= t_obs with the +1/+1 correction.",
+  "not_used": "v1 (1 + count of uncentered bootstrap means <= 0) / (B + 1)",
+  "min_candidate_bearing_days": 10,
+  "below_minimum": ["P_VALUE_NOT_ESTIMABLE", "INSUFFICIENT_EVIDENCE"],
+  "degeneracy": "ZERO_CLUSTER_SE or no finite bootstrap SE yields P_VALUE_NOT_ESTIMABLE",
+  "percentile_intervals": "descriptive only; not null p-values",
+  "oos_family": [
+    "OCT_2025:REF",
+    "OCT_2025:JOINT_2_FEE_007",
+    "APR_2025:REF",
+    "APR_2025:JOINT_2_FEE_007"
+  ],
+  "holm": "only numeric p-values in that fixed family; excluded members are listed with a reason",
+  "sharpe": {
+    "return": "E_end_day / E_previous_day - 1",
+    "grid": "complete Pacific days including zero-activity days",
+    "series": ["realized_accounting", "marked"],
+    "missing_marks": "do not fill unknown marks with zero or with a carried price in the marked return",
+    "risk_free": 0,
+    "annualization": "sqrt(365) is a label on a short sample, not a year of observed performance",
+    "initial_denominator": "the $20,000 cash balance at the local midnight that opens the grid"
+  },
+  "calendar_simulation": "descriptive historical resampling, not a 2026-27 forecast",
+  "withdrawn": [
+    "v1 uncentered p-values and their Holm adjustments",
+    "12,255-path calendar distribution including median 229554.86 dollars"
+  ]
+}

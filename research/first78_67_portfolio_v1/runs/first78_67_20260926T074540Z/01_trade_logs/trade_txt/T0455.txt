@@ -1,0 +1,10 @@
+trade T0455  NCAAB  West Virginia at TCU
+contract KXNCAAMBGAME-26FEB21WVUTCU-TCU  slice H1_2
+signal 2026-02-21T14:41:00-08:00 PST  exit 2026-02-21T15:18:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 8146  principal_cents 635388
+entry_fee_cents 2447  exit_fee_cents 3152
+exit STOP at 67c  terminal yes
+gross_cents -89606  net_cents -95205
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

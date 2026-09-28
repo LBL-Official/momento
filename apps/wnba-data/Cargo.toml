@@ -1,0 +1,20 @@
+[package]
+name = "momento-wnba-data"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "CLI for Kalshi KXWNBAGAME historical market-data warehouse (research only)."
+
+[[bin]]
+name = "wnba-data"
+path = "src/main.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+momento-research-data.workspace = true
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.20", features = ["fmt", "env-filter"] }

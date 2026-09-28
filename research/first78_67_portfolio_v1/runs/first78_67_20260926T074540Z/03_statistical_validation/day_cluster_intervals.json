@@ -1,0 +1,78 @@
+{
+  "intervals": {
+    "combined": {
+      "estimand": "mean net cents per contract",
+      "cluster": "local signal day",
+      "draws": 10000,
+      "seed": 20260926,
+      "n_days": 140,
+      "n_trades": 647,
+      "observed_mean": 5.341488594369199,
+      "ci90": [
+        4.368908944874431,
+        6.342592222979608
+      ],
+      "ci95": [
+        4.1869138102738965,
+        6.547013269046414
+      ],
+      "one_sided_p_mean_le_0": 9.999000099990002e-05,
+      "note": "Day-cluster interval for this historical mean. Not a timing null and not a live-edge probability."
+    },
+    "NBA": {
+      "estimand": "mean net cents per contract",
+      "cluster": "local signal day",
+      "draws": 10000,
+      "seed": 20260927,
+      "n_days": 133,
+      "n_trades": 382,
+      "observed_mean": 4.918658774673827,
+      "ci90": [
+        3.5623097525492216,
+        6.244201354406593
+      ],
+      "ci95": [
+        3.3189534503698193,
+        6.48297502404431
+      ],
+      "one_sided_p_mean_le_0": 9.999000099990002e-05,
+      "note": "Day-cluster interval for this historical mean. Not a timing null and not a live-edge probability."
+    },
+    "NCAAB": {
+      "estimand": "mean net cents per contract",
+      "cluster": "local signal day",
+      "draws": 10000,
+      "seed": 20260928,
+      "n_days": 81,
+      "n_trades": 265,
+      "observed_mean": 5.95100176842064,
+      "ci90": [
+        4.529141248213425,
+        7.464802359133738
+      ],
+      "ci95": [
+        4.2696177543637654,
+        7.751218300421925
+      ],
+      "one_sided_p_mean_le_0": 9.999000099990002e-05,
+      "note": "Day-cluster interval for this historical mean. Not a timing null and not a live-edge probability."
+    }
+  },
+  "holm_primary_family": [
+    {
+      "endpoint": "combined_mean_net_per_contract",
+      "raw_p": 9.999000099990002e-05,
+      "holm_p": 0.00029997000299970003
+    },
+    {
+      "endpoint": "NBA_mean_net_per_contract",
+      "raw_p": 9.999000099990002e-05,
+      "holm_p": 0.00029997000299970003
+    },
+    {
+      "endpoint": "NCAAB_mean_net_per_contract",
+      "raw_p": 9.999000099990002e-05,
+      "holm_p": 0.00029997000299970003
+    }
+  ]
+}

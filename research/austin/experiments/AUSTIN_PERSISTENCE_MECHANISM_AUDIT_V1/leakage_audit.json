@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "n_checked_t0": 5,
+  "n_failed_t0": 0,
+  "n_checked_t1": 5,
+  "n_failed_t1": 0,
+  "n_checked_t2": 5,
+  "n_failed_t2": 0,
+  "n_errors": 0,
+  "note": "mutate bars/PBP after t0/t1/t2; PIT descriptor vector at that checkpoint must be unchanged"
+}

@@ -1,0 +1,23 @@
+{
+  "actual_order_records": "UNAVAILABLE",
+  "candle_files_indexed": {
+    "NBA": 2724,
+    "NCAAB": 10560
+  },
+  "candle_quote": "yes bid and yes ask open/high/low/close for the minute. No size.",
+  "candle_timestamp_precision": "unix second at the one-minute period end",
+  "exchange_trade_timestamps": "PRESENT_ON_PUBLIC_TRADES",
+  "feed_sequence_numbers": "UNAVAILABLE",
+  "game_time_local_receive_timestamps": "UNAVAILABLE",
+  "mlb_execution_ledger_not_used": true,
+  "order_book_deltas": "UNAVAILABLE",
+  "order_book_depth_snapshots": "UNAVAILABLE",
+  "point_in_time_order_book": "UNAVAILABLE",
+  "provenance": "historical_rest backfill. ingested_at is the collection clock, not a game-time receive time.",
+  "public_trades": "price, quantity_hundredths, taker side. No bid or ask resting at the print.",
+  "trade_files_indexed": {
+    "NBA": 2724,
+    "NCAAB": 10560
+  },
+  "trade_timestamp_precision": "millisecond datetime on the public-trade timestamp field"
+}

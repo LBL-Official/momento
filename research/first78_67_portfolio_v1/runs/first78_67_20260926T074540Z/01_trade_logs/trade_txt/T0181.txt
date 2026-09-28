@@ -1,0 +1,10 @@
+trade T0181  NBA  Minnesota at Chicago
+contract KXNBAGAME-25DEC29MINCHI-MIN  slice Q3
+signal 2025-12-29T18:22:00-08:00 PST  exit 2025-12-29T19:54:01-08:00 PST
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 3175  principal_cents 247650
+entry_fee_cents 954  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 69850  net_cents 68896
+strategy_result POSITIVE  net_r 1.856634687937910962595666703
+Assumed fill. Not a maker fill. Not live P&L.

@@ -1,0 +1,8 @@
+{
+  "note": "Local Foundation artifacts are canonical. Drive/Sheets publication engine is CTO-W11. GOOGLE_PUBLISH_PENDING is honest: Sheets MCP needsAuth. A Drive folder was created (1K3EBXFRPqteRLccRZH99Tv4Ql1CJwV0n) but is not claimed as a complete published archive.",
+  "run_id": "w1-d7e5d472e86268dc",
+  "status": "GOOGLE_PUBLISH_PENDING",
+  "waterfall": "W1",
+  "drive_folder_id": "1K3EBXFRPqteRLccRZH99Tv4Ql1CJwV0n",
+  "drive_folder_url": "https://drive.google.com/drive/folders/1K3EBXFRPqteRLccRZH99Tv4Ql1CJwV0n"
+}

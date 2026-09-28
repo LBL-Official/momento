@@ -1,0 +1,281 @@
+{
+  "activation": "RUNNING_DEMO",
+  "attach": {
+    "attempted_at": "2026-09-15T22:06:48Z",
+    "autonomous": true,
+    "aws": {
+      "account": "895492487332",
+      "demo_secret": "CONFIRMED",
+      "demo_secret_name": "momento/kalshi/demo",
+      "detail": null,
+      "factory_toml_refused": true,
+      "http_200_not_running": true,
+      "instance_id": "i-0f0849d5829476c31",
+      "momento_live_untouched": true,
+      "read_only": true,
+      "region": "us-east-1",
+      "session": "CONFIRMED",
+      "status": "CONFIRMED",
+      "unit": null,
+      "unit_started": false
+    },
+    "environment": "DEMO",
+    "factory_path_used": false,
+    "http_200_not_running": true,
+    "kalshi_demo": {
+      "balance_cents": 2000,
+      "detail": null,
+      "environment": "DEMO",
+      "fill_n": 0,
+      "http_200_not_running": true,
+      "observed_at": "2026-09-15T22:06:48Z",
+      "ok": true,
+      "position_n": 0,
+      "read_only": true,
+      "status": "CONFIRMED",
+      "submits": false
+    },
+    "not_80_81": true,
+    "not_mlb_factory": true,
+    "submit": false,
+    "unit": {
+      "active": true,
+      "attempted": true,
+      "aws_runtime_id": "momento-demo@mlb-002.service",
+      "factory_path_used": false,
+      "ok": true,
+      "reason": null,
+      "secret_missing": false,
+      "state_dir": "/var/lib/momento/demo/mlb-002/state",
+      "unit": "momento-demo@mlb-002.service",
+      "unit_started": true
+    },
+    "unit_started": true,
+    "worker": "momento-demo@mlb-002.service"
+  },
+  "aws_runtime_id": "momento-demo@mlb-002.service",
+  "bot_id": "093960ced3324cb3a0129f03227ab6aa",
+  "bots_version": "jump_b_bots_v1.0.0",
+  "created_at": "2026-09-13T10:57:46Z",
+  "deploy": {
+    "activation": "RUNNING_DEMO",
+    "environment": "DEMO",
+    "factory_toml_refused": true,
+    "kalshi_env": "demo",
+    "live_enabled": false,
+    "message": null,
+    "state_dir": "/var/lib/momento/demo/mlb-002/state",
+    "status": "RUNNING_DEMO",
+    "unit": "momento-demo@mlb-002.service",
+    "unit_started": true
+  },
+  "engine": {
+    "engine_fingerprint": "a28939a02c7e352d453829f31894c1554567f6ca752a5c387671c69cd5415d3a",
+    "engine_pointer": "research_iti",
+    "honesty": {
+      "browser_is_not_engine": true,
+      "candle_path_not_fill": true,
+      "iti_is_not_live_signal": true,
+      "live_execution": false
+    },
+    "implementation": {
+      "not_80_81": true,
+      "not_mlb_factory": true,
+      "signal": "research_iti_candle_path",
+      "spec": "IMPLEMENTED",
+      "submit": false,
+      "worker": "OPERATION_REQUIRED"
+    },
+    "iti": {
+      "BASE_GRADE": "D",
+      "DEBASE_GRADE": "F",
+      "folder": "ITI Stress Q4 CROSS 65 REACH 85 40/ITI Stress Q4 CROSS 65 REACH 85 40_ITI",
+      "lab_id": "9772da9d651b4ae4a66ca64c16393e6b",
+      "metadata_sha256": "ca52c4317d711c10a66c69dce665334e2432d1a063d0d1c86db2090d5495a9d9",
+      "phase_a_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-12",
+      "phase_b_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40 ITI-12",
+      "population": 23,
+      "run_id": "4c864e2742274632ad00757dcd8dd58c",
+      "slot_id": "ITI-12",
+      "strategy_name": "ITI Stress Q4 CROSS 65 REACH 85 40_ITI"
+    },
+    "kind": "research_iti",
+    "live_execution": false,
+    "prices": {
+      "entry_cents": 65,
+      "entry_e4": 6500,
+      "loss_cents": 40,
+      "loss_e4": 4000,
+      "win_cents": 97,
+      "win_e4": 9700
+    },
+    "question": {
+      "accept_limitations": false,
+      "entry_conditions": [
+        {
+          "clock": null,
+          "event_definition": "TRADABLE_CLOSE_CROSS",
+          "id": "entry_iti_stress",
+          "nth": null,
+          "operation": "CROSS",
+          "ordinal": "FIRST_TOUCH",
+          "period": "Q4",
+          "price_e4": 6500,
+          "price_field": "yes_bid_close"
+        }
+      ],
+      "path_conditions": [
+        {
+          "id": "win_iti_stress",
+          "op": "REACH",
+          "outcome": "win",
+          "price_e4": 8500,
+          "sequential": false
+        },
+        {
+          "id": "loss_iti_stress",
+          "op": "REACH",
+          "outcome": "loss",
+          "price_e4": 4000,
+          "sequential": false
+        }
+      ],
+      "requested_dimensions": [
+        "HOLD_TO_SETTLEMENT"
+      ],
+      "terminal": "BOTH",
+      "universe": {
+        "date_from": "2025-10-10",
+        "date_to": "2025-10-31",
+        "game_data": [
+          "pbp"
+        ],
+        "leagues": [
+          "NBA"
+        ],
+        "market_data": [
+          "candles"
+        ],
+        "markets": [
+          "kalshi"
+        ],
+        "seasons": [
+          "2025-2026"
+        ],
+        "sports": [
+          "NBA"
+        ]
+      }
+    },
+    "source": "ROLLER \u2192 SuperASI A \u2192 SuperASI B \u2192 ITI",
+    "sport": "nba",
+    "strategy_pointer": "ITI Stress Q4 CROSS 65 REACH 85 40/ITI Stress Q4 CROSS 65 REACH 85 40_ITI"
+  },
+  "engine_pointer": "research_iti",
+  "environment": "DEMO",
+  "factory_id": null,
+  "factory_version": null,
+  "iti": {
+    "BASE_GRADE": "D",
+    "DEBASE_GRADE": "F",
+    "entry_cents": 65,
+    "folder": "ITI Stress Q4 CROSS 65 REACH 85 40/ITI Stress Q4 CROSS 65 REACH 85 40_ITI",
+    "iti_is_not_live_signal": true,
+    "loss_cents": 40,
+    "metadata_sha256": "ca52c4317d711c10a66c69dce665334e2432d1a063d0d1c86db2090d5495a9d9",
+    "question": {
+      "accept_limitations": false,
+      "entry_conditions": [
+        {
+          "clock": null,
+          "event_definition": "TRADABLE_CLOSE_CROSS",
+          "id": "entry_iti_stress",
+          "nth": null,
+          "operation": "CROSS",
+          "ordinal": "FIRST_TOUCH",
+          "period": "Q4",
+          "price_e4": 6500,
+          "price_field": "yes_bid_close"
+        }
+      ],
+      "path_conditions": [
+        {
+          "id": "win_iti_stress",
+          "op": "REACH",
+          "outcome": "win",
+          "price_e4": 8500,
+          "sequential": false
+        },
+        {
+          "id": "loss_iti_stress",
+          "op": "REACH",
+          "outcome": "loss",
+          "price_e4": 4000,
+          "sequential": false
+        }
+      ],
+      "requested_dimensions": [
+        "HOLD_TO_SETTLEMENT"
+      ],
+      "terminal": "BOTH",
+      "universe": {
+        "date_from": "2025-10-10",
+        "date_to": "2025-10-31",
+        "game_data": [
+          "pbp"
+        ],
+        "leagues": [
+          "NBA"
+        ],
+        "market_data": [
+          "candles"
+        ],
+        "markets": [
+          "kalshi"
+        ],
+        "seasons": [
+          "2025-2026"
+        ],
+        "sports": [
+          "NBA"
+        ]
+      }
+    },
+    "run_id": "4c864e2742274632ad00757dcd8dd58c",
+    "slot_id": "ITI-12",
+    "strategy_name": "ITI Stress Q4 CROSS 65 REACH 85 40_ITI",
+    "win_cents": 97
+  },
+  "iti_version": "jump_a_iti_v1.0.0",
+  "kind": "iti",
+  "live_armed_confirmed": false,
+  "name": "Jump B verify",
+  "notes": "",
+  "observation": {
+    "aws_runtime_id": "momento-demo@mlb-002.service",
+    "detail": null,
+    "environment": "DEMO",
+    "health": "RUNNING_DEMO",
+    "live_armed_confirmed": false,
+    "observed": true,
+    "source": "vital",
+    "status": "RUNNING_DEMO",
+    "vital_bot_id": "mlb-002"
+  },
+  "settings": {
+    "allocation_bps": 1250,
+    "amount_cents": 100,
+    "bankroll_cents": 2000,
+    "bankroll_source": "unread_fallback",
+    "max_position_budget_cents": 100,
+    "sizing_mode": "FIXED_CENTS"
+  },
+  "slot_id": "ITI-12",
+  "sport": "nba",
+  "status": "RUNNING_DEMO",
+  "strategy_fingerprint": "96c24a4d18a07c010df66939c6cf2557685efddd15683ef5364cfb5f58e5dc8b",
+  "strategy_folder": "ITI Stress Q4 CROSS 65 REACH 85 40/ITI Stress Q4 CROSS 65 REACH 85 40_ITI",
+  "strategy_pointer": "ITI Stress Q4 CROSS 65 REACH 85 40/ITI Stress Q4 CROSS 65 REACH 85 40_ITI",
+  "updated_at": "2026-09-16T21:24:55Z",
+  "vital_bot_id": "mlb-002"
+}

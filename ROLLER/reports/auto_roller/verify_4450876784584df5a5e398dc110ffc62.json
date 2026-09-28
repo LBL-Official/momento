@@ -1,0 +1,69 @@
+{
+  "run_id": "4450876784584df5a5e398dc110ffc62",
+  "job_type": "verify",
+  "display": "AUTO ROLLER VERIFY",
+  "started_at": "2026-09-12T05:22:43Z",
+  "finished_at": "2026-09-12T05:22:46Z",
+  "duration_s": 3.111,
+  "status": "COMPLETE",
+  "code_version": "research_query_v1.2_ops",
+  "operation_semantics_version": "1.0.0",
+  "indexes": [
+    {
+      "leaf": "NBA/2025-2026/TRADABLE_YES_BID",
+      "ok": true,
+      "reason": null
+    },
+    {
+      "leaf": "NCAAB/2025-2026/TRADABLE_YES_BID",
+      "ok": true,
+      "reason": null
+    },
+    {
+      "leaf": "WNBA/2025/TRADABLE_YES_BID",
+      "ok": true,
+      "reason": null
+    },
+    {
+      "leaf": "WNBA/2026/TRADABLE_YES_BID",
+      "ok": true,
+      "reason": null
+    },
+    {
+      "leaf": "MLB/2025-2026/LAST_TRADE_PRINT",
+      "ok": true,
+      "reason": null
+    },
+    {
+      "leaf": "MLB/2025-2026/TRADABLE_YES_BID",
+      "ok": true,
+      "reason": null
+    },
+    {
+      "leaf": "ATP/2025-2026/TRADABLE_YES_BID",
+      "ok": true,
+      "reason": null
+    },
+    {
+      "leaf": "WTA/2025-2026/TRADABLE_YES_BID",
+      "ok": true,
+      "reason": null
+    },
+    {
+      "leaf": "ATP/2025-2026/LAST_TRADE_PRINT",
+      "ok": true,
+      "reason": null
+    },
+    {
+      "leaf": "WTA/2025-2026/LAST_TRADE_PRINT",
+      "ok": true,
+      "reason": null
+    }
+  ],
+  "sentinels": [],
+  "gaps_found": 30,
+  "errors": [],
+  "warnings": [
+    "MISSED_SCHEDULE"
+  ]
+}

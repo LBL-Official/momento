@@ -1,0 +1,32 @@
+[
+  {
+    "block_days": 1,
+    "status": "DESCRIPTIVE",
+    "paths": 200,
+    "seed": 20250402,
+    "ending_p50": 1994844,
+    "drawdown_p95": 0.036182999999999965,
+    "p_drawdown_above_10pct": 0.0,
+    "label": "DESCRIPTIVE_SHORT_CALENDAR"
+  },
+  {
+    "block_days": 3,
+    "status": "DESCRIPTIVE",
+    "paths": 200,
+    "seed": 20250404,
+    "ending_p50": 1994844,
+    "drawdown_p95": 0.02719499999999997,
+    "p_drawdown_above_10pct": 0.0,
+    "label": "DESCRIPTIVE_SHORT_CALENDAR"
+  },
+  {
+    "block_days": 7,
+    "status": "DESCRIPTIVE",
+    "paths": 200,
+    "seed": 20250408,
+    "ending_p50": 1994844,
+    "drawdown_p95": 0.02719499999999997,
+    "p_drawdown_above_10pct": 0.0,
+    "label": "DESCRIPTIVE_SHORT_CALENDAR"
+  }
+]

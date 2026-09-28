@@ -1,0 +1,3 @@
+bot_id,sport,quadrant_id,owner,runtime_pointer,desk_instance_id,verified
+mlb-001,MLB,quad-4,vital,momento-live.service,quad-4:algorithmic_execution,true
+nba-001,NBA,quad-1,vital,momento-nba-001.service,quad-1:algorithmic_execution,true

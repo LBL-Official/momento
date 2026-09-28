@@ -1,0 +1,186 @@
+{
+  "database": {
+    "name": "ROLLER",
+    "version": "4.0.0-C",
+    "pipeline_version": "4.0.0-C",
+    "research_object_version": "4.1.0-R",
+    "state_schema_version": "2.0.0",
+    "measurement_schema_version": "3.0.0",
+    "fundamental_schema_version": "4.0.0-A",
+    "greek_schema_version": "4.0.0-B",
+    "greek_architecture_version": "4.0.0-C",
+    "description": "The warehouse knows what data exists. ROLLER knows what could have been known at a particular time."
+  },
+  "roots": {
+    "config": "config",
+    "meta": "meta",
+    "data": "data",
+    "reports": "reports"
+  },
+  "timezone": "UTC",
+  "as_of": {
+    "boundary": "half_open",
+    "filter": "available_at < cutoff",
+    "date_means": "UTC_start"
+  },
+  "sports": {
+    "NBA": {
+      "seasons": {
+        "2025-2026": {
+          "path": "data/nba/2025_2026",
+          "datasets": {
+            "games": "data/nba/2025_2026/canonical/games.csv",
+            "pbp": "data/nba/2025_2026/canonical/pbp",
+            "kalshi_candles": "data/nba/2025_2026/canonical/kalshi_candles",
+            "polymarket_candles": "data/nba/2025_2026/canonical/polymarket_candles",
+            "polymarket_markets": "data/nba/2025_2026/canonical/polymarket_markets.csv",
+            "kalshi_markets": "data/nba/2025_2026/canonical/kalshi_markets.csv",
+            "kalshi_trades": "data/nba/2025_2026/canonical/kalshi_trades",
+            "kalshi_orderbook_snapshots": "data/nba/2025_2026/canonical/kalshi_orderbook_snapshots",
+            "first80_triggers": "data/nba/2025_2026/derived/first80_triggers.csv",
+            "team_features": "data/nba/2025_2026/derived/team_game_features.csv",
+            "d2d_daily": "data/nba/2025_2026/derived/d2d_daily.csv",
+            "game_state_features": "data/nba/2025_2026/derived/game_state_features.csv"
+          }
+        },
+        "2026-2027": {
+          "path": "data/nba/2026_2027",
+          "datasets": {
+            "games": "data/nba/2026_2027/canonical/games.csv",
+            "pbp": "data/nba/2026_2027/canonical/pbp",
+            "kalshi_candles": "data/nba/2026_2027/canonical/kalshi_candles",
+            "kalshi_markets": "data/nba/2026_2027/canonical/kalshi_markets.csv",
+            "kalshi_trades": "data/nba/2026_2027/canonical/kalshi_trades",
+            "kalshi_orderbook_snapshots": "data/nba/2026_2027/canonical/kalshi_orderbook_snapshots",
+            "first80_triggers": "data/nba/2026_2027/derived/first80_triggers.csv",
+            "team_features": "data/nba/2026_2027/derived/team_game_features.csv",
+            "d2d_daily": "data/nba/2026_2027/derived/d2d_daily.csv"
+          }
+        }
+      }
+    },
+    "WNBA": {
+      "seasons": {
+        "2025": {
+          "path": "data/wnba/2025",
+          "datasets": {
+            "games": "data/wnba/2025/canonical/games.csv",
+            "pbp": "data/wnba/2025/canonical/pbp",
+            "kalshi_candles": "data/wnba/2025/canonical/kalshi_candles",
+            "polymarket_candles": "data/wnba/2025/canonical/polymarket_candles",
+            "polymarket_markets": "data/wnba/2025/canonical/polymarket_markets.csv",
+            "kalshi_markets": "data/wnba/2025/canonical/kalshi_markets.csv",
+            "kalshi_trades": "data/wnba/2025/canonical/kalshi_trades",
+            "kalshi_orderbook_snapshots": "data/wnba/2025/canonical/kalshi_orderbook_snapshots",
+            "first80_triggers": "data/wnba/2025/derived/first80_triggers.csv",
+            "team_features": "data/wnba/2025/derived/team_game_features.csv",
+            "d2d_daily": "data/wnba/2025/derived/d2d_daily.csv"
+          }
+        },
+        "2026": {
+          "path": "data/wnba/2026",
+          "datasets": {
+            "games": "data/wnba/2026/canonical/games.csv",
+            "pbp": "data/wnba/2026/canonical/pbp",
+            "kalshi_candles": "data/wnba/2026/canonical/kalshi_candles",
+            "polymarket_candles": "data/wnba/2026/canonical/polymarket_candles",
+            "polymarket_markets": "data/wnba/2026/canonical/polymarket_markets.csv",
+            "kalshi_markets": "data/wnba/2026/canonical/kalshi_markets.csv",
+            "kalshi_trades": "data/wnba/2026/canonical/kalshi_trades",
+            "kalshi_orderbook_snapshots": "data/wnba/2026/canonical/kalshi_orderbook_snapshots",
+            "first80_triggers": "data/wnba/2026/derived/first80_triggers.csv",
+            "team_features": "data/wnba/2026/derived/team_game_features.csv",
+            "d2d_daily": "data/wnba/2026/derived/d2d_daily.csv"
+          }
+        }
+      }
+    },
+    "MLB": {
+      "seasons": {
+        "2025-2026": {
+          "path": "data/mlb/2025_2026",
+          "datasets": {
+            "games": "data/mlb/2025_2026/canonical/games.csv",
+            "pbp": "data/mlb/2025_2026/canonical/pbp",
+            "kalshi_markets": "data/mlb/2025_2026/canonical/kalshi_markets.csv",
+            "kalshi_last_trade": "data/mlb/2025_2026/canonical/kalshi_last_trade",
+            "kalshi_candles": "data/mlb/2025_2026/canonical/kalshi_candles",
+            "kalshi_trades": "data/mlb/2025_2026/canonical/kalshi_trades"
+          }
+        }
+      }
+    },
+    "ATP": {
+      "seasons": {
+        "2025-2026": {
+          "path": "data/tennis/2025_2026",
+          "datasets": {
+            "games": "data/tennis/2025_2026/canonical/games.csv",
+            "pbp": "data/tennis/2025_2026/canonical/pbp",
+            "kalshi_markets": "data/tennis/2025_2026/canonical/kalshi_markets.csv",
+            "kalshi_trade_ticks": "data/tennis/2025_2026/canonical/kalshi_trade_ticks",
+            "kalshi_trades": "data/tennis/2025_2026/canonical/kalshi_trade_ticks",
+            "kalshi_candles": "data/tennis/2025_2026/canonical/kalshi_candles",
+            "kalshi_last_trade": "data/tennis/2025_2026/canonical/kalshi_last_trade"
+          }
+        }
+      }
+    },
+    "WTA": {
+      "seasons": {
+        "2025-2026": {
+          "path": "data/tennis/2025_2026",
+          "datasets": {
+            "games": "data/tennis/2025_2026/canonical/games.csv",
+            "pbp": "data/tennis/2025_2026/canonical/pbp",
+            "kalshi_markets": "data/tennis/2025_2026/canonical/kalshi_markets.csv",
+            "kalshi_trade_ticks": "data/tennis/2025_2026/canonical/kalshi_trade_ticks",
+            "kalshi_trades": "data/tennis/2025_2026/canonical/kalshi_trade_ticks",
+            "kalshi_candles": "data/tennis/2025_2026/canonical/kalshi_candles",
+            "kalshi_last_trade": "data/tennis/2025_2026/canonical/kalshi_last_trade"
+          }
+        }
+      }
+    },
+    "NCAAB": {
+      "seasons": {
+        "2025-2026": {
+          "path": "data/ncaab/2025_2026",
+          "datasets": {
+            "games": "data/ncaab/2025_2026/canonical/games.csv",
+            "pbp": "data/ncaab/2025_2026/canonical/pbp",
+            "kalshi_candles": "data/ncaab/2025_2026/canonical/kalshi_candles",
+            "polymarket_candles": "data/ncaab/2025_2026/canonical/polymarket_candles",
+            "polymarket_markets": "data/ncaab/2025_2026/canonical/polymarket_markets.csv",
+            "kalshi_markets": "data/ncaab/2025_2026/canonical/kalshi_markets.csv",
+            "kalshi_trades": "data/ncaab/2025_2026/canonical/kalshi_trades",
+            "kalshi_orderbook_snapshots": "data/ncaab/2025_2026/canonical/kalshi_orderbook_snapshots",
+            "first80_triggers": "data/ncaab/2025_2026/derived/first80_triggers.csv",
+            "team_features": "data/ncaab/2025_2026/derived/team_game_features.csv",
+            "d2d_daily": "data/ncaab/2025_2026/derived/d2d_daily.csv"
+          }
+        },
+        "2026-2027": {
+          "path": "data/ncaab/2026_2027",
+          "datasets": {
+            "games": "data/ncaab/2026_2027/canonical/games.csv",
+            "pbp": "data/ncaab/2026_2027/canonical/pbp",
+            "kalshi_candles": "data/ncaab/2026_2027/canonical/kalshi_candles",
+            "kalshi_markets": "data/ncaab/2026_2027/canonical/kalshi_markets.csv",
+            "kalshi_trades": "data/ncaab/2026_2027/canonical/kalshi_trades",
+            "kalshi_orderbook_snapshots": "data/ncaab/2026_2027/canonical/kalshi_orderbook_snapshots",
+            "first80_triggers": "data/ncaab/2026_2027/derived/first80_triggers.csv",
+            "team_features": "data/ncaab/2026_2027/derived/team_game_features.csv",
+            "d2d_daily": "data/ncaab/2026_2027/derived/d2d_daily.csv"
+          }
+        }
+      }
+    }
+  },
+  "meta": {
+    "game_identity": "meta/game_identity.csv",
+    "teams": "meta/teams.csv",
+    "update_log": "meta/update_log.csv",
+    "dataset_registry": "meta/dataset_registry.json"
+  }
+}

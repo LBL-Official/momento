@@ -1,0 +1,10 @@
+{
+  "written_utc": "2026-09-01T19:09:05.344968+00:00",
+  "n": 1223,
+  "quality_counts": {
+    "EXACT_ALIGNMENT": 19191,
+    "MULTI_POSSESSION_CANDLE": 145013,
+    "MULTI_CANDLE_POSSESSION": 57527,
+    "PARTIAL_ALIGNMENT": 3226
+  }
+}

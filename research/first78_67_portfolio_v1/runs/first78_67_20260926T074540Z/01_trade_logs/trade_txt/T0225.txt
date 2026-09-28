@@ -1,0 +1,10 @@
+trade T0225  NBA  Cleveland at Minnesota
+contract KXNBAGAME-26JAN08CLEMIN-MIN  slice Q3
+signal 2026-01-08T18:38:00-08:00 PST  exit 2026-01-08T19:54:57-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 3631  principal_cents 283218
+entry_fee_cents 1091  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 79882  net_cents 78791
+strategy_result POSITIVE  net_r 1.856658104955581214506209204
+Assumed fill. Not a maker fill. Not live P&L.

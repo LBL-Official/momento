@@ -1,0 +1,98 @@
+{
+  "BASE_GRADE": "F",
+  "DEBASE_GRADE": "F",
+  "abase_filename": "SuperasiABase[NBA Q4 CROSS 63 \u2014 REACH 85 _ REACH 41 #3].csv",
+  "abase_sha256": "1279b99205271a62e66624dc6782707965d5f356a172d389290b93095b9a5017",
+  "allocation_bps": 500,
+  "artifact": "superasi_bdebase",
+  "bankroll_cents": 2000000,
+  "bottleneck": "F",
+  "components": {
+    "coverage": "C",
+    "research_evidence": "F",
+    "robustness": "D",
+    "theoretical_alignment": "F",
+    "validation": "F"
+  },
+  "created_at": "2026-09-13T09:49:11Z",
+  "debase_filename": "SuperasiBDeBase[NBA Q4 CROSS 63 \u2014 REACH 85 _ REACH 41 #3].csv",
+  "debase_payload_sha256": "5b6531b22f283184bfcc8f3c35389d204457706c6988044af40cb21d7f406fd7",
+  "debase_sha256": "0199c40dedd2bd691c0e1efea0f7ba13aed4bcff911bc1ed7ef2ae8f52c65734",
+  "desk_settings_source": "disk",
+  "floor_cents": 1500000,
+  "folder": "NBA Q4 CROSS 63 \u2014 REACH 85 _ REACH 41 #3",
+  "grade_config_version": "grade_config_v1",
+  "phase": "B",
+  "phase_a_result_id": "NBA Q4 CROSS 63 \u2014 REACH 85 _ REACH 41 #3",
+  "plan_hash": "98f6a450ecaddd84734e2ce062d85bc80d8e0c2e8fdd9906bf1b5479a0f1f796",
+  "question": {
+    "accept_limitations": false,
+    "entry_conditions": [
+      {
+        "clock": null,
+        "event_definition": "TRADABLE_CLOSE_CROSS",
+        "id": "e1",
+        "nth": null,
+        "operation": "CROSS",
+        "ordinal": "FIRST_TOUCH",
+        "period": "Q4",
+        "price_e4": 6300,
+        "price_field": "yes_bid_close"
+      }
+    ],
+    "loss_hold": true,
+    "path_conditions": [
+      {
+        "id": "win",
+        "op": "REACH",
+        "outcome": "win",
+        "price_e4": 8500,
+        "sequential": false
+      },
+      {
+        "id": "loss",
+        "op": "REACH",
+        "outcome": "loss",
+        "price_e4": 4100,
+        "sequential": false
+      }
+    ],
+    "requested_dimensions": [
+      "HOLD_TO_SETTLEMENT"
+    ],
+    "terminal": "NO",
+    "universe": {
+      "date_from": "2025-10-10",
+      "date_to": "2025-10-31",
+      "game_data": [
+        "pbp"
+      ],
+      "leagues": [
+        "NBA"
+      ],
+      "market_data": [
+        "candles"
+      ],
+      "markets": [
+        "kalshi"
+      ],
+      "seasons": [
+        "2025-2026"
+      ],
+      "sports": [
+        "NBA"
+      ]
+    },
+    "win_hold": false
+  },
+  "question_sha256": "488ffe860a11daf9d37b0f53e3ea41f6430202a6b460a7ba5ff96161aaddfdbf",
+  "question_status": "PRESENT",
+  "result_hash": "435f0b5cf80fab7fae0879b65a691db6bc7b18bed247de6726207a0cd07e944d",
+  "result_id": "NBA Q4 CROSS 63 \u2014 REACH 85 _ REACH 41 #3",
+  "roller_filename": "RollerNBA Q4 CROSS 63 \u2014 REACH 85 _ REACH 41 #3.csv",
+  "source_csv_sha256": "9f1eac86bff05bcbdebfa3673473cf46d6c70ba3567da037ccaec113f0ab4870",
+  "source_lab_id": "e9b05c3013d943d6875242a0b2c016b6",
+  "strategy_name": "NBA Q4 CROSS 63 \u2014 REACH 85 _ REACH 41 #3",
+  "superasi_version": "superasi_bdebase_v1.0.0",
+  "target_cents": 3000000
+}

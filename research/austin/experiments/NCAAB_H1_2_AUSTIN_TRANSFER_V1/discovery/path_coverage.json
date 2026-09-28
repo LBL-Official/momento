@@ -1,0 +1,11 @@
+{
+  "N_trades": 96,
+  "N_path_complete": 22,
+  "N_path_partial": 74,
+  "N_path_unavailable": 0,
+  "N_primary_grid_rows": 1345,
+  "N_valid_Austin_rows": 1453,
+  "N_knn_observations": 48752,
+  "N_games": 96,
+  "N_state_observations": 2444
+}

@@ -1,0 +1,10 @@
+trade T0546  NCAAB  Pittsburgh at Syracuse
+contract KXNCAAMBGAME-26MAR07PITTSYR-PITT  slice H2_1
+signal 2026-03-07T14:55:00-08:00 PST  exit 2026-03-07T15:04:00-08:00 PST
+assumed entry 78c  observed close 81c  overshoot 3c
+contracts 11041  principal_cents 861198
+entry_fee_cents 3316  exit_fee_cents 4273
+exit STOP at 67c  terminal yes
+gross_cents -121451  net_cents -129040
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

@@ -1,0 +1,10 @@
+trade T0481  NBA  San Antonio at Toronto
+contract KXNBAGAME-26FEB25SASTOR-TOR  slice Q3
+signal 2026-02-25T18:21:00-08:00 PST  exit 2026-02-25T18:29:00-08:00 PST
+assumed entry 78c  observed close 82c  overshoot 4c
+contracts 8565  principal_cents 668070
+entry_fee_cents 2573  exit_fee_cents 3315
+exit STOP at 67c  terminal no
+gross_cents -94215  net_cents -100103
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

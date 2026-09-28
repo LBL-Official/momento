@@ -1,0 +1,10 @@
+trade T0176  NBA  New York at Atlanta
+contract KXNBAGAME-25DEC27NYKATL-NYK  slice Q2
+signal 2025-12-27T18:01:00-08:00 PST  exit 2025-12-27T19:24:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 3175  principal_cents 247650
+entry_fee_cents 954  exit_fee_cents 1229
+exit STOP at 67c  terminal yes
+gross_cents -34925  net_cents -37108
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

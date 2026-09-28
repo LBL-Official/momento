@@ -1,0 +1,10 @@
+trade T0074  NBA  Orlando at Philadelphia
+contract KXNBAGAME-25NOV25ORLPHI-ORL  slice Q2
+signal 2025-11-25T17:53:00-08:00 PST  exit 2025-11-25T20:03:49-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 2309  principal_cents 180102
+entry_fee_cents 694  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 50798  net_cents 50104
+strategy_result POSITIVE  net_r 1.856597621076814762663504650
+Assumed fill. Not a maker fill. Not live P&L.

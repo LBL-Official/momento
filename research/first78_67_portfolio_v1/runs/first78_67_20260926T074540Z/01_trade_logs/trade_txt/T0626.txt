@@ -1,0 +1,10 @@
+trade T0626  NBA  New York at Charlotte
+contract KXNBAGAME-26MAR26NYKCHA-CHA  slice Q3
+signal 2026-03-26T17:27:00-07:00 PDT  exit 2026-03-26T18:42:18-07:00 PDT
+assumed entry 78c  observed close 81c  overshoot 3c
+contracts 15195  principal_cents 1185210
+entry_fee_cents 4564  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 334290  net_cents 329726
+strategy_result POSITIVE  net_r 1.856680312406736903749669180
+Assumed fill. Not a maker fill. Not live P&L.

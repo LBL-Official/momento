@@ -1,0 +1,10 @@
+{
+  "dataset_version": "choosin_nba_2q3q_first78_67",
+  "n_trades": 569,
+  "n_is_604": false,
+  "knn_includes_distance_from_78": true,
+  "knn_includes_distance_from_80": false,
+  "buy_skip": false,
+  "live_execution": false,
+  "live_feed": "UNAVAILABLE"
+}

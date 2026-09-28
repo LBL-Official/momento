@@ -1,0 +1,28 @@
+{
+  "artifact_manifest_hash": "d6cb5540e29e45f614c9401c56cece21d5c8d0363cfaf6637d9e05c2bcaeacd5",
+  "calibrated_probability_status": "AVAILABLE",
+  "code_version": "0.1.0",
+  "coverage": {
+    "dataset_c_alignment": {
+      "AMBIGUOUS": 0,
+      "MODELED": 5201,
+      "OBSERVED": 0,
+      "UNALIGNED": 42646,
+      "playoff_tickers": 58
+    },
+    "ncaab_in_game_universe": null,
+    "timeActual": "DATA GAP",
+    "xib_coverage": "available within frozen supported coverage"
+  },
+  "dataset_version": "TE-DATASET-B-NBA-2024-25-V1",
+  "feature_set_version": "model1_plus_pregame",
+  "frozen_model_file": "models/xib_frozen.joblib",
+  "frozen_model_sha256": "2b266dfe89f2787264535beb82f120c725d347f4e4689c5441dd9bd58210dc65",
+  "league": "NBA",
+  "model_version": "XIB-NBA-V1",
+  "prediction_file": "predictions/xib_2024_25.parquet",
+  "prediction_sha256": "3cb228ae6d4ed02b594f1a09ac6c6c95b606a90c3e8303351089707297ff4cf9",
+  "raw_probability_status": "UNAVAILABLE",
+  "read_only": true,
+  "season": "2024-2025"
+}

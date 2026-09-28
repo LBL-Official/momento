@@ -1,0 +1,20 @@
+{
+  "feed": "REST_PUBLIC",
+  "websocket": "NOT_STARTED",
+  "credentials_read": false,
+  "submits": false,
+  "simulated_fills": "BLOCKED",
+  "return_calculation": "BLOCKED",
+  "last_poll_received_ts": "2026-09-26T06:29:48+00:00",
+  "markets_seen": 6,
+  "records_this_poll": 26,
+  "candle_watermarks": {
+    "KXNBAGAME-26OCT20OKCSAS-SAS": 1790402880,
+    "KXNBAGAME-26OCT20OKCSAS-OKC": 1790404140,
+    "KXNBAGAME-26OCT20PHINYK-PHI": 1790404140,
+    "KXNBAGAME-26OCT20PHINYK-NYK": 1790404020,
+    "KXNBAGAME-26OCT20BOSDET-DET": 1790404140,
+    "KXNBAGAME-26OCT20BOSDET-BOS": 1790404140
+  },
+  "last_error": null
+}

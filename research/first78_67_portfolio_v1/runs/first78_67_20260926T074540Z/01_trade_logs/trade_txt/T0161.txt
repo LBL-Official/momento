@@ -1,0 +1,10 @@
+trade T0161  NBA  Toronto at Miami
+contract KXNBAGAME-25DEC23TORMIA-TOR  slice Q3
+signal 2025-12-23T18:08:00-08:00 PST  exit 2025-12-23T19:24:19-08:00 PST
+assumed entry 78c  observed close 81c  overshoot 3c
+contracts 3025  principal_cents 235950
+entry_fee_cents 909  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 66550  net_cents 65641
+strategy_result POSITIVE  net_r 1.856625654080045255267996040
+Assumed fill. Not a maker fill. Not live P&L.

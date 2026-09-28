@@ -1,0 +1,10 @@
+trade T0505  NBA  Milwaukee at Chicago
+contract KXNBAGAME-26MAR01MILCHI-MIL  slice Q2
+signal 2026-03-01T13:18:00-08:00 PST  exit 2026-03-01T13:27:00-08:00 PST
+assumed entry 78c  observed close 84c  overshoot 6c
+contracts 10309  principal_cents 804102
+entry_fee_cents 3096  exit_fee_cents 3989
+exit STOP at 67c  terminal no
+gross_cents -113399  net_cents -120484
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

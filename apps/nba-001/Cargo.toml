@@ -1,0 +1,26 @@
+[package]
+name = "momento-nba-001"
+version.workspace = true
+edition.workspace = true
+# std::fs::File::try_lock (single-writer lease) is stable from 1.89.
+rust-version = "1.89"
+license.workspace = true
+publish.workspace = true
+description = "NBA Bot 001 FIRST78_67 worker. Production data and signed GET-only observe. Links no submission adapter."
+
+[lints]
+workspace = true
+
+[[bin]]
+name = "momento-nba-001"
+path = "src/main.rs"
+
+[dependencies]
+chrono.workspace = true
+momento-core.workspace = true
+momento-kalshi.workspace = true
+momento-strategy-nba.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+sha2 = "0.10"
+toml.workspace = true

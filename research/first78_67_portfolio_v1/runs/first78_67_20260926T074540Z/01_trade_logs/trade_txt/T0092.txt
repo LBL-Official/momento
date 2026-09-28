@@ -1,0 +1,10 @@
+trade T0092  NBA  Portland at Toronto
+contract KXNBAGAME-25DEC02PORTOR-TOR  slice Q2
+signal 2025-12-02T17:21:00-08:00 PST  exit 2025-12-02T17:31:00-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 2429  principal_cents 189462
+entry_fee_cents 730  exit_fee_cents 940
+exit STOP at 67c  terminal yes
+gross_cents -26719  net_cents -28389
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

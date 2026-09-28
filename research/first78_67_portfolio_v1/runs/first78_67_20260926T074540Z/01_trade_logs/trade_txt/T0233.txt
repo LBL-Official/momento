@@ -1,0 +1,10 @@
+trade T0233  NCAAB  Tennessee at Florida
+contract KXNCAAMBGAME-26JAN10TENNFLA-FLA  slice H1_2
+signal 2026-01-10T09:51:00-08:00 PST  exit 2026-01-10T12:02:57-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 3963  principal_cents 309114
+entry_fee_cents 1191  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 87186  net_cents 85995
+strategy_result POSITIVE  net_r 1.856621615786519279761647740
+Assumed fill. Not a maker fill. Not live P&L.

@@ -1,0 +1,23 @@
+interface_id,owner_system_id,kind,path,capability,schema_version,notes
+austin.query_at,austin,DOMAIN_CALL,roller.dre.adapters.austin.query_at,AUSTIN_QUERY_AT,v1,persist=False
+austin.get_trade,austin,DOMAIN_CALL,roller.dre.adapters.austin.get_trade,AUSTIN_GET_TRADE,v1,
+choosin.get_trade_context,choosin_texas,DOMAIN_CALL,roller.dre.adapters.choosin.get_trade_context,CHOOSIN_TRADE_CONTEXT,v1,STATIC
+ballhog.handle_intent,ballhog,API_READ,roller.ballhog.api.handle_intent,BALLHOG_INTENT,v1,ballhog.hedge_intent.v1
+tk_ultra.assess_v0,tk_ultra,API_READ,roller.tk_ultra.api.handle_assess_v0,TK_ULTRA_ASSESSMENT,v1,tk_ultra.assessment.v0
+jump.research_context.austin,jump,API_READ,/jump/research-context/austin,AUSTIN_QUERY_AT,v1,Jump-owned adapter
+jump.research_context.choosin,jump,API_READ,/jump/research-context/choosin,CHOOSIN_TRADE_CONTEXT,v1,Jump-owned adapter
+vital.health,vital,HEALTH_CHECK,/vital/health,VITAL_BOT_STATUS,v1,
+ls.health,ls,HEALTH_CHECK,http://127.0.0.1:8792/health,LS_HEALTH,v1,Observe only
+austin.get_replay,austin,DOMAIN_CALL,roller.dre.adapters.austin.get_replay,AUSTIN_REPLAY,v1,persist=False
+jump.data.query,jump,API_READ,/jump/data/query,JUMP_DATA_QUERY,v0,Capability router
+austin.list_trades,austin,DOMAIN_CALL,roller.jump.data.adapters.austin.list_universe,AUSTIN_UNIVERSE,v1,Export handle. Jump does not own the book.
+systimo.registry,systimo,API_READ,roller.jump.data.adapters.systimo.catalog,SYSTIMO_CATALOG,v0,Jump reads catalog. Jump does not own the registry.
+positman.plan,position_management,API_READ,roller.positman.api.handle_plan,POSITMAN_PLAN,v0,positman.plan.v0
+drevo.decision,dre,API_READ,roller.dre.decision.decide_for_trade,DREVO_DECISION,v0,drevo.decision.v0
+systimo.transition_trace,systimo,API_READ,roller.systimo.transitions.get_trace,TRANSITION_TRACE,v0,Hash chain refs
+systimo.orchestra_context,systimo,API_READ,roller.systimo.orchestra.handle_orchestra_context,ORCHESTRA_CONTEXT,v0,Read-only. QUERY only.
+roller.games,roller,WAREHOUSE_QUERY,ROLLER/data/nba/2025_2026/derived/warehouse/games,ROLLER_GAME_IDENTITY,v1,Pointer
+roller.observations,roller,WAREHOUSE_QUERY,ROLLER/data/nba/2025_2026/derived/warehouse/observations,ROLLER_OBSERVATIONS,v1,Pointer
+roller.pbp,roller,WAREHOUSE_QUERY,ROLLER/data/nba/2025_2026/derived/warehouse/pbp,ROLLER_PBP,v1,Pointer
+roller.settlements,roller,WAREHOUSE_QUERY,ROLLER/data/nba/2025_2026/derived/warehouse/settlements,ROLLER_SETTLEMENT,v1,Pointer
+nba001.status,vital,HEALTH_CHECK,/var/lib/momento/nba-001/status.json,NBA001_WORKER_STATUS,v1,Read-only SSM. Submission adapter not linked.

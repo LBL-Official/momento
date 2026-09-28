@@ -1,0 +1,47 @@
+{
+  "id": "mlb_golden_ft75_lead1_dated",
+  "note": "Canonical MLB semantic fixture. Hardened measurement object, not an economic conclusion. Settlement coverage is partial (84/554). LAST TRADE != YES BID. CANDLE/PRINT PATH != FILL. Path WIN != terminal YES. Not FIRST80. Not a fill. Not live execution.",
+  "draft": {
+    "universe": {
+      "sports": ["baseball"],
+      "leagues": ["MLB"],
+      "seasons": ["2025-26"],
+      "markets": ["kalshi"],
+      "marketData": ["last_trade"],
+      "dateFrom": "2026-04-01",
+      "dateTo": "2026-09-08"
+    },
+    "entryConditions": [{"id": "e1", "family": "first_touch", "priceCents": 75}],
+    "exitConditions": [
+      {"id": "p1", "kind": "path", "family": "reach", "priceCents": 40, "outcome": "loss"},
+      {"id": "hold", "kind": "terminal", "family": "hold_expiration_win", "outcome": "win"}
+    ],
+    "teFilters": {"scoreSide": "leading", "exactDiffs": [1]}
+  },
+  "expected": {
+    "question_hash": "aaef0cbd185379f060a17077957ad50ee9cd2b4b25c339f1f3c1b25695060449",
+    "universe_hash": "9484949819ca08afff3deb8adb171cb392812ba23412179de5b81f1023af78be",
+    "n": 554,
+    "win_exit": 59,
+    "loss_exit": 159,
+    "path_true": 59,
+    "path_false": 495,
+    "terminal_yes": 65,
+    "terminal_no": 19,
+    "terminal_missing": 470,
+    "classified": 218,
+    "entry_candidates": 1503,
+    "universe_tickers": 2392
+  },
+  "provenance": {
+    "path": "generic_query",
+    "market_data": "kalshi_1m_last_trade",
+    "market_data_type": "LAST_TRADE_PRINT",
+    "price_basis": "LAST_TRADE_PRINT",
+    "price_rule": "last_trade_close_cross",
+    "terminal_source": "kalshi_markets.result",
+    "overlay_applied": false,
+    "n_direct": 0,
+    "n_complement": 0
+  }
+}

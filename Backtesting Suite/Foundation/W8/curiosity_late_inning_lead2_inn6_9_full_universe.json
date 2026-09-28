@@ -1,0 +1,232 @@
+{
+  "modeled": true,
+  "not_live_first01": true,
+  "observability": "TRADE_PRINT_NOT_YES_BID",
+  "w8_run_id": "w8-20260829T074403Z",
+  "w7_run_id": "w7-20260828T215506Z",
+  "filter": "W6 state at first80: inning in {6,7,8,9} AND bound team lead >= 2",
+  "size": "$6.25 of $50 (qty = 625 // entry_cents)",
+  "hold": "settle 100 if bound side wins else 0; no fees",
+  "live_stop": "first TRADE print after entry with price_cents <= 50% of entry",
+  "checks": {
+    "opportunities_one_per_game": true,
+    "ordering_violations": 0,
+    "stop_prints_before_first80": 0,
+    "identity_coverage": {
+      "pks_needed": 3198,
+      "pks_resolved": 3198
+    }
+  },
+  "funnel": {
+    "first80": 3228,
+    "first80_lead_ge2": 1979,
+    "first80_no_w6": 30,
+    "first80_inning_6_9": 783,
+    "first80_late_and_lead2": 290,
+    "late_lead2_entry": 254,
+    "late_lead2_no_entry": 36
+  },
+  "first80_inning_hist": {
+    "1": 583,
+    "10": 23,
+    "2": 469,
+    "3": 501,
+    "4": 442,
+    "5": 397,
+    "6": 333,
+    "7": 247,
+    "8": 167,
+    "9": 36,
+    "no_w6": 30
+  },
+  "no_entry_n": 36,
+  "no_entry_why": {
+    "Never same-side 81": 7,
+    "GAME_LOCK (\u226589) before in-band entry": 24,
+    "First print 86\u00a2 \u2014 confirm + pause, never 80\u201383": 1,
+    "First print 84\u00a2 \u2014 confirm + pause, never 80\u201383": 2,
+    "First print 88\u00a2 \u2014 confirm + pause, never 80\u201383": 2
+  },
+  "cohort": {
+    "n": 254,
+    "wins": 212,
+    "losses": 42,
+    "hit_rate": 0.8346,
+    "stopped": 69,
+    "stopped_winners": 27,
+    "stopped_losers": 42,
+    "hold_unit_usd": 4.84,
+    "hold_sized_usd": 33.88,
+    "hold_pct_of_50": 0.6776,
+    "stop_unit_usd": 1.39,
+    "stop_sized_usd": 9.73,
+    "stop_pct_of_50": 0.1946
+  },
+  "calendar": {
+    "first_entry": "2025-04-16T18:49:57.647093+00:00",
+    "last_entry": "2026-06-27T22:52:17.758361+00:00",
+    "span_days": 437.17
+  },
+  "hold_to_final": {
+    "equity": {
+      "start_cents": 5000,
+      "end_cents": 8388,
+      "end_usd": 83.88,
+      "pnl_cents": 3388,
+      "pnl_usd": 33.88,
+      "pnl_pct_of_50": 0.6776,
+      "max_drawdown_cents": 5138,
+      "max_drawdown_usd": 51.38,
+      "max_drawdown_pct_of_50": 1.0276,
+      "max_drawdown_pct_of_peak": 0.379861,
+      "n_equity_points": 255
+    },
+    "monthly": {
+      "months": [
+        "2025-04",
+        "2025-05",
+        "2025-06",
+        "2025-07",
+        "2025-08",
+        "2025-09",
+        "2025-10",
+        "2026-03",
+        "2026-04",
+        "2026-05",
+        "2026-06"
+      ],
+      "n_months": 11,
+      "pnl_cents_by_month": {
+        "2025-04": -245,
+        "2025-05": 14,
+        "2025-06": 1862,
+        "2025-07": -455,
+        "2025-08": 1176,
+        "2025-09": 280,
+        "2025-10": 518,
+        "2026-03": 798,
+        "2026-04": 4319,
+        "2026-05": -609,
+        "2026-06": -4270
+      },
+      "return_by_month": {
+        "2025-04": -0.049,
+        "2025-05": 0.0028,
+        "2025-06": 0.3724,
+        "2025-07": -0.091,
+        "2025-08": 0.2352,
+        "2025-09": 0.056,
+        "2025-10": 0.1036,
+        "2026-03": 0.1596,
+        "2026-04": 0.8638,
+        "2026-05": -0.1218,
+        "2026-06": -0.854
+      },
+      "average_monthly_return": 0.0616,
+      "sharpe_monthly_rf0_ann_sqrt12": 0.5187,
+      "sharpe_note": "sample stdev of calendar-month P&L/$50, rf=0, *sqrt(12); MODELED"
+    }
+  },
+  "live_50pct_stop": {
+    "equity": {
+      "start_cents": 5000,
+      "end_cents": 5973,
+      "end_usd": 59.73,
+      "pnl_cents": 973,
+      "pnl_usd": 9.73,
+      "pnl_pct_of_50": 0.1946,
+      "max_drawdown_cents": 3472,
+      "max_drawdown_usd": 34.72,
+      "max_drawdown_pct_of_50": 0.6944,
+      "max_drawdown_pct_of_peak": 0.367602,
+      "n_equity_points": 255
+    },
+    "monthly": {
+      "months": [
+        "2025-04",
+        "2025-05",
+        "2025-06",
+        "2025-07",
+        "2025-08",
+        "2025-09",
+        "2025-10",
+        "2026-03",
+        "2026-04",
+        "2026-05",
+        "2026-06"
+      ],
+      "n_months": 11,
+      "pnl_cents_by_month": {
+        "2025-04": 294,
+        "2025-05": 336,
+        "2025-06": -189,
+        "2025-07": -245,
+        "2025-08": 441,
+        "2025-09": -630,
+        "2025-10": 518,
+        "2026-03": 798,
+        "2026-04": 2863,
+        "2026-05": 7,
+        "2026-06": -3220
+      },
+      "return_by_month": {
+        "2025-04": 0.0588,
+        "2025-05": 0.0672,
+        "2025-06": -0.0378,
+        "2025-07": -0.049,
+        "2025-08": 0.0882,
+        "2025-09": -0.126,
+        "2025-10": 0.1036,
+        "2026-03": 0.1596,
+        "2026-04": 0.5726,
+        "2026-05": 0.0014,
+        "2026-06": -0.644
+      },
+      "average_monthly_return": 0.017691,
+      "sharpe_monthly_rf0_ann_sqrt12": 0.2152,
+      "sharpe_note": "sample stdev of calendar-month P&L/$50, rf=0, *sqrt(12); MODELED"
+    }
+  },
+  "by_inning": {
+    "6": {
+      "n": 182,
+      "wins": 152,
+      "hold_usd": 25.13,
+      "stop_usd": -6.09,
+      "stopped": 53
+    },
+    "7": {
+      "n": 57,
+      "wins": 47,
+      "hold_usd": 3.57,
+      "stop_usd": 6.23,
+      "stopped": 14
+    },
+    "8": {
+      "n": 13,
+      "wins": 11,
+      "hold_usd": 2.59,
+      "stop_usd": 7.0,
+      "stopped": 2
+    },
+    "9": {
+      "n": 2,
+      "wins": 2,
+      "hold_usd": 2.59,
+      "stop_usd": 2.59,
+      "stopped": 0
+    }
+  },
+  "cats": {
+    "hold_win": 185,
+    "stopped_loser": 42,
+    "stopped_winner": 27
+  },
+  "prior_sample": {
+    "n": 110,
+    "hold_sized_usd": 21.07,
+    "hold_pct_of_50": 0.421,
+    "stop_sized_usd": 8.26,
+    "stop_pct_of_50": 0.165
+  }
+}

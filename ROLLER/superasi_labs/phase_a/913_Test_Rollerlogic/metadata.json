@@ -1,0 +1,30 @@
+{
+  "BASE_GRADE": "B+",
+  "abase_filename": "SuperasiABase[913_Test_Rollerlogic].csv",
+  "abase_payload_sha256": "270f076a8588d1414267476a3419a97b88e43c6e0bd5c25ef1ed5c47b02a1fba",
+  "abase_sha256": "048d0001bd9605a32c1a9c3b337cabbec302131a65973b4723df432af6adca32",
+  "allocation_bps": 500,
+  "artifact": "superasi_abase",
+  "bankroll_cents": 2000000,
+  "borderline": true,
+  "components": {
+    "coverage": "A+",
+    "research_evidence": "B+",
+    "robustness": "A-",
+    "theoretical_alignment": "A",
+    "validation": "A+"
+  },
+  "created_at": "2026-09-13T12:36:25Z",
+  "desk_settings_source": "disk",
+  "floor_cents": 1500000,
+  "folder": "913_Test_Rollerlogic",
+  "grade_config_version": "grade_config_v1",
+  "phase": "A",
+  "result_id": "913_Test_Rollerlogic",
+  "roller_filename": "Roller[913_Test_Rollerlogic].csv",
+  "source_csv_sha256": "59c4271347bd49200d6425f6860207d88210d9277e13224b79a7ebb6cbf94733",
+  "source_lab_id": "deb89b1ccbc84791be225a78d975f34f",
+  "strategy_name": "913_Test_Rollerlogic",
+  "superasi_version": "superasi_abase_v1.0.0",
+  "target_cents": 3000000
+}

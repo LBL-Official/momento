@@ -1,0 +1,10 @@
+trade T0248  NBA  Atlanta at Golden State
+contract KXNBAGAME-26JAN11ATLGSW-ATL  slice Q3
+signal 2026-01-11T19:22:00-08:00 PST  exit 2026-01-11T20:32:47-08:00 PST
+assumed entry 78c  observed close 88c  overshoot 10c
+contracts 4011  principal_cents 312858
+entry_fee_cents 1205  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 88242  net_cents 87037
+strategy_result POSITIVE  net_r 1.856670506420922394300098127
+Assumed fill. Not a maker fill. Not live P&L.

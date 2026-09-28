@@ -1,0 +1,14 @@
+{
+  "1_way": 1,
+  "2_way": 1,
+  "3_way": 4,
+  "4_way": 0,
+  "benchmarks": 2,
+  "effective_tests_this_run": 8,
+  "fdr_procedure": "Discovery BH q lives on the 6,128-test historical search (DISCOVERY_FDR). This run is PROSPECTIVE_VALIDATION of frozen IDs only. No new FDR.",
+  "frozen_predeclared": 6,
+  "new_discovery_this_run": 0,
+  "post_holdout_discovery": 0,
+  "threshold_variants": 0,
+  "total_hypotheses_tested": 8
+}

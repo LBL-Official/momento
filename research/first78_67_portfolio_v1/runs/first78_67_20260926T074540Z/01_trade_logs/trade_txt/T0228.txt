@@ -1,0 +1,10 @@
+trade T0228  NBA  Oklahoma City at Memphis
+contract KXNBAGAME-26JAN09OKCMEM-MEM  slice Q2
+signal 2026-01-09T18:10:00-08:00 PST  exit 2026-01-09T19:28:00-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 3631  principal_cents 283218
+entry_fee_cents 1091  exit_fee_cents 1405
+exit STOP at 67c  terminal no
+gross_cents -39941  net_cents -42437
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

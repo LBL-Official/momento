@@ -1,0 +1,10 @@
+trade T0300  NBA  Toronto at Golden State
+contract KXNBAGAME-26JAN20TORGSW-TOR  slice Q2
+signal 2026-01-20T19:54:00-08:00 PST  exit 2026-01-20T21:56:54-08:00 PST
+assumed entry 78c  observed close 84c  overshoot 6c
+contracts 4950  principal_cents 386100
+entry_fee_cents 1487  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 108900  net_cents 107413
+strategy_result POSITIVE  net_r 1.856653933244602699946415916
+Assumed fill. Not a maker fill. Not live P&L.

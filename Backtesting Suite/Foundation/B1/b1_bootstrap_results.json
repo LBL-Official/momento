@@ -1,0 +1,58 @@
+[
+  {
+    "id": "ENTRY_BAND_80_83|HORIZON_1M|score_bucket=MULTI_RUN&start_move_tertile=LOW",
+    "test_ev_usd_ci95": [
+      0.24911764705882353,
+      0.3829411764705883
+    ]
+  },
+  {
+    "id": "ENTRY_BAND_80_83|HORIZON_1M|score_bucket=MULTI_RUN",
+    "test_ev_usd_ci95": [
+      0.1835135135135135,
+      0.24846846846846848
+    ]
+  },
+  {
+    "id": "ENTRY_BAND_80_83|HORIZON_5M|score_bucket=MULTI_RUN",
+    "test_ev_usd_ci95": [
+      0.2204054054054054,
+      0.31626126126126125
+    ]
+  },
+  {
+    "id": "ENTRY_BAND_80_83|HORIZON_30M|score_bucket=MULTI_RUN&start_move_tertile=LOW",
+    "test_ev_usd_ci95": [
+      0.34176470588235297,
+      0.6897058823529412
+    ]
+  },
+  {
+    "id": "ENTRY_BAND_80_83|HORIZON_5M|score_bucket=MULTI_RUN&start_move_tertile=LOW",
+    "test_ev_usd_ci95": [
+      0.27794117647058825,
+      0.44676470588235295
+    ]
+  },
+  {
+    "id": "ENTRY_81|HOLD_TO_SETTLEMENT|personality=CHOPPY&vol_5m_tertile=MID",
+    "test_ev_usd_ci95": [
+      0.6198550724637681,
+      1.33
+    ]
+  },
+  {
+    "id": "ENTRY_BAND_80_83|HORIZON_5M|lead_regime=LEAD",
+    "test_ev_usd_ci95": [
+      0.12497916666666667,
+      0.19964583333333333
+    ]
+  },
+  {
+    "id": "ENTRY_BAND_80_83|HORIZON_15M|score_bucket=MULTI_RUN&start_move_tertile=LOW",
+    "test_ev_usd_ci95": [
+      0.27588235294117647,
+      0.5352941176470588
+    ]
+  }
+]

@@ -1,0 +1,137 @@
+[
+  {
+    "failure": "small sample",
+    "id": "ENTRY_80|HORIZON_15M|lead_regime=LEAD&start_move_tertile=LOW",
+    "n_games_all": 44,
+    "research_status": "IN_SAMPLE_ONLY",
+    "test_ev": null,
+    "test_pnl_usd": 0.0,
+    "train_sharpe": 0.6040482987537186
+  },
+  {
+    "failure": "small sample",
+    "id": "ENTRY_BAND_80_83|HORIZON_5M|late_6_9_lead2=YES&start_sentiment=STRONG_FAVORITE",
+    "n_games_all": 23,
+    "research_status": "WEAK_AFTER_VALIDATION",
+    "test_ev": -1.6666666666666667,
+    "test_pnl_usd": -0.35,
+    "train_sharpe": 0.7371330206731505
+  },
+  {
+    "failure": "small sample",
+    "id": "ENTRY_BAND_80_83|HORIZON_30M|personality=ACCELERATING&vol_5m_tertile=LOW",
+    "n_games_all": 26,
+    "research_status": "WEAK_AFTER_VALIDATION",
+    "test_ev": null,
+    "test_pnl_usd": 0.0,
+    "train_sharpe": 0.493957908099617
+  },
+  {
+    "failure": "small sample",
+    "id": "ENTRY_82|FIRST01|late_6_9_lead2=YES&start_sentiment=UNDERDOG",
+    "n_games_all": 23,
+    "research_status": "WEAK_AFTER_VALIDATION",
+    "test_ev": -1.6666666666666667,
+    "test_pnl_usd": -0.35,
+    "train_sharpe": 0.6417067384926542
+  },
+  {
+    "failure": "small sample",
+    "id": "ENTRY_82|LIVE_50PCT_STOP|late_6_9_lead2=YES&start_sentiment=UNDERDOG",
+    "n_games_all": 23,
+    "research_status": "WEAK_AFTER_VALIDATION",
+    "test_ev": -1.6666666666666667,
+    "test_pnl_usd": -0.35,
+    "train_sharpe": 0.6417067384926542
+  },
+  {
+    "failure": "small sample",
+    "id": "ENTRY_83|HORIZON_5M|regime=MID_LEAD&start_sentiment=UNDERDOG",
+    "n_games_all": 37,
+    "research_status": "IN_SAMPLE_ONLY",
+    "test_ev": 0.0,
+    "test_pnl_usd": 0.0,
+    "train_sharpe": 0.5580751449905749
+  },
+  {
+    "failure": "train/test decay / validation fail",
+    "id": "ENTRY_83|HORIZON_1M|accel_sign=NEG",
+    "n_games_all": 64,
+    "research_status": "WEAK_AFTER_VALIDATION",
+    "test_ev": -2.0,
+    "test_pnl_usd": -0.28,
+    "train_sharpe": 0.561378633026464
+  },
+  {
+    "failure": "small sample",
+    "id": "ENTRY_BAND_80_83|HORIZON_15M|personality=ACCELERATING&vol_5m_tertile=LOW",
+    "n_games_all": 26,
+    "research_status": "WEAK_AFTER_VALIDATION",
+    "test_ev": null,
+    "test_pnl_usd": 0.0,
+    "train_sharpe": 0.4435907730374059
+  },
+  {
+    "failure": "small sample",
+    "id": "ENTRY_BAND_80_83|FIRST01|late_6_9_lead2=YES&start_sentiment=STRONG_FAVORITE",
+    "n_games_all": 23,
+    "research_status": "WEAK_AFTER_VALIDATION",
+    "test_ev": -25.333333333333332,
+    "test_pnl_usd": -5.32,
+    "train_sharpe": 1.1166164682059316
+  },
+  {
+    "failure": "small sample",
+    "id": "ENTRY_BAND_80_83|LIVE_50PCT_STOP|late_6_9_lead2=YES&start_sentiment=STRONG_FAVORITE",
+    "n_games_all": 23,
+    "research_status": "WEAK_AFTER_VALIDATION",
+    "test_ev": -25.333333333333332,
+    "test_pnl_usd": -5.32,
+    "train_sharpe": 1.1166164682059316
+  },
+  {
+    "failure": "small sample",
+    "id": "ENTRY_83|HORIZON_15M|personality=CHOPPY&start_sentiment=STRONG_UNDERDOG",
+    "n_games_all": 24,
+    "research_status": "WEAK_AFTER_VALIDATION",
+    "test_ev": -2.6666666666666665,
+    "test_pnl_usd": -0.56,
+    "train_sharpe": 0.611638101444855
+  },
+  {
+    "failure": "small sample",
+    "id": "ENTRY_80|HORIZON_5M|lead_regime=LEAD&start_move_tertile=LOW",
+    "n_games_all": 42,
+    "research_status": "IN_SAMPLE_ONLY",
+    "test_ev": null,
+    "test_pnl_usd": 0.0,
+    "train_sharpe": 0.4079898614172659
+  },
+  {
+    "failure": "small sample",
+    "id": "ENTRY_80|HORIZON_1M|lead_regime=LEAD&start_move_tertile=LOW",
+    "n_games_all": 39,
+    "research_status": "IN_SAMPLE_ONLY",
+    "test_ev": null,
+    "test_pnl_usd": 0.0,
+    "train_sharpe": 0.3872579258007015
+  },
+  {
+    "failure": "train/test decay / validation fail",
+    "id": "ENTRY_83|HORIZON_1M|vel_1m_tertile=LOW&accel_sign=NEG",
+    "n_games_all": 53,
+    "research_status": "WEAK_AFTER_VALIDATION",
+    "test_ev": -7.0,
+    "test_pnl_usd": -0.49,
+    "train_sharpe": 0.49315304831559387
+  },
+  {
+    "failure": "small sample",
+    "id": "ENTRY_BAND_80_83|FIRST01|late_6_9_lead2=YES&start_move_tertile=LOW",
+    "n_games_all": 43,
+    "research_status": "IN_SAMPLE_ONLY",
+    "test_ev": -9.444444444444445,
+    "test_pnl_usd": -5.95,
+    "train_sharpe": 0.7347475886767326
+  }
+]

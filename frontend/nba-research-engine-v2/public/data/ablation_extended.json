@@ -1,0 +1,144 @@
+{
+  "model0_val_brier": 0.18917426579740287,
+  "results": [
+    {
+      "model": "l2_logistic",
+      "feature_set": "game_state_only",
+      "n_features": 7,
+      "validation": {
+        "brier": 0.1887991650390557,
+        "auc": 0.5599415204678363,
+        "ece": 0.04021374828560698
+      },
+      "oos": {
+        "brier": 0.18152889363326846,
+        "auc": 0.5794421487603306
+      }
+    },
+    {
+      "model": "l2_logistic",
+      "feature_set": "possession_dynamics_only",
+      "n_features": 68,
+      "validation": {
+        "brier": 0.20069937001179083,
+        "auc": 0.5216777576124219,
+        "ece": 0.08885105372518884
+      },
+      "oos": {
+        "brier": 0.19131742708701333,
+        "auc": 0.5487603305785124
+      }
+    },
+    {
+      "model": "l2_logistic",
+      "feature_set": "market_state_only",
+      "n_features": 5,
+      "validation": {
+        "brier": 0.18897681955742002,
+        "auc": 0.5602440008066142,
+        "ece": 0.03566231403046468
+      },
+      "oos": {
+        "brier": 0.18393554590481137,
+        "auc": 0.5339876033057851
+      }
+    },
+    {
+      "model": "l2_logistic",
+      "feature_set": "price_path_candle_secondary",
+      "n_features": 15,
+      "validation": {
+        "brier": 0.19631571293911287,
+        "auc": 0.534986892518653,
+        "ece": 0.07936062367517886
+      },
+      "oos": {
+        "brier": 0.19290748928123735,
+        "auc": 0.5320247933884298
+      }
+    },
+    {
+      "model": "l2_logistic",
+      "feature_set": "volatility_only",
+      "n_features": 7,
+      "validation": {
+        "brier": 0.19311085526339092,
+        "auc": 0.5016132284734826,
+        "ece": 0.05452973682482206
+      },
+      "oos": {
+        "brier": 0.18763615340830836,
+        "auc": 0.47014462809917357
+      }
+    },
+    {
+      "model": "l2_logistic",
+      "feature_set": "game_plus_market",
+      "n_features": 70,
+      "validation": {
+        "brier": 0.21335856650237214,
+        "auc": 0.5063016737245413,
+        "ece": 0.13539366352278515
+      },
+      "oos": {
+        "brier": 0.21543918764433082,
+        "auc": 0.4625
+      }
+    },
+    {
+      "model": "l2_logistic",
+      "feature_set": "possession_primary_full",
+      "n_features": 140,
+      "validation": {
+        "brier": 0.23384372213803473,
+        "auc": 0.49011897559991935,
+        "ece": 0.17161873572506356
+      },
+      "oos": {
+        "brier": 0.2206358238994627,
+        "auc": 0.5034090909090909
+      }
+    },
+    {
+      "model": "l2_logistic",
+      "feature_set": "possession_plus_candle",
+      "n_features": 155,
+      "validation": {
+        "brier": 0.23966692435879972,
+        "auc": 0.476154466626336,
+        "ece": 0.18804189221203418
+      },
+      "oos": {
+        "brier": 0.22468560068421434,
+        "auc": 0.5035123966942149
+      }
+    },
+    {
+      "model": "gradient_boosting",
+      "feature_set": "possession_primary_full",
+      "validation": {
+        "brier": 0.19267294038485552,
+        "auc": 0.5141661625327687,
+        "ece": 0.05583917660474225
+      },
+      "oos": {
+        "brier": 0.1885694083405728,
+        "auc": 0.5301652892561983
+      },
+      "note": "Conservative depth=2. Not tuned on OOS."
+    },
+    {
+      "model": "knn_25",
+      "feature_set": "possession_primary_full",
+      "validation": {
+        "brier": 0.19087766505579787,
+        "auc": 0.5839382940108893
+      },
+      "oos": {
+        "brier": 0.1922746793441442,
+        "auc": 0.5631198347107438
+      },
+      "note": "Neighborhood hypothesis. K not tuned on OOS."
+    }
+  ]
+}

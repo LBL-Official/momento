@@ -1,0 +1,5 @@
+starting_dollars,admitted,net_pnl_cents,ending_equity_cents,max_open,fill_fraction,depth,note
+10000,647,11768760,12768760,6,NOT_IDENTIFIED,NOT_IDENTIFIED,Contract and cash replay only. Not evidence of available size.
+20000,647,23548818,25548818,6,NOT_IDENTIFIED,NOT_IDENTIFIED,Contract and cash replay only. Not evidence of available size.
+40000,647,47101939,51101939,6,NOT_IDENTIFIED,NOT_IDENTIFIED,Contract and cash replay only. Not evidence of available size.
+100000,647,117770656,127770656,6,NOT_IDENTIFIED,NOT_IDENTIFIED,Contract and cash replay only. Not evidence of available size.

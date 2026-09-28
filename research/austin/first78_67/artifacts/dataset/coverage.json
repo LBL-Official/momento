@@ -1,0 +1,35 @@
+{
+  "n_trades": 569,
+  "n_q2": 294,
+  "n_q3": 275,
+  "n_t67": 305,
+  "n_survive": 264,
+  "n_path_complete": 457,
+  "n_path_partial": 112,
+  "n_path_unavailable": 0,
+  "n_knn_observations": 137897,
+  "n_entry_snapshots": 569,
+  "exclusions": {
+    "UNPROVEN_FIRST": 35
+  },
+  "population": "NBA_2Q3Q_FIRST78",
+  "entry_cents": 78,
+  "stop_cents": 67,
+  "n_is_604": false,
+  "hedge_trigger_resolution": {
+    "TRIGGER_RESOLUTION": "1m_close",
+    "definition_69": "first favorite close <= 69 after the 78 entry",
+    "definition_68": "first favorite close <= 68 after the 78 entry",
+    "n_first_le_69": 489,
+    "n_first_le_68": 486,
+    "n_69_without_68": 105,
+    "n_same_bar_69_and_68": 384,
+    "note": "1m closes can skip a 69-only print. Hedge price is 67. Candle path is not a fill."
+  },
+  "pbp_status": "PBP_SEQUENCE_NOT_PIT",
+  "l2_status": "SOURCE_UNAVAILABLE",
+  "fill_status": "FILL_UNAVAILABLE",
+  "live_feed": "UNAVAILABLE",
+  "data_mode": "HISTORICAL_QUERY",
+  "note": "NBA 2Q/3Q contracts from the derived four with a 78\u00a2 up-cross. N is observed."
+}

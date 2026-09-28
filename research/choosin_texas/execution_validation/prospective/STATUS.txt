@@ -1,0 +1,16 @@
+COLLECTING
+feed=REST_PUBLIC
+trigger=CANDLE_CLOSE
+live_quote_trigger=NOT_THIS_SPECIFICATION
+hypothetical_order_intent=RECORDED_NOT_SENT
+entry_rest=POLICY_UNRESOLVED
+entry_cancel=POLICY_UNRESOLVED
+exit_priority=POLICY_UNRESOLVED
+latency=UNASSUMED
+simulated_fills=BLOCKED
+return_calculation=BLOCKED
+submits=false
+credentials_read=false
+websocket=NOT_STARTED
+live_count=collector_state.json
+spec_frozen_at=2026-09-25T07:46:47+00:00

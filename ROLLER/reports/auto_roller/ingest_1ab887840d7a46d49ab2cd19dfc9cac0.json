@@ -1,0 +1,27 @@
+{
+  "run_id": "1ab887840d7a46d49ab2cd19dfc9cac0",
+  "job_type": "ingest",
+  "display": "AUTO ROLLER INGEST",
+  "started_at": "2026-09-12T05:22:46Z",
+  "finished_at": "2026-09-12T05:22:49Z",
+  "duration_s": 2.925,
+  "status": "PARTIAL",
+  "code_version": "research_query_v1.2_ops",
+  "actions": [
+    {
+      "step": "mlb_canonical",
+      "status": "SKIPPED",
+      "reason": "ingest.lock or backfill running \u2014 will not overlap"
+    },
+    {
+      "step": "gap_audit",
+      "status": "COMPLETE"
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "MISSED_SCHEDULE",
+    "FOUNDATION_INGEST_ACTIVE"
+  ],
+  "gaps_found": 13
+}

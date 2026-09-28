@@ -1,0 +1,14 @@
+{
+  "family": "A",
+  "method": "permutation_without_replacement_of_admitted_net_pnl",
+  "draws": 5000,
+  "seed": 78,
+  "label": "REDUCED_FORM_TRADE_SEQUENCE",
+  "cannot_validate_seven_slot_calendar_portfolio": true,
+  "ending_equity_invariant_cents": 25548818,
+  "observed_cumulative_max_drawdown_fraction": 0.06422435168341578,
+  "observed_longest_loss_streak": 7,
+  "permuted_drawdown_p50": 0.17110483205324112,
+  "permuted_drawdown_p95": 0.3535659207961126,
+  "note": "The sum of these nets does not change. Drawdown and streaks do. This is not the cash-and-cap ledger."
+}

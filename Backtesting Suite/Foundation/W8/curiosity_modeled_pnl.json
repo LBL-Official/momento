@@ -1,0 +1,366 @@
+{
+  "universe": {
+    "opportunities": 1558,
+    "entry_eligible": 1306,
+    "settled_final": 1306,
+    "unresolved": 0
+  },
+  "assumptions": [
+    "MODELED fill at the first in-band W7 TRADE print after 81 confirm (not a YES bid, not a proven maker fill).",
+    "Hold to official MLB final score. GAME_LOCK does not exit. 50% stop not applied.",
+    "No Kalshi fees. No 5-position skip in the all-eligible total.",
+    "Contract qty = floor($6.25 / entry price). Bankroll snapshot held at $50."
+  ],
+  "all_eligible": {
+    "n": 1306,
+    "wins": 1057,
+    "losses": 249,
+    "hit_rate": 0.8093415007656968,
+    "avg_entry_cents": 81.62,
+    "unit_pnl_cents": -894,
+    "sized_pnl_cents": -6258,
+    "sized_premium_cents": 746158
+  },
+  "by_entry": {
+    "80": {
+      "n": 141,
+      "wins": 111,
+      "hit_rate": 0.7872340425531915,
+      "breakeven": 0.8,
+      "unit_pnl_cents": -180,
+      "sized_pnl_cents": -1260
+    },
+    "81": {
+      "n": 511,
+      "wins": 416,
+      "hit_rate": 0.8140900195694716,
+      "breakeven": 0.81,
+      "unit_pnl_cents": 209,
+      "sized_pnl_cents": 1463
+    },
+    "82": {
+      "n": 359,
+      "wins": 299,
+      "hit_rate": 0.8328690807799443,
+      "breakeven": 0.82,
+      "unit_pnl_cents": 462,
+      "sized_pnl_cents": 3234
+    },
+    "83": {
+      "n": 295,
+      "wins": 231,
+      "hit_rate": 0.7830508474576271,
+      "breakeven": 0.83,
+      "unit_pnl_cents": -1385,
+      "sized_pnl_cents": -9695
+    }
+  },
+  "max5": {
+    "taken": 940,
+    "skipped_capacity": 366,
+    "pnl_cents": -7441,
+    "start_cents": 5000,
+    "end_equity_cents": -3603,
+    "max_drawdown_cents": 16366
+  },
+  "monthly_all": [
+    {
+      "month": "2025-04",
+      "n": 79,
+      "wins": 63,
+      "pnl": -1043
+    },
+    {
+      "month": "2025-05",
+      "n": 266,
+      "wins": 204,
+      "pnl": -9198
+    },
+    {
+      "month": "2025-06",
+      "n": 313,
+      "wins": 259,
+      "pnl": 2618
+    },
+    {
+      "month": "2025-07",
+      "n": 285,
+      "wins": 236,
+      "pnl": 2261
+    },
+    {
+      "month": "2025-08",
+      "n": 359,
+      "wins": 292,
+      "pnl": -728
+    },
+    {
+      "month": "2025-09",
+      "n": 1,
+      "wins": 0,
+      "pnl": -567
+    },
+    {
+      "month": "2025-10",
+      "n": 3,
+      "wins": 3,
+      "pnl": 399
+    }
+  ],
+  "monthly_max5": [
+    {
+      "month": "2025-04",
+      "taken": 74,
+      "skipped": 5,
+      "pnl": -532
+    },
+    {
+      "month": "2025-05",
+      "taken": 232,
+      "skipped": 34,
+      "pnl": -8253
+    },
+    {
+      "month": "2025-06",
+      "taken": 216,
+      "skipped": 97,
+      "pnl": 1309
+    },
+    {
+      "month": "2025-07",
+      "taken": 187,
+      "skipped": 98,
+      "pnl": -343
+    },
+    {
+      "month": "2025-08",
+      "taken": 227,
+      "skipped": 132,
+      "pnl": 546
+    },
+    {
+      "month": "2025-09",
+      "taken": 1,
+      "skipped": 0,
+      "pnl": -567
+    },
+    {
+      "month": "2025-10",
+      "taken": 3,
+      "skipped": 0,
+      "pnl": 399
+    }
+  ],
+  "equity_curve": [
+    {
+      "t": "2025-04-16",
+      "equity_usd": 45.66,
+      "pnl_usd": 1.33
+    },
+    {
+      "t": "2025-04-20",
+      "equity_usd": 52.66,
+      "pnl_usd": 2.66
+    },
+    {
+      "t": "2025-04-26",
+      "equity_usd": 34.67,
+      "pnl_usd": -9.66
+    },
+    {
+      "t": "2025-04-30",
+      "equity_usd": 30.68,
+      "pnl_usd": -7.98
+    },
+    {
+      "t": "2025-05-03",
+      "equity_usd": 22.56,
+      "pnl_usd": -27.44
+    },
+    {
+      "t": "2025-05-07",
+      "equity_usd": -3.41,
+      "pnl_usd": -47.67
+    },
+    {
+      "t": "2025-05-10",
+      "equity_usd": -16.15,
+      "pnl_usd": -60.34
+    },
+    {
+      "t": "2025-05-14",
+      "equity_usd": -12.58,
+      "pnl_usd": -45.22
+    },
+    {
+      "t": "2025-05-17",
+      "equity_usd": -5.37,
+      "pnl_usd": -43.89
+    },
+    {
+      "t": "2025-05-21",
+      "equity_usd": -35.89,
+      "pnl_usd": -62.86
+    },
+    {
+      "t": "2025-05-24",
+      "equity_usd": -48.21,
+      "pnl_usd": -75.39
+    },
+    {
+      "t": "2025-05-25",
+      "equity_usd": -36.45,
+      "pnl_usd": -80.64
+    },
+    {
+      "t": "2025-05-28",
+      "equity_usd": -59.76,
+      "pnl_usd": -92.61
+    },
+    {
+      "t": "2025-05-31",
+      "equity_usd": -63.47,
+      "pnl_usd": -90.44
+    },
+    {
+      "t": "2025-06-04",
+      "equity_usd": -70.89,
+      "pnl_usd": -109.27
+    },
+    {
+      "t": "2025-06-06",
+      "equity_usd": -76.0,
+      "pnl_usd": -114.38
+    },
+    {
+      "t": "2025-06-08",
+      "equity_usd": -60.74,
+      "pnl_usd": -99.12
+    },
+    {
+      "t": "2025-06-12",
+      "equity_usd": -78.73,
+      "pnl_usd": -111.44
+    },
+    {
+      "t": "2025-06-15",
+      "equity_usd": -85.45,
+      "pnl_usd": -123.83
+    },
+    {
+      "t": "2025-06-19",
+      "equity_usd": -88.39,
+      "pnl_usd": -115.29
+    },
+    {
+      "t": "2025-06-22",
+      "equity_usd": -65.15,
+      "pnl_usd": -92.26
+    },
+    {
+      "t": "2025-06-25",
+      "equity_usd": -51.92,
+      "pnl_usd": -90.3
+    },
+    {
+      "t": "2025-06-29",
+      "equity_usd": -47.93,
+      "pnl_usd": -74.97
+    },
+    {
+      "t": "2025-07-02",
+      "equity_usd": -35.12,
+      "pnl_usd": -73.5
+    },
+    {
+      "t": "2025-07-06",
+      "equity_usd": -59.69,
+      "pnl_usd": -92.47
+    },
+    {
+      "t": "2025-07-09",
+      "equity_usd": -56.61,
+      "pnl_usd": -83.58
+    },
+    {
+      "t": "2025-07-12",
+      "equity_usd": -57.38,
+      "pnl_usd": -95.76
+    },
+    {
+      "t": "2025-07-19",
+      "equity_usd": -42.12,
+      "pnl_usd": -80.5
+    },
+    {
+      "t": "2025-07-23",
+      "equity_usd": -45.41,
+      "pnl_usd": -72.31
+    },
+    {
+      "t": "2025-07-26",
+      "equity_usd": -32.32,
+      "pnl_usd": -70.7
+    },
+    {
+      "t": "2025-07-30",
+      "equity_usd": -42.54,
+      "pnl_usd": -69.44
+    },
+    {
+      "t": "2025-08-02",
+      "equity_usd": -41.91,
+      "pnl_usd": -74.62
+    },
+    {
+      "t": "2025-08-06",
+      "equity_usd": -45.76,
+      "pnl_usd": -72.8
+    },
+    {
+      "t": "2025-08-09",
+      "equity_usd": -31.69,
+      "pnl_usd": -64.47
+    },
+    {
+      "t": "2025-08-12",
+      "equity_usd": -23.5,
+      "pnl_usd": -56.21
+    },
+    {
+      "t": "2025-08-15",
+      "equity_usd": -36.03,
+      "pnl_usd": -68.74
+    },
+    {
+      "t": "2025-08-17",
+      "equity_usd": -62.98,
+      "pnl_usd": -95.62
+    },
+    {
+      "t": "2025-08-21",
+      "equity_usd": -54.16,
+      "pnl_usd": -86.87
+    },
+    {
+      "t": "2025-08-24",
+      "equity_usd": -31.55,
+      "pnl_usd": -64.26
+    },
+    {
+      "t": "2025-08-27",
+      "equity_usd": -37.15,
+      "pnl_usd": -69.86
+    },
+    {
+      "t": "2025-08-30",
+      "equity_usd": -42.68,
+      "pnl_usd": -75.25
+    },
+    {
+      "t": "2025-10-02",
+      "equity_usd": -36.03,
+      "pnl_usd": -74.41
+    }
+  ]
+}

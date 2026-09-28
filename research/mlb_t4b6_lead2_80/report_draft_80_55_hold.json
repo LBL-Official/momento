@@ -1,0 +1,327 @@
+{
+  "id": "mlb_t4b6_lead2_ft80_drop55_hold",
+  "execution_status": "COMPLETE",
+  "observation_basis": "TRADABLE_YES_BID",
+  "reference_match": null,
+  "execution_path": "generic_query",
+  "population_n": 1456,
+  "te_scope": {
+    "requested": {
+      "score_side": "leading",
+      "custom_range": {
+        "min": 2,
+        "max": 99
+      }
+    },
+    "n_entry": 1760,
+    "n_scoped": 1456,
+    "n_dropped": 304
+  },
+  "funnel": [
+    {
+      "condition_id": "universe",
+      "label": "Universe",
+      "qualifying": 8736,
+      "population_before": null
+    },
+    {
+      "condition_id": "e1",
+      "label": "FIRST_TOUCH 8000",
+      "qualifying": 1760,
+      "population_before": 8736
+    },
+    {
+      "condition_id": "intersection",
+      "label": "Intersection",
+      "qualifying": 1760,
+      "population_before": 8736
+    },
+    {
+      "condition_id": "te_scope",
+      "label": "TE scope leading \u00b7 range 2\u201399",
+      "qualifying": 1456,
+      "population_before": 1760
+    },
+    {
+      "condition_id": "te_scope",
+      "label": "TE scope leading \u00b7 range 2\u201399",
+      "qualifying": 1456,
+      "population_before": 1760
+    }
+  ],
+  "path_rate": {
+    "name": "path_rate",
+    "status": "COMPLETE",
+    "value": 0.7383241758241759,
+    "detail": {
+      "count_true": 1075,
+      "count_available": 1456
+    }
+  },
+  "kalshi_yes_rate": {
+    "name": "kalshi_yes_rate",
+    "status": "COMPLETE",
+    "value": 0.8688186813186813,
+    "detail": {
+      "count_true": 1265,
+      "count_available": 1456,
+      "terminal_missing": 0
+    }
+  },
+  "win_on_n": {
+    "name": "win_on_n",
+    "status": "COMPLETE",
+    "value": 0.7383241758241759,
+    "detail": {
+      "count_true": 1075,
+      "count_available": 1456
+    },
+    "caveat": "WIN_EXIT / N. Same population as LOSS_EXIT / N. Residual is not LOSS."
+  },
+  "loss_on_n": {
+    "name": "loss_on_n",
+    "status": "COMPLETE",
+    "value": 0.25755494505494503,
+    "detail": {
+      "count_true": 375,
+      "count_available": 1456
+    },
+    "caveat": "LOSS_EXIT / N. Same population as WIN_EXIT / N. PATH FALSE is not LOSS."
+  },
+  "win_exit_rate": {
+    "name": "win_exit_rate",
+    "status": "COMPLETE",
+    "value": 0.7413793103448276,
+    "detail": {
+      "count_true": 1075,
+      "count_available": 1450
+    }
+  },
+  "loss_exit_rate": {
+    "name": "loss_exit_rate",
+    "status": "COMPLETE",
+    "value": 0.25862068965517243,
+    "detail": {
+      "count_true": 375,
+      "count_available": 1450
+    }
+  },
+  "model_a_8040_ev_cents": {},
+  "observed_hyp_ev_cents": {
+    "name": "observed_hyp_ev_cents",
+    "status": "COMPLETE",
+    "value": -36.85066666666667,
+    "detail": {
+      "n": 375,
+      "unit": "cents_per_contract"
+    },
+    "caveat": "HYPOTHETICAL \u00b7 CANDLE PATH \u2260 FILL \u00b7 mean(exit_close \u2212 entry_close)"
+  },
+  "empirical_partition": {
+    "status": "COMPLETE",
+    "n_population": 1456,
+    "n_joint_available": 1456,
+    "n_missing": 0,
+    "path_margin": {
+      "true": 1075,
+      "false": 381,
+      "available": 1456
+    },
+    "cells": {
+      "T_AND_W": 1075,
+      "T_AND_NOT_W": 0,
+      "NOT_T_AND_W": 190,
+      "NOT_T_AND_NOT_W": 191
+    }
+  },
+  "base_terminal_efficiency": {
+    "semantics_version": "1.0.0",
+    "code_version": "base_te_v1.0.0",
+    "note": "Empirical PIT observation at the entry bar. Not a prediction. TE WIN/LOSS uses exact-timestamp AMBIGUOUS. Generic minute TIE_EXCLUDED is unchanged. CANDLE PATH \u2260 FILL. MEASUREMENT \u2260 EDGE.",
+    "n_entry_rows": 1456,
+    "n_te_attached": 1456,
+    "n_te_scoped": 1456,
+    "filters": {
+      "scoreSide": "leading",
+      "customRange": {
+        "min": 2,
+        "max": 99
+      }
+    },
+    "overall": {
+      "n_entry": 1456,
+      "n_win_exit": 1075,
+      "n_loss_exit": 375,
+      "n_win_before_loss": 1075,
+      "n_loss_before_win": 375,
+      "n_ambiguous": 0,
+      "n_terminal_yes": 1265,
+      "n_terminal_no": 191,
+      "n_terminal_missing": 0
+    },
+    "by_score_side": {
+      "leading": {
+        "n_entry": 1456,
+        "n_win_exit": 1075,
+        "n_loss_exit": 375,
+        "n_win_before_loss": 1075,
+        "n_loss_before_win": 375,
+        "n_ambiguous": 0,
+        "n_terminal_yes": 1265,
+        "n_terminal_no": 191,
+        "n_terminal_missing": 0
+      },
+      "tied": {
+        "n_entry": 0,
+        "n_win_exit": 0,
+        "n_loss_exit": 0,
+        "n_win_before_loss": 0,
+        "n_loss_before_win": 0,
+        "n_ambiguous": 0,
+        "n_terminal_yes": 0,
+        "n_terminal_no": 0,
+        "n_terminal_missing": 0
+      },
+      "trailing": {
+        "n_entry": 0,
+        "n_win_exit": 0,
+        "n_loss_exit": 0,
+        "n_win_before_loss": 0,
+        "n_loss_before_win": 0,
+        "n_ambiguous": 0,
+        "n_terminal_yes": 0,
+        "n_terminal_no": 0,
+        "n_terminal_missing": 0
+      },
+      "unavailable": {
+        "n_entry": 0,
+        "n_win_exit": 0,
+        "n_loss_exit": 0,
+        "n_win_before_loss": 0,
+        "n_loss_before_win": 0,
+        "n_ambiguous": 0,
+        "n_terminal_yes": 0,
+        "n_terminal_no": 0,
+        "n_terminal_missing": 0
+      }
+    }
+  },
+  "hashes": {
+    "universe_hash": "f8eba7dbd6f3a859b626f88424594c529d52fe53ac7a6a0a63f5af5d50184918",
+    "entry_hash": "3b07e614748ce5b336cd537af0486441f2823e99d471ef8812eadb74ed9c42f4",
+    "state_hash": "03c80ceb6d236bd1e81515651487759d9414ce8510663d344c825c9eb9307232",
+    "path_hash": "00ef168c5cde69ac6391bad9c84661299edf320a8c525a1930aa968de8bd14b0",
+    "measurement_hash": "a368dd6fd3245f934b2c050d3c20f507177e024a4ff69dddffa3f951ae8d516e",
+    "question_hash": "6cb8e42c085b3842888235a8de797372302179d9812383e1fc89124247111c8b",
+    "code_version": "research_query_v1.2_ops",
+    "operation_semantics_version": "1.1.0"
+  },
+  "dataset_version": "54c50a71e408d166bf0c281fa9e954a2309d69447918439c980913d466f6b8aa",
+  "provenance": {
+    "path": "generic_query",
+    "execution_path": "generic_query",
+    "observability": "CANDLE-LEVEL OBSERVED",
+    "price_rule": "tradable_yes_bid_close_cross",
+    "price_basis": "TRADABLE_YES_BID",
+    "price_field": "yes_bid_close",
+    "market_data": "kalshi_1m_candles",
+    "market_data_type": "TRADABLE_CANDLE",
+    "entry_definition": "FIRST_TOUCH_8000",
+    "operation_semantics_version": "1.1.0",
+    "terminal_source": "kalshi_markets.result",
+    "settlement": {
+      "status": "AVAILABLE",
+      "canonical_kalshi_markets": "USED",
+      "sources": [
+        "Backtesting Suite/Data/NBA/2025-2026/warehouse/derived/nba/first80_execution_audit/candidates.json",
+        "Backtesting Suite/Data/NCAAB/2025-2026/warehouse/derived/ncaab/first80_execution_audit/candidates.json",
+        "Backtesting Suite/Data/WNBA/2025-2026/warehouse/derived/wnba/first80_execution_audit/candidates.json",
+        "Backtesting Suite/Data/NHL/2025-2026/warehouse/derived/nhl/first80_execution_audit/candidates.json",
+        "research/first80_asked_six_chatgpt_export/first80_asked_six.csv"
+      ],
+      "terminal_source": "kalshi_markets.result",
+      "complement": "binary_event_ticker",
+      "note": "Kalshi warehouse kalshi_markets.result. FIRST80 official W overlay matched 0 tickers. Missing result stays missing. Not box-score win. Not path WIN.",
+      "n_kept_canonical": 8716,
+      "n_direct": 0,
+      "n_complement": 0,
+      "n_overlay_tickers": 7362,
+      "overlay_applied": false
+    },
+    "period_alignment": "pbp_snap_at_entry_timestamp",
+    "omitted_dimensions": [],
+    "diagnostics": {
+      "skipped_untradable": 425765,
+      "crossings_found": 12520,
+      "aligned": 4997,
+      "unaligned": 91,
+      "ambiguous": 0,
+      "modeled": 0,
+      "tie_same_minute_excluded": 0,
+      "official_settlement": {
+        "status": "AVAILABLE",
+        "canonical_kalshi_markets": "USED",
+        "sources": [
+          "Backtesting Suite/Data/NBA/2025-2026/warehouse/derived/nba/first80_execution_audit/candidates.json",
+          "Backtesting Suite/Data/NCAAB/2025-2026/warehouse/derived/ncaab/first80_execution_audit/candidates.json",
+          "Backtesting Suite/Data/WNBA/2025-2026/warehouse/derived/wnba/first80_execution_audit/candidates.json",
+          "Backtesting Suite/Data/NHL/2025-2026/warehouse/derived/nhl/first80_execution_audit/candidates.json",
+          "research/first80_asked_six_chatgpt_export/first80_asked_six.csv"
+        ],
+        "terminal_source": "kalshi_markets.result",
+        "complement": "binary_event_ticker",
+        "note": "Kalshi warehouse kalshi_markets.result. FIRST80 official W overlay matched 0 tickers. Missing result stays missing. Not box-score win. Not path WIN.",
+        "n_kept_canonical": 8716,
+        "n_direct": 0,
+        "n_complement": 0,
+        "n_overlay_tickers": 7362,
+        "overlay_applied": false
+      }
+    },
+    "definition_versions": {
+      "GENERIC_QUERY": "research_query_v1"
+    },
+    "league_producer": "single_league"
+  },
+  "caveats": [
+    "MEASUREMENT \u2260 EDGE",
+    "CANDLE PATH \u2260 FILL",
+    "1-MINUTE OBSERVATION \u2260 INTRA-MINUTE ORDER",
+    "CANDLE-LEVEL OBSERVED \u2014 not tick-level",
+    "GENERIC \u2260 FIRST80 LOCK"
+  ],
+  "mlb": {
+    "observation_basis": "TRADABLE_YES_BID",
+    "funnel": {
+      "universe": 8736,
+      "games": 4342,
+      "markets": 8880,
+      "pbp": 4287,
+      "matched": 0,
+      "pit_aligned": 1456,
+      "entry_candidates": 1760,
+      "te_scoped": 1456,
+      "classified": 1450
+    },
+    "exclusions": {
+      "NO_MARKET": 4342,
+      "NO_PBP": 55,
+      "NO_MATCH_MAPPING": 0,
+      "PIT_ALIGNMENT_FAILED": 0,
+      "MISSING_SCORE": 0,
+      "MISSING_OUTS": 0,
+      "MISSING_COUNT": 25,
+      "MISSING_RUNNERS": 0,
+      "UNSUPPORTED_RULE": 279,
+      "UNTRADABLE_CANDLES": 0
+    },
+    "notes": [
+      "CANDLE/PRINT PATH \u2260 FILL",
+      "TRADABLE_YES_BID",
+      "Missing ticker is counted as NO_MARKET, not silent N=0.",
+      "UNTRADABLE_CANDLES is DATA_REQUIRED, not an empty FIRST_TOUCH population."
+    ]
+  },
+  "elapsed_s": 9.756,
+  "note": "CANDLE PATH \u2260 FILL. Settlement is Kalshi result, never box score."
+}

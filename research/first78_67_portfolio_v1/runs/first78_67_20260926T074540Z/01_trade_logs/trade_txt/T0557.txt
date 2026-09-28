@@ -1,0 +1,10 @@
+trade T0557  NCAAB  Baylor at Arizona St.
+contract KXNCAAMBGAME-26MAR10BAYASU-ASU  slice H2_1
+signal 2026-03-10T10:38:00-07:00 PDT  exit 2026-03-10T11:14:00-07:00 PDT
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 11788  principal_cents 919464
+entry_fee_cents 3540  exit_fee_cents 4562
+exit STOP at 67c  terminal yes
+gross_cents -129668  net_cents -137770
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

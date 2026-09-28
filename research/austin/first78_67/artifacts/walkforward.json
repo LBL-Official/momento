@@ -1,0 +1,228 @@
+{
+  "months": [
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06"
+  ],
+  "train_months": [
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01"
+  ],
+  "validation_months": [
+    "2026-02",
+    "2026-03"
+  ],
+  "oos_months": [
+    "2026-04",
+    "2026-05",
+    "2026-06"
+  ],
+  "train_n": 341,
+  "validation_n": 157,
+  "oos_n": 71,
+  "folds": [
+    {
+      "label": "validation",
+      "train_months": [
+        "2025-10",
+        "2025-11",
+        "2025-12",
+        "2026-01"
+      ],
+      "test_months": [
+        "2026-02",
+        "2026-03"
+      ],
+      "n_train_snapshots": 90515,
+      "n_test_trades": 144,
+      "mean_actual_pnl": 1.6041666666666667,
+      "mean_weighted_ev": -11.0
+    },
+    {
+      "label": "oos",
+      "train_months": [
+        "2025-10",
+        "2025-11",
+        "2025-12",
+        "2026-01",
+        "2026-02",
+        "2026-03"
+      ],
+      "test_months": [
+        "2026-04",
+        "2026-05",
+        "2026-06"
+      ],
+      "n_train_snapshots": 121466,
+      "n_test_trades": 65,
+      "mean_actual_pnl": 3.2153846153846155,
+      "mean_weighted_ev": -6.559858924150308
+    }
+  ],
+  "calibration": {
+    "status": "INSUFFICIENT_SAMPLE",
+    "reason": "OOS top/mid/bot EV 1.692/1.692/3.438 do not separate",
+    "top_mean_pnl": 1.6923076923076923,
+    "mid_mean_pnl": 1.6923076923076923,
+    "bot_mean_pnl": 3.4375,
+    "threshold_4": null,
+    "threshold_5": null,
+    "table": [
+      {
+        "band": "D1-2",
+        "knn_ev_lo": null,
+        "knn_ev_hi": -10.999999999999998,
+        "n": 16,
+        "realized_PNL": 3.4375,
+        "drawdown": -11.0,
+        "recommended_band": 3
+      },
+      {
+        "band": "D3-4",
+        "knn_ev_lo": -10.999999999999998,
+        "knn_ev_hi": -9.711045945559578,
+        "n": 14,
+        "realized_PNL": 5.5,
+        "drawdown": -11.0,
+        "recommended_band": 3
+      },
+      {
+        "band": "D5-6",
+        "knn_ev_lo": -9.711045945559578,
+        "knn_ev_hi": -6.916971716340209,
+        "n": 13,
+        "realized_PNL": 1.6923076923076923,
+        "drawdown": -11.0,
+        "recommended_band": 3
+      },
+      {
+        "band": "D7-8",
+        "knn_ev_lo": -6.916971716340209,
+        "knn_ev_hi": -2.8877989099432173,
+        "n": 13,
+        "realized_PNL": 4.230769230769231,
+        "drawdown": -11.0,
+        "recommended_band": 4
+      },
+      {
+        "band": "D9-10",
+        "knn_ev_lo": -2.8877989099432173,
+        "knn_ev_hi": null,
+        "n": 13,
+        "realized_PNL": 1.6923076923076923,
+        "drawdown": -11.0,
+        "recommended_band": 5
+      }
+    ]
+  },
+  "bankroll": {
+    "3": {
+      "ending_bankroll_cents": 2160721.0,
+      "total_PNL_cents": 160721.0,
+      "max_drawdown_cents": 59213.0,
+      "trade_count": 65,
+      "win_rate": 0.4307692307692308,
+      "mean_trade_PNL_cents": 2472.630769230769,
+      "median_trade_PNL_cents": -8459.0,
+      "EV_per_trade_cents": 2472.630769230769,
+      "EV_per_contract_cents": 3.2153846153846155,
+      "volatility_trade_cents": 12566.281978213618
+    },
+    "4": {
+      "ending_bankroll_cents": 2214225.0,
+      "total_PNL_cents": 214225.0,
+      "max_drawdown_cents": 78925.0,
+      "trade_count": 65,
+      "win_rate": 0.4307692307692308,
+      "mean_trade_PNL_cents": 3295.769230769231,
+      "median_trade_PNL_cents": -11275.0,
+      "EV_per_trade_cents": 3295.769230769231,
+      "EV_per_contract_cents": 3.2153846153846155,
+      "volatility_trade_cents": 16749.59561465404
+    },
+    "5": {
+      "ending_bankroll_cents": 2267938.0,
+      "total_PNL_cents": 267938.0,
+      "max_drawdown_cents": 98714.0,
+      "trade_count": 65,
+      "win_rate": 0.4307692307692308,
+      "mean_trade_PNL_cents": 4122.123076923077,
+      "median_trade_PNL_cents": -14102.0,
+      "EV_per_trade_cents": 4122.123076923077,
+      "EV_per_contract_cents": 3.2153846153846155,
+      "volatility_trade_cents": 20949.25031998681
+    },
+    "bands": {
+      "3": {
+        "allocation_pct": 3,
+        "bankroll_cents": 2000000,
+        "bankroll_dollars": 20000.0,
+        "dollar_allocation": 600,
+        "entry_price_cents": 78,
+        "contracts": 769,
+        "primary_capital_cents": 59982,
+        "potential_hedge_capital_cents": 51523,
+        "potential_hedge_label": "POTENTIAL HEDGE CAPITAL",
+        "reserved_120": false
+      },
+      "4": {
+        "allocation_pct": 4,
+        "bankroll_cents": 2000000,
+        "bankroll_dollars": 20000.0,
+        "dollar_allocation": 800,
+        "entry_price_cents": 78,
+        "contracts": 1025,
+        "primary_capital_cents": 79950,
+        "potential_hedge_capital_cents": 68675,
+        "potential_hedge_label": "POTENTIAL HEDGE CAPITAL",
+        "reserved_120": false
+      },
+      "5": {
+        "allocation_pct": 5,
+        "bankroll_cents": 2000000,
+        "bankroll_dollars": 20000.0,
+        "dollar_allocation": 1000,
+        "entry_price_cents": 78,
+        "contracts": 1282,
+        "primary_capital_cents": 99996,
+        "potential_hedge_capital_cents": 85894,
+        "potential_hedge_label": "POTENTIAL HEDGE CAPITAL",
+        "reserved_120": false
+      }
+    },
+    "calibration_status": "INSUFFICIENT_SAMPLE",
+    "role": "ENTRY_SIZING_REFERENCE"
+  },
+  "snapshot_oos": {
+    "n": 0,
+    "note": "Entry walk-forward is the validation record."
+  },
+  "pca_k": 5,
+  "k": 25,
+  "distance_metric": "euclidean_pca",
+  "ev_definition": "first78_67_candle_path",
+  "feature_names": [
+    "entry_price_cents",
+    "current_price_cents",
+    "price_travel",
+    "distance_from_78",
+    "score_differential",
+    "score_differential_travel",
+    "score_travel",
+    "time_since_entry",
+    "seconds_remaining",
+    "quarter",
+    "quarter_progress",
+    "price_x_score_diff",
+    "score_diff_x_time",
+    "entry_price_x_score_diff"
+  ]
+}

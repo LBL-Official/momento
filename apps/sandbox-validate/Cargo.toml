@@ -1,0 +1,21 @@
+[package]
+name = "momento-sandbox-validate"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "M8 Kalshi demo/sandbox validation. Production live cannot be armed."
+
+[lints]
+workspace = true
+
+[dependencies]
+chrono.workspace = true
+momento-core.workspace = true
+momento-kalshi.workspace = true
+momento-pnl.workspace = true
+momento-positions.workspace = true
+momento-strategy-mlb.workspace = true
+serde_json.workspace = true
+ureq = { version = "2.12.1", default-features = false, features = ["tls", "json"] }

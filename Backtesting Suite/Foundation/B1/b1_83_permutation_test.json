@@ -1,0 +1,98 @@
+[
+  {
+    "condition": "base_class=BASES_EMPTY&vol_15m_tertile=LOW",
+    "n_games": 154,
+    "null": "shuffle game P&L; keep membership size",
+    "observed_mean_pnl_cents": 14.454545454545455,
+    "permutation_p_ge_obs": 0.026486756621689155,
+    "reps": 2000
+  },
+  {
+    "condition": "base_class=BASES_EMPTY&vol_5m_tertile=LOW",
+    "n_games": 143,
+    "null": "shuffle game P&L; keep membership size",
+    "observed_mean_pnl_cents": 11.307692307692308,
+    "permutation_p_ge_obs": 0.049475262368815595,
+    "reps": 2000
+  },
+  {
+    "condition": "base_class=BASES_EMPTY&reversal_tertile=HIGH",
+    "n_games": 111,
+    "null": "shuffle game P&L; keep membership size",
+    "observed_mean_pnl_cents": 5.486486486486486,
+    "permutation_p_ge_obs": 0.14292853573213393,
+    "reps": 2000
+  },
+  {
+    "condition": "lead_ge2=YES&personality=CHOPPY",
+    "n_games": 259,
+    "null": "shuffle game P&L; keep membership size",
+    "observed_mean_pnl_cents": 8.18918918918919,
+    "permutation_p_ge_obs": 0.010494752623688156,
+    "reps": 2000
+  },
+  {
+    "condition": "base_class=BASES_EMPTY&start_move_gt20=YES",
+    "n_games": 186,
+    "null": "shuffle game P&L; keep membership size",
+    "observed_mean_pnl_cents": -1.4301075268817205,
+    "permutation_p_ge_obs": 0.11344327836081959,
+    "reps": 2000
+  },
+  {
+    "condition": "base_class=BASES_EMPTY&vel_sign=UP",
+    "n_games": 215,
+    "null": "shuffle game P&L; keep membership size",
+    "observed_mean_pnl_cents": -1.4651162790697676,
+    "permutation_p_ge_obs": 0.07746126936531735,
+    "reps": 2000
+  },
+  {
+    "condition": "base_class=BASES_EMPTY&vel_5m_sign=UP",
+    "n_games": 235,
+    "null": "shuffle game P&L; keep membership size",
+    "observed_mean_pnl_cents": -0.14893617021276595,
+    "permutation_p_ge_obs": 0.05347326336831584,
+    "reps": 2000
+  },
+  {
+    "condition": "p_start_50_54=NO&base_class=BASES_EMPTY",
+    "n_games": 210,
+    "null": "shuffle game P&L; keep membership size",
+    "observed_mean_pnl_cents": -1.0,
+    "permutation_p_ge_obs": 0.08045977011494253,
+    "reps": 2000
+  },
+  {
+    "condition": "move_fine=25_30&vel_5m_sign=UP",
+    "n_games": 118,
+    "null": "shuffle game P&L; keep membership size",
+    "observed_mean_pnl_cents": 6.288135593220339,
+    "permutation_p_ge_obs": 0.12093953023488256,
+    "reps": 2000
+  },
+  {
+    "condition": "half=TOP&vol_15m_tertile=LOW",
+    "n_games": 159,
+    "null": "shuffle game P&L; keep membership size",
+    "observed_mean_pnl_cents": 8.937106918238992,
+    "permutation_p_ge_obs": 0.04997501249375312,
+    "reps": 2000
+  },
+  {
+    "condition": "lead_ge2=YES&vol_1m_tertile=LOW",
+    "n_games": 146,
+    "null": "shuffle game P&L; keep membership size",
+    "observed_mean_pnl_cents": 13.520547945205479,
+    "permutation_p_ge_obs": 0.03948025987006497,
+    "reps": 2000
+  },
+  {
+    "condition": "vel_1m_tertile=LOW&accel_sign=POS",
+    "n_games": 82,
+    "null": "shuffle game P&L; keep membership size",
+    "observed_mean_pnl_cents": 25.097560975609756,
+    "permutation_p_ge_obs": 0.050474762618690654,
+    "reps": 2000
+  }
+]

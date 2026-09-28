@@ -1,0 +1,275 @@
+{
+  "FULL": {
+    "n": 1230,
+    "k": 1019,
+    "estimate": 0.8284552845528456,
+    "wilson": {
+      "p": 0.8284552845528456,
+      "lo": 0.8063724440008425,
+      "hi": 0.8484928158509893,
+      "n": 1230,
+      "k": 1019,
+      "method": "wilson"
+    },
+    "clopper_pearson": {
+      "p": 0.8284552845528456,
+      "lo": 0.8062027293550886,
+      "hi": 0.8491247861603852,
+      "n": 1230,
+      "k": 1019,
+      "method": "clopper_pearson"
+    },
+    "se_iid": 0.010749064094230596,
+    "vs_null": {
+      "n": 1230,
+      "k": 1019,
+      "p_hat": 0.8284552845528456,
+      "p0": 0.8,
+      "expected_k": 984.0,
+      "excess_k": 35.0,
+      "se_null": 0.01140531897024402,
+      "z_approx": 2.4949135247408787,
+      "p_one_sided": 0.006243379248228594,
+      "p_two_sided": 0.012546828069258522,
+      "method": "scipy.stats.binomtest"
+    },
+    "diff_from_null": 0.028455284552845517,
+    "label": "FULL",
+    "split": "FULL",
+    "weighting": "ONE_OBSERVATION_PER_GAME"
+  },
+  "TRAIN": {
+    "n": 504,
+    "k": 407,
+    "estimate": 0.8075396825396826,
+    "wilson": {
+      "p": 0.8075396825396826,
+      "lo": 0.7708462652987458,
+      "hi": 0.8395802929036544,
+      "n": 504,
+      "k": 407,
+      "method": "wilson"
+    },
+    "clopper_pearson": {
+      "p": 0.8075396825396826,
+      "lo": 0.7703637968347306,
+      "hi": 0.8410611197632792,
+      "n": 504,
+      "k": 407,
+      "method": "clopper_pearson"
+    },
+    "se_iid": 0.017560515756031764,
+    "vs_null": {
+      "n": 504,
+      "k": 407,
+      "p_hat": 0.8075396825396826,
+      "p0": 0.8,
+      "expected_k": 403.20000000000005,
+      "excess_k": 3.7999999999999545,
+      "se_null": 0.017817416127494958,
+      "z_approx": 0.4231636330280038,
+      "p_one_sided": 0.36026448303304764,
+      "p_two_sided": 0.6970678855763469,
+      "method": "scipy.stats.binomtest"
+    },
+    "diff_from_null": 0.007539682539682513,
+    "label": "TRAIN",
+    "split": "TRAIN",
+    "weighting": "ONE_OBSERVATION_PER_GAME"
+  },
+  "VALIDATION": {
+    "n": 483,
+    "k": 403,
+    "estimate": 0.8343685300207039,
+    "wilson": {
+      "p": 0.8343685300207039,
+      "lo": 0.7986021348403196,
+      "hi": 0.8648580131831851,
+      "n": 483,
+      "k": 403,
+      "method": "wilson"
+    },
+    "clopper_pearson": {
+      "p": 0.8343685300207039,
+      "lo": 0.7981546209339649,
+      "hi": 0.866424735340914,
+      "n": 483,
+      "k": 403,
+      "method": "clopper_pearson"
+    },
+    "se_iid": 0.016915187665876765,
+    "vs_null": {
+      "n": 483,
+      "k": 403,
+      "p_hat": 0.8343685300207039,
+      "p0": 0.8,
+      "expected_k": 386.40000000000003,
+      "excess_k": 16.599999999999966,
+      "se_null": 0.0182006302077316,
+      "z_approx": 1.8883153840521485,
+      "p_one_sided": 0.031374909158145406,
+      "p_two_sided": 0.06045640736893915,
+      "method": "scipy.stats.binomtest"
+    },
+    "diff_from_null": 0.034368530020703836,
+    "label": "VALIDATION",
+    "split": "VALIDATION",
+    "weighting": "ONE_OBSERVATION_PER_GAME"
+  },
+  "OOS": {
+    "n": 243,
+    "k": 209,
+    "estimate": 0.8600823045267489,
+    "wilson": {
+      "p": 0.8600823045267489,
+      "lo": 0.8108404030374777,
+      "hi": 0.8981162720124326,
+      "n": 243,
+      "k": 209,
+      "method": "wilson"
+    },
+    "clopper_pearson": {
+      "p": 0.8600823045267489,
+      "lo": 0.810003113062092,
+      "hi": 0.9011176948683154,
+      "n": 243,
+      "k": 209,
+      "method": "clopper_pearson"
+    },
+    "se_iid": 0.02225374929956023,
+    "vs_null": {
+      "n": 243,
+      "k": 209,
+      "p_hat": 0.8600823045267489,
+      "p0": 0.8,
+      "expected_k": 194.4,
+      "excess_k": 14.599999999999994,
+      "se_null": 0.025660011963983365,
+      "z_approx": 2.3414760917134796,
+      "p_one_sided": 0.009661125231352078,
+      "p_two_sided": 0.01971388275227005,
+      "method": "scipy.stats.binomtest"
+    },
+    "diff_from_null": 0.0600823045267489,
+    "label": "OOS",
+    "split": "OOS",
+    "weighting": "ONE_OBSERVATION_PER_GAME"
+  },
+  "regime_EARLY": {
+    "n": 504,
+    "k": 407,
+    "estimate": 0.8075396825396826,
+    "wilson": {
+      "p": 0.8075396825396826,
+      "lo": 0.7708462652987458,
+      "hi": 0.8395802929036544,
+      "n": 504,
+      "k": 407,
+      "method": "wilson"
+    },
+    "clopper_pearson": {
+      "p": 0.8075396825396826,
+      "lo": 0.7703637968347306,
+      "hi": 0.8410611197632792,
+      "n": 504,
+      "k": 407,
+      "method": "clopper_pearson"
+    },
+    "se_iid": 0.017560515756031764,
+    "vs_null": {
+      "n": 504,
+      "k": 407,
+      "p_hat": 0.8075396825396826,
+      "p0": 0.8,
+      "expected_k": 403.20000000000005,
+      "excess_k": 3.7999999999999545,
+      "se_null": 0.017817416127494958,
+      "z_approx": 0.4231636330280038,
+      "p_one_sided": 0.36026448303304764,
+      "p_two_sided": 0.6970678855763469,
+      "method": "scipy.stats.binomtest"
+    },
+    "diff_from_null": 0.007539682539682513,
+    "label": "EARLY",
+    "split": "EARLY",
+    "weighting": "ONE_OBSERVATION_PER_GAME"
+  },
+  "regime_MIDDLE": {
+    "n": 579,
+    "k": 490,
+    "estimate": 0.846286701208981,
+    "wilson": {
+      "p": 0.846286701208981,
+      "lo": 0.8146338192399579,
+      "hi": 0.8733747237329527,
+      "n": 579,
+      "k": 490,
+      "method": "wilson"
+    },
+    "clopper_pearson": {
+      "p": 0.846286701208981,
+      "lo": 0.8142876507242082,
+      "hi": 0.8747000501347438,
+      "n": 579,
+      "k": 490,
+      "method": "clopper_pearson"
+    },
+    "se_iid": 0.014989087600357637,
+    "vs_null": {
+      "n": 579,
+      "k": 490,
+      "p_hat": 0.846286701208981,
+      "p0": 0.8,
+      "expected_k": 463.20000000000005,
+      "excess_k": 26.799999999999955,
+      "se_null": 0.016623432698467652,
+      "z_approx": 2.784424976993328,
+      "p_one_sided": 0.0024882950443445833,
+      "p_two_sided": 0.004962545370511305,
+      "method": "scipy.stats.binomtest"
+    },
+    "diff_from_null": 0.04628670120898093,
+    "label": "MIDDLE",
+    "split": "MIDDLE",
+    "weighting": "ONE_OBSERVATION_PER_GAME"
+  },
+  "regime_LATE": {
+    "n": 147,
+    "k": 122,
+    "estimate": 0.8299319727891157,
+    "wilson": {
+      "p": 0.8299319727891157,
+      "lo": 0.7609880253943963,
+      "hi": 0.8820706533785684,
+      "n": 147,
+      "k": 122,
+      "method": "wilson"
+    },
+    "clopper_pearson": {
+      "p": 0.8299319727891157,
+      "lo": 0.7592667114947476,
+      "hi": 0.8868134247226065,
+      "n": 147,
+      "k": 122,
+      "method": "clopper_pearson"
+    },
+    "se_iid": 0.030986599400241316,
+    "vs_null": {
+      "n": 147,
+      "k": 122,
+      "p_hat": 0.8299319727891157,
+      "p0": 0.8,
+      "expected_k": 117.60000000000001,
+      "excess_k": 4.3999999999999915,
+      "se_null": 0.0329914439536929,
+      "z_approx": 0.9072647087265545,
+      "p_one_sided": 0.2127742760842668,
+      "p_two_sided": 0.4100234533916939,
+      "method": "scipy.stats.binomtest"
+    },
+    "diff_from_null": 0.029931972789115635,
+    "label": "LATE",
+    "split": "LATE",
+    "weighting": "ONE_OBSERVATION_PER_GAME"
+  }
+}

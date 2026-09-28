@@ -1,0 +1,10 @@
+trade T0038  NBA  Miami at New York K
+contract KXNBAGAME-25NOV14MIANYK-NYK  slice Q2
+signal 2025-11-14T17:16:00-08:00 PST  exit 2025-11-14T17:58:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 1987  principal_cents 154986
+entry_fee_cents 597  exit_fee_cents 769
+exit STOP at 67c  terminal yes
+gross_cents -21857  net_cents -23223
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

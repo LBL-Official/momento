@@ -1,0 +1,10 @@
+trade T0111  NBA  San Antonio at Cleveland
+contract KXNBAGAME-25DEC05SASCLE-CLE  slice Q3
+signal 2025-12-05T18:10:00-08:00 PST  exit 2025-12-05T19:29:15-08:00 PST
+assumed entry 78c  observed close 83c  overshoot 5c
+contracts 2520  principal_cents 196560
+entry_fee_cents 757  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 55440  net_cents 54683
+strategy_result POSITIVE  net_r 1.856619020133772451023664822
+Assumed fill. Not a maker fill. Not live P&L.

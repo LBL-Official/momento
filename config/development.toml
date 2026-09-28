@@ -1,0 +1,13 @@
+# Default development configuration.
+# Live trading cannot be inferred from this file.
+mode = "paper"
+timezone = "America/Los_Angeles"
+allocation_bps = 1250
+max_entry_price_cents = 83
+preferred_entry_price_cents = 80
+min_entry_price_cents = 80
+initial_bankroll_cents = 5000
+
+[live]
+enabled = false
+confirmation = ""

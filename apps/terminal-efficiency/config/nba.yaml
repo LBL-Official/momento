@@ -1,0 +1,11 @@
+league: NBA
+regulation_periods: 4
+period_seconds: 720
+ot_seconds: 300
+train_end: "2025-02-28"
+exclude_game_id_prefixes: ["001", "003"]
+pbp_source: nba_stats_v3
+pace_minutes: 48
+possession_rule_version: "2.0.0"
+n_mcd_simulations: 200
+mcd_seed: 202425

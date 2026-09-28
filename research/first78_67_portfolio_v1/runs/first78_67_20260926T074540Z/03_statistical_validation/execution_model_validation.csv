@@ -1,0 +1,2 @@
+status,reason
+UNAVAILABLE,Minute bid closes have no queue position or own-order fills. A fill model was not fit.

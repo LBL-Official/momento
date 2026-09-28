@@ -1,0 +1,29 @@
+governance_id,resource_id,resource_type,owner_system_id,consumer_system_id,permission,environment,policy_source,notes
+gov_austin_ballhog,austin.query_at,API,austin,ballhog,QUERY,local,SYSTIMO_V0,Read only
+gov_choosin_ballhog,choosin.get_trade_context,API,choosin_texas,ballhog,QUERY,local,SYSTIMO_V0,Read only
+gov_austin_tk,austin.query_at,API,austin,tk_ultra,QUERY,local,SYSTIMO_V0,Read only
+gov_choosin_tk,choosin.get_trade_context,API,choosin_texas,tk_ultra,QUERY,local,SYSTIMO_V0,Read only
+gov_austin_dre,austin.query_at,API,austin,dre,QUERY,local,SYSTIMO_V0,Read only
+gov_choosin_dre,choosin.get_trade_context,API,choosin_texas,dre,QUERY,local,SYSTIMO_V0,Read only
+gov_austin_jump,austin.query_at,API,austin,jump,QUERY,local,SYSTIMO_V0,Read only. WRITE DENY.
+gov_austin_jump_write,austin.query_at,API,austin,jump,DENY,local,SYSTIMO_V0,Write denied
+gov_choosin_jump,choosin.get_trade_context,API,choosin_texas,jump,QUERY,local,SYSTIMO_V0,Read only. WRITE DENY.
+gov_choosin_jump_write,choosin.get_trade_context,API,choosin_texas,jump,DENY,local,SYSTIMO_V0,Write denied
+gov_vital_jump,vital.api,API,vital,jump,QUERY,local,SYSTIMO_V0,Observe only
+gov_pm_ballhog,ballhog.hedge_intent,API,ballhog,position_management,QUERY,local,SYSTIMO_V0,Positman compositor QUERY
+gov_pm_tk,tk_ultra.assessment,API,tk_ultra,position_management,QUERY,local,SYSTIMO_V0,Positman compositor QUERY
+gov_positman_drevo,positman.plan,API,position_management,dre,QUERY,local,SYSTIMO_V0,Drevo reads plan
+gov_positman_jump,positman.plan,API,position_management,jump,QUERY,local,SYSTIMO_V0,Read only. WRITE DENY.
+gov_positman_jump_write,positman.plan,API,position_management,jump,DENY,local,SYSTIMO_V0,Write denied
+gov_drevo_jump,drevo.decision,API,dre,jump,QUERY,local,SYSTIMO_V0,Read only. WRITE DENY.
+gov_drevo_jump_write,drevo.decision,API,dre,jump,DENY,local,SYSTIMO_V0,Write denied
+gov_positman_systimo,positman.plan,API,position_management,systimo,WRITE,local,SYSTIMO_V0,ARTIFACT_WRITE / OBSERVABILITY
+gov_drevo_systimo,drevo.decision,API,dre,systimo,WRITE,local,SYSTIMO_V0,ARTIFACT_WRITE / OBSERVABILITY
+gov_orchestra_systimo,systimo.orchestra_context,API,systimo,systimo,QUERY,local,SYSTIMO_V0,Orchestra queries Systimo. CONTROL DENY.
+gov_ballhog_jump,ballhog.handle_intent,API,ballhog,jump,QUERY,local,SYSTIMO_V0,Read only. WRITE DENY.
+gov_ballhog_jump_write,ballhog.handle_intent,API,ballhog,jump,DENY,local,SYSTIMO_V0,Write denied
+gov_tk_jump,tk_ultra.assess_v0,API,tk_ultra,jump,QUERY,local,SYSTIMO_V0,Read only. WRITE DENY.
+gov_tk_jump_write,tk_ultra.assess_v0,API,tk_ultra,jump,DENY,local,SYSTIMO_V0,Write denied
+gov_roller_jump,warehouse.parquet,API,roller,jump,QUERY,local,SYSTIMO_V0,Pointer. WRITE DENY.
+gov_systimo_jump,systimo.registry,API,systimo,jump,QUERY,local,SYSTIMO_V0,Catalog read.
+gov_nba001_desk,nba001.status,FILE,vital,momento_systems,READ,aws,SYSTIMO_V0,Observe only. WRITE/CONTROL denied.

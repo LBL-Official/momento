@@ -1,0 +1,16 @@
+[package]
+name = "momento-strategy-nba"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "NBA Bot 001 FIRST78_67: signal, slice, hedge pair, reservation, lifecycle. No I/O. Never submits."
+
+[lints]
+workspace = true
+
+[dependencies]
+momento-core.workspace = true
+serde.workspace = true
+serde_json.workspace = true

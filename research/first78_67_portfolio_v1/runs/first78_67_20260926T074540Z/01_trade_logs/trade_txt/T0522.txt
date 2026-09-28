@@ -1,0 +1,10 @@
+trade T0522  NBA  Oklahoma City at New York
+contract KXNBAGAME-26MAR04OKCNYK-OKC  slice Q2
+signal 2026-03-04T16:55:00-08:00 PST  exit 2026-03-04T17:50:00-08:00 PST
+assumed entry 78c  observed close 81c  overshoot 3c
+contracts 10304  principal_cents 803712
+entry_fee_cents 3095  exit_fee_cents 3987
+exit STOP at 67c  terminal yes
+gross_cents -113344  net_cents -120426
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

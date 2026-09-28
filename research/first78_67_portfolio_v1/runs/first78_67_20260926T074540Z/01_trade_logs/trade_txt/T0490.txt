@@ -1,0 +1,10 @@
+trade T0490  NBA  Los Angeles L at Phoenix
+contract KXNBAGAME-26FEB26LALPHX-LAL  slice Q3
+signal 2026-02-26T19:31:00-08:00 PST  exit 2026-02-26T19:53:00-08:00 PST
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 8894  principal_cents 693732
+entry_fee_cents 2671  exit_fee_cents 3442
+exit STOP at 67c  terminal no
+gross_cents -97834  net_cents -103947
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

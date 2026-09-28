@@ -1,0 +1,42 @@
+---
+description: 2026-09-12 work — parquet-index all ROLLER query warehouses for fast Confirm & Run
+alwaysApply: true
+---
+
+# 2026-09-12 — ROLLER parquet indexes (today's work)
+
+This is the scheduled research-infra task for **Saturday 2026-09-12**.
+Surface it at the start of the session. Do not start W9, live execution, or Risk.
+
+## Why
+
+Confirm & Run on tennis ATP+WTA sat on MEASURING because:
+
+1. No observation indexes exist on disk (`rq_index_v1.0.0` absent).
+2. Two leagues ⇒ `plan_query` forces `full_scan` (`combined_league_union`).
+3. Last-trade questions never use the index (`basis_not_tradable`).
+4. ATP and WTA share one tree (`data/tennis/2025_2026/canonical`) but load it twice, then duplicate tickers.
+
+Cold path today: pandas CSV concat → `to_dict("records")` → per-ticker First Touch / path / TE.
+
+## Goal
+
+Parquet-index **every ROLLER research warehouse** so generic Confirm & Run is indexed and fast.
+
+Facts only. Not answers. Detectors stay in `operations.py`. Spec: `docs/research/research_query/QUERY_ACCELERATION.md`.
+
+## Checklist
+
+- [x] Inventory warehouses: NBA, NCAAB, WNBA, MLB, ATP/WTA tennis (shared tree).
+- [x] Build `rq_index_v1.0.0` per sport/season (`bars`, `transitions`, `pbp_events`, `settlement`, `universe`, `manifest`).
+- [x] Tennis: read the shared tree **once**; split by tour. Do not double-load ATP+WTA.
+- [x] Last-trade: add a last-trade fact index (do not serve tradable bars as last-trade).
+- [x] Combined-league union: plan/read indexes per league, then union facts. Do not force CSV `full_scan` just because leagues > 1.
+- [x] Planner: index absent → `full_scan`; stale/corrupt → `DATA_REQUIRED` (fail closed).
+- [x] Same N / same hashes as full-scan on existing goldens (NBA, MLB 554 / 1661 verify-only).
+- [x] Record real `--warehouse` timings. Do not invent numbers.
+- [x] Do not route FIRST80 through the generic index. Do not edit `first80.py`.
+
+## Non-goals
+
+Frontend redesign. Results rewriting N. Exposure strategy logic. Settlement ingest. Production / Risk / Kalshi submit. W9.

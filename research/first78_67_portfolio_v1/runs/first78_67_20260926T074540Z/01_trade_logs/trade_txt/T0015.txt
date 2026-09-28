@@ -1,0 +1,10 @@
+trade T0015  NBA  Toronto at Atlanta
+contract KXNBAGAME-25NOV07TORATL-ATL  slice Q3
+signal 2025-11-07T17:27:00-08:00 PST  exit 2025-11-07T17:59:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 1755  principal_cents 136890
+entry_fee_cents 528  exit_fee_cents 680
+exit STOP at 67c  terminal no
+gross_cents -19305  net_cents -20513
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

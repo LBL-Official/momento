@@ -1,0 +1,27 @@
+[package]
+name = "momento-research-api"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "HTTP API for the Momento Research Console. Research only. No live orders."
+
+[[bin]]
+name = "momento-research-api"
+path = "src/main.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+axum = { version = "0.8.4", features = ["json"] }
+chrono.workspace = true
+momento-research-engine = { path = "../../crates/research-engine" }
+momento-research-features = { path = "../../crates/research-features" }
+serde.workspace = true
+serde_json.workspace = true
+tokio = { version = "1.47.1", features = ["macros", "rt-multi-thread", "net", "signal"] }
+tower-http = { version = "0.6.6", features = ["cors", "fs"] }
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.20", features = ["fmt", "env-filter"] }

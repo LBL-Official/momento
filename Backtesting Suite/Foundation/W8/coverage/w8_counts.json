@@ -1,0 +1,20 @@
+{
+  "ambiguous_timestamp_cases": 0,
+  "confirm81_events": 3103,
+  "entry_eligible_events": 2884,
+  "first80_events": 3228,
+  "game_lock_events": 3070,
+  "games_processed": 3384,
+  "intents_proposed": 2884,
+  "markets_sides_processed": 6768,
+  "observations_processed": 22984711,
+  "opportunities": 3228,
+  "price_pause_events": 205362,
+  "prints_80": 152533,
+  "state_linked_triggers": 12143,
+  "triggers_at_event": 0,
+  "triggers_synchronized": 490,
+  "triggers_with_gap": 11653,
+  "triggers_without_w6_state": 142,
+  "w7_observation_count": 22984711
+}

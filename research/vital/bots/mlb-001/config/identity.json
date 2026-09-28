@@ -1,0 +1,33 @@
+{
+  "bot_id": "mlb-001",
+  "factory": {
+    "allocation_bps": 1250,
+    "bankroll_cents": 5000,
+    "confirm_cents": 81,
+    "editable": false,
+    "engine_pointer": "apps/trading-engine",
+    "factory_id": "mlb_factory_v1",
+    "factory_version": "mlb_factory_v1.0.0",
+    "lock_cents": 89,
+    "max_entry_cents": 83,
+    "max_open_mlb_positions": 5,
+    "min_entry_cents": 80,
+    "name": "MLB Production Factory",
+    "notes": "Stamped MLB desk facts. Vital does not reimplement the strategy. ITI is research lineage only and is not the live signal.",
+    "order_type": "maker_only_post_only",
+    "per_game_cents": 625,
+    "preferred_entry_cents": 80,
+    "risk": "Risk Decision Engine",
+    "signal": "80_to_81_yes_bid",
+    "strategy_pointer": "strategies/mlb"
+  },
+  "host_path": "/var/lib/momento/config/live.toml",
+  "live_gates": {
+    "confirmation": "ENABLE_LIVE_TRADING",
+    "live.enabled": true,
+    "mode": "live",
+    "note": "Triple gate stays in crates/core. Vital start does not arm live."
+  },
+  "pointer": "config/live.toml",
+  "recorded_at": "2026-09-17T05:37:40Z"
+}

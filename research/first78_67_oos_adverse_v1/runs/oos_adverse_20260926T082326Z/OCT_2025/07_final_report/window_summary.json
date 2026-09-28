@@ -1,0 +1,254 @@
+{
+  "test_id": "OCT_2025",
+  "coverage_status": "COMPLETE_FOR_NORMALIZED_WAREHOUSE",
+  "sport_status": {
+    "NBA": "HAS_CANDIDATES",
+    "NBA_events_in_window": 97,
+    "NCAAB": "NO_ELIGIBLE_GAMES",
+    "NCAAB_events_in_window": 0
+  },
+  "candidates": 41,
+  "admitted": 41,
+  "rejected": 0,
+  "max_open": 3,
+  "identity": {
+    "gross_minus_fees": 359311,
+    "net": 359311,
+    "identity_ok": true,
+    "nba_net_cents": 359311,
+    "ncaab_net_cents": 0,
+    "fees_cents": 31827,
+    "gross_pnl_cents": 391138
+  },
+  "ending_equity_cents": 2359311,
+  "mean_net_cents_per_contract": 5.412906501914133,
+  "adverse_mean_net_cents_per_contract": 1.0296095970435386,
+  "adverse_net_pnl_cents": 60813,
+  "hold_net_pnl_cents": 275789,
+  "paired_stop_minus_hold_cents": 35260,
+  "cutoff_marked_equity_cents": 2359311,
+  "final_equity_cents": 2359311,
+  "inference_ref": {
+    "status": "ESTIMATED",
+    "n_days": 13,
+    "n_trades": 41,
+    "observed_mean_cents_per_contract": 5.412906501914133,
+    "studentized_observed": 1.548531342471987,
+    "draws_used": 2000,
+    "one_sided_p": 0.0384807596201899,
+    "note": "Centered studentized cluster bootstrap. Not the share of uncentered means <= 0."
+  },
+  "inference_adverse": {
+    "status": "ESTIMATED",
+    "n_days": 13,
+    "n_trades": 41,
+    "observed_mean_cents_per_contract": 1.0296095970435386,
+    "studentized_observed": 0.26875012465966414,
+    "draws_used": 2000,
+    "one_sided_p": 0.3538230884557721,
+    "note": "Centered studentized cluster bootstrap. Not the share of uncentered means <= 0."
+  },
+  "comparison": [
+    {
+      "population_id": "FIRST80_CONDITIONED_DIAGNOSTIC",
+      "candidates": 40,
+      "admitted": 40,
+      "portfolio_net_cents": 322878,
+      "note": "diagnostic label uses a later threshold"
+    },
+    {
+      "population_id": "OMITTED_NO_LATER_THRESHOLD",
+      "candidates": 1,
+      "admitted": 1,
+      "portfolio_net_cents": 33374,
+      "note": "diagnostic label uses a later threshold"
+    },
+    {
+      "population_id": "LEGACY_LOCK_INTERSECTION",
+      "candidates": 38,
+      "admitted": 38,
+      "portfolio_net_cents": 355471,
+      "note": "separate book; not the original locked universe"
+    }
+  ],
+  "stresses": [
+    {
+      "scenario_id": "REF",
+      "admitted": 41,
+      "rejected": 0,
+      "net_pnl_cents": 359311,
+      "ending_equity_cents": 2359311,
+      "max_open": 3,
+      "mean_net_cents_per_contract": 5.412906501914133,
+      "note": null
+    },
+    {
+      "scenario_id": "ENTRY_1",
+      "admitted": 41,
+      "rejected": 0,
+      "net_pnl_cents": 285946,
+      "ending_equity_cents": 2285946,
+      "max_open": 3,
+      "mean_net_cents_per_contract": 4.422811820090568,
+      "note": null
+    },
+    {
+      "scenario_id": "ENTRY_2",
+      "admitted": 41,
+      "rejected": 0,
+      "net_pnl_cents": 216133,
+      "ending_equity_cents": 2216133,
+      "max_open": 3,
+      "mean_net_cents_per_contract": 3.4333575811164416,
+      "note": null
+    },
+    {
+      "scenario_id": "EXIT_1",
+      "admitted": 41,
+      "rejected": 0,
+      "net_pnl_cents": 324483,
+      "ending_equity_cents": 2324483,
+      "max_open": 3,
+      "mean_net_cents_per_contract": 4.922369514621803,
+      "note": null
+    },
+    {
+      "scenario_id": "EXIT_2",
+      "admitted": 41,
+      "rejected": 0,
+      "net_pnl_cents": 290009,
+      "ending_equity_cents": 2290009,
+      "max_open": 3,
+      "mean_net_cents_per_contract": 4.431765170153505,
+      "note": null
+    },
+    {
+      "scenario_id": "JOINT_1",
+      "admitted": 41,
+      "rejected": 0,
+      "net_pnl_cents": 252249,
+      "ending_equity_cents": 2252249,
+      "max_open": 3,
+      "mean_net_cents_per_contract": 3.932180076533022,
+      "note": null
+    },
+    {
+      "scenario_id": "JOINT_2",
+      "admitted": 41,
+      "rejected": 0,
+      "net_pnl_cents": 151585,
+      "ending_equity_cents": 2151585,
+      "max_open": 3,
+      "mean_net_cents_per_contract": 2.45224904702778,
+      "note": null
+    },
+    {
+      "scenario_id": "FEE_007",
+      "admitted": 41,
+      "rejected": 0,
+      "net_pnl_cents": 256582,
+      "ending_equity_cents": 2256582,
+      "max_open": 3,
+      "mean_net_cents_per_contract": 3.945776066586514,
+      "note": null
+    },
+    {
+      "scenario_id": "JOINT_2_FEE_007",
+      "admitted": 41,
+      "rejected": 0,
+      "net_pnl_cents": 60813,
+      "ending_equity_cents": 2060813,
+      "max_open": 3,
+      "mean_net_cents_per_contract": 1.0296095970435386,
+      "note": null
+    },
+    {
+      "scenario_id": "CASH_DELAY_15",
+      "admitted": 41,
+      "rejected": 0,
+      "net_pnl_cents": 359311,
+      "ending_equity_cents": 2359311,
+      "max_open": 3,
+      "mean_net_cents_per_contract": 5.412906501914133,
+      "note": null
+    },
+    {
+      "scenario_id": "CASH_DELAY_60",
+      "admitted": 41,
+      "rejected": 0,
+      "net_pnl_cents": 359311,
+      "ending_equity_cents": 2359311,
+      "max_open": 3,
+      "mean_net_cents_per_contract": 5.412906501914133,
+      "note": null
+    },
+    {
+      "scenario_id": "STOP_FAIL_1",
+      "admitted": 41,
+      "net_pnl_cents": 359311,
+      "reported_figure": "MEAN_OF_30_PATHS",
+      "monte_carlo_se_cents": 0.0,
+      "max_open_example_path": 3,
+      "note": null
+    },
+    {
+      "scenario_id": "STOP_FAIL_5",
+      "admitted": 41,
+      "net_pnl_cents": 358109,
+      "reported_figure": "MEAN_OF_30_PATHS",
+      "monte_carlo_se_cents": 15330.28715311534,
+      "max_open_example_path": 3,
+      "note": null
+    },
+    {
+      "scenario_id": "LATENCY_60",
+      "admitted": 40,
+      "rejected": 0,
+      "net_pnl_cents": 244827,
+      "ending_equity_cents": 2244827,
+      "max_open": 3,
+      "mean_net_cents_per_contract": 3.9613295783761595,
+      "note": "skipped 1"
+    },
+    {
+      "scenario_id": "LATENCY_120",
+      "admitted": 40,
+      "rejected": 0,
+      "net_pnl_cents": 176059,
+      "ending_equity_cents": 2176059,
+      "max_open": 3,
+      "mean_net_cents_per_contract": 2.7511312979718703,
+      "note": "skipped 1"
+    }
+  ],
+  "complete_batches": 4,
+  "partial_batches": 1,
+  "marked_drawdown": {
+    "max_drawdown_fraction": 0.04061238723545346,
+    "peak_index": 14033,
+    "trough_index": 14223,
+    "peak_equity_cents": 2099064,
+    "trough_equity_cents": 2013816,
+    "minutes_with_mark": 24480,
+    "minutes_missing": 0,
+    "grid": "ONE_MINUTE",
+    "with_initial_equity": {
+      "max_drawdown_fraction": 0.04061238723545346,
+      "peak_index": 14034,
+      "trough_index": 14224,
+      "peak_equity_cents": 2099064,
+      "trough_equity_cents": 2013816
+    }
+  },
+  "realized_drawdown": {
+    "max_drawdown_fraction": 0.04408460032333916,
+    "peak_index": 38,
+    "trough_index": 54,
+    "peak_equity_cents": 2074602,
+    "trough_equity_cents": 1983144
+  },
+  "judgment": {
+    "sample_selection": "supports_sign",
+    "execution": "supports_sign"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "bot_id": "mlb-005",
+  "http_200_not_running": true,
+  "lifecycle": "CONFIRMED",
+  "never_momento_live": true,
+  "observed_at": "2026-09-16T20:52:40Z",
+  "ok": true,
+  "status": "CONFIRMED",
+  "steps": [
+    {
+      "action": "inspect",
+      "active": true,
+      "command": null,
+      "heartbeat": true,
+      "lifecycle": "RUNNING_DEMO",
+      "observed": {
+        "active": true,
+        "heartbeat": true
+      },
+      "ok": true,
+      "unit": "momento-demo@mlb-005.service"
+    },
+    {
+      "action": "stop",
+      "command": {
+        "kind": "systemctl stop",
+        "never_momento_live": true,
+        "unit": "momento-demo@mlb-005.service"
+      },
+      "observed": {
+        "active": "inactive",
+        "stopped": true
+      },
+      "ok": true,
+      "unit": "momento-demo@mlb-005.service"
+    },
+    {
+      "action": "inspect",
+      "active": false,
+      "command": null,
+      "heartbeat": true,
+      "lifecycle": "STOPPED",
+      "observed": {
+        "active": false,
+        "heartbeat": true
+      },
+      "ok": true,
+      "unit": "momento-demo@mlb-005.service"
+    },
+    {
+      "action": "start",
+      "command": {
+        "kind": "systemctl enable --now",
+        "never_momento_live": true,
+        "unit": "momento-demo@mlb-005.service"
+      },
+      "observed": {
+        "active": true,
+        "heartbeat": true
+      },
+      "ok": true,
+      "unit": "momento-demo@mlb-005.service"
+    },
+    {
+      "action": "inspect",
+      "active": true,
+      "command": null,
+      "heartbeat": true,
+      "lifecycle": "RUNNING_DEMO",
+      "observed": {
+        "active": true,
+        "heartbeat": true
+      },
+      "ok": true,
+      "unit": "momento-demo@mlb-005.service"
+    }
+  ],
+  "unit": "momento-demo@mlb-005.service"
+}

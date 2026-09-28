@@ -1,0 +1,11 @@
+path,role,used_as,notes
+research/first80_asked_six_chatgpt_export/first80_asked_six.csv,locked 936 membership,identity only,FIRST80-conditioned derived four. Not rebuilt.
+ROLLER/roller/choosin_texas/locks.py,integer locks,N=936 check,not edited
+Backtesting Suite/Data/NBA/2025-2026/warehouse/normalized/nba/candles_1m,minute yes_bid_close,FIRST78_CLOSE_PROXY signal,not an executable quote
+Backtesting Suite/Data/NCAAB/2025-2026/warehouse/normalized/ncaab/candles_1m,minute yes_bid_close,FIRST78_CLOSE_PROXY signal,not an executable quote
+Backtesting Suite/Data/NBA/2025-2026/warehouse/normalized/nba/markets/markets.parquet,result close_time expiration_time settlement_time,outcome and cash hypotheses,close_time is earlier than settlement_time on this file
+Backtesting Suite/Data/NCAAB/2025-2026/warehouse/normalized/ncaab/markets/markets.parquet,result and lifecycle timestamps,outcome and cash hypotheses,same column roles as NBA
+Backtesting Suite/Data/NBA/2025-2026/warehouse/normalized/nba/pbp,period clock,Q2/Q3 bucket,intra-quarter seconds are modeled
+Backtesting Suite/Data/NCAAB/2025-2026/warehouse/normalized/ncaab/pbp/plays,wall clock,H1_2 and H2_1,last play with wall at or before the candle
+historical L2 / queue,execution,UNAVAILABLE,MAKER_EXECUTION_REPLAY and OBSERVED_PRICE_REPLAY not produced
+research/austin confirmation cohorts,sealed,not opened,status taken from existing audit records only

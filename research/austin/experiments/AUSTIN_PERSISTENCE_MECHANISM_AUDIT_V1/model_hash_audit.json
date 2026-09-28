@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "model_manifest_hash": "4a47bf9ad3a2fcd4bb092a77cf93d534e308423deec29e33b6e6bad85c76431c",
+  "locked_model_manifest_hash": "4a47bf9ad3a2fcd4bb092a77cf93d534e308423deec29e33b6e6bad85c76431c",
+  "hashes": {
+    "snapshots.parquet": "55b6fa791dda6dc00bc79e4f392266ce985b78581f4a4bd43b733a488aa6aac0",
+    "trades.parquet": "93497e3cd7f67ba7d20c0481273c2b0c61585a530f6e377ceea40c18549d0500",
+    "pca.json": "2d5fcaf80a4871769d8febebad987b87ab814da975ac3476e831e6d8c66b5225",
+    "pca.npz": "d56cd7eaf7bc48134aae7121160420ccc24581ec403be51508f0c614c5e27bf9",
+    "registry.yaml": "ebd49948320720f7f8acb15ae46a03d5fc703c8c0f29a6be9e52f3d4442031ab"
+  },
+  "training_n_trades": 604,
+  "training_n_snapshots": 48752,
+  "ncaab_used_for_training": false,
+  "ncaab_used_for_pca": false,
+  "ncaab_used_for_scaler": false,
+  "ncaab_used_for_knn": false,
+  "git_commit": "UNAVAILABLE",
+  "git_commit_reason": "not_a_git_repo"
+}

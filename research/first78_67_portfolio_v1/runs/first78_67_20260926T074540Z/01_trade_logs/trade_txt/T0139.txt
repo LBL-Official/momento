@@ -1,0 +1,10 @@
+trade T0139  NBA  Golden State at Portland
+contract KXNBAGAME-25DEC14GSWPOR-GSW  slice Q3
+signal 2025-12-14T19:31:00-08:00 PST  exit 2025-12-14T19:42:00-08:00 PST
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 2876  principal_cents 224328
+entry_fee_cents 864  exit_fee_cents 1113
+exit STOP at 67c  terminal no
+gross_cents -31636  net_cents -33613
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

@@ -1,0 +1,1058 @@
+{
+  "sport": "nhl",
+  "series": "KXNHLGAME",
+  "season": "2025-2026",
+  "n_universe": 1455,
+  "first80": 1444,
+  "high_access_rule": {
+    "max_jump_cents": 10,
+    "max_close_cents": 85,
+    "min_persist_78_85": 2,
+    "min_up_steps_5m": 2
+  },
+  "live_execution_changed": false,
+  "price_interpretation": {
+    "gettable_at_80": "HIGH fill confidence AND frozen NBA HIGH_ACCESS. Candle proxy, not a fill.",
+    "actual_exit_leave80": "first later tradable yes_bid_close < 80, else settlement 100/0",
+    "actual_exit_t40bar": "yes_bid_close/low on first later bar with close<=40, not 40 itself",
+    "assumed_8040": "previous NHL report; +20 never-40 / -40 if close<=40"
+  },
+  "universes": {
+    "ALL_FIRST80": {
+      "label": "ALL_FIRST80",
+      "n": 1444,
+      "pct_of_n_universe": 99.244,
+      "pct_of_first80": 100.0,
+      "high_fill": 846,
+      "left_80": {
+        "n": 1444,
+        "k": 813,
+        "pct": 56.3019,
+        "ci95": [
+          53.7302,
+          58.8403
+        ]
+      },
+      "hit_40_close": {
+        "n": 1444,
+        "k": 285,
+        "pct": 19.7368,
+        "ci95": [
+          17.7654,
+          21.8689
+        ]
+      },
+      "jumped_through_40": {
+        "n": 1444,
+        "k": 253,
+        "pct": 17.5208,
+        "ci95": [
+          15.6469,
+          19.567
+        ]
+      },
+      "assumed_8040": {
+        "gross_ev": 8.1579,
+        "evn": 7.8263,
+        "win_rate": {
+          "n": 1444,
+          "k": 1159,
+          "pct": 80.2632,
+          "ci95": [
+            78.1311,
+            82.2346
+          ]
+        }
+      },
+      "actual_exit_when_leaves_80": {
+        "n": 813,
+        "close": {
+          "n": 813,
+          "mean": 72.3173,
+          "median": 77.0,
+          "p25": 70.0,
+          "p75": 79.0,
+          "min": 41.0,
+          "max": 79.0
+        },
+        "low": {
+          "n": 813,
+          "mean": 66.5068,
+          "median": 72.0,
+          "p25": 59.0,
+          "p75": 77.0,
+          "min": 5.0,
+          "max": 79.0
+        },
+        "note": "First subsequent tradable yes_bid after close drops below 80. Not 40."
+      },
+      "actual_exit_on_40_trigger_bar": {
+        "n": 285,
+        "close": {
+          "n": 285,
+          "mean": 20.7298,
+          "median": 22.0,
+          "p25": 2.0,
+          "p75": 36.0,
+          "min": 0.0,
+          "max": 40.0
+        },
+        "low": {
+          "n": 285,
+          "mean": 17.5754,
+          "median": 17.0,
+          "p25": 1.0,
+          "p75": 31.0,
+          "min": 0.0,
+          "max": 40.0
+        },
+        "jump_into_bar": {
+          "n": 285,
+          "mean": 29.1579,
+          "median": 29.0,
+          "p25": 15.0,
+          "p75": 45.0,
+          "min": 1.0,
+          "max": 76.0
+        },
+        "actual_minus_assumed_40": {
+          "n": 285,
+          "mean": -19.2702,
+          "median": -18.0,
+          "p25": -38.0,
+          "p75": -4.0,
+          "min": -40.0,
+          "max": 0.0
+        },
+        "note": "Bid close/low on the first bar that closes \u226440. The 40\u00a2 stop is not the fill."
+      },
+      "all_trade_exits_leave80_or_settlement": {
+        "close": {
+          "n": 1444,
+          "mean": 84.4141,
+          "median": 79.0,
+          "p25": 76.0,
+          "p75": 100.0,
+          "min": 41.0,
+          "max": 100.0
+        },
+        "low": {
+          "n": 1444,
+          "mean": 81.1427,
+          "median": 79.0,
+          "p25": 70.0,
+          "p75": 100.0,
+          "min": 5.0,
+          "max": 100.0
+        },
+        "note": "Leave-80 close if the path left 80, else settlement 100/0."
+      },
+      "ev_actual_leave80_close": {
+        "gross_ev": 4.4141,
+        "evn": 3.6578,
+        "win_rate": {
+          "n": 1444,
+          "k": 631,
+          "pct": 43.6981,
+          "ci95": [
+            41.1597,
+            46.2698
+          ]
+        },
+        "pnl": {
+          "n": 1444,
+          "mean": 4.4141,
+          "median": -1.0,
+          "p25": -4.0,
+          "p75": 20.0,
+          "min": -39.0,
+          "max": 20.0
+        }
+      },
+      "ev_actual_leave80_low": {
+        "gross_ev": 1.1427,
+        "pnl": {
+          "n": 1444,
+          "mean": 1.1427,
+          "median": -1.0,
+          "p25": -10.0,
+          "p75": 20.0,
+          "min": -75.0,
+          "max": 20.0
+        }
+      },
+      "ev_actual_t40bar_close": {
+        "gross_ev": 4.3546,
+        "evn": 4.161,
+        "pnl": {
+          "n": 1444,
+          "mean": 4.3546,
+          "median": 20.0,
+          "p25": 20.0,
+          "p75": 20.0,
+          "min": -80.0,
+          "max": 20.0
+        }
+      },
+      "ev_actual_t40bar_low": {
+        "gross_ev": 3.732,
+        "pnl": {
+          "n": 1444,
+          "mean": 3.732,
+          "median": 20.0,
+          "p25": 20.0,
+          "p75": 20.0,
+          "min": -80.0,
+          "max": 20.0
+        }
+      },
+      "entry_jump": {
+        "n": 1444,
+        "mean": 11.5817,
+        "median": 9.0,
+        "p25": 3.0,
+        "p75": 14.0,
+        "min": 1.0,
+        "max": 78.0
+      },
+      "entry_close": {
+        "n": 1444,
+        "mean": 83.8026,
+        "median": 82.0,
+        "p25": 80.0,
+        "p75": 86.0,
+        "min": 80.0,
+        "max": 99.0
+      }
+    },
+    "HIGH_FILL": {
+      "label": "HIGH_FILL",
+      "n": 846,
+      "pct_of_n_universe": 58.1443,
+      "pct_of_first80": 58.5873,
+      "high_fill": 846,
+      "left_80": {
+        "n": 846,
+        "k": 533,
+        "pct": 63.0024,
+        "ci95": [
+          59.697,
+          66.1902
+        ]
+      },
+      "hit_40_close": {
+        "n": 846,
+        "k": 185,
+        "pct": 21.8676,
+        "ci95": [
+          19.2128,
+          24.7768
+        ]
+      },
+      "jumped_through_40": {
+        "n": 846,
+        "k": 158,
+        "pct": 18.6761,
+        "ci95": [
+          16.1937,
+          21.4418
+        ]
+      },
+      "assumed_8040": {
+        "gross_ev": 6.8794,
+        "evn": 6.512,
+        "win_rate": {
+          "n": 846,
+          "k": 661,
+          "pct": 78.1324,
+          "ci95": [
+            75.2232,
+            80.7872
+          ]
+        }
+      },
+      "actual_exit_when_leaves_80": {
+        "n": 533,
+        "close": {
+          "n": 533,
+          "mean": 72.9962,
+          "median": 77.0,
+          "p25": 71.0,
+          "p75": 79.0,
+          "min": 41.0,
+          "max": 79.0
+        },
+        "low": {
+          "n": 533,
+          "mean": 68.6004,
+          "median": 74.0,
+          "p25": 64.0,
+          "p75": 78.0,
+          "min": 11.0,
+          "max": 79.0
+        },
+        "note": "First subsequent tradable yes_bid after close drops below 80. Not 40."
+      },
+      "actual_exit_on_40_trigger_bar": {
+        "n": 185,
+        "close": {
+          "n": 185,
+          "mean": 22.0919,
+          "median": 24.0,
+          "p25": 5.0,
+          "p75": 37.0,
+          "min": 0.0,
+          "max": 40.0
+        },
+        "low": {
+          "n": 185,
+          "mean": 18.7351,
+          "median": 20.0,
+          "p25": 3.0,
+          "p75": 32.0,
+          "min": 0.0,
+          "max": 40.0
+        },
+        "jump_into_bar": {
+          "n": 185,
+          "mean": 28.0432,
+          "median": 27.0,
+          "p25": 14.0,
+          "p75": 43.0,
+          "min": 1.0,
+          "max": 67.0
+        },
+        "actual_minus_assumed_40": {
+          "n": 185,
+          "mean": -17.9081,
+          "median": -16.0,
+          "p25": -35.0,
+          "p75": -3.0,
+          "min": -40.0,
+          "max": 0.0
+        },
+        "note": "Bid close/low on the first bar that closes \u226440. The 40\u00a2 stop is not the fill."
+      },
+      "all_trade_exits_leave80_or_settlement": {
+        "close": {
+          "n": 846,
+          "mean": 82.987,
+          "median": 79.0,
+          "p25": 75.0,
+          "p75": 100.0,
+          "min": 41.0,
+          "max": 100.0
+        },
+        "low": {
+          "n": 846,
+          "mean": 80.2175,
+          "median": 78.0,
+          "p25": 70.0,
+          "p75": 100.0,
+          "min": 11.0,
+          "max": 100.0
+        },
+        "note": "Leave-80 close if the path left 80, else settlement 100/0."
+      },
+      "ev_actual_leave80_close": {
+        "gross_ev": 2.987,
+        "evn": 2.1498,
+        "win_rate": {
+          "n": 846,
+          "k": 313,
+          "pct": 36.9976,
+          "ci95": [
+            33.8098,
+            40.303
+          ]
+        },
+        "pnl": {
+          "n": 846,
+          "mean": 2.987,
+          "median": -1.0,
+          "p25": -5.0,
+          "p75": 20.0,
+          "min": -39.0,
+          "max": 20.0
+        }
+      },
+      "ev_actual_leave80_low": {
+        "gross_ev": 0.2175,
+        "pnl": {
+          "n": 846,
+          "mean": 0.2175,
+          "median": -2.0,
+          "p25": -10.0,
+          "p75": 20.0,
+          "min": -69.0,
+          "max": 20.0
+        }
+      },
+      "ev_actual_t40bar_close": {
+        "gross_ev": 2.9634,
+        "evn": 2.7358,
+        "pnl": {
+          "n": 846,
+          "mean": 2.9634,
+          "median": 20.0,
+          "p25": 20.0,
+          "p75": 20.0,
+          "min": -80.0,
+          "max": 20.0
+        }
+      },
+      "ev_actual_t40bar_low": {
+        "gross_ev": 2.2293,
+        "pnl": {
+          "n": 846,
+          "mean": 2.2293,
+          "median": 20.0,
+          "p25": 20.0,
+          "p75": 20.0,
+          "min": -80.0,
+          "max": 20.0
+        }
+      },
+      "entry_jump": {
+        "n": 846,
+        "mean": 6.2754,
+        "median": 6.0,
+        "p25": 2.0,
+        "p75": 10.0,
+        "min": 1.0,
+        "max": 20.0
+      },
+      "entry_close": {
+        "n": 846,
+        "mean": 82.4149,
+        "median": 81.0,
+        "p25": 80.0,
+        "p75": 84.0,
+        "min": 80.0,
+        "max": 92.0
+      }
+    },
+    "NO_JUMP10": {
+      "label": "NO_JUMP10",
+      "n": 766,
+      "pct_of_n_universe": 52.646,
+      "pct_of_first80": 53.0471,
+      "high_fill": 589,
+      "left_80": {
+        "n": 766,
+        "k": 517,
+        "pct": 67.4935,
+        "ci95": [
+          64.0962,
+          70.7161
+        ]
+      },
+      "hit_40_close": {
+        "n": 766,
+        "k": 187,
+        "pct": 24.4125,
+        "ci95": [
+          21.503,
+          27.5774
+        ]
+      },
+      "jumped_through_40": {
+        "n": 766,
+        "k": 163,
+        "pct": 21.2794,
+        "ci95": [
+          18.5279,
+          24.3174
+        ]
+      },
+      "assumed_8040": {
+        "gross_ev": 5.3525,
+        "evn": 4.9423,
+        "win_rate": {
+          "n": 766,
+          "k": 579,
+          "pct": 75.5875,
+          "ci95": [
+            72.4226,
+            78.497
+          ]
+        }
+      },
+      "actual_exit_when_leaves_80": {
+        "n": 517,
+        "close": {
+          "n": 517,
+          "mean": 72.8723,
+          "median": 78.0,
+          "p25": 70.0,
+          "p75": 79.0,
+          "min": 41.0,
+          "max": 79.0
+        },
+        "low": {
+          "n": 517,
+          "mean": 68.1238,
+          "median": 75.0,
+          "p25": 62.0,
+          "p75": 78.0,
+          "min": 11.0,
+          "max": 79.0
+        },
+        "note": "First subsequent tradable yes_bid after close drops below 80. Not 40."
+      },
+      "actual_exit_on_40_trigger_bar": {
+        "n": 187,
+        "close": {
+          "n": 187,
+          "mean": 21.2299,
+          "median": 22.0,
+          "p25": 2.5,
+          "p75": 37.0,
+          "min": 0.0,
+          "max": 40.0
+        },
+        "low": {
+          "n": 187,
+          "mean": 17.9037,
+          "median": 18.0,
+          "p25": 1.0,
+          "p75": 32.0,
+          "min": 0.0,
+          "max": 40.0
+        },
+        "jump_into_bar": {
+          "n": 187,
+          "mean": 28.6417,
+          "median": 27.0,
+          "p25": 15.0,
+          "p75": 45.0,
+          "min": 1.0,
+          "max": 67.0
+        },
+        "actual_minus_assumed_40": {
+          "n": 187,
+          "mean": -18.7701,
+          "median": -18.0,
+          "p25": -37.5,
+          "p75": -3.0,
+          "min": -40.0,
+          "max": 0.0
+        },
+        "note": "Bid close/low on the first bar that closes \u226440. The 40\u00a2 stop is not the fill."
+      },
+      "all_trade_exits_leave80_or_settlement": {
+        "close": {
+          "n": 766,
+          "mean": 81.6906,
+          "median": 79.0,
+          "p25": 75.25,
+          "p75": 100.0,
+          "min": 41.0,
+          "max": 100.0
+        },
+        "low": {
+          "n": 766,
+          "mean": 78.4856,
+          "median": 78.0,
+          "p25": 69.0,
+          "p75": 100.0,
+          "min": 11.0,
+          "max": 100.0
+        },
+        "note": "Leave-80 close if the path left 80, else settlement 100/0."
+      },
+      "ev_actual_leave80_close": {
+        "gross_ev": 1.6906,
+        "evn": 0.7958,
+        "win_rate": {
+          "n": 766,
+          "k": 249,
+          "pct": 32.5065,
+          "ci95": [
+            29.2839,
+            35.9038
+          ]
+        },
+        "pnl": {
+          "n": 766,
+          "mean": 1.6906,
+          "median": -1.0,
+          "p25": -4.75,
+          "p75": 20.0,
+          "min": -39.0,
+          "max": 20.0
+        }
+      },
+      "ev_actual_leave80_low": {
+        "gross_ev": -1.5144,
+        "pnl": {
+          "n": 766,
+          "mean": -1.5144,
+          "median": -2.0,
+          "p25": -11.0,
+          "p75": 20.0,
+          "min": -69.0,
+          "max": 20.0
+        }
+      },
+      "ev_actual_t40bar_close": {
+        "gross_ev": 0.7702,
+        "evn": 0.5257,
+        "pnl": {
+          "n": 766,
+          "mean": 0.7702,
+          "median": 20.0,
+          "p25": 20.0,
+          "p75": 20.0,
+          "min": -80.0,
+          "max": 20.0
+        }
+      },
+      "ev_actual_t40bar_low": {
+        "gross_ev": -0.0418,
+        "pnl": {
+          "n": 766,
+          "mean": -0.0418,
+          "median": 20.0,
+          "p25": 20.0,
+          "p75": 20.0,
+          "min": -80.0,
+          "max": 20.0
+        }
+      },
+      "entry_jump": {
+        "n": 766,
+        "mean": 3.9948,
+        "median": 3.0,
+        "p25": 2.0,
+        "p75": 6.0,
+        "min": 1.0,
+        "max": 9.0
+      },
+      "entry_close": {
+        "n": 766,
+        "mean": 81.4334,
+        "median": 81.0,
+        "p25": 80.0,
+        "p75": 82.0,
+        "min": 80.0,
+        "max": 88.0
+      }
+    },
+    "RESTABLE_80": {
+      "label": "RESTABLE_80",
+      "n": 533,
+      "pct_of_n_universe": 36.6323,
+      "pct_of_first80": 36.9114,
+      "high_fill": 533,
+      "left_80": {
+        "n": 533,
+        "k": 380,
+        "pct": 71.2946,
+        "ci95": [
+          67.3123,
+          74.9721
+        ]
+      },
+      "hit_40_close": {
+        "n": 533,
+        "k": 136,
+        "pct": 25.5159,
+        "ci95": [
+          21.9992,
+          29.3831
+        ]
+      },
+      "jumped_through_40": {
+        "n": 533,
+        "k": 114,
+        "pct": 21.3884,
+        "ci95": [
+          18.1184,
+          25.0678
+        ]
+      },
+      "assumed_8040": {
+        "gross_ev": 4.6904,
+        "evn": 4.2617,
+        "win_rate": {
+          "n": 533,
+          "k": 397,
+          "pct": 74.4841,
+          "ci95": [
+            70.6169,
+            78.0008
+          ]
+        }
+      },
+      "actual_exit_when_leaves_80": {
+        "n": 380,
+        "close": {
+          "n": 380,
+          "mean": 72.9316,
+          "median": 78.0,
+          "p25": 70.0,
+          "p75": 79.0,
+          "min": 41.0,
+          "max": 79.0
+        },
+        "low": {
+          "n": 380,
+          "mean": 69.3,
+          "median": 76.0,
+          "p25": 66.0,
+          "p75": 78.0,
+          "min": 11.0,
+          "max": 79.0
+        },
+        "note": "First subsequent tradable yes_bid after close drops below 80. Not 40."
+      },
+      "actual_exit_on_40_trigger_bar": {
+        "n": 136,
+        "close": {
+          "n": 136,
+          "mean": 22.4853,
+          "median": 25.5,
+          "p25": 6.0,
+          "p75": 37.0,
+          "min": 0.0,
+          "max": 40.0
+        },
+        "low": {
+          "n": 136,
+          "mean": 19.0809,
+          "median": 20.5,
+          "p25": 2.75,
+          "p75": 32.0,
+          "min": 0.0,
+          "max": 40.0
+        },
+        "jump_into_bar": {
+          "n": 136,
+          "mean": 27.4044,
+          "median": 26.5,
+          "p25": 13.5,
+          "p75": 41.0,
+          "min": 1.0,
+          "max": 67.0
+        },
+        "actual_minus_assumed_40": {
+          "n": 136,
+          "mean": -17.5147,
+          "median": -14.5,
+          "p25": -34.0,
+          "p75": -3.0,
+          "min": -40.0,
+          "max": 0.0
+        },
+        "note": "Bid close/low on the first bar that closes \u226440. The 40\u00a2 stop is not the fill."
+      },
+      "all_trade_exits_leave80_or_settlement": {
+        "close": {
+          "n": 533,
+          "mean": 80.7017,
+          "median": 79.0,
+          "p25": 75.0,
+          "p75": 100.0,
+          "min": 41.0,
+          "max": 100.0
+        },
+        "low": {
+          "n": 533,
+          "mean": 78.1126,
+          "median": 78.0,
+          "p25": 70.0,
+          "p75": 100.0,
+          "min": 11.0,
+          "max": 100.0
+        },
+        "note": "Leave-80 close if the path left 80, else settlement 100/0."
+      },
+      "ev_actual_leave80_close": {
+        "gross_ev": 0.7017,
+        "evn": -0.242,
+        "win_rate": {
+          "n": 533,
+          "k": 153,
+          "pct": 28.7054,
+          "ci95": [
+            25.0279,
+            32.6877
+          ]
+        },
+        "pnl": {
+          "n": 533,
+          "mean": 0.7017,
+          "median": -1.0,
+          "p25": -5.0,
+          "p75": 20.0,
+          "min": -39.0,
+          "max": 20.0
+        }
+      },
+      "ev_actual_leave80_low": {
+        "gross_ev": -1.8874,
+        "pnl": {
+          "n": 533,
+          "mean": -1.8874,
+          "median": -2.0,
+          "p25": -10.0,
+          "p75": 20.0,
+          "min": -69.0,
+          "max": 20.0
+        }
+      },
+      "ev_actual_t40bar_close": {
+        "gross_ev": 0.2214,
+        "evn": -0.0475,
+        "pnl": {
+          "n": 533,
+          "mean": 0.2214,
+          "median": 20.0,
+          "p25": -40.0,
+          "p75": 20.0,
+          "min": -80.0,
+          "max": 20.0
+        }
+      },
+      "ev_actual_t40bar_low": {
+        "gross_ev": -0.6473,
+        "pnl": {
+          "n": 533,
+          "mean": -0.6473,
+          "median": 20.0,
+          "p25": -40.0,
+          "p75": 20.0,
+          "min": -80.0,
+          "max": 20.0
+        }
+      },
+      "entry_jump": {
+        "n": 533,
+        "mean": 3.4503,
+        "median": 3.0,
+        "p25": 1.0,
+        "p75": 5.0,
+        "min": 1.0,
+        "max": 9.0
+      },
+      "entry_close": {
+        "n": 533,
+        "mean": 80.8518,
+        "median": 80.0,
+        "p25": 80.0,
+        "p75": 81.0,
+        "min": 80.0,
+        "max": 84.0
+      }
+    },
+    "GETTABLE_AT_80": {
+      "label": "GETTABLE_AT_80",
+      "n": 298,
+      "pct_of_n_universe": 20.4811,
+      "pct_of_first80": 20.6371,
+      "high_fill": 298,
+      "left_80": {
+        "n": 298,
+        "k": 212,
+        "pct": 71.1409,
+        "ci95": [
+          65.7531,
+          75.9907
+        ]
+      },
+      "hit_40_close": {
+        "n": 298,
+        "k": 80,
+        "pct": 26.8456,
+        "ci95": [
+          22.1322,
+          32.1485
+        ]
+      },
+      "jumped_through_40": {
+        "n": 298,
+        "k": 68,
+        "pct": 22.8188,
+        "ci95": [
+          18.4177,
+          27.9118
+        ]
+      },
+      "assumed_8040": {
+        "gross_ev": 3.8926,
+        "evn": 3.4416,
+        "win_rate": {
+          "n": 298,
+          "k": 218,
+          "pct": 73.1544,
+          "ci95": [
+            67.8515,
+            77.8678
+          ]
+        }
+      },
+      "actual_exit_when_leaves_80": {
+        "n": 212,
+        "close": {
+          "n": 212,
+          "mean": 71.9575,
+          "median": 78.0,
+          "p25": 68.0,
+          "p75": 79.0,
+          "min": 41.0,
+          "max": 79.0
+        },
+        "low": {
+          "n": 212,
+          "mean": 67.9387,
+          "median": 75.0,
+          "p25": 62.5,
+          "p75": 78.0,
+          "min": 11.0,
+          "max": 79.0
+        },
+        "note": "First subsequent tradable yes_bid after close drops below 80. Not 40."
+      },
+      "actual_exit_on_40_trigger_bar": {
+        "n": 80,
+        "close": {
+          "n": 80,
+          "mean": 22.1,
+          "median": 25.0,
+          "p25": 2.0,
+          "p75": 38.0,
+          "min": 0.0,
+          "max": 40.0
+        },
+        "low": {
+          "n": 80,
+          "mean": 18.375,
+          "median": 19.0,
+          "p25": 1.0,
+          "p75": 32.0,
+          "min": 0.0,
+          "max": 40.0
+        },
+        "jump_into_bar": {
+          "n": 80,
+          "mean": 28.0375,
+          "median": 27.0,
+          "p25": 13.5,
+          "p75": 45.5,
+          "min": 1.0,
+          "max": 67.0
+        },
+        "actual_minus_assumed_40": {
+          "n": 80,
+          "mean": -17.9,
+          "median": -15.0,
+          "p25": -38.0,
+          "p75": -2.0,
+          "min": -40.0,
+          "max": 0.0
+        },
+        "note": "Bid close/low on the first bar that closes \u226440. The 40\u00a2 stop is not the fill."
+      },
+      "all_trade_exits_leave80_or_settlement": {
+        "close": {
+          "n": 298,
+          "mean": 80.0503,
+          "median": 79.0,
+          "p25": 73.0,
+          "p75": 100.0,
+          "min": 41.0,
+          "max": 100.0
+        },
+        "low": {
+          "n": 298,
+          "mean": 77.1913,
+          "median": 77.0,
+          "p25": 68.0,
+          "p75": 100.0,
+          "min": 11.0,
+          "max": 100.0
+        },
+        "note": "Leave-80 close if the path left 80, else settlement 100/0."
+      },
+      "ev_actual_leave80_close": {
+        "gross_ev": 0.0503,
+        "evn": -0.9049,
+        "win_rate": {
+          "n": 298,
+          "k": 86,
+          "pct": 28.8591,
+          "ci95": [
+            24.0093,
+            34.2469
+          ]
+        },
+        "pnl": {
+          "n": 298,
+          "mean": 0.0503,
+          "median": -1.0,
+          "p25": -7.0,
+          "p75": 20.0,
+          "min": -39.0,
+          "max": 20.0
+        }
+      },
+      "ev_actual_leave80_low": {
+        "gross_ev": -2.8087,
+        "pnl": {
+          "n": 298,
+          "mean": -2.8087,
+          "median": -3.0,
+          "p25": -12.0,
+          "p75": 20.0,
+          "min": -69.0,
+          "max": 20.0
+        }
+      },
+      "ev_actual_t40bar_close": {
+        "gross_ev": -0.9128,
+        "evn": -1.1888,
+        "pnl": {
+          "n": 298,
+          "mean": -0.9128,
+          "median": 20.0,
+          "p25": -40.0,
+          "p75": 20.0,
+          "min": -80.0,
+          "max": 20.0
+        }
+      },
+      "ev_actual_t40bar_low": {
+        "gross_ev": -1.9128,
+        "pnl": {
+          "n": 298,
+          "mean": -1.9128,
+          "median": 20.0,
+          "p25": -40.75,
+          "p75": 20.0,
+          "min": -80.0,
+          "max": 20.0
+        }
+      },
+      "entry_jump": {
+        "n": 298,
+        "mean": 3.4094,
+        "median": 3.0,
+        "p25": 2.0,
+        "p75": 5.0,
+        "min": 1.0,
+        "max": 9.0
+      },
+      "entry_close": {
+        "n": 298,
+        "mean": 80.9094,
+        "median": 80.0,
+        "p25": 80.0,
+        "p75": 82.0,
+        "min": 80.0,
+        "max": 84.0
+      }
+    }
+  },
+  "missing_candles": 0
+}

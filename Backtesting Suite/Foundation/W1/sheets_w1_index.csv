@@ -1,0 +1,2 @@
+run_id,waterfall,artifact_version,generated_at,source_coverage,status,lake_class,lake_content_digest,mlb_2025_complete_days,mlb_2026_complete_days,mlb_2026_games,mlb_2026_markets,checksum_mismatches,gzip_failures,pairing_failures,l2_status,pbp_status,starting_price_status
+w1-d7e5d472e86268dc,W1,W1.0.0,2026-08-26T07:42:28.543039+00:00,MLB 2025 complete_days=0 2026 complete_days=13 games=172 markets=344,COMPLETE,REAL,d7e5d472e86268dc17a7f8d4d62c3c22ddb6fe9089e9b4097ff9b3c5eafd8f95,0,13,172,344,0,0,0,UNAVAILABLE,UNAVAILABLE,UNAVAILABLE

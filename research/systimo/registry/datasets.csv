@@ -1,0 +1,4 @@
+dataset_id,owner_system_id,name,universe,n_expected,location,schema_version,notes
+austin_nba_2q3q_604,austin,Austin NBA 2Q/3Q book,choosin_nba_2q3q_604,604,ROLLER/roller/austin/,v1,Canonical Austin source. Systimo does not copy.
+choosin_derived_four_936,choosin_texas,FIRST80 derived four,derived_four_936,936,ROLLER/roller/choosin_texas/,v1,Canonical Choosin source. Systimo does not copy.
+roller_nba_warehouse,roller,NBA canonical warehouse,nba_2025_2026,,ROLLER/data/nba/2025_2026/derived/warehouse/,v1,Pointer. Jump does not copy parquet.

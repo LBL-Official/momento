@@ -1,0 +1,10 @@
+trade T0326  NBA  Orlando at Cleveland
+contract KXNBAGAME-26JAN26ORLCLE-CLE  slice Q3
+signal 2026-01-26T17:36:00-08:00 PST  exit 2026-01-26T18:57:10-08:00 PST
+assumed entry 78c  observed close 81c  overshoot 3c
+contracts 5538  principal_cents 431964
+entry_fee_cents 1664  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 121836  net_cents 120172
+strategy_result POSITIVE  net_r 1.856655079181151023561220548
+Assumed fill. Not a maker fill. Not live P&L.

@@ -1,0 +1,15 @@
+{
+  "method": "contiguous_local_day_blocks",
+  "block_days": 7,
+  "paths_requested": 20000,
+  "paths_run": 12255,
+  "seconds_per_path_probe": 0.007343689600626628,
+  "budget_note": "path count reduced for runtime before reading the distribution as a decision input; seed unchanged",
+  "seed": 20260926,
+  "horizon": "resampled historical candidate-days, not one calendar year",
+  "ending_equity_cents_p50": 22955486,
+  "ending_equity_cents_p05": 14740857,
+  "ending_equity_cents_p95": 35498699,
+  "p_ending_below_start": 0.0,
+  "label": "PROCESS_VARIATION_CONDITIONAL_ON_THIS_SAMPLE"
+}

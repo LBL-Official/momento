@@ -1,0 +1,40 @@
+{
+  "aliases": [
+    "mlb-bot-one"
+  ],
+  "aws_runtime_id": "momento-live.service",
+  "bot_id": "mlb-001",
+  "folder": "research/vital/bots/mlb-001",
+  "isolated": true,
+  "kind": "grandfathered",
+  "live_execution": false,
+  "moved": false,
+  "name": "MLB Bot 001",
+  "notes": "MLB Bot 001 owns this folder only. Worker and strategy stay pointers. Do not copy apps/trading-engine or strategies/mlb here. Bot 002 must be research/vital/bots/mlb-002, not a child of this tree.",
+  "package": "roller.vital.mlb_001",
+  "pointers": {
+    "api": "/vital/bots/mlb-001",
+    "backend": "ROLLER/roller/vital",
+    "config": "config/live.toml",
+    "deployment": "deploy/momento-live.service",
+    "docs": "research/vital/bots/mlb-001/docs",
+    "frontend": "frontend/vital-terminal",
+    "secret_fetch": "deploy/m10-fetch-secret.sh",
+    "strategy": "strategies/mlb",
+    "worker": "apps/trading-engine"
+  },
+  "second_engine": false,
+  "sport": "mlb",
+  "tree": [
+    "metadata",
+    "source",
+    "config",
+    "deployment",
+    "runtime",
+    "logs",
+    "events",
+    "execution",
+    "docs",
+    "pointers"
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "BASE_GRADE": "F",
+  "DEBASE_GRADE": "F",
+  "artifact": "jump_iti",
+  "created_at": "2026-09-15T18:52:06Z",
+  "engine_kind": "research_iti",
+  "entry_cents": 20,
+  "files": {
+    "abase": "SuperasiABase[MLB CROSS 20 REACH 85 40 2025-03_ITI]/SuperasiABase[MLB CROSS 20 REACH 85 40 2025-03_ITI].csv",
+    "debase": "SuperasiBDeBase[MLB CROSS 20 REACH 85 40 2025-03_ITI]/SuperasiBDeBase[MLB CROSS 20 REACH 85 40 2025-03_ITI].csv",
+    "roller": "Roller[MLB CROSS 20 REACH 85 40 2025-03_ITI]/Roller[MLB CROSS 20 REACH 85 40 2025-03_ITI].csv"
+  },
+  "honesty": {
+    "confirmation_2pct": "OPERATION_REQUIRED",
+    "fees": "UNAVAILABLE",
+    "fills": "UNAVAILABLE",
+    "live_execution": false,
+    "pyramiding": "OPERATION_REQUIRED",
+    "risk_not": "candle_path_not_fill",
+    "slippage": "UNAVAILABLE"
+  },
+  "iti_version": "jump_a_iti_v1.0.0",
+  "lab_id": "682b90bc58e4437fbf04838861012e67",
+  "live_execution": false,
+  "loss_cents": 10,
+  "phase_a_result_id": "MLB CROSS 20 REACH 85 40 2025-03",
+  "phase_b_result_id": "MLB CROSS 20 REACH 85 40 2025-03",
+  "population": 6307,
+  "question": {
+    "accept_limitations": false,
+    "entry_conditions": [
+      {
+        "clock": null,
+        "event_definition": "TRADABLE_CLOSE_CROSS",
+        "id": "entry_mu1xbssh_vysak",
+        "nth": null,
+        "ordinal": "FIRST_TOUCH",
+        "period": null,
+        "price_e4": 2000,
+        "price_field": "yes_bid_close"
+      }
+    ],
+    "path_conditions": [
+      {
+        "id": "exit_mtug1t99_aq1lv",
+        "op": "REACH",
+        "outcome": "loss",
+        "price_e4": 1000,
+        "sequential": false
+      },
+      {
+        "id": "exit_mty0bwbw_mvfqe",
+        "op": "REACH",
+        "outcome": "win",
+        "price_e4": 6000,
+        "sequential": false
+      }
+    ],
+    "requested_dimensions": [
+      "HOLD_TO_SETTLEMENT"
+    ],
+    "terminal": "BOTH",
+    "universe": {
+      "date_from": "2025-03-18",
+      "date_to": "2026-09-01",
+      "game_data": [],
+      "leagues": [
+        "MLB"
+      ],
+      "market_data": [
+        "candles"
+      ],
+      "markets": [
+        "kalshi"
+      ],
+      "seasons": [
+        "2025-2026"
+      ],
+      "sports": [
+        "MLB"
+      ]
+    }
+  },
+  "run_id": "0badad3024f24e579938ad0daf86eaa4",
+  "slot_id": "ITI-00",
+  "source_debase_result_id": "MLB CROSS 20 REACH 85 40 2025-03",
+  "source_folder": "MLB CROSS 20 REACH 85 40 2025-03",
+  "strategy_name": "MLB CROSS 20 REACH 85 40 2025-03_ITI",
+  "win_cents": 60
+}

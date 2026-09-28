@@ -1,0 +1,9 @@
+{
+  "max_drawdown_fraction": 0.06510609301009918,
+  "peak_index": 1505,
+  "trough_index": 1549,
+  "peak_equity_cents": 13518704,
+  "trough_equity_cents": 12638554,
+  "series": "event_equity_cash_plus_receivable_plus_open_principal",
+  "mtm_bid_mark": "see limitations; minute marks not a fill"
+}

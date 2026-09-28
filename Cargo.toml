@@ -1,0 +1,101 @@
+[workspace]
+resolver = "2"
+members = [
+    "apps/trading-engine",
+    "apps/replay-engine",
+    "apps/research-collector",
+    "apps/nba-data",
+    "apps/ncaab-data",
+    "apps/wnba-data",
+    "apps/nhl-data",
+    "apps/mlb-data",
+    "apps/tennis-data",
+    "apps/backtest-runner",
+    "apps/sandbox-validate",
+    "apps/prod-auth-validate",
+    "apps/jump-fills-read",
+    "crates/core",
+    "crates/kalshi",
+    "crates/market-data",
+    "crates/research-strategies",
+    "crates/research-backtest",
+    "crates/research-execution",
+    "crates/research-data",
+    "crates/research-event",
+    "crates/research-ingest",
+    "crates/research-reconstruction",
+    "crates/research-market",
+    "crates/research-sync",
+    "crates/research-state",
+    "crates/research-path",
+    "crates/research-replay",
+    "crates/research-features",
+    "crates/research-engine",
+    "apps/research-api",
+    "apps/research-ingest",
+    "apps/research-w3",
+    "apps/research-w4",
+    "apps/research-w5",
+    "apps/research-w6",
+    "apps/research-w7",
+    "apps/research-w8",
+    "apps/research-b1",
+    "crates/execution",
+    "crates/risk",
+    "crates/prediction",
+    "crates/positions",
+    "crates/pnl",
+    "crates/sports",
+    "strategies/mlb",
+    "strategies/wnba",
+    "strategies/nba",
+    "strategies/research-iti",
+    "apps/nba-001",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+license = "UNLICENSED"
+publish = false
+
+[workspace.dependencies]
+chrono = { version = "0.4.42", default-features = false, features = ["std", "serde"] }
+chrono-tz = "0.10.4"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.145"
+thiserror = "2.0.16"
+toml = "0.8.23"
+tracing = "0.1.41"
+
+momento-core = { path = "crates/core" }
+momento-execution = { path = "crates/execution" }
+momento-kalshi = { path = "crates/kalshi" }
+momento-market-data = { path = "crates/market-data" }
+momento-research-data = { path = "crates/research-data" }
+momento-research-event = { path = "crates/research-event" }
+momento-research-ingest = { path = "crates/research-ingest" }
+momento-research-reconstruction = { path = "crates/research-reconstruction" }
+momento-research-market = { path = "crates/research-market" }
+momento-research-sync = { path = "crates/research-sync" }
+momento-research-state = { path = "crates/research-state" }
+momento-research-path = { path = "crates/research-path" }
+momento-research-replay = { path = "crates/research-replay" }
+momento-research-features = { path = "crates/research-features" }
+momento-research-engine = { path = "crates/research-engine" }
+momento-research-strategies = { path = "crates/research-strategies" }
+momento-research-backtest = { path = "crates/research-backtest" }
+momento-research-execution = { path = "crates/research-execution" }
+momento-pnl = { path = "crates/pnl" }
+momento-positions = { path = "crates/positions" }
+momento-prediction = { path = "crates/prediction" }
+momento-risk = { path = "crates/risk" }
+momento-sports = { path = "crates/sports" }
+momento-strategy-mlb = { path = "strategies/mlb" }
+momento-strategy-wnba = { path = "strategies/wnba" }
+momento-strategy-nba = { path = "strategies/nba" }
+momento-strategy-research-iti = { path = "strategies/research-iti" }
+
+[workspace.lints.rust]
+unsafe_code = "forbid"

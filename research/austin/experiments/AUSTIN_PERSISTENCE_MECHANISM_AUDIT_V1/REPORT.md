@@ -1,0 +1,309 @@
+AUSTIN
+PERSISTENCE MECHANISM AUDIT V1
+
+DISCOVERY ONLY
+
+MODEL FROZEN
+POLICY UNFROZEN
+CONFIRMATION UNTOUCHED
+EXECUTION DISABLED
+
+# 1. EXECUTIVE RESEARCH SUMMARY
+
+Austin can mark a worse state. This audit asks whether persistence of a negative
+Austin EV contains additional information about subsequent hold economics, and
+whether that distinction is visible before material damage.
+
+Persistence additional information: SUPPORTED
+Visible before material damage: NOT_SUPPORTED
+Justifies new pre-registered V2 policy experiment: False
+
+This is not Austin accuracy. Temporary/persistent labels are descriptive outcomes.
+
+# 2. AUDIT IDENTITY / LOCKS
+
+audit_id AUSTIN_PERSISTENCE_MECHANISM_AUDIT_V1
+model_manifest_hash 4a47bf9ad3a2fcd4bb092a77cf93d534e308423deec29e33b6e6bad85c76431c
+A discovery hash f7bc6280913c63a2a50cb5181b0c523c5492bbdb47da167d9639e2f867a87e36
+A confirmation hash 4bc027bddba0f723b914b2d80e0ff49ae0eb0bff94711860e310737941e0f0e4
+B discovery hash 699e6bb65fe4fa3dffc566b352f089c109ffadfb501b830e2c129f2e66450840
+B confirmation hash 1ce8a0b2f3d3ee88d34cb0e4833cf3369aa776fc75bff912d7e2f3b2a4173c51
+git_commit UNAVAILABLE reason=not_a_git_repo
+confirmation_accessed False
+policy_status UNFROZEN
+policy_selected NONE
+
+# 3. WHY THIS AUDIT EXISTS
+
+Discovery showed first-negative EV often recovers. Persistence of Austin EV is
+not automatically persistence of economic decline. The audit measures that gap.
+
+# 4. FIRST-NEGATIVE POPULATION
+
+## A · H1_2
+
+FIRST NEGATIVE EV POPULATION
+
+N first-negative 67
+N temporary 51
+N persistent 15
+N unresolved 1
+
+## B · H2_1
+
+FIRST NEGATIVE EV POPULATION
+
+N first-negative 22
+N temporary 5
+N persistent 6
+N unresolved 11
+
+# 5. TEMPORARY VS PERSISTENT NEGATIVE EV
+
+TEMPORARY_NEGATIVE_EV = later valid PRIMARY EV >= 0 exists.
+PERSISTENT_NEGATIVE_EV = later valid PRIMARY EV exists and all stay < 0.
+UNRESOLVED_NO_LATER_VALID_EV = no later valid PRIMARY EV.
+Missing later observations never imply persistent.
+Later is PRIMARY_GRID clock order, not wall timestamp. Discovery interpretation
+used timestamp order, so class counts can differ without changing Discovery files.
+
+# 6. ECONOMIC SEPARATION
+
+## A · H1_2
+
+FIRST NEGATIVE EV POPULATION
+
+N first-negative 67
+N temporary 51
+N persistent 15
+N unresolved 1
+
+TEMPORARY
+wins 44
+losses 7
+mean subsequent PNL 6.2745
+median subsequent PNL 20.0000
+T40 rate 1.0000
+recover >=50 1.0000
+recover >=60 1.0000
+recover >=70 0.9804
+recover >=80 0.9020
+future MAE 9.2157
+future MFE 19.2941
+
+PERSISTENT
+wins 9
+losses 6
+mean subsequent PNL -20.0000
+median subsequent PNL 20.0000
+T40 rate 1.0000
+recover >=50 1.0000
+recover >=60 0.8000
+recover >=70 0.5333
+recover >=80 0.4000
+future MAE 20.0667
+future MFE 1.6667
+
+PERSISTENT - TEMPORARY
+Δ PNL -26.2745 CI=[-52.7017, 0.0146] MIXED
+Δ loss rate 0.2627 CI=[-0.0001, 0.5270] MIXED
+Δ T40 0.0000 CI=[0.0000, 0.0000] MIXED
+Δ MAE 10.8510 CI=[-5.0758, 28.3390] MIXED
+Δ MFE -17.6275 CI=[-23.0373, -12.4129] SUPPORTED
+
+## B · H2_1
+
+FIRST NEGATIVE EV POPULATION
+
+N first-negative 22
+N temporary 5
+N persistent 6
+N unresolved 11
+
+TEMPORARY
+wins 5
+losses 0
+mean subsequent PNL 20.0000
+median subsequent PNL 20.0000
+T40 rate 1.0000
+recover >=50 1.0000
+recover >=60 1.0000
+recover >=70 1.0000
+recover >=80 1.0000
+future MAE 17.2000
+future MFE 21.0000
+
+PERSISTENT
+wins 2
+losses 4
+mean subsequent PNL -46.6667
+median subsequent PNL -80.0000
+T40 rate 1.0000
+recover >=50 0.3333
+recover >=60 0.1667
+recover >=70 0.1667
+recover >=80 0.0000
+future MAE 18.8333
+future MFE -5.1667
+
+PERSISTENT - TEMPORARY
+Δ PNL -66.6667 CI=[-100.0000, -25.0000] SUPPORTED
+Δ loss rate 0.6667 CI=[0.2500, 1.0000] SUPPORTED
+Δ T40 0.0000 CI=[0.0000, 0.0000] MIXED
+Δ MAE 1.6333 CI=[-25.5083, 29.5733] MIXED
+Δ MFE -26.1667 CI=[-38.8982, -11.5233] SUPPORTED
+
+# 7. PIT STATE AT FIRST NEGATIVE EV
+
+### A PIT DIFFERENCES AT FIRST NEGATIVE
+
+first_negative_EV: temp -27.3321/-17.8361 pers -33.5601/-27.3979 Δ -6.2279 CI=[-20.78543879834221, 10.03477877599428] d=-0.2410 MIXED
+EV_DEPTH_BELOW_ZERO: temp 27.3321/17.8361 pers 33.5601/27.3979 Δ 6.2279 CI=[-10.03477877599428, 20.785438798342206] d=0.2410 MIXED
+EV_CHANGE_FROM_ENTRY: temp -12.1724/0.0000 pers -11.1221/0.0000 Δ 1.0502 CI=[-12.685894138087958, 12.600051629946853] d=0.0447 MIXED
+EV_CHANGE_FROM_PREVIOUS: temp -43.7998/-35.0250 pers -35.9662/-30.2635 Δ 7.8336 CI=[-20.762458117507496, 32.690496049082086] d=0.3205 MIXED
+EV_SLOPE_FROM_ENTRY: temp -9.0698/-7.3090 pers -4.7061/-2.7600 Δ 4.3637 CI=[-1.7288673835142183, 10.057519083648277] d=0.6238 MIXED
+CI_LOWER: temp -43.4529/-36.0000 pers -49.8667/-48.0000 Δ -6.4137 CI=[-18.98103235294118, 7.957176639972889] d=-0.2948 MIXED
+CI_UPPER: temp -11.9922/0.0000 pers -17.0667/-8.0000 Δ -5.0745 CI=[-21.428433222345543, 11.85352258174678] d=-0.1748 MIXED
+CI_WIDTH: temp 31.4608/36.0000 pers 32.8000/32.0000 Δ 1.3392 CI=[-3.792795008912645, 6.124927817625308] d=0.1230 MIXED
+CI_ENTIRELY_NEGATIVE: temp 0.4314/0.0000 pers 0.6667/1.0000 Δ 0.2353 CI=[-0.08250000000000002, 0.4909893048128342] d=0.4729 MIXED
+CI_CROSSES_ZERO: temp 0.4706/0.0000 pers 0.3333/0.0000 Δ -0.1373 CI=[-0.39767300194931776, 0.16249999999999998] d=-0.2742 MIXED
+PRICE: temp 75.6078/81.0000 pers 72.7333/70.0000 Δ -2.8745 CI=[-11.459320573294626, 6.297814992025522] d=-0.1679 MIXED
+PRICE_TRAVEL: temp -6.3922/-2.0000 pers -8.9333/-11.0000 Δ -2.5412 CI=[-10.951918767507003, 6.069983351831299] d=-0.1528 MIXED
+SCORE_TRAVEL: temp 23.1765/20.0000 pers 38.5333/37.0000 Δ 15.3569 CI=[-1.7069907963185251, 35.29670138888889] d=0.6563 MIXED
+SCORE_DIFF_TRAVEL: temp -1.1373/-1.0000 pers -3.2000/-5.0000 Δ -2.0627 CI=[-4.926259920634921, 1.0575734890109891] d=-0.3675 MIXED
+TIME_SINCE_ENTRY: temp 364.2549/313.0000 pers 584.2000/499.0000 Δ 219.9451 CI=[-44.36588385354144, 502.91048844537806] d=0.6461 MIXED
+GAME_TIME_REMAINING: temp 1117.6471/1200.0000 pers 972.0000/1200.0000 Δ -145.6471 CI=[-399.65729813664586, 89.49818181818182] d=-0.4687 MIXED
+ESS: temp 24.7563/24.8906 pers 24.5715/24.8655 Δ -0.1848 CI=[-0.5433010962713182, 0.12295792025723092] d=-0.4521 MIXED
+EFFECTIVE_NEIGHBORS: temp 25.0000/25.0000 pers 25.0000/25.0000 Δ 0.0000 CI=[0.0, 0.0] d=UNAVAILABLE MIXED
+MEAN_DISTANCE: temp 1.1893/1.1928 pers 1.0542/0.9508 Δ -0.1352 CI=[-0.32532545637336663, 0.08982208407349294] d=-0.2852 MIXED
+MEDIAN_DISTANCE: temp 1.1908/1.1646 pers 1.0619/0.9459 Δ -0.1289 CI=[-0.32228411167184484, 0.10459382865176955] d=-0.2631 MIXED
+FEATURE_COVERAGE: temp 0.9565/0.9855 pers 0.9556/0.9855 Δ -0.0010 CI=[-0.04243922601978862, 0.03251167582417579] d=-0.0171 MIXED
+CI_ENTIRELY_NEGATIVE: temp 0.4314/0.0000 pers 0.6667/1.0000 Δ 0.2353 CI=[-0.08250000000000002, 0.4909893048128342] d=0.4729 MIXED
+
+### B PIT DIFFERENCES AT FIRST NEGATIVE
+
+first_negative_EV: temp -20.5831/-18.3278 pers -43.7343/-44.9142 Δ -23.1513 CI=[-41.934123537190004, -2.365024172624353] d=-1.2577 SUPPORTED
+EV_DEPTH_BELOW_ZERO: temp 20.5831/18.3278 pers 43.7343/44.9142 Δ 23.1513 CI=[2.3650241726243464, 41.93412353718998] d=1.2577 SUPPORTED
+EV_CHANGE_FROM_ENTRY: temp -8.7174/0.0000 pers -8.7338/0.0000 Δ -0.0164 CI=[-20.452592136739973, 15.92914473230679] d=-0.0009 MIXED
+EV_CHANGE_FROM_PREVIOUS: temp -21.7935/-21.7935 pers -44.8196/-44.8196 Δ -23.0261 CI=[-24.698896152213887, -21.35325465235443] d=UNAVAILABLE INSUFFICIENT_SAMPLE
+EV_SLOPE_FROM_ENTRY: temp -8.3817/-8.3817 pers -3.7431/-3.7431 Δ 4.6386 CI=[1.287124811554376, 7.990122652297379] d=UNAVAILABLE INSUFFICIENT_SAMPLE
+CI_LOWER: temp -38.4000/-36.0000 pers -59.3333/-62.0000 Δ -20.9333 CI=[-38.519444444444446, -1.8376190476190744] d=-1.2904 SUPPORTED
+CI_UPPER: temp -3.1600/0.0000 pers -26.6667/-26.0000 Δ -23.5067 CI=[-42.482976190476144, -2.660000000000004] d=-1.2461 SUPPORTED
+CI_WIDTH: temp 35.2400/36.0000 pers 32.6667/36.0000 Δ -2.5733 CI=[-9.350166666666654, 3.7668750000000593] d=-0.4157 MIXED
+CI_ENTIRELY_NEGATIVE: temp 0.4000/0.0000 pers 0.8333/1.0000 Δ 0.4333 CI=[-0.2222222222222222, 1.0] d=0.9117 MIXED
+CI_CROSSES_ZERO: temp 0.2000/0.0000 pers 0.1667/0.0000 Δ -0.0333 CI=[-0.5416666666666666, 0.4288095238095236] d=-0.0782 MIXED
+PRICE: temp 78.0000/79.0000 pers 52.6667/52.5000 Δ -25.3333 CI=[-42.70071428571429, -9.953750000000007] d=-1.7635 SUPPORTED
+PRICE_TRAVEL: temp -5.4000/-4.0000 pers -29.5000/-31.0000 Δ -24.1000 CI=[-41.271190476190476, -8.245833333333337] d=-1.6824 SUPPORTED
+SCORE_TRAVEL: temp 21.6000/21.0000 pers 42.3333/41.0000 Δ 20.7333 CI=[6.396666666666666, 32.80999999999999] d=1.6264 SUPPORTED
+SCORE_DIFF_TRAVEL: temp -1.6000/-3.0000 pers -7.6667/-9.0000 Δ -6.0667 CI=[-9.834999999999999, -2.1654761904761917] d=-1.7974 SUPPORTED
+TIME_SINCE_ENTRY: temp 335.8000/350.0000 pers 679.5000/673.0000 Δ 343.7000 CI=[113.94583333333337, 525.45] d=1.7204 SUPPORTED
+GAME_TIME_REMAINING: temp 456.0000/480.0000 pers 160.0000/0.0000 Δ -296.0000 CI=[-531.4571428571429, 34.57142857142831] d=-1.0895 MIXED
+ESS: temp 23.7956/24.0517 pers 22.5789/22.3489 Δ -1.2167 CI=[-2.5983737070115587, 0.32348141313416257] d=-0.8963 MIXED
+EFFECTIVE_NEIGHBORS: temp 25.0000/25.0000 pers 25.0000/25.0000 Δ 0.0000 CI=[0.0, 0.0] d=UNAVAILABLE MIXED
+MEAN_DISTANCE: temp 0.9263/0.7583 pers 0.8233/0.7872 Δ -0.1030 CI=[-0.5814604823902209, 0.2959865491517414] d=-0.2652 MIXED
+MEDIAN_DISTANCE: temp 0.9527/0.8035 pers 0.8212/0.8371 Δ -0.1315 CI=[-0.6433982592541764, 0.32986674185720916] d=-0.2939 MIXED
+FEATURE_COVERAGE: temp 0.9826/0.9855 pers 0.9952/1.0000 Δ 0.0126 CI=[-2.220446049250313e-16, 0.021739130434782594] d=1.2789 MIXED
+CI_ENTIRELY_NEGATIVE: temp 0.4000/0.0000 pers 0.8333/1.0000 Δ 0.4333 CI=[-0.2222222222222222, 1.0] d=0.9117 MIXED
+
+# 8. TRAJECTORY AFTER FIRST NEGATIVE
+
+t1/t2/t3 are next valid PRIMARY states only. No interpolation.
+
+# 9. t1 / t2 PERSISTENCE LANDMARKS
+
+### A PERSISTENCE LANDMARKS
+
+Nested descriptive groups. No best row.
+
+NEGATIVE_AT_T0: N=67 loss_rate=0.2090 mean PNL=-0.8955 T40=1.0000 MAE=11.6818 MFE=15.2879
+NEGATIVE_AT_T0_T1: N=48 loss_rate=0.1667 mean PNL=3.3333 T40=1.0000 MAE=12.1667 MFE=13.0833
+NEGATIVE_AT_T0_T1_T2: N=44 loss_rate=0.1818 mean PNL=1.8182 T40=1.0000 MAE=13.2045 MFE=12.9545
+NEGATIVE_AT_T0_T1_T2_T3: N=41 loss_rate=0.1463 mean PNL=5.3659 T40=1.0000 MAE=12.3415 MFE=13.5854
+
+### B PERSISTENCE LANDMARKS
+
+Nested descriptive groups. No best row.
+
+NEGATIVE_AT_T0: N=22 loss_rate=0.5455 mean PNL=-34.5455 T40=1.0000 MAE=17.7143 MFE=1.7857
+NEGATIVE_AT_T0_T1: N=7 loss_rate=0.5714 mean PNL=-37.1429 T40=1.0000 MAE=17.0000 MFE=0.2857
+NEGATIVE_AT_T0_T1_T2: N=5 loss_rate=0.6000 mean PNL=-40.0000 T40=1.0000 MAE=19.8000 MFE=-3.4000
+NEGATIVE_AT_T0_T1_T2_T3: N=3 loss_rate=0.6667 mean PNL=-46.6667 T40=1.0000 MAE=27.6667 MFE=-0.3333
+
+# 10. RECOVERY BEHAVIOR
+
+Recover >=50/60/70/80 is future price after t0. Outcome only.
+
+# 11. FUTURE MAE / MFE
+
+MAE/MFE are subsequent price extremes after t0. They are not PIT features.
+
+# 12. T40 RELATIONSHIP
+
+A T40 temporary 1.0000 persistent 1.0000
+B T40 temporary 1.0000 persistent 1.0000
+
+# 13. WARNING-TIME INTERPRETATION
+
+Discovery warning definition is preserved. It is not redefined to look better.
+A AVAILABLE=5 TOO_LATE=62 NONE=29
+B AVAILABLE=0 TOO_LATE=22 NONE=47
+A warning-before-damage among losses {'n': 0, 'n_losses': 15, 'note': 'preserved Discovery definition; not redefined'}
+B warning-before-damage among losses {'n': 0, 'n_losses': 12, 'note': 'preserved Discovery definition; not redefined'}
+New timing rows in warning_persistence_timing.csv are descriptive only.
+
+# 14. H2_1 ALIGNMENT AUDIT
+
+status=EXPECTED_FROM_CANONICAL_TIMING
+potential_data_alignment_defect=False
+n_clock_wall_mismatch=61 n_aligned=8
+median_pbp_minus_entry_seconds=-18.0000
+median_wall_minus_entry_seconds=-827.0000
+Alignment is observed, not repaired. A reconstruction change would require a new experiment version.
+
+# 15. SUPPORT / DISTANCE / MISSINGNESS
+
+A unresolved 1 B unresolved 11
+UNRESOLVED is not persistent. B remains thin on valid later states.
+
+# 16. STATISTICAL UNCERTAINTY
+
+cluster=internal_game_id seed=80 B=1000. A and B never pooled as the headline.
+Appendix A+B is labeled POOLED DESCRIPTIVE — NOT CONFIRMATION.
+
+# 17. LEAKAGE / INTEGRITY
+
+model hash PASS
+leakage PASS
+confirmation protection PASS
+
+# 18. WHAT THE DATA SHOWS
+
+A Δ PNL -26.2745 CI=[-52.7017, 0.0146] MIXED
+B Δ PNL -66.6667 CI=[-100.0000, -25.0000] SUPPORTED
+
+# 19. WHAT AUSTIN MAY BE MEASURING
+
+A first negative EV is a distress mark. Persistence of that mark is a later
+Austin-state description. It is not automatically terminal economic decline.
+
+# 20. WHAT HAS NOT BEEN PROVEN
+
+No live rule. No fill. No executable exit. No POLICY_* winner. No confirmation.
+No Austin accuracy percentage.
+
+# 21. WHETHER A NEW PRE-REGISTERED POLICY EXPERIMENT IS JUSTIFIED
+
+False
+If later work preregisters a delay-based persistence rule, it must be a new experiment. This audit does not create POLICY_G or freeze POLICY_A–F.
+
+FUTURE HYPOTHESIS only. No POLICY_G. No freeze. No confirmation.
+
+## Appendix · POOLED DESCRIPTIVE — NOT CONFIRMATION
+
+pooled first-negative N=89
+Not a headline. Not confirmation.
+
+POLICY STATUS = UNFROZEN
+CONFIRMATION A = NOT RUN
+CONFIRMATION B = NOT RUN
+

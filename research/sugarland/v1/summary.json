@@ -1,0 +1,1616 @@
+{
+  "universe_id": "SUGARLAND_PREGAME_V1",
+  "spec_sha256": "dee6d030687de349f09b197a73cda05c945bdd5a48018525f20f150f0d865ccf",
+  "live_execution": false,
+  "submits": false,
+  "built_at": "2026-09-23T15:39:13Z",
+  "tables": {
+    "headline_first_observed_above_70": [
+      {
+        "eligible_n": 180,
+        "endpoint_n": 134,
+        "mean_dpp": 0.6791044776119403,
+        "median_dpp": 1.5,
+        "sd_dpp": 18.74987749183784,
+        "q10": -5.699999999999999,
+        "q25": -1.0,
+        "q75": 7.0,
+        "q90": 20.0,
+        "share_rising": 0.5746268656716418,
+        "share_unchanged": 0.14925373134328357,
+        "share_falling": 0.27611940298507465,
+        "ci95_low": -2.726157703798549,
+        "ci95_high": 3.806976744186046,
+        "mean_return_on_ask": -0.045167888417174104,
+        "share_gross_positive": 0.27611940298507465,
+        "discovery_mean_dpp": 1.8080808080808082,
+        "discovery_endpoint_n": 99,
+        "validation_mean_dpp": -2.5142857142857142,
+        "validation_endpoint_n": 35,
+        "status": "OBSERVED",
+        "mean_dpp_without_largest_gain": 0.48120300751879697,
+        "endpoint_n_without_largest_gain": 133,
+        "sport": "WNBA",
+        "cohort": "FIRST_OBSERVED_ABOVE_70"
+      },
+      {
+        "eligible_n": 359,
+        "endpoint_n": 359,
+        "mean_dpp": 3.6462395543175488,
+        "median_dpp": 6.0,
+        "sd_dpp": 10.486233649635313,
+        "q10": -7.0,
+        "q25": 1.5,
+        "q75": 9.0,
+        "q90": 13.0,
+        "share_rising": 0.7827298050139275,
+        "share_unchanged": 0.027855153203342618,
+        "share_falling": 0.1894150417827298,
+        "ci95_low": 2.2954034928888682,
+        "ci95_high": 4.901210748320574,
+        "mean_return_on_ask": -0.019676923506745613,
+        "share_gross_positive": 0.49303621169916434,
+        "discovery_mean_dpp": 4.628930817610063,
+        "discovery_endpoint_n": 159,
+        "validation_mean_dpp": 2.865,
+        "validation_endpoint_n": 200,
+        "status": "OBSERVED",
+        "mean_dpp_without_largest_gain": 3.600558659217877,
+        "endpoint_n_without_largest_gain": 358,
+        "sport": "NBA",
+        "cohort": "FIRST_OBSERVED_ABOVE_70"
+      },
+      {
+        "eligible_n": 322,
+        "endpoint_n": 312,
+        "mean_dpp": 3.1923076923076925,
+        "median_dpp": 4.0,
+        "sd_dpp": 7.276456669772651,
+        "q10": -5.0,
+        "q25": 0.0,
+        "q75": 8.0,
+        "q90": 11.0,
+        "share_rising": 0.7403846153846154,
+        "share_unchanged": 0.060897435897435896,
+        "share_falling": 0.1987179487179487,
+        "ci95_low": 2.274672619047619,
+        "ci95_high": 4.15297103051747,
+        "mean_return_on_ask": -0.04340806787265068,
+        "share_gross_positive": 0.19230769230769232,
+        "discovery_mean_dpp": 1.3482142857142858,
+        "discovery_endpoint_n": 112,
+        "validation_mean_dpp": 4.225,
+        "validation_endpoint_n": 200,
+        "status": "OBSERVED",
+        "mean_dpp_without_largest_gain": 3.1382636655948555,
+        "endpoint_n_without_largest_gain": 311,
+        "sport": "NCAAB",
+        "cohort": "FIRST_OBSERVED_ABOVE_70"
+      },
+      {
+        "eligible_n": 83,
+        "endpoint_n": 83,
+        "mean_dpp": -5.240963855421687,
+        "median_dpp": -1.0,
+        "sd_dpp": 10.759669912252367,
+        "q10": -23.599999999999998,
+        "q25": -5.0,
+        "q75": 1.0,
+        "q90": 2.0,
+        "share_rising": 0.3614457831325301,
+        "share_unchanged": 0.12048192771084337,
+        "share_falling": 0.5180722891566265,
+        "ci95_low": -7.7213217938631,
+        "ci95_high": -2.5640625000000004,
+        "mean_return_on_ask": -0.0937700974391782,
+        "share_gross_positive": 0.07228915662650602,
+        "discovery_mean_dpp": -0.5333333333333333,
+        "discovery_endpoint_n": 60,
+        "validation_mean_dpp": -17.52173913043478,
+        "validation_endpoint_n": 23,
+        "status": "OBSERVED",
+        "mean_dpp_without_largest_gain": -5.353658536585366,
+        "endpoint_n_without_largest_gain": 82,
+        "sport": "MLB",
+        "cohort": "FIRST_OBSERVED_ABOVE_70"
+      }
+    ],
+    "around_80": [
+      {
+        "eligible_n": 20,
+        "endpoint_n": 8,
+        "mean_dpp": 15.125,
+        "median_dpp": 18.0,
+        "sd_dpp": 6.599512969043355,
+        "q10": 10.200000000000001,
+        "q25": 16.5,
+        "q75": 18.0,
+        "q90": 18.0,
+        "share_rising": 0.875,
+        "share_unchanged": 0.0,
+        "share_falling": 0.125,
+        "ci95_low": 9.428571428571429,
+        "ci95_high": 17.889166666666668,
+        "mean_return_on_ask": 0.16590719494634668,
+        "share_gross_positive": 0.875,
+        "discovery_mean_dpp": "UNAVAILABLE",
+        "discovery_endpoint_n": 0,
+        "validation_mean_dpp": 15.125,
+        "validation_endpoint_n": 8,
+        "status": "OBSERVED",
+        "mean_dpp_without_largest_gain": 14.714285714285714,
+        "endpoint_n_without_largest_gain": 7,
+        "sport": "WNBA",
+        "cohort": "AROUND_80_78_82",
+        "horizon_h": 48
+      },
+      {
+        "eligible_n": 32,
+        "endpoint_n": 17,
+        "mean_dpp": 5.705882352941177,
+        "median_dpp": 15.0,
+        "sd_dpp": 20.909820377882113,
+        "q10": -13.4,
+        "q25": 6.0,
+        "q75": 18.0,
+        "q90": 19.0,
+        "share_rising": 0.7647058823529411,
+        "share_unchanged": 0.0,
+        "share_falling": 0.23529411764705882,
+        "ci95_low": -5.333749999999999,
+        "ci95_high": 13.813020833333333,
+        "mean_return_on_ask": 0.05555119911726003,
+        "share_gross_positive": 0.7647058823529411,
+        "discovery_mean_dpp": "UNAVAILABLE",
+        "discovery_endpoint_n": 0,
+        "validation_mean_dpp": 5.705882352941177,
+        "validation_endpoint_n": 17,
+        "status": "OBSERVED",
+        "mean_dpp_without_largest_gain": 4.8125,
+        "endpoint_n_without_largest_gain": 16,
+        "sport": "WNBA",
+        "cohort": "AROUND_80_78_82",
+        "horizon_h": 24
+      },
+      {
+        "eligible_n": 45,
+        "endpoint_n": 20,
+        "mean_dpp": 6.55,
+        "median_dpp": 15.0,
+        "sd_dpp": 19.599879161818695,
+        "q10": -13.1,
+        "q25": 4.25,
+        "q75": 18.0,
+        "q90": 18.1,
+        "share_rising": 0.75,
+        "share_unchanged": 0.0,
+        "share_falling": 0.25,
+        "ci95_low": -0.7003571428571428,
+        "ci95_high": 13.11491228070175,
+        "mean_return_on_ask": 0.06263106533565027,
+        "share_gross_positive": 0.75,
+        "discovery_mean_dpp": "UNAVAILABLE",
+        "discovery_endpoint_n": 0,
+        "validation_mean_dpp": 6.55,
+        "validation_endpoint_n": 20,
+        "status": "OBSERVED",
+        "mean_dpp_without_largest_gain": 5.842105263157895,
+        "endpoint_n_without_largest_gain": 19,
+        "sport": "WNBA",
+        "cohort": "AROUND_80_UNION_PREFER_48H",
+        "horizon_h": "48_else_24"
+      },
+      {
+        "eligible_n": 63,
+        "endpoint_n": 63,
+        "mean_dpp": 3.365079365079365,
+        "median_dpp": 4.0,
+        "sd_dpp": 5.128357554156789,
+        "q10": -3.8,
+        "q25": 0.0,
+        "q75": 7.5,
+        "q90": 10.0,
+        "share_rising": 0.7142857142857143,
+        "share_unchanged": 0.07936507936507936,
+        "share_falling": 0.20634920634920634,
+        "ci95_low": 2.2538690476190477,
+        "ci95_high": 4.416666666666667,
+        "mean_return_on_ask": -0.00037387242748945884,
+        "share_gross_positive": 0.4444444444444444,
+        "discovery_mean_dpp": 5.0,
+        "discovery_endpoint_n": 23,
+        "validation_mean_dpp": 2.425,
+        "validation_endpoint_n": 40,
+        "status": "OBSERVED",
+        "mean_dpp_without_largest_gain": 3.2096774193548385,
+        "endpoint_n_without_largest_gain": 62,
+        "sport": "NBA",
+        "cohort": "AROUND_80_78_82",
+        "horizon_h": 48
+      },
+      {
+        "eligible_n": 133,
+        "endpoint_n": 133,
+        "mean_dpp": 0.43609022556390975,
+        "median_dpp": 0.0,
+        "sd_dpp": 2.892920783302637,
+        "q10": -3.0,
+        "q25": -1.0,
+        "q75": 2.0,
+        "q90": 4.0,
+        "share_rising": 0.48872180451127817,
+        "share_unchanged": 0.15037593984962405,
+        "share_falling": 0.3609022556390977,
+        "ci95_low": 0.014230389881643083,
+        "ci95_high": 0.8832328361366762,
+        "mean_return_on_ask": -0.015070841683386522,
+        "share_gross_positive": 0.2706766917293233,
+        "discovery_mean_dpp": 0.6352941176470588,
+        "discovery_endpoint_n": 85,
+        "validation_mean_dpp": 0.08333333333333333,
+        "validation_endpoint_n": 48,
+        "status": "OBSERVED",
+        "mean_dpp_without_largest_gain": 0.3712121212121212,
+        "endpoint_n_without_largest_gain": 132,
+        "sport": "NBA",
+        "cohort": "AROUND_80_78_82",
+        "horizon_h": 24
+      },
+      {
+        "eligible_n": 172,
+        "endpoint_n": 172,
+        "mean_dpp": 1.5406976744186047,
+        "median_dpp": 1.0,
+        "sd_dpp": 4.144125071691143,
+        "q10": -3.0,
+        "q25": -1.0,
+        "q75": 4.0,
+        "q90": 7.0,
+        "share_rising": 0.5813953488372093,
+        "share_unchanged": 0.11627906976744186,
+        "share_falling": 0.3023255813953488,
+        "ci95_low": 0.9868737800910866,
+        "ci95_high": 2.096974025974026,
+        "mean_return_on_ask": -0.009290621591193272,
+        "share_gross_positive": 0.3430232558139535,
+        "discovery_mean_dpp": 1.58,
+        "discovery_endpoint_n": 100,
+        "validation_mean_dpp": 1.4861111111111112,
+        "validation_endpoint_n": 72,
+        "status": "OBSERVED",
+        "mean_dpp_without_largest_gain": 1.4736842105263157,
+        "endpoint_n_without_largest_gain": 171,
+        "sport": "NBA",
+        "cohort": "AROUND_80_UNION_PREFER_48H",
+        "horizon_h": "48_else_24"
+      },
+      {
+        "eligible_n": 1,
+        "endpoint_n": 1,
+        "mean_dpp": -2.0,
+        "median_dpp": -2.0,
+        "sd_dpp": "UNAVAILABLE",
+        "q10": -2.0,
+        "q25": -2.0,
+        "q75": -2.0,
+        "q90": -2.0,
+        "share_rising": 0.0,
+        "share_unchanged": 0.0,
+        "share_falling": 1.0,
+        "ci95_low": "INSUFFICIENT_SAMPLE",
+        "ci95_high": "INSUFFICIENT_SAMPLE",
+        "mean_return_on_ask": -0.047619047619047616,
+        "share_gross_positive": 0.0,
+        "discovery_mean_dpp": "UNAVAILABLE",
+        "discovery_endpoint_n": 0,
+        "validation_mean_dpp": -2.0,
+        "validation_endpoint_n": 1,
+        "status": "OBSERVED",
+        "mean_dpp_without_largest_gain": "UNAVAILABLE",
+        "endpoint_n_without_largest_gain": 0,
+        "sport": "NCAAB",
+        "cohort": "AROUND_80_78_82",
+        "horizon_h": 48
+      },
+      {
+        "eligible_n": 35,
+        "endpoint_n": 34,
+        "mean_dpp": 3.8823529411764706,
+        "median_dpp": 2.0,
+        "sd_dpp": 4.597527042004297,
+        "q10": -0.6999999999999997,
+        "q25": 1.25,
+        "q75": 6.0,
+        "q90": 11.099999999999998,
+        "share_rising": 0.7941176470588235,
+        "share_unchanged": 0.08823529411764706,
+        "share_falling": 0.11764705882352941,
+        "ci95_low": 2.558489304812834,
+        "ci95_high": 5.778333333333332,
+        "mean_return_on_ask": -0.013629813156073617,
+        "share_gross_positive": 0.35294117647058826,
+        "discovery_mean_dpp": 6.4,
+        "discovery_endpoint_n": 5,
+        "validation_mean_dpp": 3.4482758620689653,
+        "validation_endpoint_n": 29,
+        "status": "OBSERVED",
+        "mean_dpp_without_largest_gain": 3.5454545454545454,
+        "endpoint_n_without_largest_gain": 33,
+        "sport": "NCAAB",
+        "cohort": "AROUND_80_78_82",
+        "horizon_h": 24
+      },
+      {
+        "eligible_n": 35,
+        "endpoint_n": 34,
+        "mean_dpp": 3.8529411764705883,
+        "median_dpp": 2.0,
+        "sd_dpp": 4.6327709683212035,
+        "q10": -0.6999999999999997,
+        "q25": 1.25,
+        "q75": 6.0,
+        "q90": 11.099999999999998,
+        "share_rising": 0.7941176470588235,
+        "share_unchanged": 0.08823529411764706,
+        "share_falling": 0.11764705882352941,
+        "ci95_low": 2.511890243902439,
+        "ci95_high": 5.76,
+        "mean_return_on_ask": -0.014313013265385635,
+        "share_gross_positive": 0.35294117647058826,
+        "discovery_mean_dpp": 6.4,
+        "discovery_endpoint_n": 5,
+        "validation_mean_dpp": 3.413793103448276,
+        "validation_endpoint_n": 29,
+        "status": "OBSERVED",
+        "mean_dpp_without_largest_gain": 3.515151515151515,
+        "endpoint_n_without_largest_gain": 33,
+        "sport": "NCAAB",
+        "cohort": "AROUND_80_UNION_PREFER_48H",
+        "horizon_h": "48_else_24"
+      },
+      {
+        "eligible_n": 0,
+        "endpoint_n": 0,
+        "mean_dpp": "UNAVAILABLE",
+        "median_dpp": "UNAVAILABLE",
+        "sd_dpp": "UNAVAILABLE",
+        "q10": "UNAVAILABLE",
+        "q25": "UNAVAILABLE",
+        "q75": "UNAVAILABLE",
+        "q90": "UNAVAILABLE",
+        "share_rising": "UNAVAILABLE",
+        "share_unchanged": "UNAVAILABLE",
+        "share_falling": "UNAVAILABLE",
+        "ci95_low": "UNAVAILABLE",
+        "ci95_high": "UNAVAILABLE",
+        "mean_return_on_ask": "UNAVAILABLE",
+        "share_gross_positive": "UNAVAILABLE",
+        "discovery_mean_dpp": "UNAVAILABLE",
+        "discovery_endpoint_n": 0,
+        "validation_mean_dpp": "UNAVAILABLE",
+        "validation_endpoint_n": 0,
+        "status": "UNAVAILABLE",
+        "mean_dpp_without_largest_gain": "UNAVAILABLE",
+        "endpoint_n_without_largest_gain": 0,
+        "sport": "MLB",
+        "cohort": "AROUND_80_78_82",
+        "horizon_h": 48
+      },
+      {
+        "eligible_n": 0,
+        "endpoint_n": 0,
+        "mean_dpp": "UNAVAILABLE",
+        "median_dpp": "UNAVAILABLE",
+        "sd_dpp": "UNAVAILABLE",
+        "q10": "UNAVAILABLE",
+        "q25": "UNAVAILABLE",
+        "q75": "UNAVAILABLE",
+        "q90": "UNAVAILABLE",
+        "share_rising": "UNAVAILABLE",
+        "share_unchanged": "UNAVAILABLE",
+        "share_falling": "UNAVAILABLE",
+        "ci95_low": "UNAVAILABLE",
+        "ci95_high": "UNAVAILABLE",
+        "mean_return_on_ask": "UNAVAILABLE",
+        "share_gross_positive": "UNAVAILABLE",
+        "discovery_mean_dpp": "UNAVAILABLE",
+        "discovery_endpoint_n": 0,
+        "validation_mean_dpp": "UNAVAILABLE",
+        "validation_endpoint_n": 0,
+        "status": "UNAVAILABLE",
+        "mean_dpp_without_largest_gain": "UNAVAILABLE",
+        "endpoint_n_without_largest_gain": 0,
+        "sport": "MLB",
+        "cohort": "AROUND_80_78_82",
+        "horizon_h": 24
+      },
+      {
+        "eligible_n": 0,
+        "endpoint_n": 0,
+        "mean_dpp": "UNAVAILABLE",
+        "median_dpp": "UNAVAILABLE",
+        "sd_dpp": "UNAVAILABLE",
+        "q10": "UNAVAILABLE",
+        "q25": "UNAVAILABLE",
+        "q75": "UNAVAILABLE",
+        "q90": "UNAVAILABLE",
+        "share_rising": "UNAVAILABLE",
+        "share_unchanged": "UNAVAILABLE",
+        "share_falling": "UNAVAILABLE",
+        "ci95_low": "UNAVAILABLE",
+        "ci95_high": "UNAVAILABLE",
+        "mean_return_on_ask": "UNAVAILABLE",
+        "share_gross_positive": "UNAVAILABLE",
+        "discovery_mean_dpp": "UNAVAILABLE",
+        "discovery_endpoint_n": 0,
+        "validation_mean_dpp": "UNAVAILABLE",
+        "validation_endpoint_n": 0,
+        "status": "UNAVAILABLE",
+        "mean_dpp_without_largest_gain": "UNAVAILABLE",
+        "endpoint_n_without_largest_gain": 0,
+        "sport": "MLB",
+        "cohort": "AROUND_80_UNION_PREFER_48H",
+        "horizon_h": "48_else_24"
+      }
+    ]
+  },
+  "audit": {
+    "label": "ENDPOINT_SPREAD_AUDIT",
+    "primary_tables_unchanged": true,
+    "blocks": [
+      {
+        "sport": "WNBA",
+        "horizon_h": 48,
+        "cohort": "AROUND_80_78_82",
+        "exclusions": {
+          "eligible_n": 20,
+          "endpoint_n": 8,
+          "missing_n": 12,
+          "counts": {
+            "ABSENT_CANDLES": 0,
+            "STALE_OBSERVATION": 0,
+            "BOUNDARY_QUOTE": 12,
+            "EXCESSIVE_SPREAD": 0,
+            "CLOCK_PROBLEM": 0,
+            "OTHER_EXCLUSION": 0
+          },
+          "missing_with_any_boundary_candle": 12
+        },
+        "spread_cents": {
+          "label": "PRIMARY_COMPLETE_SAMPLE",
+          "eligible_n": 20,
+          "complete_n": 8,
+          "identity_max_abs_cents": 0.0,
+          "bid_appreciation_cents": {
+            "n": 8,
+            "mean_cents": 15.125,
+            "median_cents": 18.0,
+            "share_positive": 0.875,
+            "ci95_low": 9.428571428571429,
+            "ci95_high": 17.889166666666668,
+            "interval_status": "OBSERVED"
+          },
+          "entry_spread_cents": {
+            "n": 8,
+            "mean_cents": 1.625,
+            "median_cents": 1.5,
+            "share_positive": 1.0,
+            "ci95_low": 1.2222222222222223,
+            "ci95_high": 2.142857142857143,
+            "interval_status": "OBSERVED"
+          },
+          "quote_profit_cents": {
+            "n": 8,
+            "mean_cents": 13.5,
+            "median_cents": 16.0,
+            "share_positive": 0.875,
+            "ci95_low": 8.139285714285714,
+            "ci95_high": 16.428571428571427,
+            "interval_status": "OBSERVED"
+          }
+        },
+        "boundary_sensitivity": {
+          "label": "BOUNDARY_BID_ARITHMETIC_SENSITIVITY",
+          "eligible_n": 20,
+          "endpoint_n": 20,
+          "added_boundary_n": 12,
+          "log_odds_unavailable_n": 0,
+          "log_odds_role": "UNAVAILABLE_WHEN_BID_IS_0_OR_10000",
+          "bid_appreciation_cents": {
+            "n": 20,
+            "mean_cents": 17.5,
+            "median_cents": 18.0,
+            "share_positive": 0.95,
+            "ci95_low": 15.541220238095237,
+            "ci95_high": 18.894736842105264,
+            "interval_status": "OBSERVED"
+          },
+          "entry_spread_cents": {
+            "n": 20,
+            "mean_cents": 1.8,
+            "median_cents": 2.0,
+            "share_positive": 1.0,
+            "ci95_low": 1.4545454545454546,
+            "ci95_high": 2.210526315789474,
+            "interval_status": "OBSERVED"
+          },
+          "quote_profit_cents": {
+            "n": 20,
+            "mean_cents": 15.7,
+            "median_cents": 17.0,
+            "share_positive": 0.95,
+            "ci95_low": 13.903733766233767,
+            "ci95_high": 17.056340579710145,
+            "interval_status": "OBSERVED"
+          }
+        }
+      },
+      {
+        "sport": "WNBA",
+        "horizon_h": 24,
+        "cohort": "AROUND_80_78_82",
+        "exclusions": {
+          "eligible_n": 32,
+          "endpoint_n": 17,
+          "missing_n": 15,
+          "counts": {
+            "ABSENT_CANDLES": 0,
+            "STALE_OBSERVATION": 0,
+            "BOUNDARY_QUOTE": 14,
+            "EXCESSIVE_SPREAD": 1,
+            "CLOCK_PROBLEM": 0,
+            "OTHER_EXCLUSION": 0
+          },
+          "missing_with_any_boundary_candle": 14
+        },
+        "spread_cents": {
+          "label": "PRIMARY_COMPLETE_SAMPLE",
+          "eligible_n": 32,
+          "complete_n": 17,
+          "identity_max_abs_cents": 0.0,
+          "bid_appreciation_cents": {
+            "n": 17,
+            "mean_cents": 5.705882352941177,
+            "median_cents": 15.0,
+            "share_positive": 0.7647058823529411,
+            "ci95_low": -5.333749999999999,
+            "ci95_high": 13.813020833333333,
+            "interval_status": "OBSERVED"
+          },
+          "entry_spread_cents": {
+            "n": 17,
+            "mean_cents": 1.2352941176470589,
+            "median_cents": 1.0,
+            "share_positive": 1.0,
+            "ci95_low": 1.0555555555555556,
+            "ci95_high": 1.4705882352941178,
+            "interval_status": "OBSERVED"
+          },
+          "quote_profit_cents": {
+            "n": 17,
+            "mean_cents": 4.470588235294118,
+            "median_cents": 14.0,
+            "share_positive": 0.7647058823529411,
+            "ci95_low": -6.688645833333333,
+            "ci95_high": 12.626041666666666,
+            "interval_status": "OBSERVED"
+          }
+        },
+        "boundary_sensitivity": {
+          "label": "BOUNDARY_BID_ARITHMETIC_SENSITIVITY",
+          "eligible_n": 32,
+          "endpoint_n": 31,
+          "added_boundary_n": 14,
+          "log_odds_unavailable_n": 0,
+          "log_odds_role": "UNAVAILABLE_WHEN_BID_IS_0_OR_10000",
+          "bid_appreciation_cents": {
+            "n": 31,
+            "mean_cents": 12.064516129032258,
+            "median_cents": 18.0,
+            "share_positive": 0.8709677419354839,
+            "ci95_low": 5.155121527777778,
+            "ci95_high": 16.64516129032258,
+            "interval_status": "OBSERVED"
+          },
+          "entry_spread_cents": {
+            "n": 31,
+            "mean_cents": 1.2580645161290323,
+            "median_cents": 1.0,
+            "share_positive": 1.0,
+            "ci95_low": 1.0713669950738915,
+            "ci95_high": 1.4546103896103897,
+            "interval_status": "OBSERVED"
+          },
+          "quote_profit_cents": {
+            "n": 31,
+            "mean_cents": 10.806451612903226,
+            "median_cents": 17.0,
+            "share_positive": 0.8709677419354839,
+            "ci95_low": 3.8497222222222223,
+            "ci95_high": 15.484274193548387,
+            "interval_status": "OBSERVED"
+          }
+        }
+      },
+      {
+        "sport": "WNBA",
+        "horizon_h": 48,
+        "cohort": "PAIRED_48H_PRICE_ONLY",
+        "paired": {
+          "label": "PAIRED_48H_PRICE_ONLY",
+          "selection": "48h around-80 bid only",
+          "eligible_48h_n": 20,
+          "paired_n": 8,
+          "dropped_missing_24h": 0,
+          "dropped_missing_endpoint": 12,
+          "still_outside_around80_at_24h": 3,
+          "cents_48_to_24": {
+            "n": 8,
+            "mean_cents": 1.25,
+            "median_cents": -0.5,
+            "share_positive": 0.375,
+            "ci95_low": -1.8916666666666664,
+            "ci95_high": 4.714285714285714,
+            "interval_status": "OBSERVED"
+          },
+          "cents_24_to_30": {
+            "n": 8,
+            "mean_cents": 13.875,
+            "median_cents": 15.5,
+            "share_positive": 1.0,
+            "ci95_low": 9.571428571428571,
+            "ci95_high": 17.1675,
+            "interval_status": "OBSERVED"
+          },
+          "cents_48_to_30": {
+            "n": 8,
+            "mean_cents": 15.125,
+            "median_cents": 18.0,
+            "share_positive": 0.875,
+            "ci95_low": 9.428571428571429,
+            "ci95_high": 17.889166666666668,
+            "interval_status": "OBSERVED"
+          }
+        }
+      },
+      {
+        "sport": "NBA",
+        "horizon_h": 48,
+        "cohort": "AROUND_80_78_82",
+        "exclusions": {
+          "eligible_n": 63,
+          "endpoint_n": 63,
+          "missing_n": 0,
+          "counts": {
+            "ABSENT_CANDLES": 0,
+            "STALE_OBSERVATION": 0,
+            "BOUNDARY_QUOTE": 0,
+            "EXCESSIVE_SPREAD": 0,
+            "CLOCK_PROBLEM": 0,
+            "OTHER_EXCLUSION": 0
+          },
+          "missing_with_any_boundary_candle": 0
+        },
+        "spread_cents": {
+          "label": "PRIMARY_COMPLETE_SAMPLE",
+          "eligible_n": 63,
+          "complete_n": 63,
+          "identity_max_abs_cents": 0.0,
+          "bid_appreciation_cents": {
+            "n": 63,
+            "mean_cents": 3.365079365079365,
+            "median_cents": 4.0,
+            "share_positive": 0.7142857142857143,
+            "ci95_low": 2.2538690476190477,
+            "ci95_high": 4.416666666666667,
+            "interval_status": "OBSERVED"
+          },
+          "entry_spread_cents": {
+            "n": 63,
+            "mean_cents": 3.380952380952381,
+            "median_cents": 4.0,
+            "share_positive": 1.0,
+            "ci95_low": 2.8929594594594596,
+            "ci95_high": 3.9167338709677417,
+            "interval_status": "OBSERVED"
+          },
+          "quote_profit_cents": {
+            "n": 63,
+            "mean_cents": -0.015873015873015872,
+            "median_cents": 0.0,
+            "share_positive": 0.4444444444444444,
+            "ci95_low": -0.9302090843547224,
+            "ci95_high": 0.8889322916666665,
+            "interval_status": "OBSERVED"
+          }
+        },
+        "boundary_sensitivity": {
+          "label": "BOUNDARY_BID_ARITHMETIC_SENSITIVITY",
+          "eligible_n": 63,
+          "endpoint_n": 63,
+          "added_boundary_n": 0,
+          "log_odds_unavailable_n": 0,
+          "log_odds_role": "UNAVAILABLE_WHEN_BID_IS_0_OR_10000",
+          "bid_appreciation_cents": {
+            "n": 63,
+            "mean_cents": 3.365079365079365,
+            "median_cents": 4.0,
+            "share_positive": 0.7142857142857143,
+            "ci95_low": 2.2538690476190477,
+            "ci95_high": 4.416666666666667,
+            "interval_status": "OBSERVED"
+          },
+          "entry_spread_cents": {
+            "n": 63,
+            "mean_cents": 3.380952380952381,
+            "median_cents": 4.0,
+            "share_positive": 1.0,
+            "ci95_low": 2.8929594594594596,
+            "ci95_high": 3.9167338709677417,
+            "interval_status": "OBSERVED"
+          },
+          "quote_profit_cents": {
+            "n": 63,
+            "mean_cents": -0.015873015873015872,
+            "median_cents": 0.0,
+            "share_positive": 0.4444444444444444,
+            "ci95_low": -0.9302090843547224,
+            "ci95_high": 0.8889322916666665,
+            "interval_status": "OBSERVED"
+          }
+        }
+      },
+      {
+        "sport": "NBA",
+        "horizon_h": 24,
+        "cohort": "AROUND_80_78_82",
+        "exclusions": {
+          "eligible_n": 133,
+          "endpoint_n": 133,
+          "missing_n": 0,
+          "counts": {
+            "ABSENT_CANDLES": 0,
+            "STALE_OBSERVATION": 0,
+            "BOUNDARY_QUOTE": 0,
+            "EXCESSIVE_SPREAD": 0,
+            "CLOCK_PROBLEM": 0,
+            "OTHER_EXCLUSION": 0
+          },
+          "missing_with_any_boundary_candle": 0
+        },
+        "spread_cents": {
+          "label": "PRIMARY_COMPLETE_SAMPLE",
+          "eligible_n": 133,
+          "complete_n": 133,
+          "identity_max_abs_cents": 0.0,
+          "bid_appreciation_cents": {
+            "n": 133,
+            "mean_cents": 0.43609022556390975,
+            "median_cents": 0.0,
+            "share_positive": 0.48872180451127817,
+            "ci95_low": 0.014230389881643083,
+            "ci95_high": 0.8832328361366762,
+            "interval_status": "OBSERVED"
+          },
+          "entry_spread_cents": {
+            "n": 133,
+            "mean_cents": 1.669172932330827,
+            "median_cents": 1.0,
+            "share_positive": 1.0,
+            "ci95_low": 1.5038153590082075,
+            "ci95_high": 1.8561143147896877,
+            "interval_status": "OBSERVED"
+          },
+          "quote_profit_cents": {
+            "n": 133,
+            "mean_cents": -1.2330827067669172,
+            "median_cents": -1.0,
+            "share_positive": 0.2706766917293233,
+            "ci95_low": -1.638483606557377,
+            "ci95_high": -0.7878668575518969,
+            "interval_status": "OBSERVED"
+          }
+        },
+        "boundary_sensitivity": {
+          "label": "BOUNDARY_BID_ARITHMETIC_SENSITIVITY",
+          "eligible_n": 133,
+          "endpoint_n": 133,
+          "added_boundary_n": 0,
+          "log_odds_unavailable_n": 0,
+          "log_odds_role": "UNAVAILABLE_WHEN_BID_IS_0_OR_10000",
+          "bid_appreciation_cents": {
+            "n": 133,
+            "mean_cents": 0.43609022556390975,
+            "median_cents": 0.0,
+            "share_positive": 0.48872180451127817,
+            "ci95_low": 0.014230389881643083,
+            "ci95_high": 0.8832328361366762,
+            "interval_status": "OBSERVED"
+          },
+          "entry_spread_cents": {
+            "n": 133,
+            "mean_cents": 1.669172932330827,
+            "median_cents": 1.0,
+            "share_positive": 1.0,
+            "ci95_low": 1.5038153590082075,
+            "ci95_high": 1.8561143147896877,
+            "interval_status": "OBSERVED"
+          },
+          "quote_profit_cents": {
+            "n": 133,
+            "mean_cents": -1.2330827067669172,
+            "median_cents": -1.0,
+            "share_positive": 0.2706766917293233,
+            "ci95_low": -1.638483606557377,
+            "ci95_high": -0.7878668575518969,
+            "interval_status": "OBSERVED"
+          }
+        }
+      },
+      {
+        "sport": "NBA",
+        "horizon_h": 48,
+        "cohort": "PAIRED_48H_PRICE_ONLY",
+        "paired": {
+          "label": "PAIRED_48H_PRICE_ONLY",
+          "selection": "48h around-80 bid only",
+          "eligible_48h_n": 63,
+          "paired_n": 63,
+          "dropped_missing_24h": 0,
+          "dropped_missing_endpoint": 0,
+          "still_outside_around80_at_24h": 39,
+          "cents_48_to_24": {
+            "n": 63,
+            "mean_cents": 2.4285714285714284,
+            "median_cents": 2.0,
+            "share_positive": 0.6507936507936508,
+            "ci95_low": 1.3280101102941178,
+            "ci95_high": 3.507297231665857,
+            "interval_status": "OBSERVED"
+          },
+          "cents_24_to_30": {
+            "n": 63,
+            "mean_cents": 0.9365079365079365,
+            "median_cents": 1.0,
+            "share_positive": 0.5079365079365079,
+            "ci95_low": 0.16625,
+            "ci95_high": 1.7656510416666666,
+            "interval_status": "OBSERVED"
+          },
+          "cents_48_to_30": {
+            "n": 63,
+            "mean_cents": 3.365079365079365,
+            "median_cents": 4.0,
+            "share_positive": 0.7142857142857143,
+            "ci95_low": 2.2538690476190477,
+            "ci95_high": 4.416666666666667,
+            "interval_status": "OBSERVED"
+          }
+        }
+      },
+      {
+        "sport": "NCAAB",
+        "horizon_h": 48,
+        "cohort": "AROUND_80_78_82",
+        "exclusions": {
+          "eligible_n": 1,
+          "endpoint_n": 1,
+          "missing_n": 0,
+          "counts": {
+            "ABSENT_CANDLES": 0,
+            "STALE_OBSERVATION": 0,
+            "BOUNDARY_QUOTE": 0,
+            "EXCESSIVE_SPREAD": 0,
+            "CLOCK_PROBLEM": 0,
+            "OTHER_EXCLUSION": 0
+          },
+          "missing_with_any_boundary_candle": 0
+        },
+        "spread_cents": {
+          "label": "PRIMARY_COMPLETE_SAMPLE",
+          "eligible_n": 1,
+          "complete_n": 1,
+          "identity_max_abs_cents": 0.0,
+          "bid_appreciation_cents": {
+            "n": 1,
+            "mean_cents": -2.0,
+            "median_cents": -2.0,
+            "share_positive": 0.0,
+            "ci95_low": "INSUFFICIENT_SAMPLE",
+            "ci95_high": "INSUFFICIENT_SAMPLE",
+            "interval_status": "INSUFFICIENT_SAMPLE"
+          },
+          "entry_spread_cents": {
+            "n": 1,
+            "mean_cents": 2.0,
+            "median_cents": 2.0,
+            "share_positive": 1.0,
+            "ci95_low": "INSUFFICIENT_SAMPLE",
+            "ci95_high": "INSUFFICIENT_SAMPLE",
+            "interval_status": "INSUFFICIENT_SAMPLE"
+          },
+          "quote_profit_cents": {
+            "n": 1,
+            "mean_cents": -4.0,
+            "median_cents": -4.0,
+            "share_positive": 0.0,
+            "ci95_low": "INSUFFICIENT_SAMPLE",
+            "ci95_high": "INSUFFICIENT_SAMPLE",
+            "interval_status": "INSUFFICIENT_SAMPLE"
+          }
+        },
+        "boundary_sensitivity": {
+          "label": "BOUNDARY_BID_ARITHMETIC_SENSITIVITY",
+          "eligible_n": 1,
+          "endpoint_n": 1,
+          "added_boundary_n": 0,
+          "log_odds_unavailable_n": 0,
+          "log_odds_role": "UNAVAILABLE_WHEN_BID_IS_0_OR_10000",
+          "bid_appreciation_cents": {
+            "n": 1,
+            "mean_cents": -2.0,
+            "median_cents": -2.0,
+            "share_positive": 0.0,
+            "ci95_low": "INSUFFICIENT_SAMPLE",
+            "ci95_high": "INSUFFICIENT_SAMPLE",
+            "interval_status": "INSUFFICIENT_SAMPLE"
+          },
+          "entry_spread_cents": {
+            "n": 1,
+            "mean_cents": 2.0,
+            "median_cents": 2.0,
+            "share_positive": 1.0,
+            "ci95_low": "INSUFFICIENT_SAMPLE",
+            "ci95_high": "INSUFFICIENT_SAMPLE",
+            "interval_status": "INSUFFICIENT_SAMPLE"
+          },
+          "quote_profit_cents": {
+            "n": 1,
+            "mean_cents": -4.0,
+            "median_cents": -4.0,
+            "share_positive": 0.0,
+            "ci95_low": "INSUFFICIENT_SAMPLE",
+            "ci95_high": "INSUFFICIENT_SAMPLE",
+            "interval_status": "INSUFFICIENT_SAMPLE"
+          }
+        }
+      },
+      {
+        "sport": "NCAAB",
+        "horizon_h": 24,
+        "cohort": "AROUND_80_78_82",
+        "exclusions": {
+          "eligible_n": 35,
+          "endpoint_n": 34,
+          "missing_n": 1,
+          "counts": {
+            "ABSENT_CANDLES": 0,
+            "STALE_OBSERVATION": 1,
+            "BOUNDARY_QUOTE": 0,
+            "EXCESSIVE_SPREAD": 0,
+            "CLOCK_PROBLEM": 0,
+            "OTHER_EXCLUSION": 0
+          },
+          "missing_with_any_boundary_candle": 0
+        },
+        "spread_cents": {
+          "label": "PRIMARY_COMPLETE_SAMPLE",
+          "eligible_n": 35,
+          "complete_n": 34,
+          "identity_max_abs_cents": 0.0,
+          "bid_appreciation_cents": {
+            "n": 34,
+            "mean_cents": 3.8823529411764706,
+            "median_cents": 2.0,
+            "share_positive": 0.7941176470588235,
+            "ci95_low": 2.558489304812834,
+            "ci95_high": 5.778333333333332,
+            "interval_status": "OBSERVED"
+          },
+          "entry_spread_cents": {
+            "n": 34,
+            "mean_cents": 5.0588235294117645,
+            "median_cents": 4.5,
+            "share_positive": 1.0,
+            "ci95_low": 3.8706221198156685,
+            "ci95_high": 6.320064516129032,
+            "interval_status": "OBSERVED"
+          },
+          "quote_profit_cents": {
+            "n": 34,
+            "mean_cents": -1.1764705882352942,
+            "median_cents": -1.0,
+            "share_positive": 0.35294117647058826,
+            "ci95_low": -2.475246212121212,
+            "ci95_high": 0.4482758620689655,
+            "interval_status": "OBSERVED"
+          }
+        },
+        "boundary_sensitivity": {
+          "label": "BOUNDARY_BID_ARITHMETIC_SENSITIVITY",
+          "eligible_n": 35,
+          "endpoint_n": 34,
+          "added_boundary_n": 0,
+          "log_odds_unavailable_n": 0,
+          "log_odds_role": "UNAVAILABLE_WHEN_BID_IS_0_OR_10000",
+          "bid_appreciation_cents": {
+            "n": 34,
+            "mean_cents": 3.8823529411764706,
+            "median_cents": 2.0,
+            "share_positive": 0.7941176470588235,
+            "ci95_low": 2.558489304812834,
+            "ci95_high": 5.778333333333332,
+            "interval_status": "OBSERVED"
+          },
+          "entry_spread_cents": {
+            "n": 34,
+            "mean_cents": 5.0588235294117645,
+            "median_cents": 4.5,
+            "share_positive": 1.0,
+            "ci95_low": 3.8706221198156685,
+            "ci95_high": 6.320064516129032,
+            "interval_status": "OBSERVED"
+          },
+          "quote_profit_cents": {
+            "n": 34,
+            "mean_cents": -1.1764705882352942,
+            "median_cents": -1.0,
+            "share_positive": 0.35294117647058826,
+            "ci95_low": -2.475246212121212,
+            "ci95_high": 0.4482758620689655,
+            "interval_status": "OBSERVED"
+          }
+        }
+      },
+      {
+        "sport": "NCAAB",
+        "horizon_h": 48,
+        "cohort": "PAIRED_48H_PRICE_ONLY",
+        "paired": {
+          "label": "PAIRED_48H_PRICE_ONLY",
+          "selection": "48h around-80 bid only",
+          "eligible_48h_n": 1,
+          "paired_n": 1,
+          "dropped_missing_24h": 0,
+          "dropped_missing_endpoint": 0,
+          "still_outside_around80_at_24h": 0,
+          "cents_48_to_24": {
+            "n": 1,
+            "mean_cents": -1.0,
+            "median_cents": -1.0,
+            "share_positive": 0.0,
+            "ci95_low": "INSUFFICIENT_SAMPLE",
+            "ci95_high": "INSUFFICIENT_SAMPLE",
+            "interval_status": "INSUFFICIENT_SAMPLE"
+          },
+          "cents_24_to_30": {
+            "n": 1,
+            "mean_cents": -1.0,
+            "median_cents": -1.0,
+            "share_positive": 0.0,
+            "ci95_low": "INSUFFICIENT_SAMPLE",
+            "ci95_high": "INSUFFICIENT_SAMPLE",
+            "interval_status": "INSUFFICIENT_SAMPLE"
+          },
+          "cents_48_to_30": {
+            "n": 1,
+            "mean_cents": -2.0,
+            "median_cents": -2.0,
+            "share_positive": 0.0,
+            "ci95_low": "INSUFFICIENT_SAMPLE",
+            "ci95_high": "INSUFFICIENT_SAMPLE",
+            "interval_status": "INSUFFICIENT_SAMPLE"
+          }
+        }
+      },
+      {
+        "sport": "MLB",
+        "horizon_h": 48,
+        "cohort": "AROUND_80_78_82",
+        "exclusions": {
+          "eligible_n": 0,
+          "endpoint_n": 0,
+          "missing_n": 0,
+          "counts": {
+            "ABSENT_CANDLES": 0,
+            "STALE_OBSERVATION": 0,
+            "BOUNDARY_QUOTE": 0,
+            "EXCESSIVE_SPREAD": 0,
+            "CLOCK_PROBLEM": 0,
+            "OTHER_EXCLUSION": 0
+          },
+          "missing_with_any_boundary_candle": 0
+        },
+        "spread_cents": {
+          "label": "PRIMARY_COMPLETE_SAMPLE",
+          "eligible_n": 0,
+          "complete_n": 0,
+          "identity_max_abs_cents": 0.0,
+          "bid_appreciation_cents": {
+            "n": 0,
+            "mean_cents": "UNAVAILABLE",
+            "median_cents": "UNAVAILABLE",
+            "share_positive": "UNAVAILABLE",
+            "ci95_low": "UNAVAILABLE",
+            "ci95_high": "UNAVAILABLE",
+            "interval_status": "UNAVAILABLE"
+          },
+          "entry_spread_cents": {
+            "n": 0,
+            "mean_cents": "UNAVAILABLE",
+            "median_cents": "UNAVAILABLE",
+            "share_positive": "UNAVAILABLE",
+            "ci95_low": "UNAVAILABLE",
+            "ci95_high": "UNAVAILABLE",
+            "interval_status": "UNAVAILABLE"
+          },
+          "quote_profit_cents": {
+            "n": 0,
+            "mean_cents": "UNAVAILABLE",
+            "median_cents": "UNAVAILABLE",
+            "share_positive": "UNAVAILABLE",
+            "ci95_low": "UNAVAILABLE",
+            "ci95_high": "UNAVAILABLE",
+            "interval_status": "UNAVAILABLE"
+          }
+        },
+        "boundary_sensitivity": {
+          "label": "BOUNDARY_BID_ARITHMETIC_SENSITIVITY",
+          "eligible_n": 0,
+          "endpoint_n": 0,
+          "added_boundary_n": 0,
+          "log_odds_unavailable_n": 0,
+          "log_odds_role": "UNAVAILABLE_WHEN_BID_IS_0_OR_10000",
+          "bid_appreciation_cents": {
+            "n": 0,
+            "mean_cents": "UNAVAILABLE",
+            "median_cents": "UNAVAILABLE",
+            "share_positive": "UNAVAILABLE",
+            "ci95_low": "UNAVAILABLE",
+            "ci95_high": "UNAVAILABLE",
+            "interval_status": "UNAVAILABLE"
+          },
+          "entry_spread_cents": {
+            "n": 0,
+            "mean_cents": "UNAVAILABLE",
+            "median_cents": "UNAVAILABLE",
+            "share_positive": "UNAVAILABLE",
+            "ci95_low": "UNAVAILABLE",
+            "ci95_high": "UNAVAILABLE",
+            "interval_status": "UNAVAILABLE"
+          },
+          "quote_profit_cents": {
+            "n": 0,
+            "mean_cents": "UNAVAILABLE",
+            "median_cents": "UNAVAILABLE",
+            "share_positive": "UNAVAILABLE",
+            "ci95_low": "UNAVAILABLE",
+            "ci95_high": "UNAVAILABLE",
+            "interval_status": "UNAVAILABLE"
+          }
+        }
+      },
+      {
+        "sport": "MLB",
+        "horizon_h": 24,
+        "cohort": "AROUND_80_78_82",
+        "exclusions": {
+          "eligible_n": 0,
+          "endpoint_n": 0,
+          "missing_n": 0,
+          "counts": {
+            "ABSENT_CANDLES": 0,
+            "STALE_OBSERVATION": 0,
+            "BOUNDARY_QUOTE": 0,
+            "EXCESSIVE_SPREAD": 0,
+            "CLOCK_PROBLEM": 0,
+            "OTHER_EXCLUSION": 0
+          },
+          "missing_with_any_boundary_candle": 0
+        },
+        "spread_cents": {
+          "label": "PRIMARY_COMPLETE_SAMPLE",
+          "eligible_n": 0,
+          "complete_n": 0,
+          "identity_max_abs_cents": 0.0,
+          "bid_appreciation_cents": {
+            "n": 0,
+            "mean_cents": "UNAVAILABLE",
+            "median_cents": "UNAVAILABLE",
+            "share_positive": "UNAVAILABLE",
+            "ci95_low": "UNAVAILABLE",
+            "ci95_high": "UNAVAILABLE",
+            "interval_status": "UNAVAILABLE"
+          },
+          "entry_spread_cents": {
+            "n": 0,
+            "mean_cents": "UNAVAILABLE",
+            "median_cents": "UNAVAILABLE",
+            "share_positive": "UNAVAILABLE",
+            "ci95_low": "UNAVAILABLE",
+            "ci95_high": "UNAVAILABLE",
+            "interval_status": "UNAVAILABLE"
+          },
+          "quote_profit_cents": {
+            "n": 0,
+            "mean_cents": "UNAVAILABLE",
+            "median_cents": "UNAVAILABLE",
+            "share_positive": "UNAVAILABLE",
+            "ci95_low": "UNAVAILABLE",
+            "ci95_high": "UNAVAILABLE",
+            "interval_status": "UNAVAILABLE"
+          }
+        },
+        "boundary_sensitivity": {
+          "label": "BOUNDARY_BID_ARITHMETIC_SENSITIVITY",
+          "eligible_n": 0,
+          "endpoint_n": 0,
+          "added_boundary_n": 0,
+          "log_odds_unavailable_n": 0,
+          "log_odds_role": "UNAVAILABLE_WHEN_BID_IS_0_OR_10000",
+          "bid_appreciation_cents": {
+            "n": 0,
+            "mean_cents": "UNAVAILABLE",
+            "median_cents": "UNAVAILABLE",
+            "share_positive": "UNAVAILABLE",
+            "ci95_low": "UNAVAILABLE",
+            "ci95_high": "UNAVAILABLE",
+            "interval_status": "UNAVAILABLE"
+          },
+          "entry_spread_cents": {
+            "n": 0,
+            "mean_cents": "UNAVAILABLE",
+            "median_cents": "UNAVAILABLE",
+            "share_positive": "UNAVAILABLE",
+            "ci95_low": "UNAVAILABLE",
+            "ci95_high": "UNAVAILABLE",
+            "interval_status": "UNAVAILABLE"
+          },
+          "quote_profit_cents": {
+            "n": 0,
+            "mean_cents": "UNAVAILABLE",
+            "median_cents": "UNAVAILABLE",
+            "share_positive": "UNAVAILABLE",
+            "ci95_low": "UNAVAILABLE",
+            "ci95_high": "UNAVAILABLE",
+            "interval_status": "UNAVAILABLE"
+          }
+        }
+      },
+      {
+        "sport": "MLB",
+        "horizon_h": 48,
+        "cohort": "PAIRED_48H_PRICE_ONLY",
+        "paired": {
+          "label": "PAIRED_48H_PRICE_ONLY",
+          "selection": "48h around-80 bid only",
+          "eligible_48h_n": 0,
+          "paired_n": 0,
+          "dropped_missing_24h": 0,
+          "dropped_missing_endpoint": 0,
+          "still_outside_around80_at_24h": 0,
+          "cents_48_to_24": {
+            "n": 0,
+            "mean_cents": "UNAVAILABLE",
+            "median_cents": "UNAVAILABLE",
+            "share_positive": "UNAVAILABLE",
+            "ci95_low": "UNAVAILABLE",
+            "ci95_high": "UNAVAILABLE",
+            "interval_status": "UNAVAILABLE"
+          },
+          "cents_24_to_30": {
+            "n": 0,
+            "mean_cents": "UNAVAILABLE",
+            "median_cents": "UNAVAILABLE",
+            "share_positive": "UNAVAILABLE",
+            "ci95_low": "UNAVAILABLE",
+            "ci95_high": "UNAVAILABLE",
+            "interval_status": "UNAVAILABLE"
+          },
+          "cents_48_to_30": {
+            "n": 0,
+            "mean_cents": "UNAVAILABLE",
+            "median_cents": "UNAVAILABLE",
+            "share_positive": "UNAVAILABLE",
+            "ci95_low": "UNAVAILABLE",
+            "ci95_high": "UNAVAILABLE",
+            "interval_status": "UNAVAILABLE"
+          }
+        }
+      }
+    ]
+  },
+  "concentration": {
+    "WNBA": {
+      "positive_n": 77,
+      "top10_share_of_positive_dpp": 0.3417015341701534
+    },
+    "NBA": {
+      "positive_n": 281,
+      "top10_share_of_positive_dpp": 0.08133521391631406
+    },
+    "NCAAB": {
+      "positive_n": 231,
+      "top10_share_of_positive_dpp": 0.10401087695445276
+    },
+    "MLB": {
+      "positive_n": 30,
+      "top10_share_of_positive_dpp": 0.5
+    }
+  },
+  "coverage": {
+    "candle_rows": 20617911,
+    "rows_without_clock": 369780,
+    "by_sport": {
+      "MLB": {
+        "games": 5208,
+        "games_with_primary_clock": 5153,
+        "games_unmeasurable_clock": 55,
+        "games_schedule_exception": 0,
+        "games_ambiguous_map": 0,
+        "games_utc_date_rollover": 0,
+        "games_stored_match_not_implementable": 0,
+        "tickers": 8580,
+        "first_observed_above_70": 83,
+        "missing_endpoint_above_70": 0,
+        "pregame_first80_crossing": 0,
+        "already_above_80_at_first_valid": 2,
+        "listing_time": "UNAVAILABLE",
+        "history_before_first_raw": "UNKNOWN"
+      },
+      "NBA": {
+        "games": 1362,
+        "games_with_primary_clock": 1362,
+        "games_unmeasurable_clock": 0,
+        "games_schedule_exception": 0,
+        "games_ambiguous_map": 0,
+        "games_utc_date_rollover": 21,
+        "games_stored_match_not_implementable": 2,
+        "tickers": 2704,
+        "first_observed_above_70": 359,
+        "missing_endpoint_above_70": 0,
+        "pregame_first80_crossing": 280,
+        "already_above_80_at_first_valid": 132,
+        "listing_time": "UNAVAILABLE",
+        "history_before_first_raw": "UNKNOWN"
+      },
+      "NCAAB": {
+        "games": 5280,
+        "games_with_primary_clock": 5280,
+        "games_unmeasurable_clock": 0,
+        "games_schedule_exception": 0,
+        "games_ambiguous_map": 0,
+        "games_utc_date_rollover": 0,
+        "games_stored_match_not_implementable": 0,
+        "tickers": 1698,
+        "first_observed_above_70": 322,
+        "missing_endpoint_above_70": 10,
+        "pregame_first80_crossing": 121,
+        "already_above_80_at_first_valid": 166,
+        "listing_time": "UNAVAILABLE",
+        "history_before_first_raw": "UNKNOWN"
+      },
+      "WNBA": {
+        "games": 612,
+        "games_with_primary_clock": 612,
+        "games_unmeasurable_clock": 0,
+        "games_schedule_exception": 0,
+        "games_ambiguous_map": 0,
+        "games_utc_date_rollover": 0,
+        "games_stored_match_not_implementable": 314,
+        "tickers": 1220,
+        "first_observed_above_70": 180,
+        "missing_endpoint_above_70": 46,
+        "pregame_first80_crossing": 383,
+        "already_above_80_at_first_valid": 61,
+        "listing_time": "UNAVAILABLE",
+        "history_before_first_raw": "UNKNOWN"
+      }
+    },
+    "parquet_inventory": {
+      "NBA": {
+        "games": 1362,
+        "observation_rows": 6165183,
+        "orderbook_data_available": false,
+        "observation_basis": "TRADABLE_YES_BID"
+      },
+      "NCAAB": {
+        "games": 5280,
+        "observation_rows": 13429581,
+        "orderbook_data_available": false,
+        "observation_basis": [
+          "TRADABLE_YES_BID"
+        ]
+      },
+      "MLB": {
+        "games": 5208,
+        "observation_rows": null,
+        "orderbook_data_available": false,
+        "observation_basis": [
+          "LAST_TRADE_PRINT",
+          "TRADABLE_YES_BID"
+        ]
+      },
+      "WNBA_2025": null,
+      "WNBA_2026": null
+    },
+    "cohort_source": "canonical kalshi_candles CSV",
+    "parquet_in_cohort_n": false
+  },
+  "association_entry_time": {
+    "role": "ENTRY_TIME_ASSOCIATION",
+    "status": "SINGULAR",
+    "n": 888,
+    "features": [
+      "intercept",
+      "anchor_bid_pp",
+      "spread_cents",
+      "volume",
+      "is_nba",
+      "is_ncaab",
+      "is_wnba",
+      "is_mlb"
+    ]
+  },
+  "association_descriptive_lead_time": {
+    "role": "DESCRIPTIVE_NOT_A_FORECAST",
+    "status": "SINGULAR",
+    "n": 888,
+    "features": [
+      "intercept",
+      "anchor_bid_pp",
+      "spread_cents",
+      "volume",
+      "is_nba",
+      "is_ncaab",
+      "is_wnba",
+      "is_mlb",
+      "lead_hours_actual_start"
+    ]
+  },
+  "wnba_positions": [
+    {
+      "position_key": "ORDER:01a0acf1-d508-71e8-b579-7d701f01d3be",
+      "status": "INCOMPLETE_QUANTITY",
+      "market": "KXWNBAGAME-26SEP17LVSEA-LV",
+      "contracts": "UNAVAILABLE",
+      "acquisition_cost_cents": "UNAVAILABLE",
+      "price_cents": 81,
+      "price_band": "EXACT_81",
+      "fill_timestamps": [
+        "2026-09-17T04:06:15Z",
+        "2026-09-17T15:27:19Z"
+      ],
+      "fills": 2,
+      "fee_cents": "UNAVAILABLE",
+      "realized_pnl": "NOT_SUPPORTED",
+      "valuation": "HYPOTHETICAL_UNLESS_EXIT_AND_SETTLEMENT",
+      "exit_linkage": "UNAVAILABLE",
+      "note": "gross acquisition only; ledger fees unavailable",
+      "hypothetical_endpoint_bid_e4": null,
+      "hypothetical_role": "HYPOTHETICAL_ENDPOINT_OR_SETTLEMENT"
+    },
+    {
+      "position_key": "ORDER:01a0b32a-d1b8-7a34-bf78-120a7b66f7f6",
+      "status": "CONFIRMED_ACQUISITION",
+      "market": "KXWNBAGAME-26SEP20MINCONN-MIN",
+      "contracts": 5,
+      "acquisition_cost_cents": 405,
+      "price_cents": 81,
+      "price_band": "EXACT_81",
+      "fill_timestamps": [
+        "2026-09-18T15:30:32Z"
+      ],
+      "fills": 1,
+      "fee_cents": "UNAVAILABLE",
+      "realized_pnl": "NOT_SUPPORTED",
+      "valuation": "HYPOTHETICAL_UNLESS_EXIT_AND_SETTLEMENT",
+      "exit_linkage": "UNAVAILABLE",
+      "note": "gross acquisition only; ledger fees unavailable",
+      "hypothetical_endpoint_bid_e4": null,
+      "hypothetical_role": "HYPOTHETICAL_ENDPOINT_OR_SETTLEMENT"
+    },
+    {
+      "position_key": "ORDER:01a0ba34-7860-76f0-8e9e-ac9e9b6b93fe",
+      "status": "CONFIRMED_ACQUISITION",
+      "market": "KXWNBAGAME-26SEP19PHXDAL-DAL",
+      "contracts": 5,
+      "acquisition_cost_cents": 405,
+      "price_cents": 81,
+      "price_band": "EXACT_81",
+      "fill_timestamps": [
+        "2026-09-19T15:36:53Z"
+      ],
+      "fills": 1,
+      "fee_cents": "UNAVAILABLE",
+      "realized_pnl": "NOT_SUPPORTED",
+      "valuation": "HYPOTHETICAL_UNLESS_EXIT_AND_SETTLEMENT",
+      "exit_linkage": "UNAVAILABLE",
+      "note": "gross acquisition only; ledger fees unavailable",
+      "hypothetical_endpoint_bid_e4": null,
+      "hypothetical_role": "HYPOTHETICAL_ENDPOINT_OR_SETTLEMENT"
+    }
+  ],
+  "examples": {
+    "appreciation": {
+      "kind": "appreciation",
+      "ticker": "KXWNBAGAME-25MAY27GSNY-NY",
+      "game_id": "WNBA_20250527_GS_NY",
+      "sport": "WNBA",
+      "clock_label": "RETROSPECTIVE_ACTUAL_START",
+      "p0_bid_e4": 7900,
+      "p0_ask_e4": 8800,
+      "p30_bid_e4": 8700,
+      "p0_ts": 1748296980,
+      "p30_ts": 1748302200,
+      "t_end": 1748302200,
+      "dpp_e4": 800,
+      "exclusion": "",
+      "quarantine": "",
+      "schedule_relation": "STORED_SCHEDULE_UNAVAILABLE",
+      "in_a": true,
+      "n_invalid_before_valid": 227
+    },
+    "depreciation": {
+      "kind": "depreciation",
+      "ticker": "KXWNBAGAME-25MAY30LALV-LV",
+      "game_id": "WNBA_20250530_LA_LV",
+      "sport": "WNBA",
+      "clock_label": "RETROSPECTIVE_ACTUAL_START",
+      "p0_bid_e4": 7900,
+      "p0_ask_e4": 8000,
+      "p30_bid_e4": 7800,
+      "p0_ts": 1748540160,
+      "p30_ts": 1748561220,
+      "t_end": 1748561400,
+      "dpp_e4": -100,
+      "exclusion": "",
+      "quarantine": "",
+      "schedule_relation": "STORED_SCHEDULE_UNAVAILABLE",
+      "in_a": true,
+      "n_invalid_before_valid": 35
+    },
+    "missing_endpoint": {
+      "kind": "missing_endpoint",
+      "ticker": "KXWNBAGAME-25JUN18PHXCONN-PHX",
+      "game_id": "WNBA_20250618_PHX_CONN",
+      "sport": "WNBA",
+      "clock_label": "RETROSPECTIVE_ACTUAL_START",
+      "p0_bid_e4": 7200,
+      "p0_ask_e4": 7400,
+      "p30_bid_e4": null,
+      "p0_ts": 1750165260,
+      "p30_ts": null,
+      "t_end": 1750203000,
+      "dpp_e4": null,
+      "exclusion": "MISSING_ENDPOINT",
+      "quarantine": "",
+      "schedule_relation": "STORED_SCHEDULE_UNAVAILABLE",
+      "in_a": true,
+      "n_invalid_before_valid": 4
+    },
+    "schedule_exception": {
+      "kind": "mlb_or_start_missing",
+      "ticker": null,
+      "game_id": "MLB_20250423_COL_KC_778195",
+      "sport": "MLB",
+      "clock_label": "UNMEASURABLE",
+      "schedule_relation": "NO_START_CLOCK",
+      "p0_bid_e4": null,
+      "p30_bid_e4": null,
+      "p0_ts": null,
+      "p30_ts": null,
+      "t_end": null,
+      "dpp_e4": null,
+      "reason": "scheduled_start and actual_start are blank, and no non-midnight PBP timestamp was found"
+    }
+  },
+  "unmeasurable": {
+    "listing_time": "UNAVAILABLE",
+    "entry_time_schedule_snapshot": "UNAVAILABLE",
+    "historical_l2": "UNAVAILABLE",
+    "ledger_fees": "UNAVAILABLE",
+    "injury_lineup_pitching": "UNAVAILABLE",
+    "maker_fill_from_candle_touch": "NOT_A_FILL"
+  }
+}

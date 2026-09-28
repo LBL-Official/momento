@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "append_only_events": true,
+  "outcomes_separate": true,
+  "no_backfill": true,
+  "austin_never_filters_entry": true,
+  "eligible_n": 0
+}

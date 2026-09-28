@@ -1,0 +1,10 @@
+trade T0636  NBA  Philadelphia at Miami
+contract KXNBAGAME-26MAR30PHIMIA-MIA  slice Q3
+signal 2026-03-30T17:44:00-07:00 PDT  exit 2026-03-30T17:57:00-07:00 PDT
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 16171  principal_cents 1261338
+entry_fee_cents 4857  exit_fee_cents 6257
+exit STOP at 67c  terminal yes
+gross_cents -177881  net_cents -188995
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

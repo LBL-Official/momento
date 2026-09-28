@@ -1,0 +1,32 @@
+schema: ballhog.policy.v1
+version: v1
+live_execution: false
+execution_enabled: false
+entry_cents: 80
+lock_gain_cents: 20
+research_unit_qty: 1
+default_q_dir: 1
+max_q_dir: 500
+price_grid:
+  - 35
+  - 36
+  - 37
+  - 38
+  - 39
+  - 40
+  - 41
+  - 42
+  - 43
+  - 44
+  - 45
+positive_robust_portfolio_ev: true
+execution_assumption: THEORETICAL
+risk_metric: T40_RISK_PROXY
+timing:
+  retain_requires_robust_unhedged_positive: true
+  retain_requires_nonnegative_alpha_delta: true
+  retain_requires_observed_support: true
+  watch_if_low_support: true
+  begin_reduction_if_alpha_delta_negative: true
+  neutralize_if_robust_unhedged_nonpositive: true
+note: Every threshold is explicit. No lambda. 35-45 is a counterfactual price grid, not a live trigger.

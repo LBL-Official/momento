@@ -1,0 +1,335 @@
+{
+  "by_book": {
+    "DEMO": {
+      "day_fill_result_cents": 0,
+      "fill_result_sum_cents": 0,
+      "last_trade": "2026-09-18T03:55:18Z",
+      "losses": 0,
+      "open_positions": null,
+      "settled_n": 0,
+      "trade_n": 2,
+      "week_fill_result_cents": 0,
+      "weekly_n": 2,
+      "win_loss": "UNAVAILABLE",
+      "wins": 0
+    },
+    "PRODUCTION": {
+      "day_fill_result_cents": 0,
+      "fill_result_sum_cents": -26235,
+      "last_trade": "2026-09-19T15:36:53Z",
+      "losses": 61,
+      "open_positions": null,
+      "settled_n": 64,
+      "trade_n": 162,
+      "week_fill_result_cents": 0,
+      "weekly_n": 23,
+      "win_loss": {
+        "losses": 61,
+        "status": "CONFIRMED",
+        "wins": 1
+      },
+      "wins": 1
+    }
+  },
+  "by_bot": {
+    "mlb-bot-one": {
+      "day_fill_result_cents": 0,
+      "fill_result_sum_cents": -26235,
+      "last_trade": "2026-09-19T15:36:53Z",
+      "losses": 61,
+      "open_positions": null,
+      "settled_n": 64,
+      "trade_n": 162,
+      "week_fill_result_cents": 0,
+      "weekly_n": 23,
+      "win_loss": {
+        "losses": 61,
+        "status": "CONFIRMED",
+        "wins": 1
+      },
+      "wins": 1
+    }
+  },
+  "every_ten": {
+    "mlb-bot-one": [
+      {
+        "environment": "PRODUCTION",
+        "exchange_ts": "2026-08-25T02:57:07Z",
+        "jump_trade_id": "d2152026b051814c9701541301e65e37",
+        "n": 10
+      },
+      {
+        "environment": "PRODUCTION",
+        "exchange_ts": "2026-08-26T02:17:28Z",
+        "jump_trade_id": "7f14b8f3b15950c19dde7244fe6e2d41",
+        "n": 20
+      },
+      {
+        "environment": "PRODUCTION",
+        "exchange_ts": "2026-08-26T23:40:16Z",
+        "jump_trade_id": "f86ae7b818583e278bb3954a6fcf6b12",
+        "n": 30
+      },
+      {
+        "environment": "PRODUCTION",
+        "exchange_ts": "2026-08-28T23:46:22Z",
+        "jump_trade_id": "b56b2c2ee6d8efbd3afef2616e223964",
+        "n": 40
+      },
+      {
+        "environment": "PRODUCTION",
+        "exchange_ts": "2026-08-29T22:57:50Z",
+        "jump_trade_id": "739a6dd66d756cd0d04d967bc3cbd297",
+        "n": 50
+      },
+      {
+        "environment": "PRODUCTION",
+        "exchange_ts": "2026-08-30T20:59:00Z",
+        "jump_trade_id": "bd653821faba60f0681fd27c2992813a",
+        "n": 60
+      },
+      {
+        "environment": "PRODUCTION",
+        "exchange_ts": "2026-09-01T23:06:45Z",
+        "jump_trade_id": "f8279f1106d215d4b6b644479185dd0c",
+        "n": 70
+      },
+      {
+        "environment": "PRODUCTION",
+        "exchange_ts": "2026-09-04T19:33:54Z",
+        "jump_trade_id": "80dc72f4755849b35dbcfa9489a2829c",
+        "n": 80
+      },
+      {
+        "environment": "PRODUCTION",
+        "exchange_ts": "2026-09-05T21:28:09Z",
+        "jump_trade_id": "0bfb82547a10b346cbc8632d3a5356ae",
+        "n": 90
+      },
+      {
+        "environment": "PRODUCTION",
+        "exchange_ts": "2026-09-06T17:06:51Z",
+        "jump_trade_id": "3c0770b9923137c87c4ace75f85b983b",
+        "n": 100
+      },
+      {
+        "environment": "PRODUCTION",
+        "exchange_ts": "2026-09-08T03:41:49Z",
+        "jump_trade_id": "2e43e4ed4a9a27d752f15d76867cd2fd",
+        "n": 110
+      },
+      {
+        "environment": "PRODUCTION",
+        "exchange_ts": "2026-09-10T23:36:24Z",
+        "jump_trade_id": "849e9a31c14cd80b7402e6e21b122880",
+        "n": 120
+      },
+      {
+        "environment": "PRODUCTION",
+        "exchange_ts": "2026-09-12T19:30:50Z",
+        "jump_trade_id": "e5a76d29dd652b980e1abe52c054f496",
+        "n": 130
+      },
+      {
+        "environment": "PRODUCTION",
+        "exchange_ts": "2026-09-16T23:03:33Z",
+        "jump_trade_id": "c5445e210f32f06b5f8308f456fb4832",
+        "n": 140
+      },
+      {
+        "environment": "PRODUCTION",
+        "exchange_ts": "2026-09-18T00:02:03Z",
+        "jump_trade_id": "3afe9ec20869be24e0f8a0c7b888fefc",
+        "n": 150
+      },
+      {
+        "environment": "PRODUCTION",
+        "exchange_ts": "2026-09-19T03:08:31Z",
+        "jump_trade_id": "e8192b37c1b2fe8f41ad5f2adb0406d9",
+        "n": 160
+      }
+    ]
+  },
+  "honesty": {
+    "demo_not_added_to_live": true,
+    "fill_result_sum_is_not_account_pnl": true,
+    "live_ev": "UNAVAILABLE",
+    "win_loss_only_when_realized": true
+  },
+  "timezone": "America/Los_Angeles",
+  "week_start": "2026-09-14T04:00:00-07:00",
+  "weekly_markers": {
+    "mlb-bot-one": {
+      "2026-08-24T04:00:00-07:00": [
+        "242c955620d24faaa1b6f37c039a8ada",
+        "feaee927a8878432f28c82f46592acfd",
+        "63097c2584832452d9f694da4aeb353a",
+        "d551527446095b446cc9cc9c45d2e6d9",
+        "740d061f58235a36cbfbbdc327190c59",
+        "c2be452fd6b54a211735039248ac6214",
+        "e835d8a4d938fd2f4165ecfc30df804f",
+        "ff6a0277b7b38ee0a0bbb8cd0d65e275",
+        "d0288207d8372f973d62ee57e35d479d",
+        "333c6299eeb5fe46568c443a46d38f31",
+        "bbe71c0b80f479688655d9d3c4268a23",
+        "cc149f369a3f6c5bbb39c378792c2faa",
+        "8c537e1a11713354bbfa610d96f8859b",
+        "155be3b92f216aaa1750a8f71e3c0fa7",
+        "d2c4c41313608f6204671bd9ca4f2f69",
+        "afe55234810a6f5946631539ac2b6b5c",
+        "8b48b6a7068fe22922310f75468e82dc",
+        "b56b2c2ee6d8efbd3afef2616e223964",
+        "e34642dc2d26235d53c77cfb44b12933",
+        "3c9a79a233d24897960068dbbb7e1649",
+        "ce2ee215e85ae7844d2637d2f07c24eb",
+        "9f5f21159cafb64614d1b9d3384bb869",
+        "7fcf396bcb083b373e02da94167a736f",
+        "a903233a60c3fddfba3c24484c5f8400",
+        "f24857d7a4868ef020280d85d2e8dbe1",
+        "ff4be9fc34e661b76bee905bd8551f4b",
+        "739a6dd66d756cd0d04d967bc3cbd297",
+        "14c617931ebc8da1e6aea504f3f13609",
+        "94b029820a120056ea0ca1b37fb7b02c",
+        "23d97f55e92a3829e54c4487f4febcbe",
+        "d2152026b051814c9701541301e65e37",
+        "b5696dffaca90ac590d86c66391d6d45",
+        "1b310ee43724024a39db873eb7a41430",
+        "7f14b8f3b15950c19dde7244fe6e2d41",
+        "6b1912eebc805f4d7f16800475e2b309",
+        "f86ae7b818583e278bb3954a6fcf6b12",
+        "eb3d2639467a73d66307005356b10855",
+        "209814bfa986b28966cbaae73431a8ae",
+        "f73cbf535d718c22d7de51ffaf209f17",
+        "bd653821faba60f0681fd27c2992813a",
+        "79d6d2318ff8f709aa3f67aefeee4389",
+        "c69b38b9901828c4ab152234f5cd917d",
+        "ac4c404750251229cc82bca181d469c3",
+        "290c5a74a891a2b15fdb45c6e88f0b69",
+        "017ad406525b314dece9bd62c91c9c5c",
+        "7944f755275674dfcf83ce31f3a422ca",
+        "63cea5511998b50a3938a3f2c8f6634a",
+        "7f801c55d0d05e6b52155be28e359f27",
+        "13e40b20760b7832e5b9841ebeb485db",
+        "69ffdb4a8aac15578a3ea9af7452b494",
+        "d93832e03b992eca086d7a609d26e2ca",
+        "50c62a8ed25010ffd2319f573574dadf",
+        "0e5d4b686209ba6fa5172f62a942da53",
+        "26943f9dfb8a0d7a23ea3f0cbff64ef8",
+        "9024e3e6066259a2f0937639dfa22b7e",
+        "cda5d787b316624ae7ff283483277355",
+        "323429a4e4c21115a1d0d10b6efc1cf0",
+        "cd6f96f1b00777f2cfc0d3d0395f76d8",
+        "56d0661b81563e6f33e4d47127d75472",
+        "0d60b1d4c74ce29a65889b48c51d94da",
+        "bc1bb2bfa94df73ba99c832456c9513d",
+        "8e610cedbdfeb7d005494b4f15fe8bdf",
+        "09fa1b57ea87819cc034e6455fc01b93",
+        "3b97630c2ec07dd2a3a5f90deeebb72d",
+        "c051832be16d60315214fc2e8f18dd03",
+        "4e9b8e2387697ecf3450f290761da63a",
+        "26eb8bab41540e7cd3c17388575e61ec",
+        "92b50e6d61ac83a24d76ed3133afa07a",
+        "6dd43b8db1629e35ee9af81278b7d9b7"
+      ],
+      "2026-08-31T04:00:00-07:00": [
+        "84929a23854aa9290f669b36bba2c472",
+        "a1c0d2c2c5ef493339ea1a9d57a5ca6c",
+        "0b266f867935b9abfa1ccfd346a18b07",
+        "e51db2f05c822f74840ef7bb557f5e4e",
+        "33f6f4b3c5f2eaf24c6bb35250079869",
+        "80dc72f4755849b35dbcfa9489a2829c",
+        "fef9f833049628c37397dfb702e22bf3",
+        "869f4ebdfcc68215b6946018f30b63b4",
+        "528d72e7f24eb348ea144aead828f1c7",
+        "73818db0d3fa3bb88aa4710c8e866e73",
+        "ee21a1b2fb55efeb0bddbb787322596f",
+        "cb85d1f9b770ca4aa6822cb1e029937d",
+        "3a4aab5bb76bde54f23255460fa92760",
+        "0bfb82547a10b346cbc8632d3a5356ae",
+        "073bbe60a45856bc2a3e30b1a38d85d4",
+        "2829b4475d97154f962352485d99b7e9",
+        "5f31e68f19417f6b25ce38aecf7be350",
+        "9159c6e8d694be05fceb401be9f8e916",
+        "3c0770b9923137c87c4ace75f85b983b",
+        "4c66a46817a5f8a02e8feb0885f499d2",
+        "0c468fb77659f0d3df9e93b7556d2dec",
+        "b1ab3e15fbc7e82d0da91f7306b02671",
+        "095eb922a3f09401a5b9b6e13ab39b9d",
+        "3ee6b72300920a2ff2ab9ad8d816cfef",
+        "bd7f632574bb9fb3f9e1cefab76318ad",
+        "49d3f908e298f40dd3febc44af828492",
+        "3fd4fa8e234488af7e2c2d02a6bc8286",
+        "ba0af1c60b33820118d32921ae830d63",
+        "077b492b0128f2d2c756fc0545321825",
+        "eb4fbff424a2df186fb187d0e0a68b33",
+        "388513c33691dbe6c008fcd398815577",
+        "18aa287b13a06978af74e20f48e56e51",
+        "e981980f1819ed233e92dcdd28179019",
+        "1ecae90c4391627eb26795d003e38d61",
+        "0e94525cf60143dc31d8d0cc52c342f3",
+        "cacd27402cd91f3b6b88eb1bd560a9cb",
+        "f8279f1106d215d4b6b644479185dd0c"
+      ],
+      "2026-09-07T04:00:00-07:00": [
+        "f89c990faa29a2dd85b531077d4b3f46",
+        "d4b3503a3e4438744c6854b40e839cab",
+        "d265d916949cffab2b4024673576e9ab",
+        "2638cd960948bb1590d912de4cdb86c5",
+        "849e9a31c14cd80b7402e6e21b122880",
+        "26ffeaf1e8dd57a74154af9661f32538",
+        "156081f2690360b5bc9dff9ce540d0ee",
+        "5fb465086386ca7d7eb307510b7a093c",
+        "df3cd65fa7d2985f269074dcd2c6bf70",
+        "d0279a35e230f5605c015484d0f3530e",
+        "79349f95faf5dd41888f2cf493e9365f",
+        "60ac95ef39729c6709ffbb68513f6d52",
+        "e5d8701f8676fe512fd70e89d12e2ff8",
+        "2e43e4ed4a9a27d752f15d76867cd2fd",
+        "d801166d4c588105e7f7b1c3feb25fc3",
+        "1062c51ace4ab05faff188bed18a18ad",
+        "61c28b4db71bc1b28c4ffb94c0b4121e",
+        "2022af013065b7264ead045f2176b558",
+        "e5a76d29dd652b980e1abe52c054f496",
+        "f1fac2dab03055802f37fec0e87f7b74",
+        "abf506c0800449b37d45f81ee5e6b8ec",
+        "021b179aabf2b3219055f3aa71380c1c",
+        "4935407a9b16be5dc460af8151ae6330",
+        "ef7570326dfd383498e905de14b76fd6",
+        "fbabd346789cc0e4e91b6624096628bd",
+        "37d9bb7ebaac6cbe68242bc0c5216842",
+        "5d70ae4afa4124462f98b3ddd87e4b1b",
+        "0d3856f1fdce81c73bf8b322a8b9ec97",
+        "ad5a936fa9ca66153d013a87e33c8ae1",
+        "92e85c69be6942295c9b7772d4fd1d5f",
+        "e025a035cdcd9a850a2c927272ea60c4",
+        "51ab2c2ea8b3369b2555dd9e0462e69b",
+        "65d124ffdcfac7d0bea65871bc8da4e0"
+      ],
+      "2026-09-14T04:00:00-07:00": [
+        "023eb69108b355dab149125c845f08ef",
+        "c5445e210f32f06b5f8308f456fb4832",
+        "8a7c2bfe454bbfe4ae40f66f7fdc1bc2",
+        "8a7c2bfe454bbfe4ae40f66f7fdc1bc2",
+        "8fd6b99809a043b593b031d62eafb134",
+        "65e68d2280c09fe364de8d28233d342f",
+        "3fcc4bae484e007ce97c3935fdfd2cc7",
+        "9e57f19c2af40a24b826badc843dc50d",
+        "36c9e28627866024299a21cd7a0a52ae",
+        "8fadf4017aa7f56d73eb21d30806fdcf",
+        "fc8c49ff40297248acaaaab671f2ae24",
+        "589a11dfd6e922cade8ec2423108bf56",
+        "c29a3c7a858ee5a6813331ddf689807f",
+        "f692ba2783085079f862e1021220ff9e",
+        "3afe9ec20869be24e0f8a0c7b888fefc",
+        "9d10f3ea1bbb9f322e08dc096b8d2730",
+        "188e01134edc1ece5dcde9fb09a9a1aa",
+        "e8192b37c1b2fe8f41ad5f2adb0406d9",
+        "787240615366840c54b62e0983c1914a",
+        "2f6da3bacf0a79fdd60ddf0b446d41dc",
+        "3981ee4dd39b58c9670a68268ae1b6f8",
+        "94fe43ccc82a5347d2a62c8befec05da",
+        "8dd6bab68bcc7121933a74f917d4ad49"
+      ]
+    }
+  }
+}

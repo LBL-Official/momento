@@ -1,0 +1,32 @@
+---
+description: NBA path-trade FE — research enter/skip second filter
+alwaysApply: true
+---
+
+# NBA path-trade FE
+
+Research-only second filter. Touch-80 is kept. Reject fragile members.
+
+```
+LIVE EXECUTION = FALSE
+CANDLE PATH ≠ FILL
+Family E never enters enter_skip
+Missing L2 = SOURCE_UNAVAILABLE
+r ∈ [0.12, 0.25]
+Failed promotion → tighten, do not expand
+```
+
+Package: `ROLLER/roller/nba_path_fe/`.
+Library: `research/nba_path_trade_fe/`.
+SSOT: `research/nba_path_trade_fe/features/registry.yaml`.
+Contract: `research/nba_path_trade_fe/docs/`.
+
+## Absolute
+
+- Do not remount this inside Choosin Texas or `frontend/roller-terminal`.
+- Do not edit `first80.py`, live FIRST01 / 80/81/83/89, or `book.json`.
+- Do not start W9 or warehouse Phase 21.
+- Do not import `hedge_*` / Family E into `enter_skip`.
+- Do not fabricate Kalshi L2. Do not treat synthetic books as warehouse L2.
+- Do not leak ticks after `t_s` into enter/skip.
+- Do not invent a live rule from synthetic `p_K`.

@@ -1,0 +1,66 @@
+{
+  "positions": [
+    {
+      "position_key": "ORDER:01a0acf1-d508-71e8-b579-7d701f01d3be",
+      "status": "INCOMPLETE_QUANTITY",
+      "market": "KXWNBAGAME-26SEP17LVSEA-LV",
+      "contracts": "UNAVAILABLE",
+      "acquisition_cost_cents": "UNAVAILABLE",
+      "price_cents": 81,
+      "price_band": "EXACT_81",
+      "fill_timestamps": [
+        "2026-09-17T04:06:15Z",
+        "2026-09-17T15:27:19Z"
+      ],
+      "fills": 2,
+      "fee_cents": "UNAVAILABLE",
+      "realized_pnl": "NOT_SUPPORTED",
+      "valuation": "HYPOTHETICAL_UNLESS_EXIT_AND_SETTLEMENT",
+      "exit_linkage": "UNAVAILABLE",
+      "note": "gross acquisition only; ledger fees unavailable",
+      "hypothetical_endpoint_bid_e4": null,
+      "hypothetical_role": "HYPOTHETICAL_ENDPOINT_OR_SETTLEMENT"
+    },
+    {
+      "position_key": "ORDER:01a0b32a-d1b8-7a34-bf78-120a7b66f7f6",
+      "status": "CONFIRMED_ACQUISITION",
+      "market": "KXWNBAGAME-26SEP20MINCONN-MIN",
+      "contracts": 5,
+      "acquisition_cost_cents": 405,
+      "price_cents": 81,
+      "price_band": "EXACT_81",
+      "fill_timestamps": [
+        "2026-09-18T15:30:32Z"
+      ],
+      "fills": 1,
+      "fee_cents": "UNAVAILABLE",
+      "realized_pnl": "NOT_SUPPORTED",
+      "valuation": "HYPOTHETICAL_UNLESS_EXIT_AND_SETTLEMENT",
+      "exit_linkage": "UNAVAILABLE",
+      "note": "gross acquisition only; ledger fees unavailable",
+      "hypothetical_endpoint_bid_e4": null,
+      "hypothetical_role": "HYPOTHETICAL_ENDPOINT_OR_SETTLEMENT"
+    },
+    {
+      "position_key": "ORDER:01a0ba34-7860-76f0-8e9e-ac9e9b6b93fe",
+      "status": "CONFIRMED_ACQUISITION",
+      "market": "KXWNBAGAME-26SEP19PHXDAL-DAL",
+      "contracts": 5,
+      "acquisition_cost_cents": 405,
+      "price_cents": 81,
+      "price_band": "EXACT_81",
+      "fill_timestamps": [
+        "2026-09-19T15:36:53Z"
+      ],
+      "fills": 1,
+      "fee_cents": "UNAVAILABLE",
+      "realized_pnl": "NOT_SUPPORTED",
+      "valuation": "HYPOTHETICAL_UNLESS_EXIT_AND_SETTLEMENT",
+      "exit_linkage": "UNAVAILABLE",
+      "note": "gross acquisition only; ledger fees unavailable",
+      "hypothetical_endpoint_bid_e4": null,
+      "hypothetical_role": "HYPOTHETICAL_ENDPOINT_OR_SETTLEMENT"
+    }
+  ],
+  "fee_cents": "UNAVAILABLE"
+}

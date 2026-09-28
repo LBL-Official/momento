@@ -1,0 +1,22 @@
+{
+  "artifact_manifest_hash": "dab2a5b34835c74f37f8542c8b01ea9b65c95b37134ed0aa737c9df04e7b18f9",
+  "calibrated_probability_status": "AVAILABLE",
+  "code_version": "0.1.0",
+  "coverage": {
+    "dataset_c_alignment": "DATA GAP",
+    "ncaab_in_game_universe": "P5-vs-P5 verified PBP only",
+    "timeActual": "DATA GAP",
+    "xib_coverage": "in-game XIB: P5-vs-P5 verified PBP only; otherwise UNAVAILABLE"
+  },
+  "dataset_version": "TE-DATASET-B-NCAAB-2024-25-P5-V1",
+  "feature_set_version": "model1_plus_pregame",
+  "frozen_model_file": "models/xib_frozen.joblib",
+  "frozen_model_sha256": "4847d31862b553cdc0b03fa564b82e6a32e6450bcbcd88fc8ed4a3976bca2590",
+  "league": "NCAAB",
+  "model_version": "XIB-NCAAB-V1",
+  "prediction_file": "predictions/xib_2024_25.parquet",
+  "prediction_sha256": "f56913a80e12c680747ed201c694cc53e29b01e1bcbddfa452a1a0062a5fd8d7",
+  "raw_probability_status": "UNAVAILABLE",
+  "read_only": true,
+  "season": "2024-2025"
+}

@@ -1,0 +1,10 @@
+trade T0021  NBA  Phoenix at Los Angeles C
+contract KXNBAGAME-25NOV08PHXLAC-PHX  slice Q3
+signal 2025-11-08T21:01:00-08:00 PST  exit 2025-11-08T21:21:00-08:00 PST
+assumed entry 78c  observed close 83c  overshoot 5c
+contracts 1823  principal_cents 142194
+entry_fee_cents 548  exit_fee_cents 706
+exit STOP at 67c  terminal yes
+gross_cents -20053  net_cents -21307
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

@@ -1,0 +1,10 @@
+trade T0101  NBA  Sacramento at Houston
+contract KXNBAGAME-25DEC03SACHOU-HOU  slice Q3
+signal 2025-12-03T18:26:00-08:00 PST  exit 2025-12-03T19:59:14-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 2429  principal_cents 189462
+entry_fee_cents 730  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 53438  net_cents 52708
+strategy_result POSITIVE  net_r 1.856634611997604706048117229
+Assumed fill. Not a maker fill. Not live P&L.

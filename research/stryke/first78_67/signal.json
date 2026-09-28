@@ -1,0 +1,90 @@
+{
+  "label": "FIRST78_67",
+  "folder_id": "FIRST78_67",
+  "product": "Stryke",
+  "system_id": "signal_generation",
+  "strategy_id": "FIRST78_67",
+  "live_execution": false,
+  "submits": false,
+  "execution_authorized": false,
+  "candle_path_is_fill": false,
+  "allocation_note": "Signal spec. Does not change Risk or the Choosin 6% cap.",
+  "rows": [
+    {
+      "label": "Entry",
+      "value": "78"
+    },
+    {
+      "label": "Exit",
+      "value": "67"
+    },
+    {
+      "label": "Top Out",
+      "value": "85"
+    },
+    {
+      "label": "Touch (N)",
+      "value": "1"
+    },
+    {
+      "label": "Batch (N)",
+      "value": "10"
+    },
+    {
+      "label": "Allocation",
+      "value": "0.06"
+    },
+    {
+      "label": "Hedge",
+      "value": "Limit @ 68"
+    },
+    {
+      "label": "Hedge Path",
+      "value": "68,67,66,65,64,63,62,61,60,59,58,57,56,55"
+    },
+    {
+      "label": "Market Dump",
+      "value": "<55"
+    },
+    {
+      "label": "Ontologic",
+      "value": "[Placeholder]"
+    },
+    {
+      "label": "TK Ultra",
+      "value": "[Placeholder]"
+    },
+    {
+      "label": "Ball Hog",
+      "value": "[Placeholder]"
+    },
+    {
+      "label": "Choosin Texas",
+      "value": "[Placeholder]"
+    },
+    {
+      "label": "Austin",
+      "value": "[Placeholder]"
+    },
+    {
+      "label": "Positman",
+      "value": "[Placeholder]"
+    },
+    {
+      "label": "Drevo",
+      "value": "[Placeholder]"
+    }
+  ],
+  "pointers": {
+    "choosin": {
+      "universe": "DERIVED_FOUR_FIRST78",
+      "n": 854,
+      "note": "Qualified 78\u00a2 count. Not Touch (N). Not Austin training N."
+    },
+    "austin": {
+      "universe": "choosin_nba_2q3q_first78_67",
+      "n": 569,
+      "note": "Austin 78/67 fit. Not Touch (N). Not the qualified count."
+    }
+  }
+}

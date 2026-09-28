@@ -1,0 +1,45 @@
+{
+  "NBA": {
+    "league": "NBA",
+    "series_ticker": "KXNBAGAME",
+    "dir": "nba",
+    "source_game_id_field": "nba_game_id",
+    "pbp_source": "nba_stats_live"
+  },
+  "WNBA": {
+    "league": "WNBA",
+    "series_ticker": "KXWNBAGAME",
+    "dir": "wnba",
+    "source_game_id_field": "espn_game_id",
+    "pbp_source": "espn_plays"
+  },
+  "NCAAB": {
+    "league": "NCAAB",
+    "series_ticker": "KXNCAAMBGAME",
+    "dir": "ncaab",
+    "source_game_id_field": "espn_game_id",
+    "pbp_source": "espn_plays",
+    "research_universe": "P5_vs_P5"
+  },
+  "MLB": {
+    "league": "MLB",
+    "series_ticker": "KXMLBGAME",
+    "dir": "mlb",
+    "source_game_id_field": "game_pk",
+    "pbp_source": "mlb_statsapi"
+  },
+  "ATP": {
+    "league": "ATP",
+    "series_ticker": "KXATPMATCH",
+    "dir": "tennis",
+    "source_game_id_field": "source_match_id",
+    "pbp_source": "mcp_sequence_only"
+  },
+  "WTA": {
+    "league": "WTA",
+    "series_ticker": "KXWTAMATCH",
+    "dir": "tennis",
+    "source_game_id_field": "source_match_id",
+    "pbp_source": "mcp_sequence_only"
+  }
+}

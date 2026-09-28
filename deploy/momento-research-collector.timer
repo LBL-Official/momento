@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily 03:00 America/Los_Angeles Kalshi research data reconciliation
+Requires=momento-research-collector.service
+
+[Timer]
+OnCalendar=*-*-* 03:00:00 America/Los_Angeles
+Persistent=true
+Unit=momento-research-collector.service
+
+[Install]
+WantedBy=timers.target

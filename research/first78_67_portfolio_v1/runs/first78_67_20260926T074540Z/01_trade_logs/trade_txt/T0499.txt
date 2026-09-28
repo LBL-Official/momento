@@ -1,0 +1,10 @@
+trade T0499  NCAAB  Oklahoma at LSU
+contract KXNCAAMBGAME-26FEB28OKLALSU-OKLA  slice H2_1
+signal 2026-02-28T16:32:00-08:00 PST  exit 2026-02-28T17:27:36-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 9461  principal_cents 737958
+entry_fee_cents 2842  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 208142  net_cents 205300
+strategy_result POSITIVE  net_r 1.856675167760956463544775444
+Assumed fill. Not a maker fill. Not live P&L.

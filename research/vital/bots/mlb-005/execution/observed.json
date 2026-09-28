@@ -1,0 +1,17 @@
+{
+  "catalog": {
+    "detail": "ITI ledger reads the isolated unit only",
+    "status": "OBSERVATION_UNAVAILABLE"
+  },
+  "fills_added": 0,
+  "fills_updated": 0,
+  "host": {
+    "detail": "demo state path unset",
+    "fill_body": "OBSERVATION_UNAVAILABLE",
+    "status": "OBSERVATION_UNAVAILABLE"
+  },
+  "trades_closed": 0,
+  "trades_opened": 0,
+  "trades_updated": 0,
+  "ts": "2026-09-17T06:47:13Z"
+}

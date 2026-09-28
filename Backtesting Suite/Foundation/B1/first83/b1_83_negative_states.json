@@ -1,0 +1,122 @@
+[
+  {
+    "condition": "p_start_40_54=NO&lead_signed=TIED",
+    "n": 110,
+    "test_ev": -13.0,
+    "test_n": 20,
+    "train_ev": -13.379746835443038,
+    "val_ev": -28.454545454545453
+  },
+  {
+    "condition": "p_start_40_54=NO&tied=YES",
+    "n": 110,
+    "test_ev": -13.0,
+    "test_n": 20,
+    "train_ev": -13.379746835443038,
+    "val_ev": -28.454545454545453
+  },
+  {
+    "condition": "p_start_40_54=NO&score_bucket=TIED",
+    "n": 110,
+    "test_ev": -13.0,
+    "test_n": 20,
+    "train_ev": -13.379746835443038,
+    "val_ev": -28.454545454545453
+  },
+  {
+    "condition": "p_start_35_49=NO&lead_signed=TIED",
+    "n": 122,
+    "test_ev": -15.0,
+    "test_n": 25,
+    "train_ev": -14.764705882352942,
+    "val_ev": -24.666666666666668
+  },
+  {
+    "condition": "p_start_35_49=NO&tied=YES",
+    "n": 122,
+    "test_ev": -15.0,
+    "test_n": 25,
+    "train_ev": -14.764705882352942,
+    "val_ev": -24.666666666666668
+  },
+  {
+    "condition": "p_start_35_49=NO&score_bucket=TIED",
+    "n": 122,
+    "test_ev": -15.0,
+    "test_n": 25,
+    "train_ev": -14.764705882352942,
+    "val_ev": -24.666666666666668
+  },
+  {
+    "condition": "p_start_lt50=NO&lead_signed=TIED",
+    "n": 120,
+    "test_ev": -15.0,
+    "test_n": 25,
+    "train_ev": -13.120481927710843,
+    "val_ev": -24.666666666666668
+  },
+  {
+    "condition": "p_start_lt50=NO&tied=YES",
+    "n": 120,
+    "test_ev": -15.0,
+    "test_n": 25,
+    "train_ev": -13.120481927710843,
+    "val_ev": -24.666666666666668
+  },
+  {
+    "condition": "p_start_lt50=NO&score_bucket=TIED",
+    "n": 120,
+    "test_ev": -15.0,
+    "test_n": 25,
+    "train_ev": -13.120481927710843,
+    "val_ev": -24.666666666666668
+  },
+  {
+    "condition": "p_start_ge50=YES&lead_signed=TIED",
+    "n": 120,
+    "test_ev": -15.0,
+    "test_n": 25,
+    "train_ev": -13.120481927710843,
+    "val_ev": -24.666666666666668
+  },
+  {
+    "condition": "p_start_ge50=YES&tied=YES",
+    "n": 120,
+    "test_ev": -15.0,
+    "test_n": 25,
+    "train_ev": -13.120481927710843,
+    "val_ev": -24.666666666666668
+  },
+  {
+    "condition": "p_start_ge50=YES&score_bucket=TIED",
+    "n": 120,
+    "test_ev": -15.0,
+    "test_n": 25,
+    "train_ev": -13.120481927710843,
+    "val_ev": -24.666666666666668
+  },
+  {
+    "condition": "p_start_40_50=NO&lead_signed=TIED",
+    "n": 125,
+    "test_ev": -19.0,
+    "test_n": 25,
+    "train_ev": -15.183908045977011,
+    "val_ev": -21.46153846153846
+  },
+  {
+    "condition": "p_start_40_50=NO&tied=YES",
+    "n": 125,
+    "test_ev": -19.0,
+    "test_n": 25,
+    "train_ev": -15.183908045977011,
+    "val_ev": -21.46153846153846
+  },
+  {
+    "condition": "p_start_40_50=NO&score_bucket=TIED",
+    "n": 125,
+    "test_ev": -19.0,
+    "test_n": 25,
+    "train_ev": -15.183908045977011,
+    "val_ev": -21.46153846153846
+  }
+]

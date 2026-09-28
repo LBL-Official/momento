@@ -1,0 +1,100 @@
+{
+  "BASE_GRADE": "A-",
+  "DEBASE_GRADE": "D",
+  "abase_filename": "SuperasiABase[as1 ITI-04].csv",
+  "abase_sha256": "8c70ee28f900b258d62692b1728bcabf09368041909d623ab76e9e2ac1aed169",
+  "allocation_bps": 500,
+  "artifact": "superasi_bdebase",
+  "bankroll_cents": 2000000,
+  "bottleneck": "D",
+  "components": {
+    "coverage": "A+",
+    "research_evidence": "D",
+    "robustness": "A-",
+    "theoretical_alignment": "A+",
+    "validation": "A+"
+  },
+  "created_at": "2026-09-16T23:51:22Z",
+  "debase_filename": "SuperasiBDeBase[as1 ITI-04].csv",
+  "debase_payload_sha256": "7b8eaf211f8e465efade5f2db354bf1c50a5615c6ee6a6cd4687397bde0dff8b",
+  "debase_sha256": "7f87c7cb36e4e3f043ffeab0a8527e5c910401be391614da029622c227bcecde",
+  "desk_settings_source": "disk",
+  "floor_cents": 1500000,
+  "folder": "as1 ITI-04",
+  "grade_config_version": "grade_config_v1",
+  "phase": "B",
+  "phase_a_result_id": "as1 ITI-04",
+  "plan_hash": "521a2baffb6916fa9f14bbbde42c7feeeb9d41cd922c3510a626adb105c1a902",
+  "question": {
+    "accept_limitations": false,
+    "entry_conditions": [
+      {
+        "clock": null,
+        "event_definition": "TRADABLE_CLOSE_CROSS",
+        "id": "entry_mu1xbssh_vysak",
+        "max_entry_e4": 9000,
+        "nth": null,
+        "ordinal": "FIRST_TOUCH",
+        "period": null,
+        "period_windows": [
+          {
+            "clock": null,
+            "period": "H2_1"
+          },
+          {
+            "clock": null,
+            "period": "H1_2"
+          }
+        ],
+        "price_e4": 8900,
+        "price_field": "yes_bid_close"
+      }
+    ],
+    "path_conditions": [
+      {
+        "id": "exit_mtug1t99_aq1lv",
+        "op": "REACH",
+        "outcome": "loss",
+        "price_e4": 4000,
+        "sequential": false
+      }
+    ],
+    "requested_dimensions": [
+      "HOLD_TO_SETTLEMENT"
+    ],
+    "terminal": "BOTH",
+    "universe": {
+      "date_from": "2025-03-18",
+      "date_to": "2026-09-01",
+      "game_data": [
+        "pbp"
+      ],
+      "leagues": [
+        "NCAAB"
+      ],
+      "market_data": [
+        "candles"
+      ],
+      "markets": [
+        "kalshi"
+      ],
+      "seasons": [
+        "2025-2026"
+      ],
+      "sports": [
+        "NCAAB"
+      ]
+    },
+    "win_hold": true
+  },
+  "question_sha256": "e2c5ccfe63be15ef43342fc56c0d878934ad9502e9562c9c8d7e40eff9b46ad5",
+  "question_status": "PRESENT",
+  "result_hash": "283ffa0abe2dee37818bd7cdcc52bb0cbd02ce8ba2f7babc86f6cebe851b5083",
+  "result_id": "as1 ITI-04",
+  "roller_filename": "Roller[as1 ITI-04].csv",
+  "source_csv_sha256": "ad44dcdd0152da591e8a6e70ebb716c5cc865cbfb6aa491419bae7be31914893",
+  "source_lab_id": "eb9bbd97e3954d0a9714b5eb9a28536a",
+  "strategy_name": "as1 ITI-04",
+  "superasi_version": "superasi_bdebase_v1.1.0",
+  "target_cents": 3000000
+}

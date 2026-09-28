@@ -1,0 +1,23 @@
+{
+  "observability": "TRADE_PRINT_NOT_YES_BID",
+  "fill_status": "TRADE_PRINT_MODELED",
+  "filter": "W6 state at first80: inning in {6,7,8,9} AND bound team lead >= 2",
+  "stake_note": "qty = 625 // entry_cents; uncompounded; $6.25 of $50",
+  "w8_entries": 2884,
+  "first80_late_lead2_entries": 254,
+  "n_games": 254,
+  "wins": 212,
+  "losses": 42,
+  "hold_sized_usd": 33.88,
+  "published_254_n": 254,
+  "published_254_hold_usd": 33.88,
+  "published_110_hold_usd": 21.07,
+  "matches_published_254": true,
+  "prior_110_keys_available": false,
+  "notes": [
+    "Prior 110-trade curiosity JSON has aggregates only; row keys were not persisted.",
+    "Reconciliation target is the published full-universe 254 / +$33.88 hold path.",
+    "B1 primary search uses state at ENTRY. This recon uses state at first80."
+  ],
+  "rows": []
+}

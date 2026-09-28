@@ -1,0 +1,5 @@
+{"activation": "CONFIRM_REQUIRED", "jump_bot_id": "c1e26b1299824780aa2904021a62aaee", "kind": "registered_from_jump", "ts": "2026-09-15T22:06:43Z"}
+{"activation": "RUNNING_DEMO", "aws": "CONFIRMED", "kalshi": "CONFIRMED", "kind": "demo_attach", "ts": "2026-09-15T22:06:54Z", "unit_started": true, "worker": "momento-demo@atp-001.service"}
+{"activation": "RUNNING_DEMO", "aws": "CONFIRMED", "kalshi": "CONFIRMED", "kind": "demo_attach", "ts": "2026-09-15T22:06:56Z", "unit_started": true, "worker": "momento-demo@atp-001.service"}
+{"activation": "RUNNING_DEMO", "aws": "CONFIRMED", "kalshi": "CONFIRMED", "kind": "demo_attach", "ts": "2026-09-15T22:06:56Z", "unit_started": true, "worker": "momento-demo@atp-001.service"}
+{"activation": "RUNNING_DEMO", "aws": "CONFIRMED", "kalshi": "CONFIRMED", "kind": "demo_attach", "ts": "2026-09-15T22:06:56Z", "unit_started": true, "worker": "momento-demo@atp-001.service"}

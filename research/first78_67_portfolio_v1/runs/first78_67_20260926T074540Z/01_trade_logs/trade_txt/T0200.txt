@@ -1,0 +1,10 @@
+trade T0200  NCAAB  Minnesota at Northwestern
+contract KXNCAAMBGAME-26JAN03MINNNW-NW  slice H2_1
+signal 2026-01-03T15:13:00-08:00 PST  exit 2026-01-03T15:43:00-08:00 PST
+assumed entry 78c  observed close 82c  overshoot 4c
+contracts 3592  principal_cents 280176
+entry_fee_cents 1079  exit_fee_cents 1390
+exit STOP at 67c  terminal no
+gross_cents -39512  net_cents -41981
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

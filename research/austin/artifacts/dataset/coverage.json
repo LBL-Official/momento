@@ -1,0 +1,33 @@
+{
+  "n_trades": 604,
+  "n_q2": 314,
+  "n_q3": 290,
+  "n_survive": 450,
+  "n_path_complete": 520,
+  "n_path_partial": 84,
+  "n_path_unavailable": 0,
+  "n_knn_observations": 48752,
+  "n_entry_snapshots": 604,
+  "path_complete_definition": "favorite 1m path after entry, opponent joined, PBP present, no gap > 300s",
+  "hedge_trigger_resolution": {
+    "TRIGGER_RESOLUTION": "1m_close",
+    "definition_42": "first favorite yes_bid_close <= 42 after entry",
+    "definition_41": "first favorite yes_bid_close <= 41 after entry",
+    "n_first_le_42": 443,
+    "n_first_le_41": 443,
+    "n_42_without_41": 18,
+    "n_same_bar_42_and_41": 425,
+    "note": "If n_42_without_41=0, 1m closes skip 42-only prints. Do not invent separated hedge economics."
+  },
+  "locks": {
+    "n": 604,
+    "q2": 314,
+    "q3": 290,
+    "s": 450
+  },
+  "pbp_status": "PBP_SEQUENCE_NOT_PIT",
+  "l2_status": "SOURCE_UNAVAILABLE",
+  "fill_status": "FILL_UNAVAILABLE",
+  "live_feed": "UNAVAILABLE",
+  "data_mode": "HISTORICAL_QUERY"
+}

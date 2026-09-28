@@ -1,0 +1,47 @@
+---
+description: STAX — multi-strategy ROLLER research stack
+globs:
+  - research/stax/**
+  - docs/research/stax/**
+  - ROLLER/roller/stax/**
+  - frontend/roller-terminal/src/stax/**
+alwaysApply: false
+---
+
+# STAX
+
+ROLLER-native composition of independent research objects.
+
+```
+LIVE EXECUTION = FALSE
+RESEARCH AUTOMATION ≠ EXECUTION
+AGGREGATION_METHOD = NONE
+CANDLE PATH ≠ ACTUAL FILL
+DO NOT CHANGE LIVE FIRST01 / 80/81/83/89
+DO NOT START W9
+```
+
+## Mission
+
+Stack multiple ROLLER research objects into one versioned STAX.
+Each strategy stays independently measurable.
+
+## V1 locks
+
+- Timeframe is fixed. Automation re-executes the saved specification.
+  Do not expand `date_from` / `date_to` / seasons to “today.”
+- `member_id` is durable. `position` is order only.
+- ADD STRATEGY opens a native compact builder that constructs a
+  ROLLER-compatible WorkflowDraft. STAX never reinterprets, mutates,
+  or bypasses ROLLER compile / measurement. Add-existing is secondary.
+  Full Entry/Exit remains available for dimensions the compact builder
+  does not expose. Drafts are not persisted until SAVE STRATEGY.
+  Subsequent creates must match the locked universe.
+
+## Absolute
+
+- Do not invent a STAX EV or combined independent N.
+- Do not flatten strategies into one synthetic population.
+- Do not modify `roller/research/first80.py` or research-query semantics.
+- Do not submit, approve, or route orders.
+- SuperASI is downstream. Do not implement SuperASI STAX automation.

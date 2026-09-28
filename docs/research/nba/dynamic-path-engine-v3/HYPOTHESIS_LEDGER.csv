@@ -1,0 +1,15 @@
+hypothesis_id,family,name,definition,split_role,status,notes
+H0,baseline,unconditional_hazard,P(H_40_5M | minutes_since_entry bin),benchmark,WEAK_OR_NONMONOTONE,Model 0
+H0b,baseline,distance_to_40,P(H_40_5M | distance_to_40 bin),benchmark,TRAIN_SIGNAL,Must beat this to claim more than proximity
+H1,market,negative_momentum,5m signed bid-close change predicts H_40_5M,univariate,WEAK_OR_NONMONOTONE,Deterioration continues?
+H2,market,vol_expansion,5m candle vol proxy vs prior 15m,univariate,TRAIN_SIGNAL,Not true RV
+H3,path,mae_since_entry,Max adverse excursion since entry,univariate,TRAIN_SIGNAL,
+H4,path,drawdown_from_post_entry_high,Distance from post-entry high,univariate,WEAK_OR_NONMONOTONE,
+H5,barrier,velocity_toward_40,Signed speed of bid toward 40,univariate,WEAK_OR_NONMONOTONE,
+H6,game,net_score_since_entry,Team minus opp points since entry,univariate,TRAIN_SIGNAL,Alignment-gated
+H7,response,shock_continuation,Event-response category vs H_40_5M,univariate,TRAIN_DESCRIBED,Algorithmic labels only
+H8,archetype,kmeans_path_summary,TRAIN K-means on path summaries,exploratory,PRE_REGISTERED,Not a production filter
+T1,target,H_40_5M,Barrier in next 5 completed minutes,target,PRE_REGISTERED,PRIMARY short-horizon
+T2,target,H_40_10M,Next 10 minutes,target,PRE_REGISTERED,
+T3,target,H_40_15M,Next 15 minutes,target,PRE_REGISTERED,
+T4,target,EVENTUAL_40,Y_40_CLOSE at trade level,target,PRE_REGISTERED,TERTIARY

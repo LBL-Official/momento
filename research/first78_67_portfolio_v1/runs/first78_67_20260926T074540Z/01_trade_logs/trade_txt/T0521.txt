@@ -1,0 +1,10 @@
+trade T0521  NCAAB  Nebraska at UCLA
+contract KXNCAAMBGAME-26MAR03NEBUCLA-UCLA  slice H1_2
+signal 2026-03-03T20:55:00-08:00 PST  exit 2026-03-03T23:16:07-08:00 PST
+assumed entry 78c  observed close 81c  overshoot 3c
+contracts 10304  principal_cents 803712
+entry_fee_cents 3095  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 226688  net_cents 223593
+strategy_result POSITIVE  net_r 1.856683772607244282796073938
+Assumed fill. Not a maker fill. Not live P&L.

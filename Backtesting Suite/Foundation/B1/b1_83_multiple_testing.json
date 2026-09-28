@@ -1,0 +1,9 @@
+{
+  "kept": [
+    "p_start_tertile=LOW&last_delta_band=2_5"
+  ],
+  "method": "Benjamini-Hochberg FDR q=0.10 on TRAIN game-level P(mean P&L <= 0)",
+  "n_reject_q10": 1,
+  "n_tested": 2462,
+  "note": "Uncorrected TEST EV is not evidence. Selection score ignores TEST."
+}

@@ -1,0 +1,278 @@
+{
+  "nba_2q": {
+    "book": "NBA 2Q",
+    "n_trades": 314,
+    "n_run_mark_reached": 314,
+    "n_in_price_band": 0,
+    "n_hedge_scenario": 0,
+    "n_hedge_losers": 0,
+    "n_hedge_winners": 0,
+    "n_hold_in_band": 0,
+    "n_ev_unavailable_in_band": 0,
+    "n_not_underwater": 284,
+    "n_through_band": 30,
+    "used_remaining": {
+      "min": 720,
+      "median": 720,
+      "max": 720
+    },
+    "katy_path": {
+      "n": 314,
+      "sum_cents": 1580,
+      "mean_cents": 5.031847133757962
+    },
+    "katy_vs_8040": {
+      "n": 314,
+      "sum_cents": 1780,
+      "mean_cents": 5.6687898089171975
+    },
+    "always_hold": {
+      "n": 314,
+      "sum_cents": 1580,
+      "mean_cents": 5.031847133757962
+    },
+    "always_8040": {
+      "n": 314,
+      "sum_cents": 1780,
+      "mean_cents": 5.6687898089171975
+    },
+    "hedge_subset_lock": {
+      "n": 0,
+      "sum_cents": 0,
+      "mean_cents": null
+    },
+    "hedge_subset_had_held": {
+      "n": 0,
+      "sum_cents": 0,
+      "mean_cents": null
+    },
+    "hedge_subset_had_8040": {
+      "n": 0,
+      "sum_cents": 0,
+      "mean_cents": null
+    },
+    "losers_hold": {
+      "n": 47,
+      "sum_cents": -3760,
+      "mean_cents": -80.0
+    },
+    "losers_katy": {
+      "n": 47,
+      "sum_cents": -3760,
+      "mean_cents": -80.0
+    },
+    "losers_katy_8040": {
+      "n": 47,
+      "sum_cents": -1880,
+      "mean_cents": -40.0
+    },
+    "note": "SCENARIO \u2014 NOT OBSERVED FILL. Members are never combined with another book."
+  },
+  "nba_3q": {
+    "book": "NBA 3Q",
+    "n_trades": 290,
+    "n_run_mark_reached": 290,
+    "n_in_price_band": 45,
+    "n_hedge_scenario": 43,
+    "n_hedge_losers": 20,
+    "n_hedge_winners": 23,
+    "n_hold_in_band": 0,
+    "n_ev_unavailable_in_band": 0,
+    "n_not_underwater": 239,
+    "n_through_band": 8,
+    "used_remaining": {
+      "min": 720,
+      "median": 720,
+      "max": 720
+    },
+    "katy_path": {
+      "n": 290,
+      "sum_cents": 896,
+      "mean_cents": 3.089655172413793
+    },
+    "katy_vs_8040": {
+      "n": 290,
+      "sum_cents": 1276,
+      "mean_cents": 4.4
+    },
+    "always_hold": {
+      "n": 290,
+      "sum_cents": 600,
+      "mean_cents": 2.0689655172413794
+    },
+    "always_8040": {
+      "n": 290,
+      "sum_cents": 1060,
+      "mean_cents": 3.6551724137931036
+    },
+    "hedge_subset_lock": {
+      "n": 43,
+      "sum_cents": -844,
+      "mean_cents": -19.627906976744185
+    },
+    "hedge_subset_had_held": {
+      "n": 43,
+      "sum_cents": -1140,
+      "mean_cents": -26.511627906976745
+    },
+    "hedge_subset_had_8040": {
+      "n": 43,
+      "sum_cents": -1060,
+      "mean_cents": -24.651162790697676
+    },
+    "losers_hold": {
+      "n": 52,
+      "sum_cents": -4160,
+      "mean_cents": -80.0
+    },
+    "losers_katy": {
+      "n": 52,
+      "sum_cents": -3001,
+      "mean_cents": -57.71153846153846
+    },
+    "losers_katy_8040": {
+      "n": 52,
+      "sum_cents": -1721,
+      "mean_cents": -33.09615384615385
+    },
+    "note": "SCENARIO \u2014 NOT OBSERVED FILL. Members are never combined with another book."
+  },
+  "ncaab_h1_2": {
+    "book": "NCAAB 1H second 10",
+    "n_trades": 193,
+    "n_run_mark_reached": 193,
+    "n_in_price_band": 0,
+    "n_hedge_scenario": 0,
+    "n_hedge_losers": 0,
+    "n_hedge_winners": 0,
+    "n_hold_in_band": 0,
+    "n_ev_unavailable_in_band": 0,
+    "n_not_underwater": 175,
+    "n_through_band": 18,
+    "used_remaining": {
+      "min": 567,
+      "median": 593,
+      "max": 600
+    },
+    "katy_path": {
+      "n": 193,
+      "sum_cents": 860,
+      "mean_cents": 4.455958549222798
+    },
+    "katy_vs_8040": {
+      "n": 193,
+      "sum_cents": 800,
+      "mean_cents": 4.1450777202072535
+    },
+    "always_hold": {
+      "n": 193,
+      "sum_cents": 860,
+      "mean_cents": 4.455958549222798
+    },
+    "always_8040": {
+      "n": 193,
+      "sum_cents": 800,
+      "mean_cents": 4.1450777202072535
+    },
+    "hedge_subset_lock": {
+      "n": 0,
+      "sum_cents": 0,
+      "mean_cents": null
+    },
+    "hedge_subset_had_held": {
+      "n": 0,
+      "sum_cents": 0,
+      "mean_cents": null
+    },
+    "hedge_subset_had_8040": {
+      "n": 0,
+      "sum_cents": 0,
+      "mean_cents": null
+    },
+    "losers_hold": {
+      "n": 30,
+      "sum_cents": -2400,
+      "mean_cents": -80.0
+    },
+    "losers_katy": {
+      "n": 30,
+      "sum_cents": -2400,
+      "mean_cents": -80.0
+    },
+    "losers_katy_8040": {
+      "n": 30,
+      "sum_cents": -1200,
+      "mean_cents": -40.0
+    },
+    "note": "SCENARIO \u2014 NOT OBSERVED FILL. Members are never combined with another book."
+  },
+  "ncaab_h2_1": {
+    "book": "NCAAB 2H first 10",
+    "n_trades": 139,
+    "n_run_mark_reached": 139,
+    "n_in_price_band": 0,
+    "n_hedge_scenario": 0,
+    "n_hedge_losers": 0,
+    "n_hedge_winners": 0,
+    "n_hold_in_band": 0,
+    "n_ev_unavailable_in_band": 0,
+    "n_not_underwater": 138,
+    "n_through_band": 1,
+    "used_remaining": {
+      "min": 574,
+      "median": 594,
+      "max": 600
+    },
+    "katy_path": {
+      "n": 139,
+      "sum_cents": 680,
+      "mean_cents": 4.892086330935252
+    },
+    "katy_vs_8040": {
+      "n": 139,
+      "sum_cents": 920,
+      "mean_cents": 6.618705035971223
+    },
+    "always_hold": {
+      "n": 139,
+      "sum_cents": 680,
+      "mean_cents": 4.892086330935252
+    },
+    "always_8040": {
+      "n": 139,
+      "sum_cents": 920,
+      "mean_cents": 6.618705035971223
+    },
+    "hedge_subset_lock": {
+      "n": 0,
+      "sum_cents": 0,
+      "mean_cents": null
+    },
+    "hedge_subset_had_held": {
+      "n": 0,
+      "sum_cents": 0,
+      "mean_cents": null
+    },
+    "hedge_subset_had_8040": {
+      "n": 0,
+      "sum_cents": 0,
+      "mean_cents": null
+    },
+    "losers_hold": {
+      "n": 21,
+      "sum_cents": -1680,
+      "mean_cents": -80.0
+    },
+    "losers_katy": {
+      "n": 21,
+      "sum_cents": -1680,
+      "mean_cents": -80.0
+    },
+    "losers_katy_8040": {
+      "n": 21,
+      "sum_cents": -840,
+      "mean_cents": -40.0
+    },
+    "note": "SCENARIO \u2014 NOT OBSERVED FILL. Members are never combined with another book."
+  }
+}

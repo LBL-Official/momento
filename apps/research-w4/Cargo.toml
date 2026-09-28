@@ -1,0 +1,21 @@
+[package]
+name = "momento-research-w4"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "CTO-W4 market reconstruction CLI. Research only. No live trading. No Kalshi network."
+
+[[bin]]
+name = "momento-research-w4"
+path = "src/main.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+chrono.workspace = true
+momento-research-market = { path = "../../crates/research-market" }
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.20", features = ["fmt", "env-filter"] }

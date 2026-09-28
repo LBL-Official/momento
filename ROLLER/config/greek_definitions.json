@@ -1,0 +1,27 @@
+{
+  "schema_version": "3.0.0",
+  "k_field": "yes_bid_close",
+  "k_units": "integer_e4",
+  "note": "Empirical measurements. Not Black-Scholes. Not edge.",
+  "backward": [
+    "market_return_1m_backward",
+    "open_to_close_delta_1m",
+    "high_low_range_1m",
+    "close_to_close_realized_volatility",
+    "directional_efficiency",
+    "market_acceleration_1m"
+  ],
+  "forward": [
+    "market_response_1m",
+    "market_response_5m",
+    "market_response_10m",
+    "score_response",
+    "future_realized_range",
+    "future_realized_volatility",
+    "clock_response"
+  ],
+  "schema_only": [
+    "basis",
+    "market_delta_1s_l2"
+  ]
+}

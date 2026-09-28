@@ -1,0 +1,17 @@
+{
+  "artifact_version": "W7.PATH.1.0.0",
+  "causal_version": "W7.CAUSAL.1.0.0",
+  "dataset_version": "W7.EVENT_MARKET_PATH.1",
+  "generated_at": "2026-08-28T21:55:06.186349+00:00",
+  "join_version": "W7.JOIN.1.0.0",
+  "note": "generated_at is manifest-only and does not order historical observations",
+  "run_id": "w7-20260828T215506Z",
+  "schema_version": "W7.SCHEMA.1.0.0",
+  "sqlite": "path.sqlite",
+  "w5_dataset_version": "W5.COHORT.PBP_PLUS_MATCHED_TRADES.1",
+  "w5_run_id": "w5-20260827T151645Z",
+  "w6_dataset_version": "W6.PBP.CANONICAL_STATE.1",
+  "w6_run_id": "w6-20260828T172003Z",
+  "w7_generation_version": "W7.PATH.1.0.0",
+  "waterfall": "CTO-W7"
+}

@@ -1,0 +1,10 @@
+{
+  "tail": {
+    "label": "ORACLE_TAIL_BOUND",
+    "executable": false,
+    "probability": 0.05
+  },
+  "tail_failures": 0,
+  "worst_half_net_cents": -53928,
+  "executable": false
+}

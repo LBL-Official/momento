@@ -1,0 +1,44 @@
+---
+description: Jump — Data Modeling filesystem (ROLLER + SuperASI pointers)
+globs:
+  - research/jump/**
+  - ROLLER/roller/jump/**
+  - frontend/roller-terminal/src/jump/**
+alwaysApply: false
+---
+
+# Jump
+
+Frontend for Momento Data Modeling / Path Efficiency.
+Same ROLLER Vite app: `http://127.0.0.1:5179/?app=jump`.
+
+```
+JUMP = DRIVE
+ROLLER + SUPERASI → DATA MODELING OBJECTS
+NO BOT UI
+NO VITAL ON JUMP
+BROWSER IS NOT THE ENGINE
+CANDLE PATH ≠ ACTUAL FILL
+DO NOT CHANGE LIVE FIRST01 / 80/81/83/89
+DO NOT START W9
+DO NOT START PHASE 21
+```
+
+Jump organizes pointers. It does not copy warehouses.
+It does not create, deploy, or manage bots.
+`/jump/bots*` remains HTTP compatibility for Vital until that backend is migrated.
+
+Sport-first library. One folder per canonical research articulation.
+`FIRST80_ASKED_SIX_80_40` is MIXED N=1182, homed under NBA, listed under
+NCAAB/WNBA with a shared id. Duplicate SuperASI folders
+(`superasi_vfgifapk`) are `NEEDS_RESOLUTION`, not silent merges.
+Generated `.md` is a projection. Missing fields render `Unavailable`.
+
+## Absolute
+
+- Do not add Bot Creation, My Bots, or Vital buttons to the Jump UI.
+- Do not submit orders from Jump.
+- Do not edit `first80.py`.
+- Do not silently merge SuperASI packages that share `package_id`.
+- Do not label asked-six as NBA-only 604/936.
+- Austin remains Dynamic Risk Engine. FIRST80 may hold references only.

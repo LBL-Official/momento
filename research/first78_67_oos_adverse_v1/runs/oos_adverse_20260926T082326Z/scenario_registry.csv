@@ -1,0 +1,19 @@
+scenario_id,baseline,entry_cents,stop_cents,fee_coef,cash_delay_seconds,stop_fail_rate,latency_seconds,seed_rule,notes
+REF,yes,78,67,0.0175,0,0,0,none,assumed fills
+ENTRY_1,yes,79,67,0.0175,0,0,0,none,entry stress only
+ENTRY_2,yes,80,67,0.0175,0,0,0,none,entry stress only
+EXIT_1,yes,78,66,0.0175,0,0,0,none,stop sale stress only
+EXIT_2,yes,78,65,0.0175,0,0,0,none,stop sale stress only
+JOINT_1,yes,79,66,0.0175,0,0,0,none,combined price stress
+JOINT_2,yes,80,65,0.0175,0,0,0,none,combined price stress
+FEE_007,yes,78,67,0.07,0,0,0,none,fee coefficient only
+JOINT_2_FEE_007,yes,80,65,0.07,0,0,0,none,primary adverse endpoint
+CASH_DELAY_15,yes,78,67,0.0175,900,0,0,none,slot frees at exit; cash waits
+CASH_DELAY_60,yes,78,67,0.0175,3600,0,0,none,slot frees at exit; cash waits
+STOP_FAIL_1,yes,78,67,0.0175,0,0.01,0,OCT base 20251015 / APR base 20250401 plus rep,30 reps; selection ignores outcomes; mean is the reported stress
+STOP_FAIL_5,yes,78,67,0.0175,0,0.05,0,OCT base 20251015 / APR base 20250401 plus rep,30 reps; k = floor(rate*n+0.5)
+LATENCY_60,yes,78,67,0.0175,0,0,60,none,first valid bar in (signal+60s, signal+120s]; else LATENCY_GAP_UNRESOLVED
+LATENCY_120,yes,78,67,0.0175,0,0,120,none,first valid bar in (signal+120s, signal+180s]
+ORACLE_TAIL_BOUND,no,78,67,0.0175,0,0.05,0,deterministic,outside baseline ids; failures concentrated on later no settlements
+ORACLE_ADVERSE_SELECTION_BOUND,no,78,67,0.0175,0,0,0,deterministic within sport,outside baseline ids; worst equal-contract outcomes
+RANDOM_ACCEPTANCE,no,78,67,0.0175,0,0,0,base plus rep,fractions 1 0.75 0.5 0.25; 10 reps; not a queue model

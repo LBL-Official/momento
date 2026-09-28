@@ -1,0 +1,10 @@
+trade T0120  NBA  Los Angeles L at Philadelphia
+contract KXNBAGAME-25DEC07LALPHI-LAL  slice Q3
+signal 2025-12-07T18:09:00-08:00 PST  exit 2025-12-07T18:21:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 2677  principal_cents 208806
+entry_fee_cents 804  exit_fee_cents 1036
+exit STOP at 67c  terminal yes
+gross_cents -29447  net_cents -31287
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

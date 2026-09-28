@@ -1,0 +1,10 @@
+trade T0322  NBA  Los Angeles L at Dallas
+contract KXNBAGAME-26JAN24LALDAL-LAL  slice Q2
+signal 2026-01-24T18:15:00-08:00 PST  exit 2026-01-24T19:04:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 5538  principal_cents 431964
+entry_fee_cents 1664  exit_fee_cents 2143
+exit STOP at 67c  terminal yes
+gross_cents -60918  net_cents -64725
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

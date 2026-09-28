@@ -1,0 +1,10 @@
+trade T0466  NBA  San Antonio at Detroit
+contract KXNBAGAME-26FEB23SASDET-SAS  slice Q3
+signal 2026-02-23T17:57:00-08:00 PST  exit 2026-02-23T19:13:57-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 8251  principal_cents 643578
+entry_fee_cents 2478  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 181522  net_cents 179044
+strategy_result POSITIVE  net_r 1.856686577069852331176372988
+Assumed fill. Not a maker fill. Not live P&L.

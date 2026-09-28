@@ -1,0 +1,21 @@
+{
+  "schema_version": "season_strategy_selector_v1",
+  "season_id": "2026-27",
+  "window": {
+    "start_local_inclusive": "2026-11-01",
+    "end_local_inclusive": "2027-04-01",
+    "zone": "America/Los_Angeles"
+  },
+  "official_strategy_id": "FIRST78_67",
+  "official_artifact": "research/season_strategy/2026_27/FIRST78_67_OFFICIAL_V1.json",
+  "active_computation_contract": "research/first78_active_v1/strategy.json",
+  "active_desk_route": "/choosin-texas/first78",
+  "live_execution": false,
+  "submits": false,
+  "historical_research_book": {
+    "role": "HISTORICAL_REGISTERED_RESEARCH_BASELINE",
+    "book_id": "nba_2q_regular_8040_1lot_2026_27",
+    "path": "research/choosin_texas/library/nba_2q_regular_8040_1lot_2026_27/book.json",
+    "registration_preserved": true
+  }
+}

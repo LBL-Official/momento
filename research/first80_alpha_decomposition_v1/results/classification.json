@@ -1,0 +1,25 @@
+{
+  "letter": "A_TERMINAL_CALIBRATION_ONLY",
+  "terminal_distinguishable": true,
+  "train_also_rejects_80": false,
+  "path_independence_token": "NO_OOS_CI_SEPARATION",
+  "first75_almost_identical": false,
+  "oos_path_diff": 0.039700650226966006,
+  "oos_path_diff_lo": -0.028888939672083877,
+  "oos_path_diff_hi": 0.10829024012601589,
+  "p_one_sided_full": 0.006243379248228594,
+  "oos_p_w": 0.8600823045267489,
+  "P_not_T40_given_W_FIRST80": 0.8930323846908734,
+  "P_not_T40_given_W_FIRST75": 0.853551912568306,
+  "rules": {
+    "terminal_distinguishable": "One-sided exact binomial p-value vs p=0.80 < 0.05 on FULL, AND OOS point estimate > 0.80. Cluster bootstrap is reported; it does not by itself authorize a stronger claim.",
+    "independent_path": "Among terminal winners, P(~T40|W, FIRST80) differs from FIRST75 and/or stratum-matched FIRST75 with an OOS interval on the difference that excludes 0. If the control is nearly identical to the treated set, the path test is INCONCLUSIVE.",
+    "letters": [
+      "A_TERMINAL_CALIBRATION_ONLY",
+      "B_PATH_EFFECT_ONLY",
+      "C_BOTH",
+      "D_INCONCLUSIVE"
+    ],
+    "do_not_tune_on_oos": true
+  }
+}

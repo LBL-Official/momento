@@ -1,0 +1,21 @@
+{
+  "phase": "PHASE_7",
+  "experiment_id": "AUSTIN_NBA_2026_27_PROSPECTIVE_V1",
+  "prospective_lock_timestamp": "2026-09-18T08:34:54.037026+00:00",
+  "prospective_lock_hash": "f34ca9d70f2e0962465b947849558e3a5973e9b23c510c8bf3a0ff97b0217654",
+  "Austin_model_hash": "4a47bf9ad3a2fcd4bb092a77cf93d534e308423deec29e33b6e6bad85c76431c",
+  "state_schema_hash": "96018aec5e8d3da8374632ae139b0a25761b4d485da394a46b0f5e3159079307",
+  "hazard_schema_hash": "b16bf075c323c926497beeba9bf6d51496eb348d40b306a8a99bfb8e9932c72e",
+  "Page_3_strategy_identifier": "nba_2q_regular_8040_1lot_2026_27",
+  "page3_book_hash": "4da5fdd3a48d2a5513ab6e9452657a790514fbef389a05d0385cfaba009b8cf6",
+  "observation_schedule": "EVERY_2_GAME_CLOCK_MINUTES",
+  "policy_status": "NO_POLICY_FROZEN",
+  "confirmation_A_status": "SEALED_UNSPENT",
+  "confirmation_B_status": "SEALED_UNSPENT",
+  "source_phase6": "AUSTIN_CONFIRMATION_GATE_V1",
+  "execution_enabled": false,
+  "submits": false,
+  "collection_status": "ARMED_WAITING_FOR_DATA",
+  "eligible_n": 0,
+  "completed_n": 0
+}

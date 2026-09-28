@@ -1,0 +1,1 @@
+# NFL strategy — not implemented.

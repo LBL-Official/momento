@@ -1,0 +1,18 @@
+{
+  "events_before_lock": "INELIGIBLE_FOR_PHASE7",
+  "austin_never_filters_first80_entry": true,
+  "actions_forbidden": [
+    "INTERVENE",
+    "EXIT",
+    "SELL",
+    "HEDGE"
+  ],
+  "predictions_hashed": true,
+  "outcomes_live_in_separate_table": true,
+  "revisions_require_explicit_record": true,
+  "no_retrain": true,
+  "no_threshold_shopping": true,
+  "no_historical_backfill": true,
+  "execution_enabled": false,
+  "submits": false
+}

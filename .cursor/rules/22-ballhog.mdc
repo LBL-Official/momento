@@ -1,0 +1,51 @@
+---
+description: Ballhog — Hedging Analysis / exposure-removal optimizer
+alwaysApply: true
+---
+
+# Ballhog — Hedging Analysis
+
+Exposure-removal optimizer. Not Vital. Not `crates/risk`.
+Not a Choosin Texas page. Not a 20th system.
+
+```
+LIVE EXECUTION = FALSE
+CANDLE PATH ≠ FILL
+Austin a_t is not Ballhog alpha
+THEORETICAL ≠ EXECUTABLE ≠ ECONOMICALLY BENEFICIAL
+asked-six 1182 ≠ derived four 936 ≠ NBA 604
+NO λ. NO Λα.
+```
+
+Dashboard: `frontend/ballhog` on `:5192`.
+API: `/ballhog/*` on ROLLER `:8791`.
+Library: `research/ballhog/`.
+Policy: `research/ballhog/policy/v1.yaml`.
+How-to: `docs/operations/BALLHOG.md`.
+
+BDR `#/bdr` remains the write-up library.
+TK Ultra `#/tk-ultra` is the economic-expression sibling.
+Do not call `GET /momento/tk-ultra/assess` from Ballhog.
+Positman `:5194` `/positman` is the compositor. Ballhog does not merge
+routes. Positman does not submit.
+
+## Forward feed
+
+```
+Choosin Texas  →  STATIC prior          (N=936)
+Austin         →  HISTORICAL query_at   (N=604, persist=False)
+               →  Ballhog
+```
+
+Missing is `UNAVAILABLE`. Never `$0`. Live feed `UNAVAILABLE`.
+
+## Absolute
+
+- Do not invent fills, L2, λ, Λα, live Xt, or BUY NO taker.
+- Dual-leg lock `L(p)=20−p` applies to every paired unit.
+- 35–45 is a counterfactual price grid, not a live trigger.
+- Failed unique policy pick → `POLICY_UNRESOLVED`, never silent ties.
+- Do not remount inside Choosin Texas or `frontend/roller-terminal`.
+- Do not edit `first80.py`, live FIRST01 / 80/81/83/89, `book.json`.
+- Do not start W9 or warehouse Phase 21.
+- Family E never imported into `enter_skip`.

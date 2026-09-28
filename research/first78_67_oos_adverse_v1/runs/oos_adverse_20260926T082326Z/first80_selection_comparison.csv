@@ -1,0 +1,7 @@
+population_id,candidates,admitted,portfolio_net_cents,note
+FIRST80_CONDITIONED_DIAGNOSTIC,40,40,322878,diagnostic label uses a later threshold
+OMITTED_NO_LATER_THRESHOLD,1,1,33374,diagnostic label uses a later threshold
+LEGACY_LOCK_INTERSECTION,38,38,355471,separate book; not the original locked universe
+FIRST80_CONDITIONED_DIAGNOSTIC,4,4,30796,diagnostic label uses a later threshold
+OMITTED_NO_LATER_THRESHOLD,2,2,-35952,diagnostic label uses a later threshold
+LEGACY_LOCK_INTERSECTION,0,0,,separate book; not the original locked universe

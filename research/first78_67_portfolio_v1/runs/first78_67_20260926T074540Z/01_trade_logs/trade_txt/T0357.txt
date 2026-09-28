@@ -1,0 +1,10 @@
+trade T0357  NCAAB  Kentucky at Arkansas
+contract KXNCAAMBGAME-26JAN31UKARK-ARK  slice H2_1
+signal 2026-01-31T17:06:00-08:00 PST  exit 2026-01-31T17:21:00-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 6195  principal_cents 483210
+entry_fee_cents 1861  exit_fee_cents 2398
+exit STOP at 67c  terminal no
+gross_cents -68145  net_cents -72404
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

@@ -1,0 +1,1901 @@
+{
+  "datasets": [
+    {
+      "availability_time_column": "available_at",
+      "dataset_name": "nba_2025_2026_games",
+      "dependencies": [
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T21:39:12Z",
+      "path": "data/nba/2025_2026/canonical/games.csv",
+      "primary_key": [
+        "internal_game_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "NBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "canonicalize.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "dataset_name": "nba_2025_2026_pbp",
+      "dependencies": [
+        "nba_2025_2026_games"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T21:39:12Z",
+      "path": "data/nba/2025_2026/canonical/pbp",
+      "primary_key": [
+        "internal_game_id",
+        "event_number"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "NBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "ingest_pbp.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "dataset_name": "nba_2025_2026_kalshi_candles",
+      "dependencies": [
+        "nba_2025_2026_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T21:39:12Z",
+      "path": "data/nba/2025_2026/canonical/kalshi_candles",
+      "primary_key": [
+        "internal_game_id",
+        "ticker",
+        "candle_timestamp"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "NBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "ingest_kalshi.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "dataset_name": "nba_2025_2026_team_features",
+      "dependencies": [
+        "nba_2025_2026_games"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T21:39:12Z",
+      "path": "data/nba/2025_2026/derived/team_game_features.csv",
+      "primary_key": [
+        "internal_game_id",
+        "team_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "NBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "build_team_features.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "dataset_name": "nba_2025_2026_d2d_daily",
+      "dependencies": [
+        "nba_2025_2026_games"
+      ],
+      "event_time_column": "as_of_date",
+      "format": "csv",
+      "last_updated": "2026-09-12T21:39:12Z",
+      "path": "data/nba/2025_2026/derived/d2d_daily.csv",
+      "primary_key": [
+        "as_of_date",
+        "team_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "NBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "build_d2d.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "dataset_name": "nba_2025_2026_game_state_features",
+      "dependencies": [
+        "nba_2025_2026_games"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T21:39:12Z",
+      "path": "data/nba/2025_2026/derived/game_state_features.csv",
+      "primary_key": [],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "NBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "canonicalize.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "dataset_name": "wnba_2025_games",
+      "dependencies": [
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T21:58:29Z",
+      "path": "data/wnba/2025/canonical/games.csv",
+      "primary_key": [
+        "internal_game_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025",
+      "sport": "WNBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "canonicalize.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "dataset_name": "wnba_2025_pbp",
+      "dependencies": [
+        "wnba_2025_games"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T21:58:29Z",
+      "path": "data/wnba/2025/canonical/pbp",
+      "primary_key": [
+        "internal_game_id",
+        "event_number"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025",
+      "sport": "WNBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "ingest_pbp.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "dataset_name": "wnba_2025_kalshi_candles",
+      "dependencies": [
+        "wnba_2025_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T21:58:29Z",
+      "path": "data/wnba/2025/canonical/kalshi_candles",
+      "primary_key": [
+        "internal_game_id",
+        "ticker",
+        "candle_timestamp"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025",
+      "sport": "WNBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "ingest_kalshi.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "dataset_name": "wnba_2025_team_features",
+      "dependencies": [
+        "wnba_2025_games"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T21:58:29Z",
+      "path": "data/wnba/2025/derived/team_game_features.csv",
+      "primary_key": [
+        "internal_game_id",
+        "team_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025",
+      "sport": "WNBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "build_team_features.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "dataset_name": "wnba_2025_d2d_daily",
+      "dependencies": [
+        "wnba_2025_games"
+      ],
+      "event_time_column": "as_of_date",
+      "format": "csv",
+      "last_updated": "2026-09-12T21:58:29Z",
+      "path": "data/wnba/2025/derived/d2d_daily.csv",
+      "primary_key": [
+        "as_of_date",
+        "team_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025",
+      "sport": "WNBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "build_d2d.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "dataset_name": "wnba_2026_games",
+      "dependencies": [
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T22:30:33Z",
+      "path": "data/wnba/2026/canonical/games.csv",
+      "primary_key": [
+        "internal_game_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2026",
+      "sport": "WNBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "canonicalize.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "dataset_name": "wnba_2026_pbp",
+      "dependencies": [
+        "wnba_2026_games"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T22:30:33Z",
+      "path": "data/wnba/2026/canonical/pbp",
+      "primary_key": [
+        "internal_game_id",
+        "event_number"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2026",
+      "sport": "WNBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "ingest_pbp.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "dataset_name": "wnba_2026_kalshi_candles",
+      "dependencies": [
+        "wnba_2026_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T22:30:33Z",
+      "path": "data/wnba/2026/canonical/kalshi_candles",
+      "primary_key": [
+        "internal_game_id",
+        "ticker",
+        "candle_timestamp"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2026",
+      "sport": "WNBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "ingest_kalshi.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "dataset_name": "wnba_2026_team_features",
+      "dependencies": [
+        "wnba_2026_games"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T22:30:33Z",
+      "path": "data/wnba/2026/derived/team_game_features.csv",
+      "primary_key": [
+        "internal_game_id",
+        "team_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2026",
+      "sport": "WNBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "build_team_features.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "dataset_name": "wnba_2026_d2d_daily",
+      "dependencies": [
+        "wnba_2026_games"
+      ],
+      "event_time_column": "as_of_date",
+      "format": "csv",
+      "last_updated": "2026-09-12T22:30:33Z",
+      "path": "data/wnba/2026/derived/d2d_daily.csv",
+      "primary_key": [
+        "as_of_date",
+        "team_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2026",
+      "sport": "WNBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "build_d2d.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "dataset_name": "ncaab_2025_2026_games",
+      "dependencies": [
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-13T03:37:58Z",
+      "path": "data/ncaab/2025_2026/canonical/games.csv",
+      "primary_key": [
+        "internal_game_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "NCAAB",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "canonicalize.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "dataset_name": "ncaab_2025_2026_pbp",
+      "dependencies": [
+        "ncaab_2025_2026_games"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-13T03:37:58Z",
+      "path": "data/ncaab/2025_2026/canonical/pbp",
+      "primary_key": [
+        "internal_game_id",
+        "event_number"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "NCAAB",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "ingest_pbp.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "dataset_name": "ncaab_2025_2026_kalshi_candles",
+      "dependencies": [
+        "ncaab_2025_2026_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-13T03:37:58Z",
+      "path": "data/ncaab/2025_2026/canonical/kalshi_candles",
+      "primary_key": [
+        "internal_game_id",
+        "ticker",
+        "candle_timestamp"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "NCAAB",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "ingest_kalshi.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "dataset_name": "ncaab_2025_2026_team_features",
+      "dependencies": [
+        "ncaab_2025_2026_games"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-13T03:37:58Z",
+      "path": "data/ncaab/2025_2026/derived/team_game_features.csv",
+      "primary_key": [
+        "internal_game_id",
+        "team_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "NCAAB",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "build_team_features.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "dataset_name": "ncaab_2025_2026_d2d_daily",
+      "dependencies": [
+        "ncaab_2025_2026_games"
+      ],
+      "event_time_column": "as_of_date",
+      "format": "csv",
+      "last_updated": "2026-09-13T03:37:58Z",
+      "path": "data/ncaab/2025_2026/derived/d2d_daily.csv",
+      "primary_key": [
+        "as_of_date",
+        "team_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "NCAAB",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "build_d2d.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "created_at",
+      "dataset_name": "game_identity",
+      "dependencies": [],
+      "event_time_column": "game_date",
+      "format": "csv",
+      "last_updated": "2026-09-13T03:37:58Z",
+      "path": "meta/game_identity.csv",
+      "primary_key": [
+        "internal_game_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "*",
+      "sport": "*",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "build_game_identity.py"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "nba_2025_2026_polymarket_candles",
+      "dependencies": [
+        "nba_2025_2026_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T21:39:12Z",
+      "path": "data/nba/2025_2026/canonical/polymarket_candles",
+      "primary_key": [
+        "internal_game_id",
+        "token_id",
+        "candle_timestamp"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "NBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "ingest_polymarket.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "nba_2025_2026_polymarket_markets",
+      "dependencies": [
+        "nba_2025_2026_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T21:39:12Z",
+      "path": "data/nba/2025_2026/canonical/polymarket_markets.csv",
+      "primary_key": [
+        "internal_game_id",
+        "token_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "NBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "ingest_polymarket.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "nba_2025_2026_kalshi_markets",
+      "dependencies": [
+        "nba_2025_2026_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T21:39:12Z",
+      "path": "data/nba/2025_2026/canonical/kalshi_markets.csv",
+      "primary_key": [
+        "internal_game_id",
+        "ticker"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "NBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "nba_2025_2026_kalshi_trades",
+      "dependencies": [
+        "nba_2025_2026_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T21:39:12Z",
+      "path": "data/nba/2025_2026/canonical/kalshi_trades",
+      "primary_key": [
+        "internal_game_id",
+        "trade_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "NBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "nba_2025_2026_kalshi_orderbook_snapshots",
+      "dependencies": [
+        "nba_2025_2026_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T21:39:12Z",
+      "path": "data/nba/2025_2026/canonical/kalshi_orderbook_snapshots",
+      "primary_key": [
+        "ticker",
+        "captured_at"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "NBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": true,
+      "dataset_name": "nba_2025_2026_first80_triggers",
+      "dependencies": [
+        "nba_2025_2026_games",
+        "nba_2025_2026_kalshi_candles"
+      ],
+      "event_time_column": "first_80_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T21:39:12Z",
+      "path": "data/nba/2025_2026/derived/first80_triggers.csv",
+      "primary_key": [
+        "internal_game_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "NBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "nba_2026_2027_games",
+      "dependencies": [
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/nba/2026_2027/canonical/games.csv",
+      "primary_key": [
+        "internal_game_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2026-2027",
+      "sport": "NBA",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "canonicalize.py",
+      "warehouse_season": "2026-2027"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "nba_2026_2027_pbp",
+      "dependencies": [
+        "nba_2026_2027_games"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/nba/2026_2027/canonical/pbp",
+      "primary_key": [
+        "internal_game_id",
+        "event_number"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2026-2027",
+      "sport": "NBA",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "ingest_pbp.py",
+      "warehouse_season": "2026-2027"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "nba_2026_2027_kalshi_candles",
+      "dependencies": [
+        "nba_2026_2027_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/nba/2026_2027/canonical/kalshi_candles",
+      "primary_key": [
+        "internal_game_id",
+        "ticker",
+        "candle_timestamp"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2026-2027",
+      "sport": "NBA",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "ingest_kalshi.py",
+      "warehouse_season": "2026-2027"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "nba_2026_2027_kalshi_markets",
+      "dependencies": [
+        "nba_2026_2027_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/nba/2026_2027/canonical/kalshi_markets.csv",
+      "primary_key": [
+        "internal_game_id",
+        "ticker"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2026-2027",
+      "sport": "NBA",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2026-2027"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "nba_2026_2027_kalshi_trades",
+      "dependencies": [
+        "nba_2026_2027_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/nba/2026_2027/canonical/kalshi_trades",
+      "primary_key": [
+        "internal_game_id",
+        "trade_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2026-2027",
+      "sport": "NBA",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2026-2027"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "nba_2026_2027_kalshi_orderbook_snapshots",
+      "dependencies": [
+        "nba_2026_2027_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/nba/2026_2027/canonical/kalshi_orderbook_snapshots",
+      "primary_key": [
+        "ticker",
+        "captured_at"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2026-2027",
+      "sport": "NBA",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2026-2027"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": true,
+      "dataset_name": "nba_2026_2027_first80_triggers",
+      "dependencies": [
+        "nba_2026_2027_games",
+        "nba_2026_2027_kalshi_candles"
+      ],
+      "event_time_column": "first_80_timestamp",
+      "format": "csv",
+      "path": "data/nba/2026_2027/derived/first80_triggers.csv",
+      "primary_key": [
+        "internal_game_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2026-2027",
+      "sport": "NBA",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2026-2027"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "nba_2026_2027_team_features",
+      "dependencies": [
+        "nba_2026_2027_games"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/nba/2026_2027/derived/team_game_features.csv",
+      "primary_key": [
+        "internal_game_id",
+        "team_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2026-2027",
+      "sport": "NBA",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "build_team_features.py",
+      "warehouse_season": "2026-2027"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "nba_2026_2027_d2d_daily",
+      "dependencies": [
+        "nba_2026_2027_games"
+      ],
+      "event_time_column": "as_of_date",
+      "format": "csv",
+      "path": "data/nba/2026_2027/derived/d2d_daily.csv",
+      "primary_key": [
+        "as_of_date",
+        "team_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2026-2027",
+      "sport": "NBA",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "build_d2d.py",
+      "warehouse_season": "2026-2027"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "wnba_2025_polymarket_candles",
+      "dependencies": [
+        "wnba_2025_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T21:58:29Z",
+      "path": "data/wnba/2025/canonical/polymarket_candles",
+      "primary_key": [
+        "internal_game_id",
+        "token_id",
+        "candle_timestamp"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025",
+      "sport": "WNBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "ingest_polymarket.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "wnba_2025_polymarket_markets",
+      "dependencies": [
+        "wnba_2025_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T21:58:29Z",
+      "path": "data/wnba/2025/canonical/polymarket_markets.csv",
+      "primary_key": [
+        "internal_game_id",
+        "token_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025",
+      "sport": "WNBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "ingest_polymarket.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "wnba_2025_kalshi_markets",
+      "dependencies": [
+        "wnba_2025_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T21:58:29Z",
+      "path": "data/wnba/2025/canonical/kalshi_markets.csv",
+      "primary_key": [
+        "internal_game_id",
+        "ticker"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025",
+      "sport": "WNBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "wnba_2025_kalshi_trades",
+      "dependencies": [
+        "wnba_2025_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T21:58:29Z",
+      "path": "data/wnba/2025/canonical/kalshi_trades",
+      "primary_key": [
+        "internal_game_id",
+        "trade_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025",
+      "sport": "WNBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "wnba_2025_kalshi_orderbook_snapshots",
+      "dependencies": [
+        "wnba_2025_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T21:58:29Z",
+      "path": "data/wnba/2025/canonical/kalshi_orderbook_snapshots",
+      "primary_key": [
+        "ticker",
+        "captured_at"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025",
+      "sport": "WNBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": true,
+      "dataset_name": "wnba_2025_first80_triggers",
+      "dependencies": [
+        "wnba_2025_games",
+        "wnba_2025_kalshi_candles"
+      ],
+      "event_time_column": "first_80_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T21:58:29Z",
+      "path": "data/wnba/2025/derived/first80_triggers.csv",
+      "primary_key": [
+        "internal_game_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025",
+      "sport": "WNBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "wnba_2026_polymarket_candles",
+      "dependencies": [
+        "wnba_2026_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T22:30:33Z",
+      "path": "data/wnba/2026/canonical/polymarket_candles",
+      "primary_key": [
+        "internal_game_id",
+        "token_id",
+        "candle_timestamp"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2026",
+      "sport": "WNBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "ingest_polymarket.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "wnba_2026_polymarket_markets",
+      "dependencies": [
+        "wnba_2026_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T22:30:33Z",
+      "path": "data/wnba/2026/canonical/polymarket_markets.csv",
+      "primary_key": [
+        "internal_game_id",
+        "token_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2026",
+      "sport": "WNBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "ingest_polymarket.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "wnba_2026_kalshi_markets",
+      "dependencies": [
+        "wnba_2026_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T22:30:33Z",
+      "path": "data/wnba/2026/canonical/kalshi_markets.csv",
+      "primary_key": [
+        "internal_game_id",
+        "ticker"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2026",
+      "sport": "WNBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "wnba_2026_kalshi_trades",
+      "dependencies": [
+        "wnba_2026_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T22:30:33Z",
+      "path": "data/wnba/2026/canonical/kalshi_trades",
+      "primary_key": [
+        "internal_game_id",
+        "trade_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2026",
+      "sport": "WNBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "wnba_2026_kalshi_orderbook_snapshots",
+      "dependencies": [
+        "wnba_2026_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T22:30:33Z",
+      "path": "data/wnba/2026/canonical/kalshi_orderbook_snapshots",
+      "primary_key": [
+        "ticker",
+        "captured_at"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2026",
+      "sport": "WNBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": true,
+      "dataset_name": "wnba_2026_first80_triggers",
+      "dependencies": [
+        "wnba_2026_games",
+        "wnba_2026_kalshi_candles"
+      ],
+      "event_time_column": "first_80_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-12T22:30:33Z",
+      "path": "data/wnba/2026/derived/first80_triggers.csv",
+      "primary_key": [
+        "internal_game_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2026",
+      "sport": "WNBA",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "mlb_2025_2026_games",
+      "dependencies": [
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/mlb/2025_2026/canonical/games.csv",
+      "primary_key": [
+        "internal_game_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "MLB",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "canonicalize.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "mlb_2025_2026_pbp",
+      "dependencies": [
+        "mlb_2025_2026_games"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/mlb/2025_2026/canonical/pbp",
+      "primary_key": [
+        "internal_game_id",
+        "event_number"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "MLB",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "ingest_pbp.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "mlb_2025_2026_kalshi_markets",
+      "dependencies": [
+        "mlb_2025_2026_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/mlb/2025_2026/canonical/kalshi_markets.csv",
+      "primary_key": [
+        "internal_game_id",
+        "ticker"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "MLB",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "mlb_2025_2026_kalshi_last_trade",
+      "dependencies": [],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/mlb/2025_2026/canonical/kalshi_last_trade",
+      "primary_key": [
+        "internal_game_id",
+        "ticker",
+        "candle_timestamp"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "MLB",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "mlb_2025_2026_kalshi_candles",
+      "dependencies": [
+        "mlb_2025_2026_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/mlb/2025_2026/canonical/kalshi_candles",
+      "primary_key": [
+        "internal_game_id",
+        "ticker",
+        "candle_timestamp"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "MLB",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "ingest_kalshi.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "mlb_2025_2026_kalshi_trades",
+      "dependencies": [
+        "mlb_2025_2026_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/mlb/2025_2026/canonical/kalshi_trades",
+      "primary_key": [
+        "internal_game_id",
+        "trade_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "MLB",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "atp_2025_2026_games",
+      "dependencies": [
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/tennis/2025_2026/canonical/games.csv",
+      "primary_key": [
+        "internal_game_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "ATP",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "canonicalize.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "atp_2025_2026_pbp",
+      "dependencies": [
+        "atp_2025_2026_games"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/tennis/2025_2026/canonical/pbp",
+      "primary_key": [
+        "internal_game_id",
+        "event_number"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "ATP",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "ingest_pbp.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "atp_2025_2026_kalshi_markets",
+      "dependencies": [
+        "atp_2025_2026_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/tennis/2025_2026/canonical/kalshi_markets.csv",
+      "primary_key": [
+        "internal_game_id",
+        "ticker"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "ATP",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "atp_2025_2026_kalshi_trade_ticks",
+      "dependencies": [],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/tennis/2025_2026/canonical/kalshi_trade_ticks",
+      "primary_key": [],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "ATP",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "atp_2025_2026_kalshi_trades",
+      "dependencies": [
+        "atp_2025_2026_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/tennis/2025_2026/canonical/kalshi_trade_ticks",
+      "primary_key": [
+        "internal_game_id",
+        "trade_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "ATP",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "atp_2025_2026_kalshi_candles",
+      "dependencies": [
+        "atp_2025_2026_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/tennis/2025_2026/canonical/kalshi_candles",
+      "primary_key": [
+        "internal_game_id",
+        "ticker",
+        "candle_timestamp"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "ATP",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "ingest_kalshi.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "atp_2025_2026_kalshi_last_trade",
+      "dependencies": [],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/tennis/2025_2026/canonical/kalshi_last_trade",
+      "primary_key": [
+        "internal_game_id",
+        "ticker",
+        "candle_timestamp"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "ATP",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "wta_2025_2026_games",
+      "dependencies": [
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/tennis/2025_2026/canonical/games.csv",
+      "primary_key": [
+        "internal_game_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "WTA",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "canonicalize.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "wta_2025_2026_pbp",
+      "dependencies": [
+        "wta_2025_2026_games"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/tennis/2025_2026/canonical/pbp",
+      "primary_key": [
+        "internal_game_id",
+        "event_number"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "WTA",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "ingest_pbp.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "wta_2025_2026_kalshi_markets",
+      "dependencies": [
+        "wta_2025_2026_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/tennis/2025_2026/canonical/kalshi_markets.csv",
+      "primary_key": [
+        "internal_game_id",
+        "ticker"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "WTA",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "wta_2025_2026_kalshi_trade_ticks",
+      "dependencies": [],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/tennis/2025_2026/canonical/kalshi_trade_ticks",
+      "primary_key": [],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "WTA",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "wta_2025_2026_kalshi_trades",
+      "dependencies": [
+        "wta_2025_2026_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/tennis/2025_2026/canonical/kalshi_trade_ticks",
+      "primary_key": [
+        "internal_game_id",
+        "trade_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "WTA",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "wta_2025_2026_kalshi_candles",
+      "dependencies": [
+        "wta_2025_2026_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/tennis/2025_2026/canonical/kalshi_candles",
+      "primary_key": [
+        "internal_game_id",
+        "ticker",
+        "candle_timestamp"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "WTA",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "ingest_kalshi.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "wta_2025_2026_kalshi_last_trade",
+      "dependencies": [],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/tennis/2025_2026/canonical/kalshi_last_trade",
+      "primary_key": [
+        "internal_game_id",
+        "ticker",
+        "candle_timestamp"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "WTA",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "ncaab_2025_2026_polymarket_candles",
+      "dependencies": [
+        "ncaab_2025_2026_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-13T03:37:58Z",
+      "path": "data/ncaab/2025_2026/canonical/polymarket_candles",
+      "primary_key": [
+        "internal_game_id",
+        "token_id",
+        "candle_timestamp"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "NCAAB",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "ingest_polymarket.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "ncaab_2025_2026_polymarket_markets",
+      "dependencies": [
+        "ncaab_2025_2026_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-13T03:37:58Z",
+      "path": "data/ncaab/2025_2026/canonical/polymarket_markets.csv",
+      "primary_key": [
+        "internal_game_id",
+        "token_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "NCAAB",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "ingest_polymarket.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "ncaab_2025_2026_kalshi_markets",
+      "dependencies": [
+        "ncaab_2025_2026_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-13T03:37:58Z",
+      "path": "data/ncaab/2025_2026/canonical/kalshi_markets.csv",
+      "primary_key": [
+        "internal_game_id",
+        "ticker"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "NCAAB",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "ncaab_2025_2026_kalshi_trades",
+      "dependencies": [
+        "ncaab_2025_2026_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-13T03:37:58Z",
+      "path": "data/ncaab/2025_2026/canonical/kalshi_trades",
+      "primary_key": [
+        "internal_game_id",
+        "trade_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "NCAAB",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "ncaab_2025_2026_kalshi_orderbook_snapshots",
+      "dependencies": [
+        "ncaab_2025_2026_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-13T03:37:58Z",
+      "path": "data/ncaab/2025_2026/canonical/kalshi_orderbook_snapshots",
+      "primary_key": [
+        "ticker",
+        "captured_at"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "NCAAB",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": true,
+      "dataset_name": "ncaab_2025_2026_first80_triggers",
+      "dependencies": [
+        "ncaab_2025_2026_games",
+        "ncaab_2025_2026_kalshi_candles"
+      ],
+      "event_time_column": "first_80_timestamp",
+      "format": "csv",
+      "last_updated": "2026-09-13T03:37:58Z",
+      "path": "data/ncaab/2025_2026/derived/first80_triggers.csv",
+      "primary_key": [
+        "internal_game_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2025-2026",
+      "sport": "NCAAB",
+      "status": "required",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2025-2026"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "ncaab_2026_2027_games",
+      "dependencies": [
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/ncaab/2026_2027/canonical/games.csv",
+      "primary_key": [
+        "internal_game_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2026-2027",
+      "sport": "NCAAB",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "canonicalize.py",
+      "warehouse_season": "2026-2027"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "ncaab_2026_2027_pbp",
+      "dependencies": [
+        "ncaab_2026_2027_games"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/ncaab/2026_2027/canonical/pbp",
+      "primary_key": [
+        "internal_game_id",
+        "event_number"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2026-2027",
+      "sport": "NCAAB",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "ingest_pbp.py",
+      "warehouse_season": "2026-2027"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "ncaab_2026_2027_kalshi_candles",
+      "dependencies": [
+        "ncaab_2026_2027_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/ncaab/2026_2027/canonical/kalshi_candles",
+      "primary_key": [
+        "internal_game_id",
+        "ticker",
+        "candle_timestamp"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2026-2027",
+      "sport": "NCAAB",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "ingest_kalshi.py",
+      "warehouse_season": "2026-2027"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "ncaab_2026_2027_kalshi_markets",
+      "dependencies": [
+        "ncaab_2026_2027_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/ncaab/2026_2027/canonical/kalshi_markets.csv",
+      "primary_key": [
+        "internal_game_id",
+        "ticker"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2026-2027",
+      "sport": "NCAAB",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2026-2027"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "ncaab_2026_2027_kalshi_trades",
+      "dependencies": [
+        "ncaab_2026_2027_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/ncaab/2026_2027/canonical/kalshi_trades",
+      "primary_key": [
+        "internal_game_id",
+        "trade_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2026-2027",
+      "sport": "NCAAB",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2026-2027"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "ncaab_2026_2027_kalshi_orderbook_snapshots",
+      "dependencies": [
+        "ncaab_2026_2027_games",
+        "game_identity"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/ncaab/2026_2027/canonical/kalshi_orderbook_snapshots",
+      "primary_key": [
+        "ticker",
+        "captured_at"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2026-2027",
+      "sport": "NCAAB",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2026-2027"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": true,
+      "dataset_name": "ncaab_2026_2027_first80_triggers",
+      "dependencies": [
+        "ncaab_2026_2027_games",
+        "ncaab_2026_2027_kalshi_candles"
+      ],
+      "event_time_column": "first_80_timestamp",
+      "format": "csv",
+      "path": "data/ncaab/2026_2027/derived/first80_triggers.csv",
+      "primary_key": [
+        "internal_game_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2026-2027",
+      "sport": "NCAAB",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "update_roller.py",
+      "warehouse_season": "2026-2027"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "ncaab_2026_2027_team_features",
+      "dependencies": [
+        "ncaab_2026_2027_games"
+      ],
+      "event_time_column": "event_timestamp",
+      "format": "csv",
+      "path": "data/ncaab/2026_2027/derived/team_game_features.csv",
+      "primary_key": [
+        "internal_game_id",
+        "team_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2026-2027",
+      "sport": "NCAAB",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "build_team_features.py",
+      "warehouse_season": "2026-2027"
+    },
+    {
+      "availability_time_column": "available_at",
+      "contains_future_information": false,
+      "dataset_name": "ncaab_2026_2027_d2d_daily",
+      "dependencies": [
+        "ncaab_2026_2027_games"
+      ],
+      "event_time_column": "as_of_date",
+      "format": "csv",
+      "path": "data/ncaab/2026_2027/derived/d2d_daily.csv",
+      "primary_key": [
+        "as_of_date",
+        "team_id"
+      ],
+      "schema_version": "1.0.0",
+      "season": "2026-2027",
+      "sport": "NCAAB",
+      "status": "pending",
+      "update_frequency": "daily",
+      "update_script": "build_d2d.py",
+      "warehouse_season": "2026-2027"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+trade T0403  NBA  Detroit at Charlotte
+contract KXNBAGAME-26FEB09DETCHA-DET  slice Q3
+signal 2026-02-09T17:38:00-08:00 PST  exit 2026-02-09T18:55:21-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 6931  principal_cents 540618
+entry_fee_cents 2082  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 152482  net_cents 150400
+strategy_result POSITIVE  net_r 1.856675513857169310536386643
+Assumed fill. Not a maker fill. Not live P&L.

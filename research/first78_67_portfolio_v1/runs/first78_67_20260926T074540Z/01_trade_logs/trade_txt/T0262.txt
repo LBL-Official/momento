@@ -1,0 +1,10 @@
+trade T0262  NCAAB  UCF at Kansas St.
+contract KXNCAAMBGAME-26JAN14UCFKSU-UCF  slice H1_2
+signal 2026-01-14T17:33:00-08:00 PST  exit 2026-01-14T18:11:00-08:00 PST
+assumed entry 78c  observed close 81c  overshoot 3c
+contracts 4064  principal_cents 316992
+entry_fee_cents 1221  exit_fee_cents 1573
+exit STOP at 67c  terminal yes
+gross_cents -44704  net_cents -47498
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

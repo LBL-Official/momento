@@ -1,0 +1,5 @@
+metric,old,new,reason,population,scenario,changed_assumption,test_id,run_id,sport,status
+legacy_ref_net_cents,23548818,23548818,repaired ledger replay of the 647 admitted trades,LEGACY_FIRST80_CONDITIONED_936,REF,tie order is game_id rather than insertion sequence; export stores the funded price,LEGACY_936,audit_repair_20260926T090447Z,ALL,
+identity_replay_net_cents,23548818,23548818,calendar identity with no resampling,LEGACY_FIRST80_CONDITIONED_936,REF,none,LEGACY_936,audit_repair_20260926T090447Z,ALL,
+next_bar_net_cents,6581478,,withdrawn; saved trades do not contain the later bid path,LEGACY_FIRST80_CONDITIONED_936,NEXT_BAR_PRICE_PROXY,action timestamp must move with the price,LEGACY_936,audit_repair_20260926T090447Z,ALL,BLOCKED_DATA
+calendar_median_dollars,229554.86,,withdrawn with the active-day 86400*block+5 simulator,LEGACY_FIRST80_CONDITIONED_936,BLOCK_7,complete local-day blocks,LEGACY_936,audit_repair_20260926T090447Z,ALL,WITHDRAWN

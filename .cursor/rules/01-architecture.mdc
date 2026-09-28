@@ -1,0 +1,173 @@
+---
+description: Momento system architecture and dependency boundaries
+globs: "**/*.{rs,ts,tsx}"
+alwaysApply: false
+---
+
+# Momento Architecture
+
+## High-Level Architecture
+
+Momento consists of:
+
+1. Market Data
+2. Prediction Model Engine
+3. Strategy / Algorithmic Execution
+4. Risk Decision Engine
+5. Execution Engine
+6. Live Position Tracker
+7. PNL / Performance Engine
+8. Persistence / Event Store
+9. Trading Dashboard
+
+Conceptually:
+
+Market Data
+    ↓
+Prediction Model Engine
+    ↓
+Strategy / Algorithmic Execution
+    ↓
+Risk Decision Engine
+    ↓
+Execution Engine
+    ↓
+Kalshi
+
+Execution events
+    ↓
+Live Position Tracker
+    ↓
+PNL / Performance
+    ↓
+Trading Dashboard
+
+---
+
+## Dependency Direction
+
+Dependencies must flow inward toward domain abstractions.
+
+Strategy MUST NOT depend directly on:
+- Kalshi HTTP implementation
+- Kalshi WebSocket implementation
+- database implementation
+- dashboard
+- credentials
+- infrastructure
+
+Risk MUST NOT depend directly on:
+- Kalshi transport
+- UI
+- database implementation
+
+Execution may depend on:
+- Kalshi adapter
+- order interfaces
+- market data interfaces
+- risk-approved intents
+
+Dashboard must consume application APIs/events.
+
+Dashboard must never contain trading authority.
+
+---
+
+## Sport Separation
+
+Sports are separate domain implementations:
+
+- MLB
+- NBA
+- NCAAB
+- NFL
+
+Shared infrastructure belongs in shared crates/modules.
+
+Do NOT copy shared infrastructure into each sport.
+
+Sport-specific logic belongs in sport-specific modules.
+
+Example:
+
+GOOD:
+
+strategies/mlb/
+strategies/nba/
+
+BAD:
+
+strategies/mlb/execution.rs
+strategies/nba/execution.rs
+
+when the execution behavior is actually identical.
+
+---
+
+## Strategy Boundary
+
+A strategy produces a TradeIntent.
+
+It does not submit an order.
+
+Conceptually:
+
+Strategy:
+
+    MarketEvent
+        ↓
+    Strategy Decision
+        ↓
+    TradeIntent
+
+Risk:
+
+    TradeIntent
+        ↓
+    Risk Decision
+        ↓
+    ApprovedTradeIntent OR Rejection
+
+Execution:
+
+    ApprovedTradeIntent
+        ↓
+    Order
+        ↓
+    Kalshi
+
+---
+
+## Risk Authority
+
+The Risk Decision Engine is the final authority over exposure.
+
+No strategy may bypass risk.
+
+No dashboard action may bypass risk.
+
+No model may bypass risk.
+
+No execution component may create unapproved exposure.
+
+Emergency risk controls may halt execution.
+
+---
+
+## Position Authority
+
+The Live Position Tracker must reconcile local state against the authoritative
+exchange/account state.
+
+Never assume local state is correct after:
+
+- process restart
+- network interruption
+- WebSocket disconnect
+- API timeout
+- unknown order acknowledgement
+- unexpected fill
+- partial fill
+- cancellation race
+
+Trading should remain paused until reconciliation succeeds when required.

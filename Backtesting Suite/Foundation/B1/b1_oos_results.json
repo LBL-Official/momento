@@ -1,0 +1,32 @@
+{
+  "n_test": 703,
+  "n_train": 1679,
+  "n_val": 502,
+  "split": {
+    "test_end": "2026-06-27",
+    "train_before": "2025-10-07",
+    "validation_before": "2026-05-03"
+  },
+  "top_validated": [
+    "ENTRY_BAND_80_83|HORIZON_1M|score_bucket=MULTI_RUN&start_move_tertile=MID",
+    "ENTRY_81|HORIZON_1M|score_bucket=MULTI_RUN&start_move_tertile=MID",
+    "ENTRY_BAND_80_83|HORIZON_1M|score_bucket=MULTI_RUN",
+    "ENTRY_BAND_80_83|HORIZON_5M|score_bucket=MULTI_RUN",
+    "ENTRY_81|HOLD_TO_SETTLEMENT|personality=CHOPPY&vol_5m_tertile=MID",
+    "ENTRY_81|HORIZON_1M|score_bucket=MULTI_RUN",
+    "ENTRY_BAND_80_83|HORIZON_5M|score_bucket=MULTI_RUN&start_move_tertile=HIGH",
+    "ENTRY_BAND_80_83|HORIZON_5M|late_6_9_lead2=YES",
+    "ENTRY_BAND_80_83|HORIZON_1M|score_bucket=MULTI_RUN&start_move_tertile=HIGH",
+    "ENTRY_82|HORIZON_1M|lead_regime=LEAD",
+    "ENTRY_BAND_80_83|HORIZON_1M|lead_regime=LEAD&start_move_tertile=LOW",
+    "ENTRY_BAND_80_83|HORIZON_1M|lead_regime=LEAD&start_sentiment=STRONG_FAVORITE&personality=CHOPPY",
+    "ENTRY_81|HORIZON_5M|score_bucket=MULTI_RUN",
+    "ENTRY_81|HORIZON_5M|late_6_9_lead2=YES",
+    "ENTRY_81|HORIZON_30M|vel_1m_tertile=LOW&accel_sign=NEG",
+    "ENTRY_BAND_80_83|HORIZON_5M|score_bucket=MULTI_RUN&start_move_tertile=MID",
+    "ENTRY_81|HORIZON_5M|regime=MID_LEAD&start_sentiment=UNDERDOG",
+    "ENTRY_81|HORIZON_5M|regime=MID_LEAD&start_sentiment=UNDERDOG&start_move_tertile=HIGH",
+    "ENTRY_BAND_80_83|HORIZON_1M|late_6_9_lead2=YES",
+    "ENTRY_BAND_80_83|HORIZON_5M|regime=MID_LEAD&start_sentiment=NEUTRAL"
+  ]
+}

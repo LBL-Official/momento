@@ -1,0 +1,68 @@
+{
+  "ncaab_h1_2_discovery": {
+    "status": "SELECTED",
+    "price_lo": 41,
+    "price_hi": 75,
+    "austin_ev_lt": -20.0,
+    "n_hedge": 10,
+    "n_hedge_losers": 4,
+    "n_hedge_winners": 6,
+    "baseline_8040": {
+      "n": 96,
+      "sum_cents": 240,
+      "mean_cents": 2.5
+    },
+    "mixed_8040": {
+      "n": 96,
+      "sum_cents": 300,
+      "mean_cents": 3.125
+    },
+    "delta_sum_cents": 60,
+    "delta_mean_cents": 0.625
+  },
+  "ncaab_h2_1_discovery": {
+    "status": "NONE",
+    "reason": "NO_CELL_BEATS_ALWAYS_8040",
+    "best_nonpositive": {
+      "price_lo": 41,
+      "price_hi": 50,
+      "austin_ev_lt": -20.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    }
+  },
+  "nba_604_in_sample": {
+    "status": "SELECTED",
+    "price_lo": 41,
+    "price_hi": 79,
+    "austin_ev_lt": -20.0,
+    "n_hedge": 36,
+    "n_hedge_losers": 17,
+    "n_hedge_winners": 19,
+    "baseline_8040": {
+      "n": 603,
+      "sum_cents": 2820,
+      "mean_cents": 4.676616915422885
+    },
+    "mixed_8040": {
+      "n": 603,
+      "sum_cents": 2856,
+      "mean_cents": 4.736318407960199
+    },
+    "delta_sum_cents": 36,
+    "delta_mean_cents": 0.05970149253731343
+  }
+}

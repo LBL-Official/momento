@@ -1,0 +1,716 @@
+[
+  {
+    "event_ticker": "KXMLBGAME-26JUN181335TORBOS",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN181410CLEMIL",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN181435MINTEX",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN181610BALSEA",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN181840NYMPHI",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN181905CWSNYY",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN181915SFATL",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": false
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN181940STLKC",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN182140LAAATH",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN191420TORCHC",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN191840CWSDET",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN191905CINNYY",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN191910SFMIA",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN191910WSHTB",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN191915MILATL",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN192005SDTEX",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN192010CLEHOU",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN192015STLKC",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN192040PITCOL",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN192140LAAATH",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN192145MINAZ",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN192210BALLAD",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN192210BOSSEA",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN201310CWSDET",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN201335CINNYY",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN201420TORCHC",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN201605SDTEX",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN201610MILATL",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN201610SFMIA",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN201610WSHTB",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN201915CLEHOU",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN201915NYMPHI",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN202110PITCOL",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN202205LAAATH",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN202210BALLAD",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN202210BOSSEA",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN202210MINAZ",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN211335CINNYY",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN211335MILATL",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN211340CWSDET",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN211340SFMIA",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN211340WSHTB",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN211410CLEHOU",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN211410STLKC",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN211420TORCHC",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": false
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN211435SDTEX",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN211510PITCOL",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN211515MINAZ",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN211605LAAATH",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN211610BALLAD",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN211610BOSSEA",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN211920NYMPHI",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN221810NYYDET",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN221840KCTB",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN221840TEXMIA",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN221845PHIWSH",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN221907HOUTOR",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN221910CHCNYM",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": false
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN221910MILCIN",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN221940CLECWS",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN221940LADMIN",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN221945AZSTL",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN222040BOSCOL",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN222138BALLAA",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN222210ATLSD",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN231607HOUTOR",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN231840KCTB",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN231840NYYDET",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN231840SEAPIT",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN231840TEXMIA",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN231845PHIWSH",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN231910CHCNYM",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN231910MILCIN",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN231940CLECWS",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN231940LADMIN",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN231945AZSTL",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN232040BOSCOL",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN232138BALLAA",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN232140ATLSD",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN232145ATHSF",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN241210TEXMIA",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN241410CLECWS",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN241510BOSCOL",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN241607BALLAA",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN241840KCTB",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN241840NYYDET",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN241840SEAPIT",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN241845PHIWSH",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN241907HOUTOR",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN241910CHCNYM",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN241910MILCIN",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN241940LADMIN",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN241945AZSTL",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN242040ATLSD",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN242145ATHSF",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN251210KCTB",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN251235SEAPIT",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN251545ATHSF",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN251840HOUDET",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN251845PHIWSH",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN251907TEXTOR",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN251910CHCNYM",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN251910NYYBOS",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN251945AZSTL",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": false
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN261840CINPIT",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN261840HOUDET",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN261905WSHBAL",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": false
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN261907TEXTOR",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN261910AZTB",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN261910NYYBOS",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN261910PHINYM",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN261910SEACLE",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": false
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN261940KCCWS",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": false
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN261945CHCMIL",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": true
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN262010COLMIN",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": false
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN262015MIASTL",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": false
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN262138ATHLAA",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": false
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN262145LADSD",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": false
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN262215ATLSF",
+    "both_yes": true,
+    "missing_side": "NONE",
+    "either_eighty_observable": false
+  }
+]

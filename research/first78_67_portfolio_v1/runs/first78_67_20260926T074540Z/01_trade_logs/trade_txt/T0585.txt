@@ -1,0 +1,10 @@
+trade T0585  NCAAB  Florida St. at Duke
+contract KXNCAAMBGAME-26MAR12FSUDUKE-DUKE  slice H2_1
+signal 2026-03-12T17:20:00-07:00 PDT  exit 2026-03-12T17:26:00-07:00 PDT
+assumed entry 78c  observed close 81c  overshoot 3c
+contracts 14107  principal_cents 1100346
+entry_fee_cents 4237  exit_fee_cents 5459
+exit STOP at 67c  terminal yes
+gross_cents -155177  net_cents -164873
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

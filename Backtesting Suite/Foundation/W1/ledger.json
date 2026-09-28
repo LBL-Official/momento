@@ -1,0 +1,265 @@
+{
+  "waterfall": "W1",
+  "artifact_version": "W1.0.0",
+  "generated_at": "2026-08-26T07:42:28.543039Z",
+  "run_id": "w1-d7e5d472e86268dc",
+  "status": "COMPLETE",
+  "steps": [
+    {
+      "id": "W1-A1-S1",
+      "activity": "W1-A1",
+      "objective": "Discover lake roots (Data-Real, Data demo, repo placeholders)",
+      "status": "COMPLETE",
+      "evidence": "lake_root=Backtesting Suite/Data-Real class=REAL",
+      "next_step": "W1-A1-S2"
+    },
+    {
+      "id": "W1-A1-S2",
+      "activity": "W1-A1",
+      "objective": "Classify file types (raw gzip, parquet, manifests, sheets, runs)",
+      "status": "COMPLETE",
+      "evidence": "file entries=350",
+      "next_step": "W1-A1-S3"
+    },
+    {
+      "id": "W1-A1-S3",
+      "activity": "W1-A1",
+      "objective": "Count files / bytes / partition dates without modifying them",
+      "status": "COMPLETE",
+      "evidence": "bytes=292350426 partitions=70",
+      "next_step": "W1-A1-S4"
+    },
+    {
+      "id": "W1-A1-S4",
+      "activity": "W1-A1",
+      "objective": "Emit source inventory rows",
+      "status": "COMPLETE",
+      "evidence": "source inventory = lake_catalog.json entries + market_evidence",
+      "next_step": "W1-A2-S1"
+    },
+    {
+      "id": "W1-A2-S1",
+      "activity": "W1-A2",
+      "objective": "Define timestamp roles (ingestion vs exchange vs candle end)",
+      "status": "COMPLETE",
+      "evidence": "TimestampRole + SourceTimestampKind in provenance/envelope_v2",
+      "next_step": "W1-A2-S2"
+    },
+    {
+      "id": "W1-A2-S2",
+      "activity": "W1-A2",
+      "objective": "Define provenance record contract",
+      "status": "COMPLETE",
+      "evidence": "ProvenanceRecord written to provenance_index.json",
+      "next_step": "W1-A2-S3"
+    },
+    {
+      "id": "W1-A2-S3",
+      "activity": "W1-A2",
+      "objective": "Map v1 RawMarketEvent fields into provenance + envelope v2",
+      "status": "COMPLETE",
+      "evidence": "envelope_from_v1 never copies received_at into source_timestamp for orderbook",
+      "next_step": "W1-A3-S1"
+    },
+    {
+      "id": "W1-A3-S1",
+      "activity": "W1-A3",
+      "objective": "SHA-256 verify files against v1 manifests",
+      "status": "COMPLETE",
+      "evidence": "checksum_mismatches=0",
+      "next_step": "W1-A3-S2"
+    },
+    {
+      "id": "W1-A3-S2",
+      "activity": "W1-A3",
+      "objective": "Gzip decompress + JSONL parse (malformed detection)",
+      "status": "COMPLETE",
+      "evidence": "gzip_failures=0",
+      "next_step": "W1-A3-S3"
+    },
+    {
+      "id": "W1-A3-S3",
+      "activity": "W1-A3",
+      "objective": "Parquet readability + schema consistency",
+      "status": "COMPLETE",
+      "evidence": "parquet_failures=0",
+      "next_step": "W1-A3-S4"
+    },
+    {
+      "id": "W1-A3-S4",
+      "activity": "W1-A3",
+      "objective": "Ticker / game-market pairing integrity",
+      "status": "COMPLETE",
+      "evidence": "pairing_failures=0",
+      "next_step": "W1-A3-S5"
+    },
+    {
+      "id": "W1-A3-S5",
+      "activity": "W1-A3",
+      "objective": "Chronological sanity (no silent reorder)",
+      "status": "COMPLETE",
+      "evidence": "TRADE_NOT_SORTED recorded as Info; no reorder of raw",
+      "next_step": "W1-A3-S6"
+    },
+    {
+      "id": "W1-A3-S6",
+      "activity": "W1-A3",
+      "objective": "Emit anomaly report (no raw repairs)",
+      "status": "COMPLETE",
+      "evidence": "findings=25",
+      "next_step": "W1-A4-S1"
+    },
+    {
+      "id": "W1-A4-S1",
+      "activity": "W1-A4",
+      "objective": "Install coverage vocabulary (do not redefine v1 COMPLETE)",
+      "status": "COMPLETE",
+      "evidence": "PartitionCoverage + DimensionStatus; v1 COMPLETE unmodified",
+      "next_step": "W1-A4-S2"
+    },
+    {
+      "id": "W1-A4-S2",
+      "activity": "W1-A4",
+      "objective": "Apply dimension coverage (L2/PBP/lifetime/starting price)",
+      "status": "COMPLETE",
+      "evidence": "L2/PBP/starting_price/sync = UNAVAILABLE on Kalshi v1 partitions",
+      "next_step": "W1-A4-S3"
+    },
+    {
+      "id": "W1-A4-S3",
+      "activity": "W1-A4",
+      "objective": "Write coverage matrix",
+      "status": "COMPLETE",
+      "evidence": "coverage_matrix.csv",
+      "next_step": "W1-A5-S1"
+    },
+    {
+      "id": "W1-A5-S1",
+      "activity": "W1-A5",
+      "objective": "Quantify 2025 MLB local availability",
+      "status": "COMPLETE",
+      "evidence": "2025 complete_days=0 games=0",
+      "next_step": "W1-A5-S2"
+    },
+    {
+      "id": "W1-A5-S2",
+      "activity": "W1-A5",
+      "objective": "Quantify 2026 MLB local availability",
+      "status": "COMPLETE",
+      "evidence": "2026 complete_days=13 games=172 markets=344",
+      "next_step": "W1-A5-S3"
+    },
+    {
+      "id": "W1-A5-S3",
+      "activity": "W1-A5",
+      "objective": "Layer matrix (metadata/trades/candles/L2/settlement/open)",
+      "status": "COMPLETE",
+      "evidence": "availability_audit.json layer matrix",
+      "next_step": "W1-A5-S4"
+    },
+    {
+      "id": "W1-A5-S4",
+      "activity": "W1-A5",
+      "objective": "Document recovery queries without launching collection",
+      "status": "COMPLETE",
+      "evidence": "recovery_queries launched=false",
+      "next_step": "W1-A6-S1"
+    },
+    {
+      "id": "W1-A6-S1",
+      "activity": "W1-A6",
+      "objective": "Canonical lake catalog schema",
+      "status": "COMPLETE",
+      "evidence": "catalog_version=1.0.0",
+      "next_step": "W1-A6-S2"
+    },
+    {
+      "id": "W1-A6-S2",
+      "activity": "W1-A6",
+      "objective": "Per GameId/MarketId evidence index",
+      "status": "COMPLETE",
+      "evidence": "market_evidence rows=410",
+      "next_step": "W1-A6-S3"
+    },
+    {
+      "id": "W1-A6-S3",
+      "activity": "W1-A6",
+      "objective": "Write versioned canonical manifest",
+      "status": "COMPLETE",
+      "evidence": "lake_catalog.json + canonical_catalog_body.json",
+      "next_step": "W1-A7-S1"
+    },
+    {
+      "id": "W1-A7-S1",
+      "activity": "W1-A7",
+      "objective": "Observability enum + field contract",
+      "status": "COMPLETE",
+      "evidence": "OBSERVABILITY_CONTRACT serialized",
+      "next_step": "W1-A7-S2"
+    },
+    {
+      "id": "W1-A7-S2",
+      "activity": "W1-A7",
+      "objective": "Attach observability to catalog/coverage rows",
+      "status": "COMPLETE",
+      "evidence": "catalog/coverage rows carry ObservabilityKind",
+      "next_step": "W1-A8-S1"
+    },
+    {
+      "id": "W1-A8-S1",
+      "activity": "W1-A8",
+      "objective": "Local W1 artifact package (Drive is archive, not DB)",
+      "status": "COMPLETE",
+      "evidence": "Backtesting Suite/Foundation/W1 local package",
+      "next_step": "W1-A8-S2"
+    },
+    {
+      "id": "W1-A8-S2",
+      "activity": "W1-A8",
+      "objective": "Sheets index CSV with required header fields",
+      "status": "COMPLETE",
+      "evidence": "sheets_w1_index.csv required header fields",
+      "next_step": "W1-A8-S3"
+    },
+    {
+      "id": "W1-A8-S3",
+      "activity": "W1-A8",
+      "objective": "Google publish status (PENDING if not uploaded)",
+      "status": "COMPLETE",
+      "evidence": "google_publish.json = GOOGLE_PUBLISH_PENDING until upload",
+      "next_step": "W1-A9-S1"
+    },
+    {
+      "id": "W1-A9-S1",
+      "activity": "W1-A9",
+      "objective": "Lake content digest + idempotent derived outputs",
+      "status": "COMPLETE",
+      "evidence": "lake_content_digest=d7e5d472e86268dc17a7f8d4d62c3c22ddb6fe9089e9b4097ff9b3c5eafd8f95",
+      "next_step": "W1-A9-S2"
+    },
+    {
+      "id": "W1-A9-S2",
+      "activity": "W1-A9",
+      "objective": "Overwrite guard against the immutable lake",
+      "status": "COMPLETE",
+      "evidence": "LakeWriteGuard refused writes inside lake_root",
+      "next_step": "W1-A10-S1"
+    },
+    {
+      "id": "W1-A10-S1",
+      "activity": "W1-A10",
+      "objective": "Automated acceptance checklist",
+      "status": "COMPLETE",
+      "evidence": "acceptance.json",
+      "next_step": "W1-A10-S2"
+    },
+    {
+      "id": "W1-A10-S2",
+      "activity": "W1-A10",
+      "objective": "Production fence (no risk/execution/strategy deps)",
+      "status": "COMPLETE",
+      "evidence": "research-data Cargo.toml production fence test",
+      "next_step": "STOP — do not begin W2"
+    }
+  ]
+}

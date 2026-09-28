@@ -1,0 +1,10 @@
+trade T0260  NCAAB  Kentucky at LSU
+contract KXNCAAMBGAME-26JAN14UKLSU-LSU  slice H1_2
+signal 2026-01-14T16:42:00-08:00 PST  exit 2026-01-14T17:45:00-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 4064  principal_cents 316992
+entry_fee_cents 1221  exit_fee_cents 1573
+exit STOP at 67c  terminal no
+gross_cents -44704  net_cents -47498
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

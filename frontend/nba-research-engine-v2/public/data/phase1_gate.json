@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "material_exclusion_bias": false,
+  "primary_n": 1169,
+  "primary_q": 0.2643284858853721,
+  "excluded_n": 54,
+  "delta_q": 0.004165884259355823,
+  "confidence_counts": {
+    "HIGH": 955,
+    "MEDIUM": 214,
+    "UNUSABLE": 51,
+    "LOW": 3
+  }
+}

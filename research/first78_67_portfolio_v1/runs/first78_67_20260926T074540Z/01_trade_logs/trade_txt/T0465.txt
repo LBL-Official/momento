@@ -1,0 +1,10 @@
+trade T0465  NBA  Portland at Phoenix
+contract KXNBAGAME-26FEB22PORPHX-POR  slice Q3
+signal 2026-02-22T18:18:00-08:00 PST  exit 2026-02-22T19:25:56-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 8251  principal_cents 643578
+entry_fee_cents 2478  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 181522  net_cents 179044
+strategy_result POSITIVE  net_r 1.856686577069852331176372988
+Assumed fill. Not a maker fill. Not live P&L.

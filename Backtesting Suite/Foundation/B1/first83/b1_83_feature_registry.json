@@ -1,0 +1,443 @@
+[
+  {
+    "feature_name": "start_price_band",
+    "source_column": "starting_market.start_bucket",
+    "type_name": "categorical",
+    "allowed_transformations": "existing_buckets",
+    "semantic_group": "START_BELIEF",
+    "family": "START",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "p_start_fine",
+    "source_column": "starting_market.p_start_cents",
+    "type_name": "categorical",
+    "allowed_transformations": "predeclared_bands",
+    "semantic_group": "START_BELIEF",
+    "family": "START",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "p_start_lt50",
+    "source_column": "starting_market.p_start_cents",
+    "type_name": "binary",
+    "allowed_transformations": "threshold",
+    "semantic_group": "START_BELIEF",
+    "family": "START",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "p_start_ge50",
+    "source_column": "starting_market.p_start_cents",
+    "type_name": "binary",
+    "allowed_transformations": "threshold",
+    "semantic_group": "START_BELIEF",
+    "family": "START",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "p_start_35_49",
+    "source_column": "starting_market.p_start_cents",
+    "type_name": "binary",
+    "allowed_transformations": "predeclared_overlap",
+    "semantic_group": "START_BELIEF",
+    "family": "START",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "p_start_40_50",
+    "source_column": "starting_market.p_start_cents",
+    "type_name": "binary",
+    "allowed_transformations": "predeclared_overlap",
+    "semantic_group": "START_BELIEF",
+    "family": "START",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "p_start_40_44",
+    "source_column": "starting_market.p_start_cents",
+    "type_name": "binary",
+    "allowed_transformations": "predeclared_overlap",
+    "semantic_group": "START_BELIEF",
+    "family": "START",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "p_start_45_49",
+    "source_column": "starting_market.p_start_cents",
+    "type_name": "binary",
+    "allowed_transformations": "predeclared_overlap",
+    "semantic_group": "START_BELIEF",
+    "family": "START",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "p_start_lt30",
+    "source_column": "starting_market.p_start_cents",
+    "type_name": "binary",
+    "allowed_transformations": "predeclared",
+    "semantic_group": "START_BELIEF",
+    "family": "START",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "p_start_30_34",
+    "source_column": "starting_market.p_start_cents",
+    "type_name": "binary",
+    "allowed_transformations": "predeclared",
+    "semantic_group": "START_BELIEF",
+    "family": "START",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "p_start_35_39",
+    "source_column": "starting_market.p_start_cents",
+    "type_name": "binary",
+    "allowed_transformations": "predeclared",
+    "semantic_group": "START_BELIEF",
+    "family": "START",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "p_start_50_54",
+    "source_column": "starting_market.p_start_cents",
+    "type_name": "binary",
+    "allowed_transformations": "predeclared",
+    "semantic_group": "START_BELIEF",
+    "family": "START",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "p_start_55_59",
+    "source_column": "starting_market.p_start_cents",
+    "type_name": "binary",
+    "allowed_transformations": "predeclared",
+    "semantic_group": "START_BELIEF",
+    "family": "START",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "p_start_60_69",
+    "source_column": "starting_market.p_start_cents",
+    "type_name": "binary",
+    "allowed_transformations": "predeclared",
+    "semantic_group": "START_BELIEF",
+    "family": "START",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "p_start_70p",
+    "source_column": "starting_market.p_start_cents",
+    "type_name": "binary",
+    "allowed_transformations": "predeclared",
+    "semantic_group": "START_BELIEF",
+    "family": "START",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "p_start_40_54",
+    "source_column": "starting_market.p_start_cents",
+    "type_name": "binary",
+    "allowed_transformations": "predeclared_overlap",
+    "semantic_group": "START_BELIEF",
+    "family": "START",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "p_start_tertile",
+    "source_column": "starting_market.p_start_cents",
+    "type_name": "ordinal",
+    "allowed_transformations": "TRAIN_tertile",
+    "semantic_group": "START_BELIEF",
+    "family": "START",
+    "leakage_status": "TRAIN_ONLY_CUTS"
+  },
+  {
+    "feature_name": "start_sentiment",
+    "source_column": "starting_market.start_sentiment",
+    "type_name": "categorical",
+    "allowed_transformations": "existing",
+    "semantic_group": "START_BELIEF",
+    "family": "START",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "inning_83",
+    "source_column": "baseball.inning",
+    "type_name": "categorical",
+    "allowed_transformations": "existing_bands",
+    "semantic_group": "BASEBALL_STATE",
+    "family": "INNING",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "inning_grp",
+    "source_column": "baseball.inning",
+    "type_name": "categorical",
+    "allowed_transformations": "predeclared",
+    "semantic_group": "BASEBALL_STATE",
+    "family": "INNING",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "inning_late68",
+    "source_column": "baseball.inning",
+    "type_name": "binary",
+    "allowed_transformations": "predeclared",
+    "semantic_group": "BASEBALL_STATE",
+    "family": "INNING",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "lead_signed",
+    "source_column": "baseball.bound_team_lead",
+    "type_name": "categorical",
+    "allowed_transformations": "predeclared",
+    "semantic_group": "BASEBALL_STATE",
+    "family": "LEAD",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "lead_ge2",
+    "source_column": "baseball.bound_team_lead",
+    "type_name": "binary",
+    "allowed_transformations": "threshold",
+    "semantic_group": "BASEBALL_STATE",
+    "family": "LEAD",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "lead_ge3",
+    "source_column": "baseball.bound_team_lead",
+    "type_name": "binary",
+    "allowed_transformations": "threshold",
+    "semantic_group": "BASEBALL_STATE",
+    "family": "LEAD",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "trailing",
+    "source_column": "baseball.bound_team_lead",
+    "type_name": "binary",
+    "allowed_transformations": "threshold",
+    "semantic_group": "BASEBALL_STATE",
+    "family": "LEAD",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "tied",
+    "source_column": "baseball.bound_team_lead",
+    "type_name": "binary",
+    "allowed_transformations": "threshold",
+    "semantic_group": "BASEBALL_STATE",
+    "family": "LEAD",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "lead_eq1",
+    "source_column": "baseball.bound_team_lead",
+    "type_name": "binary",
+    "allowed_transformations": "threshold",
+    "semantic_group": "BASEBALL_STATE",
+    "family": "LEAD",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "score_bucket",
+    "source_column": "baseball.score_bucket",
+    "type_name": "categorical",
+    "allowed_transformations": "existing",
+    "semantic_group": "BASEBALL_STATE",
+    "family": "LEAD",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "outs",
+    "source_column": "baseball.outs",
+    "type_name": "categorical",
+    "allowed_transformations": "raw",
+    "semantic_group": "BASEBALL_STATE",
+    "family": "OUTS",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "base_class",
+    "source_column": "baseball.base_class",
+    "type_name": "categorical",
+    "allowed_transformations": "existing",
+    "semantic_group": "BASEBALL_STATE",
+    "family": "BASES",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "half",
+    "source_column": "baseball.half_inning",
+    "type_name": "categorical",
+    "allowed_transformations": "existing",
+    "semantic_group": "BASEBALL_STATE",
+    "family": "HALF",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "move_fine",
+    "source_column": "market_history.start_to_entry_move_cents",
+    "type_name": "categorical",
+    "allowed_transformations": "predeclared_abs_bins",
+    "semantic_group": "PATH",
+    "family": "MOVE",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "start_move_tertile",
+    "source_column": "market_history.start_to_entry_move_cents",
+    "type_name": "ordinal",
+    "allowed_transformations": "TRAIN_tertile",
+    "semantic_group": "PATH",
+    "family": "MOVE",
+    "leakage_status": "TRAIN_ONLY_CUTS"
+  },
+  {
+    "feature_name": "start_move_gt20",
+    "source_column": "market_history.start_to_entry_move_cents",
+    "type_name": "binary",
+    "allowed_transformations": "threshold",
+    "semantic_group": "PATH",
+    "family": "MOVE",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "start_move_gt30",
+    "source_column": "market_history.start_to_entry_move_cents",
+    "type_name": "binary",
+    "allowed_transformations": "threshold",
+    "semantic_group": "PATH",
+    "family": "MOVE",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "path_eff_tertile",
+    "source_column": "market_history.path_efficiency_bps",
+    "type_name": "ordinal",
+    "allowed_transformations": "TRAIN_tertile",
+    "semantic_group": "PATH",
+    "family": "PATHEFF",
+    "leakage_status": "TRAIN_ONLY_CUTS"
+  },
+  {
+    "feature_name": "reversal_tertile",
+    "source_column": "market_history.reversal_count",
+    "type_name": "ordinal",
+    "allowed_transformations": "TRAIN_tertile",
+    "semantic_group": "PATH",
+    "family": "REVERSAL",
+    "leakage_status": "TRAIN_ONLY_CUTS"
+  },
+  {
+    "feature_name": "p_max_vs_83",
+    "source_column": "market_history.p_max_cents",
+    "type_name": "categorical",
+    "allowed_transformations": "vs_entry",
+    "semantic_group": "PATH",
+    "family": "PMAX",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "personality",
+    "source_column": "market_history.personality",
+    "type_name": "categorical",
+    "allowed_transformations": "existing",
+    "semantic_group": "PERSONALITY",
+    "family": "PERSONALITY",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "vel_sign",
+    "source_column": "price_dynamics.p_1m.delta_cents",
+    "type_name": "categorical",
+    "allowed_transformations": "sign",
+    "semantic_group": "VELOCITY",
+    "family": "VEL",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "vel_1m_tertile",
+    "source_column": "price_dynamics.p_1m.delta_cents",
+    "type_name": "ordinal",
+    "allowed_transformations": "TRAIN_tertile",
+    "semantic_group": "VELOCITY",
+    "family": "VEL",
+    "leakage_status": "TRAIN_ONLY_CUTS"
+  },
+  {
+    "feature_name": "vel_5m_sign",
+    "source_column": "price_dynamics.p_5m.delta_cents",
+    "type_name": "categorical",
+    "allowed_transformations": "sign",
+    "semantic_group": "VELOCITY",
+    "family": "VEL",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "accel_sign",
+    "source_column": "price_dynamics.acceleration_1m_vs_5m_e6",
+    "type_name": "categorical",
+    "allowed_transformations": "sign",
+    "semantic_group": "ACCELERATION",
+    "family": "ACCEL",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "vol_1m_tertile",
+    "source_column": "market_history.volatility_1m_cents",
+    "type_name": "ordinal",
+    "allowed_transformations": "TRAIN_tertile",
+    "semantic_group": "VOLATILITY",
+    "family": "VOL1",
+    "leakage_status": "TRAIN_ONLY_CUTS"
+  },
+  {
+    "feature_name": "vol_5m_tertile",
+    "source_column": "market_history.volatility_5m_cents",
+    "type_name": "ordinal",
+    "allowed_transformations": "TRAIN_tertile",
+    "semantic_group": "VOLATILITY",
+    "family": "VOL5",
+    "leakage_status": "TRAIN_ONLY_CUTS"
+  },
+  {
+    "feature_name": "vol_15m_tertile",
+    "source_column": "market_history.volatility_15m_cents",
+    "type_name": "ordinal",
+    "allowed_transformations": "TRAIN_tertile",
+    "semantic_group": "VOLATILITY",
+    "family": "VOL15",
+    "leakage_status": "TRAIN_ONLY_CUTS"
+  },
+  {
+    "feature_name": "last_event_sign",
+    "source_column": "event_response.event_history.last.delta",
+    "type_name": "categorical",
+    "allowed_transformations": "sign",
+    "semantic_group": "EVENT_RESPONSE",
+    "family": "EVENT",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "last_event_class",
+    "source_column": "event_response.event_history.last.class",
+    "type_name": "categorical",
+    "allowed_transformations": "existing",
+    "semantic_group": "EVENT_RESPONSE",
+    "family": "EVENT",
+    "leakage_status": "OK_AT_ENTRY"
+  },
+  {
+    "feature_name": "last_delta_band",
+    "source_column": "event_response.event_history.last.delta",
+    "type_name": "categorical",
+    "allowed_transformations": "predeclared_abs",
+    "semantic_group": "EVENT_RESPONSE",
+    "family": "EVENT",
+    "leakage_status": "OK_AT_ENTRY"
+  }
+]

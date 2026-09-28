@@ -1,0 +1,122 @@
+{
+  "status": "PASS",
+  "A": "0 / 15",
+  "B": "0 / 12",
+  "members": {
+    "NCAAB_H1_2_AUSTIN_TRANSFER_V1": {
+      "n": 0,
+      "n_losses": 15,
+      "preserved": {
+        "n_trades": 96,
+        "n_WARNING_AVAILABLE": 5,
+        "n_WARNING_TOO_LATE": 62,
+        "n_NO_WARNING": 29,
+        "n_PATH_UNAVAILABLE": 0,
+        "median_warning_available": {
+          "field": "warning_to_settlement | WARNING_AVAILABLE",
+          "n": 5,
+          "median": 20.0,
+          "p25": 18.0,
+          "p75": 20.0,
+          "missing_not_zero": true
+        },
+        "median_warning_too_late": {
+          "field": "warning_to_settlement | WARNING_TOO_LATE",
+          "n": 62,
+          "median": 20.0,
+          "p25": 18.0,
+          "p75": 20.0,
+          "missing_not_zero": true
+        },
+        "median_first_negative_to_T40": {
+          "field": "warning_to_t40 | first negative EV",
+          "n": 67,
+          "median": 0.0,
+          "p25": 0.0,
+          "p75": 0.0,
+          "missing_not_zero": true
+        },
+        "median_first_negative_to_worst_price": {
+          "field": "warning_to_worst | first negative EV",
+          "n": 67,
+          "median": 0.0,
+          "p25": 0.0,
+          "p75": 9.0,
+          "missing_not_zero": true
+        },
+        "median_first_negative_to_settlement": {
+          "field": "warning_to_settlement | first negative EV (AVAILABLE + TOO_LATE)",
+          "n": 67,
+          "median": 20.0,
+          "p25": 18.0,
+          "p75": 20.0,
+          "missing_not_zero": true
+        },
+        "label": "Discovery report median_minutes is median_first_negative_to_settlement over AVAILABLE+TOO_LATE. It is not median_warning_available. If AVAILABLE=0 the reported median is a TOO_LATE-only figure.",
+        "warning_before_damage_recall_among_losses": {
+          "n": 0,
+          "n_losses": 15,
+          "note": "preserved Discovery definition; not redefined"
+        }
+      }
+    },
+    "NCAAB_H2_1_AUSTIN_TRANSFER_V1": {
+      "n": 0,
+      "n_losses": 12,
+      "preserved": {
+        "n_trades": 69,
+        "n_WARNING_AVAILABLE": 0,
+        "n_WARNING_TOO_LATE": 22,
+        "n_NO_WARNING": 47,
+        "n_PATH_UNAVAILABLE": 0,
+        "median_warning_available": {
+          "field": "warning_to_settlement | WARNING_AVAILABLE",
+          "n": 0,
+          "median": null,
+          "p25": null,
+          "p75": null,
+          "missing_not_zero": true
+        },
+        "median_warning_too_late": {
+          "field": "warning_to_settlement | WARNING_TOO_LATE",
+          "n": 22,
+          "median": 3.0,
+          "p25": 0.0,
+          "p75": 5.5,
+          "missing_not_zero": true
+        },
+        "median_first_negative_to_T40": {
+          "field": "warning_to_t40 | first negative EV",
+          "n": 22,
+          "median": 0.0,
+          "p25": 0.0,
+          "p75": 0.0,
+          "missing_not_zero": true
+        },
+        "median_first_negative_to_worst_price": {
+          "field": "warning_to_worst | first negative EV",
+          "n": 22,
+          "median": 0.0,
+          "p25": 0.0,
+          "p75": 0.0,
+          "missing_not_zero": true
+        },
+        "median_first_negative_to_settlement": {
+          "field": "warning_to_settlement | first negative EV (AVAILABLE + TOO_LATE)",
+          "n": 22,
+          "median": 3.0,
+          "p25": 0.0,
+          "p75": 5.5,
+          "missing_not_zero": true
+        },
+        "label": "Discovery report median_minutes is median_first_negative_to_settlement over AVAILABLE+TOO_LATE. It is not median_warning_available. If AVAILABLE=0 the reported median is a TOO_LATE-only figure.",
+        "warning_before_damage_recall_among_losses": {
+          "n": 0,
+          "n_losses": 12,
+          "note": "preserved Discovery definition; not redefined"
+        }
+      }
+    }
+  },
+  "note": "Phase 1 AVAILABLE warning among eventual losses remains frozen. Not early warning."
+}

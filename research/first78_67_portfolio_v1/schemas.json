@@ -1,0 +1,29 @@
+{
+  "csv": "UTF-8 with header",
+  "missing": "null or blank with a status/reason field. Never a substitute zero.",
+  "money_unit": "integer cents unless a column name says otherwise",
+  "time": "UTC unix seconds plus America/Los_Angeles ISO with PST/PDT abbreviation",
+  "tables": {
+    "trades.csv": {
+      "keys": ["trade_id"],
+      "grouping_timestamp": "entry_ts",
+      "columns": {
+        "net_pnl_cents": "signed integer cents after fees",
+        "gross_pnl_cents": "before fees",
+        "net_r": "net_pnl / planned stop-risk R0. R0 is not a guaranteed maximum loss",
+        "exit_reason": "STOP | WIN_SETTLEMENT | LOSS_SETTLEMENT | UNRESOLVED",
+        "strategy_result": "POSITIVE | NEGATIVE | FLAT. Distinct from terminal_result",
+        "exit_vol_category": "1-7 or blank. Blank is insufficient history, not category 1",
+        "observed_entry_close_cents": "bid close at the signal. Not the assumed 78 cent fill"
+      }
+    },
+    "candidate_audit.csv": {
+      "keys": ["game_id", "rule"],
+      "na": "reason blank only when status is CANDIDATE"
+    },
+    "events.csv": {
+      "keys": ["ts", "kind", "trade_id"],
+      "equity_cents": "cash + receivables + open principal at cost. Realized accounting, not a bid mark"
+    }
+  }
+}

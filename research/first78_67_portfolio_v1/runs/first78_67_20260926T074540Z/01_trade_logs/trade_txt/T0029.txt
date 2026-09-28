@@ -1,0 +1,10 @@
+trade T0029  NCAAB  Texas Tech at Illinois
+contract KXNCAAMBGAME-25NOV11TTUILL-ILL  slice H1_2
+signal 2025-11-11T18:34:00-08:00 PST  exit 2025-11-11T19:05:00-08:00 PST
+assumed entry 78c  observed close 83c  overshoot 5c
+contracts 1823  principal_cents 142194
+entry_fee_cents 548  exit_fee_cents 706
+exit STOP at 67c  terminal yes
+gross_cents -20053  net_cents -21307
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

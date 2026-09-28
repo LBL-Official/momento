@@ -1,0 +1,286 @@
+{
+  "schema_version": "nba_001_execution_contract_v1",
+  "contract_id": "nba-001-first78_67-v1",
+  "bot_id": "nba-001",
+  "alias": "nba-first80-001",
+  "policy_version": "nba-001-v1",
+  "strategy_id": "FIRST78_67",
+  "series": "KXNBAGAME",
+  "registered_on": "2026-09-26",
+  "live_execution": false,
+  "submits": false,
+  "candle_path_is_fill": false,
+  "submission_adapter": "LINKED_FIXTURE_AND_DEMO_ONLY",
+  "production_submission_enabled": false,
+  "sources": {
+    "signal_sheet": {
+      "path": "research/stryke/first78_67/signal.json",
+      "sha256": "eaca3fdc3ae686637a98b6f3182a8246e6a48362a84a1851c6703168af92c6cf"
+    },
+    "strategy": {
+      "path": "research/first78_active_v1/strategy.json",
+      "sha256": "37559c381e127f4359327921dd4a34910c5ab8b3bfeee8629a6fbee14b5deaf8"
+    },
+    "eligibility": {
+      "path": "ROLLER/roller/choosin_texas/first78/eligibility.py",
+      "sha256": "a4fc9167f9a8bf7d1ae4722c61d7192cef40e1b8fefd3217b1156e5ee8cd238b"
+    },
+    "money": {
+      "path": "research/first78_67_portfolio_v1/src/first78/money.py",
+      "sha256": "39acd409a90ea1fcb54680d529b9a811dd48abebaa251a314b1ca5e0c7e7bee1"
+    },
+    "portfolio_replay": {
+      "path": "ROLLER/roller/choosin_texas/first78/portfolio_replay.py",
+      "sha256": "92807490ec020d0818bb935950afbce7ba7a6a06ad8441d5b80e672d632e296a"
+    },
+    "policy_v0_history": {
+      "path": "research/vital/bots/nba-001/strategy/policy.json",
+      "sha256": "18338c397f4b95af917c0d9b1e8c9f6e99e66ddb0b486c3a42f17d1d7161ec1a"
+    }
+  },
+  "evidence_pointers_not_eligibility": {
+    "choosin": {
+      "universe": "DERIVED_FOUR_FIRST78",
+      "n": 854
+    },
+    "austin": {
+      "universe": "choosin_nba_2q3q_first78_67",
+      "n": 569
+    },
+    "note": "Research populations. Not Touch (N). Not live eligibility."
+  },
+  "fields": {
+    "entry": {
+      "status": "RESOLVED",
+      "observable": "one_minute_tradable_yes_bid_close",
+      "entry_cents": 78,
+      "rule": "First quality one-minute YES-bid close that crosses up from below 78 to at least 78, contract-wise over the market's observed history. A first quality close already at or above 78 is UNPROVEN_FIRST and never enters.",
+      "quality": {
+        "max_spread_cents": 10,
+        "bid_le_ask": true,
+        "require_volume_until_first_quality_bar": true
+      },
+      "touch_n": 1,
+      "touch_n_meaning": "first such close; an intraminute touch is a separate live specification and is not built"
+    },
+    "slice": {
+      "status": "RESOLVED",
+      "eligible_periods": [
+        "Q2",
+        "Q3"
+      ],
+      "rule": "The entry crossing itself must fall in Q2 or Q3. A crossing in any other period excludes that contract; the bot does not wait for a later crossing.",
+      "clock_source": "Kalshi GET /milestones?related_event_ticker={event} then GET /live_data/basketball_game/milestone/{id} (period, period_type, period_remaining_time, status, last_updated_ts)",
+      "clock_source_rejected": "cdn.nba.com and site.api.espn.com refuse non-browser clients; the bot does not impersonate a browser to pass an access filter",
+      "clock_max_age_seconds": 90,
+      "period_break": "INELIGIBLE when period_remaining_time is 00:00 or status is not inprogress (live-spec conservative difference; research aligned by PBP)",
+      "missing_clock": "CLOCK_UNAVAILABLE blocks the entry"
+    },
+    "one_per_game": {
+      "status": "RESOLVED",
+      "rule": "Earliest eligible contract by signal minute, then ticker (UTF-8)."
+    },
+    "top_out": {
+      "status": "RESOLVED",
+      "role": "entry_ceiling",
+      "ceiling_cents": 85,
+      "rule": "Skip at signal time if the signal close or the best YES ask is at or above 85. While an entry would rest, cancel if the YES bid close reaches 85 or more."
+    },
+    "exit_trigger": {
+      "status": "RESOLVED",
+      "stop_cents": 67,
+      "rule": "First later quality one-minute YES-bid close at or below 67, strictly after the entry minute. An intrabar low at or below 67 inside the entry minute is INTRABAR_AMBIGUITY, not a stop."
+    },
+    "hedge_instrument": {
+      "status": "RESOLVED",
+      "rule": "Buy the opponent team's YES in its own KXNBAGAME market in the same event, quantity = reconciled filled original YES minus already-filled opponent YES.",
+      "requires_exact_complement": true,
+      "complement_checks": [
+        "same event_ticker",
+        "event mutually_exclusive = true",
+        "exactly two markets in the event",
+        "both markets active",
+        "rules_primary identical after substituting the YES team",
+        "rules_secondary identical",
+        "same close_time, expected_expiration_time, settlement_timer_seconds",
+        "same exchange_index"
+      ],
+      "failure": "HEDGE_PAIR_INVALID blocks the original entry"
+    },
+    "hedge_pre_trigger_orders": {
+      "status": "RESOLVED",
+      "value": false,
+      "rule": "68 is local preparation only: pair re-verified, quantity and cash recomputed, a local intent staged. No exchange order is submitted, rests, or fills before the first later minute close at or below 67."
+    },
+    "hedge_ladder_prices": {
+      "status": "RESOLVED",
+      "path_cents": [
+        68,
+        67,
+        66,
+        65,
+        64,
+        63,
+        62,
+        61,
+        60,
+        59,
+        58,
+        57,
+        56,
+        55
+      ],
+      "opponent_limit_rule": "limit = 100 - path",
+      "prepare_only_limit_cents": 32,
+      "submittable_limit_range_cents": [
+        33,
+        45
+      ],
+      "direction": "ascending opponent limit as the original YES falls"
+    },
+    "hedge_ladder_advancement": {
+      "status": "UNRESOLVED_OWNER_INPUT",
+      "question": "How the ladder advances from 33 to 45 and at what repricing cadence.",
+      "proposal": "strategy/EXECUTION_CONTRACT_PROPOSAL_V2.md#ladder (not approved)"
+    },
+    "hedge_initial_limit_gap_policy": {
+      "status": "UNRESOLVED_OWNER_INPUT",
+      "question": "The first hedge limit when the first close at or below 67 gaps lower (e.g. 60): start at 100 - observed close, or at 33.",
+      "proposal": "strategy/EXECUTION_CONTRACT_PROPOSAL_V2.md#gap (not approved)"
+    },
+    "data_outage_policy": {
+      "status": "UNRESOLVED_OWNER_INPUT",
+      "question": "What the bot does with an open position when candles, clock, or the account API go stale, and when that escalates. A stale feed must not silently authorize indefinite holding.",
+      "proposal": "strategy/EXECUTION_CONTRACT_PROPOSAL_V2.md#outage (not approved)"
+    },
+    "emergency_action": {
+      "status": "UNRESOLVED_OWNER_INPUT",
+      "question": "Market Dump below 55: the action (SELL_ORIGINAL_REDUCE_ONLY_IOC with floor_cents, or BUY_OPPONENT_IOC with worst_price_bound_cents), the re-issue rule for an IOC remainder, and whether any floor-then-hold rule applies. A 25c floor followed by hold-to-settlement is a new loss policy and is not approved.",
+      "action": null,
+      "floor_cents": null,
+      "worst_price_bound_cents": null,
+      "proposal": "strategy/EXECUTION_CONTRACT_PROPOSAL_V2.md#emergency (not approved)"
+    },
+    "entry_order": {
+      "status": "UNRESOLVED_OWNER_INPUT",
+      "question": "Entry price, time-in-force, expiry, and partial-fill handling.",
+      "post_only": null,
+      "proposal": "strategy/EXECUTION_CONTRACT_PROPOSAL_V2.md#entry (not approved)"
+    },
+    "slot_and_batch_release": {
+      "status": "UNRESOLVED_OWNER_INPUT",
+      "question": "When a slot is released and when a batch counts as complete.",
+      "proposal": "strategy/EXECUTION_CONTRACT_PROPOSAL_V2.md#release (not approved)"
+    },
+    "sizing": {
+      "status": "RESOLVED",
+      "allocation_bps": 600,
+      "rule": "quantity = floor(floor(reference_equity_cents * 600 / 10000) / entry_price_cents). Fees are extra.",
+      "batch_1_reference_equity_cents": 2000000,
+      "example": {
+        "reference_equity_cents": 2000000,
+        "entry_cents": 78,
+        "contracts": 1538,
+        "principal_cents": 119964
+      },
+      "never_shrink": "An unaffordable entry is BLOCKED_INSUFFICIENT_CASH, never resized down."
+    },
+    "batch_resize": {
+      "status": "PROPOSED_NOT_APPROVED",
+      "batch_size": 10,
+      "batch_1_reference_cents": 2000000,
+      "batch_1_reference_parts": {
+        "funded_cents": 500000,
+        "external_reserve_cents": 1500000
+      },
+      "rejected_rule": "cash + principal of open positions (drops the external reserve; mishandles two-leg positions). Not used.",
+      "proposed_rule": "E = R0 + owner contributions - owner distributions + sum(settled trades net P&L) + sum(open trades: locked pairs x 100c + unpaired contracts at average cost - costs + proceeds - fees paid). Reserve deposits and shard/subaccount transfers are internal. See strategy/EQUITY_AND_BATCH_SIZING.md.",
+      "effect_while_unapproved": "Batch 1 sizes from 2,000,000c. Batch 2 does not open: BATCH_RESIZE_UNAPPROVED blocks entries after the tenth completion.",
+      "completion_definition_depends_on": "slot_and_batch_release"
+    },
+    "shared_slots": {
+      "status": "RESOLVED",
+      "max": 7,
+      "note": "Ceiling only. Capacity is computed from actual available funds."
+    },
+    "fees": {
+      "status": "VERIFIED",
+      "observed_series_fee_type": "quadratic_with_maker_fees",
+      "observed_series_fee_multiplier": 1,
+      "observed_at": "2026-09-27T03:54:00Z",
+      "documented_rule": "taker = ceil(0.07 * M * C * P * (1-P)); maker = ceil(0.0175 * M * C * P * (1-P)) only when fee_type is quadratic_with_maker_fees; trade fee rounded up to $0.000001, then a per-order rounding fee aligns the balance to $0.0001 (direct member) or $0.01. See FEES.md.",
+      "reservation_rule": "centicents; entry at maker only when entry_order.post_only is resolved true, otherwise taker; hedge and emergency legs at taker; total rounded up to cents",
+      "note": "Technical verification, not an owner choice. See FEES.md section 5.",
+      "verified_scope": "quadratic_with_maker_fees at fee_multiplier 1 (KXNBAGAME today). The worker treats any other series fee_type or multiplier as FEE_UNVERIFIED.",
+      "evidence": {
+        "source": "momento-nba-001 evidence, GET-only, on i-0f0849d5829476c31, build nba001-20260927T072552Z, 2026-09-27; 235 production fills, 194 orders, 2026-08-22..2026-09-25",
+        "multiplier_1_series": "KXWNBAGAME (quadratic_with_maker_fees, M=1): 28 of 29 orders match the rule exactly (24 maker, 4 taker); 1 maker order differs by $0.0001",
+        "published_multiplier_below_1": "KXMLBGAME publishes M=0.5 since 2026-08-07; 163 of 165 orders were charged at M=1, 0 at M=0.5",
+        "fractional_fills": "49 of 235 fills have fractional counts; see FEES.md section 5"
+      }
+    },
+    "reservation": {
+      "status": "RESOLVED",
+      "rule": "reserve = principal + entry fee bound + quantity * exit price + taker fee at that price, where exit price = max(45, worst_price_bound_cents) for BUY_OPPONENT_IOC and 45 for SELL_ORIGINAL_REDUCE_ONLY_IOC (a sale needs no cash). While the emergency action is unresolved the exit reserve is unbounded and entries are EXIT_CAPACITY_UNBOUNDED."
+    },
+    "collateral_isolation": {
+      "status": "REQUIRED",
+      "rule": "Atomic account-wide reservations across every submitter sharing the collateral pool, or verified funding isolation. Otherwise SHARED_COLLATERAL_UNACCOUNTED blocks entries."
+    },
+    "routing": {
+      "status": "VERIFIED_DOCUMENTED",
+      "rule": "The market/event exchange_index is authoritative for that market (docs exchange_sharding). The series exchange_index names the shard for newly created events only; live markets are not migrated, so a series/market difference is expected and is not a conflict. Orders send the ticker and omit exchange_index (auto-route). Both hedge-pair markets must report the same index (ROUTE_PAIR_MISMATCH otherwise). Cash must be read and reserved on that index. See FUNDING_ROUTING.md."
+    },
+    "lifecycle_transitions": [
+      "DISCOVERED",
+      "ELIGIBLE",
+      "ENTRY_INTENT",
+      "ENTRY_BLOCKED",
+      "ENTRY_PENDING",
+      "ENTRY_PARTIAL",
+      "ENTRY_FILLED",
+      "ENTRY_CANCELLED",
+      "MONITORING",
+      "HEDGE_PREPARED",
+      "HEDGE_PENDING",
+      "HEDGE_PARTIAL",
+      "HEDGE_COMPLETE",
+      "SETTLED",
+      "CASH_AVAILABLE",
+      "SLOT_RELEASED",
+      "BATCH_COMPLETED",
+      "RECONCILIATION_HOLD"
+    ],
+    "lifecycle_rule": "HEDGE_COMPLETE, SETTLED, CASH_AVAILABLE, SLOT_RELEASED, and BATCH_COMPLETED are separate transitions. Neutral exposure never releases cash or a slot by itself."
+  },
+  "modes": [
+    "LIVE_DATA_ONLY",
+    "SHADOW",
+    "ARMED_WAITING_DATE",
+    "ARMED_WAITING_FUNDS",
+    "LIVE_EXECUTING",
+    "RECONCILIATION_HOLD"
+  ],
+  "submission_requires": [
+    "config live.enabled = true",
+    "config live.confirmation = ENABLE_LIVE_TRADING",
+    "no UNRESOLVED_OWNER_INPUT field in the affected path",
+    "fees verified",
+    "per-market route verified",
+    "exact complementary pair verified before entry",
+    "funded exit capacity with a bounded emergency price",
+    "collateral isolation or account-wide reservations",
+    "reconciliation healthy",
+    "production submission compiled in and permitted (PRODUCTION_ORDERS_COMPILED = false in this build)"
+  ],
+  "placeholders": [
+    "Ontologic",
+    "TK Ultra",
+    "Ball Hog",
+    "Choosin Texas",
+    "Austin",
+    "Positman",
+    "Drevo"
+  ],
+  "placeholder_rule": "Placeholder analytical modules emit no approvals and no probabilities."
+}

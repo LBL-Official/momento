@@ -1,0 +1,10 @@
+trade T0067  NBA  Miami at Philadelphia
+contract KXNBAGAME-25NOV23MIAPHI-MIA  slice Q3
+signal 2025-11-23T11:33:00-08:00 PST  exit 2025-11-23T11:42:00-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 2280  principal_cents 177840
+entry_fee_cents 685  exit_fee_cents 883
+exit STOP at 67c  terminal yes
+gross_cents -25080  net_cents -26648
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

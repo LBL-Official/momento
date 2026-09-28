@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "n_checked": 48,
+  "n_failed": 0,
+  "note": "Mutating future targets/outcomes must leave decide() unchanged."
+}

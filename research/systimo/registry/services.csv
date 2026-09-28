@@ -1,0 +1,12 @@
+service_id,argv_json,cwd,role,dependencies,scope,enabled,autostart,ownership_mode,port_policy,preferred_port,probe_path,probe_timeout_ms,probe_identity
+roller-api,"[""ROLLER/.venv/bin/python"", ""ROLLER/scripts/terminal_api.py""]",.,controller,,shared,true,true,shared,preferred-with-fallback,8791,/health,3000,ok
+roller-terminal,"[""npm"", ""run"", ""dev"", ""--prefix"", ""frontend/roller-terminal""]",.,frontend,roller-api,shared,true,true,shared,preferred-with-fallback,5179,/health,3000,ok
+choosin-texas,"[""npm"", ""run"", ""dev"", ""--prefix"", ""frontend/choosin-texas""]",.,frontend,roller-api,quad-1,true,true,managed,preferred-with-fallback,5182,/health,3000,ok
+momento-shell,"[""npm"", ""run"", ""dev"", ""--prefix"", ""frontend/momento-systems""]",.,frontend,roller-api,shared,true,true,shared,preferred-with-fallback,5190,/health,3000,ok
+drevo,"[""npm"", ""run"", ""dev"", ""--prefix"", ""frontend/dynamic-risk-engine""]",.,frontend,roller-api,quad-1,true,true,managed,preferred-with-fallback,5191,/health,3000,ok
+ballhog,"[""npm"", ""run"", ""dev"", ""--prefix"", ""frontend/ballhog""]",.,frontend,roller-api,quad-1,true,true,managed,preferred-with-fallback,5192,/health,3000,ok
+systimo-ui,"[""npm"", ""run"", ""dev"", ""--prefix"", ""frontend/systimo""]",.,frontend,roller-api,shared,true,true,shared,preferred-with-fallback,5193,/health,3000,ok
+positman,"[""npm"", ""run"", ""dev"", ""--prefix"", ""frontend/positman""]",.,frontend,roller-api,quad-1,true,true,managed,preferred-with-fallback,5194,/health,3000,ok
+mlb-execution-desk,"[""npm"", ""run"", ""dev"", ""--prefix"", ""frontend/vital-terminal""]",.,observe-desk,roller-api,quad-4,true,true,managed,preferred-with-fallback,5180,/health,3000,ok
+momento-ls,"[""ROLLER/.venv/bin/python"", ""ROLLER/scripts/ls_api.py""]",.,observe-adapter,,unmanaged,true,false,unmanaged,preferred-with-fallback,8792,/health,3000,ok
+mlb-001,[],.,remote-worker,,quad-4,true,false,external,pinned,0,,3000,

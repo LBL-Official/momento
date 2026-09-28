@@ -1,0 +1,10 @@
+trade T0451  NCAAB  Mississippi St. at South Carolina
+contract KXNCAAMBGAME-26FEB21MSSTSCAR-SCAR  slice H2_1
+signal 2026-02-21T11:16:00-08:00 PST  exit 2026-02-21T12:47:36-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 8037  principal_cents 626886
+entry_fee_cents 2414  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 176814  net_cents 174400
+strategy_result POSITIVE  net_r 1.856682032555812245158680308
+Assumed fill. Not a maker fill. Not live P&L.

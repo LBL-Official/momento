@@ -1,0 +1,10 @@
+trade T0207  NCAAB  Oregon at Rutgers
+contract KXNCAAMBGAME-26JAN05ORERUTG-ORE  slice H1_2
+signal 2026-01-05T16:47:00-08:00 PST  exit 2026-01-05T17:20:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 3546  principal_cents 276588
+entry_fee_cents 1065  exit_fee_cents 1373
+exit STOP at 67c  terminal no
+gross_cents -39006  net_cents -41444
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

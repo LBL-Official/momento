@@ -1,0 +1,30 @@
+{
+  "BASE_GRADE": "F",
+  "abase_filename": "SuperasiABase[mlb_test914].csv",
+  "abase_payload_sha256": "7ddb069c869007b4a5eb502e41279de9d13917ed5ad67301f8aafe573a00432b",
+  "abase_sha256": "d15c03e9f96279779abe1eb594535e56b20b58f39147c0f5a20d6db934462f80",
+  "allocation_bps": 500,
+  "artifact": "superasi_abase",
+  "bankroll_cents": 2000000,
+  "borderline": false,
+  "components": {
+    "coverage": "C",
+    "research_evidence": "A+",
+    "robustness": "A+",
+    "theoretical_alignment": "A+",
+    "validation": "F"
+  },
+  "created_at": "2026-09-15T00:17:15Z",
+  "desk_settings_source": "disk",
+  "floor_cents": 1500000,
+  "folder": "mlb_test914",
+  "grade_config_version": "grade_config_v1",
+  "phase": "A",
+  "result_id": "mlb_test914",
+  "roller_filename": "Roller[mlb_test914].csv",
+  "source_csv_sha256": "a503b3eb9d736842d02924a8fc397971553d9f6a53d411ff2db2d79e04ba0908",
+  "source_lab_id": "3750548b011f4b1cad802f8af2dbc689",
+  "strategy_name": "mlb_test914",
+  "superasi_version": "superasi_abase_v1.0.0",
+  "target_cents": 3000000
+}

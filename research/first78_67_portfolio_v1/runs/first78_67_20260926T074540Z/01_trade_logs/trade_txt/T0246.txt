@@ -1,0 +1,10 @@
+trade T0246  NBA  New York at Portland
+contract KXNBAGAME-26JAN11NYKPOR-NYK  slice Q3
+signal 2026-01-11T16:25:00-08:00 PST  exit 2026-01-11T16:53:00-08:00 PST
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 4011  principal_cents 312858
+entry_fee_cents 1205  exit_fee_cents 1552
+exit STOP at 67c  terminal yes
+gross_cents -44121  net_cents -46878
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

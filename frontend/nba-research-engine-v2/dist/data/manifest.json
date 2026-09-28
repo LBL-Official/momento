@@ -1,0 +1,24 @@
+{
+  "written_utc": "2026-09-01T19:10:57.550871+00:00",
+  "copied": [
+    "summary.json",
+    "observations_summary.json",
+    "possession_validation.json",
+    "overlay_summary.json",
+    "phase1_gate.json",
+    "features_summary.json",
+    "feature_metadata.json",
+    "diagnostics.json",
+    "univariate_fdr.json",
+    "clusters.json",
+    "models.json",
+    "selection.json",
+    "experiment_registry.json",
+    "economics.json",
+    "portfolio.json",
+    "pca_points.json",
+    "chronological.json",
+    "leakage_audit.json",
+    "trades_index.json"
+  ]
+}

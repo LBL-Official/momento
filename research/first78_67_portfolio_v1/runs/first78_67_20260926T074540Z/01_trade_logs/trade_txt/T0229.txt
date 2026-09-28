@@ -1,0 +1,10 @@
+trade T0229  NCAAB  USC at Minnesota
+contract KXNCAAMBGAME-26JAN09USCMINN-USC  slice H2_1
+signal 2026-01-09T19:02:00-08:00 PST  exit 2026-01-09T19:32:00-08:00 PST
+assumed entry 78c  observed close 84c  overshoot 6c
+contracts 3631  principal_cents 283218
+entry_fee_cents 1091  exit_fee_cents 1405
+exit STOP at 67c  terminal yes
+gross_cents -39941  net_cents -42437
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

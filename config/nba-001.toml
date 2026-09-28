@@ -1,0 +1,31 @@
+# NBA Bot 001 (FIRST78_67) worker configuration.
+# Host copy: /etc/momento/nba-001.toml. Secrets never live here.
+#
+# mode: live_data_only | shadow | live
+# `live` still cannot submit: this build links no submission adapter, and the
+# execution contract has UNRESOLVED_OWNER_INPUT fields.
+mode = "shadow"
+contract_path = "research/vital/bots/nba-001/strategy/execution_contract.json"
+
+tick_seconds = 15
+discovery_seconds = 300
+account_seconds = 60
+backfill_hours_before_start = 24
+active_minutes_before_start = 30
+clock_max_age_seconds = 90
+series = "KXNBAGAME"
+
+[live]
+enabled = false
+confirmation = ""
+
+[collateral]
+# Empty until the owner provides evidence. Both empty = SHARED_COLLATERAL_UNACCOUNTED.
+isolation_evidence = ""
+reservation_ledger = ""
+shared_credential_submitters = ["momento-live.service (MLB/WNBA, same Kalshi credential)"]
+
+[capital]
+reference_capital_cents = 2000000
+funded_target_cents = 500000
+external_reserve_cents = 1500000

@@ -1,0 +1,5 @@
+provider,api,role,present_locally,limitations
+MLB / MLB Advanced Media,statsapi.mlb.com game feed (liveData.plays.allPlays),Primary,true,Public StatsAPI; ToS still apply. Pitch-level incomplete vs Savant.
+Baseball Savant,Statcast search / game feed,Secondary,false,Not a silent substitute for StatsAPI play sequence.
+Kalshi,KXMLBGAME REST historical (W1 lake),Absent,true,Cannot reconstruct baseball state. W3/W4 market path only.
+Retrosheet / other,event files,CandidateUnlicensed,false,No parser in W2. Do not treat as installed.

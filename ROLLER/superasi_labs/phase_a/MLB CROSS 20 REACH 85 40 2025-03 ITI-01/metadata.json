@@ -1,0 +1,30 @@
+{
+  "BASE_GRADE": "F",
+  "abase_filename": "SuperasiABase[MLB CROSS 20 REACH 85 40 2025-03 ITI-01].csv",
+  "abase_payload_sha256": "0a25475bfc061b50d72b23cd46cd1657f251bb8aee67b141a5a67343b7a90b89",
+  "abase_sha256": "d6d43b54eb469f84824b51a00a3d68378796859e8d88e1bcd5b95a14159400eb",
+  "allocation_bps": 500,
+  "artifact": "superasi_abase",
+  "bankroll_cents": 2000000,
+  "borderline": true,
+  "components": {
+    "coverage": "A+",
+    "research_evidence": "F",
+    "robustness": "A+",
+    "theoretical_alignment": "F",
+    "validation": "F"
+  },
+  "created_at": "2026-09-15T18:53:00Z",
+  "desk_settings_source": "disk",
+  "floor_cents": 1500000,
+  "folder": "MLB CROSS 20 REACH 85 40 2025-03 ITI-01",
+  "grade_config_version": "grade_config_v1",
+  "phase": "A",
+  "result_id": "MLB CROSS 20 REACH 85 40 2025-03 ITI-01",
+  "roller_filename": "Roller[MLB CROSS 20 REACH 85 40 2025-03 ITI-01].csv",
+  "source_csv_sha256": "7fd5b3d045649bb386e17d5bbb1734331b1101e0c1cc1bd959a3446567e6c71c",
+  "source_lab_id": "a5c2b46e667349cbb5fd3cd89b115540",
+  "strategy_name": "MLB CROSS 20 REACH 85 40 2025-03 ITI-01",
+  "superasi_version": "superasi_abase_v1.0.0",
+  "target_cents": 3000000
+}

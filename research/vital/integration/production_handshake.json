@@ -1,0 +1,14 @@
+{
+  "binary": "610dd470b1769a0385c81942ec634362ce8607b2db6f8f44156cf7757a147250",
+  "bot_id": "mlb-001",
+  "not_live": true,
+  "not_trading": true,
+  "observed_at": "2026-09-16T20:56:31Z",
+  "pid": 1101134,
+  "production_test_order": false,
+  "profile": "mlb_factory_v1",
+  "strategy_id": "80_to_81_yes_bid",
+  "strategy_status": "LOADED",
+  "strategy_version": "mlb_factory_v1.0.0",
+  "wrote_live_toml": false
+}

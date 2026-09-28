@@ -1,0 +1,12 @@
+pandas<3,>=2.1
+pyarrow<23,>=14
+pydantic<3,>=2.6
+
+[dev]
+pytest<9,>=8
+jsonschema<5,>=4.20
+
+[terminal]
+fastapi<1,>=0.115
+uvicorn<1,>=0.30
+jsonschema<5,>=4.20

@@ -1,0 +1,10 @@
+trade T0563  NBA  Boston at San Antonio
+contract KXNBAGAME-26MAR10BOSSAS-SAS  slice Q3
+signal 2026-03-10T18:34:00-07:00 PDT  exit 2026-03-10T18:39:00-07:00 PDT
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 13140  principal_cents 1024920
+entry_fee_cents 3946  exit_fee_cents 5085
+exit STOP at 67c  terminal yes
+gross_cents -144540  net_cents -153571
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

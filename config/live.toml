@@ -1,0 +1,14 @@
+# Production live MLB. All three gates are required.
+# Credentials, production hostname, and Secrets Manager must never arm live
+# trading by themselves.
+mode = "live"
+timezone = "America/Los_Angeles"
+allocation_bps = 1250
+max_entry_price_cents = 83
+preferred_entry_price_cents = 80
+min_entry_price_cents = 80
+initial_bankroll_cents = 5000
+
+[live]
+enabled = true
+confirmation = "ENABLE_LIVE_TRADING"

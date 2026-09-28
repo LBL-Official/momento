@@ -1,0 +1,24 @@
+[package]
+name = "momento-research-execution"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "Deterministic historical fill simulator for FIRST01 research backtests."
+
+[lints]
+workspace = true
+
+[dependencies]
+chrono = { workspace = true, features = ["clock"] }
+momento-core.workspace = true
+momento-research-data.workspace = true
+momento-research-strategies.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+chrono = { workspace = true, features = ["clock"] }
+tempfile = "3.20.0"

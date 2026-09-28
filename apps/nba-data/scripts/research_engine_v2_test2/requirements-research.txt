@@ -1,0 +1,4 @@
+# Research-venv dependencies (not production crates)
+scikit-learn>=1.4
+umap-learn>=0.5
+hdbscan>=0.8

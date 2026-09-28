@@ -1,0 +1,10 @@
+trade T0222  NCAAB  SMU at Clemson
+contract KXNCAAMBGAME-26JAN07SMUCLEM-CLEM  slice H1_2
+signal 2026-01-07T18:40:00-08:00 PST  exit 2026-01-07T21:31:41-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 3681  principal_cents 287118
+entry_fee_cents 1106  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 80982  net_cents 79876
+strategy_result POSITIVE  net_r 1.856631490865138766212635396
+Assumed fill. Not a maker fill. Not live P&L.

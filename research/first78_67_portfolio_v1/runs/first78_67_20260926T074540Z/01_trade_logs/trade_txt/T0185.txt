@@ -1,0 +1,10 @@
+trade T0185  NCAAB  Clemson at Syracuse
+contract KXNCAAMBGAME-25DEC31CLEMSYR-CLEM  slice H2_1
+signal 2025-12-31T12:31:00-08:00 PST  exit 2025-12-31T14:37:06-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 3297  principal_cents 257166
+entry_fee_cents 991  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 72534  net_cents 71543
+strategy_result POSITIVE  net_r 1.856620127679451912596667878
+Assumed fill. Not a maker fill. Not live P&L.

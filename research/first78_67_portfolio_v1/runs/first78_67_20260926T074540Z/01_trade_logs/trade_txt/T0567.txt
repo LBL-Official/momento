@@ -1,0 +1,10 @@
+trade T0567  NCAAB  Oklahoma St. at Colorado
+contract KXNCAAMBGAME-26MAR10OKSTCOLO-OKST  slice H2_1
+signal 2026-03-10T20:08:00-07:00 PDT  exit 2026-03-10T21:26:36-07:00 PDT
+assumed entry 78c  observed close 82c  overshoot 4c
+contracts 13140  principal_cents 1024920
+entry_fee_cents 3946  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 289080  net_cents 285134
+strategy_result POSITIVE  net_r 1.856691693093097003991639046
+Assumed fill. Not a maker fill. Not live P&L.

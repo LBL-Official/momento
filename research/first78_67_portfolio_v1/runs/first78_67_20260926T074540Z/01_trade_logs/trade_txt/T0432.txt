@@ -1,0 +1,10 @@
+trade T0432  NCAAB  Maryland at Rutgers
+contract KXNCAAMBGAME-26FEB15MDRUTG-RUTG  slice H2_1
+signal 2026-02-15T10:31:00-08:00 PST  exit 2026-02-15T11:44:30-08:00 PST
+assumed entry 78c  observed close 81c  overshoot 3c
+contracts 7379  principal_cents 575562
+entry_fee_cents 2216  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 162338  net_cents 160122
+strategy_result POSITIVE  net_r 1.856680697116220823042404425
+Assumed fill. Not a maker fill. Not live P&L.

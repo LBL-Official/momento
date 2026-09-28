@@ -1,0 +1,86 @@
+{
+  "P_W": {
+    "iid": {
+      "n": 1230,
+      "k": 1019,
+      "estimate": 0.8284552845528456,
+      "wilson": {
+        "p": 0.8284552845528456,
+        "lo": 0.8063724440008425,
+        "hi": 0.8484928158509893,
+        "n": 1230,
+        "k": 1019,
+        "method": "wilson"
+      },
+      "clopper_pearson": {
+        "p": 0.8284552845528456,
+        "lo": 0.8062027293550886,
+        "hi": 0.8491247861603852,
+        "n": 1230,
+        "k": 1019,
+        "method": "clopper_pearson"
+      },
+      "se_iid": 0.010749064094230596,
+      "vs_null": {
+        "n": 1230,
+        "k": 1019,
+        "p_hat": 0.8284552845528456,
+        "p0": 0.8,
+        "expected_k": 984.0,
+        "excess_k": 35.0,
+        "se_null": 0.01140531897024402,
+        "z_approx": 2.4949135247408787,
+        "p_one_sided": 0.006243379248228594,
+        "p_two_sided": 0.012546828069258522,
+        "method": "scipy.stats.binomtest"
+      },
+      "diff_from_null": 0.028455284552845517
+    },
+    "bootstrap_game": {
+      "status": "OK",
+      "n_draws": 200,
+      "mean": 0.8287930199469662,
+      "p05": 0.8167623572559807,
+      "p95": 0.8424012550756736,
+      "cluster": "resampled_ids",
+      "seed": 42,
+      "meaning": "Variation under resampling of observed clusters. Not a population causal CI."
+    },
+    "bootstrap_team": {
+      "status": "OK",
+      "n_draws": 200,
+      "mean": 0.8284063756048564,
+      "p05": 0.8154650325490053,
+      "p95": 0.8432555315304642,
+      "cluster": "resampled_ids",
+      "seed": 42,
+      "meaning": "Variation under resampling of observed clusters. Not a population causal CI."
+    },
+    "bootstrap_date": {
+      "status": "OK",
+      "n_draws": 200,
+      "mean": 0.8291338577952581,
+      "p05": 0.8169965432981703,
+      "p95": 0.8406568613783169,
+      "cluster": "resampled_ids",
+      "seed": 42,
+      "meaning": "Variation under resampling of observed clusters. Not a population causal CI."
+    }
+  },
+  "P_not_T40_given_W": {
+    "iid_n": 1019,
+    "iid_p": 0.8930323846908734,
+    "bootstrap_game": {
+      "status": "OK",
+      "n_draws": 200,
+      "mean": 0.8932000572182557,
+      "p05": 0.88097425868457,
+      "p95": 0.9046302572229672,
+      "cluster": "resampled_ids",
+      "seed": 42,
+      "meaning": "Variation under resampling of observed clusters. Not a population causal CI."
+    }
+  },
+  "repeat_teams": 32,
+  "note": "If cluster intervals are materially wider than iid, do not treat n=1230 as independent Bernoulli trials."
+}

@@ -1,0 +1,66 @@
+{
+  "waterfall": "CTO-W4",
+  "artifact_version": "W4.1.0",
+  "reconstruction_version": "W4.PATH.1.0.0",
+  "source_run": "ingest-20260826T095038Z-2bc3d10b5833",
+  "inventory_kind": "PRICE_PATH_RECONSTRUCT_TRADES_ONLY",
+  "unique_markets_inventoried": 8428,
+  "reconstructed": 238,
+  "failed": 0,
+  "skipped_metadata_only": 8190,
+  "skipped_unobserved": 0,
+  "skipped_other": 0,
+  "by_completeness": {
+    "MARKET_METADATA_ONLY": 8190,
+    "TRADES_ONLY": 238
+  },
+  "by_identity": {
+    "UNMATCHED": 238
+  },
+  "reconstructable_trades_only": 238,
+  "l2_paths": 0,
+  "candles_only_paths": 0,
+  "excluded_from_price_path": 8190,
+  "exclusion_reasons": {
+    "METADATA_ONLY_NO_PRICE_PATH": 8190
+  },
+  "funnel_reconstructed_markets": {
+    "markets": 238,
+    "has_market_id": 238,
+    "matched_identity": 0,
+    "valid_time_coverage": 238,
+    "trade_observations": 238,
+    "eighty_observable": 137,
+    "first01_trigger_observable": 133,
+    "post_trigger_path_observable": 137,
+    "outcome_observable": 0,
+    "first01_replay_sufficient": 0
+  },
+  "funnel_matched_only": {
+    "markets": 0,
+    "has_market_id": 0,
+    "matched_identity": 0,
+    "valid_time_coverage": 0,
+    "trade_observations": 0,
+    "eighty_observable": 0,
+    "first01_trigger_observable": 0,
+    "post_trigger_path_observable": 0,
+    "outcome_observable": 0,
+    "first01_replay_sufficient": 0
+  },
+  "coupled_events": 119,
+  "coupled_both_yes": 119,
+  "coupled_missing_side": 0,
+  "coupled_either_eighty": 107,
+  "unique_matched_games_in_reconstructed": 0,
+  "matched_games_eighty_observable": 0,
+  "notes": [
+    "TRADES_ONLY is not a failed dataset. It is a valid price-path research universe.",
+    "NO L2 = DO NOT INVENT L2. Compact trade files are prints, not bid/ask.",
+    "Metadata-only markets were inventoried and excluded from path reconstruct (not discarded from identity).",
+    "80/81 flags are observability of trade prints vs frozen FIRST01 thresholds; this is not strategy replay.",
+    "W5 (event↔market sync) is not implemented.",
+    "GameId-linked 80% denominator uses MATCHED reconstructed paths (0/2377 unique matched games in this reconstruct)."
+  ],
+  "w4_gate": "COMPLETE"
+}

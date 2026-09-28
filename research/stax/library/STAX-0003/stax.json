@@ -1,0 +1,171 @@
+{
+  "stax_id": "STAX-0003",
+  "schema_version": "stax_v1",
+  "name": "NBA First75 \u2192 85 / 35",
+  "description": "",
+  "created_at": "2026-09-11T15:35:32Z",
+  "updated_at": "2026-09-11T15:35:32Z",
+  "universe": {
+    "sport_family": "basketball",
+    "league_set": [
+      "NBA"
+    ],
+    "seasons": [
+      "2025-2026"
+    ],
+    "date_from": null,
+    "date_to": null
+  },
+  "timezone": "America/Los_Angeles",
+  "automation_enabled": false,
+  "automation_schedule": "00:00",
+  "latest_version": null,
+  "latest_status": "PENDING",
+  "last_run_at": null,
+  "next_run_at": null,
+  "working_members": [
+    {
+      "member_id": "STXM-0001",
+      "position": 1,
+      "display_id": "STX03-S01",
+      "label": "NBA First75 \u2192 85 / 35",
+      "save_id": "a13446be34274e4785f7f845b2deb42f",
+      "roller_object_id": "a13446be34274e4785f7f845b2deb42f",
+      "research_object_id": null,
+      "question": {
+        "universe": {
+          "sports": [
+            "basketball"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "seasons": [
+            "2025-26"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "game_data": [],
+          "date_from": null,
+          "date_to": null
+        },
+        "entry_conditions": [
+          {
+            "id": "entry_mtx4b2sj_j6hwo",
+            "ordinal": "FIRST_TOUCH",
+            "price_e4": 7500,
+            "period": null,
+            "clock": null,
+            "nth": 1,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mtx4b2sj_bwp1g",
+            "op": "REACH",
+            "price_e4": 8500,
+            "sequential": false,
+            "outcome": "win"
+          },
+          {
+            "id": "exit_mtx4b2sj_2ufhc",
+            "op": "REACH",
+            "price_e4": 3500,
+            "sequential": false,
+            "outcome": "loss"
+          }
+        ],
+        "terminal": "BOTH",
+        "requested_dimensions": [],
+        "accept_limitations": false
+      },
+      "draft": {
+        "universe": {
+          "sports": [
+            "basketball"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "seasons": [
+            "2025-26"
+          ],
+          "dateFrom": "2025-10-10",
+          "dateTo": "2026-06-13",
+          "markets": [
+            "kalshi"
+          ],
+          "marketData": [
+            "candles"
+          ],
+          "dataSources": []
+        },
+        "entryConditions": [
+          {
+            "id": "entry_mtx4b2sj_j6hwo",
+            "family": "first_touch",
+            "priceCents": 75,
+            "touchN": 1
+          }
+        ],
+        "exitConditions": [
+          {
+            "id": "exit_mtx4b2sj_bwp1g",
+            "kind": "path",
+            "family": "reach",
+            "priceCents": 85,
+            "outcome": "win",
+            "sequential": false
+          },
+          {
+            "id": "exit_mtx4b2sj_2ufhc",
+            "kind": "path",
+            "family": "reach",
+            "priceCents": 35,
+            "outcome": "loss",
+            "sequential": false
+          },
+          {
+            "id": "exit_mtx4b2sj_y7wqi",
+            "kind": "terminal",
+            "family": "both"
+          }
+        ],
+        "teFilters": {
+          "scoreSide": "any",
+          "absDiff": "any"
+        },
+        "recognizedIntent": {
+          "clauses": [],
+          "customizeUnlocked": false,
+          "selectedSeason": null
+        },
+        "status": "DRAFT"
+      },
+      "research_spec": {},
+      "question_hash": "2197a6dbe189eec3cb09fa595c2fc5ce6e823de80edb6058ae7d3fccee3b3929",
+      "query_hash": "2197a6dbe189eec3cb09fa595c2fc5ce6e823de80edb6058ae7d3fccee3b3929",
+      "universe": {
+        "sport_family": "basketball",
+        "league_set": [
+          "NBA"
+        ],
+        "seasons": [
+          "2025-2026"
+        ],
+        "date_from": null,
+        "date_to": null
+      },
+      "definition_version": "1.0.0",
+      "status": "PENDING"
+    }
+  ],
+  "member_seq": 1,
+  "live_execution": false
+}

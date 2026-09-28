@@ -1,0 +1,33 @@
+{
+  "name": "FIRST01",
+  "version": 1,
+  "supported_series": ["KXMLBGAME", "KXWNBAGAME"],
+  "default_entry": {
+    "first_threshold_cents": 80,
+    "confirmation_threshold_cents": 81,
+    "maximum_entry_price_cents": 83,
+    "lock_threshold_cents": 89,
+    "require_bid_below_ask": true,
+    "maker_only": true
+  },
+  "default_exit": {
+    "loss_numerator": 1,
+    "loss_denominator": 2
+  },
+  "entry_rules_summary": [
+    "Observe YES bid",
+    "Record first >= first_threshold on same MarketId+side",
+    "Confirm >= confirmation_threshold",
+    "GAME_LOCK at lock_threshold",
+    "Maker limit in entry band with bid < ask",
+    "Emit EntrySignal only"
+  ],
+  "exit_rules_summary": [
+    "VWAP from actual entry fills",
+    "loss_numerator/loss_denominator of basis",
+    "Position-scoped MarketId+side",
+    "Trigger on bid crossing threshold",
+    "Liquidation remains active until flat",
+    "Emit ExitSignal only"
+  ]
+}

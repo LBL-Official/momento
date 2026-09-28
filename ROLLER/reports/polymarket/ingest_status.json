@@ -1,0 +1,396 @@
+{
+  "written_at": "2026-09-09T18:46:52Z",
+  "source": "GET https://gamma-api.polymarket.com/events + GET https://clob.polymarket.com/prices-history fidelity=1",
+  "join_key": "internal_game_id",
+  "market_data_type": "PRICE_HISTORY_LAST",
+  "not_invented": [
+    "yes_bid",
+    "yes_ask",
+    "fills",
+    "l2"
+  ],
+  "sports": {
+    "NBA:2025-2026": {
+      "events": 1280,
+      "mapped": 1257,
+      "tokens": 2514,
+      "candles": 2539898,
+      "downloaded_tokens": 0,
+      "raw_events": 1280,
+      "priced_tokens": 2514
+    },
+    "NCAAB:2025-2026": {
+      "events": 214,
+      "mapped": 185,
+      "tokens": 370,
+      "candles": 367304,
+      "downloaded_tokens": 0,
+      "raw_events": 214,
+      "priced_tokens": 370
+    },
+    "WNBA:2025": {
+      "events": 318,
+      "mapped": 91,
+      "tokens": 182,
+      "candles": 180284,
+      "downloaded_tokens": 0,
+      "raw_events": 318,
+      "priced_tokens": 522
+    },
+    "WNBA:2026": {
+      "events": 318,
+      "mapped": 170,
+      "tokens": 340,
+      "candles": 306528,
+      "downloaded_tokens": 0,
+      "raw_events": 318,
+      "priced_tokens": 522
+    }
+  },
+  "nba_a": {
+    "urls": 107,
+    "imported": 90,
+    "truncated": 17,
+    "retry_batches": 128,
+    "retry_file": "reports/polymarket/urls_nba_a_retry.txt"
+  },
+  "resume": "python scripts/ingest_polymarket.py",
+  "nba_b": {
+    "urls": 107,
+    "imported": 47,
+    "truncated": 60,
+    "retry_batches": 244,
+    "retry_file": "reports/polymarket/urls_nba_b_retry.txt",
+    "canonicalize": {
+      "events": 746,
+      "mapped": 723,
+      "tokens": 1446,
+      "candles": 326129,
+      "downloaded_tokens": 0
+    }
+  },
+  "nba_price_batch_2": {
+    "jobs": 99,
+    "missing": 0,
+    "imported": 99,
+    "canonicalize": {
+      "events": 746,
+      "mapped": 723,
+      "tokens": 1446,
+      "candles": 374551,
+      "downloaded_tokens": 0
+    },
+    "raw_events": 748
+  },
+  "nba_price_batch_1": {
+    "jobs": 99,
+    "missing": 0,
+    "imported": 99,
+    "canonicalize": {
+      "events": 985,
+      "mapped": 962,
+      "tokens": 1924,
+      "candles": 536130,
+      "downloaded_tokens": 0
+    },
+    "unqueued_missing": 478
+  },
+  "ncaab_events": {
+    "urls_attempted": 107,
+    "canonicalize": {
+      "events": 214,
+      "mapped": 185,
+      "tokens": 370,
+      "candles": 29544,
+      "downloaded_tokens": 0
+    },
+    "kalshi_mapped_no_pm": 665,
+    "remaining_event_batches": 167,
+    "missing_prices": 341
+  },
+  "nba_price_b_leftover": {
+    "jobs": 40,
+    "missing": 0,
+    "imported": 40,
+    "priced_total": 580
+  },
+  "nba_a_retry": {
+    "urls": 128,
+    "truncated": 0,
+    "empty": 58,
+    "with_events": 70,
+    "canonicalize": {
+      "events": 1158,
+      "mapped": 1135,
+      "tokens": 2270,
+      "candles": 665029,
+      "downloaded_tokens": 0
+    },
+    "a_games_still_missing": 92,
+    "unqueued_prices": 346
+  },
+  "nba_price_batch_4": {
+    "jobs": 97,
+    "missing": 0,
+    "imported": 97,
+    "priced_total": 803
+  },
+  "ncaab_remaining_2": {
+    "urls": 83,
+    "empty": 83,
+    "truncated": 0,
+    "events_added": 0,
+    "note": "Gamma returned valid [] for Feb-Apr identity slugs. Do not retry the same slugs. Remaining mapped games without a PM event are not on these official slugs."
+  },
+  "sports_live": {
+    "NBA:2025-2026": {
+      "events": 1280,
+      "mapped": 1257,
+      "tokens": 2514,
+      "candles": 1183260,
+      "downloaded_tokens": 0
+    },
+    "NCAAB:2025-2026": {
+      "events": 214,
+      "mapped": 185,
+      "tokens": 370,
+      "candles": 171294,
+      "downloaded_tokens": 0
+    }
+  },
+  "nba_b_retry_done": {
+    "canonicalize": {
+      "events": 1280,
+      "mapped": 1257,
+      "tokens": 2514,
+      "candles": 1183260,
+      "downloaded_tokens": 0
+    },
+    "kalshi_mapped_no_pm": 94,
+    "unqueued_prices": 244
+  },
+  "ncaab_remaining_1": {
+    "urls": 84,
+    "empty": 84,
+    "truncated": 0,
+    "events_added": 0
+  },
+  "nba_unlocked_3": {
+    "jobs": 120,
+    "missing": 0,
+    "imported": 120,
+    "priced_total": 1305
+  },
+  "nba_price_batch_3": {
+    "jobs": 99,
+    "missing": 0,
+    "imported": 99,
+    "priced_total": 1463
+  },
+  "nba_unlocked_4": {
+    "jobs": 118,
+    "missing": 0,
+    "imported": 118,
+    "priced_total": 1783
+  },
+  "nba_unlocked_2": {
+    "jobs": 120,
+    "missing": 0,
+    "imported": 120,
+    "priced_total": 1927
+  },
+  "wnba_events": {
+    "urls": 104,
+    "imported": 78,
+    "inlined_skipped": 6,
+    "canonicalize": {
+      "2025": {
+        "events": 306,
+        "mapped": 81,
+        "tokens": 162,
+        "candles": 0,
+        "downloaded_tokens": 0
+      },
+      "2026": {
+        "events": 306,
+        "mapped": 168,
+        "tokens": 336,
+        "candles": 0,
+        "downloaded_tokens": 0
+      }
+    },
+    "retry_batches": 363,
+    "unqueued_prices": 462
+  },
+  "nba_b_retry_new_1": {
+    "jobs": 61,
+    "missing": 0
+  },
+  "nba_unlocked_1": {
+    "jobs": 120,
+    "missing": 0,
+    "priced_total": 2013
+  },
+  "nba_b_retry_new_3": {
+    "jobs": 61,
+    "missing": 0,
+    "priced_total": 2063
+  },
+  "nba_b_retry_new_2": {
+    "jobs": 61,
+    "missing": 0,
+    "priced_total": 2071
+  },
+  "nba_a_retry_new_1": {
+    "jobs": 173,
+    "missing": 0,
+    "priced_total": 2138
+  },
+  "wnba_inlined_retry": {
+    "canonicalize": {
+      "2025": {
+        "events": 318,
+        "mapped": 91,
+        "tokens": 182,
+        "candles": 39418,
+        "downloaded_tokens": 0
+      },
+      "2026": {
+        "events": 318,
+        "mapped": 170,
+        "tokens": 340,
+        "candles": 55506,
+        "downloaded_tokens": 0
+      }
+    },
+    "unqueued_prices": 24
+  },
+  "nba_b_retry_new_4": {
+    "jobs": 61,
+    "missing": 0,
+    "priced_total": 2198
+  },
+  "wnba_inlined_new_prices": {
+    "jobs": 24,
+    "missing": 0,
+    "priced_total": 281
+  },
+  "nba_new_1": {
+    "jobs": 455,
+    "missing": 0,
+    "priced_total": 2318
+  },
+  "price_jobs_other": {
+    "jobs": 256,
+    "missing": 0,
+    "by_sport": {
+      "NCAAB": 220,
+      "WNBA": 36
+    }
+  },
+  "wnba_prices_2": {
+    "jobs": 231,
+    "missing": 0,
+    "priced_total": 449
+  },
+  "nba_a_retry_new_2": {
+    "jobs": 173,
+    "missing": 0,
+    "priced_total": 2446
+  },
+  "wnba_prices_1": {
+    "jobs": 231,
+    "missing": 0,
+    "imported": 231,
+    "points": 221297,
+    "priced_total": 522,
+    "mapped_tokens": 522,
+    "unpriced_mapped": 0,
+    "canonicalize": {
+      "2025": {
+        "events": 318,
+        "mapped": 91,
+        "tokens": 182,
+        "candles": 180284,
+        "downloaded_tokens": 0
+      },
+      "2026": {
+        "events": 318,
+        "mapped": 170,
+        "tokens": 340,
+        "candles": 306528,
+        "downloaded_tokens": 0
+      }
+    },
+    "note": "All mapped WNBA tokens have official CLOB last-trade history.json. Do not invent bid/ask."
+  },
+  "nba_new_2": {
+    "jobs": 455,
+    "missing": 0,
+    "imported": 455,
+    "points": 465800,
+    "priced_total": 2446,
+    "mapped_tokens": 2514,
+    "unpriced_mapped": 68,
+    "canonicalize": {
+      "events": 1280,
+      "mapped": 1257,
+      "tokens": 2514,
+      "candles": 2470574,
+      "downloaded_tokens": 0
+    }
+  },
+  "nba_leftover_prices": {
+    "jobs": 68,
+    "missing": 0,
+    "imported": 68,
+    "priced_total": 2514,
+    "mapped_tokens": 2514,
+    "unpriced_mapped": 0,
+    "canonicalize": {
+      "events": 1280,
+      "mapped": 1257,
+      "tokens": 2514,
+      "candles": 2539898,
+      "downloaded_tokens": 0
+    },
+    "note": "Used official market gameStartTime when event startTime was missing. Last-trade only."
+  },
+  "ncaab_leftover_prices": {
+    "jobs": 150,
+    "skipped_existing": 126,
+    "imported": 24,
+    "missing": 0,
+    "priced_total": 370,
+    "mapped_tokens": 370,
+    "unpriced_mapped": 0,
+    "canonicalize": {
+      "events": 214,
+      "mapped": 185,
+      "tokens": 370,
+      "candles": 367304,
+      "downloaded_tokens": 0
+    }
+  },
+  "coverage": {
+    "NBA": {
+      "mapped_games": 1257,
+      "mapped_tokens": 2514,
+      "priced_tokens": 2514,
+      "unpriced_tokens": 0
+    },
+    "NCAAB": {
+      "mapped_games": 185,
+      "mapped_tokens": 370,
+      "priced_tokens": 370,
+      "unpriced_tokens": 0
+    },
+    "WNBA": {
+      "mapped_games": 261,
+      "mapped_tokens": 522,
+      "priced_tokens": 522,
+      "unpriced_tokens": 0
+    }
+  },
+  "complete": true
+}

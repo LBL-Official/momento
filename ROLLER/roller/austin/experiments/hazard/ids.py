@@ -1,0 +1,126 @@
+"""Phase 4 loss-hazard / recovery identities. Not a policy."""
+
+from __future__ import annotations
+
+from roller.austin.experiments.downfall.ids import (
+    CI_CROSSES_ZERO,
+    CI_NEGATIVE,
+    CI_POSITIVE,
+    CI_UNAVAILABLE,
+    HEALTHY,
+    HEALTHY_AFTER_RECOVERY,
+    PERSISTENCE_2,
+    PERSISTENCE_3PLUS,
+    PHASE2_REPORT_SHA256,
+    PHASE2_STATISTICS_SHA256,
+    RECOVERING,
+    STATE_DEPTH,
+    UNRESOLVED,
+    WATCH_NEGATIVE,
+)
+from roller.austin.experiments.ids import (
+    BOOTSTRAP_B,
+    BOOTSTRAP_SEED,
+    EV_DEFINITION,
+    EXPERIMENT_A,
+    EXPERIMENT_B,
+    OBSERVATION_SCHEDULE,
+    PHASE2_ID,
+    PHASE3_ID,
+    PHASE4_ID,
+    PHASE4_PHASE,
+    SUITE_ID,
+)
+from roller.austin.experiments.persistence.ids import LOCKED_CONFIRMATION_HASH, LOCKED_DISCOVERY_HASH
+
+PHASE = "PHASE_4"
+PHASE_NAME = "LOSS_HAZARD_RECOVERY_MODEL"
+MODEL_ID = PHASE4_ID
+HAZARD_SCHEMA_VERSION = "loss_hazard_recovery_v1"
+STATE_SCHEMA_VERSION = "downfall_state_v1"
+STATE_SCHEMA_HASH = "96018aec5e8d3da8374632ae139b0a25761b4d485da394a46b0f5e3159079307"
+
+PHASE2_MANIFEST_SHA256 = "0f65712ab07f5e71a614f28a665c9434642fbde20ac078c57aeb340efa159b74"
+PHASE3_REPORT_SHA256 = "44473f2d47c1b1766020124d807952ad022a53b5592e1cf69bed8bbc8af4b37e"
+PHASE3_STATISTICS_SHA256 = "386dd6631d247899250fc1728d00befa9d4870b9ee0362222d52a9939d577e47"
+
+NEGATIVE_STATES = (WATCH_NEGATIVE, PERSISTENCE_2, PERSISTENCE_3PLUS)
+RECOVERY_NA_STATES = (HEALTHY, RECOVERING, HEALTHY_AFTER_RECOVERY, UNRESOLVED)
+
+H0 = "H0"
+H1 = "H1"
+H2 = "H2"
+FAMILIES = (H0, H1, H2)
+
+TARGETS = (
+    "TARGET_terminal_loss",
+    "TARGET_recovery_t1",
+    "TARGET_recovery_by_t2",
+    "TARGET_recovery_by_t3",
+    "TARGET_deeper_distress_next",
+)
+
+CALIBRATION_BINS = ((0.0, 0.2), (0.2, 0.4), (0.4, 0.6), (0.6, 0.8), (0.8, 1.0000001))
+JEFFREYS_A = 0.5
+JEFFREYS_B = 0.5
+UNAVAILABLE = "UNAVAILABLE"
+NOT_APPLICABLE = "NOT_APPLICABLE"
+NA = "N/A"
+
+REQUIRED_TRANSITIONS = (
+    (WATCH_NEGATIVE, RECOVERING),
+    (WATCH_NEGATIVE, PERSISTENCE_2),
+    (PERSISTENCE_2, RECOVERING),
+    (PERSISTENCE_2, PERSISTENCE_3PLUS),
+)
+
+LOSS_CONTRASTS = (
+    (WATCH_NEGATIVE, HEALTHY),
+    (PERSISTENCE_2, WATCH_NEGATIVE),
+    (PERSISTENCE_3PLUS, PERSISTENCE_2),
+)
+RECOVERY_CONTRASTS = (
+    (WATCH_NEGATIVE, PERSISTENCE_2, "TARGET_recovery_t1"),
+    (WATCH_NEGATIVE, PERSISTENCE_2, "TARGET_recovery_by_t2"),
+)
+
+FORBIDDEN_PIT = frozenset(
+    {
+        "TARGET_terminal_loss",
+        "TARGET_recovery_t1",
+        "TARGET_recovery_by_t2",
+        "TARGET_recovery_by_t3",
+        "TARGET_deeper_distress_next",
+        "TARGET_T40_before_recovery",
+        "won",
+        "OUTCOME_eventual_result",
+        "OUTCOME_future_T40",
+        "OUTCOME_future_MAE",
+        "OUTCOME_future_MFE",
+    }
+)
+
+__all__ = [
+    "MODEL_ID",
+    "PHASE4_ID",
+    "PHASE3_ID",
+    "PHASE2_ID",
+    "SUITE_ID",
+    "EXPERIMENT_A",
+    "EXPERIMENT_B",
+    "BOOTSTRAP_SEED",
+    "BOOTSTRAP_B",
+    "LOCKED_DISCOVERY_HASH",
+    "LOCKED_CONFIRMATION_HASH",
+    "STATE_SCHEMA_HASH",
+    "STATE_DEPTH",
+    "WATCH_NEGATIVE",
+    "PERSISTENCE_2",
+    "PERSISTENCE_3PLUS",
+    "CI_NEGATIVE",
+    "CI_CROSSES_ZERO",
+    "CI_POSITIVE",
+    "CI_UNAVAILABLE",
+    "PHASE2_REPORT_SHA256",
+    "PHASE2_STATISTICS_SHA256",
+]

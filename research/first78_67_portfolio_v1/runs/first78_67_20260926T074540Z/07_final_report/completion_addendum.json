@@ -1,0 +1,80 @@
+{
+  "written_utc": "2026-09-26T07:52:36.286466+00:00",
+  "reverse_admitted": 647,
+  "all_in_admitted": 647,
+  "all_in_net_pnl_cents": 23307574,
+  "capacity": [
+    {
+      "starting_dollars": 10000,
+      "admitted": 647,
+      "net_pnl_cents": 11768760,
+      "ending_equity_cents": 12768760,
+      "max_open": 6,
+      "fill_fraction": "NOT_IDENTIFIED",
+      "depth": "NOT_IDENTIFIED",
+      "note": "Contract and cash replay only. Not evidence of available size."
+    },
+    {
+      "starting_dollars": 20000,
+      "admitted": 647,
+      "net_pnl_cents": 23548818,
+      "ending_equity_cents": 25548818,
+      "max_open": 6,
+      "fill_fraction": "NOT_IDENTIFIED",
+      "depth": "NOT_IDENTIFIED",
+      "note": "Contract and cash replay only. Not evidence of available size."
+    },
+    {
+      "starting_dollars": 40000,
+      "admitted": 647,
+      "net_pnl_cents": 47101939,
+      "ending_equity_cents": 51101939,
+      "max_open": 6,
+      "fill_fraction": "NOT_IDENTIFIED",
+      "depth": "NOT_IDENTIFIED",
+      "note": "Contract and cash replay only. Not evidence of available size."
+    },
+    {
+      "starting_dollars": 100000,
+      "admitted": 647,
+      "net_pnl_cents": 117770656,
+      "ending_equity_cents": 127770656,
+      "max_open": 6,
+      "fill_fraction": "NOT_IDENTIFIED",
+      "depth": "NOT_IDENTIFIED",
+      "note": "Contract and cash replay only. Not evidence of available size."
+    }
+  ],
+  "breakeven_unweighted_cents_per_contract": 5.341488594369199,
+  "day_cluster_combined_ci95": [
+    4.1869138102738965,
+    6.547013269046414
+  ],
+  "holm": [
+    {
+      "endpoint": "combined_mean_net_per_contract",
+      "raw_p": 9.999000099990002e-05,
+      "holm_p": 0.00029997000299970003
+    },
+    {
+      "endpoint": "NBA_mean_net_per_contract",
+      "raw_p": 9.999000099990002e-05,
+      "holm_p": 0.00029997000299970003
+    },
+    {
+      "endpoint": "NCAAB_mean_net_per_contract",
+      "raw_p": 9.999000099990002e-05,
+      "holm_p": 0.00029997000299970003
+    }
+  ],
+  "bid_marked_drawdown": {
+    "status": "BID_MARKED_GROSS_AT_EVENT_TIMES",
+    "points": 1941,
+    "events_missing_a_mark": 0,
+    "max_drawdown_fraction": 0.06921403203061549,
+    "peak_equity_cents": 13614537,
+    "trough_equity_cents": 12672220,
+    "note": "Mark is the last bid close at or before the event. Not an intraminute path and not a liquidation fill."
+  },
+  "timing_null": "NOT_IDENTIFIABLE"
+}

@@ -1,0 +1,20 @@
+{
+  "phase": "PHASE_5B",
+  "phase5a_proposed_policy": "NONE",
+  "human_selected_policy": "NONE",
+  "human_freeze_justified": "NOT_SUPPORTED",
+  "human_decision_status": "NO_POLICY_SELECTED",
+  "candidate_registry_hash": "e9816a29be6b24550e2712e7b81d9003be3ff518f60e237ad422ecfd9903f276",
+  "policy_freeze_created": false,
+  "policy_freeze_hash": null,
+  "confirmation_accessed": false,
+  "confirmation_A": "NOT_RUN",
+  "confirmation_B": "NOT_RUN",
+  "phase6_started": false,
+  "policy_status": "NO_POLICY_FROZEN",
+  "phase6_authorized": false,
+  "phase_6_authorized": false,
+  "execution_enabled": false,
+  "submits": false,
+  "note": "Phase 5A proposed NONE. Researcher selected NONE."
+}

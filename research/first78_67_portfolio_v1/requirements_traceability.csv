@@ -1,0 +1,22 @@
+requirement,location,status
+contract freeze before performance use,research/first78_67_portfolio_v1/contract.json,written by runner before scan returns were used to change rules
+CONTRACT_WISE_FIRST headline,src/first78/select.py,implemented
+GAME_WIDE_FIRST separate,runs/.../01_trade_logs/game_wide_first_audit.csv,not pooled
+NEXT_BAR_PRICE_PROXY label,stresses.csv,not called OBSERVED_PRICE_REPLAY
+close_time hypothesis,stresses.csv HYPOTHETICAL_CASH_AT_CLOSE_TIME,not the baseline cash clock
+adverse entry up and stop down,stresses.csv,settlement payout unshifted
+1538-contract fixture,tests/test_acceptance.py,passed
+seven-slot cap,tests/test_acceptance.py and summary max_open 6,cap did not bind in history
+completion epochs,src/first78/portfolio.py,headline
+strict batches,stresses.csv STRICT_TEN_ENTRY_BATCH,separate
+paired stop vs hold,05_profitability_dissection/paired_stop_vs_hold.csv,same quantity
+hold portfolio replay,portfolio_stop_vs_hold.csv,separate admissions
+maker replay,summary.json maker_execution UNAVAILABLE,explicit
+launch 2026-27,07_final_report/launch_assessment.md,NOT_YET_IDENTIFIABLE
+within-game survival,06_markov_chains/within_game_state_definitions.json,DEVELOPMENT_ONLY on this season
+capacity bankroll scale,05_profitability_dissection/capacity_curve.csv,computed; depth and fill fraction NOT_IDENTIFIED
+bid mark versus realized equity,02_portfolio_logs/mark_equity_curve.csv,separate series
+monte carlo families A-E,04_monte_carlo/families.json,A and B reduced form; C primary; D regime counts; E stress grid
+timing null,03_statistical_validation/timing_null.json,NOT_IDENTIFIABLE
+nested outer refits,contract.json nested_outer_refits,NOT_RUN
+deflated Sharpe,research_trial_registry.csv,NOT_ESTIMABLE

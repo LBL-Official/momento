@@ -1,0 +1,266 @@
+{
+  "ncaab_h1_2_discovery": {
+    "n_reached": 96,
+    "losers": {
+      "n": 15,
+      "n_open_ge_41": 15,
+      "n_already_lt_41": 0,
+      "n_t40_already_at_mark": 0,
+      "n_t40_terminal": 15,
+      "n_ev_available": 15,
+      "n_ev_unavailable": 0,
+      "n_open_ev_available": 15,
+      "price": {
+        "n": 15,
+        "mean": 75.73333333333333,
+        "median": 74
+      },
+      "open_price": {
+        "n": 15,
+        "mean": 75.73333333333333,
+        "median": 74
+      },
+      "ev": {
+        "n": 15,
+        "mean": -6.427957355102387
+      },
+      "open_ev": {
+        "n": 15,
+        "mean": -6.427957355102387
+      },
+      "score_differential": {
+        "n": 0,
+        "mean": null,
+        "median": null
+      },
+      "price_buckets": {
+        "lt_41": 0,
+        "41_50": 0,
+        "51_60": 2,
+        "61_70": 4,
+        "71_80": 2,
+        "81_90": 6,
+        "91_99": 1
+      }
+    },
+    "winners": {
+      "n": 81,
+      "n_open_ge_41": 81,
+      "n_already_lt_41": 0,
+      "n_t40_already_at_mark": 0,
+      "n_t40_terminal": 13,
+      "n_ev_available": 81,
+      "n_ev_unavailable": 0,
+      "n_open_ev_available": 81,
+      "price": {
+        "n": 81,
+        "mean": 83.14814814814815,
+        "median": 84
+      },
+      "open_price": {
+        "n": 81,
+        "mean": 83.14814814814815,
+        "median": 84
+      },
+      "ev": {
+        "n": 81,
+        "mean": -0.47064807462506963
+      },
+      "open_ev": {
+        "n": 81,
+        "mean": -0.47064807462506963
+      },
+      "score_differential": {
+        "n": 0,
+        "mean": null,
+        "median": null
+      },
+      "price_buckets": {
+        "lt_41": 0,
+        "41_50": 0,
+        "51_60": 3,
+        "61_70": 9,
+        "71_80": 18,
+        "81_90": 26,
+        "91_99": 25
+      }
+    },
+    "note": "Terminal loser/winner identity is settlement. Mark stats are first snapshot at or after the clock."
+  },
+  "ncaab_h2_1_discovery": {
+    "n_reached": 69,
+    "losers": {
+      "n": 12,
+      "n_open_ge_41": 12,
+      "n_already_lt_41": 0,
+      "n_t40_already_at_mark": 0,
+      "n_t40_terminal": 12,
+      "n_ev_available": 0,
+      "n_ev_unavailable": 12,
+      "n_open_ev_available": 0,
+      "price": {
+        "n": 12,
+        "mean": 68.08333333333333,
+        "median": 73
+      },
+      "open_price": {
+        "n": 12,
+        "mean": 68.08333333333333,
+        "median": 73
+      },
+      "ev": {
+        "n": 0,
+        "mean": null
+      },
+      "open_ev": {
+        "n": 0,
+        "mean": null
+      },
+      "score_differential": {
+        "n": 0,
+        "mean": null,
+        "median": null
+      },
+      "price_buckets": {
+        "lt_41": 0,
+        "41_50": 1,
+        "51_60": 3,
+        "61_70": 2,
+        "71_80": 5,
+        "81_90": 1,
+        "91_99": 0
+      }
+    },
+    "winners": {
+      "n": 57,
+      "n_open_ge_41": 53,
+      "n_already_lt_41": 4,
+      "n_t40_already_at_mark": 4,
+      "n_t40_terminal": 5,
+      "n_ev_available": 4,
+      "n_ev_unavailable": 53,
+      "n_open_ev_available": 4,
+      "price": {
+        "n": 57,
+        "mean": 63.43859649122807,
+        "median": 67
+      },
+      "open_price": {
+        "n": 53,
+        "mean": 65.50943396226415,
+        "median": 67
+      },
+      "ev": {
+        "n": 4,
+        "mean": -2.822489707015441
+      },
+      "open_ev": {
+        "n": 4,
+        "mean": -2.822489707015441
+      },
+      "score_differential": {
+        "n": 0,
+        "mean": null,
+        "median": null
+      },
+      "price_buckets": {
+        "lt_41": 4,
+        "41_50": 6,
+        "51_60": 11,
+        "61_70": 18,
+        "71_80": 15,
+        "81_90": 1,
+        "91_99": 2
+      }
+    },
+    "note": "Terminal loser/winner identity is settlement. Mark stats are first snapshot at or after the clock."
+  },
+  "nba_604_in_sample": {
+    "n_reached": 603,
+    "losers": {
+      "n": 99,
+      "n_open_ge_41": 83,
+      "n_already_lt_41": 16,
+      "n_t40_already_at_mark": 22,
+      "n_t40_terminal": 99,
+      "n_ev_available": 83,
+      "n_ev_unavailable": 16,
+      "n_open_ev_available": 83,
+      "price": {
+        "n": 99,
+        "mean": 62.95959595959596,
+        "median": 66
+      },
+      "open_price": {
+        "n": 83,
+        "mean": 69.21686746987952,
+        "median": 71
+      },
+      "ev": {
+        "n": 83,
+        "mean": -10.042021653472338
+      },
+      "open_ev": {
+        "n": 83,
+        "mean": -10.042021653472338
+      },
+      "score_differential": {
+        "n": 99,
+        "mean": 2.919191919191919,
+        "median": 3
+      },
+      "price_buckets": {
+        "lt_41": 16,
+        "41_50": 13,
+        "51_60": 14,
+        "61_70": 13,
+        "71_80": 18,
+        "81_90": 21,
+        "91_99": 4
+      }
+    },
+    "winners": {
+      "n": 504,
+      "n_open_ge_41": 498,
+      "n_already_lt_41": 6,
+      "n_t40_already_at_mark": 14,
+      "n_t40_terminal": 55,
+      "n_ev_available": 498,
+      "n_ev_unavailable": 6,
+      "n_open_ev_available": 498,
+      "price": {
+        "n": 504,
+        "mean": 85.60912698412699,
+        "median": 90
+      },
+      "open_price": {
+        "n": 498,
+        "mean": 86.34738955823293,
+        "median": 90
+      },
+      "ev": {
+        "n": 498,
+        "mean": 8.983408590477396
+      },
+      "open_ev": {
+        "n": 498,
+        "mean": 8.983408590477396
+      },
+      "score_differential": {
+        "n": 504,
+        "mean": 12.569444444444445,
+        "median": 12
+      },
+      "price_buckets": {
+        "lt_41": 6,
+        "41_50": 9,
+        "51_60": 11,
+        "61_70": 39,
+        "71_80": 68,
+        "81_90": 130,
+        "91_99": 241
+      }
+    },
+    "note": "Terminal loser/winner identity is settlement. Mark stats are first snapshot at or after the clock."
+  }
+}

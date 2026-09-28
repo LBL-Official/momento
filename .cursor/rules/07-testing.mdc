@@ -1,0 +1,91 @@
+---
+description: Testing requirements for Momento
+alwaysApply: true
+---
+
+# Testing
+
+Trading code requires stronger testing than ordinary application code.
+
+---
+
+## Required Test Categories
+
+1. Unit tests
+2. Integration tests
+3. State-machine tests
+4. Property tests where useful
+5. Replay tests
+6. Failure/recovery tests
+7. Risk-limit tests
+8. Execution simulation tests
+
+---
+
+## Risk Tests
+
+Every risk rule requires:
+
+- positive test
+- rejection test
+- boundary test
+- malformed-input test where applicable
+
+Example:
+
+12.5% allocation
+
+must test:
+
+12.49%
+12.50%
+12.51%
+
+---
+
+## Execution Tests
+
+Test:
+
+- full fill
+- partial fill
+- no fill
+- cancellation
+- cancellation race
+- duplicate acknowledgement
+- duplicate fill
+- timeout
+- reconnect
+- stale order
+- rejected order
+- unknown order state
+
+---
+
+## Position Tests
+
+Test:
+
+- opening
+- partial opening
+- complete opening
+- reducing
+- partial reduction
+- full exit
+- unexpected fill
+- reconciliation mismatch
+- restart with open position
+- settlement
+
+---
+
+## Never Delete a Failing Test
+
+If behavior changes intentionally:
+
+1. explain why
+2. update specification
+3. update test
+4. document behavioral change
+
+Do not delete tests simply because they expose an inconvenient behavior.

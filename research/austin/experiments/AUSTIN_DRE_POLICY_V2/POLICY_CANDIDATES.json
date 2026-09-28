@@ -1,0 +1,118 @@
+{
+  "phase": "PHASE_5A",
+  "policy_object": "AUSTIN_DRE_POLICY_V2",
+  "source_phase_4": "AUSTIN_LOSS_HAZARD_RECOVERY_MODEL_V1",
+  "hazard_family": "H1",
+  "no_h2_fallback": true,
+  "no_ev_threshold": true,
+  "no_policy_a_f": true,
+  "threshold_source": "phase4_fixed_calibration_bins_and_frozen_core_states",
+  "t40_already_semantic": "ALLOW_TRIGGER_CLASSIFY_TOO_LATE",
+  "missing_required_probability": "NONE",
+  "missing_reason": "REQUIRED_HAZARD_UNAVAILABLE",
+  "first_fire_only": true,
+  "support_rule": {
+    "min_support_n": 10,
+    "reject_austin_support": "LOW_HISTORICAL_SUPPORT",
+    "source": "Phase 4 N<10 is not strong evidence; declared before economics"
+  },
+  "candidates": [
+    {
+      "candidate_id": "DRE_C1_WATCH_LOSS_GE_0P2",
+      "required_core_states": [
+        "WATCH_NEGATIVE"
+      ],
+      "required_CI_state": null,
+      "p_terminal_loss_condition": {
+        "field": "p_terminal_loss_H1",
+        "op": "ge",
+        "value": 0.2
+      },
+      "p_recovery_condition": null,
+      "support_requirement": {
+        "p_terminal_loss_H1": 10,
+        "reject_low_historical_support": true
+      },
+      "T40_ALREADY_handling": "ALLOW_AND_CLASSIFY_TOO_LATE",
+      "missing_value_behavior": "NONE",
+      "first_fire_behavior": "first PIT state satisfying frozen policy",
+      "rationale": "Phase 4 WATCH vs HEALTHY p_loss is the only directionally consistent loss contrast. 0.2 is the frozen second calibration-bin edge. A WATCH mean 0.213 and B WATCH 0.543 sit at/above it."
+    },
+    {
+      "candidate_id": "DRE_C2_P2PLUS_RECOVERY_LT_0P2",
+      "required_core_states": [
+        "PERSISTENCE_2",
+        "PERSISTENCE_3PLUS"
+      ],
+      "required_CI_state": null,
+      "p_terminal_loss_condition": null,
+      "p_recovery_condition": {
+        "field": "p_recovery_t1_H1",
+        "op": "lt",
+        "value": 0.2
+      },
+      "support_requirement": {
+        "p_recovery_t1_H1": 10,
+        "reject_low_historical_support": true
+      },
+      "T40_ALREADY_handling": "ALLOW_AND_CLASSIFY_TOO_LATE",
+      "missing_value_behavior": "NONE",
+      "first_fire_behavior": "first PIT state satisfying frozen policy",
+      "rationale": "Phase 4 A recovery t1 drops into the first calibration bin at P2/P3PLUS (0.069 / 0.051). B recovery is expected thin; support rule will fail-close those cells."
+    },
+    {
+      "candidate_id": "DRE_C3_DISTRESS_TWO_SIDED",
+      "required_core_states": [
+        "WATCH_NEGATIVE",
+        "PERSISTENCE_2",
+        "PERSISTENCE_3PLUS"
+      ],
+      "required_CI_state": null,
+      "p_terminal_loss_condition": {
+        "field": "p_terminal_loss_H1",
+        "op": "ge",
+        "value": 0.2
+      },
+      "p_recovery_condition": {
+        "field": "p_recovery_t1_H1",
+        "op": "lt",
+        "value": 0.2
+      },
+      "support_requirement": {
+        "p_terminal_loss_H1": 10,
+        "p_recovery_t1_H1": 10,
+        "reject_low_historical_support": true
+      },
+      "T40_ALREADY_handling": "ALLOW_AND_CLASSIFY_TOO_LATE",
+      "missing_value_behavior": "NONE",
+      "first_fire_behavior": "first PIT state satisfying frozen policy",
+      "rationale": "Two-sided Phase 4 language: elevated loss-bin and impaired recovery-bin on any distress state."
+    },
+    {
+      "candidate_id": "DRE_C4_WATCH_TWO_SIDED",
+      "required_core_states": [
+        "WATCH_NEGATIVE"
+      ],
+      "required_CI_state": null,
+      "p_terminal_loss_condition": {
+        "field": "p_terminal_loss_H1",
+        "op": "ge",
+        "value": 0.2
+      },
+      "p_recovery_condition": {
+        "field": "p_recovery_t1_H1",
+        "op": "lt",
+        "value": 0.2
+      },
+      "support_requirement": {
+        "p_terminal_loss_H1": 10,
+        "p_recovery_t1_H1": 10,
+        "reject_low_historical_support": true
+      },
+      "T40_ALREADY_handling": "ALLOW_AND_CLASSIFY_TOO_LATE",
+      "missing_value_behavior": "NONE",
+      "first_fire_behavior": "first PIT state satisfying frozen policy",
+      "rationale": "Same two-sided bins restricted to WATCH_NEGATIVE, the only B distress state that still had adverse cents remaining in Phase 4 timing."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "phase": "PHASE_3",
+  "status": "COMPLETE",
+  "model_id": "AUSTIN_DOWNFALL_STATE_MODEL_V1",
+  "state_schema_version": "downfall_state_v1",
+  "state_schema_hash": "96018aec5e8d3da8374632ae139b0a25761b4d485da394a46b0f5e3159079307",
+  "state_validity": "PASS",
+  "economic_state_separation": "MIXED",
+  "transition_information": "MIXED",
+  "timing": "MIXED",
+  "phase_4_decision": "MIXED",
+  "confirmation_accessed": false,
+  "policy_status": "UNFROZEN",
+  "historical_artifacts_modified": false,
+  "report_hash": "44473f2d47c1b1766020124d807952ad022a53b5592e1cf69bed8bbc8af4b37e",
+  "statistics_hash": "386dd6631d247899250fc1728d00befa9d4870b9ee0362222d52a9939d577e47"
+}

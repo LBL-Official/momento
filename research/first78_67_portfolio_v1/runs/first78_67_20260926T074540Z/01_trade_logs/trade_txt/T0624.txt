@@ -1,0 +1,10 @@
+trade T0624  NBA  Dallas at Denver
+contract KXNBAGAME-26MAR25DALDEN-DEN  slice Q2
+signal 2026-03-25T19:50:00-07:00 PDT  exit 2026-03-25T21:49:30-07:00 PDT
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 15195  principal_cents 1185210
+entry_fee_cents 4564  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 334290  net_cents 329726
+strategy_result POSITIVE  net_r 1.856680312406736903749669180
+Assumed fill. Not a maker fill. Not live P&L.

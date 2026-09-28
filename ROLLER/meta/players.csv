@@ -1,0 +1,678 @@
+player_id,sport,display_name,source,status,notes
+0,NBA,,pbp_live.personId,OK,
+101108,NBA,Paul,pbp_live.personId,OK,
+1256,NBA,,pbp_live.personId,OK,
+1320,NBA,,pbp_live.personId,OK,
+1626145,NBA,Jones,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1626156,NBA,Russell,pbp_live.personId,OK,
+1626157,NBA,Towns,pbp_live.personId,OK,
+1626162,NBA,Oubre Jr.,pbp_live.personId,OK,
+1626163,NBA,Kaminsky,pbp_live.personId,OK,
+1626164,NBA,Booker,pbp_live.personId,OK,
+1626166,NBA,Payne,pbp_live.personId,OK,
+1626167,NBA,Turner,pbp_live.personId,OK,
+1626171,NBA,Portis,pbp_live.personId,OK,
+1626172,NBA,Looney,pbp_live.personId,OK,
+1626179,NBA,Rozier,pbp_live.personId,OK,
+1626181,NBA,Powell,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1626192,NBA,Connaughton,pbp_live.personId,OK,
+1626204,NBA,Nance Jr.,pbp_live.personId,OK,
+1626220,NBA,O'Neale,pbp_live.personId,OK,
+1627310,NBA,,pbp_live.personId,OK,
+1627327,NBA,,pbp_live.personId,OK,
+1627734,NBA,Sabonis,pbp_live.personId,OK,
+1627739,NBA,Dunn,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1627741,NBA,Hield,pbp_live.personId,OK,
+1627742,NBA,Ingram,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1627746,NBA,Labissiere,pbp_live.personId,OK,
+1627747,NBA,LeVert,pbp_live.personId,OK,
+1627749,NBA,Murray,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1627750,NBA,Murray,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1627751,NBA,Poeltl,pbp_live.personId,OK,
+1627752,NBA,Prince,pbp_live.personId,OK,
+1627759,NBA,Brown,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1627763,NBA,Brogdon,pbp_live.personId,OK,
+1627780,NBA,Payton II,pbp_live.personId,OK,
+1627783,NBA,Siakam,pbp_live.personId,OK,
+1627824,NBA,Yabusele,pbp_live.personId,OK,
+1627826,NBA,Zubac,pbp_live.personId,OK,
+1627827,NBA,Finney-Smith,pbp_live.personId,OK,
+1627877,NBA,,pbp_live.personId,OK,
+1627884,NBA,Jones Jr.,pbp_live.personId,OK,
+1627936,NBA,Caruso,pbp_live.personId,OK,
+1628181,NBA,,pbp_live.personId,OK,
+1628188,NBA,,pbp_live.personId,OK,
+1628210,NBA,,pbp_live.personId,OK,
+1628228,NBA,,pbp_live.personId,OK,
+1628365,NBA,Fultz,pbp_live.personId,OK,
+1628366,NBA,Ball,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1628368,NBA,Fox,pbp_live.personId,OK,
+1628369,NBA,Tatum,pbp_live.personId,OK,
+1628370,NBA,Monk,pbp_live.personId,OK,
+1628371,NBA,Isaac,pbp_live.personId,OK,
+1628372,NBA,Smith Jr.,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1628374,NBA,Markkanen,pbp_live.personId,OK,
+1628378,NBA,Mitchell,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1628379,NBA,Kennard,pbp_live.personId,OK,
+1628380,NBA,Collins,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1628381,NBA,Collins,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1628384,NBA,Anunoby,pbp_live.personId,OK,
+1628386,NBA,Allen,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1628389,NBA,Adebayo,pbp_live.personId,OK,
+1628392,NBA,Hartenstein,pbp_live.personId,OK,
+1628396,NBA,Bradley,pbp_live.personId,OK,
+1628398,NBA,Kuzma,pbp_live.personId,OK,
+1628401,NBA,White,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1628404,NBA,Hart,pbp_live.personId,OK,
+1628415,NBA,Brooks,pbp_live.personId,OK,
+1628418,NBA,Bryant,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1628420,NBA,Morris,pbp_live.personId,OK,
+1628436,NBA,Kornet,pbp_live.personId,OK,
+1628449,NBA,Boucher,pbp_live.personId,OK,
+1628467,NBA,Kleber,pbp_live.personId,OK,
+1628502,NBA,Hayes-Davis,pbp_live.personId,OK,
+1628960,NBA,Allen,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1628963,NBA,Bagley III,pbp_live.personId,OK,
+1628964,NBA,Bamba,pbp_live.personId,OK,
+1628969,NBA,Bridges,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1628970,NBA,Bridges,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1628971,NBA,Brown,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1628973,NBA,Brunson,pbp_live.personId,OK,
+1628975,NBA,Carter,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1628976,NBA,Carter Jr.,pbp_live.personId,OK,
+1628978,NBA,DiVincenzo,pbp_live.personId,OK,
+1628983,NBA,Gilgeous-Alexander,pbp_live.personId,OK,
+1628988,NBA,Holiday,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1628989,NBA,Huerter,pbp_live.personId,OK,
+1628991,NBA,Jackson Jr.,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1628993,NBA,Johnson,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1628994,NBA,King,pbp_live.personId,OK,
+1628997,NBA,Martin,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1628998,NBA,Martin,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1629001,NBA,Melton,pbp_live.personId,OK,
+1629004,NBA,Mykhailiuk,pbp_live.personId,OK,
+1629006,NBA,Okogie,pbp_live.personId,OK,
+1629008,NBA,Porter Jr.,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1629011,NBA,Robinson,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1629012,NBA,Sexton,pbp_live.personId,OK,
+1629013,NBA,Shamet,pbp_live.personId,OK,
+1629014,NBA,Simons,pbp_live.personId,OK,
+1629018,NBA,Trent Jr.,pbp_live.personId,OK,
+1629020,NBA,Vanderbilt,pbp_live.personId,OK,
+1629021,NBA,Wagner,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1629023,NBA,Washington,pbp_live.personId,OK,
+1629026,NBA,Williams,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1629027,NBA,Young,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1629028,NBA,Ayton,pbp_live.personId,OK,
+1629029,NBA,Dončić,pbp_live.personId,OK,
+1629048,NBA,Bitadze,pbp_live.personId,OK,
+1629056,NBA,Davis,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1629057,NBA,Williams III,pbp_live.personId,OK,
+1629060,NBA,Hachimura,pbp_live.personId,OK,
+1629111,NBA,Landale,pbp_live.personId,OK,
+1629126,NBA,Burton,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1629130,NBA,Robinson,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1629162,NBA,McLaughlin,pbp_live.personId,OK,
+1629216,NBA,Vincent,pbp_live.personId,OK,
+1629234,NBA,Eubanks,pbp_live.personId,OK,
+1629312,NBA,Highsmith,pbp_live.personId,OK,
+1629599,NBA,Coffey,pbp_live.personId,OK,
+1629610,NBA,Jeffries,pbp_live.personId,OK,
+1629611,NBA,Mann,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1629614,NBA,Nembhard,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1629618,NBA,Pickett,pbp_live.personId,OK,
+1629622,NBA,Strus,pbp_live.personId,OK,
+1629627,NBA,Williamson,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1629628,NBA,Barrett,pbp_live.personId,OK,
+1629630,NBA,Morant,pbp_live.personId,OK,
+1629631,NBA,Hunter,pbp_live.personId,OK,
+1629632,NBA,White,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1629634,NBA,Clarke,pbp_live.personId,OK,
+1629636,NBA,Garland,pbp_live.personId,OK,
+1629637,NBA,Hayes,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1629638,NBA,Alexander-Walker,pbp_live.personId,OK,
+1629639,NBA,Herro,pbp_live.personId,OK,
+1629640,NBA,Johnson,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1629645,NBA,Porter Jr.,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1629646,NBA,Bassey,pbp_live.personId,OK,
+1629650,NBA,Brown,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1629651,NBA,Claxton,pbp_live.personId,OK,
+1629652,NBA,Dort,pbp_live.personId,OK,
+1629655,NBA,Gafford,pbp_live.personId,OK,
+1629656,NBA,Grimes,pbp_live.personId,OK,
+1629660,NBA,Jerome,pbp_live.personId,OK,
+1629661,NBA,Johnson,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1629673,NBA,Poole,pbp_live.personId,OK,
+1629674,NBA,Queta,pbp_live.personId,OK,
+1629675,NBA,Reid,pbp_live.personId,OK,
+1629680,NBA,Thybulle,pbp_live.personId,OK,
+1629684,NBA,Williams,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1629716,NBA,Bolden,pbp_live.personId,OK,
+1629723,NBA,Konchar,pbp_live.personId,OK,
+1629726,NBA,Mathews,pbp_live.personId,OK,
+1629731,NBA,Wade,pbp_live.personId,OK,
+1629750,NBA,Green,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630162,NBA,Edwards,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630163,NBA,Ball,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630164,NBA,Wiseman,pbp_live.personId,OK,
+1630165,NBA,Hayes,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630166,NBA,Avdija,pbp_live.personId,OK,
+1630167,NBA,Toppin,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630168,NBA,Okongwu,pbp_live.personId,OK,
+1630170,NBA,Vassell,pbp_live.personId,OK,
+1630171,NBA,Okoro,pbp_live.personId,OK,
+1630172,NBA,Williams,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630173,NBA,Achiuwa,pbp_live.personId,OK,
+1630174,NBA,Nesmith,pbp_live.personId,OK,
+1630175,NBA,Anthony,pbp_live.personId,OK,
+1630178,NBA,Maxey,pbp_live.personId,OK,
+1630180,NBA,Bey,pbp_live.personId,OK,
+1630182,NBA,Green,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630183,NBA,McDaniels,pbp_live.personId,OK,
+1630188,NBA,Smith,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630191,NBA,Stewart,pbp_live.personId,OK,
+1630192,NBA,Nnaji,pbp_live.personId,OK,
+1630193,NBA,Quickley,pbp_live.personId,OK,
+1630194,NBA,Reed,pbp_live.personId,OK,
+1630198,NBA,Joe,pbp_live.personId,OK,
+1630200,NBA,Jones,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630202,NBA,Pritchard,pbp_live.personId,OK,
+1630207,NBA,Hinton,pbp_live.personId,OK,
+1630208,NBA,Richards,pbp_live.personId,OK,
+1630209,NBA,Yurtseven,pbp_live.personId,OK,
+1630214,NBA,Tillman,pbp_live.personId,OK,
+1630215,NBA,Butler,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630217,NBA,Bane,pbp_live.personId,OK,
+1630224,NBA,Green,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630228,NBA,Kuminga,pbp_live.personId,OK,
+1630230,NBA,Marshall,pbp_live.personId,OK,
+1630241,NBA,Merrill,pbp_live.personId,OK,
+1630245,NBA,Dosunmu,pbp_live.personId,OK,
+1630249,NBA,Krejčí,pbp_live.personId,OK,
+1630256,NBA,Tate,pbp_live.personId,OK,
+1630264,NBA,Gill,pbp_live.personId,OK,
+1630284,NBA,Harris,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630286,NBA,Scott,pbp_live.personId,OK,
+1630311,NBA,Spencer,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630314,NBA,Williams,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630322,NBA,Waters III,pbp_live.personId,OK,
+1630346,NBA,Ryan,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630526,NBA,Robinson-Earl,pbp_live.personId,OK,
+1630529,NBA,Jones,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630530,NBA,Murphy III,pbp_live.personId,OK,
+1630531,NBA,Springer,pbp_live.personId,OK,
+1630532,NBA,Wagner,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630533,NBA,Williams,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630534,NBA,Agbaji,pbp_live.personId,OK,
+1630536,NBA,Cooper,pbp_live.personId,OK,
+1630538,NBA,Hyland,pbp_live.personId,OK,
+1630540,NBA,McBride,pbp_live.personId,OK,
+1630541,NBA,Moody,pbp_live.personId,OK,
+1630543,NBA,Jackson,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630544,NBA,Mann,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630545,NBA,Shannon Jr.,pbp_live.personId,OK,
+1630548,NBA,Juzang,pbp_live.personId,OK,
+1630549,NBA,Sharpe,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630551,NBA,Champagnie,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630552,NBA,Johnson,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630554,NBA,Preston,pbp_live.personId,OK,
+1630556,NBA,Edwards,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630557,NBA,Kispert,pbp_live.personId,OK,
+1630558,NBA,Mitchell,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630559,NBA,Reaves,pbp_live.personId,OK,
+1630560,NBA,Thomas,pbp_live.personId,OK,
+1630561,NBA,Duke Jr.,pbp_live.personId,OK,
+1630567,NBA,Barnes,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630568,NBA,Garza,pbp_live.personId,OK,
+1630570,NBA,Watford,pbp_live.personId,OK,
+1630572,NBA,Mamukelashvili,pbp_live.personId,OK,
+1630573,NBA,Hauser,pbp_live.personId,OK,
+1630574,NBA,Hukporti,pbp_live.personId,OK,
+1630577,NBA,Champagnie,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630578,NBA,Sengun,pbp_live.personId,OK,
+1630579,NBA,Sims,pbp_live.personId,OK,
+1630581,NBA,Giddey,pbp_live.personId,OK,
+1630583,NBA,Aldama,pbp_live.personId,OK,
+1630587,NBA,Livers,pbp_live.personId,OK,
+1630590,NBA,Pippen Jr.,pbp_live.personId,OK,
+1630591,NBA,Suggs,pbp_live.personId,OK,
+1630592,NBA,Wilson,pbp_live.personId,OK,
+1630595,NBA,Cunningham,pbp_live.personId,OK,
+1630596,NBA,Mobley,pbp_live.personId,OK,
+1630598,NBA,Wiggins,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630604,NBA,Liddell,pbp_live.personId,OK,
+1630610,NBA,Jarreau,pbp_live.personId,OK,
+1630611,NBA,Santos,pbp_live.personId,OK,
+1630619,NBA,Cisse,pbp_live.personId,OK,
+1630621,NBA,Dickinson,pbp_live.personId,OK,
+1630622,NBA,Crutcher,pbp_live.personId,OK,
+1630623,NBA,Etienne,pbp_live.personId,OK,
+1630625,NBA,Banton,pbp_live.personId,OK,
+1630631,NBA,Alvarado,pbp_live.personId,OK,
+1630639,NBA,Lawson,pbp_live.personId,OK,
+1630643,NBA,Huff,pbp_live.personId,OK,
+1630644,NBA,McClung,pbp_live.personId,OK,
+1630649,NBA,Umude,pbp_live.personId,OK,
+1630658,NBA,Castleton,pbp_live.personId,OK,
+1630679,NBA,Thompson,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630692,NBA,Goodwin,pbp_live.personId,OK,
+1630695,NBA,Potter,pbp_live.personId,OK,
+1630696,NBA,Smith,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630699,NBA,Beauchamp,pbp_live.personId,OK,
+1630700,NBA,Daniels,pbp_live.personId,OK,
+1630702,NBA,Hardy,pbp_live.personId,OK,
+1630703,NBA,Henderson,pbp_live.personId,OK,
+1630792,NBA,Hill,pbp_live.personId,OK,
+1630811,NBA,Wallace,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630828,NBA,Antetokounmpo,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630846,NBA,Sarr,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1630855,NBA,Zeng,pbp_live.personId,OK,
+1631093,NBA,Ivey,pbp_live.personId,OK,
+1631094,NBA,Banchero,pbp_live.personId,OK,
+1631095,NBA,Smith Jr.,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1631096,NBA,Holmgren,pbp_live.personId,OK,
+1631097,NBA,Mathurin,pbp_live.personId,OK,
+1631099,NBA,Murray,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1631101,NBA,Sharpe,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1631102,NBA,Washington Jr.,pbp_live.personId,OK,
+1631103,NBA,Branham,pbp_live.personId,OK,
+1631104,NBA,Wesley,pbp_live.personId,OK,
+1631105,NBA,Duren,pbp_live.personId,OK,
+1631106,NBA,Eason,pbp_live.personId,OK,
+1631107,NBA,Jović,pbp_live.personId,OK,
+1631108,NBA,Christie,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1631109,NBA,Williams,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1631110,NBA,Sochan,pbp_live.personId,OK,
+1631111,NBA,Moore Jr.,pbp_live.personId,OK,
+1631112,NBA,Brown,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1631113,NBA,Chandler,pbp_live.personId,OK,
+1631114,NBA,Williams,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1631115,NBA,Robinson,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1631116,NBA,Baldwin Jr.,pbp_live.personId,OK,
+1631117,NBA,Kessler,pbp_live.personId,OK,
+1631119,NBA,Williams,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1631120,NBA,Davison,pbp_live.personId,OK,
+1631121,NBA,McGowens,pbp_live.personId,OK,
+1631123,NBA,Bouyea,pbp_live.personId,OK,
+1631124,NBA,Strawther,pbp_live.personId,OK,
+1631126,NBA,Love,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1631127,NBA,Ingram,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1631128,NBA,Braun,pbp_live.personId,OK,
+1631131,NBA,Tshiebwe,pbp_live.personId,OK,
+1631132,NBA,Koloko,pbp_live.personId,OK,
+1631133,NBA,Walker,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1631157,NBA,Rollins,pbp_live.personId,OK,
+1631159,NBA,Miller,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1631165,NBA,Ellis,pbp_live.personId,OK,
+1631166,NBA,Timme,pbp_live.personId,OK,
+1631169,NBA,Minott,pbp_live.personId,OK,
+1631170,NBA,Jaquez Jr.,pbp_live.personId,OK,
+1631172,NBA,Dieng,pbp_live.personId,OK,
+1631174,NBA,Burton,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1631197,NBA,Rhoden,pbp_live.personId,OK,
+1631199,NBA,Harper Jr.,pbp_live.personId,OK,
+1631200,NBA,Murray,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1631204,NBA,Sasser,pbp_live.personId,OK,
+1631205,NBA,Boeheim,pbp_live.personId,OK,
+1631207,NBA,Terry,pbp_live.personId,OK,
+1631210,NBA,Toppin,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1631211,NBA,Keels,pbp_live.personId,OK,
+1631212,NBA,Watson,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1631213,NBA,Martin,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1631214,NBA,Williams,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1631216,NBA,Houstan,pbp_live.personId,OK,
+1631217,NBA,Diabaté,pbp_live.personId,OK,
+1631218,NBA,Jackson-Davis,pbp_live.personId,OK,
+1631221,NBA,Gillespie,pbp_live.personId,OK,
+1631222,NBA,LaRavia,pbp_live.personId,OK,
+1631223,NBA,Roddy,pbp_live.personId,OK,
+1631230,NBA,Barlow,pbp_live.personId,OK,
+1631243,NBA,Gueye,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1631245,NBA,Jackson,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1631246,NBA,Williams Jr.,pbp_live.personId,OK,
+1631247,NBA,Travers,pbp_live.personId,OK,
+1631248,NBA,Scheierman,pbp_live.personId,OK,
+1631250,NBA,Nance,pbp_live.personId,OK,
+1631255,NBA,Matković,pbp_live.personId,OK,
+1631260,NBA,Green,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1631262,NBA,Bernard,pbp_live.personId,OK,
+1631288,NBA,Cain,pbp_live.personId,OK,
+1631311,NBA,Quinones,pbp_live.personId,OK,
+1631321,NBA,Cissoko,pbp_live.personId,OK,
+1631323,NBA,Fontecchio,pbp_live.personId,OK,
+1631338,NBA,Gueye,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1631342,NBA,Plowden,pbp_live.personId,OK,
+1631351,NBA,Williamson,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1631451,NBA,Cooke,pbp_live.personId,OK,
+1631457,NBA,Morales,pbp_live.personId,OK,
+1631466,NBA,Williams,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1641705,NBA,Wembanyama,pbp_live.personId,OK,
+1641706,NBA,Miller,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1641707,NBA,Hendricks,pbp_live.personId,OK,
+1641708,NBA,Thompson,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1641709,NBA,Thompson,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1641710,NBA,Black,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1641711,NBA,Dick,pbp_live.personId,OK,
+1641712,NBA,Rupert,pbp_live.personId,OK,
+1641713,NBA,Jackson,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1641715,NBA,Whitmore,pbp_live.personId,OK,
+1641716,NBA,Walker,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1641717,NBA,Wallace,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1641718,NBA,George,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1641722,NBA,Hawkins,pbp_live.personId,OK,
+1641723,NBA,Bufkin,pbp_live.personId,OK,
+1641724,NBA,Howard,pbp_live.personId,OK,
+1641725,NBA,Alexander,pbp_live.personId,OK,
+1641726,NBA,Lively II,pbp_live.personId,OK,
+1641727,NBA,Whitehead,pbp_live.personId,OK,
+1641729,NBA,Sensabaugh,pbp_live.personId,OK,
+1641730,NBA,Clowney,pbp_live.personId,OK,
+1641731,NBA,Coulibaly,pbp_live.personId,OK,
+1641732,NBA,Jones,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1641733,NBA,Smith Jr.,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1641734,NBA,Bates,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1641736,NBA,Beekman,pbp_live.personId,OK,
+1641737,NBA,Bona,pbp_live.personId,OK,
+1641738,NBA,Brown,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1641739,NBA,Camara,pbp_live.personId,OK,
+1641740,NBA,Clark,pbp_live.personId,OK,
+1641744,NBA,Edey,pbp_live.personId,OK,
+1641745,NBA,Flagler,pbp_live.personId,OK,
+1641747,NBA,Holmes II,pbp_live.personId,OK,
+1641748,NBA,Jackson Jr.,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1641750,NBA,Kalkbrenner,pbp_live.personId,OK,
+1641752,NBA,Klintman,pbp_live.personId,OK,
+1641753,NBA,Livingston,pbp_live.personId,OK,
+1641755,NBA,McCullar Jr.,pbp_live.personId,OK,
+1641757,NBA,Miller,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1641761,NBA,Nelson,pbp_live.personId,OK,
+1641763,NBA,Phillips,pbp_live.personId,OK,
+1641764,NBA,Podziemski,pbp_live.personId,OK,
+1641765,NBA,Prosper,pbp_live.personId,OK,
+1641767,NBA,Sheppard,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1641771,NBA,Slawson,pbp_live.personId,OK,
+1641772,NBA,Tomlin,pbp_live.personId,OK,
+1641774,NBA,Vukcevic,pbp_live.personId,OK,
+1641775,NBA,Walsh,pbp_live.personId,OK,
+1641777,NBA,Bediako,pbp_live.personId,OK,
+1641778,NBA,Black,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1641779,NBA,Bridges,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1641780,NBA,Broome,pbp_live.personId,OK,
+1641783,NBA,da Silva,pbp_live.personId,OK,
+1641787,NBA,Evbuomwan,pbp_live.personId,OK,
+1641789,NBA,Gortman,pbp_live.personId,OK,
+1641790,NBA,Hall,pbp_live.personId,OK,
+1641794,NBA,Jones,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1641795,NBA,Kinsey,pbp_live.personId,OK,
+1641796,NBA,Larsson,pbp_live.personId,OK,
+1641801,NBA,Miller,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1641803,NBA,Newton,pbp_live.personId,OK,
+1641807,NBA,Omier,pbp_live.personId,OK,
+1641809,NBA,Peterson,pbp_live.personId,OK,
+1641810,NBA,Reeves,pbp_live.personId,OK,
+1641813,NBA,Sears,pbp_live.personId,OK,
+1641815,NBA,Stevens,pbp_live.personId,OK,
+1641816,NBA,Tyson,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1641817,NBA,Watson,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1641824,NBA,Buzelis,pbp_live.personId,OK,
+1641842,NBA,Holland II,pbp_live.personId,OK,
+1641854,NBA,Porter Jr.,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1641869,NBA,Smith,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1641871,NBA,Reath,pbp_live.personId,OK,
+1641890,NBA,Smith,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1641989,NBA,Harkless,pbp_live.personId,OK,
+1641998,NBA,Jemison III,pbp_live.personId,OK,
+1642046,NBA,Kopp,pbp_live.personId,OK,
+1642050,NBA,Rowe,pbp_live.personId,OK,
+1642066,NBA,Gardner,pbp_live.personId,OK,
+1642258,NBA,Risacher,pbp_live.personId,OK,
+1642259,NBA,Sarr,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642260,NBA,Topić,pbp_live.personId,REVIEW_REQUIRED,conflicting display names for the same player_id
+1642261,NBA,Knecht,pbp_live.personId,OK,
+1642262,NBA,Williams,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642263,NBA,Sheppard,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642264,NBA,Castle,pbp_live.personId,OK,
+1642265,NBA,Dillingham,pbp_live.personId,OK,
+1642266,NBA,Walter,pbp_live.personId,OK,
+1642267,NBA,Carrington,pbp_live.personId,OK,
+1642268,NBA,Collier,pbp_live.personId,OK,
+1642269,NBA,Carter,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642270,NBA,Clingan,pbp_live.personId,OK,
+1642271,NBA,Filipowski,pbp_live.personId,OK,
+1642272,NBA,McCain,pbp_live.personId,OK,
+1642273,NBA,George,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642274,NBA,Missi,pbp_live.personId,OK,
+1642275,NBA,Salaün,pbp_live.personId,OK,
+1642276,NBA,Ware,pbp_live.personId,OK,
+1642277,NBA,Furphy,pbp_live.personId,OK,
+1642278,NBA,Kolek,pbp_live.personId,OK,
+1642280,NBA,Flowers,pbp_live.personId,OK,
+1642281,NBA,Tyson,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642282,NBA,Sallis,pbp_live.personId,OK,
+1642285,NBA,Spencer,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642345,NBA,Ighodaro,pbp_live.personId,OK,
+1642346,NBA,Dunn,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642347,NBA,Shead,pbp_live.personId,OK,
+1642348,NBA,Edwards,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642349,NBA,Mitchell,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642352,NBA,Johnson,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642353,NBA,Christie,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642354,NBA,Simpson,pbp_live.personId,OK,
+1642355,NBA,James,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642357,NBA,Jones Garcia,pbp_live.personId,OK,
+1642358,NBA,Johnson,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642359,NBA,Dadiet,pbp_live.personId,OK,
+1642362,NBA,Sandfort,pbp_live.personId,OK,
+1642363,NBA,Clifford,pbp_live.personId,OK,
+1642364,NBA,Watkins,pbp_live.personId,OK,
+1642365,NBA,Đurišić,pbp_live.personId,OK,
+1642366,NBA,Post,pbp_live.personId,OK,
+1642367,NBA,Mogbo,pbp_live.personId,OK,
+1642368,NBA,Dante,pbp_live.personId,OK,
+1642377,NBA,Wells,pbp_live.personId,OK,
+1642380,NBA,Bal,pbp_live.personId,OK,
+1642382,NBA,Carlson,pbp_live.personId,OK,
+1642383,NBA,Clayton Jr.,pbp_live.personId,OK,
+1642384,NBA,Crawford,pbp_live.personId,OK,
+1642389,NBA,Pullin,pbp_live.personId,OK,
+1642396,NBA,Hinson,pbp_live.personId,OK,
+1642400,NBA,Enaruna,pbp_live.personId,OK,
+1642402,NBA,Freeman,pbp_live.personId,OK,
+1642403,NBA,Jones,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642404,NBA,Lanier,pbp_live.personId,OK,
+1642419,NBA,Battle,pbp_live.personId,OK,
+1642434,NBA,Minix,pbp_live.personId,OK,
+1642440,NBA,McGlothan,pbp_live.personId,OK,
+1642443,NBA,Young,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642449,NBA,Smith,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642450,NBA,Jenkins,pbp_live.personId,OK,
+1642453,NBA,,pbp_live.personId,OK,
+1642461,NBA,Jones,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642468,NBA,Brown,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642484,NBA,Dennis,pbp_live.personId,OK,
+1642490,NBA,Oduro,pbp_live.personId,OK,
+1642502,NBA,Leons,pbp_live.personId,OK,
+1642504,NBA,Ryan,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642530,NBA,Kawamura,pbp_live.personId,OK,
+1642843,NBA,Flagg,pbp_live.personId,OK,
+1642844,NBA,Harper,pbp_live.personId,OK,
+1642845,NBA,Edgecombe,pbp_live.personId,OK,
+1642846,NBA,Bailey,pbp_live.personId,OK,
+1642847,NBA,Fears,pbp_live.personId,OK,
+1642848,NBA,Johnson,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642849,NBA,Traore,pbp_live.personId,OK,
+1642851,NBA,Knueppel,pbp_live.personId,OK,
+1642852,NBA,Queen,pbp_live.personId,OK,
+1642853,NBA,Fleming,pbp_live.personId,OK,
+1642854,NBA,Newell,pbp_live.personId,OK,
+1642855,NBA,Essengue,pbp_live.personId,OK,
+1642856,NBA,Dëmin,pbp_live.personId,OK,
+1642857,NBA,Jakučionis,pbp_live.personId,OK,
+1642859,NBA,Richardson,pbp_live.personId,OK,
+1642860,NBA,Riley,pbp_live.personId,OK,
+1642862,NBA,McNeeley,pbp_live.personId,OK,
+1642863,NBA,Maluach,pbp_live.personId,OK,
+1642864,NBA,González,pbp_live.personId,OK,
+1642866,NBA,Beringer,pbp_live.personId,OK,
+1642867,NBA,Murray-Boyles,pbp_live.personId,OK,
+1642868,NBA,Bryant,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642869,NBA,Penda,pbp_live.personId,OK,
+1642873,NBA,Williams,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642874,NBA,Wolf,pbp_live.personId,OK,
+1642875,NBA,Raynaud,pbp_live.personId,OK,
+1642876,NBA,Thiero,pbp_live.personId,OK,
+1642877,NBA,Peavy,pbp_live.personId,OK,
+1642878,NBA,Proctor,pbp_live.personId,OK,
+1642879,NBA,Saraf,pbp_live.personId,OK,
+1642880,NBA,Jones,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642882,NBA,Reese,pbp_live.personId,OK,
+1642883,NBA,James,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642884,NBA,Goldin,pbp_live.personId,OK,
+1642885,NBA,Diawara,pbp_live.personId,OK,
+1642886,NBA,Brea,pbp_live.personId,OK,
+1642905,NBA,Hansen,pbp_live.personId,OK,
+1642907,NBA,Coward,pbp_live.personId,OK,
+1642910,NBA,Tonje,pbp_live.personId,OK,
+1642911,NBA,Zikarsky,pbp_live.personId,OK,
+1642914,NBA,Small,pbp_live.personId,OK,
+1642917,NBA,Shulga,pbp_live.personId,OK,
+1642918,NBA,Martin,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642920,NBA,Sanders,pbp_live.personId,OK,
+1642924,NBA,Williams,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642926,NBA,Bates,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642928,NBA,Cardwell,pbp_live.personId,OK,
+1642930,NBA,Davis,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642933,NBA,Gilbert,pbp_live.personId,OK,
+1642935,NBA,Hepburn,pbp_live.personId,OK,
+1642938,NBA,Jones,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642939,NBA,Kelly,pbp_live.personId,OK,
+1642942,NBA,Mashack,pbp_live.personId,OK,
+1642947,NBA,Ndiaye,pbp_live.personId,OK,
+1642948,NBA,Nembhard,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642949,NBA,Niederhäuser,pbp_live.personId,OK,
+1642950,NBA,Olbrich,pbp_live.personId,OK,
+1642951,NBA,Pedulla,pbp_live.personId,OK,
+1642954,NBA,Richard,pbp_live.personId,OK,
+1642955,NBA,Richmond,pbp_live.personId,OK,
+1642959,NBA,Youngblood,pbp_live.personId,OK,
+1642961,NBA,Luis Jr.,pbp_live.personId,OK,
+1642962,NBA,Powell,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642964,NBA,Barnhizer,pbp_live.personId,OK,
+1642966,NBA,Butler,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1642967,NBA,Poulakidas,pbp_live.personId,OK,
+1643007,NBA,Peter,pbp_live.personId,OK,
+1643016,NBA,Mbeng,pbp_live.personId,OK,
+1643018,NBA,Cryer,pbp_live.personId,OK,
+1643019,NBA,Madsen,pbp_live.personId,OK,
+1643024,NBA,Mañon,pbp_live.personId,OK,
+1643047,NBA,Huntley,pbp_live.personId,OK,
+1643052,NBA,Johnson,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+1643060,NBA,Gray,pbp_live.personId,OK,
+1643069,NBA,Matthews,pbp_live.personId,OK,
+1643104,NBA,Shumate,pbp_live.personId,OK,
+1643113,NBA,Austin,pbp_live.personId,OK,
+1643120,NBA,Dainja,pbp_live.personId,OK,
+1643133,NBA,Lovering,pbp_live.personId,OK,
+1643141,NBA,Telfort,pbp_live.personId,OK,
+1643158,NBA,Garcia,pbp_live.personId,OK,
+1643253,NBA,Okani,pbp_live.personId,OK,
+1643257,NBA,Kent,pbp_live.personId,OK,
+1658,NBA,,pbp_live.personId,OK,
+1787,NBA,,pbp_live.personId,OK,
+196295526,NBA,Huafei,pbp_live.personId,OK,
+196295528,NBA,Xiangbo,pbp_live.personId,OK,
+196295529,NBA,Xiaotong,pbp_live.personId,OK,
+196295530,NBA,Wenjie,pbp_live.personId,OK,
+196295531,NBA,Guohao,pbp_live.personId,OK,
+196295532,NBA,Ziyu,pbp_live.personId,OK,
+196295533,NBA,Yanjun,pbp_live.personId,OK,
+196295539,NBA,Yancheng,pbp_live.personId,OK,
+200755,NBA,,pbp_live.personId,OK,
+200768,NBA,Lowry,pbp_live.personId,OK,
+201142,NBA,Durant,pbp_live.personId,OK,
+201143,NBA,Horford,pbp_live.personId,OK,
+201144,NBA,Conley,pbp_live.personId,OK,
+201145,NBA,Green,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+201168,NBA,,pbp_live.personId,OK,
+201449,NBA,,pbp_live.personId,OK,
+201566,NBA,Westbrook,pbp_live.personId,OK,
+201567,NBA,Love,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+201569,NBA,Gordon,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+201572,NBA,Lopez,pbp_live.personId,OK,
+201587,NBA,Batum,pbp_live.personId,OK,
+201599,NBA,Jordan,pbp_live.personId,OK,
+201690,NBA,,pbp_live.personId,OK,
+201935,NBA,Harden,pbp_live.personId,OK,
+201939,NBA,Curry,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+201942,NBA,DeRozan,pbp_live.personId,OK,
+201950,NBA,Holiday,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+201959,NBA,Gibson,pbp_live.personId,OK,
+202066,NBA,Temple,pbp_live.personId,OK,
+202331,NBA,George,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+202427,NBA,,pbp_live.personId,OK,
+202433,NBA,,pbp_live.personId,OK,
+202435,NBA,,pbp_live.personId,OK,
+202439,NBA,,pbp_live.personId,OK,
+202685,NBA,Valančiūnas,pbp_live.personId,OK,
+202687,NBA,Biyombo,pbp_live.personId,OK,
+202691,NBA,Thompson,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+202695,NBA,Leonard,pbp_live.personId,OK,
+202696,NBA,Vučević,pbp_live.personId,OK,
+202699,NBA,Harris,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+202710,NBA,Butler III,pbp_live.personId,OK,
+202896,NBA,,pbp_live.personId,OK,
+202978,NBA,,pbp_live.personId,OK,
+203076,NBA,Davis,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+203078,NBA,Beal,pbp_live.personId,OK,
+203083,NBA,Drummond,pbp_live.personId,OK,
+203084,NBA,Barnes,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+203110,NBA,Green,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+203114,NBA,Middleton,pbp_live.personId,OK,
+203152,NBA,,pbp_live.personId,OK,
+203200,NBA,Holiday,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+203456,NBA,,pbp_live.personId,OK,
+203458,NBA,Len,pbp_live.personId,OK,
+203468,NBA,McCollum,pbp_live.personId,OK,
+203471,NBA,Schröder,pbp_live.personId,OK,
+203482,NBA,Olynyk,pbp_live.personId,OK,
+203484,NBA,Caldwell-Pope,pbp_live.personId,OK,
+203486,NBA,Plumlee,pbp_live.personId,OK,
+203497,NBA,Gobert,pbp_live.personId,OK,
+203500,NBA,Adams,pbp_live.personId,OK,
+203501,NBA,Hardaway Jr.,pbp_live.personId,OK,
+203506,NBA,Oladipo,pbp_live.personId,OK,
+203507,NBA,Antetokounmpo,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+203552,NBA,Curry,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+203600,NBA,,pbp_live.personId,OK,
+203606,NBA,,pbp_live.personId,OK,
+203648,NBA,Antetokounmpo,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+203759,NBA,,pbp_live.personId,OK,
+203897,NBA,LaVine,pbp_live.personId,OK,
+203903,NBA,Clarkson,pbp_live.personId,OK,
+203914,NBA,Harris,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+203915,NBA,Dinwiddie,pbp_live.personId,OK,
+203924,NBA,Grant,pbp_live.personId,OK,
+203926,NBA,McDermott,pbp_live.personId,OK,
+203932,NBA,Gordon,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+203935,NBA,Smart,pbp_live.personId,OK,
+203937,NBA,Anderson,pbp_live.personId,OK,
+203939,NBA,Powell,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+203944,NBA,Randle,pbp_live.personId,OK,
+203952,NBA,Wiggins,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+203954,NBA,Embiid,pbp_live.personId,OK,
+203967,NBA,Šarić,pbp_live.personId,OK,
+203991,NBA,Capela,pbp_live.personId,OK,
+203992,NBA,Bogdanović,pbp_live.personId,OK,
+203994,NBA,Nurkić,pbp_live.personId,OK,
+203999,NBA,Jokić,pbp_live.personId,OK,
+204001,NBA,Porziņģis,pbp_live.personId,OK,
+204005,NBA,,pbp_live.personId,OK,
+204011,NBA,,pbp_live.personId,OK,
+204012,NBA,,pbp_live.personId,OK,
+204025,NBA,Frazier,pbp_live.personId,OK,
+204060,NBA,Ingles,pbp_live.personId,OK,
+204225,NBA,,pbp_live.personId,OK,
+204456,NBA,McConnell,pbp_live.personId,OK,
+2544,NBA,James,pbp_live.personId,REVIEW_REQUIRED,same display_name maps to multiple player_id values; not merged
+2794,NBA,,pbp_live.personId,OK,
+57,NBA,,pbp_live.personId,OK,

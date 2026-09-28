@@ -1,0 +1,74 @@
+{"activation": "CONFIRM_REQUIRED", "jump_bot_id": "0e3684c60ea44c7da64f868419c02256", "kind": "registered_from_jump", "ts": "2026-09-15T18:53:21Z"}
+{"activation": "DEMO_ATTACHED", "aws": "CONFIRMED", "kalshi": "OBSERVATION_UNAVAILABLE", "kind": "demo_attach", "ts": "2026-09-15T19:05:48Z", "unit_started": false, "worker": "OPERATION_REQUIRED"}
+{"activation": "DEPLOY_REQUIRED", "aws": "CONFIRMED", "kalshi": "CONFIRMED", "kind": "demo_attach", "ts": "2026-09-15T20:22:26Z", "unit_started": false, "worker": "OPERATION_REQUIRED"}
+{"activation": "DEPLOY_REQUIRED", "aws": "CONFIRMED", "kalshi": "CONFIRMED", "kind": "demo_attach", "ts": "2026-09-15T20:24:08Z", "unit_started": false, "worker": "OPERATION_REQUIRED"}
+{"activation": "RUNNING_DEMO", "aws": "CONFIRMED", "kalshi": "CONFIRMED", "kind": "demo_attach", "ts": "2026-09-15T20:26:36Z", "unit_started": true, "worker": "momento-demo@mlb-005.service"}
+{"activation": "DEPLOY_REQUIRED", "aws": "CONFIRMED", "kalshi": "CONFIRMED", "kind": "demo_attach", "ts": "2026-09-15T20:32:05Z", "unit_started": false, "worker": "OPERATION_REQUIRED"}
+{"activation": "RUNNING_DEMO", "aws": "CONFIRMED", "kalshi": "CONFIRMED", "kind": "demo_attach", "ts": "2026-09-15T20:34:44Z", "unit_started": true, "worker": "momento-demo@mlb-005.service"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:42:31Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:42:31Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:42:36Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:42:36Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:42:42Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:42:42Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:42:43Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:42:43Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:42:45Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:42:45Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:42:53Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:42:53Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:43:03Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:43:03Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:43:08Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:43:08Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:43:16Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:43:16Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:43:25Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:43:25Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:43:26Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:43:26Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:43:29Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:43:29Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:43:39Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:43:39Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:43:41Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:43:41Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:43:49Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:43:49Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:43:57Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:43:57Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:44:07Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:44:07Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:44:23Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:44:23Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:44:28Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:44:28Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:44:36Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:44:37Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:44:44Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:44:44Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:44:55Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:44:55Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:44:58Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:44:58Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:45:00Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:45:00Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:45:01Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:45:01Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:45:08Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:45:08Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:45:16Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:45:16Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:45:27Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:45:27Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:45:33Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:45:33Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:45:41Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:45:41Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:45:44Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:45:44Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:45:46Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:45:46Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:45:49Z"}
+{"kind": "liveness_sample", "ok": true, "proof_id": "LIVE_SERVICE_INTEGRATION", "ts": "2026-09-16T20:45:49Z"}
+{"kind": "demo_lifecycle", "ok": true, "ts": "2026-09-16T20:52:40Z", "unit": "momento-demo@mlb-005.service"}

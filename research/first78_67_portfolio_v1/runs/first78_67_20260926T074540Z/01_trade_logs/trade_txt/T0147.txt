@@ -1,0 +1,10 @@
+trade T0147  NCAAB  North Carolina at Ohio St.
+contract KXNCAAMBGAME-25DEC20UNCOSU-UNC  slice H2_1
+signal 2025-12-20T13:03:00-08:00 PST  exit 2025-12-20T13:12:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 2913  principal_cents 227214
+entry_fee_cents 875  exit_fee_cents 1128
+exit STOP at 67c  terminal yes
+gross_cents -32043  net_cents -34046
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

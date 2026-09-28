@@ -1,0 +1,10 @@
+trade T0600  NBA  Miami at Charlotte
+contract KXNBAGAME-26MAR17MIACHA-CHA  slice Q3
+signal 2026-03-17T17:29:00-07:00 PDT  exit 2026-03-17T17:42:00-07:00 PDT
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 14267  principal_cents 1112826
+entry_fee_cents 4285  exit_fee_cents 5521
+exit STOP at 67c  terminal yes
+gross_cents -156937  net_cents -166743
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

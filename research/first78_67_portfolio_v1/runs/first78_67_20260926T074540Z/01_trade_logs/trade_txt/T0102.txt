@@ -1,0 +1,10 @@
+trade T0102  NCAAB  Mississippi St. at Georgia Tech
+contract KXNCAAMBGAME-25DEC03MSSTGT-MSST  slice H1_2
+signal 2025-12-03T18:54:00-08:00 PST  exit 2025-12-03T21:15:58-08:00 PST
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 2429  principal_cents 189462
+entry_fee_cents 730  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 53438  net_cents 52708
+strategy_result POSITIVE  net_r 1.856634611997604706048117229
+Assumed fill. Not a maker fill. Not live P&L.

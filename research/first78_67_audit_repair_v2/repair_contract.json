@@ -1,0 +1,67 @@
+{
+  "package": "first78_67_audit_repair_v2",
+  "written_before_repaired_result_tables": true,
+  "this_file_is_not_a_historical_preregistration": true,
+  "live_execution": false,
+  "candle_path_is_not_a_fill": true,
+  "no_parameter_retuning": true,
+  "populations": {
+    "LEGACY_FIRST80_CONDITIONED_936": "The locked 936-game FIRST80-conditioned book. Not a prospective FIRST78 universe.",
+    "PRIMARY_EX_ANTE_FIRST78": "In-window first qualifying close up-cross, independent of a later 80 cent field."
+  },
+  "windows": {
+    "OCT_2025": {
+      "start_local": "2025-10-15T00:00:00-07:00",
+      "end_local_exclusive": "2025-11-01T00:00:00-07:00",
+      "zone": "America/Los_Angeles",
+      "exposure": "PREVIOUSLY_EXAMINED_RETROSPECTIVE_VALIDATION"
+    },
+    "APR_2025": {
+      "start_local": "2025-04-01T00:00:00-07:00",
+      "end_local_exclusive": "2025-05-01T00:00:00-07:00",
+      "zone": "America/Los_Angeles",
+      "exposure": "HISTORICAL_HOLDOUT_NOT_USED_IN_SELECTION",
+      "search_scope": "first78_67_portfolio_v1 did not read the 2024-2025 warehouse. This window was inspected in oos_adverse_20260926T082326Z and is spent."
+    }
+  },
+  "economics": {
+    "initial_cash_cents": 2000000,
+    "entry_trigger_cents": 78,
+    "stop_trigger_cents": 67,
+    "allocation_bps": 600,
+    "fees_extra": true,
+    "fee_coef_reference": "0.0175",
+    "fee_coef_stress": "0.07",
+    "fee_applicability": "FEE_APPLICABILITY_UNVERIFIED",
+    "fee_evidence": "Local notes cite current Kalshi fee-rounding documentation and an estimated maker coefficient. Neither is a dated 2025 schedule covering these hypothetical orders.",
+    "partial_fills": "UNSUPPORTED",
+    "cap": 7,
+    "resize": "after every tenth full completion; open quantities do not resize",
+    "order": ["exit", "cash", "entry"],
+    "tie_break": ["timestamp", "event_priority", "game_id", "contract_id", "stable_event_id"],
+    "selection": "CONTRACT_WISE_FIRST",
+    "game_wide_first": "separately labeled sensitivity only"
+  },
+  "chronology": {
+    "entry_evidence": "yes_bid close up-cross from below 78 to at or above 78",
+    "unproven_first": "first valid close already at or above 78 with no earlier valid close below 78",
+    "intrabar_low": "a low at or below 67 inside the entry bar is INTRABAR_AMBIGUITY. It does not reject the close-trigger entry and is not a stop.",
+    "baseline_stop": "first strictly later valid close at or below 67",
+    "same_timestamp_without_sequence_model": "CHRONOLOGY_UNRESOLVED",
+    "clocks": "MODELED_AVAILABILITY. NBA walls are retrospective interpolation, not receive-time proof.",
+    "ncaab_boundary": "Reference code: H1 remaining <= 600 is H1_2; H2 remaining > 600 is H2_1; H2 remaining == 600 is H2_2. The v1 prose that assigns the 600-second boundary to the first ten minutes is not the rule."
+  },
+  "stop_failure": {
+    "mechanism": "independent Bernoulli draws",
+    "probabilities": {"STOP_FAIL_1": 0.01, "STOP_FAIL_5": 0.05},
+    "key": "seed and ex-ante candidate instance id, before outcomes",
+    "not_a_quota": true,
+    "on_failure": "The modeled 67 cent sale does not occur. The position holds to the recorded settlement if that settlement timestamp is at or after entry. If settlement is missing, the holding stays unresolved and the slot stays occupied.",
+    "oracle_tail": "separate module, unavailable to baseline scenario ids"
+  },
+  "original_runs_not_overwritten": [
+    "research/first78_67_portfolio_v1/runs/first78_67_20260926T074540Z/",
+    "research/first78_67_oos_adverse_v1/runs/oos_adverse_20260926T082326Z/"
+  ],
+  "launch": "NOT_YET_IDENTIFIABLE"
+}

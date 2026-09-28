@@ -1,0 +1,310 @@
+{
+  "capability_matrix": {
+    "CANDLE_PIT": "READY",
+    "GAME": "READY",
+    "GAME_MARKET_LINK": "READY",
+    "HISTORICAL_L2": "DATA_REQUIRED",
+    "HISTORICAL_TICK": "DATA_REQUIRED",
+    "MARKET": "READY",
+    "ORDERBOOK": "DATA_REQUIRED",
+    "PBP": "READY",
+    "PBP_MARKET_PIT_ALIGNMENT": "OPERATION_REQUIRED",
+    "SETTLEMENT": "READY",
+    "TICK": "DATA_REQUIRED",
+    "TRADABLE_YES_BID_1M": "READY"
+  },
+  "catalog_version": "1.0.0",
+  "checks": [
+    {
+      "counts": {},
+      "detail": "canonical TRADABLE_YES_BID tree only",
+      "name": "layout",
+      "status": "PASS"
+    },
+    {
+      "counts": {
+        "fingerprint": "b9f02c7b88bd1680729d6552ed3cafeb94fe36624c8f205ebb34ab5981d9f231"
+      },
+      "detail": "frozen observation / PIT / capability flags",
+      "name": "manifest",
+      "status": "PASS"
+    },
+    {
+      "counts": {
+        "ambiguous_links": 0,
+        "duplicate_games": 0,
+        "game_count": 1362,
+        "season": "2025-2026",
+        "unresolved_links": 0
+      },
+      "detail": "canonical games and GameMarketLink resolve",
+      "name": "identity",
+      "status": "PASS"
+    },
+    {
+      "counts": {
+        "flagged_duplicate_rows": 6,
+        "invented_minutes": 0,
+        "observation_basis": "TRADABLE_YES_BID",
+        "observation_count": 6165183,
+        "observation_months": {
+          "2025-10": 541322,
+          "2025-11": 1131497,
+          "2025-12": 923736,
+          "2026-01": 1065955,
+          "2026-02": 669455,
+          "2026-03": 831856,
+          "2026-04": 607878,
+          "2026-05": 323042,
+          "2026-06": 70442
+        },
+        "pit_field": "available_at",
+        "resolution": "1_MINUTE_CANDLE",
+        "silent_duplicates": 0
+      },
+      "detail": "TRADABLE_YES_BID / available_at / 1_MINUTE_CANDLE; 6 publisher-flagged identical source collisions retained",
+      "name": "observations",
+      "status": "PASS"
+    },
+    {
+      "counts": {
+        "INVALID": 6,
+        "MISSING": 0,
+        "NO": 1359,
+        "YES": 1359,
+        "settlement_count": 2724,
+        "source": "kalshi_rest"
+      },
+      "detail": "Suite / kalshi_rest authority; INVALID remains INVALID",
+      "name": "settlements",
+      "status": "PASS"
+    },
+    {
+      "counts": {
+        "pbp_count": 780137,
+        "pbp_months": {
+          "2025-10": 73907,
+          "2025-11": 128731,
+          "2025-12": 114538,
+          "2026-01": 132094,
+          "2026-02": 94745,
+          "2026-03": 135731,
+          "2026-04": 77891,
+          "2026-05": 19476,
+          "2026-06": 3024
+        },
+        "pbp_pit_aligned_to_candles": false
+      },
+      "detail": "SEQUENCE_ONLY; no candle PIT join",
+      "name": "pbp",
+      "status": "PASS"
+    },
+    {
+      "counts": {},
+      "detail": "capability matrix is truthful",
+      "name": "capabilities",
+      "status": "PASS"
+    },
+    {
+      "counts": {
+        "classification_counts": {
+          "LOSS": 6,
+          "WIN": 1
+        },
+        "compiler_version": "1.0.0",
+        "observation_basis": "TRADABLE_YES_BID",
+        "pit_field": "available_at",
+        "plan_hash": "d8c10b912b20a45b0f9909cb759f2dee8a23298cd55df21ab94feb9e2432a35a",
+        "population": 7,
+        "result_hash": "3ff90cf3b331db7909790f3180d5b54e1d3df6027d8dcfe277c3928397d02382",
+        "row_identities": [
+          [
+            "NBA_20251010_BOS_TOR",
+            "KXNBAGAME-25OCT10BOSTOR-BOS",
+            "2025-10-10T23:36:00Z",
+            "CROSS"
+          ],
+          [
+            "NBA_20251010_ORL_PHI",
+            "KXNBAGAME-25OCT10ORLPHI-ORL",
+            "2025-10-10T13:14:00Z",
+            "CROSS"
+          ],
+          [
+            "NBA_20251010_PHX_BKN",
+            "KXNBAGAME-25OCT10PHXBKN-BKN",
+            "2025-10-10T12:23:00Z",
+            "CROSS"
+          ],
+          [
+            "NBA_20251010_PHX_BKN",
+            "KXNBAGAME-25OCT10PHXBKN-PHX",
+            "2025-10-10T08:47:00Z",
+            "CROSS"
+          ],
+          [
+            "NBA_20251010_SAC_POR",
+            "KXNBAGAME-25OCT10SACPOR-POR",
+            "2025-10-11T02:37:00Z",
+            "CROSS"
+          ],
+          [
+            "NBA_20251010_UTA_SAS",
+            "KXNBAGAME-25OCT10UTASAS-SAS",
+            "2025-10-11T00:26:00Z",
+            "CROSS"
+          ],
+          [
+            "NBA_20251010_UTA_SAS",
+            "KXNBAGAME-25OCT10UTASAS-UTA",
+            "2025-10-11T02:23:00Z",
+            "CROSS"
+          ]
+        ],
+        "runs": 2,
+        "status": "READY",
+        "warehouse_version": "2026-09-13T06:28:48Z"
+      },
+      "detail": "identical plan_hash / result_hash / row identities",
+      "name": "reproducibility",
+      "status": "PASS"
+    },
+    {
+      "counts": {
+        "partition_fingerprint": "b768f1723ea9de70a6dd0687abb2a10fb5cf4f02bcfd83a3e542a85a115cbcce"
+      },
+      "detail": "manifest counts match parquet",
+      "name": "fingerprints",
+      "status": "PASS"
+    }
+  ],
+  "failures": [],
+  "identity": {
+    "ambiguous_links": 0,
+    "duplicate_games": 0,
+    "game_count": 1362,
+    "season": "2025-2026",
+    "unresolved_links": 0
+  },
+  "identity_version": "1.0.0",
+  "ingest_fingerprint": "",
+  "ingest_record_present": false,
+  "manifest_fingerprint": "b9f02c7b88bd1680729d6552ed3cafeb94fe36624c8f205ebb34ab5981d9f231",
+  "markets": {
+    "link_count": 2724,
+    "linked_count": 2724,
+    "market_count": 2724,
+    "unlinked_count": 0
+  },
+  "observation_basis": "TRADABLE_YES_BID",
+  "observations": {
+    "flagged_duplicate_rows": 6,
+    "invented_minutes": 0,
+    "observation_basis": "TRADABLE_YES_BID",
+    "observation_count": 6165183,
+    "observation_months": {
+      "2025-10": 541322,
+      "2025-11": 1131497,
+      "2025-12": 923736,
+      "2026-01": 1065955,
+      "2026-02": 669455,
+      "2026-03": 831856,
+      "2026-04": 607878,
+      "2026-05": 323042,
+      "2026-06": 70442
+    },
+    "pit_field": "available_at",
+    "resolution": "1_MINUTE_CANDLE",
+    "silent_duplicates": 0
+  },
+  "pbp": {
+    "pbp_count": 780137,
+    "pbp_months": {
+      "2025-10": 73907,
+      "2025-11": 128731,
+      "2025-12": 114538,
+      "2026-01": 132094,
+      "2026-02": 94745,
+      "2026-03": 135731,
+      "2026-04": 77891,
+      "2026-05": 19476,
+      "2026-06": 3024
+    },
+    "pbp_pit_aligned_to_candles": false
+  },
+  "pit_field": "available_at",
+  "reproducibility": {
+    "classification_counts": {
+      "LOSS": 6,
+      "WIN": 1
+    },
+    "compiler_version": "1.0.0",
+    "observation_basis": "TRADABLE_YES_BID",
+    "pit_field": "available_at",
+    "plan_hash": "d8c10b912b20a45b0f9909cb759f2dee8a23298cd55df21ab94feb9e2432a35a",
+    "population": 7,
+    "result_hash": "3ff90cf3b331db7909790f3180d5b54e1d3df6027d8dcfe277c3928397d02382",
+    "row_identities": [
+      [
+        "NBA_20251010_BOS_TOR",
+        "KXNBAGAME-25OCT10BOSTOR-BOS",
+        "2025-10-10T23:36:00Z",
+        "CROSS"
+      ],
+      [
+        "NBA_20251010_ORL_PHI",
+        "KXNBAGAME-25OCT10ORLPHI-ORL",
+        "2025-10-10T13:14:00Z",
+        "CROSS"
+      ],
+      [
+        "NBA_20251010_PHX_BKN",
+        "KXNBAGAME-25OCT10PHXBKN-BKN",
+        "2025-10-10T12:23:00Z",
+        "CROSS"
+      ],
+      [
+        "NBA_20251010_PHX_BKN",
+        "KXNBAGAME-25OCT10PHXBKN-PHX",
+        "2025-10-10T08:47:00Z",
+        "CROSS"
+      ],
+      [
+        "NBA_20251010_SAC_POR",
+        "KXNBAGAME-25OCT10SACPOR-POR",
+        "2025-10-11T02:37:00Z",
+        "CROSS"
+      ],
+      [
+        "NBA_20251010_UTA_SAS",
+        "KXNBAGAME-25OCT10UTASAS-SAS",
+        "2025-10-11T00:26:00Z",
+        "CROSS"
+      ],
+      [
+        "NBA_20251010_UTA_SAS",
+        "KXNBAGAME-25OCT10UTASAS-UTA",
+        "2025-10-11T02:23:00Z",
+        "CROSS"
+      ]
+    ],
+    "runs": 2,
+    "status": "READY",
+    "warehouse_version": "2026-09-13T06:28:48Z"
+  },
+  "resolution": "1_MINUTE_CANDLE",
+  "season": "2025-2026",
+  "settlements": {
+    "INVALID": 6,
+    "MISSING": 0,
+    "NO": 1359,
+    "YES": 1359,
+    "settlement_count": 2724,
+    "source": "kalshi_rest"
+  },
+  "sport": "NBA",
+  "status": "PASS",
+  "verify_version": "1.0.0",
+  "warehouse_root": "/Users/user/Desktop/Momento/ROLLER/data/nba/2025_2026/derived/warehouse",
+  "warehouse_version": "2026-09-13T06:28:48Z"
+}

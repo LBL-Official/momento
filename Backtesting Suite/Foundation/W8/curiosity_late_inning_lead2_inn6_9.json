@@ -1,0 +1,87 @@
+{
+  "live_semantics": {
+    "one_per_game": true,
+    "buy_at_first_80_alone": false,
+    "sequence": "first team >=80 binds; same-side >=81 confirm; maker 80-83 entry; stop = 50% of entry VWAP AFTER fill; GAME_LOCK does not sell",
+    "observability": "TRADE_PRINT_NOT_YES_BID",
+    "filter": "W6 state at first80: inning in {6,7,8,9} AND bound team lead >= 2"
+  },
+  "checks": {
+    "opportunities_one_per_game": true,
+    "ordering_violations": 0,
+    "stop_prints_before_first80": 0
+  },
+  "funnel": {
+    "first80": 1558,
+    "first80_lead_ge2": 920,
+    "first80_no_w6": 19,
+    "first80_inning_6_9": 385,
+    "first80_late_and_lead2": 140,
+    "late_lead2_entry": 110,
+    "late_lead2_no_entry": 30
+  },
+  "first80_inning_hist": {
+    "1": 286,
+    "2": 227,
+    "3": 240,
+    "4": 207,
+    "5": 188,
+    "6": 166,
+    "7": 121,
+    "8": 82,
+    "9": 16,
+    "10": 6,
+    "no_w6": 19
+  },
+  "cohort": {
+    "n": 110,
+    "wins": 93,
+    "losses": 17,
+    "hit_rate": 0.8455,
+    "stopped": 28,
+    "stopped_winners": 11,
+    "stopped_losers": 17,
+    "hold_unit_usd": 3.01,
+    "hold_sized_usd": 21.07,
+    "stop_unit_usd": 1.18,
+    "stop_sized_usd": 8.26
+  },
+  "by_inning": {
+    "6": {
+      "n": 83,
+      "wins": 72,
+      "hold_usd": 28.7,
+      "stop_usd": 12.04,
+      "stopped": 20
+    },
+    "7": {
+      "n": 22,
+      "wins": 18,
+      "hold_usd": 0.14,
+      "stop_usd": -0.42,
+      "stopped": 6
+    },
+    "8": {
+      "n": 5,
+      "wins": 3,
+      "hold_usd": -7.77,
+      "stop_usd": -3.36,
+      "stopped": 2
+    },
+    "9": {
+      "n": 0,
+      "wins": 0,
+      "hold_usd": 0.0,
+      "stop_usd": 0.0,
+      "stopped": 0
+    }
+  },
+  "no_entry_n": 30,
+  "no_entry_why": {
+    "First print 84\u00a2 \u2014 confirm + pause, never 80\u201383": 1,
+    "Never same-side 81": 5,
+    "First print 88\u00a2 \u2014 confirm + pause, never 80\u201383": 2,
+    "GAME_LOCK (\u226589) before in-band entry": 21,
+    "First print 86\u00a2 \u2014 confirm + pause, never 80\u201383": 1
+  }
+}

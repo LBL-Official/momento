@@ -1,0 +1,15 @@
+{
+  "n_calendar_days": 152,
+  "zero_pnl_days": 12,
+  "span": [
+    "2025-11-01",
+    "2026-04-01"
+  ],
+  "mean_net_cents": 154926.43421052632,
+  "stdev_net_cents": 278476.5814811236,
+  "sharpe_unannualized_on_starting_20000": 0.556335593415161,
+  "annualized_sqrt_365_on_starting_20000": 10.628776588240001,
+  "risk_free_rate": 0,
+  "denominator": "starting_balance_not_prior_equity",
+  "note": "Five-month span. Annualization is a convention, not a realized year. Active-exit-day Sharpe in sharpe_daily.json omits zero days."
+}

@@ -1,0 +1,10 @@
+trade T0012  NBA  San Antonio at Los Angeles L
+contract KXNBAGAME-25NOV05SASLAL-SAS  slice Q3
+signal 2025-11-05T21:05:00-08:00 PST  exit 2025-11-05T21:35:00-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 1755  principal_cents 136890
+entry_fee_cents 528  exit_fee_cents 680
+exit STOP at 67c  terminal no
+gross_cents -19305  net_cents -20513
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

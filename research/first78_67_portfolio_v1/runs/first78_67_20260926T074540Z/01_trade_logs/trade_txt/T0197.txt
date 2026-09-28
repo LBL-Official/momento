@@ -1,0 +1,10 @@
+trade T0197  NCAAB  Ole Miss at Oklahoma
+contract KXNCAAMBGAME-26JAN03MISSOKLA-OKLA  slice H1_2
+signal 2026-01-03T12:57:00-08:00 PST  exit 2026-01-03T13:13:00-08:00 PST
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 3592  principal_cents 280176
+entry_fee_cents 1079  exit_fee_cents 1390
+exit STOP at 67c  terminal yes
+gross_cents -39512  net_cents -41981
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

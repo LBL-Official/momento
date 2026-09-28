@@ -1,0 +1,11 @@
+{
+  "active": true,
+  "aws": "CONFIRMED",
+  "heartbeat": true,
+  "kalshi_demo": "CONFIRMED",
+  "reason": null,
+  "status": "RUNNING_DEMO",
+  "unit": "momento-demo@mlb-005.service",
+  "unit_started": true,
+  "unit_state": "RUNNING_DEMO"
+}

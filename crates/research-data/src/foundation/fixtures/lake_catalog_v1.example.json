@@ -1,0 +1,43 @@
+{
+  "catalog_version": "1.0.0",
+  "waterfall": "W1",
+  "artifact_version": "W1.0.0",
+  "lake_content_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+  "generated_at": "2026-08-26T08:00:00Z",
+  "lake_root": "Backtesting Suite/Data-Real",
+  "lake_class": "REAL",
+  "entries": [
+    {
+      "sport": "MLB",
+      "league": "MLB",
+      "season_label": "2025-2026",
+      "partition_date": "2026-06-18",
+      "layer": "MANIFEST",
+      "path": "Backtesting Suite/Data-Real/MLB/2025-2026/manifests/date=2026-06-18.json",
+      "bytes": 1,
+      "sha256": null,
+      "completeness_v1": "COMPLETE",
+      "coverage_v2": "PARTITION_COMPLETE_V1",
+      "markets": 2,
+      "games_est": 1,
+      "trades": 0,
+      "ob_events": 0,
+      "observability": "OBSERVED",
+      "notes": [
+        "FIXTURE — not a lake file. PARTITION_COMPLETE_V1 is not lifetime-complete."
+      ]
+    }
+  ],
+  "market_evidence": [
+    {
+      "game_id": "1",
+      "market_id": "2",
+      "ticker": "KXMLBGAME-FIXTURE-YES",
+      "event_ticker": "KXMLBGAME-FIXTURE",
+      "partition_date": "2026-06-18",
+      "sport": "MLB",
+      "mlb_game_pk": null,
+      "files": []
+    }
+  ]
+}

@@ -1,0 +1,1668 @@
+{
+  "program": "MOMENTO_DYNAMIC_RISK_ENGINE_V6",
+  "banner": "RESEARCH ONLY \u2014 CANDLE PATH \u2260 ACTUAL FILL \u2014 FORWARD DISTRIBUTION \u2260 TRADABLE EDGE \u2014 CONDITIONAL ALPHA \u2260 EXECUTABLE ACTION \u2014 \u0394\u03b1_state \u2260 EDGE \u2014 100-CONTRACT LEDGER \u2260 $50 PRODUCTION SIZE \u2014 LIVE DEPLOYMENT: NOT AUTHORIZED",
+  "schema_version": "1.0.0",
+  "research_date": "2026-09-03",
+  "created_utc": "2026-09-03T22:35:29.069654+00:00",
+  "central_question": "When the frozen state-vector model disagrees with the frozen price-only model, does the terminal outcome subsequently deviate from the price-only expectation in the predicted direction?",
+  "verdict": {
+    "HEADLINE": "UNCLASSIFIED_PRE_REGISTERED_OUTCOME",
+    "name": "HARD HALT \u2014 A/B/C/D none fired. Not a fifth scientific category.",
+    "flags": {
+      "A": false,
+      "B": false,
+      "C": false,
+      "D": false
+    },
+    "halt": true,
+    "verdict_status": "UNCLASSIFIED_PRE_REGISTERED_OUTCOME",
+    "inputs": {
+      "oos_P_abs_ge_5": 0.06329113924050633,
+      "oos_top10_share": 0.31122624017569556,
+      "rank_ZERO_COMPATIBLE": true,
+      "residual_ZERO_COMPATIBLE": true,
+      "rank_replication_token": "INCONCLUSIVE",
+      "residual_replication_token": "INCONCLUSIVE",
+      "rank_replication_ok": false,
+      "residual_replication_ok": false,
+      "oos_rank_spread": -10.0,
+      "oos_rank_n_lo": 20,
+      "oos_rank_n_hi": 12,
+      "oos_median_duration_k5": 21.0,
+      "why_A_false": "requires P(|mean_SIR|>=5\u00a2)<0.05 AND both OOS spreads ZERO_COMPATIBLE",
+      "why_B_false": "requires residual replication_directional (adequate coverage on both compared sides)",
+      "why_C_false": "requires rank or residual replication_directional; concentration alone is insufficient",
+      "why_D_false": "requires C"
+    },
+    "note": "HARD HALT. The pre-registered taxonomy did not classify this OOS realization. Do not silently call it A. Do not invent a fifth scientific letter.",
+    "d_ceiling": "V6-D means concentrated, persistent, reproducible deviation from the price-only expectation. It does not establish expected trading profit >= 5\u00a2.",
+    "concentration_not_evidence": "A concentrated distribution of model disagreement is not evidence of predictive information unless the concentrated states also exhibit reproducible OOS separation in terminal payoff or M0 residual.",
+    "live_deployment": "NOT AUTHORIZED",
+    "not": [
+      "edge",
+      "executable action",
+      "fill",
+      "tradable strategy",
+      "fifth scientific category"
+    ]
+  },
+  "gates": {
+    "A": {
+      "status": "PASS"
+    },
+    "B": {
+      "status": "PASS"
+    },
+    "C": {
+      "status": "PASS"
+    },
+    "D": {
+      "status": "PASS"
+    },
+    "E": {
+      "status": "PASS"
+    },
+    "F": {
+      "status": "PASS"
+    },
+    "G": {
+      "status": "PASS"
+    },
+    "H": {
+      "status": "PASS"
+    },
+    "I": {
+      "status": "PASS"
+    }
+  },
+  "counts": {
+    "rows": 139966,
+    "trades": 1221
+  },
+  "distribution": {
+    "primary": "TRADE_BALANCED",
+    "cuts_cents": [
+      1.0,
+      2.0,
+      5.0,
+      10.0
+    ],
+    "by_split": {
+      "TRAIN": {
+        "TRADE_BALANCED": {
+          "weighting": "TRADE_BALANCED",
+          "n": 503,
+          "n_units": 503,
+          "p01": -6.259479881618794,
+          "p05": -4.868072837841109,
+          "p10": -2.864015855959492,
+          "p25": -1.0058953283595118,
+          "p50": 0.8391297315352505,
+          "p75": 2.5326378168771932,
+          "p90": 4.657662935451278,
+          "p95": 6.147665377749088,
+          "p99": 11.056050656965486,
+          "mean": 1.2040495506171613,
+          "median": 0.8391297315352505,
+          "std": 6.661016270254141,
+          "min": -9.713883822081192,
+          "max": 91.35802469135803,
+          "max_abs": 91.35802469135803,
+          "P_abs_ge": {
+            "1": 0.7216699801192843,
+            "2": 0.4731610337972167,
+            "5": 0.1312127236580517,
+            "10": 0.013916500994035786
+          }
+        },
+        "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC": {
+          "weighting": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC",
+          "n": 57059,
+          "n_units": 503,
+          "p01": -17.8743961352657,
+          "p05": -10.53191489361702,
+          "p10": -6.853416016251471,
+          "p25": -3.604651162790698,
+          "p50": 0.38992778098140946,
+          "p75": 3.069053708439899,
+          "p90": 6.211180124223603,
+          "p95": 10.447251621713896,
+          "p99": 31.623931623931618,
+          "mean": 0.432628986205499,
+          "median": 0.38992778098140946,
+          "std": 9.469249132366658,
+          "min": -85.0,
+          "max": 96.42857142857143,
+          "max_abs": 96.42857142857143,
+          "P_abs_ge": {
+            "1": 0.8090222401374016,
+            "2": 0.6211114810985121,
+            "5": 0.2700362782383147,
+            "10": 0.11307593894039503
+          }
+        }
+      },
+      "VALIDATION": {
+        "TRADE_BALANCED": {
+          "weighting": "TRADE_BALANCED",
+          "n": 481,
+          "n_units": 481,
+          "p01": -4.850380764552642,
+          "p05": -3.3396751363782093,
+          "p10": -2.293994012413978,
+          "p25": -0.8966706425952492,
+          "p50": 0.7465731870136446,
+          "p75": 2.120572776363796,
+          "p90": 3.5867820196710083,
+          "p95": 4.773243039461293,
+          "p99": 7.812720915071442,
+          "mean": 0.70666953599596,
+          "median": 0.7465731870136446,
+          "std": 2.504425188340754,
+          "min": -6.96675556075045,
+          "max": 11.296296296296298,
+          "max_abs": 11.296296296296298,
+          "P_abs_ge": {
+            "1": 0.7047817047817048,
+            "2": 0.3991683991683992,
+            "5": 0.04573804573804574,
+            "10": 0.004158004158004158
+          }
+        },
+        "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC": {
+          "weighting": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC",
+          "n": 55192,
+          "n_units": 481,
+          "p01": -17.656012176560118,
+          "p05": -8.786482334869431,
+          "p10": -6.853416016251471,
+          "p25": -3.4293394777265744,
+          "p50": 0.38992778098140946,
+          "p75": 2.8230244331939254,
+          "p90": 5.423094904160823,
+          "p95": 9.680968096809682,
+          "p99": 20.792079207920793,
+          "mean": 0.14066171965798419,
+          "median": 0.38992778098140946,
+          "std": 6.784153465210294,
+          "min": -80.21505376344086,
+          "max": 71.23287671232876,
+          "max_abs": 80.21505376344086,
+          "P_abs_ge": {
+            "1": 0.795604435425424,
+            "2": 0.5852840991448036,
+            "5": 0.24697419915929844,
+            "10": 0.08981374112190173
+          }
+        }
+      },
+      "OOS": {
+        "TRADE_BALANCED": {
+          "weighting": "TRADE_BALANCED",
+          "n": 237,
+          "n_units": 237,
+          "p01": -7.512327175049367,
+          "p05": -3.243253866594791,
+          "p10": -2.489135162702647,
+          "p25": -1.1020527925538894,
+          "p50": 0.5426973364933355,
+          "p75": 1.9772363257926984,
+          "p90": 3.7201281103277197,
+          "p95": 4.614309303580768,
+          "p99": 8.340220389676047,
+          "mean": 0.5822598974303601,
+          "median": 0.5426973364933355,
+          "std": 2.756134404404009,
+          "min": -11.209808583178733,
+          "max": 8.670305655034312,
+          "max_abs": 11.209808583178733,
+          "P_abs_ge": {
+            "1": 0.70042194092827,
+            "2": 0.3924050632911392,
+            "5": 0.06329113924050633,
+            "10": 0.004219409282700422
+          }
+        },
+        "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC": {
+          "weighting": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC",
+          "n": 27715,
+          "n_units": 237,
+          "p01": -22.651006711409394,
+          "p05": -9.242424242424242,
+          "p10": -6.853416016251471,
+          "p25": -3.4293394777265744,
+          "p50": 0.32932768104263843,
+          "p75": 2.7592923226748907,
+          "p90": 5.423094904160823,
+          "p95": 9.86434425484742,
+          "p99": 21.891685736079328,
+          "mean": 0.0939633036771201,
+          "median": 0.32932768104263843,
+          "std": 7.558391032615599,
+          "min": -80.21505376344086,
+          "max": 71.23287671232876,
+          "max_abs": 80.21505376344086,
+          "P_abs_ge": {
+            "1": 0.78112935233628,
+            "2": 0.5771603824643695,
+            "5": 0.24585964279271152,
+            "10": 0.09608515244452463
+          }
+        }
+      }
+    },
+    "note": "Primary economic sentence uses trade-balanced P(|mean_SIR_i| >= k)."
+  },
+  "concentration": {
+    "primary": "TRADE_BALANCED",
+    "descriptive_pcts": [
+      0.01,
+      0.05,
+      0.1,
+      0.25
+    ],
+    "verdict_pct": 0.1,
+    "verdict_share_threshold": 0.4,
+    "by_split": {
+      "TRAIN": {
+        "weighting": "TRADE_BALANCED",
+        "shares": [
+          {
+            "frac": 0.01,
+            "n_top": 6,
+            "n": 503,
+            "share": 0.17944137140071392,
+            "total_abs": 1432.1716163946116
+          },
+          {
+            "frac": 0.05,
+            "n_top": 26,
+            "n": 503,
+            "share": 0.28908900994908227,
+            "total_abs": 1432.1716163946116
+          },
+          {
+            "frac": 0.1,
+            "n_top": 51,
+            "n": 503,
+            "share": 0.3924987540113879,
+            "total_abs": 1432.1716163946116
+          },
+          {
+            "frac": 0.25,
+            "n_top": 126,
+            "n": 503,
+            "share": 0.6211060737216614,
+            "total_abs": 1432.1716163946116
+          }
+        ],
+        "top10_share": 0.3924987540113879,
+        "top10_meets_40": false,
+        "note": "A concentrated distribution of model disagreement is not evidence of predictive information unless the concentrated states also exhibit reproducible OOS separation in terminal payoff or M0 residual."
+      },
+      "VALIDATION": {
+        "weighting": "TRADE_BALANCED",
+        "shares": [
+          {
+            "frac": 0.01,
+            "n_top": 5,
+            "n": 481,
+            "share": 0.05080125806007302,
+            "total_abs": 958.908999808813
+          },
+          {
+            "frac": 0.05,
+            "n_top": 25,
+            "n": 481,
+            "share": 0.17802132040100585,
+            "total_abs": 958.908999808813
+          },
+          {
+            "frac": 0.1,
+            "n_top": 49,
+            "n": 481,
+            "share": 0.2914767009709181,
+            "total_abs": 958.908999808813
+          },
+          {
+            "frac": 0.25,
+            "n_top": 121,
+            "n": 481,
+            "share": 0.5339476581662923,
+            "total_abs": 958.908999808813
+          }
+        ],
+        "top10_share": 0.2914767009709181,
+        "top10_meets_40": false,
+        "note": "A concentrated distribution of model disagreement is not evidence of predictive information unless the concentrated states also exhibit reproducible OOS separation in terminal payoff or M0 residual."
+      },
+      "OOS": {
+        "weighting": "TRADE_BALANCED",
+        "shares": [
+          {
+            "frac": 0.01,
+            "n_top": 3,
+            "n": 237,
+            "share": 0.058261274157702506,
+            "total_abs": 495.99388807823334
+          },
+          {
+            "frac": 0.05,
+            "n_top": 12,
+            "n": 237,
+            "share": 0.19760701398610614,
+            "total_abs": 495.99388807823334
+          },
+          {
+            "frac": 0.1,
+            "n_top": 24,
+            "n": 237,
+            "share": 0.31122624017569556,
+            "total_abs": 495.99388807823334
+          },
+          {
+            "frac": 0.25,
+            "n_top": 60,
+            "n": 237,
+            "share": 0.5557508213816925,
+            "total_abs": 495.99388807823334
+          }
+        ],
+        "top10_share": 0.31122624017569556,
+        "top10_meets_40": false,
+        "note": "A concentrated distribution of model disagreement is not evidence of predictive information unless the concentrated states also exhibit reproducible OOS separation in terminal payoff or M0 residual."
+      }
+    },
+    "concentration_not_evidence": "A concentrated distribution of model disagreement is not evidence of predictive information unless the concentrated states also exhibit reproducible OOS separation in terminal payoff or M0 residual."
+  },
+  "rank": {
+    "n_deciles": 10,
+    "edges": [
+      -9.713883822081192,
+      -2.864015855959492,
+      -1.4537562191841986,
+      -0.5792563701340175,
+      0.1742748576932997,
+      0.8391297315352505,
+      1.3683598320614778,
+      2.1110976054947526,
+      2.994446621461479,
+      4.657662935451278,
+      91.35802469135803
+    ],
+    "cuts_source": "TRAIN mean_SIR_i",
+    "by_split": {
+      "TRAIN": {
+        "n_trades": 503,
+        "n_games": 503,
+        "deciles": [
+          {
+            "decile": 1,
+            "n_trades": 51,
+            "n_games": 51,
+            "mean_sir": -4.909116955764676,
+            "mean_pi": -66.27450980392157,
+            "p_settle_yes": 0.13725490196078433,
+            "mean_r": -44.741588600852396,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 2,
+            "n_trades": 50,
+            "n_games": 50,
+            "mean_sir": -2.0560193852628124,
+            "mean_pi": -18.0,
+            "p_settle_yes": 0.62,
+            "mean_r": -15.285863233555528,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 3,
+            "n_trades": 50,
+            "n_games": 50,
+            "mean_sir": -0.9799476938052462,
+            "mean_pi": 0.0,
+            "p_settle_yes": 0.8,
+            "mean_r": -1.2807021278063184,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 4,
+            "n_trades": 50,
+            "n_games": 50,
+            "mean_sir": -0.19827956676816685,
+            "mean_pi": 8.0,
+            "p_settle_yes": 0.88,
+            "mean_r": 3.9070056199775784,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 5,
+            "n_trades": 51,
+            "n_games": 51,
+            "mean_sir": 0.5357891293261711,
+            "mean_pi": 10.196078431372548,
+            "p_settle_yes": 0.9019607843137255,
+            "mean_r": 6.297575920069352,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 6,
+            "n_trades": 50,
+            "n_games": 50,
+            "mean_sir": 1.112281994476042,
+            "mean_pi": 18.0,
+            "p_settle_yes": 0.98,
+            "mean_r": 10.700862461375031,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 7,
+            "n_trades": 50,
+            "n_games": 50,
+            "mean_sir": 1.7237520630441971,
+            "mean_pi": 12.0,
+            "p_settle_yes": 0.92,
+            "mean_r": 6.7054046554581905,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 8,
+            "n_trades": 50,
+            "n_games": 50,
+            "mean_sir": 2.5427827348192027,
+            "mean_pi": 16.0,
+            "p_settle_yes": 0.96,
+            "mean_r": 11.42634830458674,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 9,
+            "n_trades": 50,
+            "n_games": 50,
+            "mean_sir": 3.6758744010689735,
+            "mean_pi": 14.0,
+            "p_settle_yes": 0.94,
+            "mean_r": 12.164974205079512,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 10,
+            "n_trades": 51,
+            "n_games": 51,
+            "mean_sir": 10.54224344568993,
+            "mean_pi": 14.117647058823529,
+            "p_settle_yes": 0.9411764705882353,
+            "mean_r": 24.56050767262328,
+            "weighting": "TRADE_BALANCED"
+          }
+        ],
+        "spread_hi_minus_lo": 80.39215686274511,
+        "n_lo": 51,
+        "n_hi": 51,
+        "adequate": true,
+        "spearman_sir_pi": 0.4702685738703695,
+        "weighting": "TRADE_BALANCED"
+      },
+      "VALIDATION": {
+        "n_trades": 481,
+        "n_games": 481,
+        "deciles": [
+          {
+            "decile": 1,
+            "n_trades": 34,
+            "n_games": 34,
+            "mean_sir": -3.890178771136082,
+            "mean_pi": -24.11764705882353,
+            "p_settle_yes": 0.5588235294117647,
+            "mean_r": -10.497235491178916,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 2,
+            "n_trades": 48,
+            "n_games": 48,
+            "mean_sir": -2.105742892401068,
+            "mean_pi": -5.0,
+            "p_settle_yes": 0.75,
+            "mean_r": -2.9584214334879593,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 3,
+            "n_trades": 61,
+            "n_games": 61,
+            "mean_sir": -1.026800622744248,
+            "mean_pi": 5.245901639344262,
+            "p_settle_yes": 0.8524590163934426,
+            "mean_r": 2.13970123934954,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 4,
+            "n_trades": 64,
+            "n_games": 64,
+            "mean_sir": -0.19511289602101559,
+            "mean_pi": 4.375,
+            "p_settle_yes": 0.84375,
+            "mean_r": 2.5966051978197533,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 5,
+            "n_trades": 40,
+            "n_games": 40,
+            "mean_sir": 0.5327304234875706,
+            "mean_pi": 10.0,
+            "p_settle_yes": 0.9,
+            "mean_r": 4.83896782136561,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 6,
+            "n_trades": 43,
+            "n_games": 43,
+            "mean_sir": 1.1297679843383948,
+            "mean_pi": 3.7209302325581395,
+            "p_settle_yes": 0.8372093023255814,
+            "mean_r": -2.591538073931535,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 7,
+            "n_trades": 70,
+            "n_games": 70,
+            "mean_sir": 1.7458385389476112,
+            "mean_pi": 11.428571428571429,
+            "p_settle_yes": 0.9142857142857143,
+            "mean_r": 6.432968431997651,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 8,
+            "n_trades": 55,
+            "n_games": 55,
+            "mean_sir": 2.4557943290647684,
+            "mean_pi": 9.090909090909092,
+            "p_settle_yes": 0.8909090909090909,
+            "mean_r": 6.991935172767274,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 9,
+            "n_trades": 38,
+            "n_games": 38,
+            "mean_sir": 3.730577231119153,
+            "mean_pi": 6.842105263157895,
+            "p_settle_yes": 0.868421052631579,
+            "mean_r": 9.62316128407474,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 10,
+            "n_trades": 28,
+            "n_games": 28,
+            "mean_sir": 6.40868879740008,
+            "mean_pi": -1.4285714285714286,
+            "p_settle_yes": 0.7857142857142857,
+            "mean_r": 7.1920194775026385,
+            "weighting": "TRADE_BALANCED"
+          }
+        ],
+        "spread_hi_minus_lo": 22.689075630252102,
+        "n_lo": 34,
+        "n_hi": 28,
+        "adequate": true,
+        "spearman_sir_pi": 0.13554642561491562,
+        "weighting": "TRADE_BALANCED"
+      },
+      "OOS": {
+        "n_trades": 237,
+        "n_games": 237,
+        "deciles": [
+          {
+            "decile": 1,
+            "n_trades": 20,
+            "n_games": 20,
+            "mean_sir": -4.473733118136587,
+            "mean_pi": 5.0,
+            "p_settle_yes": 0.85,
+            "mean_r": 6.434751876456086,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 2,
+            "n_trades": 29,
+            "n_games": 29,
+            "mean_sir": -1.9631130994521422,
+            "mean_pi": -0.6896551724137931,
+            "p_settle_yes": 0.7931034482758621,
+            "mean_r": 2.3746031386353654,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 3,
+            "n_trades": 27,
+            "n_games": 27,
+            "mean_sir": -0.9741335210837355,
+            "mean_pi": 12.592592592592593,
+            "p_settle_yes": 0.9259259259259259,
+            "mean_r": 6.447142969737052,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 4,
+            "n_trades": 28,
+            "n_games": 28,
+            "mean_sir": -0.20092982436052637,
+            "mean_pi": -5.0,
+            "p_settle_yes": 0.75,
+            "mean_r": -8.672065780613703,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 5,
+            "n_trades": 26,
+            "n_games": 26,
+            "mean_sir": 0.5263838887309741,
+            "mean_pi": 4.615384615384615,
+            "p_settle_yes": 0.8461538461538461,
+            "mean_r": 0.09899556193473134,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 6,
+            "n_trades": 15,
+            "n_games": 15,
+            "mean_sir": 1.126624545361596,
+            "mean_pi": 13.333333333333334,
+            "p_settle_yes": 0.9333333333333333,
+            "mean_r": 10.922948769721838,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 7,
+            "n_trades": 36,
+            "n_games": 36,
+            "mean_sir": 1.6905898828360504,
+            "mean_pi": 17.22222222222222,
+            "p_settle_yes": 0.9722222222222222,
+            "mean_r": 9.101759624607228,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 8,
+            "n_trades": 19,
+            "n_games": 19,
+            "mean_sir": 2.5018723392118134,
+            "mean_pi": 20.0,
+            "p_settle_yes": 1.0,
+            "mean_r": 14.297117247491594,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 9,
+            "n_trades": 25,
+            "n_games": 25,
+            "mean_sir": 3.744777567728935,
+            "mean_pi": 0.0,
+            "p_settle_yes": 0.8,
+            "mean_r": 3.309471158812729,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 10,
+            "n_trades": 12,
+            "n_games": 12,
+            "mean_sir": 6.97721494845166,
+            "mean_pi": -5.0,
+            "p_settle_yes": 0.75,
+            "mean_r": 10.690649845830492,
+            "weighting": "TRADE_BALANCED"
+          }
+        ],
+        "spread_hi_minus_lo": -10.0,
+        "n_lo": 20,
+        "n_hi": 12,
+        "adequate": false,
+        "spearman_sir_pi": 0.03916101658473521,
+        "weighting": "TRADE_BALANCED"
+      }
+    },
+    "bootstrap_oos": {
+      "status": "OK",
+      "n_games": 237,
+      "n_valid": 51,
+      "mean": -10.710438387874847,
+      "p05": -29.600840336134453,
+      "p95": 8.063725490196077,
+      "cluster": "event_id",
+      "seed": 42
+    },
+    "coverage": {
+      "adequate_train_oos": false,
+      "adequate_val": true
+    },
+    "replication": {
+      "ok": false,
+      "token": "INCONCLUSIVE",
+      "DIRECTIONAL": false,
+      "TRAIN_DIRECTION_COMPATIBLE": true,
+      "VAL_CONFIRMATION_REQUIRED": true,
+      "VAL_CONFIRMED": true,
+      "adequate_train_oos": false,
+      "ZERO_COMPATIBLE": true,
+      "train_effect": 80.39215686274511,
+      "val_effect": 22.689075630252102,
+      "oos_effect": -10.0,
+      "bootstrap": {
+        "status": "OK",
+        "n_games": 237,
+        "n_valid": 51,
+        "mean": -10.710438387874847,
+        "p05": -29.600840336134453,
+        "p95": 8.063725490196077,
+        "cluster": "event_id",
+        "seed": 42
+      },
+      "weighting": "TRADE_BALANCED"
+    },
+    "weighting": "TRADE_BALANCED",
+    "note": "Spread = E[Pi | decile 10] - E[Pi | decile 1]. Measurement only."
+  },
+  "residual": {
+    "primary": "TRADE_BALANCED",
+    "object": "E[mean_R_i | mean_SIR_i] via TRAIN-frozen SIR deciles",
+    "by_split": {
+      "TRAIN": {
+        "n_trades": 503,
+        "n_games": 503,
+        "deciles": [
+          {
+            "decile": 1,
+            "n_trades": 51,
+            "mean_sir": -4.909116955764676,
+            "mean_r": -44.741588600852396,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 2,
+            "n_trades": 50,
+            "mean_sir": -2.0560193852628124,
+            "mean_r": -15.285863233555528,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 3,
+            "n_trades": 50,
+            "mean_sir": -0.9799476938052462,
+            "mean_r": -1.2807021278063184,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 4,
+            "n_trades": 50,
+            "mean_sir": -0.19827956676816685,
+            "mean_r": 3.9070056199775784,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 5,
+            "n_trades": 51,
+            "mean_sir": 0.5357891293261711,
+            "mean_r": 6.297575920069352,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 6,
+            "n_trades": 50,
+            "mean_sir": 1.112281994476042,
+            "mean_r": 10.700862461375031,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 7,
+            "n_trades": 50,
+            "mean_sir": 1.7237520630441971,
+            "mean_r": 6.7054046554581905,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 8,
+            "n_trades": 50,
+            "mean_sir": 2.5427827348192027,
+            "mean_r": 11.42634830458674,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 9,
+            "n_trades": 50,
+            "mean_sir": 3.6758744010689735,
+            "mean_r": 12.164974205079512,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 10,
+            "n_trades": 51,
+            "mean_sir": 10.54224344568993,
+            "mean_r": 24.56050767262328,
+            "weighting": "TRADE_BALANCED"
+          }
+        ],
+        "spread_hi_minus_lo": 69.30209627347568,
+        "n_lo": 51,
+        "n_hi": 51,
+        "adequate": true,
+        "spearman_sir_r": 0.4528737270929536,
+        "weighting": "TRADE_BALANCED"
+      },
+      "VALIDATION": {
+        "n_trades": 481,
+        "n_games": 481,
+        "deciles": [
+          {
+            "decile": 1,
+            "n_trades": 34,
+            "mean_sir": -3.890178771136082,
+            "mean_r": -10.497235491178916,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 2,
+            "n_trades": 48,
+            "mean_sir": -2.105742892401068,
+            "mean_r": -2.9584214334879593,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 3,
+            "n_trades": 61,
+            "mean_sir": -1.026800622744248,
+            "mean_r": 2.13970123934954,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 4,
+            "n_trades": 64,
+            "mean_sir": -0.19511289602101559,
+            "mean_r": 2.5966051978197533,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 5,
+            "n_trades": 40,
+            "mean_sir": 0.5327304234875706,
+            "mean_r": 4.83896782136561,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 6,
+            "n_trades": 43,
+            "mean_sir": 1.1297679843383948,
+            "mean_r": -2.591538073931535,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 7,
+            "n_trades": 70,
+            "mean_sir": 1.7458385389476112,
+            "mean_r": 6.432968431997651,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 8,
+            "n_trades": 55,
+            "mean_sir": 2.4557943290647684,
+            "mean_r": 6.991935172767274,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 9,
+            "n_trades": 38,
+            "mean_sir": 3.730577231119153,
+            "mean_r": 9.62316128407474,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 10,
+            "n_trades": 28,
+            "mean_sir": 6.40868879740008,
+            "mean_r": 7.1920194775026385,
+            "weighting": "TRADE_BALANCED"
+          }
+        ],
+        "spread_hi_minus_lo": 17.689254968681553,
+        "n_lo": 34,
+        "n_hi": 28,
+        "adequate": true,
+        "spearman_sir_r": 0.19190813096355117,
+        "weighting": "TRADE_BALANCED"
+      },
+      "OOS": {
+        "n_trades": 237,
+        "n_games": 237,
+        "deciles": [
+          {
+            "decile": 1,
+            "n_trades": 20,
+            "mean_sir": -4.473733118136587,
+            "mean_r": 6.434751876456086,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 2,
+            "n_trades": 29,
+            "mean_sir": -1.9631130994521422,
+            "mean_r": 2.3746031386353654,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 3,
+            "n_trades": 27,
+            "mean_sir": -0.9741335210837355,
+            "mean_r": 6.447142969737052,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 4,
+            "n_trades": 28,
+            "mean_sir": -0.20092982436052637,
+            "mean_r": -8.672065780613703,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 5,
+            "n_trades": 26,
+            "mean_sir": 0.5263838887309741,
+            "mean_r": 0.09899556193473134,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 6,
+            "n_trades": 15,
+            "mean_sir": 1.126624545361596,
+            "mean_r": 10.922948769721838,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 7,
+            "n_trades": 36,
+            "mean_sir": 1.6905898828360504,
+            "mean_r": 9.101759624607228,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 8,
+            "n_trades": 19,
+            "mean_sir": 2.5018723392118134,
+            "mean_r": 14.297117247491594,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 9,
+            "n_trades": 25,
+            "mean_sir": 3.744777567728935,
+            "mean_r": 3.309471158812729,
+            "weighting": "TRADE_BALANCED"
+          },
+          {
+            "decile": 10,
+            "n_trades": 12,
+            "mean_sir": 6.97721494845166,
+            "mean_r": 10.690649845830492,
+            "weighting": "TRADE_BALANCED"
+          }
+        ],
+        "spread_hi_minus_lo": 4.255897969374407,
+        "n_lo": 20,
+        "n_hi": 12,
+        "adequate": false,
+        "spearman_sir_r": 0.04114059268848067,
+        "weighting": "TRADE_BALANCED"
+      }
+    },
+    "bootstrap_oos": {
+      "status": "OK",
+      "n_games": 237,
+      "n_valid": 51,
+      "mean": 3.894074637469849,
+      "p05": -17.087932376894905,
+      "p95": 24.337672697793487,
+      "cluster": "event_id",
+      "seed": 42
+    },
+    "coverage": {
+      "adequate_train_oos": false,
+      "adequate_val": true
+    },
+    "replication": {
+      "ok": false,
+      "token": "INCONCLUSIVE",
+      "DIRECTIONAL": true,
+      "TRAIN_DIRECTION_COMPATIBLE": true,
+      "VAL_CONFIRMATION_REQUIRED": true,
+      "VAL_CONFIRMED": true,
+      "adequate_train_oos": false,
+      "ZERO_COMPATIBLE": true,
+      "train_effect": 69.30209627347568,
+      "val_effect": 17.689254968681553,
+      "oos_effect": 4.255897969374407,
+      "bootstrap": {
+        "status": "OK",
+        "n_games": 237,
+        "n_valid": 51,
+        "mean": 3.894074637469849,
+        "p05": -17.087932376894905,
+        "p95": 24.337672697793487,
+        "cluster": "event_id",
+        "seed": 42
+      },
+      "weighting": "TRADE_BALANCED"
+    },
+    "occupancy": {
+      "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC",
+      "by_split": {
+        "TRAIN": {
+          "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC",
+          "n_rows": 57059,
+          "spearman_da_rt": 0.17294477326479576,
+          "deciles": [
+            {
+              "decile": 1,
+              "n_rows": 15502,
+              "mean_da": -7.447524698197833,
+              "mean_r_t": -8.044584556966587
+            },
+            {
+              "decile": 2,
+              "n_rows": 4549,
+              "mean_da": -2.3529512844818616,
+              "mean_r_t": -3.464337351337973
+            },
+            {
+              "decile": 3,
+              "n_rows": 1990,
+              "mean_da": -0.9988676124148304,
+              "mean_r_t": -0.0666729194822522
+            },
+            {
+              "decile": 4,
+              "n_rows": 499,
+              "mean_da": -0.17057265389190623,
+              "mean_r_t": -1.086255314116284
+            },
+            {
+              "decile": 5,
+              "n_rows": 8647,
+              "mean_da": 0.37715256125445623,
+              "mean_r_t": 1.2599285656989943
+            },
+            {
+              "decile": 6,
+              "n_rows": 1151,
+              "mean_da": 0.9891404322217293,
+              "mean_r_t": -0.5470700581590482
+            },
+            {
+              "decile": 7,
+              "n_rows": 8531,
+              "mean_da": 1.6570046682227435,
+              "mean_r_t": 1.8409145655329124
+            },
+            {
+              "decile": 8,
+              "n_rows": 1368,
+              "mean_da": 2.628984100041943,
+              "mean_r_t": 2.6243222410724854
+            },
+            {
+              "decile": 9,
+              "n_rows": 6289,
+              "mean_da": 3.450290620814522,
+              "mean_r_t": 2.7214529169717965
+            },
+            {
+              "decile": 10,
+              "n_rows": 8533,
+              "mean_da": 12.783589507681393,
+              "mean_r_t": 11.681440320841281
+            }
+          ],
+          "note": "Diagnostic only. Long trades overweight this table."
+        },
+        "VALIDATION": {
+          "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC",
+          "n_rows": 55192,
+          "spearman_da_rt": 0.026495068910969526,
+          "deciles": [
+            {
+              "decile": 1,
+              "n_rows": 14259,
+              "mean_da": -7.132546568017235,
+              "mean_r_t": 2.5096316723310212
+            },
+            {
+              "decile": 2,
+              "n_rows": 3931,
+              "mean_da": -2.335480719668097,
+              "mean_r_t": 3.046530523684773
+            },
+            {
+              "decile": 3,
+              "n_rows": 1492,
+              "mean_da": -0.9939113969821941,
+              "mean_r_t": 3.117280347385727
+            },
+            {
+              "decile": 4,
+              "n_rows": 671,
+              "mean_da": -0.10208061072978118,
+              "mean_r_t": 2.314371367588319
+            },
+            {
+              "decile": 5,
+              "n_rows": 9183,
+              "mean_da": 0.36784847697998846,
+              "mean_r_t": 2.958720647371039
+            },
+            {
+              "decile": 6,
+              "n_rows": 1217,
+              "mean_da": 0.9997380855050184,
+              "mean_r_t": 3.059351107389658
+            },
+            {
+              "decile": 7,
+              "n_rows": 9590,
+              "mean_da": 1.6433616979910428,
+              "mean_r_t": 2.9651451638544555
+            },
+            {
+              "decile": 8,
+              "n_rows": 1202,
+              "mean_da": 2.6532409995918314,
+              "mean_r_t": -2.566335901444305
+            },
+            {
+              "decile": 9,
+              "n_rows": 6357,
+              "mean_da": 3.4712241263094405,
+              "mean_r_t": 1.6191609738139683
+            },
+            {
+              "decile": 10,
+              "n_rows": 7290,
+              "mean_da": 10.231595308295496,
+              "mean_r_t": 1.9384038950089537
+            }
+          ],
+          "note": "Diagnostic only. Long trades overweight this table."
+        },
+        "OOS": {
+          "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC",
+          "n_rows": 27715,
+          "spearman_da_rt": -0.014306132307000181,
+          "deciles": [
+            {
+              "decile": 1,
+              "n_rows": 7156,
+              "mean_da": -7.5721169791310015,
+              "mean_r_t": 2.448398629807959
+            },
+            {
+              "decile": 2,
+              "n_rows": 1934,
+              "mean_da": -2.376864842229599,
+              "mean_r_t": 3.341734952531888
+            },
+            {
+              "decile": 3,
+              "n_rows": 715,
+              "mean_da": -0.993286578867016,
+              "mean_r_t": -1.0148849581468682
+            },
+            {
+              "decile": 4,
+              "n_rows": 417,
+              "mean_da": -0.10331780553400922,
+              "mean_r_t": 1.4344279285714958
+            },
+            {
+              "decile": 5,
+              "n_rows": 4997,
+              "mean_da": 0.35782688463456525,
+              "mean_r_t": 2.4373594387831585
+            },
+            {
+              "decile": 6,
+              "n_rows": 576,
+              "mean_da": 1.0065344367164626,
+              "mean_r_t": 3.298600213961467
+            },
+            {
+              "decile": 7,
+              "n_rows": 4727,
+              "mean_da": 1.650317073732239,
+              "mean_r_t": 2.24563043182823
+            },
+            {
+              "decile": 8,
+              "n_rows": 511,
+              "mean_da": 2.637904070902919,
+              "mean_r_t": -2.146307353327551
+            },
+            {
+              "decile": 9,
+              "n_rows": 3093,
+              "mean_da": 3.3961381892266993,
+              "mean_r_t": 3.7893280911251708
+            },
+            {
+              "decile": 10,
+              "n_rows": 3589,
+              "mean_da": 11.178407387192253,
+              "mean_r_t": 2.09489015733484
+            }
+          ],
+          "note": "Diagnostic only. Long trades overweight this table."
+        }
+      }
+    },
+    "note": "Primary is trade-level. Occupancy residual-on-residual is diagnostic."
+  },
+  "extremes": {
+    "ks": [
+      2.0,
+      5.0,
+      10.0
+    ],
+    "baseline_abs_cents": 1.0,
+    "by_split": {
+      "TRAIN": {
+        "baseline": {
+          "name": "abs_sir_lt_1",
+          "n_trades": 140,
+          "n_games": 140,
+          "mean_sir": 0.0989559243370108,
+          "mean_pi": 7.857142857142857,
+          "p_settle_yes": 0.8785714285714286,
+          "mean_r": 4.818443249427985,
+          "sign_correct": true,
+          "weighting": "TRADE_BALANCED"
+        },
+        "tails": [
+          {
+            "k": 2.0,
+            "positive": {
+              "name": "mean_sir_gt_2",
+              "n_trades": 159,
+              "n_games": 159,
+              "mean_sir": 5.440744291294333,
+              "mean_pi": 14.968553459119496,
+              "p_settle_yes": 0.949685534591195,
+              "mean_r": 16.029726743133285,
+              "sign_correct": true,
+              "weighting": "TRADE_BALANCED"
+            },
+            "negative": {
+              "name": "mean_sir_lt_-2",
+              "n_trades": 79,
+              "n_games": 79,
+              "mean_sir": -4.003566717079497,
+              "mean_pi": -53.41772151898734,
+              "p_settle_yes": 0.26582278481012656,
+              "mean_r": -36.99494209005287,
+              "sign_correct": true,
+              "weighting": "TRADE_BALANCED"
+            }
+          },
+          {
+            "k": 5.0,
+            "positive": {
+              "name": "mean_sir_gt_5",
+              "n_trades": 43,
+              "n_games": 43,
+              "mean_sir": 11.608710631683568,
+              "mean_pi": 13.023255813953488,
+              "p_settle_yes": 0.9302325581395349,
+              "mean_r": 24.83666086486516,
+              "sign_correct": true,
+              "weighting": "TRADE_BALANCED"
+            },
+            "negative": {
+              "name": "mean_sir_lt_-5",
+              "n_trades": 23,
+              "n_games": 23,
+              "mean_sir": -6.176625789754439,
+              "mean_pi": -66.95652173913044,
+              "p_settle_yes": 0.13043478260869565,
+              "mean_r": -44.05877370576718,
+              "sign_correct": true,
+              "weighting": "TRADE_BALANCED"
+            }
+          },
+          {
+            "k": 10.0,
+            "positive": {
+              "name": "mean_sir_gt_10",
+              "n_trades": 7,
+              "n_games": 7,
+              "mean_sir": 38.183009825373496,
+              "mean_pi": 20.0,
+              "p_settle_yes": 1.0,
+              "mean_r": 51.883893593115445,
+              "sign_correct": true,
+              "weighting": "TRADE_BALANCED"
+            },
+            "negative": {
+              "name": "mean_sir_lt_-10",
+              "n_trades": 0,
+              "n_games": 0,
+              "mean_sir": null,
+              "mean_pi": null,
+              "p_settle_yes": null,
+              "mean_r": null,
+              "sign_correct": null,
+              "weighting": "TRADE_BALANCED"
+            }
+          }
+        ],
+        "n_trades": 503,
+        "weighting": "TRADE_BALANCED"
+      },
+      "VALIDATION": {
+        "baseline": {
+          "name": "abs_sir_lt_1",
+          "n_trades": 142,
+          "n_games": 142,
+          "mean_sir": -0.026845396645619246,
+          "mean_pi": 5.211267605633803,
+          "p_settle_yes": 0.852112676056338,
+          "mean_r": 2.100937415785059,
+          "sign_correct": false,
+          "weighting": "TRADE_BALANCED"
+        },
+        "tails": [
+          {
+            "k": 2.0,
+            "positive": {
+              "name": "mean_sir_gt_2",
+              "n_trades": 133,
+              "n_games": 133,
+              "mean_sir": 3.6159683616396228,
+              "mean_pi": 6.466165413533835,
+              "p_settle_yes": 0.8646616541353384,
+              "mean_r": 8.514103470506313,
+              "sign_correct": true,
+              "weighting": "TRADE_BALANCED"
+            },
+            "negative": {
+              "name": "mean_sir_lt_-2",
+              "n_trades": 59,
+              "n_games": 59,
+              "mean_sir": -3.2735358103231373,
+              "mean_pi": -12.203389830508474,
+              "p_settle_yes": 0.6779661016949152,
+              "mean_r": -4.688432810764947,
+              "sign_correct": true,
+              "weighting": "TRADE_BALANCED"
+            }
+          },
+          {
+            "k": 5.0,
+            "positive": {
+              "name": "mean_sir_gt_5",
+              "n_trades": 18,
+              "n_games": 18,
+              "mean_sir": 7.287850089476919,
+              "mean_pi": -2.2222222222222223,
+              "p_settle_yes": 0.7777777777777778,
+              "mean_r": 7.298678063085418,
+              "sign_correct": true,
+              "weighting": "TRADE_BALANCED"
+            },
+            "negative": {
+              "name": "mean_sir_lt_-5",
+              "n_trades": 4,
+              "n_games": 4,
+              "mean_sir": -6.161710734328711,
+              "mean_pi": -30.0,
+              "p_settle_yes": 0.5,
+              "mean_r": -11.923280965322846,
+              "sign_correct": true,
+              "weighting": "TRADE_BALANCED"
+            }
+          },
+          {
+            "k": 10.0,
+            "positive": {
+              "name": "mean_sir_gt_10",
+              "n_trades": 2,
+              "n_games": 2,
+              "mean_sir": 11.104880594712048,
+              "mean_pi": 20.0,
+              "p_settle_yes": 1.0,
+              "mean_r": 26.485727473943165,
+              "sign_correct": true,
+              "weighting": "TRADE_BALANCED"
+            },
+            "negative": {
+              "name": "mean_sir_lt_-10",
+              "n_trades": 0,
+              "n_games": 0,
+              "mean_sir": null,
+              "mean_pi": null,
+              "p_settle_yes": null,
+              "mean_r": null,
+              "sign_correct": null,
+              "weighting": "TRADE_BALANCED"
+            }
+          }
+        ],
+        "n_trades": 481,
+        "weighting": "TRADE_BALANCED"
+      },
+      "OOS": {
+        "baseline": {
+          "name": "abs_sir_lt_1",
+          "n_trades": 71,
+          "n_games": 71,
+          "mean_sir": 0.028442311029142214,
+          "mean_pi": 3.0985915492957745,
+          "p_settle_yes": 0.8309859154929577,
+          "mean_r": -1.4711036026924262,
+          "sign_correct": false,
+          "weighting": "TRADE_BALANCED"
+        },
+        "tails": [
+          {
+            "k": 2.0,
+            "positive": {
+              "name": "mean_sir_gt_2",
+              "n_trades": 59,
+              "n_games": 59,
+              "mean_sir": 3.916681894746022,
+              "mean_pi": 6.440677966101695,
+              "p_settle_yes": 0.864406779661017,
+              "mean_r": 8.7247974181567,
+              "sign_correct": true,
+              "weighting": "TRADE_BALANCED"
+            },
+            "negative": {
+              "name": "mean_sir_lt_-2",
+              "n_trades": 34,
+              "n_games": 34,
+              "mean_sir": -3.5908882758064964,
+              "mean_pi": 2.3529411764705883,
+              "p_settle_yes": 0.8235294117647058,
+              "mean_r": 4.411462936062812,
+              "sign_correct": false,
+              "weighting": "TRADE_BALANCED"
+            }
+          },
+          {
+            "k": 5.0,
+            "positive": {
+              "name": "mean_sir_gt_5",
+              "n_trades": 10,
+              "n_games": 10,
+              "mean_sir": 7.409892056199747,
+              "mean_pi": 0.0,
+              "p_settle_yes": 0.8,
+              "mean_r": 17.15340934816576,
+              "sign_correct": true,
+              "weighting": "TRADE_BALANCED"
+            },
+            "negative": {
+              "name": "mean_sir_lt_-5",
+              "n_trades": 5,
+              "n_games": 5,
+              "mean_sir": -8.00811801689396,
+              "mean_pi": 20.0,
+              "p_settle_yes": 1.0,
+              "mean_r": 22.13875921325188,
+              "sign_correct": false,
+              "weighting": "TRADE_BALANCED"
+            }
+          },
+          {
+            "k": 10.0,
+            "positive": {
+              "name": "mean_sir_gt_10",
+              "n_trades": 0,
+              "n_games": 0,
+              "mean_sir": null,
+              "mean_pi": null,
+              "p_settle_yes": null,
+              "mean_r": null,
+              "sign_correct": null,
+              "weighting": "TRADE_BALANCED"
+            },
+            "negative": {
+              "name": "mean_sir_lt_-10",
+              "n_trades": 1,
+              "n_games": 1,
+              "mean_sir": -11.209808583178733,
+              "mean_pi": 20.0,
+              "p_settle_yes": 1.0,
+              "mean_r": 26.033169577095936,
+              "sign_correct": false,
+              "weighting": "TRADE_BALANCED"
+            }
+          }
+        ],
+        "n_trades": 237,
+        "weighting": "TRADE_BALANCED"
+      }
+    },
+    "note": "Pre-registered cuts. No post-OOS threshold search."
+  },
+  "persistence": {
+    "k": [
+      2.0,
+      5.0,
+      10.0
+    ],
+    "duration_definition": "n_possessions with |da_state| >= k",
+    "persistence_k": 5.0,
+    "persistence_median_min": 3,
+    "by_split": {
+      "TRAIN": {
+        "n_trades": 503,
+        "n_ever_5": 474,
+        "median_duration_k5": 23.0,
+        "median_meets_3": true,
+        "persistent_n": 454,
+        "ephemeral_n": 9,
+        "persistent_mean_pi": -1.3656387665198237,
+        "ephemeral_mean_pi": 20.0,
+        "persistent_mean_r": 0.6367584172463259,
+        "ephemeral_mean_r": 14.33834195730161,
+        "weighting": "TRADE_BALANCED"
+      },
+      "VALIDATION": {
+        "n_trades": 481,
+        "n_ever_5": 453,
+        "median_duration_k5": 22.0,
+        "median_meets_3": true,
+        "persistent_n": 424,
+        "ephemeral_n": 17,
+        "persistent_mean_pi": 1.1320754716981132,
+        "ephemeral_mean_pi": 20.0,
+        "persistent_mean_r": 1.9094624073840123,
+        "ephemeral_mean_r": 9.680819660469066,
+        "weighting": "TRADE_BALANCED"
+      },
+      "OOS": {
+        "n_trades": 237,
+        "n_ever_5": 221,
+        "median_duration_k5": 21.0,
+        "median_meets_3": true,
+        "persistent_n": 206,
+        "ephemeral_n": 6,
+        "persistent_mean_pi": 4.466019417475728,
+        "ephemeral_mean_pi": 20.0,
+        "persistent_mean_r": 4.201185743256463,
+        "ephemeral_mean_r": 8.14966389393068,
+        "weighting": "TRADE_BALANCED"
+      }
+    },
+    "note": "PERSISTENCE \u2260 EXECUTABILITY. Measurement only."
+  },
+  "path": {
+    "k": 5.0,
+    "role": "DIAGNOSTIC_ONLY",
+    "forbidden_in": [
+      "headline",
+      "V6-D",
+      "residual_replication",
+      "rank_replication"
+    ],
+    "by_split": {
+      "TRAIN": {
+        "n_signals": 471,
+        "mean_min_p": 51.717622080679405,
+        "mean_last_p": 77.276008492569,
+        "label": "CANDLE_PATH_PROXY_NOT_PROVEN_FILL",
+        "weighting": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC"
+      },
+      "VALIDATION": {
+        "n_signals": 453,
+        "mean_min_p": 55.76600441501104,
+        "mean_last_p": 79.96467991169978,
+        "label": "CANDLE_PATH_PROXY_NOT_PROVEN_FILL",
+        "weighting": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC"
+      },
+      "OOS": {
+        "n_signals": 221,
+        "mean_min_p": 58.69230769230769,
+        "mean_last_p": 84.42081447963801,
+        "label": "CANDLE_PATH_PROXY_NOT_PROVEN_FILL",
+        "weighting": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC"
+      }
+    },
+    "disclaimer": "OBSERVED CANDLE PATH \u2014 NOT FILL HISTORY",
+    "note": "Must not enter headline or V6-D."
+  },
+  "identity": {
+    "mae_m0_oos": 20.55697546313149,
+    "mae_m1_oos": 20.12797948988682,
+    "delta_mae_oos": 0.4289959732446711,
+    "n_m0_cells": 20,
+    "n_m1_cells": 584
+  },
+  "concentration_not_evidence": "A concentrated distribution of model disagreement is not evidence of predictive information unless the concentrated states also exhibit reproducible OOS separation in terminal payoff or M0 residual.",
+  "material_inventory_note": "5\u00a2 \u00d7 100 contracts = 500\u00a2 = $5.00 research-inventory displacement. Not realizable P&L.",
+  "limitations": [
+    "HARD HALT: UNCLASSIFIED_PRE_REGISTERED_OUTCOME. Not a fifth scientific category.",
+    "\u0394\u03b1_state \u2260 EDGE.",
+    "CONDITIONAL INFORMATION \u2260 EXECUTION.",
+    "CANDLE PATH \u2260 FILL.",
+    "A concentrated distribution of model disagreement is not evidence of predictive information unless the concentrated states also exhibit reproducible OOS separation in terminal payoff or M0 residual.",
+    "V5 Verdict B is historical and immutable.",
+    "Q=100 is research inventory, not the $50 production size.",
+    "OOS top-decile n=12 < 15 coverage minimum \u2192 rank and residual replication INCONCLUSIVE.",
+    "OOS P(|mean_SIR|>=5\u00a2)=0.06329 is not < 0.05, so V6-A does not fire."
+  ],
+  "live_deployment": "NOT AUTHORIZED"
+}

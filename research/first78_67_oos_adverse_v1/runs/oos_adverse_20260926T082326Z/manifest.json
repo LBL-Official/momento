@@ -1,0 +1,38 @@
+{
+  "run_id": "oos_adverse_20260926T082326Z",
+  "git": {
+    "commit": null,
+    "dirty": null,
+    "status": "GIT_UNAVAILABLE"
+  },
+  "python": "3.14.7",
+  "pyarrow": "22.0.0",
+  "protected_sha256": {
+    "ROLLER/roller/research/first80.py": "ba895f677938b8e1a33c2eb5d5a9835e8312a007ad207bcfee25f3f32eecb44f",
+    "research/choosin_texas/library/nba_2q_regular_8040_1lot_2026_27/book.json": "4da5fdd3a48d2a5513ab6e9452657a790514fbef389a05d0385cfaba009b8cf6"
+  },
+  "austin_confirmation_outcomes": "not opened and not hashed",
+  "live_execution": false,
+  "summaries": [
+    {
+      "test_id": "OCT_2025",
+      "candidates": 41,
+      "admitted": 41,
+      "judgment": {
+        "sample_selection": "supports_sign",
+        "execution": "supports_sign"
+      },
+      "coverage_status": "COMPLETE_FOR_NORMALIZED_WAREHOUSE"
+    },
+    {
+      "test_id": "APR_2025",
+      "candidates": 6,
+      "admitted": 6,
+      "judgment": {
+        "sample_selection": "weakens",
+        "execution": "weakens"
+      },
+      "coverage_status": "PARTIAL_RAW_TICKER_SUBSET"
+    }
+  ]
+}

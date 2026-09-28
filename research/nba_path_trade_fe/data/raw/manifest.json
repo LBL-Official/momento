@@ -1,0 +1,24 @@
+{
+  "source": "WAREHOUSE_2025_2026",
+  "observation_basis": "TRADABLE_YES_BID",
+  "observation_resolution": "1_MINUTE_CANDLE",
+  "months": [
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04"
+  ],
+  "n_ticks": 407577,
+  "n_games": 1311,
+  "n_markets": 2622,
+  "warehouse_root": "/Users/user/Desktop/Momento/ROLLER/data/nba/2025_2026/derived/warehouse",
+  "orderbook": "SOURCE_UNAVAILABLE",
+  "tick_data": false,
+  "pbp_pit_aligned_to_candles": false,
+  "candle_path_is_not_a_fill": true,
+  "fee_model": "KALSHI_FEE_MODEL_UNRESOLVED",
+  "note": "Real Kalshi NBA 1m TRADABLE_YES_BID paths. L2 size not present. Score/clock attached later via PBP sequence, not candle PIT. Do not treat as live FIRST01 or a fill."
+}

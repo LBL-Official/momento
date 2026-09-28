@@ -1,0 +1,25 @@
+---
+description: ROLLER warehouse + conditional backtest refactor — NBA-first waterfall through Phase 20 desk
+alwaysApply: true
+---
+
+# ROLLER warehouse refactor (LOCKED)
+
+Governing plan: `research/warehouse_refactor/PLAN.md`.
+
+**NBA first.** Finish every phase for NBA before treating it done. NCAAB/MLB use the same contracts where data exists. They must not invent coverage and must not block the NBA desk. Tennis / NHL / W9 / live / Risk / SuperASI / STAX / UI redesign are out.
+
+**Phases 0–20 are a working NBA research desk**: create a previously unseen NBA strategy in the existing frontend → compile → canonical warehouse → `ResearchContext` → exact conditional backtest → reference = optimized (row-level) → Results (population, W/L, R:R, EV only when basis permits, coverage, audit). 95% CI is not part of this implementation.
+
+Frozen locks are historical evidence, never the mechanism that makes a new strategy executable.
+
+```text
+source_game_id → internal_game_id → Game
+Market → GameMarketLink → Game
+TRADABLE_YES_BID ≠ LAST_TRADE_PRINT
+PBP identity ≠ PIT alignment
+unsupported ≠ substitute
+ZERO RESULTS ≠ DATA_REQUIRED ≠ OPERATION_REQUIRED
+```
+
+Status: Phases 0–20 complete (NBA GameMarketLink, 1-minute TRADABLE_YES_BID observations, PBP sequence-only, Kalshi settlement, orderbook SOURCE_UNAVAILABLE, physical Parquet layout, coverage catalog, ResearchContext, isolated query compiler, conditional backtest, reference ≡ optimized, edge/failure suite, performance, parquet-only warehouse-backed execution, source-driven warehouse ingest, Auto Roller verify, frontend ResearchQuestion construction, full NBA research desk). Confirm & Run remains CSV. Historical L2/tick remain `DATA_REQUIRED`. PBP↔candle PIT remains `OPERATION_REQUIRED`. Candle-path results are not fills and are not live trading. Do not start Phase 21. Do not change Confirm & Run `execute` / `compiler` / `load_dataset`.

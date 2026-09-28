@@ -1,0 +1,10 @@
+trade T0473  NCAAB  Miami (FL) at Florida St.
+contract KXNCAAMBGAME-26FEB24MIAFSU-MIA  slice H2_1
+signal 2026-02-24T19:16:00-08:00 PST  exit 2026-02-24T19:38:00-08:00 PST
+assumed entry 78c  observed close 82c  overshoot 4c
+contracts 8565  principal_cents 668070
+entry_fee_cents 2573  exit_fee_cents 3315
+exit STOP at 67c  terminal yes
+gross_cents -94215  net_cents -100103
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

@@ -1,0 +1,10 @@
+trade T0242  NBA  Miami at Indiana
+contract KXNBAGAME-26JAN10MIAIND-IND  slice Q3
+signal 2026-01-10T16:46:00-08:00 PST  exit 2026-01-10T17:27:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 3963  principal_cents 309114
+entry_fee_cents 1191  exit_fee_cents 1534
+exit STOP at 67c  terminal yes
+gross_cents -43593  net_cents -46318
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

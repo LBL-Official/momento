@@ -1,0 +1,10 @@
+trade T0397  NBA  Golden State at Los Angeles L
+contract KXNBAGAME-26FEB07GSWLAL-LAL  slice Q3
+signal 2026-02-07T19:08:00-08:00 PST  exit 2026-02-07T19:37:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 6673  principal_cents 520494
+entry_fee_cents 2004  exit_fee_cents 2582
+exit STOP at 67c  terminal yes
+gross_cents -73403  net_cents -77989
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

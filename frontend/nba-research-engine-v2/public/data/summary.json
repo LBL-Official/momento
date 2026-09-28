@@ -1,0 +1,72 @@
+{
+  "written_utc": "2026-09-01T19:10:57.214403+00:00",
+  "identity": "NBA_RESEARCH_ENGINE_V2_TEST2",
+  "scientific_verdict": "D",
+  "production_status": "NO FILTER",
+  "reason": "Simple game-state logistic outperforms the full possession/market stack on VAL; neither beats Model 0 Brier. Complex models overfit TRAIN. An exploratory q\u0302<0.30 filter is not promoted (Brier/calibration gates fail).",
+  "q_unconditional": 0.2601626016260163,
+  "ev_unconditional": 0.2195121951219512,
+  "frozen": {
+    "first80": 1230,
+    "survivors": 910,
+    "Y_40_CLOSE": 320
+  },
+  "val_beats_model0": false,
+  "oos_beats_model0": false,
+  "simple_wins": true,
+  "coupling_helps": false,
+  "cluster_sep": true,
+  "cluster_persist": true,
+  "oos_filter_ok": true,
+  "ece_ok": false,
+  "chosen_filter": {
+    "threshold": 0.3,
+    "n_accepted": 135,
+    "acceptance_rate": 0.5844155844155844,
+    "actual_q": 0.2,
+    "ev": 0.3999999999999999,
+    "beats": true,
+    "acc_ok": true
+  },
+  "best_logistic_family": "game_state",
+  "model0_val_brier": 0.18917426579740287,
+  "best_val_brier": 0.1887991650390557,
+  "best_oos_brier": 0.18152889363326846,
+  "phase1_ok": true,
+  "leakage_pass": true,
+  "phase1": {
+    "ok": true,
+    "material_exclusion_bias": false,
+    "primary_n": 1169,
+    "primary_q": 0.2643284858853721,
+    "excluded_n": 54,
+    "delta_q": 0.004165884259355823,
+    "confidence_counts": {
+      "HIGH": 955,
+      "MEDIUM": 214,
+      "UNUSABLE": 51,
+      "LOW": 3
+    }
+  },
+  "features": {
+    "written_utc": "2026-09-01T19:09:09.633808+00:00",
+    "n": 1230,
+    "n_primary": 1169,
+    "n_columns": 201,
+    "n_predictor_metadata": 180
+  },
+  "selection": {
+    "chosen_logistic": "game_state",
+    "beats_model0_val_brier_gate": false,
+    "simple_game_state_wins_val_brier": true,
+    "best_k": 10,
+    "portfolio": {
+      "max_same_day": 14,
+      "mean_same_day": 5.514150943396227,
+      "days": 212,
+      "note": "Research concurrency diagnostic. Not live capital. Not optimized on OOS."
+    },
+    "weekly_first80_primary": 33.26422764227642,
+    "git": null
+  }
+}

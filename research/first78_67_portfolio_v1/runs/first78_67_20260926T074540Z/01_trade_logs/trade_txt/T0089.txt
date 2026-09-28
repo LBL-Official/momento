@@ -1,0 +1,10 @@
+trade T0089  NBA  Memphis at Sacramento
+contract KXNBAGAME-25NOV30MEMSAC-MEM  slice Q3
+signal 2025-11-30T19:30:00-08:00 PST  exit 2025-11-30T19:47:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 2398  principal_cents 187044
+entry_fee_cents 721  exit_fee_cents 928
+exit STOP at 67c  terminal yes
+gross_cents -26378  net_cents -28027
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

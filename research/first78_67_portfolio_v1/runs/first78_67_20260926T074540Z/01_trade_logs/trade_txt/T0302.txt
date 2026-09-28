@@ -1,0 +1,10 @@
+trade T0302  NBA  Los Angeles L at Denver
+contract KXNBAGAME-26JAN20LALDEN-DEN  slice Q3
+signal 2026-01-20T20:32:00-08:00 PST  exit 2026-01-20T20:39:00-08:00 PST
+assumed entry 78c  observed close 83c  overshoot 5c
+contracts 4950  principal_cents 386100
+entry_fee_cents 1487  exit_fee_cents 1916
+exit STOP at 67c  terminal no
+gross_cents -54450  net_cents -57853
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

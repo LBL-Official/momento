@@ -1,0 +1,10 @@
+trade T0392  NCAAB  Alabama at Auburn
+contract KXNCAAMBGAME-26FEB07ALAAUB-AUB  slice H1_2
+signal 2026-02-07T13:55:00-08:00 PST  exit 2026-02-07T13:59:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 6592  principal_cents 514176
+entry_fee_cents 1980  exit_fee_cents 2551
+exit STOP at 67c  terminal no
+gross_cents -72512  net_cents -77043
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

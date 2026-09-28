@@ -1,0 +1,30 @@
+{
+  "experiment": "FIRST78_67_PORTFOLIO_V1",
+  "run_id": "first78_67_20260926T074540Z",
+  "written_utc": "2026-09-26T07:54:54.100651+00:00",
+  "git": {
+    "commit": null,
+    "dirty": null,
+    "status": "GIT_UNAVAILABLE"
+  },
+  "dependency_versions": {
+    "python": "3.14.7",
+    "pyarrow": "22.0.0"
+  },
+  "source_sha256": {
+    "ROLLER/roller/research/first80.py": "ba895f677938b8e1a33c2eb5d5a9835e8312a007ad207bcfee25f3f32eecb44f",
+    "research/choosin_texas/library/nba_2q_regular_8040_1lot_2026_27/book.json": "4da5fdd3a48d2a5513ab6e9452657a790514fbef389a05d0385cfaba009b8cf6",
+    "ROLLER/roller/choosin_texas/locks.py": "473d1d9abb2db32a01b0fd3bb6de1c9beebb1a1f74e4c4b8bac7e320dc7c182c",
+    "research/first80_asked_six_chatgpt_export/first80_asked_six.csv": "28695cfb9cb731dc3076345c9d53c5e5f2c09b2e270228348ec0ed003c6a9329"
+  },
+  "protected_files_not_edited_by_this_study": [
+    "ROLLER/roller/research/first80.py",
+    "research/choosin_texas/library/nba_2q_regular_8040_1lot_2026_27/book.json"
+  ],
+  "austin_confirmation_outcomes": "not opened and not hashed",
+  "headline_files_sha256": {
+    "trades.csv": "3fd57da37f7a12fbf05f993246e500a8d39ffae133f306374ed9019d030125ff",
+    "summary.json": "6f4b0c30f55b262aefa2f0c067759aebd6bdbce4ab4920d41ac719e40b5951c1"
+  },
+  "live_execution": false
+}

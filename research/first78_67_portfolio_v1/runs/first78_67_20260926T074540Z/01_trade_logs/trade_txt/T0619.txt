@@ -1,0 +1,10 @@
+trade T0619  NBA  Houston at Chicago
+contract KXNBAGAME-26MAR23HOUCHI-CHI  slice Q3
+signal 2026-03-23T18:32:00-07:00 PDT  exit 2026-03-23T18:41:00-07:00 PDT
+assumed entry 78c  observed close 85c  overshoot 7c
+contracts 15003  principal_cents 1170234
+entry_fee_cents 4506  exit_fee_cents 5806
+exit STOP at 67c  terminal yes
+gross_cents -165033  net_cents -175345
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

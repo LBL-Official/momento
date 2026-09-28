@@ -1,0 +1,38 @@
+{
+  "test_id": "OCT_2025",
+  "coverage_status": "COMPLETE_FOR_NORMALIZED_WAREHOUSE",
+  "sport_status": {
+    "NBA": "HAS_CANDIDATES",
+    "NBA_events_in_window": 97,
+    "NCAAB": "NO_ELIGIBLE_GAMES",
+    "NCAAB_events_in_window": 0
+  },
+  "candidates": 44,
+  "admitted": 44,
+  "unresolved": 0,
+  "intrabar_ambiguity": 4,
+  "ref_net_cents": 344197,
+  "adverse_net_cents": 23441,
+  "mean_net_cents_per_contract": 5.005900682492711,
+  "adverse_mean": 0.5833784790347265,
+  "judgment": {
+    "sample_selection": "supports_sign",
+    "execution": "supports_sign"
+  },
+  "inference_ref": {
+    "status": "ESTIMATED",
+    "n_days": 13,
+    "observed_mean_cents_per_contract": 5.005900682492711,
+    "one_sided_p": 0.061938061938061936,
+    "draws_used": 1000,
+    "null": "centered studentized cluster bootstrap"
+  },
+  "inference_adverse": {
+    "status": "ESTIMATED",
+    "n_days": 13,
+    "observed_mean_cents_per_contract": 0.5833784790347265,
+    "one_sided_p": 0.41358641358641357,
+    "draws_used": 1000,
+    "null": "centered studentized cluster bootstrap"
+  }
+}

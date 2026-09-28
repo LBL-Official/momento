@@ -1,0 +1,104 @@
+{
+  "top": [
+    {
+      "id": "ENTRY_BAND_80_83|HORIZON_1M|score_bucket=MULTI_RUN&start_move_tertile=LOW",
+      "month_concentration": 0.17490494296577946,
+      "one_month_domination": false
+    },
+    {
+      "id": "ENTRY_BAND_80_83|HORIZON_1M|score_bucket=MULTI_RUN",
+      "month_concentration": 0.16329225352112675,
+      "one_month_domination": false
+    },
+    {
+      "id": "ENTRY_BAND_80_83|HORIZON_5M|score_bucket=MULTI_RUN",
+      "month_concentration": 0.1580372250423012,
+      "one_month_domination": false
+    },
+    {
+      "id": "ENTRY_BAND_80_83|HORIZON_30M|score_bucket=MULTI_RUN&start_move_tertile=LOW",
+      "month_concentration": 0.20302375809935205,
+      "one_month_domination": false
+    },
+    {
+      "id": "ENTRY_BAND_80_83|HORIZON_5M|score_bucket=MULTI_RUN&start_move_tertile=LOW",
+      "month_concentration": 0.18565400843881857,
+      "one_month_domination": false
+    },
+    {
+      "id": "ENTRY_81|HOLD_TO_SETTLEMENT|personality=CHOPPY&vol_5m_tertile=MID",
+      "month_concentration": 0.46589018302828616,
+      "one_month_domination": false
+    },
+    {
+      "id": "ENTRY_BAND_80_83|HORIZON_5M|lead_regime=LEAD",
+      "month_concentration": 0.18358340688437777,
+      "one_month_domination": false
+    },
+    {
+      "id": "ENTRY_BAND_80_83|HORIZON_15M|score_bucket=MULTI_RUN&start_move_tertile=LOW",
+      "month_concentration": 0.2142064372918979,
+      "one_month_domination": false
+    },
+    {
+      "id": "ENTRY_BAND_80_83|HOLD_TO_SETTLEMENT|score_bucket=MULTI_RUN",
+      "month_concentration": 0.40339082139725224,
+      "one_month_domination": false
+    },
+    {
+      "id": "ENTRY_81|HOLD_TO_SETTLEMENT|vol_5m_tertile=MID",
+      "month_concentration": 0.4438848920863309,
+      "one_month_domination": false
+    },
+    {
+      "id": "ENTRY_81|HORIZON_5M|score_bucket=MULTI_RUN&start_move_tertile=LOW",
+      "month_concentration": 0.225,
+      "one_month_domination": false
+    },
+    {
+      "id": "ENTRY_83|HORIZON_5M|score_bucket=MULTI_RUN",
+      "month_concentration": 0.19393939393939394,
+      "one_month_domination": false
+    },
+    {
+      "id": "ENTRY_BAND_80_83|HORIZON_15M|score_bucket=MULTI_RUN",
+      "month_concentration": 0.2086376627500794,
+      "one_month_domination": false
+    },
+    {
+      "id": "ENTRY_BAND_80_83|HORIZON_5M|regime=MID_LEAD",
+      "month_concentration": 0.19957424161788184,
+      "one_month_domination": false
+    },
+    {
+      "id": "ENTRY_BAND_80_83|HOLD_TO_SETTLEMENT|lead_regime=LEAD",
+      "month_concentration": 0.23261648745519714,
+      "one_month_domination": false
+    },
+    {
+      "id": "ENTRY_BAND_80_83|HORIZON_1M|lead_regime=LEAD",
+      "month_concentration": 0.18127727092423643,
+      "one_month_domination": false
+    },
+    {
+      "id": "ENTRY_81|HORIZON_5M|score_bucket=MULTI_RUN",
+      "month_concentration": 0.2530755711775044,
+      "one_month_domination": false
+    },
+    {
+      "id": "ENTRY_81|HORIZON_1M|score_bucket=MULTI_RUN&start_move_tertile=LOW",
+      "month_concentration": 0.40522875816993464,
+      "one_month_domination": false
+    },
+    {
+      "id": "ENTRY_BAND_80_83|HORIZON_30M|score_bucket=MULTI_RUN",
+      "month_concentration": 0.21566666666666667,
+      "one_month_domination": false
+    },
+    {
+      "id": "ENTRY_81|HORIZON_5M|lead_regime=LEAD",
+      "month_concentration": 0.25227963525835867,
+      "one_month_domination": false
+    }
+  ]
+}

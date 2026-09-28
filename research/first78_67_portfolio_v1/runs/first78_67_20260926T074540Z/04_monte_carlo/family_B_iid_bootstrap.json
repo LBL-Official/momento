@@ -1,0 +1,13 @@
+{
+  "family": "B",
+  "method": "iid_bootstrap_with_replacement_of_admitted_net_pnl",
+  "draws": 5000,
+  "seed": 67,
+  "label": "REDUCED_FORM_DIAGNOSTIC",
+  "cannot_validate_seven_slot_calendar_portfolio": true,
+  "ending_equity_p05": 20004431,
+  "ending_equity_p50": 25498683,
+  "ending_equity_p95": 31225550,
+  "p_ending_below_start": 0.0,
+  "note": "Sample composition changes. This is not a calendar-block portfolio path."
+}

@@ -1,0 +1,70 @@
+{
+  "family": [
+    {
+      "test_id": "OCT_2025",
+      "scenario_id": "REF",
+      "mean_net_cents_per_contract": 5.005900682492711,
+      "p_status": "ESTIMATED",
+      "p_value": 0.061938061938061936,
+      "n_days": 13,
+      "population_id": "PRIMARY_EX_ANTE_FIRST78",
+      "run_id": "audit_repair_20260926T090447Z",
+      "sport": "ALL"
+    },
+    {
+      "test_id": "OCT_2025",
+      "scenario_id": "JOINT_2_FEE_007",
+      "mean_net_cents_per_contract": 0.5833784790347265,
+      "p_status": "ESTIMATED",
+      "p_value": 0.41358641358641357,
+      "n_days": 13,
+      "population_id": "PRIMARY_EX_ANTE_FIRST78",
+      "run_id": "audit_repair_20260926T090447Z",
+      "sport": "ALL"
+    },
+    {
+      "test_id": "APR_2025",
+      "scenario_id": "REF",
+      "mean_net_cents_per_contract": -0.5587342869527525,
+      "p_status": "P_VALUE_NOT_ESTIMABLE",
+      "p_value": null,
+      "n_days": 4,
+      "population_id": "PRIMARY_EX_ANTE_FIRST78",
+      "run_id": "audit_repair_20260926T090447Z",
+      "sport": "ALL"
+    },
+    {
+      "test_id": "APR_2025",
+      "scenario_id": "JOINT_2_FEE_007",
+      "mean_net_cents_per_contract": -5.5151111111111115,
+      "p_status": "P_VALUE_NOT_ESTIMABLE",
+      "p_value": null,
+      "n_days": 4,
+      "population_id": "PRIMARY_EX_ANTE_FIRST78",
+      "run_id": "audit_repair_20260926T090447Z",
+      "sport": "ALL"
+    }
+  ],
+  "holm": [
+    {
+      "endpoint": "OCT_2025:REF",
+      "raw_p": 0.061938061938061936,
+      "holm_p": 0.12387612387612387
+    },
+    {
+      "endpoint": "OCT_2025:JOINT_2_FEE_007",
+      "raw_p": 0.41358641358641357,
+      "holm_p": 0.41358641358641357
+    }
+  ],
+  "excluded": [
+    {
+      "endpoint": "APR_2025:REF",
+      "reason": "P_VALUE_NOT_ESTIMABLE"
+    },
+    {
+      "endpoint": "APR_2025:JOINT_2_FEE_007",
+      "reason": "P_VALUE_NOT_ESTIMABLE"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+"""SuperASI Phase A — Base. Research consumer of Roller Labs CSVs.
+
+LIVE EXECUTION = FALSE
+CANDLE PATH ≠ FILL
+MODE A IS THE INSTRUMENT, NOT THE LETTER GRADE
+"""
+
+from roller.superasi.base.versions import GRADE_CONFIG_VERSION, SUPERASI_BASE_VERSION
+
+__all__ = ["GRADE_CONFIG_VERSION", "SUPERASI_BASE_VERSION"]

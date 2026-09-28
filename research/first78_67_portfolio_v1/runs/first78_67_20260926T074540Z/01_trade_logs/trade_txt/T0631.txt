@@ -1,0 +1,10 @@
+trade T0631  NCAAB  Tennessee at Iowa St.
+contract KXNCAAMBGAME-26MAR27TENNISU-TENN  slice H2_1
+signal 2026-03-27T21:03:00-07:00 PDT  exit 2026-03-27T21:55:18-07:00 PDT
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 16171  principal_cents 1261338
+entry_fee_cents 4857  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 355762  net_cents 350905
+strategy_result POSITIVE  net_r 1.856689330405566284822349798
+Assumed fill. Not a maker fill. Not live P&L.

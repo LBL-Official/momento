@@ -1,0 +1,74 @@
+# FIRST80_MULTIDIMENSIONAL_EXIT_HEDGE_FEE_ENGINE_V2
+# Reproducible research config. Does not arm live trading.
+program: FIRST80_MULTIDIMENSIONAL_EXIT_HEDGE_FEE_ENGINE_V2
+live_execution_changed: false
+universes:
+  nba:
+    series: KXNBAGAME
+    expected: {n: 1230, survivors: 910, stops: 320, leaks: 0, surv_pct: 73.9837}
+  ncaab:
+    series: KXNCAAMBGAME
+    expected: {n: 4099, survivors: 2998, stops: 1099, leaks: 2, surv_pct: 73.1398}
+splits:
+  train: IN_SAMPLE   # game_date <= 2025-12-31
+  validation: VALIDATION  # <= 2026-03-15
+  oos: OOS
+  ncaab_oos_min_n: 100
+entry_cents: 80
+settlement_fee_cents: 0.0
+thresholds: [75, 70, 65, 60, 55, 50, 45, 40, 35, 30, 25, 20, 15, 10, 5]
+exit_grid: [40, 35, 30, 25, 20, 15, 10, 5]
+hedge_grid: [40, 35, 30, 25, 20, 15, 10, 5]
+persist_grid: [1, 2, 3, 5]
+fill_grid: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+hedge_ratios: [0.0, 0.25, 0.5, 0.75, 1.0]
+fees:
+  taker_coef: 0.07
+  maker_coef: 0.0175
+  multiplier: 1.0
+  scenarios:
+    CURRENT_BASE_CASE: {entry: M0, taker_mult: 1.0, hedge_maker: M0}
+    CONSERVATIVE_FEE_STRESS: {entry: M2, taker_mult: 1.0, hedge_maker: M1}
+    HIGHER_FUTURE_FEE_STRESS: {entry: M2, taker_mult: 1.5, hedge_maker: M2}
+  entry:
+    M0: 0.0
+    M1: maker_quadratic   # 0.0175 at 80
+    M2: maker_quadratic_x2
+monte_carlo:
+  n_exit_sims: 10000
+  n_season_sims: 10000
+  seed: 20260903
+  contracts_per_trade: 7
+  bankroll_dollars: 50.0
+  max_concurrent: 5
+hierarchical:
+  phase1_descriptive: true
+  phase2_univariate: true
+  phase3_twod: true
+  phase4_frontier: true
+  brute_force_full_cross: false
+labels:
+  survival: A
+  trigger_candle_exit: B
+  ioc_realized_fill: C
+  maker_fill_probability: D
+nba_pbp:
+  available: true
+  season: 2025-2026
+  provider: NBA.com playbyplayv3 + cdn.nba.com liveData playbyplay
+  live_execution_changed: false
+  join_into_v2_ev: false
+  copy_policy: SYMLINK_NO_DUPLICATE
+  canonical_raw: Backtesting Suite/Data/NBA/2025-2026/warehouse/raw/nba_stats/pbp_v3
+  canonical_raw_live: Backtesting Suite/Data/NBA/2025-2026/warehouse/raw/nba_stats/pbp_live
+  canonical_box: Backtesting Suite/Data/NBA/2025-2026/warehouse/raw/nba_stats/boxscore_summary
+  canonical_crosswalk: Backtesting Suite/Data/NBA/2025-2026/warehouse/normalized/nba/pbp/game_crosswalk.json
+  local_pointer: Backtesting Suite/Data/NBA/2025-2026/warehouse/derived/nba/first80_multidimensional_exit_hedge_fee_v2/pbp
+  files_v3: 1352
+  files_live: 1352
+  first80_with_pbp_file: 1223
+  first80_with_live_timeActual: 1223
+  first80_unmatched_crosswalk: 7
+  per_play_wall_clock: PRESENT on live CDN actions (timeActual). Not on V3.
+  period_game_clock: PRESENT
+  live_ingest: apps/nba-data/scripts/nba_pbp_live_timeactual_ingest.py

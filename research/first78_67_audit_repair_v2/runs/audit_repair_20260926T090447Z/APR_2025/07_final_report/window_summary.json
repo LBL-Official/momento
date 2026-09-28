@@ -1,0 +1,33 @@
+{
+  "test_id": "APR_2025",
+  "coverage_status": "PARTIAL_RAW_TICKER_SUBSET",
+  "sport_status": {
+    "NBA": "HAS_CANDIDATES",
+    "NBA_events_in_window": 44,
+    "NCAAB": "COVERAGE_UNKNOWN",
+    "NCAAB_markets_in_window": 0,
+    "NCAAB_note": "no 25APR event dates; candlesticks absent"
+  },
+  "candidates": 6,
+  "admitted": 6,
+  "unresolved": 0,
+  "intrabar_ambiguity": 0,
+  "ref_net_cents": -5156,
+  "adverse_net_cents": -49636,
+  "mean_net_cents_per_contract": -0.5587342869527525,
+  "adverse_mean": -5.5151111111111115,
+  "judgment": {
+    "sample_selection": "weakens",
+    "execution": "weakens"
+  },
+  "inference_ref": {
+    "status": "P_VALUE_NOT_ESTIMABLE",
+    "reason": "INSUFFICIENT_EVIDENCE",
+    "n_days": 4
+  },
+  "inference_adverse": {
+    "status": "P_VALUE_NOT_ESTIMABLE",
+    "reason": "INSUFFICIENT_EVIDENCE",
+    "n_days": 4
+  }
+}

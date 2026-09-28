@@ -1,0 +1,98 @@
+[
+  {
+    "condition": "inning_grp=7&p_max_vs_83=PEAK_AT",
+    "n_games": 138,
+    "null": "shuffle game P&L; keep membership size",
+    "observed_mean_pnl_cents": 47.98550724637681,
+    "permutation_p_ge_obs": 0.01999000499750125,
+    "reps": 2000
+  },
+  {
+    "condition": "p_start_fine=45_49&lead_signed=LEAD_2",
+    "n_games": 141,
+    "null": "shuffle game P&L; keep membership size",
+    "observed_mean_pnl_cents": 34.60283687943262,
+    "permutation_p_ge_obs": 0.07296351824087956,
+    "reps": 2000
+  },
+  {
+    "condition": "p_start_fine=45_49&score_bucket=TWO_RUN",
+    "n_games": 141,
+    "null": "shuffle game P&L; keep membership size",
+    "observed_mean_pnl_cents": 34.60283687943262,
+    "permutation_p_ge_obs": 0.07296351824087956,
+    "reps": 2000
+  },
+  {
+    "condition": "p_start_45_49=YES&lead_signed=LEAD_2",
+    "n_games": 141,
+    "null": "shuffle game P&L; keep membership size",
+    "observed_mean_pnl_cents": 34.60283687943262,
+    "permutation_p_ge_obs": 0.07296351824087956,
+    "reps": 2000
+  },
+  {
+    "condition": "p_start_45_49=YES&score_bucket=TWO_RUN",
+    "n_games": 141,
+    "null": "shuffle game P&L; keep membership size",
+    "observed_mean_pnl_cents": 34.60283687943262,
+    "permutation_p_ge_obs": 0.07296351824087956,
+    "reps": 2000
+  },
+  {
+    "condition": "p_start_lt50=YES&inning_83=LATE_6_7",
+    "n_games": 275,
+    "null": "shuffle game P&L; keep membership size",
+    "observed_mean_pnl_cents": 47.72727272727273,
+    "permutation_p_ge_obs": 0.0009995002498750624,
+    "reps": 2000
+  },
+  {
+    "condition": "p_start_ge50=NO&inning_83=LATE_6_7",
+    "n_games": 275,
+    "null": "shuffle game P&L; keep membership size",
+    "observed_mean_pnl_cents": 47.72727272727273,
+    "permutation_p_ge_obs": 0.0009995002498750624,
+    "reps": 2000
+  },
+  {
+    "condition": "p_start_tertile=LOW&inning_83=LATE_6_7",
+    "n_games": 275,
+    "null": "shuffle game P&L; keep membership size",
+    "observed_mean_pnl_cents": 47.72727272727273,
+    "permutation_p_ge_obs": 0.0009995002498750624,
+    "reps": 2000
+  },
+  {
+    "condition": "base_class=BASES_EMPTY&move_fine=GE_40",
+    "n_games": 201,
+    "null": "shuffle game P&L; keep membership size",
+    "observed_mean_pnl_cents": 35.417910447761194,
+    "permutation_p_ge_obs": 0.04047976011994003,
+    "reps": 2000
+  },
+  {
+    "condition": "inning_grp=7&vol_1m_tertile=LOW",
+    "n_games": 166,
+    "null": "shuffle game P&L; keep membership size",
+    "observed_mean_pnl_cents": 55.746987951807235,
+    "permutation_p_ge_obs": 0.001999000499750125,
+    "reps": 2000
+  },
+  {
+    "condition": "p_start_fine=40_44&p_max_vs_83=PEAK_AT",
+    "n_games": 175,
+    "null": "shuffle game P&L; keep membership size",
+    "observed_mean_pnl_cents": 47.0,
+    "permutation_p_ge_obs": 0.014492753623188406,
+    "reps": 2000
+  },
+  {
+    "condition": "p_start_40_44=YES&p_max_vs_83=PEAK_AT",
+    "n_games": 175,
+    "null": "shuffle game P&L; keep membership size",
+    "observed_mean_pnl_cents": 47.0,
+    "permutation_p_ge_obs": 0.014492753623188406,
+    "reps": 2000
+  }
+]

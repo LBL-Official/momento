@@ -1,0 +1,10 @@
+trade T0087  NBA  Denver at Phoenix
+contract KXNBAGAME-25NOV29DENPHX-DEN  slice Q3
+signal 2025-11-29T19:27:00-08:00 PST  exit 2025-11-29T20:38:59-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 2398  principal_cents 187044
+entry_fee_cents 721  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 52756  net_cents 52035
+strategy_result POSITIVE  net_r 1.856602561815392300281871053
+Assumed fill. Not a maker fill. Not live P&L.

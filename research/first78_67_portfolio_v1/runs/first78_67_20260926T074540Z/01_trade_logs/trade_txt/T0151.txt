@@ -1,0 +1,10 @@
+trade T0151  NBA  Portland at Sacramento
+contract KXNBAGAME-25DEC20PORSAC-POR  slice Q3
+signal 2025-12-20T20:34:00-08:00 PST  exit 2025-12-20T20:42:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 3025  principal_cents 235950
+entry_fee_cents 909  exit_fee_cents 1171
+exit STOP at 67c  terminal yes
+gross_cents -33275  net_cents -35355
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

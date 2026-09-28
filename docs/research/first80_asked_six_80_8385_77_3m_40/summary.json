@@ -1,0 +1,406 @@
+{
+  "generated_at_utc": "2026-09-07T18:52:26.338488+00:00",
+  "rule": {
+    "universe": "asked-six FIRST80 (NBA Q2\u222aQ3, WNBA Q2\u222aQ3, NCAAB P5 H1_2\u222aH2_1)",
+    "path": "first80 \u2192 close\u2208[83,85] \u2192 close\u226477 within 3 minutes of first80; reject if close>85 before entry",
+    "buy": "77\u00a2 (assumed on first \u226477 close)",
+    "exit": "first later close \u226440 else hold to expiration",
+    "pnl": {
+      "WIN": 23,
+      "STOP_40": -37,
+      "LOSS_HOLD": -77
+    },
+    "path_basis": "tradable yes_bid_close, quality filter, 1m candles",
+    "fees": "ZERO",
+    "fills": "NOT MODELED \u2014 candle path only"
+  },
+  "identity": {
+    "asked_six_by_sport": {
+      "NBA": 604,
+      "WNBA": 246,
+      "NCAAB": 332
+    },
+    "asked_six_total": 1182,
+    "halted": false
+  },
+  "funnel": {
+    "asked_six_n": 1182,
+    "qualified_n": 20,
+    "qualify_rate_pct": 1.692,
+    "rejects": {
+      "NO_PEAK_83_85": 507,
+      "PEAK_ABOVE_85": 326,
+      "NO_REVERT_77": 329,
+      "QUALIFIED": 20
+    }
+  },
+  "backtest_pooled": {
+    "n": 20,
+    "WIN": 13,
+    "STOP_40": 7,
+    "LOSS_HOLD": 0,
+    "p_win_pct": 65.0,
+    "p_win_ci95": [
+      43.2851,
+      81.881
+    ],
+    "p_stop_pct": 35.0,
+    "p_loss_hold_pct": 0.0,
+    "sum_pnl_cents": 40,
+    "ev_cents": 2.0,
+    "ev_pct_of_77_debit": 2.5974,
+    "label": "GROSS CANDLE PATH \u2014 BUY@77 / STOP@40 / HOLD \u2014 ZERO FEE \u2014 NOT A FILL"
+  },
+  "by_sport": {
+    "NBA": {
+      "funnel": {
+        "asked_six_n": 604,
+        "qualified_n": 13,
+        "qualify_rate_pct": 2.1523,
+        "rejects": {
+          "NO_PEAK_83_85": 270,
+          "PEAK_ABOVE_85": 151,
+          "NO_REVERT_77": 170,
+          "QUALIFIED": 13
+        }
+      },
+      "backtest": {
+        "n": 13,
+        "WIN": 8,
+        "STOP_40": 5,
+        "LOSS_HOLD": 0,
+        "p_win_pct": 61.5385,
+        "p_win_ci95": [
+          35.5225,
+          82.2906
+        ],
+        "p_stop_pct": 38.4615,
+        "p_loss_hold_pct": 0.0,
+        "sum_pnl_cents": -1,
+        "ev_cents": -0.0769,
+        "ev_pct_of_77_debit": -0.0999,
+        "label": "GROSS CANDLE PATH \u2014 BUY@77 / STOP@40 / HOLD \u2014 ZERO FEE \u2014 NOT A FILL"
+      },
+      "by_slice": {
+        "Q2": {
+          "n": 7,
+          "WIN": 5,
+          "STOP_40": 2,
+          "LOSS_HOLD": 0,
+          "p_win_pct": 71.4286,
+          "p_win_ci95": [
+            35.8929,
+            91.7783
+          ],
+          "p_stop_pct": 28.5714,
+          "p_loss_hold_pct": 0.0,
+          "sum_pnl_cents": 41,
+          "ev_cents": 5.8571,
+          "ev_pct_of_77_debit": 7.6067,
+          "label": "GROSS CANDLE PATH \u2014 BUY@77 / STOP@40 / HOLD \u2014 ZERO FEE \u2014 NOT A FILL"
+        },
+        "Q3": {
+          "n": 6,
+          "WIN": 3,
+          "STOP_40": 3,
+          "LOSS_HOLD": 0,
+          "p_win_pct": 50.0,
+          "p_win_ci95": [
+            18.7613,
+            81.2387
+          ],
+          "p_stop_pct": 50.0,
+          "p_loss_hold_pct": 0.0,
+          "sum_pnl_cents": -42,
+          "ev_cents": -7.0,
+          "ev_pct_of_77_debit": -9.0909,
+          "label": "GROSS CANDLE PATH \u2014 BUY@77 / STOP@40 / HOLD \u2014 ZERO FEE \u2014 NOT A FILL"
+        }
+      }
+    },
+    "WNBA": {
+      "funnel": {
+        "asked_six_n": 246,
+        "qualified_n": 3,
+        "qualify_rate_pct": 1.2195,
+        "rejects": {
+          "NO_REVERT_77": 59,
+          "PEAK_ABOVE_85": 81,
+          "QUALIFIED": 3,
+          "NO_PEAK_83_85": 103
+        }
+      },
+      "backtest": {
+        "n": 3,
+        "WIN": 3,
+        "STOP_40": 0,
+        "LOSS_HOLD": 0,
+        "p_win_pct": 100.0,
+        "p_win_ci95": [
+          43.8494,
+          100.0
+        ],
+        "p_stop_pct": 0.0,
+        "p_loss_hold_pct": 0.0,
+        "sum_pnl_cents": 69,
+        "ev_cents": 23.0,
+        "ev_pct_of_77_debit": 29.8701,
+        "label": "GROSS CANDLE PATH \u2014 BUY@77 / STOP@40 / HOLD \u2014 ZERO FEE \u2014 NOT A FILL"
+      },
+      "by_slice": {
+        "Q2": {
+          "n": 2,
+          "WIN": 2,
+          "STOP_40": 0,
+          "LOSS_HOLD": 0,
+          "p_win_pct": 100.0,
+          "p_win_ci95": [
+            34.2372,
+            100.0
+          ],
+          "p_stop_pct": 0.0,
+          "p_loss_hold_pct": 0.0,
+          "sum_pnl_cents": 46,
+          "ev_cents": 23.0,
+          "ev_pct_of_77_debit": 29.8701,
+          "label": "GROSS CANDLE PATH \u2014 BUY@77 / STOP@40 / HOLD \u2014 ZERO FEE \u2014 NOT A FILL"
+        },
+        "Q3": {
+          "n": 1,
+          "WIN": 1,
+          "STOP_40": 0,
+          "LOSS_HOLD": 0,
+          "p_win_pct": 100.0,
+          "p_win_ci95": [
+            20.6543,
+            100.0
+          ],
+          "p_stop_pct": 0.0,
+          "p_loss_hold_pct": 0.0,
+          "sum_pnl_cents": 23,
+          "ev_cents": 23.0,
+          "ev_pct_of_77_debit": 29.8701,
+          "label": "GROSS CANDLE PATH \u2014 BUY@77 / STOP@40 / HOLD \u2014 ZERO FEE \u2014 NOT A FILL"
+        }
+      }
+    },
+    "NCAAB": {
+      "funnel": {
+        "asked_six_n": 332,
+        "qualified_n": 4,
+        "qualify_rate_pct": 1.2048,
+        "rejects": {
+          "NO_PEAK_83_85": 134,
+          "PEAK_ABOVE_85": 94,
+          "NO_REVERT_77": 100,
+          "QUALIFIED": 4
+        }
+      },
+      "backtest": {
+        "n": 4,
+        "WIN": 2,
+        "STOP_40": 2,
+        "LOSS_HOLD": 0,
+        "p_win_pct": 50.0,
+        "p_win_ci95": [
+          15.0036,
+          84.9964
+        ],
+        "p_stop_pct": 50.0,
+        "p_loss_hold_pct": 0.0,
+        "sum_pnl_cents": -28,
+        "ev_cents": -7.0,
+        "ev_pct_of_77_debit": -9.0909,
+        "label": "GROSS CANDLE PATH \u2014 BUY@77 / STOP@40 / HOLD \u2014 ZERO FEE \u2014 NOT A FILL"
+      },
+      "by_slice": {
+        "H2_1": {
+          "n": 4,
+          "WIN": 2,
+          "STOP_40": 2,
+          "LOSS_HOLD": 0,
+          "p_win_pct": 50.0,
+          "p_win_ci95": [
+            15.0036,
+            84.9964
+          ],
+          "p_stop_pct": 50.0,
+          "p_loss_hold_pct": 0.0,
+          "sum_pnl_cents": -28,
+          "ev_cents": -7.0,
+          "ev_pct_of_77_debit": -9.0909,
+          "label": "GROSS CANDLE PATH \u2014 BUY@77 / STOP@40 / HOLD \u2014 ZERO FEE \u2014 NOT A FILL"
+        }
+      }
+    }
+  },
+  "portfolio_historical": {
+    "start_cents": 2000000,
+    "end_cents": 2044955,
+    "end_dollars": 20449.55,
+    "multiple": 1.0225,
+    "taken_bets": 20,
+    "dropped_cap": 0,
+    "active_days": 18,
+    "calendar_days": 18,
+    "max_drawdown_cents": -171796,
+    "max_drawdown_pct_of_peak": -7.934,
+    "fraction_pct_per_bet": 5,
+    "max_per_sport_per_day": 6,
+    "entry_cents": 77
+  },
+  "portfolio_historical_equity": [
+    {
+      "date": null,
+      "bankroll_cents": 2000000,
+      "taken": 0,
+      "pnl_cents": 0
+    },
+    {
+      "date": "2025-08-01",
+      "bankroll_cents": 2029854,
+      "taken": 1,
+      "pnl_cents": 29854,
+      "sod_cents": 2000000
+    },
+    {
+      "date": "2025-08-15",
+      "bankroll_cents": 2060168,
+      "taken": 1,
+      "pnl_cents": 30314,
+      "sod_cents": 2029854
+    },
+    {
+      "date": "2025-10-25",
+      "bankroll_cents": 2090919,
+      "taken": 1,
+      "pnl_cents": 30751,
+      "sod_cents": 2060168
+    },
+    {
+      "date": "2025-11-03",
+      "bankroll_cents": 2040710,
+      "taken": 1,
+      "pnl_cents": -50209,
+      "sod_cents": 2090919
+    },
+    {
+      "date": "2025-12-07",
+      "bankroll_cents": 2071185,
+      "taken": 1,
+      "pnl_cents": 30475,
+      "sod_cents": 2040710
+    },
+    {
+      "date": "2025-12-21",
+      "bankroll_cents": 2102097,
+      "taken": 1,
+      "pnl_cents": 30912,
+      "sod_cents": 2071185
+    },
+    {
+      "date": "2025-12-23",
+      "bankroll_cents": 2133469,
+      "taken": 1,
+      "pnl_cents": 31372,
+      "sod_cents": 2102097
+    },
+    {
+      "date": "2025-12-30",
+      "bankroll_cents": 2165324,
+      "taken": 1,
+      "pnl_cents": 31855,
+      "sod_cents": 2133469
+    },
+    {
+      "date": "2026-01-10",
+      "bankroll_cents": 2113302,
+      "taken": 1,
+      "pnl_cents": -52022,
+      "sod_cents": 2165324
+    },
+    {
+      "date": "2026-01-28",
+      "bankroll_cents": 2094094,
+      "taken": 2,
+      "pnl_cents": -19208,
+      "sod_cents": 2113302
+    },
+    {
+      "date": "2026-02-04",
+      "bankroll_cents": 1993528,
+      "taken": 2,
+      "pnl_cents": -100566,
+      "sod_cents": 2094094
+    },
+    {
+      "date": "2026-03-03",
+      "bankroll_cents": 2023290,
+      "taken": 1,
+      "pnl_cents": 29762,
+      "sod_cents": 1993528
+    },
+    {
+      "date": "2026-03-08",
+      "bankroll_cents": 2053489,
+      "taken": 1,
+      "pnl_cents": 30199,
+      "sod_cents": 2023290
+    },
+    {
+      "date": "2026-03-10",
+      "bankroll_cents": 2004168,
+      "taken": 1,
+      "pnl_cents": -49321,
+      "sod_cents": 2053489
+    },
+    {
+      "date": "2026-03-12",
+      "bankroll_cents": 2034091,
+      "taken": 1,
+      "pnl_cents": 29923,
+      "sod_cents": 2004168
+    },
+    {
+      "date": "2026-03-20",
+      "bankroll_cents": 2064451,
+      "taken": 1,
+      "pnl_cents": 30360,
+      "sod_cents": 2034091
+    },
+    {
+      "date": "2026-04-24",
+      "bankroll_cents": 2014871,
+      "taken": 1,
+      "pnl_cents": -49580,
+      "sod_cents": 2064451
+    },
+    {
+      "date": "2026-06-27",
+      "bankroll_cents": 2044955,
+      "taken": 1,
+      "pnl_cents": 30084,
+      "sod_cents": 2014871
+    }
+  ],
+  "portfolio_monte_carlo": {
+    "n_sim": 10000,
+    "seed": 20260907,
+    "arrival": "observed qualifying days with 6/sport cap",
+    "outcome_mix": "bootstrap of realized +23/\u221237/\u221277 path P&L",
+    "end_median_cents": 2045730,
+    "end_mean_cents": 2052309,
+    "end_p05_cents": 1816666,
+    "end_p25_cents": 1965363,
+    "end_p75_cents": 2128647,
+    "end_p95_cents": 2301852,
+    "end_median_dollars": 20457.3,
+    "end_p05_dollars": 18166.66,
+    "end_p95_dollars": 23018.52,
+    "multiple_median": 1.0229,
+    "p_end_above_start_pct": 59.8,
+    "p_end_below_half_pct": 0.0,
+    "p_touch_below_5k_pct": 0.0,
+    "max_dd_median_cents": -145669
+  }
+}

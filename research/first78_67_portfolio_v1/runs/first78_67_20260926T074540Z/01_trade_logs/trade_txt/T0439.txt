@@ -1,0 +1,10 @@
+trade T0439  NCAAB  Rutgers at Penn St.
+contract KXNCAAMBGAME-26FEB18RUTGPSU-RUTG  slice H1_2
+signal 2026-02-18T15:37:00-08:00 PST  exit 2026-02-18T17:29:18-08:00 PST
+assumed entry 78c  observed close 84c  overshoot 6c
+contracts 7379  principal_cents 575562
+entry_fee_cents 2216  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 162338  net_cents 160122
+strategy_result POSITIVE  net_r 1.856680697116220823042404425
+Assumed fill. Not a maker fill. Not live P&L.

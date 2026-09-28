@@ -1,0 +1,11 @@
+"""Jump — Data Modeling research filesystem.
+
+LIVE EXECUTION = FALSE
+CANDLE PATH ≠ ACTUAL FILL
+SPORT-FIRST DRIVE
+POINTERS ONLY
+"""
+
+from roller.jump.versions import CODE_VERSION, PHASE_STATUS, SCHEMA_VERSION
+
+__all__ = ["CODE_VERSION", "PHASE_STATUS", "SCHEMA_VERSION"]

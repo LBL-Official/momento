@@ -1,0 +1,10 @@
+trade T0373  NCAAB  Indiana at USC
+contract KXNCAAMBGAME-26FEB03INDUSC-USC  slice H2_1
+signal 2026-02-03T20:25:00-08:00 PST  exit 2026-02-03T21:46:16-08:00 PST
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 6508  principal_cents 507624
+entry_fee_cents 1955  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 143176  net_cents 141221
+strategy_result POSITIVE  net_r 1.856656411874523415108727091
+Assumed fill. Not a maker fill. Not live P&L.

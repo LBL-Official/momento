@@ -1,0 +1,4180 @@
+{
+  "written_utc": "2026-09-06T05:53:43.748550+00:00",
+  "research_only": true,
+  "candle_path_not_fill": true,
+  "live_execution_changed": false,
+  "definition": "FIRST75 = first tradable yes_bid_close >= 75 after prior tradable close < 75, uncrossed spread <= 10c, one per event, same-minute ties excluded. T40 = later tradable yes_bid_close <= 40. Clock snapped at FIRST75 timestamp.",
+  "sports": {
+    "wnba": {
+      "sport": "wnba",
+      "label": "KXWNBAGAME warehouse",
+      "FIRST75_full": {
+        "n_total": 566,
+        "n_wins": 446,
+        "k_not_t40": 368,
+        "estimate": 0.8251121076233184,
+        "pct": 82.5112,
+        "wilson_ci95": [
+          78.7122,
+          85.755
+        ],
+        "object": "P(\u00acT40 | W, FIRST75)"
+      },
+      "FIRST80_full": {
+        "n_total": 589,
+        "n_wins": 492,
+        "k_not_t40": 436,
+        "estimate": 0.8861788617886179,
+        "pct": 88.6179,
+        "wilson_ci95": [
+          85.5072,
+          91.1301
+        ],
+        "object": "P(\u00acT40 | W, FIRST80)"
+      },
+      "decomp_FIRST75_full": {
+        "label": "FIRST75",
+        "quote_k": 0.75,
+        "n": 566,
+        "N_W": 446,
+        "N_L": 120,
+        "cells": {
+          "W_and_not_T40": 368,
+          "W_and_T40": 78,
+          "L_and_not_T40": 0,
+          "L_and_T40": 120
+        },
+        "cell_probs": {
+          "W_and_not_T40": 0.6501766784452296,
+          "W_and_T40": 0.13780918727915195,
+          "L_and_not_T40": 0.0,
+          "L_and_T40": 0.21201413427561838
+        },
+        "terminal": {
+          "n": 566,
+          "k": 446,
+          "estimate": 0.7879858657243817,
+          "pct": 78.7986,
+          "wilson_ci95": [
+            75.2428,
+            81.966
+          ],
+          "clopper_pearson_ci95": [
+            75.1968,
+            82.0966
+          ],
+          "object": "P(W | FIRST75)",
+          "alpha_terminal": 0.03798586572438167,
+          "alpha_pct_points": 3.7986,
+          "alpha_wilson_ci95": [
+            0.2428,
+            6.966
+          ],
+          "wilson_excludes_k": true,
+          "vs_null": {
+            "n": 566,
+            "k": 446,
+            "p0": 0.75,
+            "p_hat": 0.7879858657243817,
+            "p_one_sided_greater": 0.019394697281789264,
+            "p_one_sided_less": 0.9848895002511358,
+            "p_two_sided": 0.036860686974021575,
+            "method": "scipy.stats.binomtest"
+          }
+        },
+        "winner_path": {
+          "n": 446,
+          "k": 368,
+          "estimate": 0.8251121076233184,
+          "pct": 82.5112,
+          "wilson_ci95": [
+            78.7122,
+            85.755
+          ],
+          "clopper_pearson_ci95": [
+            78.6612,
+            85.9232
+          ],
+          "object": "P(\u00acT40 | W, FIRST75)"
+        },
+        "loser_path": {
+          "n": 120,
+          "k": 0,
+          "estimate": 0.0,
+          "pct": 0.0,
+          "wilson_ci95": [
+            0.0,
+            3.102
+          ],
+          "clopper_pearson_ci95": [
+            0.0,
+            3.0273
+          ],
+          "object": "P(\u00acT40 | L, FIRST75)"
+        },
+        "unconditional_barrier": {
+          "n": 566,
+          "k": 368,
+          "estimate": 0.6501766784452296,
+          "pct": 65.0177,
+          "wilson_ci95": [
+            60.9993,
+            68.8335
+          ],
+          "clopper_pearson_ci95": [
+            60.9299,
+            68.9477
+          ],
+          "object": "P(\u00acT40 | FIRST75)"
+        },
+        "joint_win_survive": {
+          "n": 566,
+          "k": 368,
+          "estimate": 0.6501766784452296,
+          "pct": 65.0177,
+          "wilson_ci95": [
+            60.9993,
+            68.8335
+          ],
+          "clopper_pearson_ci95": [
+            60.9299,
+            68.9477
+          ],
+          "object": "P(W \u2229 \u00acT40 | FIRST75)"
+        },
+        "reconstruction": {
+          "p": 0.7879858657243817,
+          "s_W": 0.8251121076233184,
+          "s_L": 0.0,
+          "p_times_s_W": 0.6501766784452297,
+          "S": 0.6501766784452297,
+          "identity_p_times_s_W_equals_joint": true,
+          "identity_four_cells_sum_to_n": true
+        },
+        "counterfactual_p_at_quote": {
+          "held_s_W": 0.8251121076233184,
+          "joint_if_p_equals_k": 0.6188340807174888,
+          "delta_vs_observed_joint": -0.03134259772774084,
+          "note": "Not a forecast. Holds winner-path, sets P(W) to K."
+        }
+      },
+      "decomp_FIRST80_full": {
+        "label": "FIRST80",
+        "quote_k": 0.8,
+        "n": 589,
+        "N_W": 492,
+        "N_L": 97,
+        "cells": {
+          "W_and_not_T40": 436,
+          "W_and_T40": 56,
+          "L_and_not_T40": 0,
+          "L_and_T40": 97
+        },
+        "cell_probs": {
+          "W_and_not_T40": 0.7402376910016978,
+          "W_and_T40": 0.09507640067911714,
+          "L_and_not_T40": 0.0,
+          "L_and_T40": 0.16468590831918506
+        },
+        "terminal": {
+          "n": 589,
+          "k": 492,
+          "estimate": 0.8353140916808149,
+          "pct": 83.5314,
+          "wilson_ci95": [
+            80.3206,
+            86.3077
+          ],
+          "clopper_pearson_ci95": [
+            80.2846,
+            86.4373
+          ],
+          "object": "P(W | FIRST80)",
+          "alpha_terminal": 0.035314091680814896,
+          "alpha_pct_points": 3.5314,
+          "alpha_wilson_ci95": [
+            0.3206,
+            6.3077
+          ],
+          "wilson_excludes_k": true,
+          "vs_null": {
+            "n": 589,
+            "k": 492,
+            "p0": 0.8,
+            "p_hat": 0.8353140916808149,
+            "p_one_sided_greater": 0.016610634616105194,
+            "p_one_sided_less": 0.9873760979182633,
+            "p_two_sided": 0.03452323747290142,
+            "method": "scipy.stats.binomtest"
+          }
+        },
+        "winner_path": {
+          "n": 492,
+          "k": 436,
+          "estimate": 0.8861788617886179,
+          "pct": 88.6179,
+          "wilson_ci95": [
+            85.5072,
+            91.1301
+          ],
+          "clopper_pearson_ci95": [
+            85.4748,
+            91.2866
+          ],
+          "object": "P(\u00acT40 | W, FIRST80)"
+        },
+        "loser_path": {
+          "n": 97,
+          "k": 0,
+          "estimate": 0.0,
+          "pct": 0.0,
+          "wilson_ci95": [
+            0.0,
+            3.8095
+          ],
+          "clopper_pearson_ci95": [
+            0.0,
+            3.7316
+          ],
+          "object": "P(\u00acT40 | L, FIRST80)"
+        },
+        "unconditional_barrier": {
+          "n": 589,
+          "k": 436,
+          "estimate": 0.7402376910016978,
+          "pct": 74.0238,
+          "wilson_ci95": [
+            70.3348,
+            77.4014
+          ],
+          "clopper_pearson_ci95": [
+            70.2826,
+            77.522
+          ],
+          "object": "P(\u00acT40 | FIRST80)"
+        },
+        "joint_win_survive": {
+          "n": 589,
+          "k": 436,
+          "estimate": 0.7402376910016978,
+          "pct": 74.0238,
+          "wilson_ci95": [
+            70.3348,
+            77.4014
+          ],
+          "clopper_pearson_ci95": [
+            70.2826,
+            77.522
+          ],
+          "object": "P(W \u2229 \u00acT40 | FIRST80)"
+        },
+        "reconstruction": {
+          "p": 0.8353140916808149,
+          "s_W": 0.8861788617886179,
+          "s_L": 0.0,
+          "p_times_s_W": 0.7402376910016978,
+          "S": 0.7402376910016978,
+          "identity_p_times_s_W_equals_joint": true,
+          "identity_four_cells_sum_to_n": true
+        },
+        "counterfactual_p_at_quote": {
+          "held_s_W": 0.8861788617886179,
+          "joint_if_p_equals_k": 0.7089430894308943,
+          "delta_vs_observed_joint": -0.03129460157080344,
+          "note": "Not a forecast. Holds winner-path, sets P(W) to K."
+        }
+      },
+      "FIRST75_partition": {
+        "UNALIGNED": 162,
+        "Q1": 146,
+        "Q4": 44,
+        "Q3": 85,
+        "Q2": 128,
+        "OT": 1
+      },
+      "FIRST80_partition": {
+        "Q4": 83,
+        "Q3": 119,
+        "Q2": 127,
+        "Q1": 127,
+        "UNALIGNED": 131,
+        "OT": 2
+      },
+      "slices": {
+        "Q2": {
+          "FIRST75": {
+            "n_total": 128,
+            "n_wins": 105,
+            "k_not_t40": 91,
+            "estimate": 0.8666666666666667,
+            "pct": 86.6667,
+            "wilson_ci95": [
+              78.8563,
+              91.8887
+            ],
+            "object": "P(\u00acT40 | W, FIRST75)"
+          },
+          "FIRST80": {
+            "n_total": 127,
+            "n_wins": 105,
+            "k_not_t40": 89,
+            "estimate": 0.8476190476190476,
+            "pct": 84.7619,
+            "wilson_ci95": [
+              76.6725,
+              90.3974
+            ],
+            "object": "P(\u00acT40 | W, FIRST80)"
+          },
+          "decomp_FIRST75": {
+            "label": "FIRST75",
+            "quote_k": 0.75,
+            "n": 128,
+            "N_W": 105,
+            "N_L": 23,
+            "cells": {
+              "W_and_not_T40": 91,
+              "W_and_T40": 14,
+              "L_and_not_T40": 0,
+              "L_and_T40": 23
+            },
+            "cell_probs": {
+              "W_and_not_T40": 0.7109375,
+              "W_and_T40": 0.109375,
+              "L_and_not_T40": 0.0,
+              "L_and_T40": 0.1796875
+            },
+            "terminal": {
+              "n": 128,
+              "k": 105,
+              "estimate": 0.8203125,
+              "pct": 82.0312,
+              "wilson_ci95": [
+                74.4782,
+                87.7176
+              ],
+              "clopper_pearson_ci95": [
+                74.2681,
+                88.2551
+              ],
+              "object": "P(W | FIRST75)",
+              "alpha_terminal": 0.0703125,
+              "alpha_pct_points": 7.0312,
+              "alpha_wilson_ci95": [
+                -0.5218,
+                12.7176
+              ],
+              "wilson_excludes_k": false,
+              "vs_null": {
+                "n": 128,
+                "k": 105,
+                "p0": 0.75,
+                "p_hat": 0.8203125,
+                "p_one_sided_greater": 0.03789104582099717,
+                "p_one_sided_less": 0.9770277392518072,
+                "p_two_sided": 0.06665172033929054,
+                "method": "scipy.stats.binomtest"
+              }
+            },
+            "winner_path": {
+              "n": 105,
+              "k": 91,
+              "estimate": 0.8666666666666667,
+              "pct": 86.6667,
+              "wilson_ci95": [
+                78.8563,
+                91.8887
+              ],
+              "clopper_pearson_ci95": [
+                78.6418,
+                92.5146
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            },
+            "loser_path": {
+              "n": 23,
+              "k": 0,
+              "estimate": 0.0,
+              "pct": 0.0,
+              "wilson_ci95": [
+                0.0,
+                14.3121
+              ],
+              "clopper_pearson_ci95": [
+                0.0,
+                14.8185
+              ],
+              "object": "P(\u00acT40 | L, FIRST75)"
+            },
+            "unconditional_barrier": {
+              "n": 128,
+              "k": 91,
+              "estimate": 0.7109375,
+              "pct": 71.0938,
+              "wilson_ci95": [
+                62.7165,
+                78.2417
+              ],
+              "clopper_pearson_ci95": [
+                62.4222,
+                78.762
+              ],
+              "object": "P(\u00acT40 | FIRST75)"
+            },
+            "joint_win_survive": {
+              "n": 128,
+              "k": 91,
+              "estimate": 0.7109375,
+              "pct": 71.0938,
+              "wilson_ci95": [
+                62.7165,
+                78.2417
+              ],
+              "clopper_pearson_ci95": [
+                62.4222,
+                78.762
+              ],
+              "object": "P(W \u2229 \u00acT40 | FIRST75)"
+            },
+            "reconstruction": {
+              "p": 0.8203125,
+              "s_W": 0.8666666666666667,
+              "s_L": 0.0,
+              "p_times_s_W": 0.7109375,
+              "S": 0.7109375,
+              "identity_p_times_s_W_equals_joint": true,
+              "identity_four_cells_sum_to_n": true
+            },
+            "counterfactual_p_at_quote": {
+              "held_s_W": 0.8666666666666667,
+              "joint_if_p_equals_k": 0.65,
+              "delta_vs_observed_joint": -0.06093749999999998,
+              "note": "Not a forecast. Holds winner-path, sets P(W) to K."
+            }
+          },
+          "decomp_FIRST80": {
+            "label": "FIRST80",
+            "quote_k": 0.8,
+            "n": 127,
+            "N_W": 105,
+            "N_L": 22,
+            "cells": {
+              "W_and_not_T40": 89,
+              "W_and_T40": 16,
+              "L_and_not_T40": 0,
+              "L_and_T40": 22
+            },
+            "cell_probs": {
+              "W_and_not_T40": 0.7007874015748031,
+              "W_and_T40": 0.12598425196850394,
+              "L_and_not_T40": 0.0,
+              "L_and_T40": 0.1732283464566929
+            },
+            "terminal": {
+              "n": 127,
+              "k": 105,
+              "estimate": 0.8267716535433071,
+              "pct": 82.6772,
+              "wilson_ci95": [
+                75.1625,
+                88.273
+              ],
+              "clopper_pearson_ci95": [
+                74.956,
+                88.8138
+              ],
+              "object": "P(W | FIRST80)",
+              "alpha_terminal": 0.026771653543307017,
+              "alpha_pct_points": 2.6772,
+              "alpha_wilson_ci95": [
+                -4.8375,
+                8.273
+              ],
+              "wilson_excludes_k": false,
+              "vs_null": {
+                "n": 127,
+                "k": 105,
+                "p0": 0.8,
+                "p_hat": 0.8267716535433071,
+                "p_one_sided_greater": 0.26436487149575577,
+                "p_one_sided_less": 0.8050267453637665,
+                "p_two_sided": 0.5065417094387841,
+                "method": "scipy.stats.binomtest"
+              }
+            },
+            "winner_path": {
+              "n": 105,
+              "k": 89,
+              "estimate": 0.8476190476190476,
+              "pct": 84.7619,
+              "wilson_ci95": [
+                76.6725,
+                90.3974
+              ],
+              "clopper_pearson_ci95": [
+                76.4369,
+                91.0319
+              ],
+              "object": "P(\u00acT40 | W, FIRST80)"
+            },
+            "loser_path": {
+              "n": 22,
+              "k": 0,
+              "estimate": 0.0,
+              "pct": 0.0,
+              "wilson_ci95": [
+                0.0,
+                14.866
+              ],
+              "clopper_pearson_ci95": [
+                0.0,
+                15.4373
+              ],
+              "object": "P(\u00acT40 | L, FIRST80)"
+            },
+            "unconditional_barrier": {
+              "n": 127,
+              "k": 89,
+              "estimate": 0.7007874015748031,
+              "pct": 70.0787,
+              "wilson_ci95": [
+                61.6208,
+                77.3577
+              ],
+              "clopper_pearson_ci95": [
+                61.3166,
+                77.8787
+              ],
+              "object": "P(\u00acT40 | FIRST80)"
+            },
+            "joint_win_survive": {
+              "n": 127,
+              "k": 89,
+              "estimate": 0.7007874015748031,
+              "pct": 70.0787,
+              "wilson_ci95": [
+                61.6208,
+                77.3577
+              ],
+              "clopper_pearson_ci95": [
+                61.3166,
+                77.8787
+              ],
+              "object": "P(W \u2229 \u00acT40 | FIRST80)"
+            },
+            "reconstruction": {
+              "p": 0.8267716535433071,
+              "s_W": 0.8476190476190476,
+              "s_L": 0.0,
+              "p_times_s_W": 0.7007874015748031,
+              "S": 0.7007874015748031,
+              "identity_p_times_s_W_equals_joint": true,
+              "identity_four_cells_sum_to_n": true
+            },
+            "counterfactual_p_at_quote": {
+              "held_s_W": 0.8476190476190476,
+              "joint_if_p_equals_k": 0.6780952380952381,
+              "delta_vs_observed_joint": -0.022692163479565042,
+              "note": "Not a forecast. Holds winner-path, sets P(W) to K."
+            }
+          },
+          "FIRST75_splits": {
+            "IN_SAMPLE": {
+              "n_total": 65,
+              "n_wins": 54,
+              "k_not_t40": 46,
+              "estimate": 0.8518518518518519,
+              "pct": 85.1852,
+              "wilson_ci95": [
+                73.3996,
+                92.297
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            },
+            "VALIDATION": {
+              "n_total": 36,
+              "n_wins": 30,
+              "k_not_t40": 27,
+              "estimate": 0.9,
+              "pct": 90.0,
+              "wilson_ci95": [
+                74.3786,
+                96.5401
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            },
+            "OOS": {
+              "n_total": 27,
+              "n_wins": 21,
+              "k_not_t40": 18,
+              "estimate": 0.8571428571428571,
+              "pct": 85.7143,
+              "wilson_ci95": [
+                65.3635,
+                95.0191
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            }
+          },
+          "partition_note": "clock at FIRST75/FIRST80 timestamp; UNALIGNED excluded from Q2"
+        },
+        "Q3": {
+          "FIRST75": {
+            "n_total": 85,
+            "n_wins": 70,
+            "k_not_t40": 59,
+            "estimate": 0.8428571428571429,
+            "pct": 84.2857,
+            "wilson_ci95": [
+              74.0115,
+              90.9925
+            ],
+            "object": "P(\u00acT40 | W, FIRST75)"
+          },
+          "FIRST80": {
+            "n_total": 119,
+            "n_wins": 100,
+            "k_not_t40": 94,
+            "estimate": 0.94,
+            "pct": 94.0,
+            "wilson_ci95": [
+              87.523,
+              97.2214
+            ],
+            "object": "P(\u00acT40 | W, FIRST80)"
+          },
+          "decomp_FIRST75": {
+            "label": "FIRST75",
+            "quote_k": 0.75,
+            "n": 85,
+            "N_W": 70,
+            "N_L": 15,
+            "cells": {
+              "W_and_not_T40": 59,
+              "W_and_T40": 11,
+              "L_and_not_T40": 0,
+              "L_and_T40": 15
+            },
+            "cell_probs": {
+              "W_and_not_T40": 0.6941176470588235,
+              "W_and_T40": 0.12941176470588237,
+              "L_and_not_T40": 0.0,
+              "L_and_T40": 0.17647058823529413
+            },
+            "terminal": {
+              "n": 85,
+              "k": 70,
+              "estimate": 0.8235294117647058,
+              "pct": 82.3529,
+              "wilson_ci95": [
+                72.9042,
+                89.0037
+              ],
+              "clopper_pearson_ci95": [
+                72.5695,
+                89.773
+              ],
+              "object": "P(W | FIRST75)",
+              "alpha_terminal": 0.07352941176470584,
+              "alpha_pct_points": 7.3529,
+              "alpha_wilson_ci95": [
+                -2.0958,
+                14.0037
+              ],
+              "wilson_excludes_k": false,
+              "vs_null": {
+                "n": 85,
+                "k": 70,
+                "p0": 0.75,
+                "p_hat": 0.8235294117647058,
+                "p_one_sided_greater": 0.07112157295601784,
+                "p_one_sided_less": 0.9589590494844393,
+                "p_two_sided": 0.1328707158369477,
+                "method": "scipy.stats.binomtest"
+              }
+            },
+            "winner_path": {
+              "n": 70,
+              "k": 59,
+              "estimate": 0.8428571428571429,
+              "pct": 84.2857,
+              "wilson_ci95": [
+                74.0115,
+                90.9925
+              ],
+              "clopper_pearson_ci95": [
+                73.62,
+                91.8856
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            },
+            "loser_path": {
+              "n": 15,
+              "k": 0,
+              "estimate": 0.0,
+              "pct": 0.0,
+              "wilson_ci95": [
+                0.0,
+                20.3889
+              ],
+              "clopper_pearson_ci95": [
+                0.0,
+                21.8019
+              ],
+              "object": "P(\u00acT40 | L, FIRST75)"
+            },
+            "unconditional_barrier": {
+              "n": 85,
+              "k": 59,
+              "estimate": 0.6941176470588235,
+              "pct": 69.4118,
+              "wilson_ci95": [
+                58.954,
+                78.1908
+              ],
+              "clopper_pearson_ci95": [
+                58.4735,
+                78.9513
+              ],
+              "object": "P(\u00acT40 | FIRST75)"
+            },
+            "joint_win_survive": {
+              "n": 85,
+              "k": 59,
+              "estimate": 0.6941176470588235,
+              "pct": 69.4118,
+              "wilson_ci95": [
+                58.954,
+                78.1908
+              ],
+              "clopper_pearson_ci95": [
+                58.4735,
+                78.9513
+              ],
+              "object": "P(W \u2229 \u00acT40 | FIRST75)"
+            },
+            "reconstruction": {
+              "p": 0.8235294117647058,
+              "s_W": 0.8428571428571429,
+              "s_L": 0.0,
+              "p_times_s_W": 0.6941176470588235,
+              "S": 0.6941176470588235,
+              "identity_p_times_s_W_equals_joint": true,
+              "identity_four_cells_sum_to_n": true
+            },
+            "counterfactual_p_at_quote": {
+              "held_s_W": 0.8428571428571429,
+              "joint_if_p_equals_k": 0.6321428571428571,
+              "delta_vs_observed_joint": -0.06197478991596639,
+              "note": "Not a forecast. Holds winner-path, sets P(W) to K."
+            }
+          },
+          "decomp_FIRST80": {
+            "label": "FIRST80",
+            "quote_k": 0.8,
+            "n": 119,
+            "N_W": 100,
+            "N_L": 19,
+            "cells": {
+              "W_and_not_T40": 94,
+              "W_and_T40": 6,
+              "L_and_not_T40": 0,
+              "L_and_T40": 19
+            },
+            "cell_probs": {
+              "W_and_not_T40": 0.7899159663865546,
+              "W_and_T40": 0.05042016806722689,
+              "L_and_not_T40": 0.0,
+              "L_and_T40": 0.15966386554621848
+            },
+            "terminal": {
+              "n": 119,
+              "k": 100,
+              "estimate": 0.8403361344537815,
+              "pct": 84.0336,
+              "wilson_ci95": [
+                76.4048,
+                89.5337
+              ],
+              "clopper_pearson_ci95": [
+                76.1947,
+                90.1048
+              ],
+              "object": "P(W | FIRST80)",
+              "alpha_terminal": 0.04033613445378148,
+              "alpha_pct_points": 4.0336,
+              "alpha_wilson_ci95": [
+                -3.5952,
+                9.5337
+              ],
+              "wilson_excludes_k": false,
+              "vs_null": {
+                "n": 119,
+                "k": 100,
+                "p0": 0.8,
+                "p_hat": 0.8403361344537815,
+                "p_one_sided_greater": 0.16220200172056026,
+                "p_one_sided_less": 0.8902404445655303,
+                "p_two_sided": 0.30347959311571154,
+                "method": "scipy.stats.binomtest"
+              }
+            },
+            "winner_path": {
+              "n": 100,
+              "k": 94,
+              "estimate": 0.94,
+              "pct": 94.0,
+              "wilson_ci95": [
+                87.523,
+                97.2214
+              ],
+              "clopper_pearson_ci95": [
+                87.397,
+                97.7665
+              ],
+              "object": "P(\u00acT40 | W, FIRST80)"
+            },
+            "loser_path": {
+              "n": 19,
+              "k": 0,
+              "estimate": 0.0,
+              "pct": 0.0,
+              "wilson_ci95": [
+                0.0,
+                16.8184
+              ],
+              "clopper_pearson_ci95": [
+                0.0,
+                17.6467
+              ],
+              "object": "P(\u00acT40 | L, FIRST80)"
+            },
+            "unconditional_barrier": {
+              "n": 119,
+              "k": 94,
+              "estimate": 0.7899159663865546,
+              "pct": 78.9916,
+              "wilson_ci95": [
+                70.8242,
+                85.3457
+              ],
+              "clopper_pearson_ci95": [
+                70.569,
+                85.9191
+              ],
+              "object": "P(\u00acT40 | FIRST80)"
+            },
+            "joint_win_survive": {
+              "n": 119,
+              "k": 94,
+              "estimate": 0.7899159663865546,
+              "pct": 78.9916,
+              "wilson_ci95": [
+                70.8242,
+                85.3457
+              ],
+              "clopper_pearson_ci95": [
+                70.569,
+                85.9191
+              ],
+              "object": "P(W \u2229 \u00acT40 | FIRST80)"
+            },
+            "reconstruction": {
+              "p": 0.8403361344537815,
+              "s_W": 0.94,
+              "s_L": 0.0,
+              "p_times_s_W": 0.7899159663865546,
+              "S": 0.7899159663865546,
+              "identity_p_times_s_W_equals_joint": true,
+              "identity_four_cells_sum_to_n": true
+            },
+            "counterfactual_p_at_quote": {
+              "held_s_W": 0.94,
+              "joint_if_p_equals_k": 0.752,
+              "delta_vs_observed_joint": -0.03791596638655459,
+              "note": "Not a forecast. Holds winner-path, sets P(W) to K."
+            }
+          },
+          "FIRST75_splits": {
+            "IN_SAMPLE": {
+              "n_total": 41,
+              "n_wins": 34,
+              "k_not_t40": 29,
+              "estimate": 0.8529411764705882,
+              "pct": 85.2941,
+              "wilson_ci95": [
+                69.8716,
+                93.5507
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            },
+            "VALIDATION": {
+              "n_total": 30,
+              "n_wins": 27,
+              "k_not_t40": 22,
+              "estimate": 0.8148148148148148,
+              "pct": 81.4815,
+              "wilson_ci95": [
+                63.3009,
+                91.8194
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            },
+            "OOS": {
+              "n_total": 14,
+              "n_wins": 9,
+              "k_not_t40": 8,
+              "estimate": 0.8888888888888888,
+              "pct": 88.8889,
+              "wilson_ci95": [
+                56.4994,
+                98.011
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            }
+          },
+          "partition_note": "clock at FIRST75/FIRST80 timestamp; UNALIGNED excluded from Q3"
+        },
+        "Q2\u222aQ3": {
+          "FIRST75": {
+            "n_total": 213,
+            "n_wins": 175,
+            "k_not_t40": 150,
+            "estimate": 0.8571428571428571,
+            "pct": 85.7143,
+            "wilson_ci95": [
+              79.7615,
+              90.1328
+            ],
+            "object": "P(\u00acT40 | W, FIRST75)"
+          },
+          "FIRST80": {
+            "n_total": 246,
+            "n_wins": 205,
+            "k_not_t40": 183,
+            "estimate": 0.8926829268292683,
+            "pct": 89.2683,
+            "wilson_ci95": [
+              84.2864,
+              92.8055
+            ],
+            "object": "P(\u00acT40 | W, FIRST80)"
+          },
+          "decomp_FIRST75": {
+            "label": "FIRST75",
+            "quote_k": 0.75,
+            "n": 213,
+            "N_W": 175,
+            "N_L": 38,
+            "cells": {
+              "W_and_not_T40": 150,
+              "W_and_T40": 25,
+              "L_and_not_T40": 0,
+              "L_and_T40": 38
+            },
+            "cell_probs": {
+              "W_and_not_T40": 0.704225352112676,
+              "W_and_T40": 0.11737089201877934,
+              "L_and_not_T40": 0.0,
+              "L_and_T40": 0.1784037558685446
+            },
+            "terminal": {
+              "n": 213,
+              "k": 175,
+              "estimate": 0.8215962441314554,
+              "pct": 82.1596,
+              "wilson_ci95": [
+                76.4623,
+                86.7175
+              ],
+              "clopper_pearson_ci95": [
+                76.3452,
+                87.055
+              ],
+              "object": "P(W | FIRST75)",
+              "alpha_terminal": 0.07159624413145538,
+              "alpha_pct_points": 7.1596,
+              "alpha_wilson_ci95": [
+                1.4623,
+                11.7175
+              ],
+              "wilson_excludes_k": true,
+              "vs_null": {
+                "n": 213,
+                "k": 175,
+                "p0": 0.75,
+                "p_hat": 0.8215962441314554,
+                "p_one_sided_greater": 0.008119943098706893,
+                "p_one_sided_less": 0.994981483703242,
+                "p_two_sided": 0.01418673025034771,
+                "method": "scipy.stats.binomtest"
+              }
+            },
+            "winner_path": {
+              "n": 175,
+              "k": 150,
+              "estimate": 0.8571428571428571,
+              "pct": 85.7143,
+              "wilson_ci95": [
+                79.7615,
+                90.1328
+              ],
+              "clopper_pearson_ci95": [
+                79.6377,
+                90.5368
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            },
+            "loser_path": {
+              "n": 38,
+              "k": 0,
+              "estimate": 0.0,
+              "pct": 0.0,
+              "wilson_ci95": [
+                0.0,
+                9.1813
+              ],
+              "clopper_pearson_ci95": [
+                0.0,
+                9.2513
+              ],
+              "object": "P(\u00acT40 | L, FIRST75)"
+            },
+            "unconditional_barrier": {
+              "n": 213,
+              "k": 150,
+              "estimate": 0.704225352112676,
+              "pct": 70.4225,
+              "wilson_ci95": [
+                63.9753,
+                76.1461
+              ],
+              "clopper_pearson_ci95": [
+                63.8036,
+                76.4629
+              ],
+              "object": "P(\u00acT40 | FIRST75)"
+            },
+            "joint_win_survive": {
+              "n": 213,
+              "k": 150,
+              "estimate": 0.704225352112676,
+              "pct": 70.4225,
+              "wilson_ci95": [
+                63.9753,
+                76.1461
+              ],
+              "clopper_pearson_ci95": [
+                63.8036,
+                76.4629
+              ],
+              "object": "P(W \u2229 \u00acT40 | FIRST75)"
+            },
+            "reconstruction": {
+              "p": 0.8215962441314554,
+              "s_W": 0.8571428571428571,
+              "s_L": 0.0,
+              "p_times_s_W": 0.704225352112676,
+              "S": 0.704225352112676,
+              "identity_p_times_s_W_equals_joint": true,
+              "identity_four_cells_sum_to_n": true
+            },
+            "counterfactual_p_at_quote": {
+              "held_s_W": 0.8571428571428571,
+              "joint_if_p_equals_k": 0.6428571428571428,
+              "delta_vs_observed_joint": -0.06136820925553321,
+              "note": "Not a forecast. Holds winner-path, sets P(W) to K."
+            }
+          },
+          "decomp_FIRST80": {
+            "label": "FIRST80",
+            "quote_k": 0.8,
+            "n": 246,
+            "N_W": 205,
+            "N_L": 41,
+            "cells": {
+              "W_and_not_T40": 183,
+              "W_and_T40": 22,
+              "L_and_not_T40": 0,
+              "L_and_T40": 41
+            },
+            "cell_probs": {
+              "W_and_not_T40": 0.7439024390243902,
+              "W_and_T40": 0.08943089430894309,
+              "L_and_not_T40": 0.0,
+              "L_and_T40": 0.16666666666666666
+            },
+            "terminal": {
+              "n": 246,
+              "k": 205,
+              "estimate": 0.8333333333333334,
+              "pct": 83.3333,
+              "wilson_ci95": [
+                78.1712,
+                87.4704
+              ],
+              "clopper_pearson_ci95": [
+                78.0767,
+                87.7664
+              ],
+              "object": "P(W | FIRST80)",
+              "alpha_terminal": 0.033333333333333326,
+              "alpha_pct_points": 3.3333,
+              "alpha_wilson_ci95": [
+                -1.8288,
+                7.4704
+              ],
+              "wilson_excludes_k": false,
+              "vs_null": {
+                "n": 246,
+                "k": 205,
+                "p0": 0.8,
+                "p_hat": 0.8333333333333334,
+                "p_one_sided_greater": 0.10812840728754367,
+                "p_one_sided_less": 0.9197475957391184,
+                "p_two_sided": 0.20282450636430796,
+                "method": "scipy.stats.binomtest"
+              }
+            },
+            "winner_path": {
+              "n": 205,
+              "k": 183,
+              "estimate": 0.8926829268292683,
+              "pct": 89.2683,
+              "wilson_ci95": [
+                84.2864,
+                92.8055
+              ],
+              "clopper_pearson_ci95": [
+                84.2036,
+                93.1512
+              ],
+              "object": "P(\u00acT40 | W, FIRST80)"
+            },
+            "loser_path": {
+              "n": 41,
+              "k": 0,
+              "estimate": 0.0,
+              "pct": 0.0,
+              "wilson_ci95": [
+                0.0,
+                8.567
+              ],
+              "clopper_pearson_ci95": [
+                0.0,
+                8.6044
+              ],
+              "object": "P(\u00acT40 | L, FIRST80)"
+            },
+            "unconditional_barrier": {
+              "n": 246,
+              "k": 183,
+              "estimate": 0.7439024390243902,
+              "pct": 74.3902,
+              "wilson_ci95": [
+                68.5899,
+                79.4405
+              ],
+              "clopper_pearson_ci95": [
+                68.4583,
+                79.7241
+              ],
+              "object": "P(\u00acT40 | FIRST80)"
+            },
+            "joint_win_survive": {
+              "n": 246,
+              "k": 183,
+              "estimate": 0.7439024390243902,
+              "pct": 74.3902,
+              "wilson_ci95": [
+                68.5899,
+                79.4405
+              ],
+              "clopper_pearson_ci95": [
+                68.4583,
+                79.7241
+              ],
+              "object": "P(W \u2229 \u00acT40 | FIRST80)"
+            },
+            "reconstruction": {
+              "p": 0.8333333333333334,
+              "s_W": 0.8926829268292683,
+              "s_L": 0.0,
+              "p_times_s_W": 0.7439024390243902,
+              "S": 0.7439024390243902,
+              "identity_p_times_s_W_equals_joint": true,
+              "identity_four_cells_sum_to_n": true
+            },
+            "counterfactual_p_at_quote": {
+              "held_s_W": 0.8926829268292683,
+              "joint_if_p_equals_k": 0.7141463414634147,
+              "delta_vs_observed_joint": -0.029756097560975525,
+              "note": "Not a forecast. Holds winner-path, sets P(W) to K."
+            }
+          },
+          "FIRST75_splits": {
+            "IN_SAMPLE": {
+              "n_total": 106,
+              "n_wins": 88,
+              "k_not_t40": 75,
+              "estimate": 0.8522727272727273,
+              "pct": 85.2273,
+              "wilson_ci95": [
+                76.3487,
+                91.1588
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            },
+            "VALIDATION": {
+              "n_total": 66,
+              "n_wins": 57,
+              "k_not_t40": 49,
+              "estimate": 0.8596491228070176,
+              "pct": 85.9649,
+              "wilson_ci95": [
+                74.6753,
+                92.7128
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            },
+            "OOS": {
+              "n_total": 41,
+              "n_wins": 30,
+              "k_not_t40": 26,
+              "estimate": 0.8666666666666667,
+              "pct": 86.6667,
+              "wilson_ci95": [
+                70.3183,
+                94.6904
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            }
+          },
+          "partition_note": "clock at FIRST75/FIRST80 timestamp; UNALIGNED excluded from Q2\u222aQ3"
+        }
+      }
+    },
+    "nba": {
+      "sport": "nba",
+      "label": "KXNBAGAME 2025-26",
+      "FIRST75_full": {
+        "n_total": 1176,
+        "n_wins": 915,
+        "k_not_t40": 781,
+        "estimate": 0.853551912568306,
+        "pct": 85.3552,
+        "wilson_ci95": [
+          82.9165,
+          87.4982
+        ],
+        "object": "P(\u00acT40 | W, FIRST75)"
+      },
+      "FIRST80_full": {
+        "n_total": 1230,
+        "n_wins": 1019,
+        "k_not_t40": 910,
+        "estimate": 0.8930323846908734,
+        "pct": 89.3032,
+        "wilson_ci95": [
+          87.2557,
+          91.0555
+        ],
+        "object": "P(\u00acT40 | W, FIRST80)"
+      },
+      "decomp_FIRST75_full": {
+        "label": "FIRST75",
+        "quote_k": 0.75,
+        "n": 1176,
+        "N_W": 915,
+        "N_L": 261,
+        "cells": {
+          "W_and_not_T40": 781,
+          "W_and_T40": 134,
+          "L_and_not_T40": 1,
+          "L_and_T40": 260
+        },
+        "cell_probs": {
+          "W_and_not_T40": 0.6641156462585034,
+          "W_and_T40": 0.11394557823129252,
+          "L_and_not_T40": 0.0008503401360544217,
+          "L_and_T40": 0.22108843537414966
+        },
+        "terminal": {
+          "n": 1176,
+          "k": 915,
+          "estimate": 0.7780612244897959,
+          "pct": 77.8061,
+          "wilson_ci95": [
+            75.3427,
+            80.0885
+          ],
+          "clopper_pearson_ci95": [
+            75.3206,
+            80.1517
+          ],
+          "object": "P(W | FIRST75)",
+          "alpha_terminal": 0.028061224489795866,
+          "alpha_pct_points": 2.8061,
+          "alpha_wilson_ci95": [
+            0.3427,
+            5.0885
+          ],
+          "wilson_excludes_k": true,
+          "vs_null": {
+            "n": 1176,
+            "k": 915,
+            "p0": 0.75,
+            "p_hat": 0.7780612244897959,
+            "p_one_sided_greater": 0.013505325933165085,
+            "p_one_sided_less": 0.9887122098224121,
+            "p_two_sided": 0.026231753641692036,
+            "method": "scipy.stats.binomtest"
+          }
+        },
+        "winner_path": {
+          "n": 915,
+          "k": 781,
+          "estimate": 0.853551912568306,
+          "pct": 85.3552,
+          "wilson_ci95": [
+            82.9165,
+            87.4982
+          ],
+          "clopper_pearson_ci95": [
+            82.8961,
+            87.584
+          ],
+          "object": "P(\u00acT40 | W, FIRST75)"
+        },
+        "loser_path": {
+          "n": 261,
+          "k": 1,
+          "estimate": 0.0038314176245210726,
+          "pct": 0.3831,
+          "wilson_ci95": [
+            0.0677,
+            2.138
+          ],
+          "clopper_pearson_ci95": [
+            0.0097,
+            2.1161
+          ],
+          "object": "P(\u00acT40 | L, FIRST75)"
+        },
+        "unconditional_barrier": {
+          "n": 1176,
+          "k": 782,
+          "estimate": 0.6649659863945578,
+          "pct": 66.4966,
+          "wilson_ci95": [
+            63.749,
+            69.1367
+          ],
+          "clopper_pearson_ci95": [
+            63.7177,
+            69.1927
+          ],
+          "object": "P(\u00acT40 | FIRST75)"
+        },
+        "joint_win_survive": {
+          "n": 1176,
+          "k": 781,
+          "estimate": 0.6641156462585034,
+          "pct": 66.4116,
+          "wilson_ci95": [
+            63.6626,
+            69.0537
+          ],
+          "clopper_pearson_ci95": [
+            63.6312,
+            69.1096
+          ],
+          "object": "P(W \u2229 \u00acT40 | FIRST75)"
+        },
+        "reconstruction": {
+          "p": 0.7780612244897959,
+          "s_W": 0.853551912568306,
+          "s_L": 0.0038314176245210726,
+          "p_times_s_W": 0.6641156462585034,
+          "S": 0.6649659863945578,
+          "identity_p_times_s_W_equals_joint": true,
+          "identity_four_cells_sum_to_n": true
+        },
+        "counterfactual_p_at_quote": {
+          "held_s_W": 0.853551912568306,
+          "joint_if_p_equals_k": 0.6401639344262295,
+          "delta_vs_observed_joint": -0.023951711832273848,
+          "note": "Not a forecast. Holds winner-path, sets P(W) to K."
+        }
+      },
+      "decomp_FIRST80_full": {
+        "label": "FIRST80",
+        "quote_k": 0.8,
+        "n": 1230,
+        "N_W": 1019,
+        "N_L": 211,
+        "cells": {
+          "W_and_not_T40": 910,
+          "W_and_T40": 109,
+          "L_and_not_T40": 0,
+          "L_and_T40": 211
+        },
+        "cell_probs": {
+          "W_and_not_T40": 0.7398373983739838,
+          "W_and_T40": 0.0886178861788618,
+          "L_and_not_T40": 0.0,
+          "L_and_T40": 0.17154471544715447
+        },
+        "terminal": {
+          "n": 1230,
+          "k": 1019,
+          "estimate": 0.8284552845528456,
+          "pct": 82.8455,
+          "wilson_ci95": [
+            80.6372,
+            84.8493
+          ],
+          "clopper_pearson_ci95": [
+            80.6203,
+            84.9125
+          ],
+          "object": "P(W | FIRST80)",
+          "alpha_terminal": 0.028455284552845517,
+          "alpha_pct_points": 2.8455,
+          "alpha_wilson_ci95": [
+            0.6372,
+            4.8493
+          ],
+          "wilson_excludes_k": true,
+          "vs_null": {
+            "n": 1230,
+            "k": 1019,
+            "p0": 0.8,
+            "p_hat": 0.8284552845528456,
+            "p_one_sided_greater": 0.006243379248228594,
+            "p_one_sided_less": 0.9949469799084516,
+            "p_two_sided": 0.012546828069258522,
+            "method": "scipy.stats.binomtest"
+          }
+        },
+        "winner_path": {
+          "n": 1019,
+          "k": 910,
+          "estimate": 0.8930323846908734,
+          "pct": 89.3032,
+          "wilson_ci95": [
+            87.2557,
+            91.0555
+          ],
+          "clopper_pearson_ci95": [
+            87.2417,
+            91.1343
+          ],
+          "object": "P(\u00acT40 | W, FIRST80)"
+        },
+        "loser_path": {
+          "n": 211,
+          "k": 0,
+          "estimate": 0.0,
+          "pct": 0.0,
+          "wilson_ci95": [
+            0.0,
+            1.7881
+          ],
+          "clopper_pearson_ci95": [
+            0.0,
+            1.7331
+          ],
+          "object": "P(\u00acT40 | L, FIRST80)"
+        },
+        "unconditional_barrier": {
+          "n": 1230,
+          "k": 910,
+          "estimate": 0.7398373983739838,
+          "pct": 73.9837,
+          "wilson_ci95": [
+            71.4599,
+            76.3582
+          ],
+          "clopper_pearson_ci95": [
+            71.4358,
+            76.4165
+          ],
+          "object": "P(\u00acT40 | FIRST80)"
+        },
+        "joint_win_survive": {
+          "n": 1230,
+          "k": 910,
+          "estimate": 0.7398373983739838,
+          "pct": 73.9837,
+          "wilson_ci95": [
+            71.4599,
+            76.3582
+          ],
+          "clopper_pearson_ci95": [
+            71.4358,
+            76.4165
+          ],
+          "object": "P(W \u2229 \u00acT40 | FIRST80)"
+        },
+        "reconstruction": {
+          "p": 0.8284552845528456,
+          "s_W": 0.8930323846908734,
+          "s_L": 0.0,
+          "p_times_s_W": 0.7398373983739838,
+          "S": 0.7398373983739838,
+          "identity_p_times_s_W_equals_joint": true,
+          "identity_four_cells_sum_to_n": true
+        },
+        "counterfactual_p_at_quote": {
+          "held_s_W": 0.8930323846908734,
+          "joint_if_p_equals_k": 0.7144259077526988,
+          "delta_vs_observed_joint": -0.025411490621285004,
+          "note": "Not a forecast. Holds winner-path, sets P(W) to K."
+        }
+      },
+      "FIRST75_partition": {
+        "Q1": 401,
+        "Q4": 100,
+        "Q2": 318,
+        "Q3": 258,
+        "UNALIGNED": 96,
+        "OT": 3
+      },
+      "FIRST80_partition": {
+        "Q1": 324,
+        "Q4": 227,
+        "Q2": 314,
+        "Q3": 290,
+        "UNALIGNED": 72,
+        "OT": 3
+      },
+      "slices": {
+        "Q2": {
+          "FIRST75": {
+            "n_total": 318,
+            "n_wins": 242,
+            "k_not_t40": 208,
+            "estimate": 0.859504132231405,
+            "pct": 85.9504,
+            "wilson_ci95": [
+              81.0085,
+              89.7688
+            ],
+            "object": "P(\u00acT40 | W, FIRST75)"
+          },
+          "FIRST80": {
+            "n_total": 314,
+            "n_wins": 267,
+            "k_not_t40": 239,
+            "estimate": 0.8951310861423221,
+            "pct": 89.5131,
+            "wilson_ci95": [
+              85.2609,
+              92.6444
+            ],
+            "object": "P(\u00acT40 | W, FIRST80)"
+          },
+          "decomp_FIRST75": {
+            "label": "FIRST75",
+            "quote_k": 0.75,
+            "n": 318,
+            "N_W": 242,
+            "N_L": 76,
+            "cells": {
+              "W_and_not_T40": 208,
+              "W_and_T40": 34,
+              "L_and_not_T40": 1,
+              "L_and_T40": 75
+            },
+            "cell_probs": {
+              "W_and_not_T40": 0.6540880503144654,
+              "W_and_T40": 0.1069182389937107,
+              "L_and_not_T40": 0.0031446540880503146,
+              "L_and_T40": 0.2358490566037736
+            },
+            "terminal": {
+              "n": 318,
+              "k": 242,
+              "estimate": 0.7610062893081762,
+              "pct": 76.1006,
+              "wilson_ci95": [
+                71.1194,
+                80.4588
+              ],
+              "clopper_pearson_ci95": [
+                71.025,
+                80.6827
+              ],
+              "object": "P(W | FIRST75)",
+              "alpha_terminal": 0.011006289308176154,
+              "alpha_pct_points": 1.1006,
+              "alpha_wilson_ci95": [
+                -3.8806,
+                5.4588
+              ],
+              "wilson_excludes_k": false,
+              "vs_null": {
+                "n": 318,
+                "k": 242,
+                "p0": 0.75,
+                "p_hat": 0.7610062893081762,
+                "p_one_sided_greater": 0.35226467186380866,
+                "p_one_sided_less": 0.6949673114180348,
+                "p_two_sided": 0.6977333421708591,
+                "method": "scipy.stats.binomtest"
+              }
+            },
+            "winner_path": {
+              "n": 242,
+              "k": 208,
+              "estimate": 0.859504132231405,
+              "pct": 85.9504,
+              "wilson_ci95": [
+                81.0085,
+                89.7688
+              ],
+              "clopper_pearson_ci95": [
+                80.9241,
+                90.07
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            },
+            "loser_path": {
+              "n": 76,
+              "k": 1,
+              "estimate": 0.013157894736842105,
+              "pct": 1.3158,
+              "wilson_ci95": [
+                0.2326,
+                7.0838
+              ],
+              "clopper_pearson_ci95": [
+                0.0333,
+                7.1144
+              ],
+              "object": "P(\u00acT40 | L, FIRST75)"
+            },
+            "unconditional_barrier": {
+              "n": 318,
+              "k": 209,
+              "estimate": 0.6572327044025157,
+              "pct": 65.7233,
+              "wilson_ci95": [
+                60.3467,
+                70.7245
+              ],
+              "clopper_pearson_ci95": [
+                60.2214,
+                70.9291
+              ],
+              "object": "P(\u00acT40 | FIRST75)"
+            },
+            "joint_win_survive": {
+              "n": 318,
+              "k": 208,
+              "estimate": 0.6540880503144654,
+              "pct": 65.4088,
+              "wilson_ci95": [
+                60.0248,
+                70.4249
+              ],
+              "clopper_pearson_ci95": [
+                59.8987,
+                70.6288
+              ],
+              "object": "P(W \u2229 \u00acT40 | FIRST75)"
+            },
+            "reconstruction": {
+              "p": 0.7610062893081762,
+              "s_W": 0.859504132231405,
+              "s_L": 0.013157894736842105,
+              "p_times_s_W": 0.6540880503144655,
+              "S": 0.6572327044025158,
+              "identity_p_times_s_W_equals_joint": true,
+              "identity_four_cells_sum_to_n": true
+            },
+            "counterfactual_p_at_quote": {
+              "held_s_W": 0.859504132231405,
+              "joint_if_p_equals_k": 0.6446280991735538,
+              "delta_vs_observed_joint": -0.009459951140911582,
+              "note": "Not a forecast. Holds winner-path, sets P(W) to K."
+            }
+          },
+          "decomp_FIRST80": {
+            "label": "FIRST80",
+            "quote_k": 0.8,
+            "n": 314,
+            "N_W": 267,
+            "N_L": 47,
+            "cells": {
+              "W_and_not_T40": 239,
+              "W_and_T40": 28,
+              "L_and_not_T40": 0,
+              "L_and_T40": 47
+            },
+            "cell_probs": {
+              "W_and_not_T40": 0.7611464968152867,
+              "W_and_T40": 0.08917197452229299,
+              "L_and_not_T40": 0.0,
+              "L_and_T40": 0.14968152866242038
+            },
+            "terminal": {
+              "n": 314,
+              "k": 267,
+              "estimate": 0.8503184713375797,
+              "pct": 85.0318,
+              "wilson_ci95": [
+                80.6635,
+                88.5534
+              ],
+              "clopper_pearson_ci95": [
+                80.5973,
+                88.7901
+              ],
+              "object": "P(W | FIRST80)",
+              "alpha_terminal": 0.05031847133757961,
+              "alpha_pct_points": 5.0318,
+              "alpha_wilson_ci95": [
+                0.6635,
+                8.5534
+              ],
+              "wilson_excludes_k": true,
+              "vs_null": {
+                "n": 314,
+                "k": 267,
+                "p0": 0.8,
+                "p_hat": 0.8503184713375797,
+                "p_one_sided_greater": 0.01328013711268158,
+                "p_one_sided_less": 0.9911003230787793,
+                "p_two_sided": 0.024014049470809814,
+                "method": "scipy.stats.binomtest"
+              }
+            },
+            "winner_path": {
+              "n": 267,
+              "k": 239,
+              "estimate": 0.8951310861423221,
+              "pct": 89.5131,
+              "wilson_ci95": [
+                85.2609,
+                92.6444
+              ],
+              "clopper_pearson_ci95": [
+                85.2009,
+                92.9176
+              ],
+              "object": "P(\u00acT40 | W, FIRST80)"
+            },
+            "loser_path": {
+              "n": 47,
+              "k": 0,
+              "estimate": 0.0,
+              "pct": 0.0,
+              "wilson_ci95": [
+                0.0,
+                7.556
+              ],
+              "clopper_pearson_ci95": [
+                0.0,
+                7.5486
+              ],
+              "object": "P(\u00acT40 | L, FIRST80)"
+            },
+            "unconditional_barrier": {
+              "n": 314,
+              "k": 239,
+              "estimate": 0.7611464968152867,
+              "pct": 76.1146,
+              "wilson_ci95": [
+                71.1008,
+                80.4972
+              ],
+              "clopper_pearson_ci95": [
+                71.0052,
+                80.7239
+              ],
+              "object": "P(\u00acT40 | FIRST80)"
+            },
+            "joint_win_survive": {
+              "n": 314,
+              "k": 239,
+              "estimate": 0.7611464968152867,
+              "pct": 76.1146,
+              "wilson_ci95": [
+                71.1008,
+                80.4972
+              ],
+              "clopper_pearson_ci95": [
+                71.0052,
+                80.7239
+              ],
+              "object": "P(W \u2229 \u00acT40 | FIRST80)"
+            },
+            "reconstruction": {
+              "p": 0.8503184713375797,
+              "s_W": 0.8951310861423221,
+              "s_L": 0.0,
+              "p_times_s_W": 0.7611464968152867,
+              "S": 0.7611464968152867,
+              "identity_p_times_s_W_equals_joint": true,
+              "identity_four_cells_sum_to_n": true
+            },
+            "counterfactual_p_at_quote": {
+              "held_s_W": 0.8951310861423221,
+              "joint_if_p_equals_k": 0.7161048689138577,
+              "delta_vs_observed_joint": -0.04504162790142896,
+              "note": "Not a forecast. Holds winner-path, sets P(W) to K."
+            }
+          },
+          "FIRST75_splits": {
+            "IN_SAMPLE": {
+              "n_total": 125,
+              "n_wins": 92,
+              "k_not_t40": 84,
+              "estimate": 0.9130434782608695,
+              "pct": 91.3043,
+              "wilson_ci95": [
+                83.7696,
+                95.5279
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            },
+            "VALIDATION": {
+              "n_total": 126,
+              "n_wins": 94,
+              "k_not_t40": 79,
+              "estimate": 0.8404255319148937,
+              "pct": 84.0426,
+              "wilson_ci95": [
+                75.3274,
+                90.0845
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            },
+            "OOS": {
+              "n_total": 67,
+              "n_wins": 56,
+              "k_not_t40": 45,
+              "estimate": 0.8035714285714286,
+              "pct": 80.3571,
+              "wilson_ci95": [
+                68.1551,
+                88.6615
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            }
+          },
+          "partition_note": "clock at FIRST75/FIRST80 timestamp; UNALIGNED excluded from Q2"
+        },
+        "Q3": {
+          "FIRST75": {
+            "n_total": 258,
+            "n_wins": 192,
+            "k_not_t40": 167,
+            "estimate": 0.8697916666666666,
+            "pct": 86.9792,
+            "wilson_ci95": [
+              81.4849,
+              91.0226
+            ],
+            "object": "P(\u00acT40 | W, FIRST75)"
+          },
+          "FIRST80": {
+            "n_total": 290,
+            "n_wins": 238,
+            "k_not_t40": 211,
+            "estimate": 0.8865546218487395,
+            "pct": 88.6555,
+            "wilson_ci95": [
+              83.9975,
+              92.0853
+            ],
+            "object": "P(\u00acT40 | W, FIRST80)"
+          },
+          "decomp_FIRST75": {
+            "label": "FIRST75",
+            "quote_k": 0.75,
+            "n": 258,
+            "N_W": 192,
+            "N_L": 66,
+            "cells": {
+              "W_and_not_T40": 167,
+              "W_and_T40": 25,
+              "L_and_not_T40": 0,
+              "L_and_T40": 66
+            },
+            "cell_probs": {
+              "W_and_not_T40": 0.6472868217054264,
+              "W_and_T40": 0.09689922480620156,
+              "L_and_not_T40": 0.0,
+              "L_and_T40": 0.2558139534883721
+            },
+            "terminal": {
+              "n": 258,
+              "k": 192,
+              "estimate": 0.7441860465116279,
+              "pct": 74.4186,
+              "wilson_ci95": [
+                68.7633,
+                79.3574
+              ],
+              "clopper_pearson_ci95": [
+                68.6384,
+                79.6283
+              ],
+              "object": "P(W | FIRST75)",
+              "alpha_terminal": -0.005813953488372103,
+              "alpha_pct_points": -0.5814,
+              "alpha_wilson_ci95": [
+                -6.2367,
+                4.3574
+              ],
+              "wilson_excludes_k": false,
+              "vs_null": {
+                "n": 258,
+                "k": 192,
+                "p0": 0.75,
+                "p_hat": 0.7441860465116279,
+                "p_one_sided_greater": 0.6173219204915925,
+                "p_one_sided_less": 0.43822402897440105,
+                "p_two_sided": 0.8293388458237019,
+                "method": "scipy.stats.binomtest"
+              }
+            },
+            "winner_path": {
+              "n": 192,
+              "k": 167,
+              "estimate": 0.8697916666666666,
+              "pct": 86.9792,
+              "wilson_ci95": [
+                81.4849,
+                91.0226
+              ],
+              "clopper_pearson_ci95": [
+                81.3813,
+                91.3932
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            },
+            "loser_path": {
+              "n": 66,
+              "k": 0,
+              "estimate": 0.0,
+              "pct": 0.0,
+              "wilson_ci95": [
+                0.0,
+                5.5004
+              ],
+              "clopper_pearson_ci95": [
+                0.0,
+                5.4359
+              ],
+              "object": "P(\u00acT40 | L, FIRST75)"
+            },
+            "unconditional_barrier": {
+              "n": 258,
+              "k": 167,
+              "estimate": 0.6472868217054264,
+              "pct": 64.7287,
+              "wilson_ci95": [
+                58.721,
+                70.3042
+              ],
+              "clopper_pearson_ci95": [
+                58.5611,
+                70.5534
+              ],
+              "object": "P(\u00acT40 | FIRST75)"
+            },
+            "joint_win_survive": {
+              "n": 258,
+              "k": 167,
+              "estimate": 0.6472868217054264,
+              "pct": 64.7287,
+              "wilson_ci95": [
+                58.721,
+                70.3042
+              ],
+              "clopper_pearson_ci95": [
+                58.5611,
+                70.5534
+              ],
+              "object": "P(W \u2229 \u00acT40 | FIRST75)"
+            },
+            "reconstruction": {
+              "p": 0.7441860465116279,
+              "s_W": 0.8697916666666666,
+              "s_L": 0.0,
+              "p_times_s_W": 0.6472868217054263,
+              "S": 0.6472868217054263,
+              "identity_p_times_s_W_equals_joint": true,
+              "identity_four_cells_sum_to_n": true
+            },
+            "counterfactual_p_at_quote": {
+              "held_s_W": 0.8697916666666666,
+              "joint_if_p_equals_k": 0.65234375,
+              "delta_vs_observed_joint": 0.005056928294573604,
+              "note": "Not a forecast. Holds winner-path, sets P(W) to K."
+            }
+          },
+          "decomp_FIRST80": {
+            "label": "FIRST80",
+            "quote_k": 0.8,
+            "n": 290,
+            "N_W": 238,
+            "N_L": 52,
+            "cells": {
+              "W_and_not_T40": 211,
+              "W_and_T40": 27,
+              "L_and_not_T40": 0,
+              "L_and_T40": 52
+            },
+            "cell_probs": {
+              "W_and_not_T40": 0.7275862068965517,
+              "W_and_T40": 0.09310344827586207,
+              "L_and_not_T40": 0.0,
+              "L_and_T40": 0.1793103448275862
+            },
+            "terminal": {
+              "n": 290,
+              "k": 238,
+              "estimate": 0.8206896551724138,
+              "pct": 82.069,
+              "wilson_ci95": [
+                77.2435,
+                86.0559
+              ],
+              "clopper_pearson_ci95": [
+                77.1601,
+                86.3087
+              ],
+              "object": "P(W | FIRST80)",
+              "alpha_terminal": 0.020689655172413723,
+              "alpha_pct_points": 2.069,
+              "alpha_wilson_ci95": [
+                -2.7565,
+                6.0559
+              ],
+              "wilson_excludes_k": false,
+              "vs_null": {
+                "n": 290,
+                "k": 238,
+                "p0": 0.8,
+                "p_hat": 0.8206896551724138,
+                "p_one_sided_greater": 0.21118574659936268,
+                "p_one_sided_less": 0.8297405165638402,
+                "p_two_sided": 0.4194122364342744,
+                "method": "scipy.stats.binomtest"
+              }
+            },
+            "winner_path": {
+              "n": 238,
+              "k": 211,
+              "estimate": 0.8865546218487395,
+              "pct": 88.6555,
+              "wilson_ci95": [
+                83.9975,
+                92.0853
+              ],
+              "clopper_pearson_ci95": [
+                83.9247,
+                92.3894
+              ],
+              "object": "P(\u00acT40 | W, FIRST80)"
+            },
+            "loser_path": {
+              "n": 52,
+              "k": 0,
+              "estimate": 0.0,
+              "pct": 0.0,
+              "wilson_ci95": [
+                0.0,
+                6.8795
+              ],
+              "clopper_pearson_ci95": [
+                0.0,
+                6.8482
+              ],
+              "object": "P(\u00acT40 | L, FIRST80)"
+            },
+            "unconditional_barrier": {
+              "n": 290,
+              "k": 211,
+              "estimate": 0.7275862068965517,
+              "pct": 72.7586,
+              "wilson_ci95": [
+                67.3619,
+                77.5602
+              ],
+              "clopper_pearson_ci95": [
+                67.2464,
+                77.799
+              ],
+              "object": "P(\u00acT40 | FIRST80)"
+            },
+            "joint_win_survive": {
+              "n": 290,
+              "k": 211,
+              "estimate": 0.7275862068965517,
+              "pct": 72.7586,
+              "wilson_ci95": [
+                67.3619,
+                77.5602
+              ],
+              "clopper_pearson_ci95": [
+                67.2464,
+                77.799
+              ],
+              "object": "P(W \u2229 \u00acT40 | FIRST80)"
+            },
+            "reconstruction": {
+              "p": 0.8206896551724138,
+              "s_W": 0.8865546218487395,
+              "s_L": 0.0,
+              "p_times_s_W": 0.7275862068965516,
+              "S": 0.7275862068965516,
+              "identity_p_times_s_W_equals_joint": true,
+              "identity_four_cells_sum_to_n": true
+            },
+            "counterfactual_p_at_quote": {
+              "held_s_W": 0.8865546218487395,
+              "joint_if_p_equals_k": 0.7092436974789916,
+              "delta_vs_observed_joint": -0.018342509417560104,
+              "note": "Not a forecast. Holds winner-path, sets P(W) to K."
+            }
+          },
+          "FIRST75_splits": {
+            "IN_SAMPLE": {
+              "n_total": 106,
+              "n_wins": 73,
+              "k_not_t40": 62,
+              "estimate": 0.8493150684931506,
+              "pct": 84.9315,
+              "wilson_ci95": [
+                74.9979,
+                91.3724
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            },
+            "VALIDATION": {
+              "n_total": 110,
+              "n_wins": 84,
+              "k_not_t40": 77,
+              "estimate": 0.9166666666666666,
+              "pct": 91.6667,
+              "wilson_ci95": [
+                83.7841,
+                95.9048
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            },
+            "OOS": {
+              "n_total": 42,
+              "n_wins": 35,
+              "k_not_t40": 28,
+              "estimate": 0.8,
+              "pct": 80.0,
+              "wilson_ci95": [
+                64.1081,
+                89.9577
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            }
+          },
+          "partition_note": "clock at FIRST75/FIRST80 timestamp; UNALIGNED excluded from Q3"
+        },
+        "Q2\u222aQ3": {
+          "FIRST75": {
+            "n_total": 576,
+            "n_wins": 434,
+            "k_not_t40": 375,
+            "estimate": 0.8640552995391705,
+            "pct": 86.4055,
+            "wilson_ci95": [
+              82.8599,
+              89.3123
+            ],
+            "object": "P(\u00acT40 | W, FIRST75)"
+          },
+          "FIRST80": {
+            "n_total": 604,
+            "n_wins": 505,
+            "k_not_t40": 450,
+            "estimate": 0.8910891089108911,
+            "pct": 89.1089,
+            "wilson_ci95": [
+              86.0908,
+              91.5365
+            ],
+            "object": "P(\u00acT40 | W, FIRST80)"
+          },
+          "decomp_FIRST75": {
+            "label": "FIRST75",
+            "quote_k": 0.75,
+            "n": 576,
+            "N_W": 434,
+            "N_L": 142,
+            "cells": {
+              "W_and_not_T40": 375,
+              "W_and_T40": 59,
+              "L_and_not_T40": 1,
+              "L_and_T40": 141
+            },
+            "cell_probs": {
+              "W_and_not_T40": 0.6510416666666666,
+              "W_and_T40": 0.10243055555555555,
+              "L_and_not_T40": 0.001736111111111111,
+              "L_and_T40": 0.24479166666666666
+            },
+            "terminal": {
+              "n": 576,
+              "k": 434,
+              "estimate": 0.7534722222222222,
+              "pct": 75.3472,
+              "wilson_ci95": [
+                71.6672,
+                78.6914
+              ],
+              "clopper_pearson_ci95": [
+                71.616,
+                78.8161
+              ],
+              "object": "P(W | FIRST75)",
+              "alpha_terminal": 0.00347222222222221,
+              "alpha_pct_points": 0.3472,
+              "alpha_wilson_ci95": [
+                -3.3328,
+                3.6914
+              ],
+              "wilson_excludes_k": false,
+              "vs_null": {
+                "n": 576,
+                "k": 434,
+                "p0": 0.75,
+                "p_hat": 0.7534722222222222,
+                "p_one_sided_greater": 0.445733594492095,
+                "p_one_sided_less": 0.5921010214496424,
+                "p_two_sided": 0.8852606423013607,
+                "method": "scipy.stats.binomtest"
+              }
+            },
+            "winner_path": {
+              "n": 434,
+              "k": 375,
+              "estimate": 0.8640552995391705,
+              "pct": 86.4055,
+              "wilson_ci95": [
+                82.8599,
+                89.3123
+              ],
+              "clopper_pearson_ci95": [
+                82.817,
+                89.4877
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            },
+            "loser_path": {
+              "n": 142,
+              "k": 1,
+              "estimate": 0.007042253521126761,
+              "pct": 0.7042,
+              "wilson_ci95": [
+                0.1244,
+                3.881
+              ],
+              "clopper_pearson_ci95": [
+                0.0178,
+                3.8611
+              ],
+              "object": "P(\u00acT40 | L, FIRST75)"
+            },
+            "unconditional_barrier": {
+              "n": 576,
+              "k": 376,
+              "estimate": 0.6527777777777778,
+              "pct": 65.2778,
+              "wilson_ci95": [
+                61.3001,
+                69.053
+              ],
+              "clopper_pearson_ci95": [
+                61.2323,
+                69.1656
+              ],
+              "object": "P(\u00acT40 | FIRST75)"
+            },
+            "joint_win_survive": {
+              "n": 576,
+              "k": 375,
+              "estimate": 0.6510416666666666,
+              "pct": 65.1042,
+              "wilson_ci95": [
+                61.1232,
+                68.885
+              ],
+              "clopper_pearson_ci95": [
+                61.0551,
+                68.9974
+              ],
+              "object": "P(W \u2229 \u00acT40 | FIRST75)"
+            },
+            "reconstruction": {
+              "p": 0.7534722222222222,
+              "s_W": 0.8640552995391705,
+              "s_L": 0.007042253521126761,
+              "p_times_s_W": 0.6510416666666666,
+              "S": 0.6527777777777778,
+              "identity_p_times_s_W_equals_joint": true,
+              "identity_four_cells_sum_to_n": true
+            },
+            "counterfactual_p_at_quote": {
+              "held_s_W": 0.8640552995391705,
+              "joint_if_p_equals_k": 0.6480414746543779,
+              "delta_vs_observed_joint": -0.0030001920122887382,
+              "note": "Not a forecast. Holds winner-path, sets P(W) to K."
+            }
+          },
+          "decomp_FIRST80": {
+            "label": "FIRST80",
+            "quote_k": 0.8,
+            "n": 604,
+            "N_W": 505,
+            "N_L": 99,
+            "cells": {
+              "W_and_not_T40": 450,
+              "W_and_T40": 55,
+              "L_and_not_T40": 0,
+              "L_and_T40": 99
+            },
+            "cell_probs": {
+              "W_and_not_T40": 0.7450331125827815,
+              "W_and_T40": 0.09105960264900662,
+              "L_and_not_T40": 0.0,
+              "L_and_T40": 0.16390728476821192
+            },
+            "terminal": {
+              "n": 604,
+              "k": 505,
+              "estimate": 0.8360927152317881,
+              "pct": 83.6093,
+              "wilson_ci95": [
+                80.4462,
+                86.3475
+              ],
+              "clopper_pearson_ci95": [
+                80.4114,
+                86.4741
+              ],
+              "object": "P(W | FIRST80)",
+              "alpha_terminal": 0.03609271523178803,
+              "alpha_pct_points": 3.6093,
+              "alpha_wilson_ci95": [
+                0.4462,
+                6.3475
+              ],
+              "wilson_excludes_k": true,
+              "vs_null": {
+                "n": 604,
+                "k": 505,
+                "p0": 0.8,
+                "p_hat": 0.8360927152317881,
+                "p_one_sided_greater": 0.01361562991025211,
+                "p_one_sided_less": 0.9896978294589065,
+                "p_two_sided": 0.025250239112141956,
+                "method": "scipy.stats.binomtest"
+              }
+            },
+            "winner_path": {
+              "n": 505,
+              "k": 450,
+              "estimate": 0.8910891089108911,
+              "pct": 89.1089,
+              "wilson_ci95": [
+                86.0908,
+                91.5365
+              ],
+              "clopper_pearson_ci95": [
+                86.0604,
+                91.6893
+              ],
+              "object": "P(\u00acT40 | W, FIRST80)"
+            },
+            "loser_path": {
+              "n": 99,
+              "k": 0,
+              "estimate": 0.0,
+              "pct": 0.0,
+              "wilson_ci95": [
+                0.0,
+                3.7355
+              ],
+              "clopper_pearson_ci95": [
+                0.0,
+                3.6576
+              ],
+              "object": "P(\u00acT40 | L, FIRST80)"
+            },
+            "unconditional_barrier": {
+              "n": 604,
+              "k": 450,
+              "estimate": 0.7450331125827815,
+              "pct": 74.5033,
+              "wilson_ci95": [
+                70.8801,
+                77.8168
+              ],
+              "clopper_pearson_ci95": [
+                70.8301,
+                77.935
+              ],
+              "object": "P(\u00acT40 | FIRST80)"
+            },
+            "joint_win_survive": {
+              "n": 604,
+              "k": 450,
+              "estimate": 0.7450331125827815,
+              "pct": 74.5033,
+              "wilson_ci95": [
+                70.8801,
+                77.8168
+              ],
+              "clopper_pearson_ci95": [
+                70.8301,
+                77.935
+              ],
+              "object": "P(W \u2229 \u00acT40 | FIRST80)"
+            },
+            "reconstruction": {
+              "p": 0.8360927152317881,
+              "s_W": 0.8910891089108911,
+              "s_L": 0.0,
+              "p_times_s_W": 0.7450331125827815,
+              "S": 0.7450331125827815,
+              "identity_p_times_s_W_equals_joint": true,
+              "identity_four_cells_sum_to_n": true
+            },
+            "counterfactual_p_at_quote": {
+              "held_s_W": 0.8910891089108911,
+              "joint_if_p_equals_k": 0.712871287128713,
+              "delta_vs_observed_joint": -0.03216182545406854,
+              "note": "Not a forecast. Holds winner-path, sets P(W) to K."
+            }
+          },
+          "FIRST75_splits": {
+            "IN_SAMPLE": {
+              "n_total": 231,
+              "n_wins": 165,
+              "k_not_t40": 146,
+              "estimate": 0.8848484848484849,
+              "pct": 88.4848,
+              "wilson_ci95": [
+                82.7154,
+                92.5031
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            },
+            "VALIDATION": {
+              "n_total": 236,
+              "n_wins": 178,
+              "k_not_t40": 156,
+              "estimate": 0.8764044943820225,
+              "pct": 87.6404,
+              "wilson_ci95": [
+                81.9959,
+                91.6946
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            },
+            "OOS": {
+              "n_total": 109,
+              "n_wins": 91,
+              "k_not_t40": 73,
+              "estimate": 0.8021978021978022,
+              "pct": 80.2198,
+              "wilson_ci95": [
+                70.8858,
+                87.1056
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            }
+          },
+          "partition_note": "clock at FIRST75/FIRST80 timestamp; UNALIGNED excluded from Q2\u222aQ3"
+        }
+      },
+      "identity": {
+        "FIRST75_full": {
+          "n": 1176,
+          "W": 915,
+          "k_not_t40": 781
+        }
+      }
+    },
+    "ncaab_p5": {
+      "sport": "ncaab_p5",
+      "label": "KXNCAAMBGAME P5 vs P5 2025-26",
+      "FIRST75_full": {
+        "n_total": 683,
+        "n_wins": 538,
+        "k_not_t40": 456,
+        "estimate": 0.8475836431226765,
+        "pct": 84.7584,
+        "wilson_ci95": [
+          81.4755,
+          87.5484
+        ],
+        "object": "P(\u00acT40 | W, FIRST75)"
+      },
+      "FIRST80_full": {
+        "n_total": 721,
+        "n_wins": 601,
+        "k_not_t40": 533,
+        "estimate": 0.8868552412645591,
+        "pct": 88.6855,
+        "wilson_ci95": [
+          85.9034,
+          90.9763
+        ],
+        "object": "P(\u00acT40 | W, FIRST80)"
+      },
+      "decomp_FIRST75_full": {
+        "label": "FIRST75",
+        "quote_k": 0.75,
+        "n": 683,
+        "N_W": 538,
+        "N_L": 145,
+        "cells": {
+          "W_and_not_T40": 456,
+          "W_and_T40": 82,
+          "L_and_not_T40": 0,
+          "L_and_T40": 145
+        },
+        "cell_probs": {
+          "W_and_not_T40": 0.6676427525622255,
+          "W_and_T40": 0.12005856515373353,
+          "L_and_not_T40": 0.0,
+          "L_and_T40": 0.212298682284041
+        },
+        "terminal": {
+          "n": 683,
+          "k": 538,
+          "estimate": 0.787701317715959,
+          "pct": 78.7701,
+          "wilson_ci95": [
+            75.5467,
+            81.6718
+          ],
+          "clopper_pearson_ci95": [
+            75.5089,
+            81.7804
+          ],
+          "object": "P(W | FIRST75)",
+          "alpha_terminal": 0.03770131771595897,
+          "alpha_pct_points": 3.7701,
+          "alpha_wilson_ci95": [
+            0.5467,
+            6.6718
+          ],
+          "wilson_excludes_k": true,
+          "vs_null": {
+            "n": 683,
+            "k": 538,
+            "p0": 0.75,
+            "p_hat": 0.787701317715959,
+            "p_one_sided_greater": 0.01181042925831212,
+            "p_one_sided_less": 0.9907373297588814,
+            "p_two_sided": 0.02412657009210031,
+            "method": "scipy.stats.binomtest"
+          }
+        },
+        "winner_path": {
+          "n": 538,
+          "k": 456,
+          "estimate": 0.8475836431226765,
+          "pct": 84.7584,
+          "wilson_ci95": [
+            81.4755,
+            87.5484
+          ],
+          "clopper_pearson_ci95": [
+            81.4383,
+            87.6906
+          ],
+          "object": "P(\u00acT40 | W, FIRST75)"
+        },
+        "loser_path": {
+          "n": 145,
+          "k": 0,
+          "estimate": 0.0,
+          "pct": 0.0,
+          "wilson_ci95": [
+            0.0,
+            2.581
+          ],
+          "clopper_pearson_ci95": [
+            0.0,
+            2.512
+          ],
+          "object": "P(\u00acT40 | L, FIRST75)"
+        },
+        "unconditional_barrier": {
+          "n": 683,
+          "k": 456,
+          "estimate": 0.6676427525622255,
+          "pct": 66.7643,
+          "wilson_ci95": [
+            63.1463,
+            70.1947
+          ],
+          "clopper_pearson_ci95": [
+            63.0916,
+            70.2913
+          ],
+          "object": "P(\u00acT40 | FIRST75)"
+        },
+        "joint_win_survive": {
+          "n": 683,
+          "k": 456,
+          "estimate": 0.6676427525622255,
+          "pct": 66.7643,
+          "wilson_ci95": [
+            63.1463,
+            70.1947
+          ],
+          "clopper_pearson_ci95": [
+            63.0916,
+            70.2913
+          ],
+          "object": "P(W \u2229 \u00acT40 | FIRST75)"
+        },
+        "reconstruction": {
+          "p": 0.787701317715959,
+          "s_W": 0.8475836431226765,
+          "s_L": 0.0,
+          "p_times_s_W": 0.6676427525622254,
+          "S": 0.6676427525622254,
+          "identity_p_times_s_W_equals_joint": true,
+          "identity_four_cells_sum_to_n": true
+        },
+        "counterfactual_p_at_quote": {
+          "held_s_W": 0.8475836431226765,
+          "joint_if_p_equals_k": 0.6356877323420074,
+          "delta_vs_observed_joint": -0.03195502022021812,
+          "note": "Not a forecast. Holds winner-path, sets P(W) to K."
+        }
+      },
+      "decomp_FIRST80_full": {
+        "label": "FIRST80",
+        "quote_k": 0.8,
+        "n": 721,
+        "N_W": 601,
+        "N_L": 120,
+        "cells": {
+          "W_and_not_T40": 533,
+          "W_and_T40": 68,
+          "L_and_not_T40": 0,
+          "L_and_T40": 120
+        },
+        "cell_probs": {
+          "W_and_not_T40": 0.739251040221914,
+          "W_and_T40": 0.09431345353675451,
+          "L_and_not_T40": 0.0,
+          "L_and_T40": 0.1664355062413315
+        },
+        "terminal": {
+          "n": 721,
+          "k": 601,
+          "estimate": 0.8335644937586685,
+          "pct": 83.3564,
+          "wilson_ci95": [
+            80.4623,
+            85.897
+          ],
+          "clopper_pearson_ci95": [
+            80.4331,
+            86.0036
+          ],
+          "object": "P(W | FIRST80)",
+          "alpha_terminal": 0.033564493758668434,
+          "alpha_pct_points": 3.3564,
+          "alpha_wilson_ci95": [
+            0.4623,
+            5.897
+          ],
+          "wilson_excludes_k": true,
+          "vs_null": {
+            "n": 721,
+            "k": 601,
+            "p0": 0.8,
+            "p_hat": 0.8335644937586685,
+            "p_one_sided_greater": 0.01235058103717359,
+            "p_one_sided_less": 0.9904499381286541,
+            "p_two_sided": 0.025317237625767403,
+            "method": "scipy.stats.binomtest"
+          }
+        },
+        "winner_path": {
+          "n": 601,
+          "k": 533,
+          "estimate": 0.8868552412645591,
+          "pct": 88.6855,
+          "wilson_ci95": [
+            85.9034,
+            90.9763
+          ],
+          "clopper_pearson_ci95": [
+            85.8774,
+            91.106
+          ],
+          "object": "P(\u00acT40 | W, FIRST80)"
+        },
+        "loser_path": {
+          "n": 120,
+          "k": 0,
+          "estimate": 0.0,
+          "pct": 0.0,
+          "wilson_ci95": [
+            0.0,
+            3.102
+          ],
+          "clopper_pearson_ci95": [
+            0.0,
+            3.0273
+          ],
+          "object": "P(\u00acT40 | L, FIRST80)"
+        },
+        "unconditional_barrier": {
+          "n": 721,
+          "k": 533,
+          "estimate": 0.739251040221914,
+          "pct": 73.9251,
+          "wilson_ci95": [
+            70.5995,
+            76.9971
+          ],
+          "clopper_pearson_ci95": [
+            70.5573,
+            77.0958
+          ],
+          "object": "P(\u00acT40 | FIRST80)"
+        },
+        "joint_win_survive": {
+          "n": 721,
+          "k": 533,
+          "estimate": 0.739251040221914,
+          "pct": 73.9251,
+          "wilson_ci95": [
+            70.5995,
+            76.9971
+          ],
+          "clopper_pearson_ci95": [
+            70.5573,
+            77.0958
+          ],
+          "object": "P(W \u2229 \u00acT40 | FIRST80)"
+        },
+        "reconstruction": {
+          "p": 0.8335644937586685,
+          "s_W": 0.8868552412645591,
+          "s_L": 0.0,
+          "p_times_s_W": 0.739251040221914,
+          "S": 0.739251040221914,
+          "identity_p_times_s_W_equals_joint": true,
+          "identity_four_cells_sum_to_n": true
+        },
+        "counterfactual_p_at_quote": {
+          "held_s_W": 0.8868552412645591,
+          "joint_if_p_equals_k": 0.7094841930116473,
+          "delta_vs_observed_joint": -0.029766847210266678,
+          "note": "Not a forecast. Holds winner-path, sets P(W) to K."
+        }
+      },
+      "FIRST75_partition": {
+        "H1_2": 204,
+        "H1_1": 232,
+        "UNALIGNED": 43,
+        "H2_1": 133,
+        "H2_2": 71
+      },
+      "FIRST80_partition": {
+        "UNALIGNED": 37,
+        "H1_2": 193,
+        "H2_2": 131,
+        "H2_1": 139,
+        "H1_1": 217,
+        "OT": 4
+      },
+      "slices": {
+        "H1_2": {
+          "FIRST75": {
+            "n_total": 204,
+            "n_wins": 152,
+            "k_not_t40": 126,
+            "estimate": 0.8289473684210527,
+            "pct": 82.8947,
+            "wilson_ci95": [
+              76.1164,
+              88.0513
+            ],
+            "object": "P(\u00acT40 | W, FIRST75)"
+          },
+          "FIRST80": {
+            "n_total": 193,
+            "n_wins": 163,
+            "k_not_t40": 142,
+            "estimate": 0.8711656441717791,
+            "pct": 87.1166,
+            "wilson_ci95": [
+              81.107,
+              91.4169
+            ],
+            "object": "P(\u00acT40 | W, FIRST80)"
+          },
+          "decomp_FIRST75": {
+            "label": "FIRST75",
+            "quote_k": 0.75,
+            "n": 204,
+            "N_W": 152,
+            "N_L": 52,
+            "cells": {
+              "W_and_not_T40": 126,
+              "W_and_T40": 26,
+              "L_and_not_T40": 0,
+              "L_and_T40": 52
+            },
+            "cell_probs": {
+              "W_and_not_T40": 0.6176470588235294,
+              "W_and_T40": 0.12745098039215685,
+              "L_and_not_T40": 0.0,
+              "L_and_T40": 0.2549019607843137
+            },
+            "terminal": {
+              "n": 204,
+              "k": 152,
+              "estimate": 0.7450980392156863,
+              "pct": 74.5098,
+              "wilson_ci95": [
+                68.1146,
+                79.999
+              ],
+              "clopper_pearson_ci95": [
+                67.9537,
+                80.3388
+              ],
+              "object": "P(W | FIRST75)",
+              "alpha_terminal": -0.004901960784313708,
+              "alpha_pct_points": -0.4902,
+              "alpha_wilson_ci95": [
+                -6.8854,
+                4.999
+              ],
+              "wilson_excludes_k": false,
+              "vs_null": {
+                "n": 204,
+                "k": 152,
+                "p0": 0.75,
+                "p_hat": 0.7450980392156863,
+                "p_one_sided_greater": 0.6006870033816281,
+                "p_one_sided_less": 0.462465768955933,
+                "p_two_sided": 0.8716359997966854,
+                "method": "scipy.stats.binomtest"
+              }
+            },
+            "winner_path": {
+              "n": 152,
+              "k": 126,
+              "estimate": 0.8289473684210527,
+              "pct": 82.8947,
+              "wilson_ci95": [
+                76.1164,
+                88.0513
+              ],
+              "clopper_pearson_ci95": [
+                75.95,
+                88.5115
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            },
+            "loser_path": {
+              "n": 52,
+              "k": 0,
+              "estimate": 0.0,
+              "pct": 0.0,
+              "wilson_ci95": [
+                0.0,
+                6.8795
+              ],
+              "clopper_pearson_ci95": [
+                0.0,
+                6.8482
+              ],
+              "object": "P(\u00acT40 | L, FIRST75)"
+            },
+            "unconditional_barrier": {
+              "n": 204,
+              "k": 126,
+              "estimate": 0.6176470588235294,
+              "pct": 61.7647,
+              "wilson_ci95": [
+                54.9369,
+                68.1576
+              ],
+              "clopper_pearson_ci95": [
+                54.719,
+                68.4631
+              ],
+              "object": "P(\u00acT40 | FIRST75)"
+            },
+            "joint_win_survive": {
+              "n": 204,
+              "k": 126,
+              "estimate": 0.6176470588235294,
+              "pct": 61.7647,
+              "wilson_ci95": [
+                54.9369,
+                68.1576
+              ],
+              "clopper_pearson_ci95": [
+                54.719,
+                68.4631
+              ],
+              "object": "P(W \u2229 \u00acT40 | FIRST75)"
+            },
+            "reconstruction": {
+              "p": 0.7450980392156863,
+              "s_W": 0.8289473684210527,
+              "s_L": 0.0,
+              "p_times_s_W": 0.6176470588235294,
+              "S": 0.6176470588235294,
+              "identity_p_times_s_W_equals_joint": true,
+              "identity_four_cells_sum_to_n": true
+            },
+            "counterfactual_p_at_quote": {
+              "held_s_W": 0.8289473684210527,
+              "joint_if_p_equals_k": 0.6217105263157895,
+              "delta_vs_observed_joint": 0.004063467492260053,
+              "note": "Not a forecast. Holds winner-path, sets P(W) to K."
+            }
+          },
+          "decomp_FIRST80": {
+            "label": "FIRST80",
+            "quote_k": 0.8,
+            "n": 193,
+            "N_W": 163,
+            "N_L": 30,
+            "cells": {
+              "W_and_not_T40": 142,
+              "W_and_T40": 21,
+              "L_and_not_T40": 0,
+              "L_and_T40": 30
+            },
+            "cell_probs": {
+              "W_and_not_T40": 0.7357512953367875,
+              "W_and_T40": 0.10880829015544041,
+              "L_and_not_T40": 0.0,
+              "L_and_T40": 0.15544041450777202
+            },
+            "terminal": {
+              "n": 193,
+              "k": 163,
+              "estimate": 0.844559585492228,
+              "pct": 84.456,
+              "wilson_ci95": [
+                78.6774,
+                88.8897
+              ],
+              "clopper_pearson_ci95": [
+                78.5595,
+                89.2601
+              ],
+              "object": "P(W | FIRST80)",
+              "alpha_terminal": 0.04455958549222794,
+              "alpha_pct_points": 4.456,
+              "alpha_wilson_ci95": [
+                -1.3226,
+                8.8897
+              ],
+              "wilson_excludes_k": false,
+              "vs_null": {
+                "n": 193,
+                "k": 163,
+                "p0": 0.8,
+                "p_hat": 0.844559585492228,
+                "p_one_sided_greater": 0.06931355704695179,
+                "p_one_sided_less": 0.9528023460269545,
+                "p_two_sided": 0.12672277760660752,
+                "method": "scipy.stats.binomtest"
+              }
+            },
+            "winner_path": {
+              "n": 163,
+              "k": 142,
+              "estimate": 0.8711656441717791,
+              "pct": 87.1166,
+              "wilson_ci95": [
+                81.107,
+                91.4169
+              ],
+              "clopper_pearson_ci95": [
+                80.9827,
+                91.8449
+              ],
+              "object": "P(\u00acT40 | W, FIRST80)"
+            },
+            "loser_path": {
+              "n": 30,
+              "k": 0,
+              "estimate": 0.0,
+              "pct": 0.0,
+              "wilson_ci95": [
+                0.0,
+                11.3517
+              ],
+              "clopper_pearson_ci95": [
+                0.0,
+                11.5703
+              ],
+              "object": "P(\u00acT40 | L, FIRST80)"
+            },
+            "unconditional_barrier": {
+              "n": 193,
+              "k": 142,
+              "estimate": 0.7357512953367875,
+              "pct": 73.5751,
+              "wilson_ci95": [
+                66.938,
+                79.292
+              ],
+              "clopper_pearson_ci95": [
+                66.7624,
+                79.6484
+              ],
+              "object": "P(\u00acT40 | FIRST80)"
+            },
+            "joint_win_survive": {
+              "n": 193,
+              "k": 142,
+              "estimate": 0.7357512953367875,
+              "pct": 73.5751,
+              "wilson_ci95": [
+                66.938,
+                79.292
+              ],
+              "clopper_pearson_ci95": [
+                66.7624,
+                79.6484
+              ],
+              "object": "P(W \u2229 \u00acT40 | FIRST80)"
+            },
+            "reconstruction": {
+              "p": 0.844559585492228,
+              "s_W": 0.8711656441717791,
+              "s_L": 0.0,
+              "p_times_s_W": 0.7357512953367875,
+              "S": 0.7357512953367875,
+              "identity_p_times_s_W_equals_joint": true,
+              "identity_four_cells_sum_to_n": true
+            },
+            "counterfactual_p_at_quote": {
+              "held_s_W": 0.8711656441717791,
+              "joint_if_p_equals_k": 0.6969325153374233,
+              "delta_vs_observed_joint": -0.03881877999936423,
+              "note": "Not a forecast. Holds winner-path, sets P(W) to K."
+            }
+          },
+          "FIRST75_splits": {
+            "IN_SAMPLE": {
+              "n_total": 39,
+              "n_wins": 30,
+              "k_not_t40": 25,
+              "estimate": 0.8333333333333334,
+              "pct": 83.3333,
+              "wilson_ci95": [
+                66.4353,
+                92.6636
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            },
+            "VALIDATION": {
+              "n_total": 158,
+              "n_wins": 117,
+              "k_not_t40": 98,
+              "estimate": 0.8376068376068376,
+              "pct": 83.7607,
+              "wilson_ci95": [
+                76.0246,
+                89.3503
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            },
+            "OOS": {
+              "n_total": 7,
+              "n_wins": 5,
+              "k_not_t40": 3,
+              "estimate": 0.6,
+              "pct": 60.0,
+              "wilson_ci95": [
+                23.072,
+                88.2382
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            }
+          },
+          "partition_note": "clock at FIRST75/FIRST80 timestamp; UNALIGNED excluded from H1_2"
+        },
+        "H2_1": {
+          "FIRST75": {
+            "n_total": 133,
+            "n_wins": 110,
+            "k_not_t40": 99,
+            "estimate": 0.9,
+            "pct": 90.0,
+            "wilson_ci95": [
+              82.9763,
+              94.324
+            ],
+            "object": "P(\u00acT40 | W, FIRST75)"
+          },
+          "FIRST80": {
+            "n_total": 139,
+            "n_wins": 118,
+            "k_not_t40": 108,
+            "estimate": 0.9152542372881356,
+            "pct": 91.5254,
+            "wilson_ci95": [
+              85.1005,
+              95.3318
+            ],
+            "object": "P(\u00acT40 | W, FIRST80)"
+          },
+          "decomp_FIRST75": {
+            "label": "FIRST75",
+            "quote_k": 0.75,
+            "n": 133,
+            "N_W": 110,
+            "N_L": 23,
+            "cells": {
+              "W_and_not_T40": 99,
+              "W_and_T40": 11,
+              "L_and_not_T40": 0,
+              "L_and_T40": 23
+            },
+            "cell_probs": {
+              "W_and_not_T40": 0.7443609022556391,
+              "W_and_T40": 0.08270676691729323,
+              "L_and_not_T40": 0.0,
+              "L_and_T40": 0.17293233082706766
+            },
+            "terminal": {
+              "n": 133,
+              "k": 110,
+              "estimate": 0.8270676691729323,
+              "pct": 82.7068,
+              "wilson_ci95": [
+                75.3858,
+                88.1913
+              ],
+              "clopper_pearson_ci95": [
+                75.1903,
+                88.7103
+              ],
+              "object": "P(W | FIRST75)",
+              "alpha_terminal": 0.07706766917293228,
+              "alpha_pct_points": 7.7068,
+              "alpha_wilson_ci95": [
+                0.3858,
+                13.1913
+              ],
+              "wilson_excludes_k": true,
+              "vs_null": {
+                "n": 133,
+                "k": 110,
+                "p0": 0.75,
+                "p_hat": 0.8270676691729323,
+                "p_one_sided_greater": 0.022270147186050616,
+                "p_one_sided_less": 0.9870267306279769,
+                "p_two_sided": 0.04463382486620097,
+                "method": "scipy.stats.binomtest"
+              }
+            },
+            "winner_path": {
+              "n": 110,
+              "k": 99,
+              "estimate": 0.9,
+              "pct": 90.0,
+              "wilson_ci95": [
+                82.9763,
+                94.324
+              ],
+              "clopper_pearson_ci95": [
+                82.8115,
+                94.9014
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            },
+            "loser_path": {
+              "n": 23,
+              "k": 0,
+              "estimate": 0.0,
+              "pct": 0.0,
+              "wilson_ci95": [
+                0.0,
+                14.3121
+              ],
+              "clopper_pearson_ci95": [
+                0.0,
+                14.8185
+              ],
+              "object": "P(\u00acT40 | L, FIRST75)"
+            },
+            "unconditional_barrier": {
+              "n": 133,
+              "k": 99,
+              "estimate": 0.7443609022556391,
+              "pct": 74.4361,
+              "wilson_ci95": [
+                66.4091,
+                81.0911
+              ],
+              "clopper_pearson_ci95": [
+                66.1504,
+                81.6014
+              ],
+              "object": "P(\u00acT40 | FIRST75)"
+            },
+            "joint_win_survive": {
+              "n": 133,
+              "k": 99,
+              "estimate": 0.7443609022556391,
+              "pct": 74.4361,
+              "wilson_ci95": [
+                66.4091,
+                81.0911
+              ],
+              "clopper_pearson_ci95": [
+                66.1504,
+                81.6014
+              ],
+              "object": "P(W \u2229 \u00acT40 | FIRST75)"
+            },
+            "reconstruction": {
+              "p": 0.8270676691729323,
+              "s_W": 0.9,
+              "s_L": 0.0,
+              "p_times_s_W": 0.7443609022556391,
+              "S": 0.7443609022556391,
+              "identity_p_times_s_W_equals_joint": true,
+              "identity_four_cells_sum_to_n": true
+            },
+            "counterfactual_p_at_quote": {
+              "held_s_W": 0.9,
+              "joint_if_p_equals_k": 0.675,
+              "delta_vs_observed_joint": -0.06936090225563907,
+              "note": "Not a forecast. Holds winner-path, sets P(W) to K."
+            }
+          },
+          "decomp_FIRST80": {
+            "label": "FIRST80",
+            "quote_k": 0.8,
+            "n": 139,
+            "N_W": 118,
+            "N_L": 21,
+            "cells": {
+              "W_and_not_T40": 108,
+              "W_and_T40": 10,
+              "L_and_not_T40": 0,
+              "L_and_T40": 21
+            },
+            "cell_probs": {
+              "W_and_not_T40": 0.7769784172661871,
+              "W_and_T40": 0.07194244604316546,
+              "L_and_not_T40": 0.0,
+              "L_and_T40": 0.1510791366906475
+            },
+            "terminal": {
+              "n": 139,
+              "k": 118,
+              "estimate": 0.8489208633093526,
+              "pct": 84.8921,
+              "wilson_ci95": [
+                78.0061,
+                89.9013
+              ],
+              "clopper_pearson_ci95": [
+                77.8377,
+                90.3981
+              ],
+              "object": "P(W | FIRST80)",
+              "alpha_terminal": 0.048920863309352525,
+              "alpha_pct_points": 4.8921,
+              "alpha_wilson_ci95": [
+                -1.9939,
+                9.9013
+              ],
+              "wilson_excludes_k": false,
+              "vs_null": {
+                "n": 139,
+                "k": 118,
+                "p0": 0.8,
+                "p_hat": 0.8489208633093526,
+                "p_one_sided_greater": 0.08762268259161166,
+                "p_one_sided_less": 0.9432959853878385,
+                "p_two_sided": 0.16804911517419574,
+                "method": "scipy.stats.binomtest"
+              }
+            },
+            "winner_path": {
+              "n": 118,
+              "k": 108,
+              "estimate": 0.9152542372881356,
+              "pct": 91.5254,
+              "wilson_ci95": [
+                85.1005,
+                95.3318
+              ],
+              "clopper_pearson_ci95": [
+                84.9669,
+                95.8611
+              ],
+              "object": "P(\u00acT40 | W, FIRST80)"
+            },
+            "loser_path": {
+              "n": 21,
+              "k": 0,
+              "estimate": 0.0,
+              "pct": 0.0,
+              "wilson_ci95": [
+                0.0,
+                15.4644
+              ],
+              "clopper_pearson_ci95": [
+                0.0,
+                16.1098
+              ],
+              "object": "P(\u00acT40 | L, FIRST80)"
+            },
+            "unconditional_barrier": {
+              "n": 139,
+              "k": 108,
+              "estimate": 0.7769784172661871,
+              "pct": 77.6978,
+              "wilson_ci95": [
+                70.0858,
+                83.8201
+              ],
+              "clopper_pearson_ci95": [
+                69.8625,
+                84.3157
+              ],
+              "object": "P(\u00acT40 | FIRST80)"
+            },
+            "joint_win_survive": {
+              "n": 139,
+              "k": 108,
+              "estimate": 0.7769784172661871,
+              "pct": 77.6978,
+              "wilson_ci95": [
+                70.0858,
+                83.8201
+              ],
+              "clopper_pearson_ci95": [
+                69.8625,
+                84.3157
+              ],
+              "object": "P(W \u2229 \u00acT40 | FIRST80)"
+            },
+            "reconstruction": {
+              "p": 0.8489208633093526,
+              "s_W": 0.9152542372881356,
+              "s_L": 0.0,
+              "p_times_s_W": 0.7769784172661871,
+              "S": 0.7769784172661871,
+              "identity_p_times_s_W_equals_joint": true,
+              "identity_four_cells_sum_to_n": true
+            },
+            "counterfactual_p_at_quote": {
+              "held_s_W": 0.9152542372881356,
+              "joint_if_p_equals_k": 0.7322033898305085,
+              "delta_vs_observed_joint": -0.04477502743567863,
+              "note": "Not a forecast. Holds winner-path, sets P(W) to K."
+            }
+          },
+          "FIRST75_splits": {
+            "IN_SAMPLE": {
+              "n_total": 24,
+              "n_wins": 21,
+              "k_not_t40": 18,
+              "estimate": 0.8571428571428571,
+              "pct": 85.7143,
+              "wilson_ci95": [
+                65.3635,
+                95.0191
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            },
+            "VALIDATION": {
+              "n_total": 103,
+              "n_wins": 83,
+              "k_not_t40": 75,
+              "estimate": 0.9036144578313253,
+              "pct": 90.3614,
+              "wilson_ci95": [
+                82.1172,
+                95.0348
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            },
+            "OOS": {
+              "n_total": 6,
+              "n_wins": 6,
+              "k_not_t40": 6,
+              "estimate": 1.0,
+              "pct": 100.0,
+              "wilson_ci95": [
+                60.9657,
+                100.0
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            }
+          },
+          "partition_note": "clock at FIRST75/FIRST80 timestamp; UNALIGNED excluded from H2_1"
+        },
+        "H1_2\u222aH2_1": {
+          "FIRST75": {
+            "n_total": 337,
+            "n_wins": 262,
+            "k_not_t40": 225,
+            "estimate": 0.8587786259541985,
+            "pct": 85.8779,
+            "wilson_ci95": [
+              81.1411,
+              89.5777
+            ],
+            "object": "P(\u00acT40 | W, FIRST75)"
+          },
+          "FIRST80": {
+            "n_total": 332,
+            "n_wins": 281,
+            "k_not_t40": 250,
+            "estimate": 0.8896797153024911,
+            "pct": 88.968,
+            "wilson_ci95": [
+              84.7664,
+              92.1185
+            ],
+            "object": "P(\u00acT40 | W, FIRST80)"
+          },
+          "decomp_FIRST75": {
+            "label": "FIRST75",
+            "quote_k": 0.75,
+            "n": 337,
+            "N_W": 262,
+            "N_L": 75,
+            "cells": {
+              "W_and_not_T40": 225,
+              "W_and_T40": 37,
+              "L_and_not_T40": 0,
+              "L_and_T40": 75
+            },
+            "cell_probs": {
+              "W_and_not_T40": 0.6676557863501483,
+              "W_and_T40": 0.10979228486646884,
+              "L_and_not_T40": 0.0,
+              "L_and_T40": 0.22255192878338279
+            },
+            "terminal": {
+              "n": 337,
+              "k": 262,
+              "estimate": 0.7774480712166172,
+              "pct": 77.7448,
+              "wilson_ci95": [
+                73.005,
+                81.8592
+              ],
+              "clopper_pearson_ci95": [
+                72.9212,
+                82.0732
+              ],
+              "object": "P(W | FIRST75)",
+              "alpha_terminal": 0.027448071216617187,
+              "alpha_pct_points": 2.7448,
+              "alpha_wilson_ci95": [
+                -1.995,
+                6.8592
+              ],
+              "wilson_excludes_k": false,
+              "vs_null": {
+                "n": 337,
+                "k": 262,
+                "p0": 0.75,
+                "p_hat": 0.7774480712166172,
+                "p_one_sided_greater": 0.1349517243474694,
+                "p_one_sided_less": 0.8910993490695931,
+                "p_two_sided": 0.2579067017583435,
+                "method": "scipy.stats.binomtest"
+              }
+            },
+            "winner_path": {
+              "n": 262,
+              "k": 225,
+              "estimate": 0.8587786259541985,
+              "pct": 85.8779,
+              "wilson_ci95": [
+                81.1411,
+                89.5777
+              ],
+              "clopper_pearson_ci95": [
+                81.0636,
+                89.8579
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            },
+            "loser_path": {
+              "n": 75,
+              "k": 0,
+              "estimate": 0.0,
+              "pct": 0.0,
+              "wilson_ci95": [
+                0.0,
+                4.8726
+              ],
+              "clopper_pearson_ci95": [
+                0.0,
+                4.7995
+              ],
+              "object": "P(\u00acT40 | L, FIRST75)"
+            },
+            "unconditional_barrier": {
+              "n": 337,
+              "k": 225,
+              "estimate": 0.6676557863501483,
+              "pct": 66.7656,
+              "wilson_ci95": [
+                61.5721,
+                71.5811
+              ],
+              "clopper_pearson_ci95": [
+                61.4571,
+                71.7762
+              ],
+              "object": "P(\u00acT40 | FIRST75)"
+            },
+            "joint_win_survive": {
+              "n": 337,
+              "k": 225,
+              "estimate": 0.6676557863501483,
+              "pct": 66.7656,
+              "wilson_ci95": [
+                61.5721,
+                71.5811
+              ],
+              "clopper_pearson_ci95": [
+                61.4571,
+                71.7762
+              ],
+              "object": "P(W \u2229 \u00acT40 | FIRST75)"
+            },
+            "reconstruction": {
+              "p": 0.7774480712166172,
+              "s_W": 0.8587786259541985,
+              "s_L": 0.0,
+              "p_times_s_W": 0.6676557863501483,
+              "S": 0.6676557863501483,
+              "identity_p_times_s_W_equals_joint": true,
+              "identity_four_cells_sum_to_n": true
+            },
+            "counterfactual_p_at_quote": {
+              "held_s_W": 0.8587786259541985,
+              "joint_if_p_equals_k": 0.6440839694656488,
+              "delta_vs_observed_joint": -0.023571816884499497,
+              "note": "Not a forecast. Holds winner-path, sets P(W) to K."
+            }
+          },
+          "decomp_FIRST80": {
+            "label": "FIRST80",
+            "quote_k": 0.8,
+            "n": 332,
+            "N_W": 281,
+            "N_L": 51,
+            "cells": {
+              "W_and_not_T40": 250,
+              "W_and_T40": 31,
+              "L_and_not_T40": 0,
+              "L_and_T40": 51
+            },
+            "cell_probs": {
+              "W_and_not_T40": 0.7530120481927711,
+              "W_and_T40": 0.09337349397590361,
+              "L_and_not_T40": 0.0,
+              "L_and_T40": 0.1536144578313253
+            },
+            "terminal": {
+              "n": 332,
+              "k": 281,
+              "estimate": 0.8463855421686747,
+              "pct": 84.6386,
+              "wilson_ci95": [
+                80.3656,
+                88.1191
+              ],
+              "clopper_pearson_ci95": [
+                80.302,
+                88.3436
+              ],
+              "object": "P(W | FIRST80)",
+              "alpha_terminal": 0.04638554216867463,
+              "alpha_pct_points": 4.6386,
+              "alpha_wilson_ci95": [
+                0.3656,
+                8.1191
+              ],
+              "wilson_excludes_k": true,
+              "vs_null": {
+                "n": 332,
+                "k": 281,
+                "p0": 0.8,
+                "p_hat": 0.8463855421686747,
+                "p_one_sided_greater": 0.01813010316950711,
+                "p_one_sided_less": 0.9874767152527254,
+                "p_two_sided": 0.03344700813703992,
+                "method": "scipy.stats.binomtest"
+              }
+            },
+            "winner_path": {
+              "n": 281,
+              "k": 250,
+              "estimate": 0.8896797153024911,
+              "pct": 88.968,
+              "wilson_ci95": [
+                84.7664,
+                92.1185
+              ],
+              "clopper_pearson_ci95": [
+                84.7074,
+                92.3801
+              ],
+              "object": "P(\u00acT40 | W, FIRST80)"
+            },
+            "loser_path": {
+              "n": 51,
+              "k": 0,
+              "estimate": 0.0,
+              "pct": 0.0,
+              "wilson_ci95": [
+                0.0,
+                7.0049
+              ],
+              "clopper_pearson_ci95": [
+                0.0,
+                6.9777
+              ],
+              "object": "P(\u00acT40 | L, FIRST80)"
+            },
+            "unconditional_barrier": {
+              "n": 332,
+              "k": 250,
+              "estimate": 0.7530120481927711,
+              "pct": 75.3012,
+              "wilson_ci95": [
+                70.3903,
+                79.6333
+              ],
+              "clopper_pearson_ci95": [
+                70.2979,
+                79.8468
+              ],
+              "object": "P(\u00acT40 | FIRST80)"
+            },
+            "joint_win_survive": {
+              "n": 332,
+              "k": 250,
+              "estimate": 0.7530120481927711,
+              "pct": 75.3012,
+              "wilson_ci95": [
+                70.3903,
+                79.6333
+              ],
+              "clopper_pearson_ci95": [
+                70.2979,
+                79.8468
+              ],
+              "object": "P(W \u2229 \u00acT40 | FIRST80)"
+            },
+            "reconstruction": {
+              "p": 0.8463855421686747,
+              "s_W": 0.8896797153024911,
+              "s_L": 0.0,
+              "p_times_s_W": 0.7530120481927711,
+              "S": 0.7530120481927711,
+              "identity_p_times_s_W_equals_joint": true,
+              "identity_four_cells_sum_to_n": true
+            },
+            "counterfactual_p_at_quote": {
+              "held_s_W": 0.8896797153024911,
+              "joint_if_p_equals_k": 0.7117437722419929,
+              "delta_vs_observed_joint": -0.0412682759507782,
+              "note": "Not a forecast. Holds winner-path, sets P(W) to K."
+            }
+          },
+          "FIRST75_splits": {
+            "IN_SAMPLE": {
+              "n_total": 63,
+              "n_wins": 51,
+              "k_not_t40": 43,
+              "estimate": 0.8431372549019608,
+              "pct": 84.3137,
+              "wilson_ci95": [
+                71.9893,
+                91.8309
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            },
+            "VALIDATION": {
+              "n_total": 261,
+              "n_wins": 200,
+              "k_not_t40": 173,
+              "estimate": 0.865,
+              "pct": 86.5,
+              "wilson_ci95": [
+                81.0707,
+                90.5535
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            },
+            "OOS": {
+              "n_total": 13,
+              "n_wins": 11,
+              "k_not_t40": 9,
+              "estimate": 0.8181818181818182,
+              "pct": 81.8182,
+              "wilson_ci95": [
+                52.3014,
+                94.8633
+              ],
+              "object": "P(\u00acT40 | W, FIRST75)"
+            }
+          },
+          "partition_note": "clock at FIRST75/FIRST80 timestamp; UNALIGNED excluded from H1_2\u222aH2_1"
+        }
+      }
+    }
+  },
+  "terminal_calibration_first75": {
+    "null_p": 0.75,
+    "definition": "alpha_75_terminal = P(W|FIRST75) - 0.75. K=0.75 is the quote, not a fill.",
+    "slices": [
+      {
+        "N75": 128,
+        "N_W75": 105,
+        "p_W": 0.8203125,
+        "pct": 82.0312,
+        "wilson_ci95": [
+          74.4782,
+          87.7176
+        ],
+        "alpha_75_terminal": 0.0703125,
+        "alpha_75_pct_points": 7.0312,
+        "alpha_wilson_ci95": [
+          -0.5218,
+          12.7176
+        ],
+        "ci_excludes_75": false,
+        "null_p": 0.75,
+        "object": "P(W | FIRST75)",
+        "sport": "wnba",
+        "slice": "Q2",
+        "slice_label": "2Q"
+      },
+      {
+        "N75": 85,
+        "N_W75": 70,
+        "p_W": 0.8235294117647058,
+        "pct": 82.3529,
+        "wilson_ci95": [
+          72.9042,
+          89.0037
+        ],
+        "alpha_75_terminal": 0.07352941176470584,
+        "alpha_75_pct_points": 7.3529,
+        "alpha_wilson_ci95": [
+          -2.0958,
+          14.0037
+        ],
+        "ci_excludes_75": false,
+        "null_p": 0.75,
+        "object": "P(W | FIRST75)",
+        "sport": "wnba",
+        "slice": "Q3",
+        "slice_label": "3Q"
+      },
+      {
+        "N75": 318,
+        "N_W75": 242,
+        "p_W": 0.7610062893081762,
+        "pct": 76.1006,
+        "wilson_ci95": [
+          71.1194,
+          80.4588
+        ],
+        "alpha_75_terminal": 0.011006289308176154,
+        "alpha_75_pct_points": 1.1006,
+        "alpha_wilson_ci95": [
+          -3.8806,
+          5.4588
+        ],
+        "ci_excludes_75": false,
+        "null_p": 0.75,
+        "object": "P(W | FIRST75)",
+        "sport": "nba",
+        "slice": "Q2",
+        "slice_label": "2Q"
+      },
+      {
+        "N75": 258,
+        "N_W75": 192,
+        "p_W": 0.7441860465116279,
+        "pct": 74.4186,
+        "wilson_ci95": [
+          68.7633,
+          79.3574
+        ],
+        "alpha_75_terminal": -0.005813953488372103,
+        "alpha_75_pct_points": -0.5814,
+        "alpha_wilson_ci95": [
+          -6.2367,
+          4.3574
+        ],
+        "ci_excludes_75": false,
+        "null_p": 0.75,
+        "object": "P(W | FIRST75)",
+        "sport": "nba",
+        "slice": "Q3",
+        "slice_label": "3Q"
+      },
+      {
+        "N75": 204,
+        "N_W75": 152,
+        "p_W": 0.7450980392156863,
+        "pct": 74.5098,
+        "wilson_ci95": [
+          68.1146,
+          79.999
+        ],
+        "alpha_75_terminal": -0.004901960784313708,
+        "alpha_75_pct_points": -0.4902,
+        "alpha_wilson_ci95": [
+          -6.8854,
+          4.999
+        ],
+        "ci_excludes_75": false,
+        "null_p": 0.75,
+        "object": "P(W | FIRST75)",
+        "sport": "ncaab_p5",
+        "slice": "H1_2",
+        "slice_label": "1H second 10"
+      },
+      {
+        "N75": 133,
+        "N_W75": 110,
+        "p_W": 0.8270676691729323,
+        "pct": 82.7068,
+        "wilson_ci95": [
+          75.3858,
+          88.1913
+        ],
+        "alpha_75_terminal": 0.07706766917293228,
+        "alpha_75_pct_points": 7.7068,
+        "alpha_wilson_ci95": [
+          0.3858,
+          13.1913
+        ],
+        "ci_excludes_75": true,
+        "null_p": 0.75,
+        "object": "P(W | FIRST75)",
+        "sport": "ncaab_p5",
+        "slice": "H2_1",
+        "slice_label": "2H first 10"
+      }
+    ],
+    "pooled_six_asked_rows": {
+      "N75": 1126,
+      "N_W75": 871,
+      "p_W": 0.7735346358792184,
+      "pct": 77.3535,
+      "wilson_ci95": [
+        74.8181,
+        79.7028
+      ],
+      "alpha_75_terminal": 0.023534635879218446,
+      "alpha_75_pct_points": 2.3535,
+      "alpha_wilson_ci95": [
+        -0.1819,
+        4.7028
+      ],
+      "ci_excludes_75": false,
+      "null_p": 0.75,
+      "object": "P(W | FIRST75)",
+      "sport": "pooled_six",
+      "slice": "ASKED_SIX",
+      "slice_label": "six asked rows"
+    },
+    "weighting": "ONE_OBSERVATION_PER_FIRST75_EVENT",
+    "note": "Pooled is sum N_W / sum N_75, not the unweighted mean of six rates."
+  },
+  "pooled_six_decomp": {
+    "FIRST75": {
+      "label": "FIRST75",
+      "quote_k": 0.75,
+      "n": 1126,
+      "N_W": 871,
+      "N_L": 255,
+      "cells": {
+        "W_and_not_T40": 750,
+        "W_and_T40": 121,
+        "L_and_not_T40": 1,
+        "L_and_T40": 254
+      },
+      "cell_probs": {
+        "W_and_not_T40": 0.6660746003552398,
+        "W_and_T40": 0.10746003552397869,
+        "L_and_not_T40": 0.0008880994671403197,
+        "L_and_T40": 0.2255772646536412
+      },
+      "terminal": {
+        "n": 1126,
+        "k": 871,
+        "estimate": 0.7735346358792184,
+        "pct": 77.3535,
+        "wilson_ci95": [
+          74.8181,
+          79.7028
+        ],
+        "clopper_pearson_ci95": [
+          74.7946,
+          79.7685
+        ],
+        "object": "P(W | FIRST75)",
+        "alpha_terminal": 0.023534635879218446,
+        "alpha_pct_points": 2.3535,
+        "alpha_wilson_ci95": [
+          -0.1819,
+          4.7028
+        ],
+        "wilson_excludes_k": false,
+        "vs_null": {
+          "n": 1126,
+          "k": 871,
+          "p0": 0.75,
+          "p_hat": 0.7735346358792184,
+          "p_one_sided_greater": 0.035713589480308394,
+          "p_one_sided_less": 0.969474172961733,
+          "p_two_sided": 0.06823936434425618,
+          "method": "scipy.stats.binomtest"
+        }
+      },
+      "winner_path": {
+        "n": 871,
+        "k": 750,
+        "estimate": 0.8610792192881745,
+        "pct": 86.1079,
+        "wilson_ci95": [
+          83.652,
+          88.2467
+        ],
+        "clopper_pearson_ci95": [
+          83.6314,
+          88.337
+        ],
+        "object": "P(\u00acT40 | W, FIRST75)"
+      },
+      "loser_path": {
+        "n": 255,
+        "k": 1,
+        "estimate": 0.00392156862745098,
+        "pct": 0.3922,
+        "wilson_ci95": [
+          0.0693,
+          2.1876
+        ],
+        "clopper_pearson_ci95": [
+          0.0099,
+          2.1655
+        ],
+        "object": "P(\u00acT40 | L, FIRST75)"
+      },
+      "unconditional_barrier": {
+        "n": 1126,
+        "k": 751,
+        "estimate": 0.6669626998223801,
+        "pct": 66.6963,
+        "wilson_ci95": [
+          63.8907,
+          69.3883
+        ],
+        "clopper_pearson_ci95": [
+          63.8582,
+          69.4468
+        ],
+        "object": "P(\u00acT40 | FIRST75)"
+      },
+      "joint_win_survive": {
+        "n": 1126,
+        "k": 750,
+        "estimate": 0.6660746003552398,
+        "pct": 66.6075,
+        "wilson_ci95": [
+          63.8004,
+          69.3016
+        ],
+        "clopper_pearson_ci95": [
+          63.7678,
+          69.3601
+        ],
+        "object": "P(W \u2229 \u00acT40 | FIRST75)"
+      },
+      "reconstruction": {
+        "p": 0.7735346358792184,
+        "s_W": 0.8610792192881745,
+        "s_L": 0.00392156862745098,
+        "p_times_s_W": 0.6660746003552398,
+        "S": 0.6669626998223801,
+        "identity_p_times_s_W_equals_joint": true,
+        "identity_four_cells_sum_to_n": true
+      },
+      "counterfactual_p_at_quote": {
+        "held_s_W": 0.8610792192881745,
+        "joint_if_p_equals_k": 0.6458094144661309,
+        "delta_vs_observed_joint": -0.02026518588910886,
+        "note": "Not a forecast. Holds winner-path, sets P(W) to K."
+      }
+    },
+    "FIRST80": {
+      "label": "FIRST80",
+      "quote_k": 0.8,
+      "n": 1182,
+      "N_W": 991,
+      "N_L": 191,
+      "cells": {
+        "W_and_not_T40": 883,
+        "W_and_T40": 108,
+        "L_and_not_T40": 0,
+        "L_and_T40": 191
+      },
+      "cell_probs": {
+        "W_and_not_T40": 0.7470389170896785,
+        "W_and_T40": 0.09137055837563451,
+        "L_and_not_T40": 0.0,
+        "L_and_T40": 0.16159052453468697
+      },
+      "terminal": {
+        "n": 1182,
+        "k": 991,
+        "estimate": 0.8384094754653131,
+        "pct": 83.8409,
+        "wilson_ci95": [
+          81.6335,
+          85.8292
+        ],
+        "clopper_pearson_ci95": [
+          81.6166,
+          85.8954
+        ],
+        "object": "P(W | FIRST80)",
+        "alpha_terminal": 0.03840947546531304,
+        "alpha_pct_points": 3.8409,
+        "alpha_wilson_ci95": [
+          1.6335,
+          5.8292
+        ],
+        "wilson_excludes_k": true,
+        "vs_null": {
+          "n": 1182,
+          "k": 991,
+          "p0": 0.8,
+          "p_hat": 0.8384094754653131,
+          "p_one_sided_greater": 0.00041492509640157446,
+          "p_one_sided_less": 0.9996862022770173,
+          "p_two_sided": 0.0008133562958874622,
+          "method": "scipy.stats.binomtest"
+        }
+      },
+      "winner_path": {
+        "n": 991,
+        "k": 883,
+        "estimate": 0.8910191725529768,
+        "pct": 89.1019,
+        "wilson_ci95": [
+          87.0086,
+          90.8932
+        ],
+        "clopper_pearson_ci95": [
+          86.9939,
+          90.9741
+        ],
+        "object": "P(\u00acT40 | W, FIRST80)"
+      },
+      "loser_path": {
+        "n": 191,
+        "k": 0,
+        "estimate": 0.0,
+        "pct": 0.0,
+        "wilson_ci95": [
+          0.0,
+          1.9717
+        ],
+        "clopper_pearson_ci95": [
+          0.0,
+          1.9128
+        ],
+        "object": "P(\u00acT40 | L, FIRST80)"
+      },
+      "unconditional_barrier": {
+        "n": 1182,
+        "k": 883,
+        "estimate": 0.7470389170896785,
+        "pct": 74.7039,
+        "wilson_ci95": [
+          72.1483,
+          77.0994
+        ],
+        "clopper_pearson_ci95": [
+          72.1238,
+          77.1604
+        ],
+        "object": "P(\u00acT40 | FIRST80)"
+      },
+      "joint_win_survive": {
+        "n": 1182,
+        "k": 883,
+        "estimate": 0.7470389170896785,
+        "pct": 74.7039,
+        "wilson_ci95": [
+          72.1483,
+          77.0994
+        ],
+        "clopper_pearson_ci95": [
+          72.1238,
+          77.1604
+        ],
+        "object": "P(W \u2229 \u00acT40 | FIRST80)"
+      },
+      "reconstruction": {
+        "p": 0.8384094754653131,
+        "s_W": 0.8910191725529768,
+        "s_L": 0.0,
+        "p_times_s_W": 0.7470389170896785,
+        "S": 0.7470389170896785,
+        "identity_p_times_s_W_equals_joint": true,
+        "identity_four_cells_sum_to_n": true
+      },
+      "counterfactual_p_at_quote": {
+        "held_s_W": 0.8910191725529768,
+        "joint_if_p_equals_k": 0.7128153380423815,
+        "delta_vs_observed_joint": -0.034223579047297004,
+        "note": "Not a forecast. Holds winner-path, sets P(W) to K."
+      }
+    },
+    "weighting": "ONE_OBSERVATION_PER_EVENT",
+    "note": "Sum of the six asked rows only. Unions not double-counted."
+  }
+}

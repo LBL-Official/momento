@@ -1,0 +1,30 @@
+{
+  "BASE_GRADE": "F",
+  "abase_filename": "SuperasiABase[MLB LAST_TRADE CROSS 65 REACH 85 40].csv",
+  "abase_payload_sha256": "3684ceeb4e44d85d0c3d193577b8b3a4e5be0c5815ea690e734077038a656299",
+  "abase_sha256": "5dec3219943c79592a140b6ec05ac3930eae756c3f1e9c00c2b895a9998a7ab9",
+  "allocation_bps": 500,
+  "artifact": "superasi_abase",
+  "bankroll_cents": 2000000,
+  "borderline": true,
+  "components": {
+    "coverage": "A+",
+    "research_evidence": "F",
+    "robustness": "A-",
+    "theoretical_alignment": "F",
+    "validation": "F"
+  },
+  "created_at": "2026-09-14T23:13:50Z",
+  "desk_settings_source": "disk",
+  "floor_cents": 1500000,
+  "folder": "MLB LAST_TRADE CROSS 65 REACH 85 40",
+  "grade_config_version": "grade_config_v1",
+  "phase": "A",
+  "result_id": "MLB LAST_TRADE CROSS 65 REACH 85 40",
+  "roller_filename": "Roller[MLB LAST_TRADE CROSS 65 REACH 85 40].csv",
+  "source_csv_sha256": "321f3162de090daa483ab03b279c82637665760b666bc4238b30586465ee17d9",
+  "source_lab_id": "4ed489595d6e41fd9d52866229bb7ac2",
+  "strategy_name": "MLB LAST_TRADE CROSS 65 REACH 85 40",
+  "superasi_version": "superasi_abase_v1.0.0",
+  "target_cents": 3000000
+}

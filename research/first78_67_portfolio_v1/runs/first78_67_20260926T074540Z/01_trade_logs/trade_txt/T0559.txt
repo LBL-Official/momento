@@ -1,0 +1,10 @@
+trade T0559  NCAAB  Maryland at Oregon
+contract KXNCAAMBGAME-26MAR10MDORE-MD  slice H1_2
+signal 2026-03-10T14:39:00-07:00 PDT  exit 2026-03-10T16:28:10-07:00 PDT
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 11788  principal_cents 919464
+entry_fee_cents 3540  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 259336  net_cents 255796
+strategy_result POSITIVE  net_r 1.856688684038615083109530377
+Assumed fill. Not a maker fill. Not live P&L.

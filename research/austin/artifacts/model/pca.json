@@ -1,0 +1,175 @@
+{
+  "names": [
+    "entry_price_cents",
+    "current_price_cents",
+    "price_travel",
+    "distance_from_80",
+    "score_differential",
+    "score_differential_travel",
+    "score_travel",
+    "time_since_entry",
+    "seconds_remaining",
+    "quarter",
+    "quarter_progress",
+    "price_x_score_diff",
+    "score_diff_x_time",
+    "entry_price_x_score_diff"
+  ],
+  "mu": {
+    "entry_price_cents": 81.29389563505087,
+    "current_price_cents": 79.01940433212997,
+    "price_travel": -2.274491302920906,
+    "distance_from_80": 1.2938956350508697,
+    "score_differential": 10.589965539875287,
+    "score_differential_travel": 5.325053331145389,
+    "score_travel": 110.40127584509354,
+    "time_since_entry": 833.2927674762061,
+    "seconds_remaining": 269.50715868066953,
+    "quarter": 3.3353093206432556,
+    "quarter_progress": 0.6256845018324034,
+    "price_x_score_diff": 984.5031793567443,
+    "score_diff_x_time": 8634.665941910076,
+    "entry_price_x_score_diff": 862.3987323596981
+  },
+  "sd": {
+    "entry_price_cents": 1.6003201044670365,
+    "current_price_cents": 24.37125744138622,
+    "price_travel": 24.28585708582969,
+    "distance_from_80": 1.6003201044670365,
+    "score_differential": 9.430322668075448,
+    "score_differential_travel": 10.419396854633813,
+    "score_travel": 68.43000653994915,
+    "time_since_entry": 553.4880457476601,
+    "seconds_remaining": 229.30195265612218,
+    "quarter": 0.7827954246697643,
+    "quarter_progress": 0.31847493424461415,
+    "price_x_score_diff": 851.1920325653068,
+    "score_diff_x_time": 12535.411585780033,
+    "entry_price_x_score_diff": 767.1138237048458
+  },
+  "explained": [
+    0.3857160851682536,
+    0.1772715450592908,
+    0.14428465326769618,
+    0.14307402159863017,
+    0.060175728430140366
+  ],
+  "cumulative": [
+    0.3857160851682536,
+    0.5629876302275444,
+    0.7072722834952405,
+    0.8503463050938707,
+    0.9105220335240111
+  ],
+  "loadings": [
+    {
+      "pc": 1,
+      "explained_variance_ratio": 0.3857160851682536,
+      "cumulative_explained_variance": 0.3857160851682536,
+      "loadings": {
+        "entry_price_cents": 0.0520888124864976,
+        "current_price_cents": 0.3469268773388713,
+        "price_travel": 0.3447144334884189,
+        "distance_from_80": 0.05208881248649563,
+        "score_differential": 0.4110682985413915,
+        "score_differential_travel": 0.3633686725913932,
+        "score_travel": 0.02754829445042143,
+        "time_since_entry": 0.006173899959844066,
+        "seconds_remaining": 0.022738404509550194,
+        "quarter": -0.018918452260991047,
+        "quarter_progress": -0.022738404509550236,
+        "price_x_score_diff": 0.40381241031867515,
+        "score_diff_x_time": 0.34659296343364754,
+        "entry_price_x_score_diff": 0.4110877346180966
+      }
+    },
+    {
+      "pc": 2,
+      "explained_variance_ratio": 0.1772715450592908,
+      "cumulative_explained_variance": 0.5629876302275444,
+      "loadings": {
+        "entry_price_cents": -0.06188953185749088,
+        "current_price_cents": -0.13931556432162373,
+        "price_travel": -0.13572724281204168,
+        "distance_from_80": -0.06188953185748893,
+        "score_differential": -0.013124582907253204,
+        "score_differential_travel": 0.06919814341653974,
+        "score_travel": 0.47200021292053546,
+        "time_since_entry": 0.5566756410644202,
+        "seconds_remaining": -0.3249674954839985,
+        "quarter": 0.36803639345293754,
+        "quarter_progress": 0.32496749548399895,
+        "price_x_score_diff": 0.0037742369664010155,
+        "score_diff_x_time": 0.2645439813578978,
+        "entry_price_x_score_diff": -0.014824190484231203
+      }
+    },
+    {
+      "pc": 3,
+      "explained_variance_ratio": 0.14428465326769618,
+      "cumulative_explained_variance": 0.7072722834952405,
+      "loadings": {
+        "entry_price_cents": 0.02280440271271515,
+        "current_price_cents": -0.01207175575354705,
+        "price_travel": -0.013616905106623773,
+        "distance_from_80": 0.02280440271271441,
+        "score_differential": -0.04309109462592186,
+        "score_differential_travel": -0.008778052439803159,
+        "score_travel": 0.17906744155718496,
+        "time_since_entry": 0.19700406843368895,
+        "seconds_remaining": 0.5930967708814149,
+        "quarter": 0.4636485690615887,
+        "quarter_progress": -0.5930967708814165,
+        "price_x_score_diff": -0.012262679633047184,
+        "score_diff_x_time": 0.07333658352737013,
+        "entry_price_x_score_diff": -0.042343123977642304
+      }
+    },
+    {
+      "pc": 4,
+      "explained_variance_ratio": 0.14307402159863017,
+      "cumulative_explained_variance": 0.8503463050938707,
+      "loadings": {
+        "entry_price_cents": 0.6967803911461292,
+        "current_price_cents": -0.02856629238475228,
+        "price_travel": -0.07458119051771916,
+        "distance_from_80": 0.6967803911461066,
+        "score_differential": -0.005931688252446315,
+        "score_differential_travel": -0.056452213608767024,
+        "score_travel": 0.011102142885904097,
+        "time_since_entry": -0.0019649265987281787,
+        "seconds_remaining": -0.06623194542238145,
+        "quarter": 0.09773811533083505,
+        "quarter_progress": 0.06623194542238156,
+        "price_x_score_diff": -0.011446222432768704,
+        "score_diff_x_time": -0.026429221964086286,
+        "entry_price_x_score_diff": 0.010537075966618365
+      }
+    },
+    {
+      "pc": 5,
+      "explained_variance_ratio": 0.060175728430140366,
+      "cumulative_explained_variance": 0.9105220335240111,
+      "loadings": {
+        "entry_price_cents": 0.013061122306611862,
+        "current_price_cents": 0.5961162141567803,
+        "price_travel": 0.5973517711281815,
+        "distance_from_80": 0.013061122306611096,
+        "score_differential": -0.2630064962780533,
+        "score_differential_travel": -0.19171686124065593,
+        "score_travel": 0.06421252735240691,
+        "time_since_entry": 0.11504516730700076,
+        "seconds_remaining": -0.09081397432757371,
+        "quarter": 0.1567189729754911,
+        "quarter_progress": 0.09081397432757413,
+        "price_x_score_diff": -0.18043087989363,
+        "score_diff_x_time": -0.14634145808544946,
+        "entry_price_x_score_diff": -0.2629874647752115
+      }
+    }
+  ],
+  "n": 48752,
+  "k": 5,
+  "pca_version": "austin_pca_v1",
+  "feature_schema_version": "austin_features_v1"
+}

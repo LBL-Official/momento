@@ -1,0 +1,619 @@
+{
+  "code_version": "research_query_v1.1_harden",
+  "census": [
+    {
+      "sport": "NBA",
+      "season": "2025-2026",
+      "games": 1362,
+      "markets": 0,
+      "tickers": 2704,
+      "candle_rows": 6165183,
+      "tradable_candles": 5777716,
+      "untradable_candles": 387467,
+      "missing_internal_game_id": 0,
+      "missing_settlement": 0,
+      "pbp_games": 1352,
+      "candle_games": 1352,
+      "pbp_minus_candle_games": 0,
+      "candle_minus_pbp_games": 0
+    },
+    {
+      "sport": "NCAAB",
+      "season": "2025-2026",
+      "games": 5280,
+      "markets": 0,
+      "tickers": 1698,
+      "candle_rows": 2674280,
+      "tradable_candles": 2252832,
+      "untradable_candles": 421448,
+      "missing_internal_game_id": 0,
+      "missing_settlement": 0,
+      "pbp_games": 847,
+      "candle_games": 849,
+      "pbp_minus_candle_games": 0,
+      "candle_minus_pbp_games": 2
+    }
+  ],
+  "shared_warehouse_load_ms": 45341,
+  "queries": [
+    {
+      "query_id": "FIRST80_frozen",
+      "status": "COMPLETE",
+      "execution_path": "frozen_reference",
+      "reference_match": "FIRST80_Q3",
+      "question_hash": "4a5980cd6b8aa1f7a27914f57584ca60c8bcd2c563a1349b67eaf66fbb54abc9",
+      "code_version": "research_query_v1.1_harden",
+      "dataset_version": "18c80ca890fe4f17f37568c10de5be8f1bc86a273cbaa4991ce5b29ff9149e34",
+      "population_n": 290,
+      "funnel": [],
+      "identity": {},
+      "identity_holds": null,
+      "partition": {
+        "T_AND_W": 27,
+        "T_AND_NOT_W": 52,
+        "NOT_T_AND_W": 211,
+        "NOT_T_AND_NOT_W": 0
+      },
+      "n_joint_available": 290,
+      "terminal_missing": 0,
+      "diagnostics": {
+        "skipped_untradable": null,
+        "crossings_found": null,
+        "aligned": null,
+        "unaligned": null,
+        "ambiguous": null,
+        "modeled": null,
+        "tie_same_minute_excluded": null
+      },
+      "performance": {
+        "total_ms": 109
+      },
+      "stages": [],
+      "hashes": {},
+      "wall_ms": 109,
+      "shared_warehouse_load_ms": null
+    },
+    {
+      "query_id": "second_touch_80",
+      "status": "COMPLETE",
+      "execution_path": "generic_query",
+      "reference_match": null,
+      "question_hash": "67cb0f60f946f779b19065f3682b92d7bca080492eb17923895e83aece927437",
+      "code_version": "research_query_v1.1_harden",
+      "dataset_version": "injected",
+      "population_n": 1087,
+      "funnel": [
+        {
+          "condition_id": "universe",
+          "label": "Universe",
+          "qualifying": 2704,
+          "population_before": null
+        },
+        {
+          "condition_id": "e1",
+          "label": "SECOND_TOUCH 8000",
+          "qualifying": 1087,
+          "population_before": 2704
+        },
+        {
+          "condition_id": "intersection",
+          "label": "Intersection",
+          "qualifying": 1087,
+          "population_before": 2704
+        }
+      ],
+      "identity": {
+        "universe_tickers": 2704,
+        "exclusions": {
+          "empty_ticker": 0,
+          "untradable_only": 0,
+          "no_nth_touch": 1617,
+          "period_unaligned": 0,
+          "clock_unaligned": 0,
+          "period_filter": 0,
+          "clock_filter": 0,
+          "tie_same_minute": 0,
+          "and_intersection_drop": 0
+        },
+        "exclusion_sum": 1617,
+        "entry_eligible": 1087,
+        "measured_eligible": 1087,
+        "path_requested": false,
+        "path_true": 0,
+        "path_false": 1087,
+        "terminal": "BOTH",
+        "terminal_is_measurement_filter": false,
+        "terminal_yes": 0,
+        "terminal_no": 0,
+        "terminal_missing": 1087,
+        "reported_n": 1087,
+        "joint_n": 0,
+        "equations": {
+          "universe_minus_exclusions_eq_entry": true,
+          "yes_plus_no_plus_missing_eq_measured": true,
+          "abcd_eq_joint": true,
+          "joint_plus_missing_eq_measured": true,
+          "entry_eq_measured": true
+        }
+      },
+      "identity_holds": true,
+      "partition": {
+        "T_AND_W": 0,
+        "T_AND_NOT_W": 0,
+        "NOT_T_AND_W": 0,
+        "NOT_T_AND_NOT_W": 0
+      },
+      "n_joint_available": 0,
+      "terminal_missing": 1087,
+      "diagnostics": {
+        "skipped_untradable": 387467,
+        "crossings_found": 5688,
+        "aligned": 867,
+        "unaligned": 220,
+        "ambiguous": 0,
+        "modeled": 0,
+        "tie_same_minute_excluded": 0
+      },
+      "performance": {
+        "dataset_load_ms": 0,
+        "entry_scan_ms": 10322,
+        "pbp_alignment_ms": 10332,
+        "population_intersection_ms": 0,
+        "path_measurement_ms": 10275,
+        "aggregation_ms": 0,
+        "total_ms": 20597
+      },
+      "stages": [
+        {
+          "stage": "universe_loaded",
+          "ok": true,
+          "tickers": 2704,
+          "ms": 0
+        },
+        {
+          "stage": "entry_events",
+          "ok": true,
+          "n": 1087,
+          "ms": 10322
+        },
+        {
+          "stage": "period_filter",
+          "ok": true,
+          "n": 1087,
+          "ms": 0
+        },
+        {
+          "stage": "path",
+          "ok": true,
+          "n": 1087,
+          "ms": 10275
+        },
+        {
+          "stage": "measurements",
+          "ok": true,
+          "n": 1087,
+          "ms": 0
+        }
+      ],
+      "hashes": {
+        "universe_hash": "083f1f937dce3a93d1155a149c1d8e9c0225d47b6f969c9fd9923215929667c2",
+        "entry_hash": "71640edf932d5d12d1eb91b4743d5d5d6ebce5fb6b33dd195e09fcd29cc5fc02",
+        "state_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "path_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "measurement_hash": "a368dd6fd3245f934b2c050d3c20f507177e024a4ff69dddffa3f951ae8d516e",
+        "question_hash": "67cb0f60f946f779b19065f3682b92d7bca080492eb17923895e83aece927437",
+        "code_version": "research_query_v1.1_harden"
+      },
+      "wall_ms": 20598,
+      "shared_warehouse_load_ms": 45341
+    },
+    {
+      "query_id": "first_60_q2",
+      "status": "COMPLETE",
+      "execution_path": "generic_query",
+      "reference_match": null,
+      "question_hash": "9e8335069157a59c48e1bf20195f8693b97ea032d1a41d893973d6ad7a4fc1e6",
+      "code_version": "research_query_v1.1_harden",
+      "dataset_version": "injected",
+      "population_n": 271,
+      "funnel": [
+        {
+          "condition_id": "universe",
+          "label": "Universe",
+          "qualifying": 2704,
+          "population_before": null
+        },
+        {
+          "condition_id": "e1",
+          "label": "FIRST_TOUCH 6000",
+          "qualifying": 271,
+          "population_before": 2704
+        },
+        {
+          "condition_id": "intersection",
+          "label": "Intersection",
+          "qualifying": 271,
+          "population_before": 2704
+        }
+      ],
+      "identity": {
+        "universe_tickers": 2704,
+        "exclusions": {
+          "empty_ticker": 0,
+          "untradable_only": 0,
+          "no_nth_touch": 1111,
+          "period_unaligned": 577,
+          "clock_unaligned": 0,
+          "period_filter": 745,
+          "clock_filter": 0,
+          "tie_same_minute": 0,
+          "and_intersection_drop": 0
+        },
+        "exclusion_sum": 2433,
+        "entry_eligible": 271,
+        "measured_eligible": 271,
+        "path_requested": false,
+        "path_true": 0,
+        "path_false": 271,
+        "terminal": "BOTH",
+        "terminal_is_measurement_filter": false,
+        "terminal_yes": 0,
+        "terminal_no": 0,
+        "terminal_missing": 271,
+        "reported_n": 271,
+        "joint_n": 0,
+        "equations": {
+          "universe_minus_exclusions_eq_entry": true,
+          "yes_plus_no_plus_missing_eq_measured": true,
+          "abcd_eq_joint": true,
+          "joint_plus_missing_eq_measured": true,
+          "entry_eq_measured": true
+        }
+      },
+      "identity_holds": true,
+      "partition": {
+        "T_AND_W": 0,
+        "T_AND_NOT_W": 0,
+        "NOT_T_AND_W": 0,
+        "NOT_T_AND_NOT_W": 0
+      },
+      "n_joint_available": 0,
+      "terminal_missing": 271,
+      "diagnostics": {
+        "skipped_untradable": 387467,
+        "crossings_found": 8309,
+        "aligned": 1016,
+        "unaligned": 577,
+        "ambiguous": 0,
+        "modeled": 0,
+        "tie_same_minute_excluded": 0
+      },
+      "performance": {
+        "dataset_load_ms": 0,
+        "entry_scan_ms": 13004,
+        "pbp_alignment_ms": 12981,
+        "population_intersection_ms": 0,
+        "path_measurement_ms": 2785,
+        "aggregation_ms": 0,
+        "total_ms": 15789
+      },
+      "stages": [
+        {
+          "stage": "universe_loaded",
+          "ok": true,
+          "tickers": 2704,
+          "ms": 0
+        },
+        {
+          "stage": "entry_events",
+          "ok": true,
+          "n": 271,
+          "ms": 13004
+        },
+        {
+          "stage": "period_filter",
+          "ok": true,
+          "n": 271,
+          "ms": 0
+        },
+        {
+          "stage": "path",
+          "ok": true,
+          "n": 271,
+          "ms": 2785
+        },
+        {
+          "stage": "measurements",
+          "ok": true,
+          "n": 271,
+          "ms": 0
+        }
+      ],
+      "hashes": {
+        "universe_hash": "083f1f937dce3a93d1155a149c1d8e9c0225d47b6f969c9fd9923215929667c2",
+        "entry_hash": "312024e1b3e97d12cf09a684f4b2609f4b0c77fb5a62bf5ddd5e501eb1b7ce64",
+        "state_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "path_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "measurement_hash": "a368dd6fd3245f934b2c050d3c20f507177e024a4ff69dddffa3f951ae8d516e",
+        "question_hash": "9e8335069157a59c48e1bf20195f8693b97ea032d1a41d893973d6ad7a4fc1e6",
+        "code_version": "research_query_v1.1_harden"
+      },
+      "wall_ms": 15789,
+      "shared_warehouse_load_ms": 45341
+    },
+    {
+      "query_id": "sequential_40_recover_80",
+      "status": "COMPLETE",
+      "execution_path": "generic_query",
+      "reference_match": null,
+      "question_hash": "ac36c52ad65da34840e366a6f1679bd046038d8775c4c6e9ad1a85175dcb0e37",
+      "code_version": "research_query_v1.1_harden",
+      "dataset_version": "injected",
+      "population_n": 1552,
+      "funnel": [
+        {
+          "condition_id": "universe",
+          "label": "Universe",
+          "qualifying": 2704,
+          "population_before": null
+        },
+        {
+          "condition_id": "e1",
+          "label": "FIRST_TOUCH 8000",
+          "qualifying": 1552,
+          "population_before": 2704
+        },
+        {
+          "condition_id": "intersection",
+          "label": "Intersection",
+          "qualifying": 1552,
+          "population_before": 2704
+        }
+      ],
+      "identity": {
+        "universe_tickers": 2704,
+        "exclusions": {
+          "empty_ticker": 0,
+          "untradable_only": 0,
+          "no_nth_touch": 1152,
+          "period_unaligned": 0,
+          "clock_unaligned": 0,
+          "period_filter": 0,
+          "clock_filter": 0,
+          "tie_same_minute": 0,
+          "and_intersection_drop": 0
+        },
+        "exclusion_sum": 1152,
+        "entry_eligible": 1552,
+        "measured_eligible": 1552,
+        "path_requested": true,
+        "path_true": 147,
+        "path_false": 1405,
+        "terminal": "BOTH",
+        "terminal_is_measurement_filter": false,
+        "terminal_yes": 0,
+        "terminal_no": 0,
+        "terminal_missing": 1552,
+        "reported_n": 1552,
+        "joint_n": 0,
+        "equations": {
+          "universe_minus_exclusions_eq_entry": true,
+          "yes_plus_no_plus_missing_eq_measured": true,
+          "abcd_eq_joint": true,
+          "joint_plus_missing_eq_measured": true,
+          "entry_eq_measured": true
+        }
+      },
+      "identity_holds": true,
+      "partition": {
+        "T_AND_W": 0,
+        "T_AND_NOT_W": 0,
+        "NOT_T_AND_W": 0,
+        "NOT_T_AND_NOT_W": 0
+      },
+      "n_joint_available": 0,
+      "terminal_missing": 1552,
+      "diagnostics": {
+        "skipped_untradable": 387467,
+        "crossings_found": 5688,
+        "aligned": 1243,
+        "unaligned": 309,
+        "ambiguous": 0,
+        "modeled": 0,
+        "tie_same_minute_excluded": 0
+      },
+      "performance": {
+        "dataset_load_ms": 0,
+        "entry_scan_ms": 11770,
+        "pbp_alignment_ms": 11772,
+        "population_intersection_ms": 0,
+        "path_measurement_ms": 14265,
+        "aggregation_ms": 0,
+        "total_ms": 26035
+      },
+      "stages": [
+        {
+          "stage": "universe_loaded",
+          "ok": true,
+          "tickers": 2704,
+          "ms": 0
+        },
+        {
+          "stage": "entry_events",
+          "ok": true,
+          "n": 1552,
+          "ms": 11770
+        },
+        {
+          "stage": "period_filter",
+          "ok": true,
+          "n": 1552,
+          "ms": 0
+        },
+        {
+          "stage": "path",
+          "ok": true,
+          "n": 1552,
+          "ms": 14265
+        },
+        {
+          "stage": "measurements",
+          "ok": true,
+          "n": 1552,
+          "ms": 0
+        }
+      ],
+      "hashes": {
+        "universe_hash": "083f1f937dce3a93d1155a149c1d8e9c0225d47b6f969c9fd9923215929667c2",
+        "entry_hash": "156de57ba9e38fae8d1bc63de509e6e264c0d1b7fdfb21f50ca071fd9109dfaf",
+        "state_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "path_hash": "9b4ab2d62a0a4d46172123901c5cf71151d09c9ca6d89d3aa1d4c004c08f67bf",
+        "measurement_hash": "a368dd6fd3245f934b2c050d3c20f507177e024a4ff69dddffa3f951ae8d516e",
+        "question_hash": "ac36c52ad65da34840e366a6f1679bd046038d8775c4c6e9ad1a85175dcb0e37",
+        "code_version": "research_query_v1.1_harden"
+      },
+      "wall_ms": 26036,
+      "shared_warehouse_load_ms": 45341
+    },
+    {
+      "query_id": "layered_and",
+      "status": "COMPLETE",
+      "execution_path": "generic_query",
+      "reference_match": null,
+      "question_hash": "af40e36c59dea5b56ce326e1d44cbfc955eb5a7a272870bb5c5a1da52ba7fd66",
+      "code_version": "research_query_v1.1_harden",
+      "dataset_version": "injected",
+      "population_n": 288,
+      "funnel": [
+        {
+          "condition_id": "universe",
+          "label": "Universe",
+          "qualifying": 2704,
+          "population_before": null
+        },
+        {
+          "condition_id": "e1",
+          "label": "FIRST_TOUCH 8000",
+          "qualifying": 297,
+          "population_before": 2704
+        },
+        {
+          "condition_id": "e2",
+          "label": "FIRST_TOUCH 6000",
+          "qualifying": 1593,
+          "population_before": 297
+        },
+        {
+          "condition_id": "intersection",
+          "label": "Intersection",
+          "qualifying": 288,
+          "population_before": 2704
+        }
+      ],
+      "identity": {
+        "universe_tickers": 2704,
+        "exclusions": {
+          "empty_ticker": 0,
+          "untradable_only": 0,
+          "no_nth_touch": 1152,
+          "period_unaligned": 309,
+          "clock_unaligned": 0,
+          "period_filter": 946,
+          "clock_filter": 0,
+          "tie_same_minute": 0,
+          "and_intersection_drop": 9
+        },
+        "exclusion_sum": 2416,
+        "entry_eligible": 288,
+        "measured_eligible": 288,
+        "path_requested": false,
+        "path_true": 0,
+        "path_false": 288,
+        "terminal": "BOTH",
+        "terminal_is_measurement_filter": false,
+        "terminal_yes": 0,
+        "terminal_no": 0,
+        "terminal_missing": 288,
+        "reported_n": 288,
+        "joint_n": 0,
+        "equations": {
+          "universe_minus_exclusions_eq_entry": true,
+          "yes_plus_no_plus_missing_eq_measured": true,
+          "abcd_eq_joint": true,
+          "joint_plus_missing_eq_measured": true,
+          "entry_eq_measured": true
+        }
+      },
+      "identity_holds": true,
+      "partition": {
+        "T_AND_W": 0,
+        "T_AND_NOT_W": 0,
+        "NOT_T_AND_W": 0,
+        "NOT_T_AND_NOT_W": 0
+      },
+      "n_joint_available": 0,
+      "terminal_missing": 288,
+      "diagnostics": {
+        "skipped_untradable": 774934,
+        "crossings_found": 13997,
+        "aligned": 2259,
+        "unaligned": 886,
+        "ambiguous": 0,
+        "modeled": 0,
+        "tie_same_minute_excluded": 0
+      },
+      "performance": {
+        "dataset_load_ms": 0,
+        "entry_scan_ms": 23456,
+        "pbp_alignment_ms": 23419,
+        "population_intersection_ms": 0,
+        "path_measurement_ms": 4352,
+        "aggregation_ms": 0,
+        "total_ms": 27809
+      },
+      "stages": [
+        {
+          "stage": "universe_loaded",
+          "ok": true,
+          "tickers": 2704,
+          "ms": 0
+        },
+        {
+          "stage": "entry_events",
+          "ok": true,
+          "n": 297,
+          "ms": 23456
+        },
+        {
+          "stage": "period_filter",
+          "ok": true,
+          "n": 288,
+          "ms": 0
+        },
+        {
+          "stage": "path",
+          "ok": true,
+          "n": 288,
+          "ms": 4352
+        },
+        {
+          "stage": "measurements",
+          "ok": true,
+          "n": 288,
+          "ms": 0
+        }
+      ],
+      "hashes": {
+        "universe_hash": "083f1f937dce3a93d1155a149c1d8e9c0225d47b6f969c9fd9923215929667c2",
+        "entry_hash": "1f7c58bf1fa4c327060beca4049ce9914e48dc98b21a25f012170efa96547c0d",
+        "state_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "path_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "measurement_hash": "a368dd6fd3245f934b2c050d3c20f507177e024a4ff69dddffa3f951ae8d516e",
+        "question_hash": "af40e36c59dea5b56ce326e1d44cbfc955eb5a7a272870bb5c5a1da52ba7fd66",
+        "code_version": "research_query_v1.1_harden"
+      },
+      "wall_ms": 27810,
+      "shared_warehouse_load_ms": 45341
+    }
+  ]
+}

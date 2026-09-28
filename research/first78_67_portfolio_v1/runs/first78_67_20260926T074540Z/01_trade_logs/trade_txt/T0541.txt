@@ -1,0 +1,10 @@
+trade T0541  NCAAB  Arizona St. at Iowa St.
+contract KXNCAAMBGAME-26MAR07ASUISU-ISU  slice H2_1
+signal 2026-03-07T12:04:00-08:00 PST  exit 2026-03-07T13:39:18-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 11495  principal_cents 896610
+entry_fee_cents 3452  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 252890  net_cents 249438
+strategy_result POSITIVE  net_r 1.856697309166697681342811418
+Assumed fill. Not a maker fill. Not live P&L.

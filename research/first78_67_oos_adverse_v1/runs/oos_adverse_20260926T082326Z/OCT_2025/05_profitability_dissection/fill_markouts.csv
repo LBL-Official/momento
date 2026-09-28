@@ -1,0 +1,2 @@
+status,reason,test_id,population_id,run_id,scenario_id
+MEASURED_ADVERSE_SELECTION_UNAVAILABLE,No authorized order or fill log is in this study. Minute bids are not fills.,OCT_2025,PRIMARY_EX_ANTE_FIRST78,oos_adverse_20260926T082326Z,REF

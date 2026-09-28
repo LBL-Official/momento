@@ -1,0 +1,15 @@
+{
+  "empirical_baseline": {
+    "name": "ENTRY_CELL_OUTCOME_FREQUENCY",
+    "role": "empirical baseline",
+    "not": "predictive alpha or a regime-switching simulator",
+    "changes_entries": false
+  },
+  "snapshot_diagnostic": {
+    "status": "BLOCKED_DATA",
+    "reason": "fewer than 8 snapshot rows",
+    "rows": 6,
+    "changes_entries": false
+  },
+  "note": "completion-order transitions are descriptive only"
+}

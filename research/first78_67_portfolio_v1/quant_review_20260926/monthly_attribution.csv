@@ -1,0 +1,7 @@
+month,calendar_days,realized_equity_change_dollars,NBA_closed_trade_net_dollars,NCAAB_closed_trade_net_dollars,partial_month
+2025-11,30,11057.01,7746.39,3310.62,False
+2025-12,31,12780.9,7318.17,5462.73,False
+2026-01,31,40464.99,26574.98,13890.01,False
+2026-02,28,50884.14,17599.42,33284.72,False
+2026-03,31,104646.14,49627.65,55018.49,False
+2026-04,1,15655.0,11741.25,3913.75,True

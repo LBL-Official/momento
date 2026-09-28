@@ -1,0 +1,89 @@
+{
+  "sport": "MLB",
+  "series": "KXMLBGAME",
+  "mlb_2025": {
+    "year": 2025,
+    "probe_or_partition_dates": 5,
+    "partition_complete_v1_dates": 0,
+    "probe_empty_dates": 5,
+    "games": 0,
+    "markets": 0,
+    "trades": 0,
+    "candle_or_ob_events": 0,
+    "metadata": "UNAVAILABLE",
+    "trades_layer": "UNAVAILABLE",
+    "candles": "UNAVAILABLE",
+    "top_of_book_historical": "UNAVAILABLE",
+    "l2": "UNAVAILABLE",
+    "settlement": "UNAVAILABLE",
+    "market_open_observations": "UNAVAILABLE",
+    "market_close_observations": "UNAVAILABLE",
+    "pbp": "UNAVAILABLE",
+    "notes": [
+      "2025: no COMPLETE partitions locally. Empty probes are not 2025 games.",
+      "Do not fabricate 2025."
+    ]
+  },
+  "mlb_2026": {
+    "year": 2026,
+    "probe_or_partition_dates": 30,
+    "partition_complete_v1_dates": 13,
+    "probe_empty_dates": 17,
+    "games": 172,
+    "markets": 344,
+    "trades": 3396041,
+    "candle_or_ob_events": 312887,
+    "metadata": "COMPLETE_FOR_WINDOW",
+    "trades_layer": "COMPLETE_FOR_WINDOW",
+    "candles": "COMPLETE_FOR_WINDOW",
+    "top_of_book_historical": "UNAVAILABLE",
+    "l2": "UNAVAILABLE",
+    "settlement": "DISCOVERED",
+    "market_open_observations": "UNAVAILABLE",
+    "market_close_observations": "PARTIAL",
+    "pbp": "UNAVAILABLE",
+    "notes": [
+      "2026 local COMPLETE window is 2026-06-18..2026-06-30 only (if present).",
+      "Jun 1–17 probes are empty. Rest of 2026 not in this lake.",
+      "Do not infer L2 from candles. Do not infer open price from first close-day candle."
+    ]
+  },
+  "recovery_queries": [
+    {
+      "missing": "2025 KXMLBGAME markets (local lake has only empty probes)",
+      "source": "Kalshi GET /historical/markets and /historical/trades /historical/markets/{ticker}/candlesticks",
+      "query": "series_ticker=KXMLBGAME&min_close_ts={pt_day_start}&max_close_ts={pt_day_end} plus min_settled_ts/max_settled_ts; then per ticker historical trades+candles. Official docs: https://docs.kalshi.com/getting_started/historical_data",
+      "limitations": "As of 2026-08-25 collection, discovery returned 0 markets for 2025 probe dates. Historical retention/cutoff may permanently UNAVAILABLE some days. Do not fabricate.",
+      "launched": false
+    },
+    {
+      "missing": "2026-03-01..2026-06-17 and 2026-07-01..end of season KXMLBGAME",
+      "source": "Same historical REST as above; Jun 1–17 already probed empty locally",
+      "query": "Same windowed discovery. Earliest tickers in this lake are 26JUN18.",
+      "limitations": "Jun 1–17 2026 PROBE_EMPTY at collect time. Rest of season NOT_ATTEMPTED in this lake. W1 does not launch bulk collect.",
+      "launched": false
+    },
+    {
+      "missing": "Historical L2 / queue",
+      "source": "None retrospectively. Prospective Kalshi WebSocket orderbook_delta only.",
+      "query": "N/A — no historical L2 endpoint.",
+      "limitations": "UNAVAILABLE. Never infer from candles or trades.",
+      "launched": false
+    },
+    {
+      "missing": "Market-open / lifetime starting prices",
+      "source": "Kalshi historical candlesticks+trades from metadata.open_time through settlement, not merely close-day window",
+      "query": "Per ticker: candlesticks start_ts=open_time, end_ts=close/settlement; trades same bounds.",
+      "limitations": "v1 collector used PT close/settled calendar day only. First candle on that day is NOT proven market-open. W1 does not backfill lifetime.",
+      "launched": false
+    },
+    {
+      "missing": "MLB PBP / official game state",
+      "source": "Not Kalshi. Candidate sources (not downloaded): MLB Stats API, Baseball Savant. License/ToS required before W2+.",
+      "query": "Not authorized in W1.",
+      "limitations": "PBP = UNAVAILABLE locally. Do not scrape in W1.",
+      "launched": false
+    }
+  ],
+  "observability": "OBSERVED"
+}

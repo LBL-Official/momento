@@ -1,0 +1,10 @@
+trade T0341  NBA  Milwaukee at Washington
+contract KXNBAGAME-26JAN29MILWAS-WAS  slice Q2
+signal 2026-01-29T17:07:00-08:00 PST  exit 2026-01-29T18:57:17-08:00 PST
+assumed entry 78c  observed close 81c  overshoot 3c
+contracts 5823  principal_cents 454194
+entry_fee_cents 1749  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 128106  net_cents 126357
+strategy_result POSITIVE  net_r 1.856662160573645233337251675
+Assumed fill. Not a maker fill. Not live P&L.

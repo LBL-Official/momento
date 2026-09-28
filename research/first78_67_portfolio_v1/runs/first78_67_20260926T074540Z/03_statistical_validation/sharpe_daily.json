@@ -1,0 +1,10 @@
+{
+  "n": 140,
+  "mean": 0.08410292142857143,
+  "stdev": 0.14317328506985938,
+  "sharpe_unannualized": 0.5874204911030336,
+  "annualized_sharpe": 11.222652724700215,
+  "periods_per_year": 365,
+  "risk_free_rate": 0,
+  "reason": null
+}

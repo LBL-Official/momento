@@ -1,0 +1,12 @@
+{
+  "REF": {
+    "status": "P_VALUE_NOT_ESTIMABLE",
+    "reason": "INSUFFICIENT_EVIDENCE",
+    "n_days": 4
+  },
+  "JOINT_2_FEE_007": {
+    "status": "P_VALUE_NOT_ESTIMABLE",
+    "reason": "INSUFFICIENT_EVIDENCE",
+    "n_days": 4
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": "research_spec_v0",
+  "identity": {
+    "name": "FIRST80_Q3_PATH_TERMINAL",
+    "description": "NBA Q3 FIRST80 with T40 path and Kalshi terminal. One Research Object — not the system boundary.",
+    "tags": ["FIRST80", "Q3", "path", "terminal"]
+  },
+  "universe": "BBALL1",
+  "population_binding": {
+    "leagues": ["NBA"],
+    "default_structural_slices": ["Q3"],
+    "p5_vs_p5_only": false,
+    "selection": "all_matching",
+    "locked_population_id": null
+  },
+  "anchor": {
+    "event": "FIRST_PRICE_TOUCH",
+    "price_e4": 8000,
+    "price_field": "yes_bid_close",
+    "requires_seen_below": true,
+    "unresolved_parameters": []
+  },
+  "information_regime": "CANDLE_1M",
+  "information_set": "I_t_anchor",
+  "state_filters": {
+    "op": "AND",
+    "args": [
+      {
+        "op": "ATOM",
+        "field": "entry_slice",
+        "operator": "eq",
+        "value": "Q3"
+      }
+    ]
+  },
+  "path_conditions": [
+    {
+      "kind": "EVER_CLOSE_LE",
+      "price_e4": 4000,
+      "binding": "barrier_survival_v1"
+    }
+  ],
+  "terminal_conditions": [
+    {
+      "kind": "UNRESTRICTED",
+      "binding": "warehouse_frozen_v1.expiration_result_yes"
+    }
+  ],
+  "measurement_requests": [
+    {
+      "name": "t40_rate",
+      "binding": "barrier_survival_v1",
+      "not_edge": true
+    },
+    {
+      "name": "kalshi_yes_rate",
+      "binding": "warehouse_frozen_v1",
+      "not_edge": true
+    }
+  ],
+  "sample_binding": {
+    "split_binding": "warehouse_frozen_v1.dataset_split"
+  },
+  "definition_versions": {
+    "FIRST80": "warehouse_frozen_v1",
+    "quality": "frozen_v1",
+    "T40": "barrier_survival_v1",
+    "terminal_W": "warehouse_frozen_v1"
+  },
+  "dataset_versions": {
+    "nba_first80_execution_audit": "warehouse_frozen_v1"
+  },
+  "execution_interpretation": "OBSERVABLE_PATH_ONLY",
+  "caveats": [
+    "CANDLE PATH ≠ FILL",
+    "SURVIVE ≠ TERMINAL_YES",
+    "MEASUREMENT ≠ EDGE",
+    "LIVE EXECUTION = FALSE"
+  ],
+  "economic_layer": null,
+  "portfolio_layer": null,
+  "persistence": {
+    "kind": "ephemeral"
+  }
+}

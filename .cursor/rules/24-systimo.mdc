@@ -1,0 +1,48 @@
+---
+description: Systimo — System Maintenance data tunnel Frontend
+alwaysApply: true
+---
+
+# Systimo — System Maintenance
+
+Registers and operates tunnels. Not a 20th system. Not Momento LS
+product UI. Not ingest.
+
+```
+LIVE EXECUTION = FALSE
+CANDLE PATH ≠ FILL
+SYSTIMO REGISTERS AND OPERATES THE TUNNEL
+Austin 604 ≠ Choosin 936 ≠ asked-six 1182
+WRITE/CONTROL DEFAULT DENY
+```
+
+Dashboard: `frontend/systimo` on `:5193`.
+API: `/systimo/*` on ROLLER `:8791`.
+Library: `research/systimo/`.
+How-to: `docs/operations/SYSTIMO.md`.
+
+Momento LS `:5181` `:8792` remains the live-host observe adapter.
+`ROLLER/roller/maintenance` stays `data_ingestion`.
+
+## Forward feed
+
+```
+Austin_604  → Ballhog, TK Ultra, Jump, DRE
+Choosin_936 → Ballhog, TK Ultra, Jump, DRE
+Vital       → Jump
+Systimo registers the tunnels. Sources stay canonical.
+```
+
+Missing is `UNAVAILABLE`. Never `$0`. Live feed `UNAVAILABLE`.
+
+## Absolute
+
+- Do not become the source. Do not copy Austin/Choosin/ROLLER warehouses.
+- Do not remount inside Choosin Texas, Vital, or `frontend/roller-terminal`.
+- Do not start/stop `momento-live.service` or set `VITAL_AWS_CONTROL`.
+- Do not edit `first80.py`, live FIRST01 / 80/81/83/89, `book.json`.
+- Do not start W9 or warehouse Phase 21.
+- Do not mix N universes. Lock drift → `INTEGRITY_DRIFT`, do not repair.
+- Positman is the Position Management compositor (`QUERY`). It does not
+  submit. Systimo owns the transition audit loop.
+- Jump tunnels are QUERY only (`persist=False` / STATIC).

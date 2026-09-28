@@ -1,0 +1,10 @@
+trade T0548  NCAAB  Oklahoma at Texas
+contract KXNCAAMBGAME-26MAR07OKLATEX-TEX  slice H1_2
+signal 2026-03-07T18:23:00-08:00 PST  exit 2026-03-07T18:49:00-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 11041  principal_cents 861198
+entry_fee_cents 3316  exit_fee_cents 4273
+exit STOP at 67c  terminal no
+gross_cents -121451  net_cents -129040
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

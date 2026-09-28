@@ -1,0 +1,95 @@
+{
+  "BASE_GRADE": "B+",
+  "DEBASE_GRADE": "D",
+  "abase_filename": "SuperasiABase[913].csv",
+  "abase_sha256": "89186d348e903e54a55a02680be30af6d56ebe89903914f0e818762433bce504",
+  "allocation_bps": 500,
+  "artifact": "superasi_bdebase",
+  "bankroll_cents": 2000000,
+  "bottleneck": "D",
+  "components": {
+    "coverage": "A+",
+    "research_evidence": "D",
+    "robustness": "A-",
+    "theoretical_alignment": "B",
+    "validation": "A+"
+  },
+  "created_at": "2026-09-14T16:52:53Z",
+  "debase_filename": "SuperasiBDeBase[913].csv",
+  "debase_payload_sha256": "92b8742170f383da11cd6880468cf2e108cba218ad9b964d63326334620287a5",
+  "debase_sha256": "136c444966d0eb64d87b1d8e23f8138358cf83655ecf853cae29609729081681",
+  "desk_settings_source": "disk",
+  "floor_cents": 1500000,
+  "folder": "913",
+  "grade_config_version": "grade_config_v1",
+  "phase": "B",
+  "phase_a_result_id": "913",
+  "plan_hash": "45cc190ea2a347197846a44b5cbb2b953f53682846033735a163eb47c5988357",
+  "question": {
+    "accept_limitations": false,
+    "entry_conditions": [
+      {
+        "clock": null,
+        "event_definition": "TRADABLE_CLOSE_CROSS",
+        "id": "entry_mtw2zh6b_f4q8g",
+        "nth": null,
+        "ordinal": "FIRST_TOUCH",
+        "period": "Q2",
+        "price_e4": 8000,
+        "price_field": "yes_bid_close"
+      }
+    ],
+    "path_conditions": [
+      {
+        "id": "exit_mty0bwbw_mvfqe",
+        "op": "REACH",
+        "outcome": "win",
+        "price_e4": 9500,
+        "sequential": false
+      },
+      {
+        "id": "exit_mtug1t99_aq1lv",
+        "op": "REACH",
+        "outcome": "loss",
+        "price_e4": 4500,
+        "sequential": false
+      }
+    ],
+    "requested_dimensions": [
+      "HOLD_TO_SETTLEMENT"
+    ],
+    "terminal": "BOTH",
+    "universe": {
+      "date_from": "2025-03-18",
+      "date_to": "2026-09-01",
+      "game_data": [
+        "pbp"
+      ],
+      "leagues": [
+        "NBA"
+      ],
+      "market_data": [
+        "candles"
+      ],
+      "markets": [
+        "kalshi"
+      ],
+      "seasons": [
+        "2025-2026"
+      ],
+      "sports": [
+        "NBA"
+      ]
+    }
+  },
+  "question_sha256": "77cf05701986e1797e809849ebf8c86210c4ded6e45fbd9a7e3211a1f7170800",
+  "question_status": "PRESENT",
+  "result_hash": "bd2f5fb587ee6e3382321e887fe433c8bece8b9ff162ba5edbe96f0f58967990",
+  "result_id": "913",
+  "roller_filename": "Roller[913].csv",
+  "source_csv_sha256": "9b43b85f88f1bc748af1afe1c2f06669ff26aa9c56caba215da448177410ce92",
+  "source_lab_id": "de679c41a39f40b8a7c5d1fb6b49c156",
+  "strategy_name": "913",
+  "superasi_version": "superasi_bdebase_v1.0.0",
+  "target_cents": 3000000
+}

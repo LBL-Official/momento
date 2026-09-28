@@ -1,0 +1,10 @@
+trade T0131  NBA  New York K at Orlando
+contract KXNBAGAME-25DEC13NYKORL-NYK  slice Q3
+signal 2025-12-13T16:09:00-08:00 PST  exit 2025-12-13T16:15:00-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 2876  principal_cents 224328
+entry_fee_cents 864  exit_fee_cents 1113
+exit STOP at 67c  terminal yes
+gross_cents -31636  net_cents -33613
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

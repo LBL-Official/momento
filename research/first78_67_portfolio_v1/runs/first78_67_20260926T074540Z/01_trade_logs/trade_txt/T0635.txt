@@ -1,0 +1,10 @@
+trade T0635  NBA  Houston at New Orleans
+contract KXNBAGAME-26MAR29HOUNOP-HOU  slice Q2
+signal 2026-03-29T16:38:00-07:00 PDT  exit 2026-03-29T18:35:37-07:00 PDT
+assumed entry 78c  observed close 81c  overshoot 3c
+contracts 16171  principal_cents 1261338
+entry_fee_cents 4857  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 355762  net_cents 350905
+strategy_result POSITIVE  net_r 1.856689330405566284822349798
+Assumed fill. Not a maker fill. Not live P&L.

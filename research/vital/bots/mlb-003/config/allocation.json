@@ -1,0 +1,8 @@
+{
+  "allocation_bps": 1250,
+  "amount_cents": 100,
+  "bot_id": "mlb-003",
+  "kind": "allocation_desired",
+  "mode": "FIXED_CENTS",
+  "recorded_at": "2026-09-14T22:33:14Z"
+}

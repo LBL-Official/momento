@@ -1,0 +1,10 @@
+trade T0039  NBA  Philadelphia at Detroit
+contract KXNBAGAME-25NOV14PHIDET-PHI  slice Q3
+signal 2025-11-14T18:14:00-08:00 PST  exit 2025-11-14T18:24:00-08:00 PST
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 1987  principal_cents 154986
+entry_fee_cents 597  exit_fee_cents 769
+exit STOP at 67c  terminal no
+gross_cents -21857  net_cents -23223
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

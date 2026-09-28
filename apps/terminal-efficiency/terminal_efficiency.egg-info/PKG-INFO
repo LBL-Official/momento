@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: terminal-efficiency
+Version: 0.1.0
+Summary: Isolated Terminal Efficiency Intelligence Layer (Phases 0–6). Research only.
+Requires-Python: >=3.11
+Requires-Dist: pandas>=2.1
+Requires-Dist: pyarrow>=14
+Requires-Dist: scikit-learn>=1.4
+Requires-Dist: lightgbm>=4.3
+Requires-Dist: matplotlib>=3.8
+Requires-Dist: pyyaml>=6.0
+Provides-Extra: dev
+Requires-Dist: pytest>=8; extra == "dev"

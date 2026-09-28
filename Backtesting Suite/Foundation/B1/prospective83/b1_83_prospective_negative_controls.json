@@ -1,0 +1,97 @@
+{
+  "examples": [
+    {
+      "condition": "n_events_band=MID",
+      "n": [
+        262,
+        95,
+        123
+      ],
+      "test_ev": 1.5528455284552845,
+      "train_ev": -2.4656488549618323,
+      "val_ev": -1.9473684210526316
+    },
+    {
+      "condition": "start_price_band=40_49",
+      "n": [
+        486,
+        141,
+        233
+      ],
+      "test_ev": 2.407725321888412,
+      "train_ev": 3.419753086419753,
+      "val_ev": 1.3971631205673758
+    },
+    {
+      "condition": "p_start_40_44=NO",
+      "n": [
+        1510,
+        425,
+        619
+      ],
+      "test_ev": 0.6833602584814217,
+      "train_ev": -0.5496688741721855,
+      "val_ev": -0.8823529411764706
+    },
+    {
+      "condition": "n_events_band=MID",
+      "n": [
+        262,
+        95,
+        123
+      ],
+      "test_ev": 1.5528455284552845,
+      "train_ev": -2.4656488549618323,
+      "val_ev": -1.9473684210526316
+    },
+    {
+      "condition": "p_start_45_49=NO",
+      "n": [
+        1402,
+        422,
+        574
+      ],
+      "test_ev": 1.843205574912892,
+      "train_ev": -0.33238231098430815,
+      "val_ev": -1.4834123222748816
+    },
+    {
+      "condition": "inning_grp=EXTRA",
+      "n": [
+        41,
+        12,
+        8
+      ],
+      "test_ev": 4.5,
+      "train_ev": -4.951219512195122,
+      "val_ev": 8.666666666666666
+    },
+    {
+      "condition": "outs=0",
+      "n": [
+        271,
+        99,
+        140
+      ],
+      "test_ev": 6.285714285714286,
+      "train_ev": 2.6088560885608856,
+      "val_ev": -0.1717171717171717
+    },
+    {
+      "condition": "p_start_30_34=NO",
+      "n": [
+        1677,
+        487,
+        709
+      ],
+      "test_ev": 1.3441466854724964,
+      "train_ev": -0.05426356589147287,
+      "val_ev": -0.864476386036961
+    }
+  ],
+  "interpretation": "Random 1-ways produce some TEST spikes; they do not replace FDR + TRAIN/VAL gates.",
+  "n_plus_on_all_splits": 3,
+  "n_random_1way": 30,
+  "n_test_ev_ge_5": 2,
+  "seed": 42
+}

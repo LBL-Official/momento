@@ -1,0 +1,41 @@
+{
+  "activation": "RUNNING",
+  "aliases": [
+    "mlb-bot-one"
+  ],
+  "aws_runtime_id": "momento-live.service",
+  "bot_id": "mlb-001",
+  "created_at": "2026-08-01T00:00:00Z",
+  "engine_pointer": "apps/trading-engine",
+  "environment": "PRODUCTION",
+  "factory": {
+    "allocation_bps": 1250,
+    "bankroll_cents": 5000,
+    "confirm_cents": 81,
+    "editable": false,
+    "engine_pointer": "apps/trading-engine",
+    "factory_id": "mlb_factory_v1",
+    "factory_version": "mlb_factory_v1.0.0",
+    "lock_cents": 89,
+    "max_entry_cents": 83,
+    "max_open_mlb_positions": 5,
+    "min_entry_cents": 80,
+    "name": "MLB Production Factory",
+    "notes": "Stamped MLB desk facts. Vital does not reimplement the strategy. ITI is research lineage only and is not the live signal.",
+    "order_type": "maker_only_post_only",
+    "per_game_cents": 625,
+    "preferred_entry_cents": 80,
+    "risk": "Risk Decision Engine",
+    "signal": "80_to_81_yes_bid",
+    "strategy_pointer": "strategies/mlb"
+  },
+  "health": "HEALTHY",
+  "iti_lineage": null,
+  "kind": "grandfathered",
+  "live_armed_confirmed": true,
+  "name": "MLB Bot 001",
+  "notes": "Existing MLB desk. Grandfathered. Canonical Vital owner. Not created through ITI. Execution stays apps/trading-engine + Risk.",
+  "status": "RUNNING",
+  "strategy_pointer": "strategies/mlb",
+  "updated_at": "2026-09-27T04:18:10Z"
+}

@@ -1,0 +1,10 @@
+trade T0020  NBA  Portland at Miami
+contract KXNBAGAME-25NOV08PORMIA-MIA  slice Q3
+signal 2025-11-08T18:40:00-08:00 PST  exit 2025-11-08T18:51:00-08:00 PST
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 1755  principal_cents 136890
+entry_fee_cents 528  exit_fee_cents 680
+exit STOP at 67c  terminal yes
+gross_cents -19305  net_cents -20513
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

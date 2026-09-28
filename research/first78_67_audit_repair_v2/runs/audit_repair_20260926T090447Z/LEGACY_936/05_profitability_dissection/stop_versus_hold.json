@@ -1,0 +1,18 @@
+{
+  "A": {
+    "layer": "A_FIXED_QUANTITY",
+    "label": "unconstrained attribution of exit P&L on the stop book's quantities",
+    "stop_minus_hold_cents": -5107503,
+    "rows": 647
+  },
+  "C": {
+    "layer": "C_COMPLETION_SIZING",
+    "stop_admitted": 647,
+    "hold_admitted": 14,
+    "stop_net_cents": 23548818,
+    "hold_net_cents": 489456,
+    "difference_cents": 23059362,
+    "note": "ordering of the decomposition is the stop book versus a separately financed hold book"
+  },
+  "B": "see layer C admission counts; unit replay is in the test suite"
+}

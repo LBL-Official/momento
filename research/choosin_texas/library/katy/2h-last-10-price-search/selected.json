@@ -1,0 +1,91 @@
+{
+  "nba_2q": {
+    "status": "NONE",
+    "reason": "NO_CELL_BEATS_ALWAYS_8040",
+    "best_nonpositive": {
+      "price_lo": 41,
+      "price_hi": 50,
+      "n_hedge": 9,
+      "n_hedge_losers": 3,
+      "n_hedge_winners": 6,
+      "baseline_8040": {
+        "n": 314,
+        "sum_cents": 1780,
+        "mean_cents": 5.6687898089171975
+      },
+      "mixed_8040": {
+        "n": 314,
+        "sum_cents": 1653,
+        "mean_cents": 5.264331210191083
+      },
+      "delta_sum_cents": -127,
+      "delta_mean_cents": -0.40445859872611467
+    }
+  },
+  "nba_3q": {
+    "status": "SELECTED",
+    "price_lo": 41,
+    "price_hi": 70,
+    "n_hedge": 43,
+    "n_hedge_losers": 20,
+    "n_hedge_winners": 23,
+    "baseline_8040": {
+      "n": 290,
+      "sum_cents": 1060,
+      "mean_cents": 3.6551724137931036
+    },
+    "mixed_8040": {
+      "n": 290,
+      "sum_cents": 1276,
+      "mean_cents": 4.4
+    },
+    "delta_sum_cents": 216,
+    "delta_mean_cents": 0.7448275862068966
+  },
+  "ncaab_h1_2": {
+    "status": "NONE",
+    "reason": "NO_CELL_BEATS_ALWAYS_8040",
+    "best_nonpositive": {
+      "price_lo": 41,
+      "price_hi": 60,
+      "n_hedge": 18,
+      "n_hedge_losers": 8,
+      "n_hedge_winners": 10,
+      "baseline_8040": {
+        "n": 193,
+        "sum_cents": 800,
+        "mean_cents": 4.1450777202072535
+      },
+      "mixed_8040": {
+        "n": 193,
+        "sum_cents": 744,
+        "mean_cents": 3.854922279792746
+      },
+      "delta_sum_cents": -56,
+      "delta_mean_cents": -0.29015544041450775
+    }
+  },
+  "ncaab_h2_1": {
+    "status": "NONE",
+    "reason": "NO_CELL_BEATS_ALWAYS_8040",
+    "best_nonpositive": {
+      "price_lo": 41,
+      "price_hi": 55,
+      "n_hedge": 6,
+      "n_hedge_losers": 4,
+      "n_hedge_winners": 2,
+      "baseline_8040": {
+        "n": 139,
+        "sum_cents": 920,
+        "mean_cents": 6.618705035971223
+      },
+      "mixed_8040": {
+        "n": 139,
+        "sum_cents": 919,
+        "mean_cents": 6.611510791366906
+      },
+      "delta_sum_cents": -1,
+      "delta_mean_cents": -0.007194244604316547
+    }
+  }
+}

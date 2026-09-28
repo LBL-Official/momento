@@ -1,0 +1,19 @@
+{
+  "mc_sampled_day_spacing_seconds": 604805,
+  "mc_expected_adjacent_day_spacing_seconds": 86400,
+  "nextbar_price_used_at_ts": 100,
+  "price_known_at_ts": 160,
+  "trade_export_entry_price": 78,
+  "actual_principal_price": 82,
+  "engine_allows_same_time_entry_exit": true,
+  "later_model_n": 279,
+  "later_model_brier": 0.2549007395661185,
+  "constant_half_brier": 0.25,
+  "fit_base_rate": 0.48746518105849584,
+  "fit_base_rate_brier": 0.2500223386865253,
+  "later_stop_rate": 0.4946236559139785,
+  "model_time_bin_counts": {
+    "under_5min": 234,
+    "5min_or_more": 413
+  }
+}

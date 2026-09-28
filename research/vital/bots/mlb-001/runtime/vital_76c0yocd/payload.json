@@ -1,0 +1,10 @@
+{
+  "instance_id": "i-0f0849d5829476c31",
+  "lifecycle_guess": "RUNNING",
+  "observed_at": "2026-09-17T02:41:25Z",
+  "ok": true,
+  "reason": null,
+  "service": "momento-live.service",
+  "source": "ssm",
+  "status": "OBSERVED"
+}

@@ -1,0 +1,10 @@
+{
+  "bot_id": "mlb-001",
+  "host_binary": "/usr/local/bin/momento-trading-engine",
+  "host_config": "/var/lib/momento/config/live.toml",
+  "note": "Existing AWS unit. Vital does not invent a second engine.",
+  "pointer": "deploy/momento-live.service",
+  "recorded_at": "2026-09-17T05:37:40Z",
+  "secret_fetch": "deploy/m10-fetch-secret.sh",
+  "unit": "momento-live.service"
+}

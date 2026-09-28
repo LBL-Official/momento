@@ -1,0 +1,47 @@
+---
+description: TK Ultra — Relative Value Hedging (GENERIC_RV + BINARY_COMPLEMENT_V0)
+alwaysApply: true
+---
+
+# TK Ultra — Relative Value Hedging
+
+Rich / cheap / route. Not Vital. Not Ballhog. Not a 20th system.
+
+```
+LIVE EXECUTION = FALSE
+CANDLE PATH ≠ FILL
+GENERIC_RV ≠ BINARY_COMPLEMENT_V0
+asked-six 1182 ≠ derived four 936 ≠ NBA 604
+SIBLING CONTEXT ≠ MODEL INPUT
+```
+
+Dashboard: `frontend/momento-systems` on `:5190/#/tk-ultra`.
+API: `/momento/tk-ultra/*` on `:8791`.
+Domain: `ROLLER/roller/tk_ultra/`.
+Library: `research/tk_ultra/`.
+How-to: `docs/operations/TK_ULTRA.md`.
+
+Ballhog `:5192` is the when / q* sibling. Do not call TK Ultra from Ballhog.
+Do not import `roller.ballhog.adapters`. Position Management stays
+`NOT_IMPLEMENTED`. This is not program 13 RV HFT.
+
+## Forward feed
+
+```
+Choosin Texas  →  STATIC prior          (N=936)
+Austin         →  HISTORICAL query_at   (N=604, persist=False)
+               →  TK Ultra
+Ballhog        →  optional handle_intent sibling only
+```
+
+Missing is `UNAVAILABLE`. Never `$0`. Live feed `UNAVAILABLE`.
+
+## Absolute
+
+- Do not run `(wing/base)*beta` on A/B YES.
+- Complementary anchors must sum to 100 or return `ANCHOR_INVALID`.
+- Relationship RV must not auto-copy A_bid / B_ask.
+- Do not invent fills, L2, or zero missing fees.
+- Do not remount inside Choosin Texas or `frontend/roller-terminal`.
+- Do not edit `first80.py`, live FIRST01 / 80/81/83/89, `book.json`.
+- Do not start W9 or warehouse Phase 21.

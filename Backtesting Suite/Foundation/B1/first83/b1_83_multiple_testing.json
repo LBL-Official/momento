@@ -1,0 +1,28 @@
+{
+  "kept": [
+    "accel_sign=NEG&last_event_sign=UP",
+    "base_class=BASES_EMPTY&start_move_gt30=YES",
+    "base_class=BASES_EMPTY&start_move_tertile=HIGH",
+    "base_class=BASES_EMPTY&vol_15m_tertile=LOW",
+    "inning_83=LATE_6_7&move_fine=GE_40",
+    "last_event_class=RUN&lead_ge2=YES&vol_15m_tertile=LOW",
+    "last_event_class=RUN&start_move_gt30=YES&lead_ge2=YES",
+    "last_event_class=RUN&start_move_gt30=YES&lead_signed=LEAD_3P",
+    "lead_ge2=YES",
+    "lead_ge2=YES&last_event_class=RUN",
+    "lead_ge2=YES&last_event_sign=UP",
+    "lead_ge2=YES&move_fine=GE_40&vol_15m_tertile=LOW",
+    "lead_ge2=YES&p_max_vs_83=PEAK_ABOVE",
+    "lead_ge2=YES&path_eff_tertile=LOW",
+    "lead_ge2=YES&personality=CHOPPY",
+    "lead_ge2=YES&reversal_tertile=HIGH",
+    "lead_ge2=YES&start_move_gt30=YES",
+    "lead_ge2=YES&start_move_tertile=HIGH",
+    "lead_ge2=YES&vel_5m_sign=UP",
+    "lead_ge2=YES&vol_15m_tertile=LOW"
+  ],
+  "method": "Benjamini-Hochberg FDR q=0.10 on TRAIN game-level P(mean P&L <= 0)",
+  "n_reject_q10": 162,
+  "n_tested": 6128,
+  "note": "Uncorrected TEST EV is not evidence. Selection score ignores TEST."
+}

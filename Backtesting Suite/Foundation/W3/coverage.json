@@ -1,0 +1,62 @@
+{
+  "coverage_version": "W3.COVERAGE.1.0.0",
+  "windows": [
+    {
+      "label": "2024-2025",
+      "start": "2024-03-20",
+      "end": "2024-11-02",
+      "discovered": 0,
+      "fetched": 0,
+      "committed": 0,
+      "reconstructed": 0,
+      "valid": 0,
+      "failed": 0,
+      "unavailable": 1,
+      "skipped": 0,
+      "duplicate": 0,
+      "completeness_claimed": false,
+      "notes": "NO_LOCAL_COMMITTED_SOURCE — not fabricated COMPLETE"
+    },
+    {
+      "label": "2025-2026-before-observed-window",
+      "start": "2025-03-18",
+      "end": "2026-06-17",
+      "discovered": 0,
+      "fetched": 0,
+      "committed": 0,
+      "reconstructed": 0,
+      "valid": 0,
+      "failed": 0,
+      "unavailable": 1,
+      "skipped": 0,
+      "duplicate": 0,
+      "completeness_claimed": false,
+      "notes": "NO_LOCAL_COMMITTED_SOURCE for this sub-window"
+    },
+    {
+      "label": "2026-06-18..30-observed",
+      "start": "2026-06-18",
+      "end": "2026-06-30",
+      "discovered": 178,
+      "fetched": 174,
+      "committed": 174,
+      "reconstructed": 174,
+      "valid": 174,
+      "failed": 0,
+      "unavailable": 0,
+      "skipped": 4,
+      "duplicate": 0,
+      "completeness_claimed": false,
+      "notes": "counts are measured from committed source, not from the requested range"
+    }
+  ],
+  "historical_pbp_events": 13315,
+  "synthetic_events_excluded": 0,
+  "postponed": 4,
+  "cancelled": 0,
+  "suspended": 0,
+  "identity_mapped": 168,
+  "identity_unmatched": 4,
+  "identity_ambiguous": 2,
+  "theta_values_calculated": 0
+}

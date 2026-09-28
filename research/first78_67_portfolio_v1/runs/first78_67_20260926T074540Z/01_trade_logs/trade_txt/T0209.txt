@@ -1,0 +1,10 @@
+trade T0209  NBA  Golden State at Los Angeles C
+contract KXNBAGAME-26JAN05GSWLAC-LAC  slice Q3
+signal 2026-01-05T20:46:00-08:00 PST  exit 2026-01-05T20:56:00-08:00 PST
+assumed entry 78c  observed close 85c  overshoot 7c
+contracts 3546  principal_cents 276588
+entry_fee_cents 1065  exit_fee_cents 1373
+exit STOP at 67c  terminal yes
+gross_cents -39006  net_cents -41444
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

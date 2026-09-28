@@ -1,0 +1,10 @@
+trade T0310  NBA  Houston at Detroit
+contract KXNBAGAME-26JAN23HOUDET-HOU  slice Q3
+signal 2026-01-23T17:54:00-08:00 PST  exit 2026-01-23T18:06:00-08:00 PST
+assumed entry 78c  observed close 82c  overshoot 4c
+contracts 5012  principal_cents 390936
+entry_fee_cents 1506  exit_fee_cents 1940
+exit STOP at 67c  terminal yes
+gross_cents -55132  net_cents -58578
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

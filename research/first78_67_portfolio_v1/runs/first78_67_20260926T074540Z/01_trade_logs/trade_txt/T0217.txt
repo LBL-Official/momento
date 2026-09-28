@@ -1,0 +1,10 @@
+trade T0217  NBA  Toronto at Charlotte
+contract KXNBAGAME-26JAN07TORCHA-CHA  slice Q3
+signal 2026-01-07T17:35:00-08:00 PST  exit 2026-01-07T17:45:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 3681  principal_cents 287118
+entry_fee_cents 1106  exit_fee_cents 1425
+exit STOP at 67c  terminal no
+gross_cents -40491  net_cents -43022
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

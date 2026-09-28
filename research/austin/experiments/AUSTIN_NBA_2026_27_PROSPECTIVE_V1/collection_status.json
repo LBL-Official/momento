@@ -1,0 +1,6 @@
+{
+  "status": "ARMED_WAITING_FOR_DATA",
+  "eligible_n": 0,
+  "completed_n": 0,
+  "note": "No eligible 2026-27 FIRST80 trades after the lock. No ingest. No backfill."
+}

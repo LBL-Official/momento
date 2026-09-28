@@ -1,0 +1,10 @@
+trade T0578  NCAAB  Kentucky at Missouri
+contract KXNCAAMBGAME-26MAR12UKMIZZ-UK  slice H1_2
+signal 2026-03-12T10:13:00-07:00 PDT  exit 2026-03-12T11:26:00-07:00 PDT
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 12628  principal_cents 984984
+entry_fee_cents 3793  exit_fee_cents 4887
+exit STOP at 67c  terminal yes
+gross_cents -138908  net_cents -147588
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

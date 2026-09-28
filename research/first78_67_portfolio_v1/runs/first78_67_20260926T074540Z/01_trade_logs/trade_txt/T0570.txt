@@ -1,0 +1,10 @@
+trade T0570  NCAAB  California at Florida St.
+contract KXNCAAMBGAME-26MAR11CALFSU-FSU  slice H1_2
+signal 2026-03-11T16:25:00-07:00 PDT  exit 2026-03-11T19:01:07-07:00 PDT
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 13140  principal_cents 1024920
+entry_fee_cents 3946  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 289080  net_cents 285134
+strategy_result POSITIVE  net_r 1.856691693093097003991639046
+Assumed fill. Not a maker fill. Not live P&L.

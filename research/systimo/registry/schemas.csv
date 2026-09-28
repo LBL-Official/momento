@@ -1,0 +1,9 @@
+schema_id,name,version,owner_system_id,notes
+sch_austin_query,austin.query,v1,austin,query_at persist=False
+sch_choosin_ctx,choosin.trade_context,v1,choosin_texas,STATIC universe
+sch_answer,systimo.answer,v0,systimo,Query answers
+sch_positman_plan,positman.plan,v0,position_management,quantity x route. execution_enabled=false
+sch_drevo_decision,drevo.decision,v0,dre,structural + POLICY_UNRESOLVED
+sch_execution_boundary,positman.execution_boundary,v0,position_management,NOT_SUBMITTED
+sch_transition_trace,systimo.transition_trace,v0,systimo,Hash chain refs. Not business SSOT
+sch_orchestra_context,systimo.orchestra_context,v0,systimo,Read-only Orchestra query

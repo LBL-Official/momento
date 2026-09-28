@@ -1,0 +1,1372 @@
+{
+  "model_id": "AUSTIN_LOSS_HAZARD_RECOVERY_MODEL_V1",
+  "phase": "PHASE_4",
+  "policy_status": "UNFROZEN",
+  "policy_selected": "NONE",
+  "confirmation_accessed": false,
+  "phase_2_actionability": "NOT_MET",
+  "phase_3_result": "MIXED",
+  "A": {
+    "experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+    "n_entries": 382,
+    "n_terminal_loss_eligible": 382,
+    "n_recovery_t1_eligible": 163,
+    "n_recovery_t2_eligible": 158,
+    "n_recovery_t3_eligible": 154,
+    "n_recovery_t1_unavailable": 5,
+    "n_recovery_t2_unavailable": 10,
+    "n_recovery_t3_unavailable": 14,
+    "metrics": [
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_terminal_loss",
+        "family": "H0",
+        "eligible_N": 382,
+        "event_N": 62,
+        "unavailable_N": 0,
+        "brier": 0.1392321809949148,
+        "bss_vs_H0": null,
+        "bss_ci": null,
+        "log_loss": 0.4557014499474757,
+        "delta_log_loss_vs_H0": null,
+        "delta_log_loss_ci": null,
+        "roc_auc": 0.0,
+        "pr_auc": 0.08593622946603328
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_terminal_loss",
+        "family": "H1",
+        "eligible_N": 382,
+        "event_N": 62,
+        "unavailable_N": 0,
+        "brier": 0.14007234744258906,
+        "bss_vs_H0": -0.0060342834657236555,
+        "bss_ci": [
+          -0.02307817875827836,
+          0.004922855315867471
+        ],
+        "log_loss": 0.4582473652945415,
+        "delta_log_loss_vs_H0": 0.0025459153470658302,
+        "delta_log_loss_ci": [
+          -0.002327691606075774,
+          0.006811952845840444
+        ],
+        "roc_auc": 0.3834677419354839,
+        "pr_auc": 0.13288939469853497
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_terminal_loss",
+        "family": "H2",
+        "eligible_N": 382,
+        "event_N": 62,
+        "unavailable_N": 0,
+        "brier": 0.13875719285939594,
+        "bss_vs_H0": 0.0034114824038862235,
+        "bss_ci": [
+          -0.08543703920762592,
+          0.06917032926316098
+        ],
+        "log_loss": 0.45499682170342187,
+        "delta_log_loss_vs_H0": -0.0007046282440538176,
+        "delta_log_loss_ci": [
+          -0.034208875917203535,
+          0.031516287671470404
+        ],
+        "roc_auc": 0.5075100806451613,
+        "pr_auc": 0.18577675330216312
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_recovery_t1",
+        "family": "H0",
+        "eligible_N": 163,
+        "event_N": 23,
+        "unavailable_N": 5,
+        "brier": 0.12282638481841636,
+        "bss_vs_H0": null,
+        "bss_ci": null,
+        "log_loss": 0.4136569291942462,
+        "delta_log_loss_vs_H0": null,
+        "delta_log_loss_ci": null,
+        "roc_auc": 0.017546583850931677,
+        "pr_auc": 0.07444938718884478
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_recovery_t1",
+        "family": "H1",
+        "eligible_N": 163,
+        "event_N": 23,
+        "unavailable_N": 5,
+        "brier": 0.11263337578603036,
+        "bss_vs_H0": 0.08298712892555704,
+        "bss_ci": [
+          -0.03058348044802331,
+          0.16789635857932889
+        ],
+        "log_loss": 0.3751611576186775,
+        "delta_log_loss_vs_H0": -0.03849577157556866,
+        "delta_log_loss_ci": [
+          -0.09269738781832138,
+          0.016161903648225832
+        ],
+        "roc_auc": 0.5198757763975155,
+        "pr_auc": 0.14774512631667158
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_recovery_t1",
+        "family": "H2",
+        "eligible_N": 163,
+        "event_N": 23,
+        "unavailable_N": 5,
+        "brier": 0.10931017896696885,
+        "bss_vs_H0": 0.11004317900774785,
+        "bss_ci": [
+          -0.0583736074821687,
+          0.23773492430296095
+        ],
+        "log_loss": 0.3719091601580002,
+        "delta_log_loss_vs_H0": -0.041747769036245996,
+        "delta_log_loss_ci": [
+          -0.10450670716493847,
+          0.019931986587185854
+        ],
+        "roc_auc": 0.6403726708074534,
+        "pr_auc": 0.217237570513202
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_recovery_by_t2",
+        "family": "H0",
+        "eligible_N": 158,
+        "event_N": 31,
+        "unavailable_N": 10,
+        "brier": 0.16052560323090925,
+        "bss_vs_H0": null,
+        "bss_ci": null,
+        "log_loss": 0.5040153542516809,
+        "delta_log_loss_vs_H0": null,
+        "delta_log_loss_ci": null,
+        "roc_auc": 0.03200406400812802,
+        "pr_auc": 0.10736186983649015
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_recovery_by_t2",
+        "family": "H1",
+        "eligible_N": 158,
+        "event_N": 31,
+        "unavailable_N": 10,
+        "brier": 0.15113851277462723,
+        "bss_vs_H0": 0.05847721651467086,
+        "bss_ci": [
+          -0.024845090241065144,
+          0.133945404944845
+        ],
+        "log_loss": 0.47731420245478895,
+        "delta_log_loss_vs_H0": -0.02670115179689192,
+        "delta_log_loss_ci": [
+          -0.06896530358366679,
+          0.01717638372650395
+        ],
+        "roc_auc": 0.44805689611379224,
+        "pr_auc": 0.18048063469317982
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_recovery_by_t2",
+        "family": "H2",
+        "eligible_N": 158,
+        "event_N": 31,
+        "unavailable_N": 10,
+        "brier": 0.15014946278402821,
+        "bss_vs_H0": 0.06463853888750326,
+        "bss_ci": [
+          -0.05363925177299937,
+          0.1738057270813705
+        ],
+        "log_loss": 0.48526103738003107,
+        "delta_log_loss_vs_H0": -0.0187543168716498,
+        "delta_log_loss_ci": [
+          -0.07394066330727181,
+          0.0358219262675578
+        ],
+        "roc_auc": 0.540513081026162,
+        "pr_auc": 0.2418952367291678
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_recovery_by_t3",
+        "family": "H0",
+        "eligible_N": 154,
+        "event_N": 36,
+        "unavailable_N": 14,
+        "brier": 0.1833739014774228,
+        "bss_vs_H0": null,
+        "bss_ci": null,
+        "log_loss": 0.5556840382676433,
+        "delta_log_loss_vs_H0": null,
+        "delta_log_loss_ci": null,
+        "roc_auc": 0.027306967984934087,
+        "pr_auc": 0.12936073118767716
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_recovery_by_t3",
+        "family": "H1",
+        "eligible_N": 154,
+        "event_N": 36,
+        "unavailable_N": 14,
+        "brier": 0.17285539996260388,
+        "bss_vs_H0": 0.05736095174979938,
+        "bss_ci": [
+          -0.015379284387991937,
+          0.1355642726341702
+        ],
+        "log_loss": 0.5282813738643067,
+        "delta_log_loss_vs_H0": -0.027402664403336607,
+        "delta_log_loss_ci": [
+          -0.07140998886492052,
+          0.011792279739909513
+        ],
+        "roc_auc": 0.4976459510357815,
+        "pr_auc": 0.22188749584186776
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_recovery_by_t3",
+        "family": "H2",
+        "eligible_N": 154,
+        "event_N": 36,
+        "unavailable_N": 14,
+        "brier": 0.1760234406060676,
+        "bss_vs_H0": 0.04008455299327429,
+        "bss_ci": [
+          -0.05696108435176718,
+          0.14595573487802652
+        ],
+        "log_loss": 0.543292795970312,
+        "delta_log_loss_vs_H0": -0.01239124229733135,
+        "delta_log_loss_ci": [
+          -0.06855054357569952,
+          0.04142117750925988
+        ],
+        "roc_auc": 0.5546139359698682,
+        "pr_auc": 0.2673990876639612
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_deeper_distress_next",
+        "family": "H0",
+        "eligible_N": 163,
+        "event_N": 94,
+        "unavailable_N": 5,
+        "brier": 0.24500927244724346,
+        "bss_vs_H0": null,
+        "bss_ci": null,
+        "log_loss": 0.6831625448991814,
+        "delta_log_loss_vs_H0": null,
+        "delta_log_loss_ci": null,
+        "roc_auc": 0.3345667591736047,
+        "pr_auc": 0.4663931205678618
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_deeper_distress_next",
+        "family": "H1",
+        "eligible_N": 163,
+        "event_N": 94,
+        "unavailable_N": 5,
+        "brier": 0.10038473911254703,
+        "bss_vs_H0": 0.5902818774576691,
+        "bss_ci": [
+          0.47209532740506754,
+          0.6972194859056353
+        ],
+        "log_loss": 0.32062539737502943,
+        "delta_log_loss_vs_H0": -0.36253714752415195,
+        "delta_log_loss_ci": [
+          -0.42696631771942656,
+          -0.29075259821119
+        ],
+        "roc_auc": 0.8260869565217391,
+        "pr_auc": 0.7925343081936087
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_deeper_distress_next",
+        "family": "H2",
+        "eligible_N": 163,
+        "event_N": 94,
+        "unavailable_N": 5,
+        "brier": 0.09707811049768157,
+        "bss_vs_H0": 0.6037778100068238,
+        "bss_ci": [
+          0.48131296150282776,
+          0.7141970941796411
+        ],
+        "log_loss": 0.3209907433674585,
+        "delta_log_loss_vs_H0": -0.3621718015317229,
+        "delta_log_loss_ci": [
+          -0.43193234112567175,
+          -0.27584787479423273
+        ],
+        "roc_auc": 0.8822078322540857,
+        "pr_auc": 0.8345519229955453
+      }
+    ],
+    "by_state": [
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "core_state": "HEALTHY",
+        "N": 68,
+        "terminal_losses": 9,
+        "p_terminal_loss_H1": 0.13768115942028986,
+        "p_terminal_loss_lo": 0.06755610189908265,
+        "p_terminal_loss_hi": 0.22761505787377495,
+        "support_n_loss": 68,
+        "p_recovery_t1_H1": null,
+        "p_recovery_by_t2_H1": null,
+        "p_recovery_by_t3_H1": null,
+        "mean_pnl_hold_after_state": 6.764705882352941
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "core_state": "WATCH_NEGATIVE",
+        "N": 67,
+        "terminal_losses": 14,
+        "p_terminal_loss_H1": 0.21323529411764705,
+        "p_terminal_loss_lo": 0.12511214897967543,
+        "p_terminal_loss_hi": 0.31731116084855426,
+        "support_n_loss": 67,
+        "p_recovery_t1_H1": 0.2803030303030303,
+        "p_recovery_by_t2_H1": 0.33076923076923076,
+        "p_recovery_by_t3_H1": 0.3671875,
+        "mean_pnl_hold_after_state": -0.8955223880597015
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "core_state": "PERSISTENCE_2",
+        "N": 52,
+        "terminal_losses": 9,
+        "p_terminal_loss_H1": 0.1792452830188679,
+        "p_terminal_loss_lo": 0.08924336628466609,
+        "p_terminal_loss_hi": 0.29209969674824665,
+        "support_n_loss": 52,
+        "p_recovery_t1_H1": 0.06862745098039216,
+        "p_recovery_by_t2_H1": 0.11,
+        "p_recovery_by_t3_H1": 0.18085106382978725,
+        "mean_pnl_hold_after_state": 2.6923076923076925
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "core_state": "PERSISTENCE_3PLUS",
+        "N": 49,
+        "terminal_losses": 8,
+        "p_terminal_loss_H1": 0.17,
+        "p_terminal_loss_lo": 0.08034095060369872,
+        "p_terminal_loss_hi": 0.28456329398224744,
+        "support_n_loss": 49,
+        "p_recovery_t1_H1": 0.05102040816326531,
+        "p_recovery_by_t2_H1": 0.11956521739130435,
+        "p_recovery_by_t3_H1": 0.11956521739130435,
+        "mean_pnl_hold_after_state": 3.673469387755102
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "core_state": "RECOVERING",
+        "N": 51,
+        "terminal_losses": 7,
+        "p_terminal_loss_H1": 0.14423076923076922,
+        "p_terminal_loss_lo": 0.06355357143002174,
+        "p_terminal_loss_hi": 0.2506883481182899,
+        "support_n_loss": 51,
+        "p_recovery_t1_H1": null,
+        "p_recovery_by_t2_H1": null,
+        "p_recovery_by_t3_H1": null,
+        "mean_pnl_hold_after_state": 6.2745098039215685
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "core_state": "HEALTHY_AFTER_RECOVERY",
+        "N": 21,
+        "terminal_losses": 5,
+        "p_terminal_loss_H1": 0.25,
+        "p_terminal_loss_lo": 0.09716335293672468,
+        "p_terminal_loss_hi": 0.4457034063604336,
+        "support_n_loss": 21,
+        "p_recovery_t1_H1": null,
+        "p_recovery_by_t2_H1": null,
+        "p_recovery_by_t3_H1": null,
+        "mean_pnl_hold_after_state": -3.8095238095238093
+      }
+    ],
+    "by_state_ci": [
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "core_state": "WATCH_NEGATIVE",
+        "CI_state": "CI_NEGATIVE",
+        "N": 32,
+        "losses": 9,
+        "p_terminal_loss_H2": 0.2878787878787879,
+        "posterior_lower": 0.1492155359809897,
+        "posterior_upper": 0.45086680029569604,
+        "label": "OBSERVED"
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "core_state": "WATCH_NEGATIVE",
+        "CI_state": "CI_CROSSES_ZERO",
+        "N": 35,
+        "losses": 5,
+        "p_terminal_loss_H2": 0.1527777777777778,
+        "posterior_lower": 0.05667232263930422,
+        "posterior_upper": 0.28515062783209955,
+        "label": "OBSERVED"
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "core_state": "PERSISTENCE_2",
+        "CI_state": "CI_NEGATIVE",
+        "N": 16,
+        "losses": 6,
+        "p_terminal_loss_H2": 0.38235294117647056,
+        "posterior_lower": 0.17431603316530553,
+        "posterior_upper": 0.6165870380180083,
+        "label": "OBSERVED"
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "core_state": "PERSISTENCE_2",
+        "CI_state": "CI_CROSSES_ZERO",
+        "N": 36,
+        "losses": 3,
+        "p_terminal_loss_H2": 0.0945945945945946,
+        "posterior_lower": 0.024032395330164463,
+        "posterior_upper": 0.20598140804610626,
+        "label": "OBSERVED"
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "core_state": "PERSISTENCE_3PLUS",
+        "CI_state": "CI_NEGATIVE",
+        "N": 13,
+        "losses": 5,
+        "p_terminal_loss_H2": 0.39285714285714285,
+        "posterior_lower": 0.16470057422717843,
+        "posterior_upper": 0.6499610972093934,
+        "label": "OBSERVED"
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "core_state": "PERSISTENCE_3PLUS",
+        "CI_state": "CI_CROSSES_ZERO",
+        "N": 36,
+        "losses": 3,
+        "p_terminal_loss_H2": 0.0945945945945946,
+        "posterior_lower": 0.024032395330164463,
+        "posterior_upper": 0.20598140804610626,
+        "label": "OBSERVED"
+      }
+    ],
+    "dynamic": [
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "PERSISTENCE_2",
+        "N_trades": 52,
+        "mean_delta_p_loss_H1": -0.03447076746445288,
+        "mean_delta_p_recovery_t1_H1": -0.2148979591836735
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "from_state": "PERSISTENCE_2",
+        "to_state": "PERSISTENCE_3PLUS",
+        "N_trades": 49,
+        "mean_delta_p_loss_H1": -0.009415147534681055,
+        "mean_delta_p_recovery_t1_H1": -0.01795138888888889
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "from_state": "PERSISTENCE_2",
+        "to_state": "RECOVERING",
+        "N_trades": 37,
+        "mean_delta_p_loss_H1": -0.03566405772288122,
+        "mean_delta_p_recovery_t1_H1": null
+      }
+    ],
+    "ev_vs_hazard": [
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "contrast": "EV vs p_loss",
+        "n": 308,
+        "spearman": -0.6293902376259283,
+        "ci_lo": -0.6841037237902745,
+        "ci_hi": -0.5707335369280341
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "contrast": "EV vs p_recovery_t1",
+        "n": 163,
+        "spearman": -0.16818010249321733,
+        "ci_lo": -0.28578745878327255,
+        "ci_hi": -0.05277436235933479
+      }
+    ],
+    "t40": [
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "N_negative_entries": 168,
+        "N_not_applicable": 157,
+        "N_unavailable": 1,
+        "N_observable": 10,
+        "n_T40_before_recovery": 10
+      }
+    ],
+    "contrasts": [
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "contrast": "WATCH_NEGATIVE vs HEALTHY p_loss",
+        "metric": "p_terminal_loss_H1",
+        "n_left": 67,
+        "n_right": 68,
+        "observed_delta": 0.07553966019204189,
+        "ci_lo": 0.0744653892406237,
+        "ci_hi": 0.07652465759178831,
+        "classification": "SUPPORTED"
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "contrast": "PERSISTENCE_2 vs WATCH_NEGATIVE p_loss",
+        "metric": "p_terminal_loss_H1",
+        "n_left": 52,
+        "n_right": 67,
+        "observed_delta": -0.03393527043753242,
+        "ci_lo": -0.03508100808738598,
+        "ci_hi": -0.032749811876615895,
+        "classification": "SUPPORTED"
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "contrast": "PERSISTENCE_3PLUS vs PERSISTENCE_2 p_loss",
+        "metric": "p_terminal_loss_H1",
+        "n_left": 49,
+        "n_right": 52,
+        "observed_delta": -0.009226462593248858,
+        "ci_lo": -0.00973806997304788,
+        "ci_hi": -0.008390190395684893,
+        "classification": "SUPPORTED"
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "contrast": "WATCH_NEGATIVE vs PERSISTENCE_2 p_recovery_t1_H1",
+        "metric": "p_recovery_t1_H1",
+        "n_left": 65,
+        "n_right": 50,
+        "observed_delta": 0.21155502958579878,
+        "ci_lo": 0.20948633311133305,
+        "ci_hi": 0.21386994516954025,
+        "classification": "SUPPORTED"
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "contrast": "WATCH_NEGATIVE vs PERSISTENCE_2 p_recovery_by_t2_H1",
+        "metric": "p_recovery_by_t2_H1",
+        "n_left": 64,
+        "n_right": 49,
+        "observed_delta": 0.22064811455513328,
+        "ci_lo": 0.2186596095733421,
+        "ci_hi": 0.2227070135902233,
+        "classification": "SUPPORTED"
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "contrast": "CI_NEGATIVE vs CI_CROSSES_ZERO p_loss",
+        "metric": "p_terminal_loss_H2",
+        "n_left": 61,
+        "n_right": 107,
+        "observed_delta": 0.22146596540939267,
+        "ci_lo": 0.20718079918335705,
+        "ci_hi": 0.2342453364777584,
+        "classification": "SUPPORTED"
+      }
+    ],
+    "timing_summary": [
+      {
+        "core_state": "WATCH_NEGATIVE",
+        "N": 67,
+        "mean_adverse_cents_remaining": 11.681818181818182,
+        "mean_minutes_to_worst_price": 5.014925373134329,
+        "mean_p_loss": 0.21329917576297616,
+        "p_spread": 0.014925373134328346
+      },
+      {
+        "core_state": "PERSISTENCE_2",
+        "N": 52,
+        "mean_adverse_cents_remaining": 11.58,
+        "mean_minutes_to_worst_price": 4.230769230769231,
+        "mean_p_loss": 0.17936390532544377,
+        "p_spread": 0.019230769230769218
+      },
+      {
+        "core_state": "PERSISTENCE_3PLUS",
+        "N": 49,
+        "mean_adverse_cents_remaining": 11.291666666666666,
+        "mean_minutes_to_worst_price": 3.5918367346938775,
+        "mean_p_loss": 0.17013744273219492,
+        "p_spread": 0.020408163265306117
+      }
+    ],
+    "missingness": [
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_recovery_t1",
+        "eligible": 163,
+        "positive": 23,
+        "negative": 140,
+        "unavailable": 5,
+        "not_applicable": 214
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_recovery_by_t2",
+        "eligible": 158,
+        "positive": 31,
+        "negative": 127,
+        "unavailable": 10,
+        "not_applicable": 214
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_recovery_by_t3",
+        "eligible": 154,
+        "positive": 36,
+        "negative": 118,
+        "unavailable": 14,
+        "not_applicable": 214
+      },
+      {
+        "source_experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_deeper_distress_next",
+        "eligible": 163,
+        "positive": 94,
+        "negative": 69,
+        "unavailable": 5,
+        "not_applicable": 214
+      }
+    ],
+    "transition_summary": [
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "PERSISTENCE_2",
+        "N": 52,
+        "mean_p_loss_from": 0.21383467278989665
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "PERSISTENCE_3PLUS",
+        "N": 49,
+        "mean_p_loss_from": 0.17955259026687598
+      },
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "RECOVERING",
+        "N": 20,
+        "mean_p_loss_from": 0.2126865671641791
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "RECOVERING",
+        "N": 5,
+        "mean_p_loss_from": 0.18269230769230768
+      }
+    ]
+  },
+  "B": {
+    "experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+    "n_entries": 153,
+    "n_terminal_loss_eligible": 153,
+    "n_recovery_t1_eligible": 12,
+    "n_recovery_t2_eligible": 7,
+    "n_recovery_t3_eligible": 4,
+    "n_recovery_t1_unavailable": 21,
+    "n_recovery_t2_unavailable": 26,
+    "n_recovery_t3_unavailable": 29,
+    "metrics": [
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_terminal_loss",
+        "family": "H0",
+        "eligible_N": 153,
+        "event_N": 33,
+        "unavailable_N": 0,
+        "brier": 0.1758576906035315,
+        "bss_vs_H0": null,
+        "bss_ci": null,
+        "log_loss": 0.5415687764953916,
+        "delta_log_loss_vs_H0": null,
+        "delta_log_loss_ci": null,
+        "roc_auc": 0.0,
+        "pr_auc": 0.11655125186155584
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_terminal_loss",
+        "family": "H1",
+        "eligible_N": 153,
+        "event_N": 33,
+        "unavailable_N": 0,
+        "brier": 0.14194149532596323,
+        "bss_vs_H0": 0.1928615982682943,
+        "bss_ci": [
+          -0.032420048868787535,
+          0.32626735714201466
+        ],
+        "log_loss": 0.4444891007220885,
+        "delta_log_loss_vs_H0": -0.09707967577330306,
+        "delta_log_loss_ci": [
+          -0.17350121620032144,
+          -0.017456110402027877
+        ],
+        "roc_auc": 0.6671717171717172,
+        "pr_auc": 0.34114389611726675
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_terminal_loss",
+        "family": "H2",
+        "eligible_N": 151,
+        "event_N": 33,
+        "unavailable_N": 0,
+        "brier": 0.13597785466322027,
+        "bss_vs_H0": 0.22677334044047992,
+        "bss_ci": [
+          -0.020495818180831685,
+          0.3257364192673164
+        ],
+        "log_loss": 0.4257719833167851,
+        "delta_log_loss_vs_H0": -0.11579679317860647,
+        "delta_log_loss_ci": [
+          -0.16728823716200103,
+          -0.02577684727166342
+        ],
+        "roc_auc": 0.6663978494623656,
+        "pr_auc": 0.3529741484457177
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_recovery_t1",
+        "family": "H0",
+        "eligible_N": 12,
+        "event_N": 0,
+        "unavailable_N": 21,
+        "brier": 0.002228057086011632,
+        "bss_vs_H0": null,
+        "bss_ci": null,
+        "log_loss": 0.04824658814187221,
+        "delta_log_loss_vs_H0": null,
+        "delta_log_loss_ci": null,
+        "roc_auc": null,
+        "pr_auc": null
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_recovery_t1",
+        "family": "H1",
+        "eligible_N": 12,
+        "event_N": 0,
+        "unavailable_N": 21,
+        "brier": 0.018750000000000003,
+        "bss_vs_H0": -7.415403769372771,
+        "bss_ci": [
+          -9.456431535269706,
+          -4.109364464540664
+        ],
+        "log_loss": 0.13574744179015208,
+        "delta_log_loss_vs_H0": 0.08750085364827986,
+        "delta_log_loss_ci": [
+          0.060147432424245445,
+          0.10825277076881035
+        ],
+        "roc_auc": null,
+        "pr_auc": null
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_recovery_t1",
+        "family": "H2",
+        "eligible_N": 11,
+        "event_N": 0,
+        "unavailable_N": 21,
+        "brier": 0.02159090909090909,
+        "bss_vs_H0": -8.690464946550463,
+        "bss_ci": [
+          -10.389164490861619,
+          -5.0763292731629415
+        ],
+        "log_loss": 0.14875384488098034,
+        "delta_log_loss_vs_H0": 0.10050725673910813,
+        "delta_log_loss_ci": [
+          0.06915240842261638,
+          0.11947999619266897
+        ],
+        "roc_auc": null,
+        "pr_auc": null
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_recovery_by_t2",
+        "family": "H0",
+        "eligible_N": 7,
+        "event_N": 0,
+        "unavailable_N": 26,
+        "brier": 0.0077275672173631365,
+        "bss_vs_H0": null,
+        "bss_ci": null,
+        "log_loss": 0.09118860646574031,
+        "delta_log_loss_vs_H0": null,
+        "delta_log_loss_ci": null,
+        "roc_auc": null,
+        "pr_auc": null
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_recovery_by_t2",
+        "family": "H1",
+        "eligible_N": 6,
+        "event_N": 0,
+        "unavailable_N": 26,
+        "brier": 0.03125,
+        "bss_vs_H0": -3.0439635296583525,
+        "bss_ci": [
+          -4.345454545454546,
+          -2.0625000000000004
+        ],
+        "log_loss": 0.18491495256694204,
+        "delta_log_loss_vs_H0": 0.09372634610120173,
+        "delta_log_loss_ci": [
+          0.05942342047080078,
+          0.11442793625170466
+        ],
+        "roc_auc": null,
+        "pr_auc": null
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_recovery_by_t2",
+        "family": "H2",
+        "eligible_N": 6,
+        "event_N": 0,
+        "unavailable_N": 26,
+        "brier": 0.03125,
+        "bss_vs_H0": -3.0439635296583525,
+        "bss_ci": [
+          -4.345454545454546,
+          -2.0625000000000004
+        ],
+        "log_loss": 0.18491495256694204,
+        "delta_log_loss_vs_H0": 0.09372634610120173,
+        "delta_log_loss_ci": [
+          0.05942342047080078,
+          0.11442793625170466
+        ],
+        "roc_auc": null,
+        "pr_auc": null
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_recovery_by_t3",
+        "family": "H0",
+        "eligible_N": 4,
+        "event_N": 0,
+        "unavailable_N": 29,
+        "brier": 0.05078125,
+        "bss_vs_H0": null,
+        "bss_ci": null,
+        "log_loss": 0.24914440249496633,
+        "delta_log_loss_vs_H0": null,
+        "delta_log_loss_ci": null,
+        "roc_auc": null,
+        "pr_auc": null
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_recovery_by_t3",
+        "family": "H1",
+        "eligible_N": 2,
+        "event_N": 0,
+        "unavailable_N": 29,
+        "brier": 0.0625,
+        "bss_vs_H0": -0.23076923076923084,
+        "bss_ci": [
+          -3.0,
+          0.0
+        ],
+        "log_loss": 0.2876820724517809,
+        "delta_log_loss_vs_H0": 0.03853766995681457,
+        "delta_log_loss_ci": [
+          0.0,
+          0.15415067982725827
+        ],
+        "roc_auc": null,
+        "pr_auc": null
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_recovery_by_t3",
+        "family": "H2",
+        "eligible_N": 2,
+        "event_N": 0,
+        "unavailable_N": 29,
+        "brier": 0.0625,
+        "bss_vs_H0": -0.23076923076923084,
+        "bss_ci": [
+          -3.0,
+          0.0
+        ],
+        "log_loss": 0.2876820724517809,
+        "delta_log_loss_vs_H0": 0.03853766995681457,
+        "delta_log_loss_ci": [
+          0.0,
+          0.15415067982725827
+        ],
+        "roc_auc": null,
+        "pr_auc": null
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_deeper_distress_next",
+        "family": "H0",
+        "eligible_N": 12,
+        "event_N": 10,
+        "unavailable_N": 21,
+        "brier": 0.15236809381695746,
+        "bss_vs_H0": null,
+        "bss_ci": null,
+        "log_loss": 0.49523848561118927,
+        "delta_log_loss_vs_H0": null,
+        "delta_log_loss_ci": null,
+        "roc_auc": 0.2,
+        "pr_auc": 0.8093578643578644
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_deeper_distress_next",
+        "family": "H1",
+        "eligible_N": 12,
+        "event_N": 10,
+        "unavailable_N": 21,
+        "brier": 0.01875,
+        "bss_vs_H0": 0.8769427408961045,
+        "bss_ci": [
+          0.7895969811320757,
+          0.8902508716281752
+        ],
+        "log_loss": 0.13574744179015208,
+        "delta_log_loss_vs_H0": -0.3594910438210372,
+        "delta_log_loss_ci": [
+          -0.5249241698740315,
+          -0.14036146458397622
+        ],
+        "roc_auc": 1.0,
+        "pr_auc": 1.0
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_deeper_distress_next",
+        "family": "H2",
+        "eligible_N": 11,
+        "event_N": 10,
+        "unavailable_N": 21,
+        "brier": 0.02159090909090909,
+        "bss_vs_H0": 0.8582977016379385,
+        "bss_ci": [
+          0.7361325165418718,
+          0.8824371477140557
+        ],
+        "log_loss": 0.14875384488098034,
+        "delta_log_loss_vs_H0": -0.3464846407302089,
+        "delta_log_loss_ci": [
+          -0.5149815074151974,
+          -0.1269260420539162
+        ],
+        "roc_auc": 1.0,
+        "pr_auc": 1.0
+      }
+    ],
+    "by_state": [
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "core_state": "HEALTHY",
+        "N": 51,
+        "terminal_losses": 2,
+        "p_terminal_loss_H1": 0.04807692307692308,
+        "p_terminal_loss_lo": 0.008237448790931481,
+        "p_terminal_loss_hi": 0.11989841019498432,
+        "support_n_loss": 51,
+        "p_recovery_t1_H1": null,
+        "p_recovery_by_t2_H1": null,
+        "p_recovery_by_t3_H1": null,
+        "mean_pnl_hold_after_state": 16.07843137254902
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "core_state": "WATCH_NEGATIVE",
+        "N": 22,
+        "terminal_losses": 12,
+        "p_terminal_loss_H1": 0.5434782608695652,
+        "p_terminal_loss_lo": 0.34263079564796417,
+        "p_terminal_loss_hi": 0.7371582642920431,
+        "support_n_loss": 22,
+        "p_recovery_t1_H1": 0.08333333333333333,
+        "p_recovery_by_t2_H1": 0.1,
+        "p_recovery_by_t3_H1": 0.16666666666666666,
+        "mean_pnl_hold_after_state": -34.54545454545455
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "core_state": "PERSISTENCE_2",
+        "N": 6,
+        "terminal_losses": 4,
+        "p_terminal_loss_H1": 0.6428571428571429,
+        "p_terminal_loss_lo": 0.28642300925419706,
+        "p_terminal_loss_hi": 0.9232298599651265,
+        "support_n_loss": 6,
+        "p_recovery_t1_H1": 0.08333333333333333,
+        "p_recovery_by_t2_H1": 0.16666666666666666,
+        "p_recovery_by_t3_H1": 0.25,
+        "mean_pnl_hold_after_state": -46.666666666666664
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "core_state": "PERSISTENCE_3PLUS",
+        "N": 5,
+        "terminal_losses": 3,
+        "p_terminal_loss_H1": 0.5833333333333334,
+        "p_terminal_loss_lo": 0.20941666407600484,
+        "p_terminal_loss_hi": 0.9056096726556557,
+        "support_n_loss": 5,
+        "p_recovery_t1_H1": 0.16666666666666666,
+        "p_recovery_by_t2_H1": 0.25,
+        "p_recovery_by_t3_H1": 0.25,
+        "mean_pnl_hold_after_state": -40.0
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "core_state": "RECOVERING",
+        "N": 0,
+        "terminal_losses": 0,
+        "p_terminal_loss_H1": null,
+        "p_terminal_loss_lo": null,
+        "p_terminal_loss_hi": null,
+        "support_n_loss": 0,
+        "p_recovery_t1_H1": null,
+        "p_recovery_by_t2_H1": null,
+        "p_recovery_by_t3_H1": null,
+        "mean_pnl_hold_after_state": null
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "core_state": "HEALTHY_AFTER_RECOVERY",
+        "N": 0,
+        "terminal_losses": 0,
+        "p_terminal_loss_H1": null,
+        "p_terminal_loss_lo": null,
+        "p_terminal_loss_hi": null,
+        "support_n_loss": 0,
+        "p_recovery_t1_H1": null,
+        "p_recovery_by_t2_H1": null,
+        "p_recovery_by_t3_H1": null,
+        "mean_pnl_hold_after_state": null
+      }
+    ],
+    "by_state_ci": [
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "core_state": "WATCH_NEGATIVE",
+        "CI_state": "CI_NEGATIVE",
+        "N": 16,
+        "losses": 11,
+        "p_terminal_loss_H2": 0.6764705882352942,
+        "posterior_lower": 0.4442955354277599,
+        "posterior_upper": 0.8694183444560755,
+        "label": "OBSERVED"
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "core_state": "WATCH_NEGATIVE",
+        "CI_state": "CI_CROSSES_ZERO",
+        "N": 6,
+        "losses": 1,
+        "p_terminal_loss_H2": 0.21428571428571427,
+        "posterior_lower": 0.018620127119442165,
+        "posterior_upper": 0.5580567736092494,
+        "label": "LOW_SAMPLE"
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "core_state": "PERSISTENCE_2",
+        "CI_state": "CI_NEGATIVE",
+        "N": 5,
+        "losses": 3,
+        "p_terminal_loss_H2": 0.5833333333333334,
+        "posterior_lower": 0.20941666407600484,
+        "posterior_upper": 0.9056096726556557,
+        "label": "LOW_SAMPLE"
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "core_state": "PERSISTENCE_2",
+        "CI_state": "CI_CROSSES_ZERO",
+        "N": 1,
+        "losses": 1,
+        "p_terminal_loss_H2": 0.75,
+        "posterior_lower": 0.14674631630957513,
+        "posterior_upper": 0.9996144190192442,
+        "label": "LOW_SAMPLE"
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "core_state": "PERSISTENCE_3PLUS",
+        "CI_state": "CI_NEGATIVE",
+        "N": 4,
+        "losses": 2,
+        "p_terminal_loss_H2": 0.5,
+        "posterior_lower": 0.12275388276951782,
+        "posterior_upper": 0.877246117230482,
+        "label": "LOW_SAMPLE"
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "core_state": "PERSISTENCE_3PLUS",
+        "CI_state": "CI_CROSSES_ZERO",
+        "N": 1,
+        "losses": 1,
+        "p_terminal_loss_H2": 0.75,
+        "posterior_lower": 0.14674631630957513,
+        "posterior_upper": 0.9996144190192442,
+        "label": "LOW_SAMPLE"
+      }
+    ],
+    "dynamic": [
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "PERSISTENCE_2",
+        "N_trades": 6,
+        "mean_delta_p_loss_H1": 0.10101010101010104,
+        "mean_delta_p_recovery_t1_H1": 0.0
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "from_state": "PERSISTENCE_2",
+        "to_state": "PERSISTENCE_3PLUS",
+        "N_trades": 5,
+        "mean_delta_p_loss_H1": -0.07000000000000003,
+        "mean_delta_p_recovery_t1_H1": 0.15
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "from_state": "PERSISTENCE_2",
+        "to_state": "RECOVERING",
+        "N_trades": 0,
+        "mean_delta_p_loss_H1": null,
+        "mean_delta_p_recovery_t1_H1": null
+      }
+    ],
+    "ev_vs_hazard": [
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "contrast": "EV vs p_loss",
+        "n": 84,
+        "spearman": -0.7873890048182501,
+        "ci_lo": -0.829579235509119,
+        "ci_hi": -0.7064130111388464
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "contrast": "EV vs p_recovery_t1",
+        "n": 12,
+        "spearman": -0.3255872650117157,
+        "ci_lo": -0.5229784828331789,
+        "ci_hi": 0.12397935049250054
+      }
+    ],
+    "t40": [
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "N_negative_entries": 33,
+        "N_not_applicable": 33,
+        "N_unavailable": 0,
+        "N_observable": 0,
+        "n_T40_before_recovery": 0
+      }
+    ],
+    "contrasts": [
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "contrast": "WATCH_NEGATIVE vs HEALTHY p_loss",
+        "metric": "p_terminal_loss_H1",
+        "n_left": 22,
+        "n_right": 51,
+        "observed_delta": 0.49513775693391937,
+        "ci_lo": 0.48528685733267163,
+        "ci_hi": 0.5046989968236099,
+        "classification": "SUPPORTED"
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "contrast": "PERSISTENCE_2 vs WATCH_NEGATIVE p_loss",
+        "metric": "p_terminal_loss_H1",
+        "n_left": 6,
+        "n_right": 22,
+        "observed_delta": 0.0955004591368227,
+        "ci_lo": 0.037878787878787845,
+        "ci_hi": 0.16645316804407712,
+        "classification": "SUPPORTED"
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "contrast": "PERSISTENCE_3PLUS vs PERSISTENCE_2 p_loss",
+        "metric": "p_terminal_loss_H1",
+        "n_left": 5,
+        "n_right": 6,
+        "observed_delta": -0.05888888888888899,
+        "ci_lo": -0.08333333333333337,
+        "ci_hi": -0.011111111111111183,
+        "classification": "SUPPORTED"
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "contrast": "WATCH_NEGATIVE vs PERSISTENCE_2 p_recovery_t1_H1",
+        "metric": "p_recovery_t1_H1",
+        "n_left": 5,
+        "n_right": 5,
+        "observed_delta": 0.0,
+        "ci_lo": -2.7755575615628914e-17,
+        "ci_hi": 2.7755575615628914e-17,
+        "classification": "MIXED"
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "contrast": "WATCH_NEGATIVE vs PERSISTENCE_2 p_recovery_by_t2_H1",
+        "metric": "p_recovery_by_t2_H1",
+        "n_left": 4,
+        "n_right": 2,
+        "observed_delta": -0.125,
+        "ci_lo": -0.125,
+        "ci_hi": -0.125,
+        "classification": "SUPPORTED"
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "contrast": "CI_NEGATIVE vs CI_CROSSES_ZERO p_loss",
+        "metric": "p_terminal_loss_H2",
+        "n_left": 25,
+        "n_right": 6,
+        "observed_delta": 0.40627777777777785,
+        "ci_lo": 0.360328125,
+        "ci_hi": 0.4621031244529061,
+        "classification": "SUPPORTED"
+      }
+    ],
+    "timing_summary": [
+      {
+        "core_state": "WATCH_NEGATIVE",
+        "N": 22,
+        "mean_adverse_cents_remaining": 17.714285714285715,
+        "mean_minutes_to_worst_price": 1.3636363636363635,
+        "mean_p_loss": 0.5433884297520661,
+        "p_spread": 0.045454545454545525
+      },
+      {
+        "core_state": "PERSISTENCE_2",
+        "N": 6,
+        "mean_adverse_cents_remaining": 0.0,
+        "mean_minutes_to_worst_price": 0.0,
+        "mean_p_loss": 0.638888888888889,
+        "p_spread": 0.16666666666666663
+      },
+      {
+        "core_state": "PERSISTENCE_3PLUS",
+        "N": 5,
+        "mean_adverse_cents_remaining": 0.0,
+        "mean_minutes_to_worst_price": 0.0,
+        "mean_p_loss": 0.58,
+        "p_spread": 0.19999999999999996
+      }
+    ],
+    "missingness": [
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_recovery_t1",
+        "eligible": 12,
+        "positive": 0,
+        "negative": 12,
+        "unavailable": 21,
+        "not_applicable": 120
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_recovery_by_t2",
+        "eligible": 7,
+        "positive": 0,
+        "negative": 7,
+        "unavailable": 26,
+        "not_applicable": 120
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_recovery_by_t3",
+        "eligible": 4,
+        "positive": 0,
+        "negative": 4,
+        "unavailable": 29,
+        "not_applicable": 120
+      },
+      {
+        "source_experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+        "target": "TARGET_deeper_distress_next",
+        "eligible": 12,
+        "positive": 10,
+        "negative": 2,
+        "unavailable": 21,
+        "not_applicable": 120
+      }
+    ],
+    "transition_summary": [
+      {
+        "from_state": "WATCH_NEGATIVE",
+        "to_state": "PERSISTENCE_2",
+        "N": 6,
+        "mean_p_loss_from": 0.537878787878788
+      },
+      {
+        "from_state": "PERSISTENCE_2",
+        "to_state": "PERSISTENCE_3PLUS",
+        "N": 5,
+        "mean_p_loss_from": 0.65
+      }
+    ]
+  },
+  "interpretation": {
+    "gate_a_probability_validity": "PASS",
+    "gate_b_terminal_loss_information": "MIXED",
+    "gate_c_recovery_information": "MIXED",
+    "gate_d_dynamic_update": "MIXED",
+    "gate_e_timing": "MIXED",
+    "gate_f_transfer_support": "MIXED",
+    "phase_5_decision": "PHASE 5 NOT JUSTIFIED",
+    "phase_5_classification": "MIXED",
+    "phase_5_note": "The PIT \u2192 LOGO improvement \u2192 recovery \u2192 update \u2192 early-enough \u2192 support chain does not hold.",
+    "phase_4_complete": true,
+    "transfer_note": "WATCH vs HEALTHY p_loss can agree, but B recovery is thin or missing and counts against transfer.",
+    "A_terminal_loss_H1": "MIXED",
+    "B_terminal_loss_H1": "MIXED",
+    "A_terminal_loss_H2": "MIXED",
+    "B_terminal_loss_H2": "MIXED"
+  }
+}

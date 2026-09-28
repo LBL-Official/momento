@@ -1,0 +1,10 @@
+trade T0587  NCAAB  Clemson at North Carolina
+contract KXNCAAMBGAME-26MAR12CLEMUNC-CLEM  slice H2_1
+signal 2026-03-12T19:53:00-07:00 PDT  exit 2026-03-12T21:26:18-07:00 PDT
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 14107  principal_cents 1100346
+entry_fee_cents 4237  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 310354  net_cents 306117
+strategy_result POSITIVE  net_r 1.856683629217640244309256215
+Assumed fill. Not a maker fill. Not live P&L.

@@ -1,0 +1,30 @@
+{
+  "realized_account": {
+    "n": 29,
+    "mean": -8.40911039717993e-05,
+    "stdev": 0.0031893332034108627,
+    "sharpe_unannualized": -0.02636635892476436,
+    "annualized_sharpe": -0.5037285799679901,
+    "periods_per_year": 365,
+    "risk_free_rate": 0,
+    "reason": null,
+    "zero_activity_days_retained": true,
+    "definition": "E_day_end / E_previous_day_end - 1",
+    "annualization": "sqrt(365) is descriptive on a short window"
+  },
+  "marked_account": {
+    "n": 29,
+    "mean": -8.40911039717993e-05,
+    "stdev": 0.0031893332034108627,
+    "sharpe_unannualized": -0.02636635892476436,
+    "annualized_sharpe": -0.5037285799679901,
+    "periods_per_year": 365,
+    "risk_free_rate": 0,
+    "reason": null,
+    "zero_activity_days_retained": true,
+    "definition": "E_day_end / E_previous_day_end - 1",
+    "annualization": "sqrt(365) is descriptive on a short window"
+  },
+  "marked_days_with_a_price": 30,
+  "calendar_days": 30
+}

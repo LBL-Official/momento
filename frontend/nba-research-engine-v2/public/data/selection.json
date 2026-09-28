@@ -1,0 +1,14 @@
+{
+  "chosen_logistic": "game_state",
+  "beats_model0_val_brier_gate": false,
+  "simple_game_state_wins_val_brier": true,
+  "best_k": 10,
+  "portfolio": {
+    "max_same_day": 14,
+    "mean_same_day": 5.514150943396227,
+    "days": 212,
+    "note": "Research concurrency diagnostic. Not live capital. Not optimized on OOS."
+  },
+  "weekly_first80_primary": 33.26422764227642,
+  "git": null
+}

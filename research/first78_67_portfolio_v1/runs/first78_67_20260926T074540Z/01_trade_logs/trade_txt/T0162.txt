@@ -1,0 +1,10 @@
+trade T0162  NBA  Memphis at Utah
+contract KXNBAGAME-25DEC23MEMUTA-MEM  slice Q2
+signal 2025-12-23T18:56:00-08:00 PST  exit 2025-12-23T19:08:00-08:00 PST
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 3025  principal_cents 235950
+entry_fee_cents 909  exit_fee_cents 1171
+exit STOP at 67c  terminal yes
+gross_cents -33275  net_cents -35355
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

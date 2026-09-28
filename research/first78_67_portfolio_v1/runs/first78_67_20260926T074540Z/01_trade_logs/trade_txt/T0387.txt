@@ -1,0 +1,10 @@
+trade T0387  NBA  Memphis at Portland
+contract KXNBAGAME-26FEB06MEMPOR-POR  slice Q3
+signal 2026-02-06T20:26:00-08:00 PST  exit 2026-02-06T21:33:09-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 6592  principal_cents 514176
+entry_fee_cents 1980  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 145024  net_cents 143044
+strategy_result POSITIVE  net_r 1.856677439871240735693054528
+Assumed fill. Not a maker fill. Not live P&L.

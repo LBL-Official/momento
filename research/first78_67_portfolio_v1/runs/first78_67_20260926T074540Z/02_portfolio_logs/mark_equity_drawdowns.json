@@ -1,0 +1,18 @@
+{
+  "bid_marked_gross": {
+    "max_drawdown_fraction": 0.06921403203061549,
+    "peak_index": 1497,
+    "trough_index": 1527,
+    "peak_equity_cents": 13614537,
+    "trough_equity_cents": 12672220
+  },
+  "bid_marked_net_of_estimated_exit_fee": {
+    "max_drawdown_fraction": 0.06912944874104832,
+    "peak_index": 1497,
+    "trough_index": 1527,
+    "peak_equity_cents": 13609974,
+    "trough_equity_cents": 12669124
+  },
+  "points": 1941,
+  "fee": "user coefficient 0.0175, ceil to the cent, charged as if the open bid were a sale. Not a fill."
+}

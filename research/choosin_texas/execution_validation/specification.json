@@ -1,0 +1,61 @@
+{
+  "actual_evidence": "ACTUAL_FILL",
+  "canonical_net_return": "NOT_PUBLISHED",
+  "configuration_id": "PLANNED_RISK_CAP3",
+  "established": [
+    {
+      "name": "entry_signal",
+      "value": "Existing ledger timestamp. That second is the minute-close when the candle book marks entry."
+    },
+    {
+      "name": "earliest_order_submission",
+      "value": "The entry or stop signal timestamp. No order is eligible before that close is observable."
+    },
+    {
+      "name": "entry_side_and_price",
+      "value": "Buy YES at 80 cents. Nominal price. The candle close bid may differ."
+    },
+    {
+      "name": "post_only_intent",
+      "value": "The research description is a maker entry and a maker exit."
+    },
+    {
+      "name": "stop_detection",
+      "value": "First later minute whose yes bid close is at or below 40 or 65. Detection is not an order."
+    },
+    {
+      "name": "settlement",
+      "value": "Candle survivors are marked at 100 cents in the benchmark. That mark is not an exchange fill of our order."
+    },
+    {
+      "name": "taker_fallback",
+      "value": "NOT_AUTHORIZED"
+    },
+    {
+      "name": "opponent_hedge",
+      "value": "NOT_AUTHORIZED"
+    },
+    {
+      "name": "position_cap",
+      "value": "Three open slots across sports and slices. A pending entry occupies a slot."
+    }
+  ],
+  "execution_aware_portfolio_pnl": "NOT_REPORTED",
+  "informed_strategy_selection": true,
+  "live_execution": "LIVE_EXECUTION_DISABLED",
+  "max_open_positions": 3,
+  "missing": [
+    "Latency after the candle close. No game-time local receive clock is in the historical files.",
+    "Order lifetime and the cancellation clock.",
+    "Queue position. A trade at our price is not a fill.",
+    "Exit order price after the stop print: the stop level versus the observed bid.",
+    "Repricing.",
+    "Partial-fill priority across the two books. Accounting rules exist for a later replay. They are not applied to historical P&L.",
+    "A fee schedule whose effective dates cover every historical entry."
+  ],
+  "out_of_sample": false,
+  "reference_evidence": "CANDLE_PATH_NOT_FILL",
+  "separate_configuration_id": "CAPITAL_6PCT_CAP3",
+  "simulated_evidence": "SIMULATED_EXECUTION",
+  "spec_id": "PAIRED_EXECUTION_VALIDATION_V1"
+}

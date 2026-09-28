@@ -1,0 +1,50 @@
+hypothesis_id,family,name,window,role,confirmatory_or_exploratory,allowed_in_2a,allowed_in_2b,status,notes
+A01,market_state,feat_spread_cents,entry_bar,predictor,confirmatory,yes,yes,PRE_REGISTERED,ask_close-bid_close at ENTRY_DECISION_TIME; SAME_BAR_1M
+A02,market_state,feat_distance_from_80_cents,entry_bar,predictor,confirmatory,yes,yes,PRE_REGISTERED,(yes_bid_close-80) at decision; SAME_BAR_1M
+A03,market_state,feat_entry_bid_close_cents,entry_bar,predictor,confirmatory,no,no,PRE_REGISTERED,stored; not in 2A to avoid collinearity with distance_from_80
+A04,market_state,feat_entry_ask_close_cents,entry_bar,predictor,confirmatory,no,no,PRE_REGISTERED,stored metadata
+A05,market_state,feat_entry_last_close_cents,entry_bar,predictor,confirmatory,no,no,PRE_REGISTERED,last-trade close; not L2
+A06,market_state,feat_entry_volume_hundredths,entry_bar,predictor,confirmatory,no,no,PRE_REGISTERED,volume; metadata unless promoted in a future spec
+A07,market_state,feat_entry_mid_cents_estimated,entry_bar,predictor,confirmatory,no,no,PRE_REGISTERED,ESTIMATED (bid+ask)/2; not used as 2A predictor
+B01,path,feat_momentum_1m_cents,1m,predictor,confirmatory,no,yes,PRE_REGISTERED,signed yes_bid_close change vs prior completed candle
+B02,path,feat_range_1m_cents,1m,predictor,confirmatory,yes,yes,PRE_REGISTERED,entry candle bid_high-bid_low; SAME_BAR_1M
+B03,path,feat_vol_5m_cents,5m,predictor,confirmatory,yes,yes,PRE_REGISTERED,stdev of 1m yes_bid_close changes; candle vol proxy not true RV
+B04,path,feat_momentum_5m_cents,5m,predictor,confirmatory,yes,yes,PRE_REGISTERED,signed bid-close change over 5m ending at decision
+B05,path,feat_abs_change_5m_cents,5m,predictor,confirmatory,no,yes,PRE_REGISTERED,abs of 5m momentum
+B06,path,feat_range_5m_mean_cents,5m,predictor,confirmatory,no,yes,PRE_REGISTERED,mean candle bid range over 5m
+B07,path,feat_vol_15m_cents,15m,predictor,confirmatory,yes,yes,PRE_REGISTERED,stdev of 1m changes over 15m
+B08,path,feat_momentum_15m_cents,15m,predictor,confirmatory,no,yes,PRE_REGISTERED,signed 15m bid-close change
+B09,path,feat_abs_change_15m_cents,15m,predictor,confirmatory,no,no,PRE_REGISTERED,stored; omitted from 2B to stay at 25
+B10,path,feat_range_15m_mean_cents,15m,predictor,confirmatory,no,yes,PRE_REGISTERED,mean candle range over 15m
+B11,path,feat_range_15m_max_cents,15m,predictor,confirmatory,no,yes,PRE_REGISTERED,max candle range over 15m
+B12,path,feat_up_count_15m,15m,predictor,confirmatory,no,yes,PRE_REGISTERED,count of positive 1m close changes
+B13,path,feat_down_count_15m,15m,predictor,confirmatory,no,yes,PRE_REGISTERED,count of negative 1m close changes
+B14,path,feat_mae_15m_cents,15m,predictor,confirmatory,no,yes,PRE_REGISTERED,max adverse vs 15m window start (down for long YES)
+B15,path,feat_mfe_15m_cents,15m,predictor,confirmatory,no,yes,PRE_REGISTERED,max favorable vs 15m window start
+B16,path,feat_dist_from_15m_high_cents,15m,predictor,confirmatory,no,yes,PRE_REGISTERED,entry close minus 15m window high
+B17,path,feat_dist_from_15m_low_cents,15m,predictor,confirmatory,no,yes,PRE_REGISTERED,entry close minus 15m window low
+B18,path,feat_vol_shock,5m_over_15m,predictor,confirmatory,yes,yes,PRE_REGISTERED,vol_5m / vol_15m when vol_15m>0
+C01,contract_time,feat_minutes_to_close,contract,predictor,confirmatory,yes,yes,PRE_REGISTERED,CONTRACT_TIME; not NBA game clock
+C02,contract_time,feat_minutes_since_first_gw_candle,contract,predictor,confirmatory,no,yes,PRE_REGISTERED,minutes since first valid game-window candle; TIP_PROXY_NOT_USED
+C03,contract_time,feat_prior_80_crossings,contract,sanity,confirmatory,no,no,PRE_REGISTERED,expected ~0 under first-80 definition
+E01,interaction,feat_ix_vol5_x_minutes_to_close,5m_x_time,predictor,confirmatory,yes,yes,PRE_REGISTERED,pre-registered interaction
+E02,interaction,feat_ix_vol5_x_spread,5m_x_spread,predictor,confirmatory,yes,yes,PRE_REGISTERED,pre-registered interaction
+E03,interaction,feat_ix_momentum5_x_spread,5m_x_spread,predictor,confirmatory,yes,yes,PRE_REGISTERED,pre-registered interaction
+E04,interaction,feat_ix_range1m_x_vol_shock,1m_x_shock,predictor,confirmatory,yes,yes,PRE_REGISTERED,pre-registered interaction
+X01,path,feat_vol_3m_cents,3m,predictor,exploratory,no,no,PRE_REGISTERED,TRAIN-only univariate; never auto-enter 2A
+X02,path,feat_vol_10m_cents,10m,predictor,exploratory,no,no,PRE_REGISTERED,TRAIN-only univariate; never auto-enter 2A
+X03,path,feat_vol_30m_cents,30m,predictor,exploratory,no,no,PRE_REGISTERED,TRAIN-only univariate; never auto-enter 2A
+X04,path,feat_momentum_3m_cents,3m,predictor,exploratory,no,no,PRE_REGISTERED,TRAIN-only univariate
+X05,path,feat_momentum_10m_cents,10m,predictor,exploratory,no,no,PRE_REGISTERED,TRAIN-only univariate
+X06,path,feat_momentum_30m_cents,30m,predictor,exploratory,no,no,PRE_REGISTERED,TRAIN-only univariate
+X07,path,feat_range_3m_mean_cents,3m,predictor,exploratory,no,no,PRE_REGISTERED,TRAIN-only univariate
+X08,path,feat_range_10m_mean_cents,10m,predictor,exploratory,no,no,PRE_REGISTERED,TRAIN-only univariate
+X09,path,feat_range_30m_mean_cents,30m,predictor,exploratory,no,no,PRE_REGISTERED,TRAIN-ONLY univariate
+X10,interaction,feat_ix_vol15_x_minutes_to_close,15m_x_time,predictor,exploratory,no,no,PRE_REGISTERED,extra interaction; future spec only
+S01,shape,path_shape_5m,5m,descriptive,exploratory,no,no,PRE_REGISTERED,STEADY_ASCENT/DESCENT/MIXED; stored not dummy
+S02,shape,path_shape_15m,15m,descriptive,exploratory,no,no,PRE_REGISTERED,stored not dummy
+T01,target,target_close_40,post_entry,target,confirmatory,no,no,PRE_REGISTERED,PRIMARY Y_40; TARGET_ONLY
+T02,target,target_wick_40_post_entry_bar_only,post_entry,target,confirmatory,no,no,PRE_REGISTERED,FORMAL SECONDARY; TARGET_ONLY
+T03,target,target_wick_40_including_entry_bar,entry_or_later,target,confirmatory,no,no,PRE_REGISTERED,diagnostic wick; TARGET_ONLY
+T04,target,expiration_result_yes,settlement,target,confirmatory,no,no,PRE_REGISTERED,eventual winner; never a feature
+M01,metadata,maker_fill_confidence,entry_bar,metadata,confirmatory,no,no,PRE_REGISTERED,execution metadata; not a path feature in V1

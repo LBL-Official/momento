@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "n_predictions": 8025,
+  "n_same_game_present": 0,
+  "same_game_present_in_training": false,
+  "note": "Every p_hat rebuilds the Beta table after dropping that row's internal_game_id."
+}

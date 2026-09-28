@@ -1,0 +1,7 @@
+deliverable,status,run_id,test_id,scenario_id,population_id,sport
+repair_contract.json,PRESENT,audit_repair_20260926T090447Z,ALL,ALL,ALL,ALL
+legacy_reconciliation.json,PRESENT,audit_repair_20260926T090447Z,ALL,ALL,ALL,ALL
+causal_next_bar_936,BLOCKED_DATA,audit_repair_20260926T090447Z,ALL,ALL,ALL,ALL
+full_bid_minute_grid_936,MISSING_MARKS_RETAINED_NO_SAVED_PATH,audit_repair_20260926T090447Z,ALL,ALL,ALL,ALL
+nested_snapshot_model_936,BLOCKED_DATA,audit_repair_20260926T090447Z,ALL,ALL,ALL,ALL
+oos_windows,PRESENT,audit_repair_20260926T090447Z,ALL,ALL,ALL,ALL

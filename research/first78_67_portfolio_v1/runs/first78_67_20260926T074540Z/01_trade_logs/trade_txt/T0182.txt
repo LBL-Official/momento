@@ -1,0 +1,10 @@
+trade T0182  NBA  Dallas at Portland
+contract KXNBAGAME-25DEC29DALPOR-POR  slice Q2
+signal 2025-12-29T20:23:00-08:00 PST  exit 2025-12-29T21:37:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 3297  principal_cents 257166
+entry_fee_cents 991  exit_fee_cents 1276
+exit STOP at 67c  terminal yes
+gross_cents -36267  net_cents -38534
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

@@ -1,0 +1,61 @@
+---
+description: ROLLER generic research-query isolation, scopes, and provenance
+globs: "{**/research_query/**,**/roller-terminal/src/v2/workflow/**,**/test_research_query*.py}"
+alwaysApply: false
+---
+
+# ROLLER Research Query
+
+Generic empirical queries are not FIRST80. Frozen locks are not generic scans.
+
+```text
+QUESTION ≠ REFERENCE TEMPLATE
+DATA AVAILABILITY ≠ OPERATION DEFINITION
+ZERO RESULTS ≠ UNSUPPORTED
+CANDLE ≠ FILL
+```
+
+## Isolation
+
+- Do not modify `ROLLER/roller/research/first80.py`.
+- Do not change frozen `research_executor.py` bindings.
+- Do not write generic semantics into `research_spec.path_conditions`.
+- Do not train XIB, recalibrate MCD, or regenerate predictions in a query.
+- Do not absorb Terminal Efficiency as a candle `PathOp`.
+- Do not treat GAME / TEAM_GAME / model-state AND as ticker intersection.
+
+## Scopes
+
+See `ROLLER/docs/research_query/CONDITION_SCOPE_CONTRACT.md`.
+
+v1 AND is ticker-path set intersection only.
+
+Reserved scopes (`GAME`, `GAME_PREGAME`, `TEAM_GAME`, `PLAYER_GAME`,
+`POSSESSION`, `STATE`, XIB/MCD fields) → `OPERATION_REQUIRED`, never `n=0`.
+
+## Observation bases
+
+One question resolves to one basis. See `ROLLER/docs/DATA_LINEAGE.md`.
+
+- `TRADABLE_YES_BID` (Kalshi `yes_bid_close`, `TRADABLE_CLOSE_*`, `quality()`)
+- `LAST_TRADE_PRINT` (Polymarket `last_close_e4`, `LAST_TRADE_CLOSE_*`)
+
+Do not pair a price field with the other basis's event definition.
+Do not forward-fill a minute with no print.
+Do not report P&L / EV / drawdown / risk-of-ruin on `LAST_TRADE_PRINT`.
+Do not serve the Kalshi observation index for a last-trade question.
+Do not let Polymarket satisfy a tradable-TOB requirement or a FIRST80 lock.
+Kalshi + Polymarket in one question → `OPERATION_REQUIRED`, never a merged
+population.
+
+## Provenance
+
+Generic results must include `path: generic_query` and must never claim
+`warehouse_frozen_v1`. Client `execution_path` is ignored on execute.
+Results must state `price_basis` and must not name a field the basis does not
+have.
+
+## Performance
+
+Do not approximate, sample, or serve stale caches as measurements.
+Fact tables (if any) are atomic events, not precomputed questions.

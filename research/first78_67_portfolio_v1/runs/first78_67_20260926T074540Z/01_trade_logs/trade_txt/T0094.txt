@@ -1,0 +1,10 @@
+trade T0094  NBA  New York K at Boston
+contract KXNBAGAME-25DEC02NYKBOS-BOS  slice Q3
+signal 2025-12-02T18:47:00-08:00 PST  exit 2025-12-02T19:16:00-08:00 PST
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 2429  principal_cents 189462
+entry_fee_cents 730  exit_fee_cents 940
+exit STOP at 67c  terminal yes
+gross_cents -26719  net_cents -28389
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

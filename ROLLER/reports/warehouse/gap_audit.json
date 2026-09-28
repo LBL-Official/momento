@@ -1,0 +1,1528 @@
+{
+  "statuses": [
+    "COMPLETE",
+    "PARTIAL",
+    "MISSING",
+    "SOURCE_UNAVAILABLE",
+    "NOT_APPLICABLE",
+    "INVALID",
+    "STALE"
+  ],
+  "sports": [
+    {
+      "sport": "NHL",
+      "status": "SOURCE_UNAVAILABLE",
+      "seasons": [],
+      "note": "No warehouse tree on disk. Not MISSING."
+    },
+    {
+      "sport": "NFL",
+      "status": "SOURCE_UNAVAILABLE",
+      "seasons": [],
+      "note": "No warehouse tree on disk. Not MISSING."
+    },
+    {
+      "sport": "NCAAF",
+      "status": "SOURCE_UNAVAILABLE",
+      "seasons": [],
+      "note": "No warehouse tree on disk. Not MISSING."
+    },
+    {
+      "sport": "NBA",
+      "league": "NBA",
+      "season": "2025-2026",
+      "root": "/Users/user/Desktop/Momento/ROLLER/data/nba/2025_2026",
+      "root_exists": true,
+      "status": "COMPLETE",
+      "datasets": {
+        "games": {
+          "status": "COMPLETE",
+          "kind": "file",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/nba/2025_2026/canonical/games.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 1362,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "STALE",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "pbp": {
+          "status": "PARTIAL",
+          "kind": "directory",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/nba/2025_2026/canonical/pbp",
+          "months": [
+            "2025-10",
+            "2025-11",
+            "2025-12",
+            "2026-01",
+            "2026-02",
+            "2026-03",
+            "2026-04",
+            "2026-05",
+            "2026-06"
+          ],
+          "parquet_months": [],
+          "rows": 780137,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "CURRENT",
+            "warehouse_latest_timestamp": "2026-06"
+          }
+        },
+        "kalshi_candles": {
+          "status": "PARTIAL",
+          "kind": "directory",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/nba/2025_2026/canonical/kalshi_candles",
+          "months": [
+            "2025-10",
+            "2025-11",
+            "2025-12",
+            "2026-01",
+            "2026-02",
+            "2026-03",
+            "2026-04",
+            "2026-05",
+            "2026-06"
+          ],
+          "parquet_months": [],
+          "rows": 6165183,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "CURRENT",
+            "warehouse_latest_timestamp": "2026-06"
+          }
+        },
+        "polymarket_candles": {
+          "status": "COMPLETE",
+          "kind": "directory",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/nba/2025_2026/canonical/polymarket_candles",
+          "months": [
+            "2025-10",
+            "2025-11",
+            "2025-12",
+            "2026-01",
+            "2026-02",
+            "2026-03",
+            "2026-04",
+            "2026-05",
+            "2026-06"
+          ],
+          "parquet_months": [],
+          "rows": 2539898,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": "2026-06"
+          }
+        },
+        "polymarket_markets": {
+          "status": "COMPLETE",
+          "kind": "file",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/nba/2025_2026/canonical/polymarket_markets.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 2514,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "kalshi_markets": {
+          "status": "MISSING",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/nba/2025_2026/canonical/kalshi_markets.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "STALE",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "kalshi_trades": {
+          "status": "NOT_APPLICABLE",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/nba/2025_2026/canonical/kalshi_trades",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "kalshi_orderbook_snapshots": {
+          "status": "NOT_APPLICABLE",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/nba/2025_2026/canonical/kalshi_orderbook_snapshots",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "LIVE_EXPECTED",
+            "status": "NOT_APPLICABLE",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "first80_triggers": {
+          "status": "MISSING",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/nba/2025_2026/derived/first80_triggers.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "team_features": {
+          "status": "COMPLETE",
+          "kind": "file",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/nba/2025_2026/derived/team_game_features.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 2724,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "d2d_daily": {
+          "status": "COMPLETE",
+          "kind": "file",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/nba/2025_2026/derived/d2d_daily.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 6665,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "game_state_features": {
+          "status": "COMPLETE",
+          "kind": "file",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/nba/2025_2026/derived/game_state_features.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 1362,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        }
+      },
+      "indexes": {
+        "tradable": {
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/nba/2025_2026/derived/research_query/indexes/rq_index_v1.0.0/NBA/tradable",
+          "tickers": 2704,
+          "games": 1352,
+          "bar_rows": 5777716,
+          "settlement_rows": 0,
+          "dataset_version": "18c80ca890fe4f17f37568c10de5be8f1bc86a273cbaa4991ce5b29ff9149e34"
+        },
+        "last_trade": null
+      }
+    },
+    {
+      "sport": "NBA",
+      "league": "NBA",
+      "season": "2026-2027",
+      "root": "/Users/user/Desktop/Momento/ROLLER/data/nba/2026_2027",
+      "root_exists": false,
+      "status": "NOT_APPLICABLE",
+      "datasets": {
+        "games": {
+          "status": "NOT_APPLICABLE",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/nba/2026_2027/canonical/games.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "STALE",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "pbp": {
+          "status": "NOT_APPLICABLE",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/nba/2026_2027/canonical/pbp",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "STALE",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "kalshi_candles": {
+          "status": "NOT_APPLICABLE",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/nba/2026_2027/canonical/kalshi_candles",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "STALE",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "kalshi_markets": {
+          "status": "NOT_APPLICABLE",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/nba/2026_2027/canonical/kalshi_markets.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "STALE",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "kalshi_trades": {
+          "status": "NOT_APPLICABLE",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/nba/2026_2027/canonical/kalshi_trades",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "kalshi_orderbook_snapshots": {
+          "status": "NOT_APPLICABLE",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/nba/2026_2027/canonical/kalshi_orderbook_snapshots",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "LIVE_EXPECTED",
+            "status": "NOT_APPLICABLE",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "first80_triggers": {
+          "status": "NOT_APPLICABLE",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/nba/2026_2027/derived/first80_triggers.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "team_features": {
+          "status": "NOT_APPLICABLE",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/nba/2026_2027/derived/team_game_features.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "d2d_daily": {
+          "status": "NOT_APPLICABLE",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/nba/2026_2027/derived/d2d_daily.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        }
+      },
+      "indexes": {
+        "tradable": null,
+        "last_trade": null
+      }
+    },
+    {
+      "sport": "WNBA",
+      "league": "WNBA",
+      "season": "2025",
+      "root": "/Users/user/Desktop/Momento/ROLLER/data/wnba/2025",
+      "root_exists": true,
+      "status": "COMPLETE",
+      "datasets": {
+        "games": {
+          "status": "COMPLETE",
+          "kind": "file",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/wnba/2025/canonical/games.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 303,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "STALE",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "pbp": {
+          "status": "PARTIAL",
+          "kind": "directory",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/wnba/2025/canonical/pbp",
+          "months": [
+            "2025-05",
+            "2025-06",
+            "2025-07",
+            "2025-08",
+            "2025-09",
+            "2025-10",
+            "2026-04"
+          ],
+          "parquet_months": [],
+          "rows": 120618,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "CURRENT",
+            "warehouse_latest_timestamp": "2026-04"
+          }
+        },
+        "kalshi_candles": {
+          "status": "PARTIAL",
+          "kind": "directory",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/wnba/2025/canonical/kalshi_candles",
+          "months": [
+            "2025-05",
+            "2025-06",
+            "2025-07",
+            "2025-08",
+            "2025-09",
+            "2025-10",
+            "2026-04",
+            "2026-05"
+          ],
+          "parquet_months": [],
+          "rows": 501214,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "CURRENT",
+            "warehouse_latest_timestamp": "2026-05"
+          }
+        },
+        "polymarket_candles": {
+          "status": "COMPLETE",
+          "kind": "directory",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/wnba/2025/canonical/polymarket_candles",
+          "months": [
+            "2025-05",
+            "2025-06",
+            "2025-07",
+            "2025-08",
+            "2025-09",
+            "2026-04",
+            "2026-05"
+          ],
+          "parquet_months": [],
+          "rows": 180284,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": "2026-05"
+          }
+        },
+        "polymarket_markets": {
+          "status": "COMPLETE",
+          "kind": "file",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/wnba/2025/canonical/polymarket_markets.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 182,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "kalshi_markets": {
+          "status": "MISSING",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/wnba/2025/canonical/kalshi_markets.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "STALE",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "kalshi_trades": {
+          "status": "NOT_APPLICABLE",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/wnba/2025/canonical/kalshi_trades",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "kalshi_orderbook_snapshots": {
+          "status": "NOT_APPLICABLE",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/wnba/2025/canonical/kalshi_orderbook_snapshots",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "LIVE_EXPECTED",
+            "status": "NOT_APPLICABLE",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "first80_triggers": {
+          "status": "MISSING",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/wnba/2025/derived/first80_triggers.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "team_features": {
+          "status": "COMPLETE",
+          "kind": "file",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/wnba/2025/derived/team_game_features.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 606,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "d2d_daily": {
+          "status": "COMPLETE",
+          "kind": "file",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/wnba/2025/derived/d2d_daily.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 2034,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        }
+      },
+      "indexes": {
+        "tradable": {
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/wnba/2025/derived/research_query/indexes/rq_index_v1.0.0/WNBA/tradable",
+          "tickers": 604,
+          "games": 302,
+          "bar_rows": 455168,
+          "settlement_rows": 0,
+          "dataset_version": "188f6f985c8ae823741a37ba5aac4119424d8a1dc62585306fdb430486280258"
+        },
+        "last_trade": null
+      }
+    },
+    {
+      "sport": "WNBA",
+      "league": "WNBA",
+      "season": "2026",
+      "root": "/Users/user/Desktop/Momento/ROLLER/data/wnba/2026",
+      "root_exists": true,
+      "status": "COMPLETE",
+      "datasets": {
+        "games": {
+          "status": "COMPLETE",
+          "kind": "file",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/wnba/2026/canonical/games.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 309,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "STALE",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "pbp": {
+          "status": "PARTIAL",
+          "kind": "directory",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/wnba/2026/canonical/pbp",
+          "months": [
+            "2026-05",
+            "2026-06",
+            "2026-07",
+            "2026-08"
+          ],
+          "parquet_months": [],
+          "rows": 132002,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "CURRENT",
+            "warehouse_latest_timestamp": "2026-08"
+          }
+        },
+        "kalshi_candles": {
+          "status": "PARTIAL",
+          "kind": "directory",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/wnba/2026/canonical/kalshi_candles",
+          "months": [
+            "2026-05",
+            "2026-06",
+            "2026-07",
+            "2026-08"
+          ],
+          "parquet_months": [],
+          "rows": 940373,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "CURRENT",
+            "warehouse_latest_timestamp": "2026-08"
+          }
+        },
+        "polymarket_candles": {
+          "status": "COMPLETE",
+          "kind": "directory",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/wnba/2026/canonical/polymarket_candles",
+          "months": [
+            "2026-05",
+            "2026-06",
+            "2026-07",
+            "2026-08"
+          ],
+          "parquet_months": [],
+          "rows": 306528,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": "2026-08"
+          }
+        },
+        "polymarket_markets": {
+          "status": "COMPLETE",
+          "kind": "file",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/wnba/2026/canonical/polymarket_markets.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 340,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "kalshi_markets": {
+          "status": "MISSING",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/wnba/2026/canonical/kalshi_markets.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "STALE",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "kalshi_trades": {
+          "status": "NOT_APPLICABLE",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/wnba/2026/canonical/kalshi_trades",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "kalshi_orderbook_snapshots": {
+          "status": "NOT_APPLICABLE",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/wnba/2026/canonical/kalshi_orderbook_snapshots",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "LIVE_EXPECTED",
+            "status": "NOT_APPLICABLE",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "first80_triggers": {
+          "status": "MISSING",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/wnba/2026/derived/first80_triggers.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "team_features": {
+          "status": "COMPLETE",
+          "kind": "file",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/wnba/2026/derived/team_game_features.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 618,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "d2d_daily": {
+          "status": "COMPLETE",
+          "kind": "file",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/wnba/2026/derived/d2d_daily.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 1944,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        }
+      },
+      "indexes": {
+        "tradable": {
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/wnba/2026/derived/research_query/indexes/rq_index_v1.0.0/WNBA/tradable",
+          "tickers": 616,
+          "games": 308,
+          "bar_rows": 880738,
+          "settlement_rows": 0,
+          "dataset_version": "8e4bc3c67afc2c7761a492b0edbaac94208e4e724c1a27113b195a637d60869a"
+        },
+        "last_trade": null
+      }
+    },
+    {
+      "sport": "MLB",
+      "league": "MLB",
+      "season": "2025-2026",
+      "root": "/Users/user/Desktop/Momento/ROLLER/data/mlb/2025_2026",
+      "root_exists": true,
+      "status": "COMPLETE",
+      "datasets": {
+        "games": {
+          "status": "COMPLETE",
+          "kind": "file",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/mlb/2025_2026/canonical/games.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 5178,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "STALE",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "pbp": {
+          "status": "PARTIAL",
+          "kind": "directory",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/mlb/2025_2026/canonical/pbp",
+          "months": [
+            "2025-03",
+            "2025-04",
+            "2025-05",
+            "2025-06",
+            "2025-07",
+            "2025-08",
+            "2025-09",
+            "2025-10",
+            "2025-11",
+            "2026-02",
+            "2026-03",
+            "2026-04",
+            "2026-05",
+            "2026-06",
+            "2026-07",
+            "2026-08",
+            "2026-09"
+          ],
+          "parquet_months": [],
+          "rows": 1757845,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "CURRENT",
+            "warehouse_latest_timestamp": "2026-09"
+          }
+        },
+        "kalshi_markets": {
+          "status": "COMPLETE",
+          "kind": "file",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/mlb/2025_2026/canonical/kalshi_markets.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 344,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "STALE",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "kalshi_last_trade": {
+          "status": "PARTIAL",
+          "kind": "directory",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/mlb/2025_2026/canonical/kalshi_last_trade",
+          "months": [
+            "2025-04",
+            "2025-05",
+            "2025-06",
+            "2025-07",
+            "2025-08",
+            "2025-09",
+            "2025-10",
+            "2025-11",
+            "2026-03",
+            "2026-04",
+            "2026-05",
+            "2026-06",
+            "2026-07"
+          ],
+          "parquet_months": [],
+          "rows": 2511237,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "CURRENT",
+            "warehouse_latest_timestamp": "2026-07"
+          }
+        },
+        "kalshi_candles": {
+          "status": "PARTIAL",
+          "kind": "directory",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/mlb/2025_2026/canonical/kalshi_candles",
+          "months": [
+            "2025-04",
+            "2025-10",
+            "2025-11",
+            "2025-12",
+            "2026-01",
+            "2026-02",
+            "2026-03",
+            "2026-06",
+            "2026-07"
+          ],
+          "parquet_months": [],
+          "rows": 329844,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "CURRENT",
+            "warehouse_latest_timestamp": "2026-07"
+          }
+        },
+        "kalshi_trades": {
+          "status": "MISSING",
+          "kind": "directory",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/mlb/2025_2026/canonical/kalshi_trades",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        }
+      },
+      "indexes": {
+        "tradable": {
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/mlb/2025_2026/derived/research_query/indexes/rq_index_v1.0.0/MLB/tradable",
+          "tickers": 399,
+          "games": 26,
+          "bar_rows": 7408,
+          "settlement_rows": 344,
+          "dataset_version": "14d8aa56f5294ad3f02f95304c2b920993077aae5eba13ad97e755cf0da2517f"
+        },
+        "last_trade": {
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/mlb/2025_2026/derived/research_query/indexes/rq_index_v1.0.0/MLB/last_trade",
+          "tickers": 6862,
+          "games": 3431,
+          "bar_rows": 2511237,
+          "settlement_rows": 344,
+          "dataset_version": "14d8aa56f5294ad3f02f95304c2b920993077aae5eba13ad97e755cf0da2517f"
+        }
+      }
+    },
+    {
+      "sport": "ATP",
+      "league": "ATP",
+      "season": "2025-2026",
+      "root": "/Users/user/Desktop/Momento/ROLLER/data/tennis/2025_2026",
+      "root_exists": true,
+      "status": "COMPLETE",
+      "datasets": {
+        "games": {
+          "status": "COMPLETE",
+          "kind": "file",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/tennis/2025_2026/canonical/games.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 9097,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "STALE",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "pbp": {
+          "status": "PARTIAL",
+          "kind": "directory",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/tennis/2025_2026/canonical/pbp",
+          "months": [
+            "2025-06",
+            "2025-07",
+            "2025-08",
+            "2025-09",
+            "2025-10",
+            "2025-11",
+            "2025-12",
+            "2026-01",
+            "2026-02",
+            "2026-03",
+            "2026-04",
+            "2026-05"
+          ],
+          "parquet_months": [],
+          "rows": 123804,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "CURRENT",
+            "warehouse_latest_timestamp": "2026-05"
+          }
+        },
+        "kalshi_markets": {
+          "status": "COMPLETE",
+          "kind": "file",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/tennis/2025_2026/canonical/kalshi_markets.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 18194,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "STALE",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "kalshi_trade_ticks": {
+          "status": "MISSING",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/tennis/2025_2026/canonical/kalshi_trade_ticks",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "kalshi_trades": {
+          "status": "MISSING",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/tennis/2025_2026/canonical/kalshi_trade_ticks",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "kalshi_candles": {
+          "status": "PARTIAL",
+          "kind": "directory",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/tennis/2025_2026/canonical/kalshi_candles",
+          "months": [
+            "2025-06",
+            "2025-07",
+            "2025-09",
+            "2025-10",
+            "2025-11",
+            "2025-12",
+            "2026-01",
+            "2026-03",
+            "2026-04",
+            "2026-06",
+            "2026-07",
+            "2026-08",
+            "2026-09"
+          ],
+          "parquet_months": [],
+          "rows": 4996284,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "CURRENT",
+            "warehouse_latest_timestamp": "2026-09"
+          }
+        },
+        "kalshi_last_trade": {
+          "status": "PARTIAL",
+          "kind": "directory",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/tennis/2025_2026/canonical/kalshi_last_trade",
+          "months": [
+            "2025-06",
+            "2025-07",
+            "2025-09",
+            "2025-10",
+            "2025-11",
+            "2025-12",
+            "2026-01",
+            "2026-03",
+            "2026-04",
+            "2026-06",
+            "2026-07",
+            "2026-08",
+            "2026-09"
+          ],
+          "parquet_months": [],
+          "rows": 1456465,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "CURRENT",
+            "warehouse_latest_timestamp": "2026-09"
+          }
+        }
+      },
+      "indexes": {
+        "tradable": {
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/tennis/2025_2026/derived/research_query/indexes/rq_index_v1.0.0/ATP/tradable",
+          "tickers": 3171,
+          "games": 1530,
+          "bar_rows": 2144834,
+          "settlement_rows": 3074,
+          "dataset_version": "a25a2dabb5daa6dbc507f2791964f7b637f7b65217599047c9131b8bd69983b2"
+        },
+        "last_trade": {
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/tennis/2025_2026/derived/research_query/indexes/rq_index_v1.0.0/ATP/last_trade",
+          "tickers": 3297,
+          "games": 1651,
+          "bar_rows": 766489,
+          "settlement_rows": 3208,
+          "dataset_version": "a25a2dabb5daa6dbc507f2791964f7b637f7b65217599047c9131b8bd69983b2"
+        }
+      }
+    },
+    {
+      "sport": "WTA",
+      "league": "WTA",
+      "season": "2025-2026",
+      "root": "/Users/user/Desktop/Momento/ROLLER/data/tennis/2025_2026",
+      "root_exists": true,
+      "status": "COMPLETE",
+      "datasets": {
+        "games": {
+          "status": "COMPLETE",
+          "kind": "file",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/tennis/2025_2026/canonical/games.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 9097,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "STALE",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "pbp": {
+          "status": "PARTIAL",
+          "kind": "directory",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/tennis/2025_2026/canonical/pbp",
+          "months": [
+            "2025-06",
+            "2025-07",
+            "2025-08",
+            "2025-09",
+            "2025-10",
+            "2025-11",
+            "2025-12",
+            "2026-01",
+            "2026-02",
+            "2026-03",
+            "2026-04",
+            "2026-05"
+          ],
+          "parquet_months": [],
+          "rows": 123804,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "CURRENT",
+            "warehouse_latest_timestamp": "2026-05"
+          }
+        },
+        "kalshi_markets": {
+          "status": "COMPLETE",
+          "kind": "file",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/tennis/2025_2026/canonical/kalshi_markets.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 18194,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "STALE",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "kalshi_trade_ticks": {
+          "status": "MISSING",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/tennis/2025_2026/canonical/kalshi_trade_ticks",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "kalshi_trades": {
+          "status": "MISSING",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/tennis/2025_2026/canonical/kalshi_trade_ticks",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "kalshi_candles": {
+          "status": "PARTIAL",
+          "kind": "directory",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/tennis/2025_2026/canonical/kalshi_candles",
+          "months": [
+            "2025-06",
+            "2025-07",
+            "2025-09",
+            "2025-10",
+            "2025-11",
+            "2025-12",
+            "2026-01",
+            "2026-03",
+            "2026-04",
+            "2026-06",
+            "2026-07",
+            "2026-08",
+            "2026-09"
+          ],
+          "parquet_months": [],
+          "rows": 4996284,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "CURRENT",
+            "warehouse_latest_timestamp": "2026-09"
+          }
+        },
+        "kalshi_last_trade": {
+          "status": "PARTIAL",
+          "kind": "directory",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/tennis/2025_2026/canonical/kalshi_last_trade",
+          "months": [
+            "2025-06",
+            "2025-07",
+            "2025-09",
+            "2025-10",
+            "2025-11",
+            "2025-12",
+            "2026-01",
+            "2026-03",
+            "2026-04",
+            "2026-06",
+            "2026-07",
+            "2026-08",
+            "2026-09"
+          ],
+          "parquet_months": [],
+          "rows": 1456465,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "CURRENT",
+            "warehouse_latest_timestamp": "2026-09"
+          }
+        }
+      },
+      "indexes": {
+        "tradable": {
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/tennis/2025_2026/derived/research_query/indexes/rq_index_v1.0.0/WTA/tradable",
+          "tickers": 3697,
+          "games": 1753,
+          "bar_rows": 1948434,
+          "settlement_rows": 3596,
+          "dataset_version": "854a039c0d7ec9c9c584196742604c2248508e7b3e47d9fbc123d90566a4e4a0"
+        },
+        "last_trade": {
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/tennis/2025_2026/derived/research_query/indexes/rq_index_v1.0.0/WTA/last_trade",
+          "tickers": 3845,
+          "games": 1926,
+          "bar_rows": 689976,
+          "settlement_rows": 3746,
+          "dataset_version": "854a039c0d7ec9c9c584196742604c2248508e7b3e47d9fbc123d90566a4e4a0"
+        }
+      }
+    },
+    {
+      "sport": "NCAAB",
+      "league": "NCAAB",
+      "season": "2025-2026",
+      "root": "/Users/user/Desktop/Momento/ROLLER/data/ncaab/2025_2026",
+      "root_exists": true,
+      "status": "COMPLETE",
+      "datasets": {
+        "games": {
+          "status": "COMPLETE",
+          "kind": "file",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/ncaab/2025_2026/canonical/games.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 5280,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "STALE",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "pbp": {
+          "status": "PARTIAL",
+          "kind": "directory",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/ncaab/2025_2026/canonical/pbp",
+          "months": [
+            "2025-11",
+            "2025-12",
+            "2026-01",
+            "2026-02",
+            "2026-03",
+            "2026-04"
+          ],
+          "parquet_months": [],
+          "rows": 398585,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "CURRENT",
+            "warehouse_latest_timestamp": "2026-04"
+          }
+        },
+        "kalshi_candles": {
+          "status": "PARTIAL",
+          "kind": "directory",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/ncaab/2025_2026/canonical/kalshi_candles",
+          "months": [
+            "2025-10",
+            "2025-11",
+            "2025-12",
+            "2026-01",
+            "2026-02",
+            "2026-03",
+            "2026-04"
+          ],
+          "parquet_months": [],
+          "rows": 2674280,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "CURRENT",
+            "warehouse_latest_timestamp": "2026-04"
+          }
+        },
+        "polymarket_candles": {
+          "status": "COMPLETE",
+          "kind": "directory",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/ncaab/2025_2026/canonical/polymarket_candles",
+          "months": [
+            "2025-11",
+            "2025-12",
+            "2026-01",
+            "2026-02",
+            "2026-03"
+          ],
+          "parquet_months": [],
+          "rows": 367304,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": "2026-03"
+          }
+        },
+        "polymarket_markets": {
+          "status": "COMPLETE",
+          "kind": "file",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/ncaab/2025_2026/canonical/polymarket_markets.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 370,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "kalshi_markets": {
+          "status": "MISSING",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/ncaab/2025_2026/canonical/kalshi_markets.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "STALE",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "kalshi_trades": {
+          "status": "NOT_APPLICABLE",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/ncaab/2025_2026/canonical/kalshi_trades",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "kalshi_orderbook_snapshots": {
+          "status": "NOT_APPLICABLE",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/ncaab/2025_2026/canonical/kalshi_orderbook_snapshots",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "LIVE_EXPECTED",
+            "status": "NOT_APPLICABLE",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "first80_triggers": {
+          "status": "MISSING",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/ncaab/2025_2026/derived/first80_triggers.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "team_features": {
+          "status": "COMPLETE",
+          "kind": "file",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/ncaab/2025_2026/derived/team_game_features.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 1698,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "d2d_daily": {
+          "status": "COMPLETE",
+          "kind": "file",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/ncaab/2025_2026/derived/d2d_daily.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 8260,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        }
+      },
+      "indexes": {
+        "tradable": {
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/ncaab/2025_2026/derived/research_query/indexes/rq_index_v1.0.0/NCAAB/tradable",
+          "tickers": 1698,
+          "games": 849,
+          "bar_rows": 2252832,
+          "settlement_rows": 0,
+          "dataset_version": "840979063e28a44f8eb470feb403e178063910b675fd5a0253828c08a21a5b7a"
+        },
+        "last_trade": null
+      }
+    },
+    {
+      "sport": "NCAAB",
+      "league": "NCAAB",
+      "season": "2026-2027",
+      "root": "/Users/user/Desktop/Momento/ROLLER/data/ncaab/2026_2027",
+      "root_exists": false,
+      "status": "NOT_APPLICABLE",
+      "datasets": {
+        "games": {
+          "status": "NOT_APPLICABLE",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/ncaab/2026_2027/canonical/games.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "STALE",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "pbp": {
+          "status": "NOT_APPLICABLE",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/ncaab/2026_2027/canonical/pbp",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "STALE",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "kalshi_candles": {
+          "status": "NOT_APPLICABLE",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/ncaab/2026_2027/canonical/kalshi_candles",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "STALE",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "kalshi_markets": {
+          "status": "NOT_APPLICABLE",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/ncaab/2026_2027/canonical/kalshi_markets.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "DAILY_EXPECTED",
+            "status": "STALE",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "kalshi_trades": {
+          "status": "NOT_APPLICABLE",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/ncaab/2026_2027/canonical/kalshi_trades",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "kalshi_orderbook_snapshots": {
+          "status": "NOT_APPLICABLE",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/ncaab/2026_2027/canonical/kalshi_orderbook_snapshots",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "LIVE_EXPECTED",
+            "status": "NOT_APPLICABLE",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "first80_triggers": {
+          "status": "NOT_APPLICABLE",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/ncaab/2026_2027/derived/first80_triggers.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "team_features": {
+          "status": "NOT_APPLICABLE",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/ncaab/2026_2027/derived/team_game_features.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        },
+        "d2d_daily": {
+          "status": "NOT_APPLICABLE",
+          "kind": "missing",
+          "path": "/Users/user/Desktop/Momento/ROLLER/data/ncaab/2026_2027/derived/d2d_daily.csv",
+          "months": [],
+          "parquet_months": [],
+          "rows": 0,
+          "freshness": {
+            "classification": "HISTORICAL_ONLY",
+            "status": "HISTORICAL_ONLY",
+            "warehouse_latest_timestamp": null
+          }
+        }
+      },
+      "indexes": {
+        "tradable": null,
+        "last_trade": null
+      }
+    }
+  ],
+  "invariants": [
+    "LAST_TRADE_PRINT != TRADABLE_YES_BID",
+    "CANDLE_PATH != FILL",
+    "MISSING != ZERO",
+    "UNAVAILABLE != MISSING",
+    "NO_SETTLEMENT != NO"
+  ]
+}

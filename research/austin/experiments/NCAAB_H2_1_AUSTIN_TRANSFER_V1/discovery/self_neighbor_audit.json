@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "n_ncaab_trades": 69,
+  "n_training_trade_ids": 604,
+  "overlap": [],
+  "note": "NCAAB trade_ids must sit outside the 604 snapshot matrix"
+}

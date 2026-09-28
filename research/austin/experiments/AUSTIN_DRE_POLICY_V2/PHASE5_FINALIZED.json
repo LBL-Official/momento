@@ -1,0 +1,19 @@
+{
+  "phase": "PHASE_5",
+  "status": "FINALIZED",
+  "phase5a_status": "COMPLETE",
+  "phase5b_status": "COMPLETE",
+  "proposed_policy": "NONE",
+  "human_selected_policy": "NONE",
+  "human_freeze_justified": "NOT_SUPPORTED",
+  "policy_frozen": false,
+  "confirmation_spend_authorized": false,
+  "next_waterfall_stage": "PHASE_6_CONFIRMATION_GATE",
+  "confirmation_expected_action": "PRESERVE_UNTOUCHED",
+  "candidate_registry_hash": "e9816a29be6b24550e2712e7b81d9003be3ff518f60e237ad422ecfd9903f276",
+  "policy_freeze_created": false,
+  "confirmation_accessed": false,
+  "execution_enabled": false,
+  "submits": false,
+  "phase5_finalization_hash": "067eccc691d02a675e2e87fd5a33f3f831a404b7b850ee19c2bc681bda7d8d44"
+}

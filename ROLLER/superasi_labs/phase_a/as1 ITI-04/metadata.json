@@ -1,0 +1,30 @@
+{
+  "BASE_GRADE": "A-",
+  "abase_filename": "SuperasiABase[as1 ITI-04].csv",
+  "abase_payload_sha256": "750ce35cecdbecabf6908328870a206c9f1c7c9e77ee92730b0020b9ce6402d6",
+  "abase_sha256": "8c70ee28f900b258d62692b1728bcabf09368041909d623ab76e9e2ac1aed169",
+  "allocation_bps": 500,
+  "artifact": "superasi_abase",
+  "bankroll_cents": 2000000,
+  "borderline": true,
+  "components": {
+    "coverage": "A+",
+    "research_evidence": "A+",
+    "robustness": "A-",
+    "theoretical_alignment": "A+",
+    "validation": "A+"
+  },
+  "created_at": "2026-09-16T23:50:53Z",
+  "desk_settings_source": "disk",
+  "floor_cents": 1500000,
+  "folder": "as1 ITI-04",
+  "grade_config_version": "grade_config_v1",
+  "phase": "A",
+  "result_id": "as1 ITI-04",
+  "roller_filename": "Roller[as1 ITI-04].csv",
+  "source_csv_sha256": "ad44dcdd0152da591e8a6e70ebb716c5cc865cbfb6aa491419bae7be31914893",
+  "source_lab_id": "eb9bbd97e3954d0a9714b5eb9a28536a",
+  "strategy_name": "as1 ITI-04",
+  "superasi_version": "superasi_abase_v1.0.0",
+  "target_cents": 3000000
+}

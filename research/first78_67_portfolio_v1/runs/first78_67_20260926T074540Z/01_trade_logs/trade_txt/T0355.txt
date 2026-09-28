@@ -1,0 +1,10 @@
+trade T0355  NCAAB  Baylor at West Virginia
+contract KXNCAAMBGAME-26JAN31BAYWVU-BAY  slice H2_1
+signal 2026-01-31T14:17:00-08:00 PST  exit 2026-01-31T14:30:00-08:00 PST
+assumed entry 78c  observed close 81c  overshoot 3c
+contracts 6195  principal_cents 483210
+entry_fee_cents 1861  exit_fee_cents 2398
+exit STOP at 67c  terminal yes
+gross_cents -68145  net_cents -72404
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

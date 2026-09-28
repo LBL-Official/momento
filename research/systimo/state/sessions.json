@@ -1,0 +1,106 @@
+[
+  {
+    "session_id": "50d9cc8b95d0470d5d669911e9c5ee2e",
+    "scope_level": "global",
+    "quadrant_id": "global",
+    "sport": "GLOBAL",
+    "source_node_id": "node:global:system_maintenance",
+    "created_at": "2026-09-22T09:05:32.043097+00:00"
+  },
+  {
+    "session_id": "331786eacfe16d4f442cb2d6b752ff44",
+    "scope_level": "quadrant",
+    "quadrant_id": "quad-1",
+    "sport": "NBA",
+    "source_node_id": "node:quad-1:system_maintenance",
+    "created_at": "2026-09-22T09:05:59.813549+00:00"
+  },
+  {
+    "session_id": "a5c373c265f40afdbd41bdc4b50a1a90",
+    "scope_level": "quadrant",
+    "quadrant_id": "quad-1",
+    "sport": "NBA",
+    "source_node_id": "node:quad-1:system_maintenance",
+    "created_at": "2026-09-22T09:06:16.122570+00:00"
+  },
+  {
+    "session_id": "4c079aceb9eeec1f3ba80f77031a4378",
+    "scope_level": "global",
+    "quadrant_id": "global",
+    "sport": "GLOBAL",
+    "source_node_id": "node:global:system_maintenance",
+    "created_at": "2026-09-22T10:01:01.506287+00:00"
+  },
+  {
+    "session_id": "7c616b132e5056366b306c2ec600443a",
+    "scope_level": "quadrant",
+    "quadrant_id": "quad-1",
+    "sport": "NBA",
+    "source_node_id": "node:quad-1:algorithmic_execution",
+    "created_at": "2026-09-22T13:58:08.786194+00:00"
+  },
+  {
+    "session_id": "c267e8763bd3432d598efddafb051a7f",
+    "scope_level": "quadrant",
+    "quadrant_id": "quad-1",
+    "sport": "NBA",
+    "source_node_id": "node:quad-1:algorithmic_execution",
+    "created_at": "2026-09-22T14:21:22.328508+00:00"
+  },
+  {
+    "session_id": "42eb97ae1deda0e699d0052ec11a3d86",
+    "scope_level": "quadrant",
+    "quadrant_id": "quad-1",
+    "sport": "NBA",
+    "source_node_id": "node:quad-1:algorithmic_execution",
+    "created_at": "2026-09-22T14:21:30.244980+00:00"
+  },
+  {
+    "session_id": "bdb3b5a1722daec4ba0af5a308c58197",
+    "scope_level": "quadrant",
+    "quadrant_id": "quad-1",
+    "sport": "NBA",
+    "source_node_id": "node:quad-1:algorithmic_execution",
+    "created_at": "2026-09-22T14:21:30.245257+00:00"
+  },
+  {
+    "session_id": "9f9e6619f7d50cacc71517650eeefddb",
+    "scope_level": "quadrant",
+    "quadrant_id": "quad-1",
+    "sport": "NBA",
+    "source_node_id": "node:quad-1:algorithmic_execution",
+    "created_at": "2026-09-27T04:31:03.412452+00:00"
+  },
+  {
+    "session_id": "02df22f7ad0396ccd1797dc9fe59fa5b",
+    "scope_level": "quadrant",
+    "quadrant_id": "quad-1",
+    "sport": "NBA",
+    "source_node_id": "node:quad-1:algorithmic_execution",
+    "created_at": "2026-09-27T04:32:13.568498+00:00"
+  },
+  {
+    "session_id": "f4eed2d9b0efa19e16df6d9320aa39b2",
+    "scope_level": "quadrant",
+    "quadrant_id": "quad-1",
+    "sport": "NBA",
+    "source_node_id": "node:quad-1:algorithmic_execution",
+    "created_at": "2026-09-27T04:32:28.937260+00:00"
+  },
+  {
+    "session_id": "419391dd58a137cf439479f0a22819ba",
+    "scope_level": "quadrant",
+    "quadrant_id": "quad-1",
+    "sport": "NBA",
+    "source_node_id": "node:quad-1:algorithmic_execution",
+    "created_at": "2026-09-27T11:55:04.459223+00:00"
+  },
+  {
+    "session_id": "57d1812b39236c15cf1db80b9515a5c5",
+    "scope_level": "quadrant",
+    "quadrant_id": "quad-1",
+    "sport": "NBA",
+    "source_node_id": "node:quad-1:algorithmic_execution",
+    "created_at": "2026-09-27T11:55:04.463869+00:00"
+  }
+]

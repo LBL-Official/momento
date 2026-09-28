@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "n_checked": 80,
+  "n_failed": 0,
+  "n_leaked_outcome_keys": 0,
+  "n_warehouse_checked": 80,
+  "n_warehouse_failed": 0,
+  "n_errors": 0,
+  "note": "Mutating later PRIMARY EV/outcome/T40/MAE/MFE and post-t bars/PBP must leave derive_downfall_state(history_up_to_t) unchanged."
+}

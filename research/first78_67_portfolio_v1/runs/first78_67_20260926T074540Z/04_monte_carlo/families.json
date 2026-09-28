@@ -1,0 +1,9 @@
+{
+  "A": "family_A_permutation.json",
+  "B": "family_B_iid_bootstrap.json",
+  "C": "primary_summary.json and family_C_primary_quantiles.json; block_1 and block_3 are sensitivities",
+  "D": "../06_markov_chains/entry_regime_transitions.json",
+  "E": "family_E_parametric_stress.json",
+  "timing_null": "../03_statistical_validation/timing_null.json",
+  "nested_outer_refits": "NOT_RUN"
+}

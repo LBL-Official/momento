@@ -1,0 +1,20 @@
+{
+  "confirmation_accessed": false,
+  "confirmation_result_files_present": [],
+  "confirmation_result_files_absent": [
+    "/Users/user/Desktop/Momento/research/austin/experiments/NCAAB_H1_2_AUSTIN_TRANSFER_V1/confirmation/state_queries.csv",
+    "/Users/user/Desktop/Momento/research/austin/experiments/NCAAB_H1_2_AUSTIN_TRANSFER_V1/confirmation/statistics.json",
+    "/Users/user/Desktop/Momento/research/austin/experiments/NCAAB_H1_2_AUSTIN_TRANSFER_V1/confirmation/policy_ledger.csv",
+    "/Users/user/Desktop/Momento/research/austin/experiments/NCAAB_H1_2_AUSTIN_TRANSFER_V1/confirmation_state_queries.csv",
+    "/Users/user/Desktop/Momento/research/austin/experiments/NCAAB_H1_2_AUSTIN_TRANSFER_V1/confirmation_statistics.json",
+    "/Users/user/Desktop/Momento/research/austin/experiments/NCAAB_H2_1_AUSTIN_TRANSFER_V1/confirmation/state_queries.csv",
+    "/Users/user/Desktop/Momento/research/austin/experiments/NCAAB_H2_1_AUSTIN_TRANSFER_V1/confirmation/statistics.json",
+    "/Users/user/Desktop/Momento/research/austin/experiments/NCAAB_H2_1_AUSTIN_TRANSFER_V1/confirmation/policy_ledger.csv",
+    "/Users/user/Desktop/Momento/research/austin/experiments/NCAAB_H2_1_AUSTIN_TRANSFER_V1/confirmation_state_queries.csv",
+    "/Users/user/Desktop/Momento/research/austin/experiments/NCAAB_H2_1_AUSTIN_TRANSFER_V1/confirmation_statistics.json"
+  ],
+  "status": "PASS",
+  "policy_status": "UNFROZEN",
+  "policy_selected": "NONE",
+  "note": "confirmation_cohort.json identity/hash only; no confirmation queries or outcomes"
+}

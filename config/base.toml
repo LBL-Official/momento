@@ -1,0 +1,10 @@
+# Shared non-secret configuration. Values here are not trading authority.
+timezone = "America/Los_Angeles"
+allocation_bps = 1250
+max_entry_price_cents = 83
+preferred_entry_price_cents = 80
+min_entry_price_cents = 80
+
+# Initial experimental bankroll used only to construct the first snapshot in tests/dev.
+# Live account balance must be sampled, never hard-coded into strategy logic.
+initial_bankroll_cents = 5000

@@ -1,0 +1,10 @@
+trade T0489  NBA  Sacramento at Dallas
+contract KXNBAGAME-26FEB26SACDAL-SAC  slice Q3
+signal 2026-02-26T19:01:00-08:00 PST  exit 2026-02-26T19:11:00-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 8894  principal_cents 693732
+entry_fee_cents 2671  exit_fee_cents 3442
+exit STOP at 67c  terminal yes
+gross_cents -97834  net_cents -103947
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

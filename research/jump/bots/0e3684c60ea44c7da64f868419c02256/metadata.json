@@ -1,0 +1,285 @@
+{
+  "activation": "RUNNING_DEMO",
+  "attach": {
+    "attempted_at": "2026-09-17T06:47:03Z",
+    "autonomous": true,
+    "aws": {
+      "account": "895492487332",
+      "demo_secret": "CONFIRMED",
+      "demo_secret_name": "momento/kalshi/demo",
+      "detail": null,
+      "factory_toml_refused": true,
+      "http_200_not_running": true,
+      "instance_id": "i-0f0849d5829476c31",
+      "momento_live_untouched": true,
+      "read_only": true,
+      "region": "us-east-1",
+      "session": "CONFIRMED",
+      "status": "CONFIRMED",
+      "unit": null,
+      "unit_started": false
+    },
+    "environment": "DEMO",
+    "factory_path_used": false,
+    "http_200_not_running": true,
+    "kalshi_demo": {
+      "balance_cents": 2000,
+      "detail": null,
+      "environment": "DEMO",
+      "fill_n": 0,
+      "http_200_not_running": true,
+      "observed_at": "2026-09-17T06:47:03Z",
+      "ok": true,
+      "position_n": 0,
+      "read_only": true,
+      "status": "CONFIRMED",
+      "submits": false
+    },
+    "not_80_81": true,
+    "not_mlb_factory": true,
+    "submit": false,
+    "unit": {
+      "active": true,
+      "attempted": true,
+      "aws_runtime_id": "momento-demo@mlb-005.service",
+      "factory_path_used": false,
+      "ok": true,
+      "reason": null,
+      "secret_missing": false,
+      "state_dir": "/var/lib/momento/demo/mlb-005/state",
+      "unit": "momento-demo@mlb-005.service",
+      "unit_started": true
+    },
+    "unit_started": true,
+    "worker": "momento-demo@mlb-005.service"
+  },
+  "aws_runtime_id": "momento-demo@mlb-005.service",
+  "bot_id": "0e3684c60ea44c7da64f868419c02256",
+  "bots_version": "jump_b_bots_v1.0.0",
+  "created_at": "2026-09-15T18:53:20Z",
+  "deploy": {
+    "activation": "RUNNING_DEMO",
+    "environment": "DEMO",
+    "factory_toml_refused": true,
+    "kalshi_env": "demo",
+    "live_enabled": false,
+    "message": null,
+    "state_dir": "/var/lib/momento/demo/mlb-005/state",
+    "status": "RUNNING_DEMO",
+    "unit": "momento-demo@mlb-005.service",
+    "unit_started": true
+  },
+  "desired_environment": "DEMO",
+  "engine": {
+    "engine_fingerprint": "a242640bb1de027351ff4007be4a4ed30adda089689efbc412aac97fe4570e24",
+    "engine_pointer": "research_iti",
+    "honesty": {
+      "browser_is_not_engine": true,
+      "candle_path_not_fill": true,
+      "iti_is_not_live_signal": true,
+      "live_execution": false
+    },
+    "implementation": {
+      "not_80_81": true,
+      "not_mlb_factory": true,
+      "signal": "research_iti_candle_path",
+      "spec": "IMPLEMENTED",
+      "submit": false,
+      "worker": "OPERATION_REQUIRED"
+    },
+    "iti": {
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "folder": "MLB CROSS 20 REACH 85 40 2025-03/MLB CROSS 20 REACH 85 40 2025-03_ITI",
+      "lab_id": "682b90bc58e4437fbf04838861012e67",
+      "metadata_sha256": "c8d8f3b29f97d36fe253cd8654ccac377a4e5c92a26d06dcb27ee100a90cf9e0",
+      "phase_a_result_id": "MLB CROSS 20 REACH 85 40 2025-03",
+      "phase_b_result_id": "MLB CROSS 20 REACH 85 40 2025-03",
+      "population": 6307,
+      "run_id": "0badad3024f24e579938ad0daf86eaa4",
+      "slot_id": "ITI-00",
+      "strategy_name": "MLB CROSS 20 REACH 85 40 2025-03_ITI"
+    },
+    "kind": "research_iti",
+    "live_execution": false,
+    "prices": {
+      "entry_cents": 20,
+      "entry_e4": 2000,
+      "loss_cents": 10,
+      "loss_e4": 1000,
+      "win_cents": 60,
+      "win_e4": 6000
+    },
+    "question": {
+      "accept_limitations": false,
+      "entry_conditions": [
+        {
+          "clock": null,
+          "event_definition": "TRADABLE_CLOSE_CROSS",
+          "id": "entry_mu1xbssh_vysak",
+          "nth": null,
+          "ordinal": "FIRST_TOUCH",
+          "period": null,
+          "price_e4": 2000,
+          "price_field": "yes_bid_close"
+        }
+      ],
+      "path_conditions": [
+        {
+          "id": "exit_mtug1t99_aq1lv",
+          "op": "REACH",
+          "outcome": "loss",
+          "price_e4": 1000,
+          "sequential": false
+        },
+        {
+          "id": "exit_mty0bwbw_mvfqe",
+          "op": "REACH",
+          "outcome": "win",
+          "price_e4": 6000,
+          "sequential": false
+        }
+      ],
+      "requested_dimensions": [
+        "HOLD_TO_SETTLEMENT"
+      ],
+      "terminal": "BOTH",
+      "universe": {
+        "date_from": "2025-03-18",
+        "date_to": "2026-09-01",
+        "game_data": [],
+        "leagues": [
+          "MLB"
+        ],
+        "market_data": [
+          "candles"
+        ],
+        "markets": [
+          "kalshi"
+        ],
+        "seasons": [
+          "2025-2026"
+        ],
+        "sports": [
+          "MLB"
+        ]
+      }
+    },
+    "source": "ROLLER \u2192 SuperASI A \u2192 SuperASI B \u2192 ITI",
+    "sport": "mlb",
+    "strategy_pointer": "MLB CROSS 20 REACH 85 40 2025-03/MLB CROSS 20 REACH 85 40 2025-03_ITI"
+  },
+  "engine_pointer": "research_iti",
+  "environment": "DEMO",
+  "factory_id": null,
+  "factory_version": null,
+  "iti": {
+    "BASE_GRADE": "F",
+    "DEBASE_GRADE": "F",
+    "entry_cents": 20,
+    "folder": "MLB CROSS 20 REACH 85 40 2025-03/MLB CROSS 20 REACH 85 40 2025-03_ITI",
+    "iti_is_not_live_signal": true,
+    "loss_cents": 10,
+    "metadata_sha256": "c8d8f3b29f97d36fe253cd8654ccac377a4e5c92a26d06dcb27ee100a90cf9e0",
+    "question": {
+      "accept_limitations": false,
+      "entry_conditions": [
+        {
+          "clock": null,
+          "event_definition": "TRADABLE_CLOSE_CROSS",
+          "id": "entry_mu1xbssh_vysak",
+          "nth": null,
+          "ordinal": "FIRST_TOUCH",
+          "period": null,
+          "price_e4": 2000,
+          "price_field": "yes_bid_close"
+        }
+      ],
+      "path_conditions": [
+        {
+          "id": "exit_mtug1t99_aq1lv",
+          "op": "REACH",
+          "outcome": "loss",
+          "price_e4": 1000,
+          "sequential": false
+        },
+        {
+          "id": "exit_mty0bwbw_mvfqe",
+          "op": "REACH",
+          "outcome": "win",
+          "price_e4": 6000,
+          "sequential": false
+        }
+      ],
+      "requested_dimensions": [
+        "HOLD_TO_SETTLEMENT"
+      ],
+      "terminal": "BOTH",
+      "universe": {
+        "date_from": "2025-03-18",
+        "date_to": "2026-09-01",
+        "game_data": [],
+        "leagues": [
+          "MLB"
+        ],
+        "market_data": [
+          "candles"
+        ],
+        "markets": [
+          "kalshi"
+        ],
+        "seasons": [
+          "2025-2026"
+        ],
+        "sports": [
+          "MLB"
+        ]
+      }
+    },
+    "run_id": "0badad3024f24e579938ad0daf86eaa4",
+    "slot_id": "ITI-00",
+    "strategy_name": "MLB CROSS 20 REACH 85 40 2025-03_ITI",
+    "win_cents": 60
+  },
+  "iti_version": "jump_a_iti_v1.0.0",
+  "kind": "iti",
+  "live_armed_confirmed": false,
+  "name": "JeroMLB2",
+  "notes": "",
+  "observation": {
+    "aws_runtime_id": "momento-demo@mlb-005.service",
+    "detail": null,
+    "environment": "DEMO",
+    "health": "RUNNING_DEMO",
+    "live_armed_confirmed": false,
+    "observed": true,
+    "source": "vital",
+    "status": "RUNNING_DEMO",
+    "vital_bot_id": "mlb-005"
+  },
+  "profile": {
+    "avatar": null,
+    "bio": "",
+    "display_name": "JeroMLB2",
+    "handle": "jeromlb2",
+    "purpose": ""
+  },
+  "settings": {
+    "allocation_bps": 1250,
+    "amount_cents": 100,
+    "bankroll_cents": 2000,
+    "bankroll_source": "unread_fallback",
+    "max_daily_entries": 5,
+    "max_daily_losses": 3,
+    "max_position_budget_cents": 100,
+    "sizing_mode": "FIXED_CENTS"
+  },
+  "slot_id": "ITI-00",
+  "sport": "mlb",
+  "status": "RUNNING_DEMO",
+  "strategy_fingerprint": "c6bd2154740c8c16ee9e9458719867ac3f3c3ba2a350e0698fa4a52f370748ea",
+  "strategy_folder": "MLB CROSS 20 REACH 85 40 2025-03/MLB CROSS 20 REACH 85 40 2025-03_ITI",
+  "strategy_pointer": "MLB CROSS 20 REACH 85 40 2025-03/MLB CROSS 20 REACH 85 40 2025-03_ITI",
+  "updated_at": "2026-09-17T06:47:03Z",
+  "vital_bot_id": "mlb-005"
+}

@@ -1,0 +1,10 @@
+trade T0195  NCAAB  Boston College at Georgia Tech
+contract KXNCAAMBGAME-26JAN03BCGT-GT  slice H1_2
+signal 2026-01-03T11:40:00-08:00 PST  exit 2026-01-03T12:31:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 3592  principal_cents 280176
+entry_fee_cents 1079  exit_fee_cents 1390
+exit STOP at 67c  terminal yes
+gross_cents -39512  net_cents -41981
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

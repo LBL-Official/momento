@@ -1,0 +1,10 @@
+{
+  "regime_schema_version": "2.0.0",
+  "note": "Deterministic buckets only. No unsupervised clustering in V2.",
+  "regimes": {
+    "period": {"source": "period", "type": "identity"},
+    "minute_bucket": {"source": "elapsed_game_seconds", "width_seconds": 60},
+    "game_progress_bucket": {"source": "elapsed_game_seconds", "fractions": [0.25, 0.5, 0.75, 1.0]},
+    "score_margin_bucket": {"source": "score_margin", "edges": [-15, -5, 0, 5, 15]}
+  }
+}

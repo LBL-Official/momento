@@ -1,0 +1,131 @@
+[
+  {
+    "condition": "base_class=BASES_EMPTY&vol_15m_tertile=LOW",
+    "mean_pnl_per_game_usd_ci95": [
+      -1.9211111111111112,
+      0.4122222222222222
+    ],
+    "reps": 10000,
+    "seed": 42,
+    "selection_score": 9.046195652173914,
+    "test_n": 27
+  },
+  {
+    "condition": "base_class=BASES_EMPTY&vol_5m_tertile=LOW",
+    "mean_pnl_per_game_usd_ci95": [
+      -1.7573684210526315,
+      0.8215789473684211
+    ],
+    "reps": 10000,
+    "seed": 42,
+    "selection_score": 8.953846153846152,
+    "test_n": 19
+  },
+  {
+    "condition": "base_class=BASES_EMPTY&reversal_tertile=HIGH",
+    "mean_pnl_per_game_usd_ci95": [
+      -1.56,
+      0.44
+    ],
+    "reps": 10000,
+    "seed": 42,
+    "selection_score": 8.905797101449275,
+    "test_n": 28
+  },
+  {
+    "condition": "lead_ge2=YES&personality=CHOPPY",
+    "mean_pnl_per_game_usd_ci95": [
+      -0.39064516129032256,
+      1.19
+    ],
+    "reps": 10000,
+    "seed": 42,
+    "selection_score": 8.867440574903261,
+    "test_n": 31
+  },
+  {
+    "condition": "base_class=BASES_EMPTY&start_move_gt20=YES",
+    "mean_pnl_per_game_usd_ci95": [
+      -1.8534782608695652,
+      0.581304347826087
+    ],
+    "reps": 10000,
+    "seed": 42,
+    "selection_score": 8.504195804195803,
+    "test_n": 23
+  },
+  {
+    "condition": "base_class=BASES_EMPTY&vel_sign=UP",
+    "mean_pnl_per_game_usd_ci95": [
+      -1.56,
+      0.44
+    ],
+    "reps": 10000,
+    "seed": 42,
+    "selection_score": 7.823276776246022,
+    "test_n": 28
+  },
+  {
+    "condition": "base_class=BASES_EMPTY&vel_5m_sign=UP",
+    "mean_pnl_per_game_usd_ci95": [
+      -1.56,
+      0.44
+    ],
+    "reps": 10000,
+    "seed": 42,
+    "selection_score": 7.763043478260869,
+    "test_n": 28
+  },
+  {
+    "condition": "p_start_50_54=NO&base_class=BASES_EMPTY",
+    "mean_pnl_per_game_usd_ci95": [
+      -1.435,
+      0.315
+    ],
+    "reps": 10000,
+    "seed": 42,
+    "selection_score": 7.3837349397590355,
+    "test_n": 24
+  },
+  {
+    "condition": "move_fine=25_30&vel_5m_sign=UP",
+    "mean_pnl_per_game_usd_ci95": [
+      -1.31,
+      1.19
+    ],
+    "reps": 10000,
+    "seed": 42,
+    "selection_score": 7.201651186790506,
+    "test_n": 14
+  },
+  {
+    "condition": "half=TOP&vol_15m_tertile=LOW",
+    "mean_pnl_per_game_usd_ci95": [
+      -0.61,
+      0.99
+    ],
+    "reps": 10000,
+    "seed": 42,
+    "selection_score": 7.160568086883876,
+    "test_n": 35
+  },
+  {
+    "condition": "lead_ge2=YES&vol_1m_tertile=LOW",
+    "mean_pnl_per_game_usd_ci95": [
+      0.08473684210526315,
+      1.19
+    ],
+    "reps": 10000,
+    "seed": 42,
+    "selection_score": 7.152631578947369,
+    "test_n": 19
+  },
+  {
+    "condition": "vel_1m_tertile=LOW&accel_sign=POS",
+    "mean_pnl_per_game_usd_ci95": null,
+    "reps": 10000,
+    "seed": 42,
+    "selection_score": 7.059374999999999,
+    "test_n": 5
+  }
+]

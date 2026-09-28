@@ -1,0 +1,93 @@
+{
+  "BASE_GRADE": "F",
+  "DEBASE_GRADE": "F",
+  "abase_filename": "SuperasiABase[MLB CROSS 20 REACH 85 40 2025-03 ITI-01].csv",
+  "abase_sha256": "d6d43b54eb469f84824b51a00a3d68378796859e8d88e1bcd5b95a14159400eb",
+  "allocation_bps": 500,
+  "artifact": "superasi_bdebase",
+  "bankroll_cents": 2000000,
+  "bottleneck": "F",
+  "components": {
+    "coverage": "A+",
+    "research_evidence": "F",
+    "robustness": "A+",
+    "theoretical_alignment": "F",
+    "validation": "F"
+  },
+  "created_at": "2026-09-15T18:53:56Z",
+  "debase_filename": "SuperasiBDeBase[MLB CROSS 20 REACH 85 40 2025-03 ITI-01].csv",
+  "debase_payload_sha256": "5e9ef3b838dc96acc64d3945706eb1dd6a4900248371423da79d291b93d08a93",
+  "debase_sha256": "447a049903148f5d0c350a1188865537765d46014a7b117b2d9df80f67b68402",
+  "desk_settings_source": "disk",
+  "floor_cents": 1500000,
+  "folder": "MLB CROSS 20 REACH 85 40 2025-03 ITI-01",
+  "grade_config_version": "grade_config_v1",
+  "phase": "B",
+  "phase_a_result_id": "MLB CROSS 20 REACH 85 40 2025-03 ITI-01",
+  "plan_hash": "984809b54927aacbec8f4411ee60a1babd1ffa720811f6ef1b4f8e5b9b0a3ccb",
+  "question": {
+    "accept_limitations": false,
+    "entry_conditions": [
+      {
+        "clock": null,
+        "event_definition": "TRADABLE_CLOSE_CROSS",
+        "id": "entry_mu1xbssh_vysak",
+        "nth": null,
+        "ordinal": "FIRST_TOUCH",
+        "period": null,
+        "price_e4": 1700,
+        "price_field": "yes_bid_close"
+      }
+    ],
+    "path_conditions": [
+      {
+        "id": "exit_mtug1t99_aq1lv",
+        "op": "REACH",
+        "outcome": "loss",
+        "price_e4": 1000,
+        "sequential": false
+      },
+      {
+        "id": "exit_mty0bwbw_mvfqe",
+        "op": "REACH",
+        "outcome": "win",
+        "price_e4": 6000,
+        "sequential": false
+      }
+    ],
+    "requested_dimensions": [
+      "HOLD_TO_SETTLEMENT"
+    ],
+    "terminal": "BOTH",
+    "universe": {
+      "date_from": "2025-03-18",
+      "date_to": "2026-09-01",
+      "game_data": [],
+      "leagues": [
+        "MLB"
+      ],
+      "market_data": [
+        "candles"
+      ],
+      "markets": [
+        "kalshi"
+      ],
+      "seasons": [
+        "2025-2026"
+      ],
+      "sports": [
+        "MLB"
+      ]
+    }
+  },
+  "question_sha256": "10ee8a79aa9b0eeb594940029b651aefdef56b735265528fb712cf5e7ebbc799",
+  "question_status": "PRESENT",
+  "result_hash": "9d6a793ca4e655cbc4b661859c6eddab36a707a4963b2761506188fe15e040c6",
+  "result_id": "MLB CROSS 20 REACH 85 40 2025-03 ITI-01",
+  "roller_filename": "Roller[MLB CROSS 20 REACH 85 40 2025-03 ITI-01].csv",
+  "source_csv_sha256": "7fd5b3d045649bb386e17d5bbb1734331b1101e0c1cc1bd959a3446567e6c71c",
+  "source_lab_id": "a5c2b46e667349cbb5fd3cd89b115540",
+  "strategy_name": "MLB CROSS 20 REACH 85 40 2025-03 ITI-01",
+  "superasi_version": "superasi_bdebase_v1.0.0",
+  "target_cents": 3000000
+}

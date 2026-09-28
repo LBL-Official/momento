@@ -1,0 +1,82 @@
+{
+  "runs": {
+    "ballhog": {
+      "service_id": "ballhog",
+      "pid": 2258,
+      "port": 5192,
+      "argv": [
+        "npm",
+        "run",
+        "dev",
+        "--prefix",
+        "frontend/ballhog"
+      ],
+      "owned": true
+    },
+    "choosin-texas": {
+      "service_id": "choosin-texas",
+      "pid": 2274,
+      "port": 5182,
+      "argv": [
+        "npm",
+        "run",
+        "dev",
+        "--prefix",
+        "frontend/choosin-texas"
+      ],
+      "owned": true
+    },
+    "drevo": {
+      "service_id": "drevo",
+      "pid": 2290,
+      "port": 5191,
+      "argv": [
+        "npm",
+        "run",
+        "dev",
+        "--prefix",
+        "frontend/dynamic-risk-engine"
+      ],
+      "owned": true
+    },
+    "mlb-execution-desk": {
+      "service_id": "mlb-execution-desk",
+      "pid": 2306,
+      "port": 5180,
+      "argv": [
+        "npm",
+        "run",
+        "dev",
+        "--prefix",
+        "frontend/vital-terminal"
+      ],
+      "owned": true
+    },
+    "positman": {
+      "service_id": "positman",
+      "pid": 2322,
+      "port": 5194,
+      "argv": [
+        "npm",
+        "run",
+        "dev",
+        "--prefix",
+        "frontend/positman"
+      ],
+      "owned": true
+    },
+    "systimo-ui": {
+      "service_id": "systimo-ui",
+      "pid": 2338,
+      "port": 5193,
+      "argv": [
+        "npm",
+        "run",
+        "dev",
+        "--prefix",
+        "frontend/systimo"
+      ],
+      "owned": true
+    }
+  }
+}

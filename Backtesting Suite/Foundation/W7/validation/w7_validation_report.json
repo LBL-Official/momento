@@ -1,0 +1,32 @@
+{
+  "anti_lookahead": "PASS",
+  "before_first_and_after_last_have_no_applicable_state": true,
+  "first01": false,
+  "join_status_counts": [
+    [
+      "AFTER_LAST_EVENT",
+      556184
+    ],
+    [
+      "AT_EVENT",
+      155
+    ],
+    [
+      "BEFORE_FIRST_EVENT",
+      4397820
+    ],
+    [
+      "SYNCHRONIZED",
+      664609
+    ],
+    [
+      "SYNCHRONIZED_WITH_TIMESTAMP_GAP",
+      17365943
+    ]
+  ],
+  "matched_state_timestamp_lte_market_timestamp": true,
+  "success_rows_have_w6_state": true,
+  "synthetic_l2": false,
+  "trade_kind": "TRADE",
+  "w8_started": false
+}

@@ -1,0 +1,18 @@
+[Unit]
+Description=Momento historical Kalshi research data collector (isolated from live trading)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=momento
+Group=momento
+WorkingDirectory=/var/lib/momento
+Environment=MOMENTO_RESEARCH_DATA_DIR=/var/lib/momento/research-data
+ExecStart=/usr/local/bin/momento-research-collector reconcile
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=momento-research-collector
+
+[Install]
+WantedBy=multi-user.target

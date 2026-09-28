@@ -1,0 +1,9 @@
+{
+  "status": "BID_MARKED_GROSS_AT_EVENT_TIMES",
+  "points": 1941,
+  "events_missing_a_mark": 0,
+  "max_drawdown_fraction": 0.06921403203061549,
+  "peak_equity_cents": 13614537,
+  "trough_equity_cents": 12672220,
+  "note": "Mark is the last bid close at or before the event. Not an intraminute path and not a liquidation fill."
+}

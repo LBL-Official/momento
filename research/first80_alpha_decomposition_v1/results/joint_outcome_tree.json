@@ -1,0 +1,245 @@
+{
+  "trees": {
+    "FULL": {
+      "n": 1230,
+      "WIN_NEVER_T40": 910,
+      "WIN_TOUCH40": 109,
+      "LOSS_NEVER_T40": 0,
+      "LOSS_TOUCH40": 211,
+      "P_W": 0.8284552845528456,
+      "P_not_W": 0.17154471544715444,
+      "P_T40": 0.2601626016260163,
+      "P_not_T40": 0.7398373983739838,
+      "P_not_T40_given_W": 0.8930323846908734,
+      "P_not_T40_given_not_W": 0.0,
+      "P_W_given_not_T40": 1.0,
+      "P_W_given_T40": 0.340625,
+      "joint_P_W_and_not_T40": 0.7398373983739838,
+      "decomposition": {
+        "P_W": 0.8284552845528456,
+        "P_not_T40_given_W": 0.8930323846908734,
+        "product": 0.7398373983739838,
+        "observed_joint": 0.7398373983739838,
+        "identity_holds": true
+      },
+      "leak_flag": {
+        "LOSS_NEVER_T40_count": 0,
+        "note": "Category 3 is logically surprising if prices are continuous. A count of 0 on this candle sample is an observed measurement, not a proof that a loser cannot skip 40\u00a2 between minute closes."
+      },
+      "dependence": {
+        "odds_ratio_W_vs_notT40": null,
+        "phi": 0.7673612113311076,
+        "mutual_information_nats": 0.29144603670387215,
+        "risk_ratio_notT40_W_over_notW": "UNDEFINED_ZERO_DENOMINATOR",
+        "table": [
+          [
+            910,
+            109
+          ],
+          [
+            0,
+            211
+          ]
+        ],
+        "table_labels": [
+          [
+            "W,~T40",
+            "W,T40"
+          ],
+          [
+            "~W,~T40",
+            "~W,T40"
+          ]
+        ],
+        "primary_not_pearson": true,
+        "note": "All losses touched 40 on close-path candles. RR is undefined."
+      }
+    },
+    "TRAIN": {
+      "n": 504,
+      "WIN_NEVER_T40": 362,
+      "WIN_TOUCH40": 45,
+      "LOSS_NEVER_T40": 0,
+      "LOSS_TOUCH40": 97,
+      "P_W": 0.8075396825396826,
+      "P_not_W": 0.19246031746031744,
+      "P_T40": 0.28174603174603174,
+      "P_not_T40": 0.7182539682539683,
+      "P_not_T40_given_W": 0.8894348894348895,
+      "P_not_T40_given_not_W": 0.0,
+      "P_W_given_not_T40": 1.0,
+      "P_W_given_T40": 0.31690140845070425,
+      "joint_P_W_and_not_T40": 0.7182539682539683,
+      "decomposition": {
+        "P_W": 0.8075396825396826,
+        "P_not_T40_given_W": 0.8894348894348895,
+        "product": 0.7182539682539683,
+        "observed_joint": 0.7182539682539683,
+        "identity_holds": true
+      },
+      "leak_flag": {
+        "LOSS_NEVER_T40_count": 0,
+        "note": "Category 3 is logically surprising if prices are continuous. A count of 0 on this candle sample is an observed measurement, not a proof that a loser cannot skip 40\u00a2 between minute closes."
+      },
+      "dependence": {
+        "odds_ratio_W_vs_notT40": null,
+        "phi": 0.7794688706085553,
+        "mutual_information_nats": 0.31381714780380754,
+        "risk_ratio_notT40_W_over_notW": "UNDEFINED_ZERO_DENOMINATOR",
+        "table": [
+          [
+            362,
+            45
+          ],
+          [
+            0,
+            97
+          ]
+        ],
+        "table_labels": [
+          [
+            "W,~T40",
+            "W,T40"
+          ],
+          [
+            "~W,~T40",
+            "~W,T40"
+          ]
+        ],
+        "primary_not_pearson": true,
+        "note": "All losses touched 40 on close-path candles. RR is undefined."
+      }
+    },
+    "VALIDATION": {
+      "n": 483,
+      "WIN_NEVER_T40": 365,
+      "WIN_TOUCH40": 38,
+      "LOSS_NEVER_T40": 0,
+      "LOSS_TOUCH40": 80,
+      "P_W": 0.8343685300207039,
+      "P_not_W": 0.16563146997929612,
+      "P_T40": 0.2443064182194617,
+      "P_not_T40": 0.7556935817805382,
+      "P_not_T40_given_W": 0.9057071960297767,
+      "P_not_T40_given_not_W": 0.0,
+      "P_W_given_not_T40": 1.0,
+      "P_W_given_T40": 0.3220338983050847,
+      "joint_P_W_and_not_T40": 0.7556935817805382,
+      "decomposition": {
+        "P_W": 0.8343685300207039,
+        "P_not_T40_given_W": 0.9057071960297767,
+        "product": 0.7556935817805382,
+        "observed_joint": 0.7556935817805382,
+        "identity_holds": true
+      },
+      "leak_flag": {
+        "LOSS_NEVER_T40_count": 0,
+        "note": "Category 3 is logically surprising if prices are continuous. A count of 0 on this candle sample is an observed measurement, not a proof that a loser cannot skip 40\u00a2 between minute closes."
+      },
+      "dependence": {
+        "odds_ratio_W_vs_notT40": null,
+        "phi": 0.7836062639931741,
+        "mutual_information_nats": 0.2953708025514154,
+        "risk_ratio_notT40_W_over_notW": "UNDEFINED_ZERO_DENOMINATOR",
+        "table": [
+          [
+            365,
+            38
+          ],
+          [
+            0,
+            80
+          ]
+        ],
+        "table_labels": [
+          [
+            "W,~T40",
+            "W,T40"
+          ],
+          [
+            "~W,~T40",
+            "~W,T40"
+          ]
+        ],
+        "primary_not_pearson": true,
+        "note": "All losses touched 40 on close-path candles. RR is undefined."
+      }
+    },
+    "OOS": {
+      "n": 243,
+      "WIN_NEVER_T40": 183,
+      "WIN_TOUCH40": 26,
+      "LOSS_NEVER_T40": 0,
+      "LOSS_TOUCH40": 34,
+      "P_W": 0.8600823045267489,
+      "P_not_W": 0.13991769547325106,
+      "P_T40": 0.24691358024691357,
+      "P_not_T40": 0.7530864197530864,
+      "P_not_T40_given_W": 0.8755980861244019,
+      "P_not_T40_given_not_W": 0.0,
+      "P_W_given_not_T40": 1.0,
+      "P_W_given_T40": 0.43333333333333335,
+      "joint_P_W_and_not_T40": 0.7530864197530864,
+      "decomposition": {
+        "P_W": 0.8600823045267489,
+        "P_not_T40_given_W": 0.8755980861244019,
+        "product": 0.7530864197530864,
+        "observed_joint": 0.7530864197530864,
+        "identity_holds": true
+      },
+      "leak_flag": {
+        "LOSS_NEVER_T40_count": 0,
+        "note": "Category 3 is logically surprising if prices are continuous. A count of 0 on this candle sample is an observed measurement, not a proof that a loser cannot skip 40\u00a2 between minute closes."
+      },
+      "dependence": {
+        "odds_ratio_W_vs_notT40": null,
+        "phi": 0.7043949522844607,
+        "mutual_information_nats": 0.23586793549934265,
+        "risk_ratio_notT40_W_over_notW": "UNDEFINED_ZERO_DENOMINATOR",
+        "table": [
+          [
+            183,
+            26
+          ],
+          [
+            0,
+            34
+          ]
+        ],
+        "table_labels": [
+          [
+            "W,~T40",
+            "W,T40"
+          ],
+          [
+            "~W,~T40",
+            "~W,T40"
+          ]
+        ],
+        "primary_not_pearson": true,
+        "note": "All losses touched 40 on close-path candles. RR is undefined."
+      }
+    }
+  },
+  "scenarios": {
+    "A_historical": {
+      "P_W": 0.8284552845528456,
+      "P_not_T40_given_W": 0.8930323846908734,
+      "joint": 0.7398373983739838,
+      "note": "Replay of observed product. Not a forecast."
+    },
+    "B_terminal_corrected_to_80": {
+      "P_W": 0.8,
+      "P_not_T40_given_W": 0.8930323846908734,
+      "joint": 0.7144259077526988,
+      "delta_vs_historical_joint": -0.025411490621285004,
+      "note": "Sensitivity only. Holds path term fixed. Not a forecast."
+    },
+    "mechanical_share": {
+      "observed_joint": 0.7398373983739838,
+      "joint_if_pW_80": 0.7144259077526988,
+      "fraction_of_joint_attributable_to_pW_above_80": 0.034347399411187425,
+      "note": "Algebraic attribution of the product, not a causal claim."
+    }
+  }
+}

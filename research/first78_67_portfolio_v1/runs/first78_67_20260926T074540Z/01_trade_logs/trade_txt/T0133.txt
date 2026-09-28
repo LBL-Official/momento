@@ -1,0 +1,10 @@
+trade T0133  NCAAB  West Virginia at Ohio St.
+contract KXNCAAMBGAME-25DEC13WVUOSU-WVU  slice H2_1
+signal 2025-12-13T18:20:00-08:00 PST  exit 2025-12-13T18:54:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 2876  principal_cents 224328
+entry_fee_cents 864  exit_fee_cents 1113
+exit STOP at 67c  terminal no
+gross_cents -31636  net_cents -33613
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

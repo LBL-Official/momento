@@ -1,0 +1,15 @@
+{
+  "by_hypothesis": {
+    "BENCH_ALL_FIRST83": null,
+    "BENCH_NO_ENTRY": null,
+    "CAND_A_40_49": [],
+    "CAND_B_MOVE30_OUTS0_VOL1M_LOW": [],
+    "CAND_C_LEAD2_MOVE30_VOL1M_LOW": [],
+    "CAND_D_TWORUN_MOVE30_VOL1M_LOW": [],
+    "CAND_E_MOVEFINE_VOL_LOW": [],
+    "CAND_F_INNING7_PEAK_AT": []
+  },
+  "fee_model": "HYPOTHETICAL_RESEARCH_COST",
+  "not_kalshi_fee_model": true,
+  "status": "PROSPECTIVE_DATA_NOT_YET_AVAILABLE"
+}

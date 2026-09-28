@@ -1,0 +1,10 @@
+trade T0634  NBA  Boston at Charlotte
+contract KXNBAGAME-26MAR29BOSCHA-BOS  slice Q2
+signal 2026-03-29T15:49:00-07:00 PDT  exit 2026-03-29T17:22:08-07:00 PDT
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 16171  principal_cents 1261338
+entry_fee_cents 4857  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 355762  net_cents 350905
+strategy_result POSITIVE  net_r 1.856689330405566284822349798
+Assumed fill. Not a maker fill. Not live P&L.

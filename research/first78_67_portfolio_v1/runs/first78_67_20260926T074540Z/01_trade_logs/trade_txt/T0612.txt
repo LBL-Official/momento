@@ -1,0 +1,10 @@
+trade T0612  NCAAB  TCU at Duke
+contract KXNCAAMBGAME-26MAR21TCUDUKE-DUKE  slice H2_1
+signal 2026-03-21T15:57:00-07:00 PDT  exit 2026-03-21T16:46:51-07:00 PDT
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 15003  principal_cents 1170234
+entry_fee_cents 4506  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 330066  net_cents 325560
+strategy_result POSITIVE  net_r 1.856682540135162108985143574
+Assumed fill. Not a maker fill. Not live P&L.

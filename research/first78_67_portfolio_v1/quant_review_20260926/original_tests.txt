@@ -1,0 +1,18 @@
+test_april_1_inclusive_and_dst (research.first78_67_portfolio_v1.tests.test_acceptance.ClockTests.test_april_1_inclusive_and_dst) ... ok
+test_price_bounds (research.first78_67_portfolio_v1.tests.test_acceptance.MoneyTests.test_price_bounds) ... ok
+test_raw_fee_below_charged (research.first78_67_portfolio_v1.tests.test_acceptance.MoneyTests.test_raw_fee_below_charged) ... ok
+test_reference_1538 (research.first78_67_portfolio_v1.tests.test_acceptance.MoneyTests.test_reference_1538) ... ok
+test_cash_identity (research.first78_67_portfolio_v1.tests.test_acceptance.PortfolioTests.test_cash_identity) ... ok
+test_eight_candidates_admit_seven_and_no_reentry (research.first78_67_portfolio_v1.tests.test_acceptance.PortfolioTests.test_eight_candidates_admit_seven_and_no_reentry) ... ok
+test_insufficient_cash_and_no_negative (research.first78_67_portfolio_v1.tests.test_acceptance.PortfolioTests.test_insufficient_cash_and_no_negative) ... ok
+test_same_time_exit_frees_slot_before_entry (research.first78_67_portfolio_v1.tests.test_acceptance.PortfolioTests.test_same_time_exit_frees_slot_before_entry) ... ok
+test_stop_loss_not_forced_to_eleven_cents_when_settlement_loses_without_stop (research.first78_67_portfolio_v1.tests.test_acceptance.PortfolioTests.test_stop_loss_not_forced_to_eleven_cents_when_settlement_loses_without_stop) ... ok
+test_strict_batch_waits (research.first78_67_portfolio_v1.tests.test_acceptance.PortfolioTests.test_strict_batch_waits) ... ok
+test_ten_completions_resize_once_and_keep_open_quantity (research.first78_67_portfolio_v1.tests.test_acceptance.PortfolioTests.test_ten_completions_resize_once_and_keep_open_quantity) ... ok
+test_rules_differ_when_other_side_is_earlier (research.first78_67_portfolio_v1.tests.test_acceptance.SelectTests.test_rules_differ_when_other_side_is_earlier) ... ok
+test_tie_is_ticker_not_outcome (research.first78_67_portfolio_v1.tests.test_acceptance.SelectTests.test_tie_is_ticker_not_outcome) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.001s
+
+OK

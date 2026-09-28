@@ -1,0 +1,10 @@
+trade T0539  NCAAB  Notre Dame at Boston College
+contract KXNCAAMBGAME-26MAR07NDBC-ND  slice H2_1
+signal 2026-03-07T10:18:00-08:00 PST  exit 2026-03-07T10:25:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 11495  principal_cents 896610
+entry_fee_cents 3452  exit_fee_cents 4448
+exit STOP at 67c  terminal no
+gross_cents -126445  net_cents -134345
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

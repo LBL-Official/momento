@@ -1,0 +1,14 @@
+path,role,test_id
+Backtesting Suite/Data/NBA/2025-2026/warehouse/normalized/nba/candles_1m,minute yes_bid_close,OCT_2025
+Backtesting Suite/Data/NBA/2025-2026/warehouse/normalized/nba/markets/markets.parquet,results and lifecycle timestamps,OCT_2025
+Backtesting Suite/Data/NBA/2025-2026/warehouse/normalized/nba/pbp,Q2/Q3 as-of clock,OCT_2025
+Backtesting Suite/Data/NCAAB/2025-2026/warehouse/normalized/ncaab/candles_1m,minute yes_bid_close,OCT_2025
+Backtesting Suite/Data/NCAAB/2025-2026/warehouse/normalized/ncaab/markets/markets.parquet,results and lifecycle timestamps,OCT_2025
+Backtesting Suite/Data/NCAAB/2025-2026/warehouse/normalized/ncaab/pbp,half-window clock,OCT_2025
+Backtesting Suite/Data/NBA/2024-2025/warehouse/raw/kalshi/nba/candlesticks,partial raw minute bids,APR_2025
+Backtesting Suite/Data/NBA/2024-2025/warehouse/raw/kalshi/nba/markets/markets.jsonl.gz,lifecycle timestamps,APR_2025
+Backtesting Suite/Data/NBA/2024-2025/warehouse/raw/nba_stats/pbp_v3,clock when the date-team join matches,APR_2025
+Backtesting Suite/Data/NBA/2024-2025/warehouse/raw/nba_stats/schedule,identity and stage label only,APR_2025
+Backtesting Suite/Data/NCAAB/2024-2025/warehouse/raw/kalshi/ncaab/markets,market list,APR_2025
+Backtesting Suite/Data/NCAAB/2024-2025/warehouse/normalized/ncaab/pbp,plays without a minute bid book,APR_2025
+research/first80_asked_six_chatgpt_export/first80_asked_six.csv,legacy lock intersection only,BOTH

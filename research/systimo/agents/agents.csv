@@ -1,0 +1,6 @@
+agent_id,name,role,enabled,allowed_query_scopes,allowed_action_types,requires_approval,implementation,version
+connection_manager,Connection Manager,connections,true,connections|health,REFRESH_CONNECTION|RECHECK_HEALTH,false,roller.systimo.agents.runner,v0
+health_manager,Health Manager,health,true,health,RECHECK_HEALTH,false,roller.systimo.agents.runner,v0
+schema_manager,Schema Manager,schema,true,drift|governance,VALIDATE_SCHEMA,false,roller.systimo.agents.runner,v0
+artifact_manager,Artifact Manager,artifacts,true,artifacts,EXPORT_ARTIFACT,false,roller.systimo.agents.runner,v0
+dependency_manager,Dependency Manager,dependencies,true,dependencies|reverse_dependencies|paths,REGENERATE_TREE,false,roller.systimo.agents.runner,v0

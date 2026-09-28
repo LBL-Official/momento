@@ -1,0 +1,18 @@
+{
+  "run_id": "ac137566dbef41d5a16e6837f67bd75e",
+  "job_type": "ingest",
+  "display": "AUTO ROLLER INGEST",
+  "started_at": "2026-09-12T05:22:30Z",
+  "finished_at": "2026-09-12T05:22:30Z",
+  "duration_s": 0.001,
+  "status": "FAILED",
+  "code_version": "research_query_v1.2_ops",
+  "actions": [],
+  "errors": [
+    "momento_root() missing 1 required positional argument: 'roller_root'\nTraceback (most recent call last):\n  File \"/Users/user/Desktop/Momento/ROLLER/roller/auto_roller/ingest.py\", line 53, in run_ingest\n    if _foundation_lock_held() or _pgrep(\"momento-research-ingest\"):\n       ~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/Users/user/Desktop/Momento/ROLLER/roller/auto_roller/ingest.py\", line 27, in _foundation_lock_held\n    lock = momento_root() / \"Backtesting Suite\" / \"Foundation\" / \"Ingest\" / \"locks\" / \"ingest.lock\"\n           ~~~~~~~~~~~~^^\nTypeError: momento_root() missing 1 required positional argument: 'roller_root'\n"
+  ],
+  "warnings": [
+    "MISSED_SCHEDULE"
+  ],
+  "gaps_found": 0
+}

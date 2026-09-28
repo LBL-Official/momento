@@ -1,0 +1,10 @@
+trade T0486  NBA  Houston at Orlando
+contract KXNBAGAME-26FEB26HOUORL-ORL  slice Q3
+signal 2026-02-26T18:04:00-08:00 PST  exit 2026-02-26T18:24:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 8894  principal_cents 693732
+entry_fee_cents 2671  exit_fee_cents 3442
+exit STOP at 67c  terminal no
+gross_cents -97834  net_cents -103947
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

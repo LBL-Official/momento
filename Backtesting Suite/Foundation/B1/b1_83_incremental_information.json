@@ -1,0 +1,98 @@
+[
+  {
+    "condition": "ALL_83",
+    "layer": "ALL_83",
+    "n": 497,
+    "test_ev": 1.8484848484848484,
+    "train_ev": -3.5804749340369395,
+    "val_ev": -8.0
+  },
+  {
+    "condition": "p_start_lt50=YES",
+    "layer": "START_BELIEF",
+    "n": 156,
+    "test_ev": 5.0,
+    "train_ev": 0.8983050847457628,
+    "val_ev": 1.6153846153846154
+  },
+  {
+    "condition": "start_price_band=40_49",
+    "layer": "START_40_49",
+    "n": 129,
+    "test_ev": 7.476190476190476,
+    "train_ev": 1.2105263157894737,
+    "val_ev": 1.6153846153846154
+  },
+  {
+    "condition": "p_start_lt50=YES&lead_ge2=YES",
+    "ev_lift_vs_all83_test": -0.6379585326953747,
+    "layer": "START+LEAD",
+    "n": 122,
+    "test_ev": 1.2105263157894737,
+    "test_n": 19,
+    "train_ev": 1.946236559139785,
+    "train_n": 93,
+    "val_ev": -3.0,
+    "val_n": 10
+  },
+  {
+    "condition": "start_price_band=40_49&lead_ge2=YES",
+    "ev_lift_vs_all83_test": 1.8181818181818181,
+    "layer": "START_40_49+LEAD",
+    "n": 102,
+    "test_ev": 3.6666666666666665,
+    "test_n": 15,
+    "train_ev": 2.7142857142857144,
+    "train_n": 77,
+    "val_ev": -3.0,
+    "val_n": 10
+  },
+  {
+    "condition": "start_price_band=40_49&inning_late68=YES",
+    "ev_lift_vs_all83_test": 15.151515151515152,
+    "layer": "START_40_49+INNING",
+    "n": 56,
+    "test_ev": 17.0,
+    "test_n": 10,
+    "train_ev": -2.0476190476190474,
+    "train_n": 42,
+    "val_ev": 17.0,
+    "val_n": 4
+  },
+  {
+    "condition": "start_price_band=40_49&start_move_gt20=YES",
+    "ev_lift_vs_all83_test": 5.627705627705628,
+    "layer": "START_40_49+PATH",
+    "n": 126,
+    "test_ev": 7.476190476190476,
+    "test_n": 21,
+    "train_ev": 0.8709677419354839,
+    "train_n": 93,
+    "val_ev": 0.3333333333333333,
+    "val_n": 12
+  },
+  {
+    "condition": "start_price_band=40_49&vol_1m_tertile=LOW",
+    "ev_lift_vs_all83_test": 15.151515151515152,
+    "layer": "START_40_49+VOL",
+    "n": 32,
+    "test_ev": 17.0,
+    "test_n": 2,
+    "train_ev": -3.0,
+    "train_n": 25,
+    "val_ev": -3.0,
+    "val_n": 5
+  },
+  {
+    "condition": "start_price_band=40_49&vel_sign=UP",
+    "ev_lift_vs_all83_test": 5.627705627705628,
+    "layer": "START_40_49+VEL",
+    "n": 122,
+    "test_ev": 7.476190476190476,
+    "test_n": 21,
+    "train_ev": 1.0909090909090908,
+    "train_n": 88,
+    "val_ev": 1.6153846153846154,
+    "val_n": 13
+  }
+]

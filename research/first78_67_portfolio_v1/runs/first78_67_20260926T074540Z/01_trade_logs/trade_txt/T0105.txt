@@ -1,0 +1,10 @@
+trade T0105  NCAAB  UCLA at Washington
+contract KXNCAAMBGAME-25DEC03UCLAWASH-UCLA  slice H2_1
+signal 2025-12-03T21:23:00-08:00 PST  exit 2025-12-03T23:15:41-08:00 PST
+assumed entry 78c  observed close 83c  overshoot 5c
+contracts 2520  principal_cents 196560
+entry_fee_cents 757  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 55440  net_cents 54683
+strategy_result POSITIVE  net_r 1.856619020133772451023664822
+Assumed fill. Not a maker fill. Not live P&L.

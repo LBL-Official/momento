@@ -1,0 +1,93 @@
+{
+  "BASE_GRADE": "F",
+  "DEBASE_GRADE": "F",
+  "abase_filename": "SuperasiABase[NBA Q1 FIRST_TOUCH 63 \u2014 REACH 90 _ REACH 41 #2].csv",
+  "abase_sha256": "aebabcc5c0515ea4dbac613c3101e372bd2c0e12c523c8890e9d35539c32d3d3",
+  "artifact": "superasi_bdebase",
+  "bottleneck": "F",
+  "components": {
+    "coverage": "A+",
+    "research_evidence": "F",
+    "robustness": "C",
+    "theoretical_alignment": "F",
+    "validation": "F"
+  },
+  "created_at": "2026-09-13T09:31:22Z",
+  "debase_filename": "SuperasiBDeBase[NBA Q1 FIRST_TOUCH 63 \u2014 REACH 90 _ REACH 41 #2].csv",
+  "debase_payload_sha256": "be6eff393f2de660521c6682e0c7453a4271065b7e92c2b2bdb9ed6f26710dc3",
+  "debase_sha256": "7f1a3f4a426355d03b2a54ca9afa873cd285dd8f59af79d6c366a1bc4007fb45",
+  "folder": "NBA Q1 FIRST_TOUCH 63 \u2014 REACH 90 _ REACH 41 #2",
+  "grade_config_version": "grade_config_v1",
+  "phase": "B",
+  "phase_a_result_id": "NBA Q1 FIRST_TOUCH 63 \u2014 REACH 90 _ REACH 41 #2",
+  "plan_hash": "a445b90e24f4f50fff7cc87eec44bfd7b16ccaf37ff9eb824377db0aa4392249",
+  "question": {
+    "accept_limitations": false,
+    "entry_conditions": [
+      {
+        "clock": null,
+        "event_definition": "TRADABLE_CLOSE_CROSS",
+        "id": "e1",
+        "nth": null,
+        "operation": "FIRST_TOUCH",
+        "ordinal": "FIRST_TOUCH",
+        "period": "Q1",
+        "price_e4": 6300,
+        "price_field": "yes_bid_close"
+      }
+    ],
+    "loss_hold": true,
+    "path_conditions": [
+      {
+        "id": "win",
+        "op": "REACH",
+        "outcome": "win",
+        "price_e4": 9000,
+        "sequential": false
+      },
+      {
+        "id": "loss",
+        "op": "REACH",
+        "outcome": "loss",
+        "price_e4": 4100,
+        "sequential": false
+      }
+    ],
+    "requested_dimensions": [
+      "HOLD_TO_SETTLEMENT"
+    ],
+    "terminal": "NO",
+    "universe": {
+      "date_from": "2025-10-10",
+      "date_to": "2025-10-31",
+      "game_data": [
+        "pbp"
+      ],
+      "leagues": [
+        "NBA"
+      ],
+      "market_data": [
+        "candles"
+      ],
+      "markets": [
+        "kalshi"
+      ],
+      "seasons": [
+        "2025-2026"
+      ],
+      "sports": [
+        "NBA"
+      ]
+    },
+    "win_hold": false
+  },
+  "question_sha256": "a09117083732209d4e99fe24fdf7c82f42c72d04bf005a68d1370259f30ecd44",
+  "question_status": "PRESENT",
+  "result_hash": "9894f96d5d353a00ab7ce938c302d4579678de2314da9e01899a233b39d51f97",
+  "result_id": "NBA Q1 FIRST_TOUCH 63 \u2014 REACH 90 _ REACH 41 #2",
+  "roller_filename": "RollerNBA Q1 FIRST_TOUCH 63 \u2014 REACH 90 _ REACH 41 #2.csv",
+  "source_csv_sha256": "430128f66f893041c429f48116bfaad62bfa2941a8439889d53a39a8e57d7617",
+  "source_lab_id": "1f960218eb1b41e1be715e78a15cf169",
+  "strategy_name": "NBA Q1 FIRST_TOUCH 63 \u2014 REACH 90 _ REACH 41 #2",
+  "superasi_version": "superasi_bdebase_v1.0.0"
+}

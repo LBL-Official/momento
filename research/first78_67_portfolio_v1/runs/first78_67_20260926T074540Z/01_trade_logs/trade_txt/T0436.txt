@@ -1,0 +1,10 @@
+trade T0436  NCAAB  Wisconsin at Ohio St.
+contract KXNCAAMBGAME-26FEB17WISOSU-OSU  slice H1_2
+signal 2026-02-17T18:22:00-08:00 PST  exit 2026-02-17T20:11:09-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 7379  principal_cents 575562
+entry_fee_cents 2216  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 162338  net_cents 160122
+strategy_result POSITIVE  net_r 1.856680697116220823042404425
+Assumed fill. Not a maker fill. Not live P&L.

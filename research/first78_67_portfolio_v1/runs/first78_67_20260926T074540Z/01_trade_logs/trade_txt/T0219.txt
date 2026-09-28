@@ -1,0 +1,10 @@
+trade T0219  NBA  Orlando at Brooklyn
+contract KXNBAGAME-26JAN07ORLBKN-ORL  slice Q3
+signal 2026-01-07T18:09:00-08:00 PST  exit 2026-01-07T18:49:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 3681  principal_cents 287118
+entry_fee_cents 1106  exit_fee_cents 1425
+exit STOP at 67c  terminal yes
+gross_cents -40491  net_cents -43022
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

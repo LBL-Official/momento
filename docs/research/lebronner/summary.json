@@ -1,0 +1,392 @@
+{
+  "name": "Lebronner",
+  "written_utc": "2026-09-10T22:23:58.048669+00:00",
+  "research_only": true,
+  "live_execution_changed": false,
+  "candle_path_not_fill": true,
+  "sources": {
+    "decomp": "research/first75_terminal_path_decomp/REPORT.md",
+    "asof": "research/firstq_fourcell_asof_predictor/REPORT.md",
+    "slice_script": "apps/nba-data/scripts/first75_slice_not40_given_w.py",
+    "asof_script": "apps/nba-data/scripts/firstq_fourcell_asof_predictor.py",
+    "program": "research/lebronner/PROGRAM.md",
+    "tables": "research/lebronner/TABLES.md",
+    "superasi": "research/superasi/README.md"
+  },
+  "historical_first75_pooled_six": {
+    "n": 1126,
+    "W": 871,
+    "L": 255,
+    "cells": {
+      "W_and_not_T40": 750,
+      "W_and_T40": 121,
+      "L_and_not_T40": 1,
+      "L_and_T40": 254
+    },
+    "cell_probs": {
+      "W_and_not_T40": 0.6660746003552398,
+      "W_and_T40": 0.10746003552397869,
+      "L_and_not_T40": 0.0008880994671403197,
+      "L_and_T40": 0.2255772646536412
+    },
+    "p": 0.7735346358792184,
+    "s_W": 0.8610792192881745,
+    "s_L": 0.00392156862745098,
+    "joint_win_survive": 0.6660746003552398,
+    "S": 0.6669626998223801,
+    "S_recon": 0.6669626998223801,
+    "dS_dp": 0.8571576506607236,
+    "P_W_given_not_T40": 0.9986684420772304,
+    "P_T40_given_L": 0.996078431372549
+  },
+  "historical_first80_pooled_six": {
+    "n": 1182,
+    "W": 991,
+    "L": 191,
+    "cells": {
+      "W_and_not_T40": 883,
+      "W_and_T40": 108,
+      "L_and_not_T40": 0,
+      "L_and_T40": 191
+    },
+    "cell_probs": {
+      "W_and_not_T40": 0.7470389170896785,
+      "W_and_T40": 0.09137055837563451,
+      "L_and_not_T40": 0.0,
+      "L_and_T40": 0.16159052453468697
+    },
+    "p": 0.8384094754653131,
+    "s_W": 0.8910191725529768,
+    "s_L": 0.0,
+    "joint_win_survive": 0.7470389170896785,
+    "S": 0.7470389170896785,
+    "S_recon": 0.7470389170896785,
+    "dS_dp": 0.8910191725529768,
+    "P_W_given_not_T40": 1.0,
+    "P_T40_given_L": 1.0
+  },
+  "slices_first75": [
+    {
+      "sport": "WNBA",
+      "slice": "2Q",
+      "n": 128,
+      "W": 105,
+      "win_no": 91,
+      "win_t40": 14,
+      "lose_no": 0,
+      "lose_t40": 23,
+      "wilson": "74.4782\u201387.7176",
+      "clopper_pearson": "74.2681\u201388.2551",
+      "two_sided_p_vs_75": 0.06665,
+      "ci_vs_75": "includes K",
+      "p80": 0.826772,
+      "s_W_80": 0.847619,
+      "joint80": 0.700787
+    },
+    {
+      "sport": "WNBA",
+      "slice": "3Q",
+      "n": 85,
+      "W": 70,
+      "win_no": 59,
+      "win_t40": 11,
+      "lose_no": 0,
+      "lose_t40": 15,
+      "wilson": "72.9042\u201389.0037",
+      "clopper_pearson": "72.5695\u201389.773",
+      "two_sided_p_vs_75": 0.1329,
+      "ci_vs_75": "includes K",
+      "p80": 0.840336,
+      "s_W_80": 0.94,
+      "joint80": 0.789916
+    },
+    {
+      "sport": "NBA",
+      "slice": "2Q",
+      "n": 318,
+      "W": 242,
+      "win_no": 208,
+      "win_t40": 34,
+      "lose_no": 1,
+      "lose_t40": 75,
+      "wilson": "71.1194\u201380.4588",
+      "clopper_pearson": "71.025\u201380.6827",
+      "two_sided_p_vs_75": 0.6977,
+      "ci_vs_75": "includes K",
+      "p80": 0.850318,
+      "s_W_80": 0.895131,
+      "joint80": 0.761146
+    },
+    {
+      "sport": "NBA",
+      "slice": "3Q",
+      "n": 258,
+      "W": 192,
+      "win_no": 167,
+      "win_t40": 25,
+      "lose_no": 0,
+      "lose_t40": 66,
+      "wilson": "68.7633\u201379.3574",
+      "clopper_pearson": "68.6384\u201379.6283",
+      "two_sided_p_vs_75": 0.8293,
+      "ci_vs_75": "includes K",
+      "p80": 0.82069,
+      "s_W_80": 0.886555,
+      "joint80": 0.727586
+    },
+    {
+      "sport": "NCAAB P5",
+      "slice": "1H second 10",
+      "n": 204,
+      "W": 152,
+      "win_no": 126,
+      "win_t40": 26,
+      "lose_no": 0,
+      "lose_t40": 52,
+      "wilson": "68.1146\u201379.999",
+      "clopper_pearson": "67.9537\u201380.3388",
+      "two_sided_p_vs_75": 0.8716,
+      "ci_vs_75": "includes K",
+      "p80": 0.84456,
+      "s_W_80": 0.871166,
+      "joint80": 0.735751
+    },
+    {
+      "sport": "NCAAB P5",
+      "slice": "2H first 10",
+      "n": 133,
+      "W": 110,
+      "win_no": 99,
+      "win_t40": 11,
+      "lose_no": 0,
+      "lose_t40": 23,
+      "wilson": "75.3858\u201388.1913",
+      "clopper_pearson": "75.1903\u201388.7103",
+      "two_sided_p_vs_75": 0.04463,
+      "ci_vs_75": "excludes K",
+      "p80": 0.848921,
+      "s_W_80": 0.915254,
+      "joint80": 0.776978
+    }
+  ],
+  "alpha": {
+    "K75": 0.75,
+    "K80": 0.8,
+    "alpha_75": 0.023534635879218446,
+    "wilson_p": "74.8181\u201379.7028",
+    "clopper_pearson_p": "74.7946\u201379.7685",
+    "wilson_includes_75": true,
+    "two_sided_p_vs_75": 0.06824,
+    "one_sided_greater_p_vs_75": 0.03571,
+    "one_sided_less_p_vs_75": 0.9695,
+    "s_L_wilson": "0.0693\u20132.1876",
+    "conclusion": "Observed +2.35 pp vs 75%, but Wilson includes 75%. Nonzero terminal residual is not established."
+  },
+  "sensitivity": {
+    "dS_dp": 0.8571576506607236,
+    "formula": "S(p) = s_L + p (s_W - s_L) holding path conditionals",
+    "grid": [
+      {
+        "p": 0.8,
+        "S": 0.6896476891560299,
+        "label": "80%"
+      },
+      {
+        "p": 0.773535,
+        "S": 0.6669630119312937,
+        "label": "77.35% (hist display)"
+      },
+      {
+        "p": 0.75,
+        "S": 0.6467898066229937,
+        "label": "75%"
+      },
+      {
+        "p": 0.73,
+        "S": 0.6296466536097791,
+        "label": "73%"
+      },
+      {
+        "p": 0.7,
+        "S": 0.6039319240899574,
+        "label": "70%"
+      }
+    ],
+    "not_a_forecast": true
+  },
+  "counterfactual_p_73": {
+    "p": 0.73,
+    "s_W": 0.8610792192881745,
+    "s_L": 0.00392156862745098,
+    "W_and_not_T40": 0.6285878300803674,
+    "W_and_T40": 0.10141216991963257,
+    "L_and_not_T40": 0.0010588235294117648,
+    "L_and_T40": 0.26894117647058824,
+    "S": 0.6296466536097791,
+    "note": "Holds s_W and s_L. Not a forecast."
+  },
+  "named_ev": {
+    "lebronner": {
+      "S": 0.6296466536097791,
+      "s_L": 0.0,
+      "win_cents": 20,
+      "stop_cents": -35,
+      "ev_cents": -0.36943405146215014,
+      "breakeven_S": 0.6363636363636364,
+      "formula": "EV = 20S + (-35)(1-S)",
+      "display_S": 0.6296,
+      "display_ev_cents": -0.3719999999999981,
+      "definition": "FIRST75 trigger, assumed fill/cost 80\u00a2 so survivor is +20\u00a2; user-stated stop \u221235\u00a2; s_L=0; S from p=0.73 held-path counterfactual.",
+      "not_true_80_to_40": true
+    },
+    "native_75_plus25_minus35_sl0": {
+      "S": 0.6296466536097791,
+      "s_L": 0.0,
+      "win_cents": 25,
+      "stop_cents": -35,
+      "ev_cents": 2.778799216586746,
+      "breakeven_S": 0.5833333333333334,
+      "formula": "EV = 25S + (-35)(1-S)"
+    },
+    "true_80_to_40_plus20_minus40_sl0": {
+      "S": 0.6296466536097791,
+      "s_L": 0.0,
+      "win_cents": 20,
+      "stop_cents": -40,
+      "ev_cents": -2.221200783413254,
+      "breakeven_S": 0.6666666666666666,
+      "formula": "EV = 20S + (-40)(1-S)"
+    },
+    "historical_S_sl0_native75": {
+      "S": 0.6669626998223801,
+      "s_L": 0.0,
+      "win_cents": 25,
+      "stop_cents": -35,
+      "ev_cents": 5.017761989342805,
+      "breakeven_S": 0.5833333333333334,
+      "formula": "EV = 25S + (-35)(1-S)"
+    },
+    "historical_S_sl0_lebronner": {
+      "S": 0.6669626998223801,
+      "s_L": 0.0,
+      "win_cents": 20,
+      "stop_cents": -35,
+      "ev_cents": 1.6829484902309062,
+      "breakeven_S": 0.6363636363636364,
+      "formula": "EV = 20S + (-35)(1-S)"
+    },
+    "historical_four_cell_native75": 4.928952042628776,
+    "cf73_four_cell_native75": 2.6729168636455736,
+    "historical_four_cell_lebronner": 1.5941385435168733,
+    "cf73_four_cell_lebronner": -0.4753164044033209,
+    "cf73_survivor_mix_native75": {
+      "S": 0.6296466536097791,
+      "P_W_given_not_T40": 0.9986684420772304,
+      "win_cents": 25,
+      "stop_cents": -35,
+      "lose_hold_cents": -75,
+      "ev_cents": 2.6949581175707973,
+      "note": "Holds S and historical survivor mix 750/751. Not a forecast."
+    }
+  },
+  "asof_fourcell": {
+    "token_first80": "NO_ASOF_LIFT",
+    "token_first75": "NO_ASOF_LIFT",
+    "features": [
+      "quarter_bin",
+      "score_abs_bin",
+      "lead_state",
+      "home"
+    ],
+    "first80_oos": {
+      "n": 243,
+      "logloss_model": 0.836,
+      "logloss_uncond": 0.74,
+      "delta": 0.096,
+      "delta_95": "+0.052 to +0.139"
+    },
+    "first75_oos": {
+      "n": 233,
+      "logloss_model": 0.978,
+      "logloss_uncond": 0.845,
+      "delta": 0.132,
+      "delta_95": "+0.086 to +0.178"
+    },
+    "report": "research/firstq_fourcell_asof_predictor/REPORT.md"
+  },
+  "program": {
+    "status": "SPEC_ONLY",
+    "implementation_authorized": false,
+    "live_authorized": false,
+    "objective": "Convert an uncertain, marginal unconditional edge into a conditional selection problem. Viability must not require terminal miscalibration.",
+    "pipeline": [
+      "historical universe",
+      "conditional state filters",
+      "better entry price",
+      "higher conditional survival probability",
+      "positive EV"
+    ],
+    "target_object": "P(not T40 | FIRST75, X_tau)",
+    "baseline": {
+      "p": 0.73,
+      "S_display": 0.6296,
+      "S_exact": 0.6296466536097791,
+      "lebronner_ev_cents": -0.3719999999999999,
+      "lebronner_breakeven_S": 0.6363636363636364,
+      "pp_to_breakeven": 0.6763636363636305
+    },
+    "mechanism_A_price": {
+      "entry_cents": 77,
+      "win_cents": 23,
+      "stop_cents": -37,
+      "breakeven_S": 0.6166666666666667,
+      "breakeven_pp_vs_lebronner": 1.9696969696969657,
+      "ev_at_display_S_cents": 0.7760000000000016,
+      "ev_at_exact_S_cents": 0.7787992165867479,
+      "note": "Mechanical price improvement only. Does not assume the 80\u219277 pullback improves S. Selection effect is Mechanism B."
+    },
+    "delta_S_targets": [
+      {
+        "delta_S_pp": 1,
+        "S": 0.6396000000000001,
+        "ev_cents": 0.17800000000000438,
+        "note": "Lebronner +20/\u221235, s_L=0, display baseline + k pp. Not measured."
+      },
+      {
+        "delta_S_pp": 2,
+        "S": 0.6496000000000001,
+        "ev_cents": 0.7280000000000033,
+        "note": "Lebronner +20/\u221235, s_L=0, display baseline + k pp. Not measured."
+      },
+      {
+        "delta_S_pp": 3,
+        "S": 0.6596000000000001,
+        "ev_cents": 1.278000000000004,
+        "note": "Lebronner +20/\u221235, s_L=0, display baseline + k pp. Not measured."
+      }
+    ],
+    "iti": {
+      "name": "Ian Tali Index",
+      "form": "w1 R + w2 Delta + w3 beta + w4 sigma + w5 M",
+      "weights_pnl_optimized": false,
+      "protocol": [
+        "economically motivated feature definitions",
+        "coarse pre-specified buckets",
+        "training-only calibration",
+        "locked thresholds",
+        "untouched OOS evaluation"
+      ],
+      "research_object": "P(not T40 | FIRST75, ITI in A)"
+    },
+    "layers": [
+      "Layer 0 conservative baseline p=73%",
+      "Layer 1 path phenomenon P(not T40 | FIRST75)",
+      "Layer 2 conditional state selection X_tau",
+      "Layer 3 price optimization Ke=77 only if still qualified",
+      "Layer 4 execution model (fees, spread, fill, queue, adverse selection)",
+      "Layer 5 terminal upside treated as additional uncertainty, not a requirement"
+    ],
+    "not_the_failed_scoreboard_asof": true,
+    "central_experiment": "Can delta, beta, volatility, reversion, and ITI produce a 1\u20133 pp OOS improvement in S that survives multiple testing and realistic execution assumptions?"
+  }
+}

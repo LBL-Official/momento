@@ -1,0 +1,26 @@
+{
+  "marked": {
+    "max_drawdown_fraction": 0.04061238723545346,
+    "peak_index": 14033,
+    "trough_index": 14223,
+    "peak_equity_cents": 2099064,
+    "trough_equity_cents": 2013816,
+    "minutes_with_mark": 24480,
+    "minutes_missing": 0,
+    "grid": "ONE_MINUTE",
+    "with_initial_equity": {
+      "max_drawdown_fraction": 0.04061238723545346,
+      "peak_index": 14034,
+      "trough_index": 14224,
+      "peak_equity_cents": 2099064,
+      "trough_equity_cents": 2013816
+    }
+  },
+  "realized_event_equity": {
+    "max_drawdown_fraction": 0.04408460032333916,
+    "peak_index": 38,
+    "trough_index": 54,
+    "peak_equity_cents": 2074602,
+    "trough_equity_cents": 1983144
+  }
+}

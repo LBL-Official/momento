@@ -1,0 +1,44 @@
+{
+  "catalog_s": 2.086519,
+  "label": "baseline",
+  "peak_rss_mb": 4210.39,
+  "queries": [
+    {
+      "classification_counts": {
+        "HELD_TO_SETTLEMENT": 13,
+        "LOSS": 846,
+        "SAME_BAR_TIE": 3,
+        "WIN": 1046
+      },
+      "compile_s": 0.000167,
+      "context_s": 91.680211,
+      "context_status": "READY",
+      "difference_count": 0,
+      "execution_s": 583.857976,
+      "loaded_games": 1362,
+      "loaded_observations": 6165183,
+      "loaded_pbp": 0,
+      "month_files": [
+        "month=2025-10.parquet",
+        "month=2025-11.parquet",
+        "month=2025-12.parquet",
+        "month=2026-01.parquet",
+        "month=2026-02.parquet",
+        "month=2026-03.parquet",
+        "month=2026-04.parquet",
+        "month=2026-05.parquet",
+        "month=2026-06.parquet"
+      ],
+      "optimized_s": 41.160462,
+      "parquet_files_opened": 13,
+      "peak_rss_mb": 4210.39,
+      "plan_hash": "854de7c3d9f9c6f32dcfaeef79ead71d96fafb1d43aa72b35c4589526ffaca5c",
+      "plan_status": "READY",
+      "population": 1908,
+      "query": "A_season",
+      "reference_s": 542.697514,
+      "result_hash": "bcfe1a20f9b2ee599a89cbcf6e28bcb8832f9e9c8899fa6287904263c5f6d87a"
+    }
+  ],
+  "warehouse_version": "2026-09-13T06:28:48Z"
+}

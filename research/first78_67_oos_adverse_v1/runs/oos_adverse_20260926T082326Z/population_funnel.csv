@@ -1,0 +1,3 @@
+test_id,coverage_status,candidates,exclusions,sport_status
+OCT_2025,COMPLETE_FOR_NORMALIZED_WAREHOUSE,41,56,"{""NBA"": ""HAS_CANDIDATES"", ""NBA_events_in_window"": 97, ""NCAAB"": ""NO_ELIGIBLE_GAMES"", ""NCAAB_events_in_window"": 0}"
+APR_2025,PARTIAL_RAW_TICKER_SUBSET,6,85,"{""NBA"": ""HAS_CANDIDATES"", ""NBA_events_in_window"": 44, ""NCAAB"": ""COVERAGE_UNKNOWN"", ""NCAAB_markets_in_window"": 0}"

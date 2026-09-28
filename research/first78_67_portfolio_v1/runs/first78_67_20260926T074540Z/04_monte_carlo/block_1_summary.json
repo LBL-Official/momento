@@ -1,0 +1,9 @@
+{
+  "block_days": 1,
+  "paths_run": 1500,
+  "seed": 11,
+  "p50": 25222561,
+  "p05": 15296597,
+  "p95": 40548863,
+  "label": "SENSITIVITY_NOT_THE_PRIMARY_7_DAY_BLOCK"
+}

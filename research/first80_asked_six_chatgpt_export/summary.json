@@ -1,0 +1,41 @@
+{
+  "written_utc": "2026-09-10T06:26:38.700303+00:00",
+  "research_only": true,
+  "live_execution": false,
+  "candle_path_not_fill": true,
+  "n": 1182,
+  "by_sport": {
+    "WNBA": 246,
+    "NBA": 604,
+    "NCAAB": 332
+  },
+  "by_slice": {
+    "WNBA:Q3": 119,
+    "WNBA:Q2": 127,
+    "NBA:Q2": 314,
+    "NBA:Q3": 290,
+    "NCAAB:H2_1": 139,
+    "NCAAB:H1_2": 193
+  },
+  "by_exit_kind": {
+    "T40_CLOSE": 299,
+    "SETTLEMENT_YES": 883
+  },
+  "headline": "win_80_40_not_terminal_W",
+  "n_win_80_40": 883,
+  "n_stopped_40": 299,
+  "pct_win_80_40": 74.7039,
+  "n_W": 991,
+  "n_T40": 299,
+  "n_held_to_expiration": 883,
+  "n_loss_hold": 0,
+  "possession": "UNAVAILABLE",
+  "fouls_timeouts": "UNAVAILABLE",
+  "market_trades": "UNAVAILABLE",
+  "expected": {
+    "NBA": 604,
+    "WNBA": 246,
+    "NCAAB": 332
+  },
+  "csv": "first80_asked_six.csv"
+}

@@ -1,0 +1,2 @@
+period,n,gross_pnl_cents,fees_cents,net_pnl_cents,book,test_id,population_id,run_id,scenario_id,sport
+0,6,0,5156,-5156,ONE_20000_BOOK_ATTRIBUTION,APR_2025,PRIMARY_EX_ANTE_FIRST78,oos_adverse_20260926T082326Z,REF,Universe

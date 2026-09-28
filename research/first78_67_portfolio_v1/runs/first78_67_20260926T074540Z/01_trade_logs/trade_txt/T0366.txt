@@ -1,0 +1,10 @@
+trade T0366  NBA  New Orleans at Charlotte
+contract KXNBAGAME-26FEB02NOPCHA-NOP  slice Q2
+signal 2026-02-02T13:01:00-08:00 PST  exit 2026-02-02T13:05:00-08:00 PST
+assumed entry 78c  observed close 81c  overshoot 3c
+contracts 6429  principal_cents 501462
+entry_fee_cents 1931  exit_fee_cents 2488
+exit STOP at 67c  terminal no
+gross_cents -70719  net_cents -75138
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

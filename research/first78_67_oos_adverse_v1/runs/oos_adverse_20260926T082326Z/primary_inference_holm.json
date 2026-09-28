@@ -1,0 +1,49 @@
+{
+  "family": [
+    {
+      "test_id": "OCT_2025",
+      "scenario_id": "REF",
+      "mean_net_cents_per_contract": 5.412906501914133,
+      "p_status": "ESTIMATED",
+      "p_value": 0.0384807596201899,
+      "n_days": 13
+    },
+    {
+      "test_id": "OCT_2025",
+      "scenario_id": "JOINT_2_FEE_007",
+      "mean_net_cents_per_contract": 1.0296095970435386,
+      "p_status": "ESTIMATED",
+      "p_value": 0.3538230884557721,
+      "n_days": 13
+    },
+    {
+      "test_id": "APR_2025",
+      "scenario_id": "REF",
+      "mean_net_cents_per_contract": -0.5587342869527525,
+      "p_status": "P_VALUE_NOT_ESTIMABLE",
+      "p_value": null,
+      "n_days": 4
+    },
+    {
+      "test_id": "APR_2025",
+      "scenario_id": "JOINT_2_FEE_007",
+      "mean_net_cents_per_contract": -5.5151111111111115,
+      "p_status": "P_VALUE_NOT_ESTIMABLE",
+      "p_value": null,
+      "n_days": 4
+    }
+  ],
+  "holm": [
+    {
+      "endpoint": "OCT_2025:REF",
+      "raw_p": 0.0384807596201899,
+      "holm_p": 0.0769615192403798
+    },
+    {
+      "endpoint": "OCT_2025:JOINT_2_FEE_007",
+      "raw_p": 0.3538230884557721,
+      "holm_p": 0.3538230884557721
+    }
+  ],
+  "note": "Holm uses only numeric primary p-values"
+}

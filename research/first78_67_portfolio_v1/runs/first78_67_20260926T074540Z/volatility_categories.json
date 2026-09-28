@@ -1,0 +1,26 @@
+{
+  "version": "1",
+  "name": "exit_bid_close_change_stdev_pp",
+  "source": "one-minute yes_bid_close",
+  "lookback_changes": 5,
+  "closes_required": 6,
+  "ddof": 1,
+  "units": "percentage points of the contract price; 1 cent = 1 percentage point",
+  "missing_minute_rule": "any gap other than 60 seconds yields null, not category 1",
+  "settlement_rule": "use the last valid pre-resolution bid closes; do not include a 0 or 100 settlement jump",
+  "bins": {
+    "1": "[0, 0.5)",
+    "2": "[0.5, 1)",
+    "3": "[1, 2)",
+    "4": "[2, 3)",
+    "5": "[3, 5)",
+    "6": "[5, 8)",
+    "7": "[8, infinity)"
+  },
+  "entry_regime": {
+    "LOW": "same statistic at entry, stdev < 2",
+    "HIGH": "stdev >= 2",
+    "UNKNOWN": "insufficient consecutive minutes"
+  },
+  "role": "descriptive bins, not a predictor and not an entry filter"
+}

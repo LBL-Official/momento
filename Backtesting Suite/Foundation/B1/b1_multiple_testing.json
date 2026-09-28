@@ -1,0 +1,7 @@
+{
+  "candidates_with_pvalue": 2940,
+  "discoveries_q10": 327,
+  "method": "Benjamini-Hochberg",
+  "note": "p = one-sided normal approx P(mean game PnL <= 0) on TRAIN",
+  "q": 0.1
+}

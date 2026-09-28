@@ -1,0 +1,37 @@
+{
+  "NCAAB": {
+    "2025-2026": {
+      "p5_conference_ids": ["ACC", "B1G", "BIG12", "SEC", "PAC12"],
+      "teams": {
+        "BC": "ACC", "CAL": "ACC", "CLEM": "ACC", "DUKE": "ACC", "FSU": "ACC",
+        "GT": "ACC", "LOU": "ACC", "MIA": "ACC", "NCST": "ACC", "ND": "ACC",
+        "PITT": "ACC", "SMU": "ACC", "STAN": "ACC", "SYR": "ACC", "UNC": "ACC",
+        "UVA": "ACC", "VT": "ACC", "WAKE": "ACC",
+        "ILL": "B1G", "IND": "B1G", "IOWA": "B1G", "MD": "B1G", "MICH": "B1G",
+        "MINN": "B1G", "MSU": "B1G", "NEB": "B1G", "NW": "B1G", "OSU": "B1G",
+        "ORE": "B1G", "PSU": "B1G", "PUR": "B1G", "RUTG": "B1G", "UCLA": "B1G",
+        "USC": "B1G", "WASH": "B1G", "WIS": "B1G",
+        "ARIZ": "BIG12", "ASU": "BIG12", "BAY": "BIG12", "BYU": "BIG12",
+        "CIN": "BIG12", "COLO": "BIG12", "HOU": "BIG12", "ISU": "BIG12",
+        "KSU": "BIG12", "KU": "BIG12", "OKST": "BIG12", "TCU": "BIG12",
+        "TTU": "BIG12", "UCF": "BIG12", "UTAH": "BIG12", "WVU": "BIG12",
+        "ALA": "SEC", "ARK": "SEC", "AUB": "SEC", "FLA": "SEC", "UGA": "SEC",
+        "UK": "SEC", "LSU": "SEC", "MISS": "SEC", "MSST": "SEC", "MIZZ": "SEC",
+        "SCAR": "SEC", "TENN": "SEC", "TEX": "SEC", "OKLA": "SEC", "TXAM": "SEC",
+        "VAN": "SEC",
+        "ORST": "PAC12", "WSU": "PAC12"
+      },
+      "aliases": {
+        "SC": "SCAR",
+        "OU": "OKLA",
+        "TA&M": "TXAM",
+        "TAMU": "TXAM",
+        "MIZ": "MIZZ",
+        "MICHST": "MSU",
+        "NCSU": "NCST",
+        "UCONN": "CONN",
+        "UCONN HUSKIES": "CONN"
+      }
+    }
+  }
+}

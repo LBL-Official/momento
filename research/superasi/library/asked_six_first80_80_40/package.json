@@ -1,0 +1,93 @@
+{
+  "schema_version": "superasi_package_v1",
+  "package_id": "asked_six_first80_80_40",
+  "imported_at": "2026-09-11T17:40:41Z",
+  "source": "seed_asked_six",
+  "research_spec": {},
+  "research_object_id": "FIRST80_ASKED_SIX_80_40",
+  "name": null,
+  "compile_fingerprint": null,
+  "spec_fingerprint": null,
+  "question_hash": null,
+  "hashes": {},
+  "dataset_version": null,
+  "trade_origin": null,
+  "definition_versions": {},
+  "dataset_versions": {},
+  "code_version": "superasi_v1.0.0",
+  "semantics_version": "1.0.0",
+  "caveats": [
+    "LIVE EXECUTION = FALSE",
+    "CANDLE PATH \u2260 ACTUAL FILL",
+    "LEDGER PRICE \u2260 PROVEN FILL",
+    "FEE MODEL = ESTIMATED",
+    "MEASUREMENT \u2260 EDGE",
+    "DECOMPOSITION \u2260 SIGNAL",
+    "S \u2260 terminal p",
+    "path loss \u2260 terminal loss"
+  ],
+  "population_n": 1182,
+  "price_basis": "YES_BID_CLOSE",
+  "live_execution": false,
+  "analysis_gross_pre_superasi": null,
+  "client_provenance": null,
+  "checksums": {
+    "trades": "0a9ed2947758387aa90381d7bf8b221c8e1acec1e925d893ea74d177a82b3c1e",
+    "package_identity": "94c4982434cb4bc228fb99e6d3b15c5b1b7432bb531cf0047fca9d6cdba4ebeb",
+    "path_windows": "8d0c82185ec7d7692bc0256befc0aab51ab91a292d1b71537d56ad9f0112e2b7",
+    "decomp": "7e7330c0cfa56d6cd2ab68c1bac48a35f74343b359924f66c3083a2ccf30d2bd"
+  },
+  "empirical_four_cell": {
+    "n": 1182,
+    "cells": {
+      "W_and_not_T40": 883,
+      "W_and_T40": 108,
+      "L_and_not_T40": 0,
+      "L_and_T40": 191
+    },
+    "p": {
+      "numer": 991,
+      "denom": 1182,
+      "status": "OBSERVED"
+    },
+    "alpha": {
+      "numer": 227,
+      "denom": 5910,
+      "status": "DERIVED",
+      "K": {
+        "numer": 4,
+        "denom": 5
+      }
+    },
+    "s_W": {
+      "numer": 883,
+      "denom": 991,
+      "status": "OBSERVED"
+    },
+    "s_L": {
+      "numer": 0,
+      "denom": 1,
+      "status": "OBSERVED"
+    },
+    "S": {
+      "numer": 883,
+      "denom": 1182,
+      "status": "OBSERVED"
+    },
+    "note": "S is the SuperASI production-rule WR. Do not conflate S with terminal p.",
+    "status": "OBSERVED"
+  },
+  "seed_locks": {
+    "N": 1182,
+    "four_cell": [
+      883,
+      108,
+      0,
+      191
+    ],
+    "S": "883/1182",
+    "ledger_EV": "5700/1182",
+    "t40_close_EV": "4058/1182",
+    "planning_L": "14705/299"
+  }
+}

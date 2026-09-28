@@ -1,0 +1,10 @@
+trade T0269  NBA  Boston at Miami
+contract KXNBAGAME-26JAN15BOSMIA-MIA  slice Q3
+signal 2026-01-15T18:10:00-08:00 PST  exit 2026-01-15T18:31:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 4217  principal_cents 328926
+entry_fee_cents 1267  exit_fee_cents 1632
+exit STOP at 67c  terminal no
+gross_cents -46387  net_cents -49286
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

@@ -1,0 +1,68 @@
+---
+description: Vital — execution control plane. Canonical owner of MLB 001.
+alwaysApply: true
+---
+
+# Vital
+
+Vital owns algorithmic execution. ROLLER and SuperASI stay research.
+Jump frontend is the Data Modeling Drive (`?app=jump`). It does not
+open Vital or manage bots. Jump Python bot modules remain imported by
+Vital until that backend is migrated. Spec: `research/vital/RECON.md`
+and `research/vital/OWNERSHIP.md`.
+
+```text
+ROLLER = measure
+SUPERASI = A Base → B Debase → Final → ITI
+VITAL = execution infrastructure
+JUMP = DATA MODELING DRIVE
+```
+
+Dashboard: `frontend/vital-terminal` on `:5180`.
+ROLLER / SuperASI / Jump stay in `frontend/roller-terminal` on `:5179`.
+Do not remount Vital inside Jump or the research app.
+
+Phases 2–9 + S are implemented in repo. The live-service integration
+proof is `research/vital/LIVE_SERVICE_INTEGRATION.md`. L1–L8 stay
+independent. `RUNNING ≠ HEALTHY ≠ EXECUTING`. Do not stop
+`momento-live.service` to prove control — demo units only. Do not
+place a production test order.
+Production systemd writes stay fail-closed (`VITAL_AWS_CONTROL` unset).
+Do not SSM start/stop/restart/kill `momento-live.service` unless the
+operator explicitly enables control.
+
+## Ownership
+
+- MLB 001 is the first Vital bot (`mlb-001`, alias `mlb-bot-one`).
+- Execution stays `apps/trading-engine` + Risk + `strategies/mlb`.
+- Jump-AE is that path. Do not build a second engine or second Risk.
+- Do not move `apps/trading-engine` or `strategies/mlb`.
+- Do not change live FIRST01 / 80/81/83/89.
+- Vital owns the MLB 001 execution ledger
+  (`research/vital/bots/mlb-001/execution/`). It observes fills and
+  reconstructs trades. It does not submit, invent fills, or become a
+  second OMS. Recon: `research/vital/EXECUTION_LEDGER_RECON.md`.
+
+## State
+
+Desired ≠ observed ≠ confirmed.
+
+HTTP 200 from a control API is not `RUNNING`. Unread host is
+`OBSERVATION_UNAVAILABLE`, not `$0` and not invented `RUNNING`.
+Live EV and Sharpe stay `UNAVAILABLE`.
+Unread execution history is `OBSERVATION_UNAVAILABLE`, not empty
+history and not `$0`.
+
+## ITI
+
+ITI belongs at the end of SuperASI (after Final Results). It is not a
+live Kalshi signal. Do not convert `{name}_ITI` into 80/81.
+
+## Absolute
+
+- Browser is not the engine. Browser never submits orders.
+- `POST /start` never equals `ENABLE_LIVE_TRADING`.
+- Kill = existing host `KILL`. Do not flatten.
+- No demo cents added to live cents.
+- Secrets never in frontend, `bot.json`, logs, or API bodies.
+- Do not start W9 or warehouse Phase 21.

@@ -1,0 +1,88 @@
+{
+  "schema_version": "season_strategy_v1",
+  "strategy_id": "FIRST78_67",
+  "display_name": "FIRST78→67",
+  "designation": "OFFICIAL_UPCOMING_SEASON_STRATEGY",
+  "season_id": "2026-27",
+  "window": {
+    "start_local_inclusive": "2026-11-01",
+    "end_local_inclusive": "2027-04-01",
+    "zone": "America/Los_Angeles"
+  },
+  "states": {
+    "official_strategy": "FIRST78_67",
+    "historical_research_book": "nba_2q_regular_8040_1lot_2026_27",
+    "validation": "NOT_YET_IDENTIFIABLE",
+    "live_execution": false
+  },
+  "labels": {
+    "official": "Official upcoming-season strategy: FIRST78→67",
+    "live_execution": "Live execution: disabled",
+    "validation": "Validation: NOT_YET_IDENTIFIABLE"
+  },
+  "live_execution": false,
+  "submits": false,
+  "candle_path_is_not_a_fill": true,
+  "signal_thresholds_are_not_fill_prices": true,
+  "sports": ["NBA", "NCAAB"],
+  "slices": {
+    "NBA": ["Q2", "Q3"],
+    "NCAAB": ["H1_2", "H2_1"]
+  },
+  "ncaab_boundary": "H1 remaining <= 600 is H1_2. H2 remaining > 600 is H2_1. H2 remaining == 600 is H2_2 and is outside this strategy.",
+  "entry": {
+    "rule": "First qualifying minute-close up-cross from below 78 cents to at least 78 cents.",
+    "trigger_cents": 78,
+    "unproven_first": "A first valid close already at or above 78 cents, with no earlier valid close below 78 cents, is not a qualifying entry."
+  },
+  "stop": {
+    "rule": "A strictly later qualifying minute close at or below 67 cents.",
+    "trigger_cents": 67,
+    "intrabar_low": "A low at or below 67 cents inside the entry bar is INTRABAR_AMBIGUITY. It is not the stop."
+  },
+  "otherwise": "Hold to settlement.",
+  "bankroll": {
+    "reference_cents": 2000000,
+    "reference_usd": "20000.00"
+  },
+  "allocation": {
+    "principal_bps": 600,
+    "fees": "extra",
+    "shared_position_slots": 7,
+    "resize": "After every tenth fully completed trade. Open quantities do not resize.",
+    "event_order": ["exit", "cash", "entry"],
+    "tie_break": ["timestamp", "event_priority", "game_id", "contract_id", "stable_event_id"],
+    "selection": "CONTRACT_WISE_FIRST"
+  },
+  "unresolved_execution": {
+    "order_type": "UNRESOLVED",
+    "latency": "UNRESOLVED",
+    "partial_fills": "UNSUPPORTED",
+    "fee_applicability": "FEE_APPLICABILITY_UNVERIFIED",
+    "fills_at_signal_thresholds": "NOT_PROMISED"
+  },
+  "validation": {
+    "status": "NOT_YET_IDENTIFIABLE",
+    "source": "research/first78_67_audit_repair_v2/runs/audit_repair_20260926T090447Z/launch_readiness.md",
+    "limitations": [
+      "Launch assessment remains NOT_YET_IDENTIFIABLE. This designation does not approve a launch.",
+      "The repaired headline book is LEGACY_FIRST80_CONDITIONED_936. It is not a prospective FIRST78 universe.",
+      "October 2025 is previously examined retrospective validation. The repaired close-proxy mean stayed positive. That is not a 5% rejection.",
+      "April 2025 is a partial raw ticker subset. The available six-contract mean is at or below zero, and the p-value is not estimable.",
+      "Candle path is not a fill. Order type, latency, and partial-fill handling stay unresolved. Fee applicability is unverified."
+    ]
+  },
+  "historical_research_book": {
+    "role": "HISTORICAL_REGISTERED_RESEARCH_BASELINE",
+    "book_id": "nba_2q_regular_8040_1lot_2026_27",
+    "path": "research/choosin_texas/library/nba_2q_regular_8040_1lot_2026_27/book.json",
+    "note": "Preserved unchanged. Its registration metadata stays the historical 80/40 research registration. It is not this season selector."
+  },
+  "protected_not_edited": [
+    "ROLLER/roller/research/first80.py",
+    "research/choosin_texas/library/nba_2q_regular_8040_1lot_2026_27/book.json",
+    "research/first78_67_portfolio_v1/runs/first78_67_20260926T074540Z/",
+    "research/first78_67_oos_adverse_v1/runs/oos_adverse_20260926T082326Z/",
+    "research/first78_67_audit_repair_v2/runs/audit_repair_20260926T090447Z/"
+  ]
+}

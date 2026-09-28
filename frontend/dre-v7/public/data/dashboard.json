@@ -1,0 +1,1340 @@
+{
+  "program": "MOMENTO_DYNAMIC_RISK_ENGINE_V7",
+  "banner": "RESEARCH ONLY \u2014 \u0394\u03b1_state \u2260 EDGE \u2014 CONDITIONAL INFORMATION \u2260 EXECUTION \u2014 REPEATED POSSESSIONS \u2260 INDEPENDENT OUTCOMES \u2014 LIVE DEPLOYMENT: NOT AUTHORIZED",
+  "schema_version": "1.0.0",
+  "research_date": "2026-09-03",
+  "created_utc": "2026-09-03T23:04:56.686566+00:00",
+  "central_question": "Does the V6 disagreement structure survive when viewed through unique-trade support rather than possession occupancy?",
+  "prominent": "An observed state is not necessarily a well-supported state; a well-populated state is not necessarily independently supported; and an exactly scored state is not necessarily supported by a robust empirical distribution.",
+  "support_not_independence": "UNIQUE_TRADE_SUPPORT \u2260 STATISTICAL_INDEPENDENCE. N_EFF_TRADE = OCCUPANCY CONCENTRATION MEASURE \u2260 INDEPENDENT SAMPLE SIZE.",
+  "r_bar_formula": "r_bar_i = Pi_i - mean_t alpha_M0_it, where mean_t alpha_M0_it = (1/T_i) sum_t alpha_M0_it. One residual per trade. Repeated possessions are not independent terminals.",
+  "synthesis": {
+    "token": "MIXED_EVIDENCE",
+    "flags": {
+      "S1": true,
+      "S2": false,
+      "S3": false,
+      "S4": true,
+      "S5": true
+    },
+    "inputs": {
+      "spearman_abs_da_vs_support_TRAIN": -0.5204500028921779,
+      "spearman_abs_da_vs_support_OOS": -0.46031802190778587,
+      "oos_extreme5_median_train_trades": 31.0,
+      "oos_baseline_median_train_trades": 146.0,
+      "oos_extreme5_median_rows_per_trade": 4.119047619047619,
+      "oos_extreme5_median_n_eff": 18.93223010244287,
+      "rare_row_share_train": 0.022292714558614767,
+      "rare_row_share_oos": 0.025076673281616453,
+      "tv_train_oos": 0.14756008872029264,
+      "spearman_r_high_support_oos": 0.18628873900793988,
+      "spearman_r_low_support_oos": -0.08870967741935484,
+      "spearman_r_overall_train": 0.4528737270929536,
+      "spearman_r_overall_oos": 0.04114059268848067,
+      "exposure_spearman_oos": -0.29740085190487975,
+      "exposure_spearman_train": -0.4004368841195028
+    },
+    "questions": {
+      "Q1": "Are large SIR values disproportionately associated with low unique-trade TRAIN support?",
+      "Q2": "Does raw possession-row support overstate unique-trade support?",
+      "Q3": "Did VAL/OOS encounter more rare or weakly supported cells?",
+      "Q4": "Is temporal stability stronger for well-supported cells?",
+      "Q5": "Does support plausibly relate to TRAIN\u2192VAL\u2192OOS degradation?",
+      "Q6": "If not, what architectural uncertainty remains?"
+    },
+    "answers_are_structural_only": true,
+    "not": [
+      "edge",
+      "M1 is wrong",
+      "exploitable signal",
+      "tradable strategy",
+      "V7-A/B/C/D"
+    ],
+    "prominent": "An observed state is not necessarily a well-supported state; a well-populated state is not necessarily independently supported; and an exactly scored state is not necessarily supported by a robust empirical distribution.",
+    "support_not_independence": "UNIQUE_TRADE_SUPPORT \u2260 STATISTICAL_INDEPENDENCE. N_EFF_TRADE = OCCUPANCY CONCENTRATION MEASURE \u2260 INDEPENDENT SAMPLE SIZE.",
+    "note": "Descriptive synthesis. Do not force sparsity to be the explanation.",
+    "live_deployment": "NOT AUTHORIZED"
+  },
+  "gates": {
+    "A": {
+      "status": "PASS"
+    },
+    "B": {
+      "status": "PASS"
+    },
+    "C": {
+      "status": "PASS"
+    },
+    "D": {
+      "status": "PASS"
+    },
+    "E": {
+      "status": "PASS"
+    },
+    "F": {
+      "status": "PASS"
+    },
+    "G": {
+      "status": "PASS"
+    },
+    "H": {
+      "status": "PASS"
+    },
+    "I": {
+      "status": "PASS"
+    },
+    "J": {
+      "status": "PASS"
+    }
+  },
+  "counts": {
+    "rows": 139966,
+    "trades": 1221,
+    "by_split": {
+      "TRAIN": {
+        "rows": 57059,
+        "trades": 503,
+        "games": 503
+      },
+      "VALIDATION": {
+        "rows": 55192,
+        "trades": 481,
+        "games": 481
+      },
+      "OOS": {
+        "rows": 27715,
+        "trades": 237,
+        "games": 237
+      }
+    }
+  },
+  "cell_stratum_occupancy": {
+    "0": {
+      "n_cells": 0,
+      "row_count_train": 0,
+      "label": "CELL_GEOMETRY_DIAGNOSTIC"
+    },
+    "1": {
+      "n_cells": 130,
+      "row_count_train": 406,
+      "label": "CELL_GEOMETRY_DIAGNOSTIC"
+    },
+    "2-4": {
+      "n_cells": 110,
+      "row_count_train": 866,
+      "label": "CELL_GEOMETRY_DIAGNOSTIC"
+    },
+    "5-9": {
+      "n_cells": 107,
+      "row_count_train": 1825,
+      "label": "CELL_GEOMETRY_DIAGNOSTIC"
+    },
+    "10-19": {
+      "n_cells": 90,
+      "row_count_train": 4024,
+      "label": "CELL_GEOMETRY_DIAGNOSTIC"
+    },
+    "20-49": {
+      "n_cells": 87,
+      "row_count_train": 9915,
+      "label": "CELL_GEOMETRY_DIAGNOSTIC"
+    },
+    "50+": {
+      "n_cells": 60,
+      "row_count_train": 40023,
+      "label": "CELL_GEOMETRY_DIAGNOSTIC"
+    },
+    "note": "TRAIN occupancy of locked strata. Empty strata kept. Do not merge.",
+    "prominent": "An observed state is not necessarily a well-supported state; a well-populated state is not necessarily independently supported; and an exactly scored state is not necessarily supported by a robust empirical distribution."
+  },
+  "support_preview": {
+    "0": {
+      "n_cells": 0,
+      "row_count_train": 0,
+      "unique_trade_count_sum": 0,
+      "median_unique_trade_count": null,
+      "median_N_EFF_TRADE": null,
+      "EXACT_CELL_EXISTS": null,
+      "label": "CELL_GEOMETRY_DIAGNOSTIC"
+    },
+    "1": {
+      "n_cells": 130,
+      "row_count_train": 406,
+      "unique_trade_count_sum": 130,
+      "median_unique_trade_count": 1.0,
+      "median_N_EFF_TRADE": 1.0,
+      "EXACT_CELL_EXISTS": true,
+      "label": "CELL_GEOMETRY_DIAGNOSTIC"
+    },
+    "2-4": {
+      "n_cells": 110,
+      "row_count_train": 866,
+      "unique_trade_count_sum": 316,
+      "median_unique_trade_count": 3.0,
+      "median_N_EFF_TRADE": 2.2857142857142856,
+      "EXACT_CELL_EXISTS": true,
+      "label": "CELL_GEOMETRY_DIAGNOSTIC"
+    },
+    "5-9": {
+      "n_cells": 107,
+      "row_count_train": 1825,
+      "unique_trade_count_sum": 739,
+      "median_unique_trade_count": 7.0,
+      "median_N_EFF_TRADE": 5.142857142857143,
+      "EXACT_CELL_EXISTS": true,
+      "label": "CELL_GEOMETRY_DIAGNOSTIC"
+    },
+    "10-19": {
+      "n_cells": 90,
+      "row_count_train": 4024,
+      "unique_trade_count_sum": 1272,
+      "median_unique_trade_count": 14.0,
+      "median_N_EFF_TRADE": 10.10382513661202,
+      "EXACT_CELL_EXISTS": true,
+      "label": "CELL_GEOMETRY_DIAGNOSTIC"
+    },
+    "20-49": {
+      "n_cells": 87,
+      "row_count_train": 9915,
+      "unique_trade_count_sum": 2695,
+      "median_unique_trade_count": 29.0,
+      "median_N_EFF_TRADE": 19.615160349854225,
+      "EXACT_CELL_EXISTS": true,
+      "label": "CELL_GEOMETRY_DIAGNOSTIC"
+    },
+    "50+": {
+      "n_cells": 60,
+      "row_count_train": 40023,
+      "unique_trade_count_sum": 5813,
+      "median_unique_trade_count": 80.0,
+      "median_N_EFF_TRADE": 51.32012432012433,
+      "EXACT_CELL_EXISTS": true,
+      "label": "CELL_GEOMETRY_DIAGNOSTIC"
+    }
+  },
+  "rel_a": {
+    "object": "Relationship A \u2014 |da_state| versus TRAIN unique-trade support",
+    "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC",
+    "by_split": {
+      "TRAIN": {
+        "overall": {
+          "n": 57059,
+          "mean_abs_da": 4.927523850902814,
+          "median_abs_da": 3.069053708439899,
+          "P_abs_ge": {
+            "1": 0.8090222401374016,
+            "2": 0.6211114810985121,
+            "5": 0.2700362782383147,
+            "10": 0.11307593894039503
+          },
+          "spearman_abs_da_vs_unique_trades": -0.5204500028921779,
+          "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC"
+        },
+        "by_stratum": {
+          "0": {
+            "n": 0,
+            "n_trades": 0,
+            "n_games": 0,
+            "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC"
+          },
+          "1": {
+            "n": 406,
+            "mean_abs_da": 62.893045921916375,
+            "median_abs_da": 71.23287671232876,
+            "P_abs_ge": {
+              "1": 1.0,
+              "2": 1.0,
+              "5": 0.9950738916256158,
+              "10": 0.9753694581280788
+            },
+            "n_trades": 65,
+            "n_games": 65,
+            "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC"
+          },
+          "2-4": {
+            "n": 866,
+            "mean_abs_da": 24.192254927553368,
+            "median_abs_da": 18.333333333333336,
+            "P_abs_ge": {
+              "1": 0.9884526558891455,
+              "2": 0.9757505773672055,
+              "5": 0.7644341801385681,
+              "10": 0.6709006928406467
+            },
+            "n_trades": 148,
+            "n_games": 148,
+            "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC"
+          },
+          "5-9": {
+            "n": 1825,
+            "mean_abs_da": 13.69710878818464,
+            "median_abs_da": 10.169491525423723,
+            "P_abs_ge": {
+              "1": 0.949041095890411,
+              "2": 0.949041095890411,
+              "5": 0.7863013698630137,
+              "10": 0.5326027397260275
+            },
+            "n_trades": 252,
+            "n_games": 252,
+            "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC"
+          },
+          "10-19": {
+            "n": 4024,
+            "mean_abs_da": 9.632529200151032,
+            "median_abs_da": 8.641975308641975,
+            "P_abs_ge": {
+              "1": 0.9304174950298211,
+              "2": 0.8802186878727635,
+              "5": 0.69110337972167,
+              "10": 0.34791252485089463
+            },
+            "n_trades": 272,
+            "n_games": 272,
+            "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC"
+          },
+          "20-49": {
+            "n": 9915,
+            "mean_abs_da": 5.6323913951815054,
+            "median_abs_da": 5.1807228915662655,
+            "P_abs_ge": {
+              "1": 0.8030257186081694,
+              "2": 0.7499747856782653,
+              "5": 0.5104387291981846,
+              "10": 0.17226424609178012
+            },
+            "n_trades": 434,
+            "n_games": 434,
+            "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC"
+          },
+          "50+": {
+            "n": 40023,
+            "mean_abs_da": 2.8751176142226984,
+            "median_abs_da": 2.5,
+            "P_abs_ge": {
+              "1": 0.7860979936536492,
+              "2": 0.5366664168103341,
+              "5": 0.12655223246633185,
+              "10": 0.034854958398920624
+            },
+            "n_trades": 499,
+            "n_games": 499,
+            "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC"
+          }
+        }
+      },
+      "VALIDATION": {
+        "overall": {
+          "n": 55192,
+          "mean_abs_da": 4.2153034319353,
+          "median_abs_da": 3.069053708439899,
+          "P_abs_ge": {
+            "1": 0.795604435425424,
+            "2": 0.5852840991448036,
+            "5": 0.24697419915929844,
+            "10": 0.08981374112190173
+          },
+          "spearman_abs_da_vs_unique_trades": -0.47347146275329965,
+          "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC"
+        },
+        "by_stratum": {
+          "0": {
+            "n": 220,
+            "mean_abs_da": 0.0,
+            "median_abs_da": 0.0,
+            "P_abs_ge": {
+              "1": 0.0,
+              "2": 0.0,
+              "5": 0.0,
+              "10": 0.0
+            },
+            "n_trades": 52,
+            "n_games": 52,
+            "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC"
+          },
+          "1": {
+            "n": 243,
+            "mean_abs_da": 27.7940075160088,
+            "median_abs_da": 20.792079207920793,
+            "P_abs_ge": {
+              "1": 1.0,
+              "2": 1.0,
+              "5": 0.9135802469135802,
+              "10": 0.6666666666666666
+            },
+            "n_trades": 59,
+            "n_games": 59,
+            "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC"
+          },
+          "2-4": {
+            "n": 742,
+            "mean_abs_da": 16.37106414426105,
+            "median_abs_da": 11.847389558232932,
+            "P_abs_ge": {
+              "1": 0.9824797843665768,
+              "2": 0.9514824797843666,
+              "5": 0.738544474393531,
+              "10": 0.5525606469002695
+            },
+            "n_trades": 143,
+            "n_games": 143,
+            "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC"
+          },
+          "5-9": {
+            "n": 1670,
+            "mean_abs_da": 12.850324698535749,
+            "median_abs_da": 8.786482334869431,
+            "P_abs_ge": {
+              "1": 0.9610778443113772,
+              "2": 0.9610778443113772,
+              "5": 0.7646706586826347,
+              "10": 0.46407185628742514
+            },
+            "n_trades": 228,
+            "n_games": 228,
+            "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC"
+          },
+          "10-19": {
+            "n": 3357,
+            "mean_abs_da": 9.678716046164665,
+            "median_abs_da": 8.641975308641975,
+            "P_abs_ge": {
+              "1": 0.9359547214775097,
+              "2": 0.8865058087578195,
+              "5": 0.7000297885016383,
+              "10": 0.3190348525469169
+            },
+            "n_trades": 225,
+            "n_games": 225,
+            "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC"
+          },
+          "20-49": {
+            "n": 9093,
+            "mean_abs_da": 5.332453597291504,
+            "median_abs_da": 4.8192771084337345,
+            "P_abs_ge": {
+              "1": 0.7688331683712746,
+              "2": 0.7168151325195206,
+              "5": 0.473331133839217,
+              "10": 0.15275486638073243
+            },
+            "n_trades": 403,
+            "n_games": 403,
+            "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC"
+          },
+          "50+": {
+            "n": 39867,
+            "mean_abs_da": 2.7920400587011853,
+            "median_abs_da": 2.0892767242825974,
+            "P_abs_ge": {
+              "1": 0.7826272355582311,
+              "2": 0.5080643138435298,
+              "5": 0.12366117340156019,
+              "10": 0.02884591265959315
+            },
+            "n_trades": 474,
+            "n_games": 474,
+            "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC"
+          }
+        }
+      },
+      "OOS": {
+        "overall": {
+          "n": 27715,
+          "mean_abs_da": 4.390628770389831,
+          "median_abs_da": 2.873030583873959,
+          "P_abs_ge": {
+            "1": 0.78112935233628,
+            "2": 0.5771603824643695,
+            "5": 0.24585964279271152,
+            "10": 0.09608515244452463
+          },
+          "spearman_abs_da_vs_unique_trades": -0.46031802190778587,
+          "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC"
+        },
+        "by_stratum": {
+          "0": {
+            "n": 143,
+            "mean_abs_da": 0.0,
+            "median_abs_da": 0.0,
+            "P_abs_ge": {
+              "1": 0.0,
+              "2": 0.0,
+              "5": 0.0,
+              "10": 0.0
+            },
+            "n_trades": 35,
+            "n_games": 35,
+            "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC"
+          },
+          "1": {
+            "n": 161,
+            "mean_abs_da": 37.92642802912506,
+            "median_abs_da": 32.93172690763052,
+            "P_abs_ge": {
+              "1": 1.0,
+              "2": 1.0,
+              "5": 0.9627329192546584,
+              "10": 0.9565217391304348
+            },
+            "n_trades": 43,
+            "n_games": 43,
+            "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC"
+          },
+          "2-4": {
+            "n": 391,
+            "mean_abs_da": 21.39371275349402,
+            "median_abs_da": 19.78494623655914,
+            "P_abs_ge": {
+              "1": 0.9769820971867008,
+              "2": 0.9718670076726342,
+              "5": 0.782608695652174,
+              "10": 0.659846547314578
+            },
+            "n_trades": 72,
+            "n_games": 72,
+            "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC"
+          },
+          "5-9": {
+            "n": 996,
+            "mean_abs_da": 12.572202071917435,
+            "median_abs_da": 8.641975308641975,
+            "P_abs_ge": {
+              "1": 0.9668674698795181,
+              "2": 0.9668674698795181,
+              "5": 0.7419678714859438,
+              "10": 0.4819277108433735
+            },
+            "n_trades": 125,
+            "n_games": 125,
+            "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC"
+          },
+          "10-19": {
+            "n": 1786,
+            "mean_abs_da": 9.551233532597207,
+            "median_abs_da": 8.641975308641975,
+            "P_abs_ge": {
+              "1": 0.9176931690929452,
+              "2": 0.841545352743561,
+              "5": 0.6534154535274356,
+              "10": 0.2911534154535274
+            },
+            "n_trades": 112,
+            "n_games": 112,
+            "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC"
+          },
+          "20-49": {
+            "n": 4235,
+            "mean_abs_da": 5.4612702689188835,
+            "median_abs_da": 4.8192771084337345,
+            "P_abs_ge": {
+              "1": 0.7650531286894924,
+              "2": 0.723258559622196,
+              "5": 0.47626918536009444,
+              "10": 0.16221959858323495
+            },
+            "n_trades": 196,
+            "n_games": 196,
+            "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC"
+          },
+          "50+": {
+            "n": 20003,
+            "mean_abs_da": 2.724905455698096,
+            "median_abs_da": 1.9062630107654819,
+            "P_abs_ge": {
+              "1": 0.7630855371694246,
+              "2": 0.49622556616507524,
+              "5": 0.12148177773334,
+              "10": 0.02819577063440484
+            },
+            "n_trades": 236,
+            "n_games": 236,
+            "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC"
+          }
+        }
+      }
+    },
+    "prominent": "An observed state is not necessarily a well-supported state; a well-populated state is not necessarily independently supported; and an exactly scored state is not necessarily supported by a robust empirical distribution.",
+    "note": "Not a predictive test. Occupancy-weighted."
+  },
+  "rel_b": {
+    "object": "Relationship B \u2014 extreme SIR source-cell provenance",
+    "label": "CELL_GEOMETRY_DIAGNOSTIC",
+    "by_split": {
+      "TRAIN": {
+        "baseline_abs_lt_1": {
+          "name": "abs_da_lt_1",
+          "n_rows": 10897,
+          "n_trades": 468,
+          "n_games": 468,
+          "median_TRAIN_unique_trades": 146.0,
+          "median_N_EFF_TRADE": 94.04538299816177,
+          "median_rows_per_trade": 11.87431693989071,
+          "support_distribution": {
+            "0": 0,
+            "1": 0,
+            "2-4": 10,
+            "5-9": 93,
+            "10-19": 280,
+            "20-49": 1953,
+            "50+": 8561
+          },
+          "scoring_path": {
+            "M1_EXACT": 10897,
+            "M0_FALLBACK": 0,
+            "GLOBAL_FALLBACK": 0
+          },
+          "label": "CELL_GEOMETRY_DIAGNOSTIC"
+        },
+        "abs_ge_5": {
+          "name": "abs_da_ge_5",
+          "n_rows": 15408,
+          "n_trades": 474,
+          "n_games": 474,
+          "median_TRAIN_unique_trades": 29.0,
+          "median_N_EFF_TRADE": 18.666666666666668,
+          "median_rows_per_trade": 4.228571428571429,
+          "support_distribution": {
+            "0": 0,
+            "1": 404,
+            "2-4": 662,
+            "5-9": 1435,
+            "10-19": 2781,
+            "20-49": 5061,
+            "50+": 5065
+          },
+          "scoring_path": {
+            "M1_EXACT": 15408,
+            "M0_FALLBACK": 0,
+            "GLOBAL_FALLBACK": 0
+          },
+          "label": "CELL_GEOMETRY_DIAGNOSTIC"
+        },
+        "abs_ge_10": {
+          "name": "abs_da_ge_10",
+          "n_rows": 6452,
+          "n_trades": 383,
+          "n_games": 383,
+          "median_TRAIN_unique_trades": 19.0,
+          "median_N_EFF_TRADE": 12.847758081334725,
+          "median_rows_per_trade": 4.0,
+          "support_distribution": {
+            "0": 0,
+            "1": 396,
+            "2-4": 581,
+            "5-9": 972,
+            "10-19": 1400,
+            "20-49": 1708,
+            "50+": 1395
+          },
+          "scoring_path": {
+            "M1_EXACT": 6452,
+            "M0_FALLBACK": 0,
+            "GLOBAL_FALLBACK": 0
+          },
+          "label": "CELL_GEOMETRY_DIAGNOSTIC"
+        },
+        "label": "CELL_GEOMETRY_DIAGNOSTIC"
+      },
+      "VALIDATION": {
+        "baseline_abs_lt_1": {
+          "name": "abs_da_lt_1",
+          "n_rows": 11281,
+          "n_trades": 455,
+          "n_games": 455,
+          "median_TRAIN_unique_trades": 146.0,
+          "median_N_EFF_TRADE": 94.04538299816177,
+          "median_rows_per_trade": 11.87431693989071,
+          "support_distribution": {
+            "0": 220,
+            "1": 0,
+            "2-4": 13,
+            "5-9": 65,
+            "10-19": 215,
+            "20-49": 2102,
+            "50+": 8666
+          },
+          "scoring_path": {
+            "M1_EXACT": 11061,
+            "M0_FALLBACK": 220,
+            "GLOBAL_FALLBACK": 0
+          },
+          "label": "CELL_GEOMETRY_DIAGNOSTIC"
+        },
+        "abs_ge_5": {
+          "name": "abs_da_ge_5",
+          "n_rows": 13631,
+          "n_trades": 453,
+          "n_games": 453,
+          "median_TRAIN_unique_trades": 31.0,
+          "median_N_EFF_TRADE": 18.980392156862745,
+          "median_rows_per_trade": 4.423728813559322,
+          "support_distribution": {
+            "0": 0,
+            "1": 222,
+            "2-4": 548,
+            "5-9": 1277,
+            "10-19": 2350,
+            "20-49": 4304,
+            "50+": 4930
+          },
+          "scoring_path": {
+            "M1_EXACT": 13631,
+            "M0_FALLBACK": 0,
+            "GLOBAL_FALLBACK": 0
+          },
+          "label": "CELL_GEOMETRY_DIAGNOSTIC"
+        },
+        "abs_ge_10": {
+          "name": "abs_da_ge_10",
+          "n_rows": 4957,
+          "n_trades": 340,
+          "n_games": 340,
+          "median_TRAIN_unique_trades": 21.0,
+          "median_N_EFF_TRADE": 12.847758081334725,
+          "median_rows_per_trade": 3.6923076923076925,
+          "support_distribution": {
+            "0": 0,
+            "1": 162,
+            "2-4": 410,
+            "5-9": 775,
+            "10-19": 1071,
+            "20-49": 1389,
+            "50+": 1150
+          },
+          "scoring_path": {
+            "M1_EXACT": 4957,
+            "M0_FALLBACK": 0,
+            "GLOBAL_FALLBACK": 0
+          },
+          "label": "CELL_GEOMETRY_DIAGNOSTIC"
+        },
+        "label": "CELL_GEOMETRY_DIAGNOSTIC"
+      },
+      "OOS": {
+        "baseline_abs_lt_1": {
+          "name": "abs_da_lt_1",
+          "n_rows": 6066,
+          "n_trades": 227,
+          "n_games": 227,
+          "median_TRAIN_unique_trades": 146.0,
+          "median_N_EFF_TRADE": 94.04538299816177,
+          "median_rows_per_trade": 11.87431693989071,
+          "support_distribution": {
+            "0": 143,
+            "1": 0,
+            "2-4": 9,
+            "5-9": 33,
+            "10-19": 147,
+            "20-49": 995,
+            "50+": 4739
+          },
+          "scoring_path": {
+            "M1_EXACT": 5923,
+            "M0_FALLBACK": 143,
+            "GLOBAL_FALLBACK": 0
+          },
+          "label": "CELL_GEOMETRY_DIAGNOSTIC"
+        },
+        "abs_ge_5": {
+          "name": "abs_da_ge_5",
+          "n_rows": 6814,
+          "n_trades": 221,
+          "n_games": 221,
+          "median_TRAIN_unique_trades": 31.0,
+          "median_N_EFF_TRADE": 18.93223010244287,
+          "median_rows_per_trade": 4.119047619047619,
+          "support_distribution": {
+            "0": 0,
+            "1": 155,
+            "2-4": 306,
+            "5-9": 739,
+            "10-19": 1167,
+            "20-49": 2017,
+            "50+": 2430
+          },
+          "scoring_path": {
+            "M1_EXACT": 6814,
+            "M0_FALLBACK": 0,
+            "GLOBAL_FALLBACK": 0
+          },
+          "label": "CELL_GEOMETRY_DIAGNOSTIC"
+        },
+        "abs_ge_10": {
+          "name": "abs_da_ge_10",
+          "n_rows": 2663,
+          "n_trades": 165,
+          "n_games": 165,
+          "median_TRAIN_unique_trades": 18.0,
+          "median_N_EFF_TRADE": 11.36231884057971,
+          "median_rows_per_trade": 3.3333333333333335,
+          "support_distribution": {
+            "0": 0,
+            "1": 154,
+            "2-4": 258,
+            "5-9": 480,
+            "10-19": 520,
+            "20-49": 687,
+            "50+": 564
+          },
+          "scoring_path": {
+            "M1_EXACT": 2663,
+            "M0_FALLBACK": 0,
+            "GLOBAL_FALLBACK": 0
+          },
+          "label": "CELL_GEOMETRY_DIAGNOSTIC"
+        },
+        "label": "CELL_GEOMETRY_DIAGNOSTIC"
+      }
+    },
+    "four_fields": [
+      "EXACT_CELL_EXISTS",
+      "TRAIN_UNIQUE_TRADE_SUPPORT",
+      "N_EFF_TRADE",
+      "SCORING_PATH"
+    ],
+    "note": "Forensic provenance. Not a predictive test."
+  },
+  "exposure": {
+    "object": "Relationship C \u2014 trade-level SIR versus support exposure",
+    "label": "TRADE_BALANCED",
+    "r_bar_formula": "r_bar_i = Pi_i - mean_t alpha_M0_it, where mean_t alpha_M0_it = (1/T_i) sum_t alpha_M0_it. One residual per trade. Repeated possessions are not independent terminals.",
+    "by_split": {
+      "TRAIN": {
+        "n_trades": 503,
+        "mean_abs_mean_da": 2.847259674740779,
+        "mean_min_support": 18.415506958250496,
+        "mean_fraction_sparse": 0.023450939344276566,
+        "spearman_abs_da_vs_min_support": -0.4004368841195028,
+        "label": "TRADE_BALANCED"
+      },
+      "VALIDATION": {
+        "n_trades": 481,
+        "mean_abs_mean_da": 1.993573804176326,
+        "mean_min_support": 19.715176715176714,
+        "mean_fraction_sparse": 0.020570497183950563,
+        "spearman_abs_da_vs_min_support": -0.22317134230908653,
+        "label": "TRADE_BALANCED"
+      },
+      "OOS": {
+        "n_trades": 237,
+        "mean_abs_mean_da": 2.092801215519972,
+        "mean_min_support": 19.0126582278481,
+        "mean_fraction_sparse": 0.024607512834852487,
+        "spearman_abs_da_vs_min_support": -0.29740085190487975,
+        "label": "TRADE_BALANCED"
+      }
+    },
+    "note": "One observation per trade. Not independent sample size."
+  },
+  "shift": {
+    "object": "Distribution shift of M1 cell occupancy",
+    "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC",
+    "tv_train_val": 0.10795172507044143,
+    "tv_train_oos": 0.14756008872029264,
+    "tv_definition": "0.5 * sum_c |p_c - q_c|",
+    "by_split": {
+      "TRAIN": {
+        "n_rows": 57059,
+        "n_trades": 503,
+        "pct_on_train_observed_m1": 1.0,
+        "rare_cell_row_share_by_stratum": {
+          "0": 0.0,
+          "1": 0.007115441911004399,
+          "2-4": 0.015177272647610368,
+          "5-9": 0.031984437161534554,
+          "10-19": 0.0705234932263096
+        },
+        "scoring_path_rates": {
+          "M1_EXACT": 1.0,
+          "M0_FALLBACK": 0.0,
+          "GLOBAL_FALLBACK": 0.0
+        },
+        "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC"
+      },
+      "VALIDATION": {
+        "n_rows": 55192,
+        "n_trades": 481,
+        "pct_on_train_observed_m1": 0.9960139150601537,
+        "rare_cell_row_share_by_stratum": {
+          "0": 0.003986084939846354,
+          "1": 0.004402812001739383,
+          "2-4": 0.01344397738802725,
+          "5-9": 0.03025800840701551,
+          "10-19": 0.06082403246847369
+        },
+        "scoring_path_rates": {
+          "M1_EXACT": 0.9960139150601537,
+          "M0_FALLBACK": 0.003986084939846354,
+          "GLOBAL_FALLBACK": 0.0
+        },
+        "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC"
+      },
+      "OOS": {
+        "n_rows": 27715,
+        "n_trades": 237,
+        "pct_on_train_observed_m1": 0.9948403391665164,
+        "rare_cell_row_share_by_stratum": {
+          "0": 0.0051596608334836735,
+          "1": 0.005809128630705394,
+          "2-4": 0.014107883817427386,
+          "5-9": 0.03593721811293523,
+          "10-19": 0.06444163810211077
+        },
+        "scoring_path_rates": {
+          "M1_EXACT": 0.9948403391665164,
+          "M0_FALLBACK": 0.0051596608334836735,
+          "GLOBAL_FALLBACK": 0.0
+        },
+        "label": "STATE_OCCUPANCY_WEIGHTED DIAGNOSTIC"
+      }
+    },
+    "four_fields": [
+      "EXACT_CELL_EXISTS",
+      "TRAIN_UNIQUE_TRADE_SUPPORT",
+      "N_EFF_TRADE",
+      "SCORING_PATH"
+    ],
+    "note": "Structural geometry. Not edge."
+  },
+  "stability": {
+    "object": "Support-stratified temporal stability of mean_da \u2192 r_bar",
+    "label": "TEMPORAL_STABILITY_DIAGNOSTIC",
+    "r_bar_formula": "r_bar_i = Pi_i - mean_t alpha_M0_it, where mean_t alpha_M0_it = (1/T_i) sum_t alpha_M0_it. One residual per trade. Repeated possessions are not independent terminals.",
+    "gate_j": {
+      "status": "PASS",
+      "compatible": true,
+      "source_variable": "TRAIN mean_SIR_i qcut",
+      "unit_of_observation": "trade"
+    },
+    "by_split": {
+      "TRAIN": {
+        "overall": {
+          "n_trades": 503,
+          "spearman_mean_da_r_bar": 0.4528737270929536,
+          "high_low": {
+            "status": "OK",
+            "n_lo": 51,
+            "n_hi": 51,
+            "adequate": true,
+            "spread_hi_minus_lo_r_bar": 69.30209627347568,
+            "edges_source": "V6 TRAIN mean_SIR_i qcut",
+            "weighting": "TRADE_BALANCED"
+          },
+          "label": "TEMPORAL_STABILITY_DIAGNOSTIC",
+          "weighting": "TRADE_BALANCED"
+        },
+        "by_min_support_stratum": {
+          "0": {
+            "n_trades": 0,
+            "n_games": 0,
+            "mean_da": null,
+            "mean_r_bar": null,
+            "spearman_mean_da_r_bar": null,
+            "eligible_stability": false,
+            "high_low": {
+              "status": "SKIPPED_SPARSE"
+            },
+            "label": "TEMPORAL_STABILITY_DIAGNOSTIC",
+            "weighting": "TRADE_BALANCED"
+          },
+          "1": {
+            "n_trades": 65,
+            "n_games": 65,
+            "mean_da": 3.381710993922704,
+            "mean_r_bar": -3.0720742555662133,
+            "spearman_mean_da_r_bar": 0.6678758741258741,
+            "eligible_stability": false,
+            "high_low": {
+              "status": "SKIPPED_SPARSE"
+            },
+            "label": "TEMPORAL_STABILITY_DIAGNOSTIC",
+            "weighting": "TRADE_BALANCED"
+          },
+          "2-4": {
+            "n_trades": 97,
+            "n_games": 97,
+            "mean_da": 0.6535701325142816,
+            "mean_r_bar": -7.224313426350822,
+            "spearman_mean_da_r_bar": 0.5863796549547654,
+            "eligible_stability": false,
+            "high_low": {
+              "status": "SKIPPED_SPARSE"
+            },
+            "label": "TEMPORAL_STABILITY_DIAGNOSTIC",
+            "weighting": "TRADE_BALANCED"
+          },
+          "5-9": {
+            "n_trades": 117,
+            "n_games": 117,
+            "mean_da": 0.9911030228643404,
+            "mean_r_bar": -4.065607319872276,
+            "spearman_mean_da_r_bar": 0.46155344752656263,
+            "eligible_stability": false,
+            "high_low": {
+              "status": "SKIPPED_SPARSE"
+            },
+            "label": "TEMPORAL_STABILITY_DIAGNOSTIC",
+            "weighting": "TRADE_BALANCED"
+          },
+          "10-19": {
+            "n_trades": 49,
+            "n_games": 49,
+            "mean_da": 0.3048879092225484,
+            "mean_r_bar": 7.408871822235142,
+            "spearman_mean_da_r_bar": 0.19826530612244894,
+            "eligible_stability": true,
+            "high_low": {
+              "status": "INCONCLUSIVE",
+              "n_lo": 1,
+              "n_hi": 0,
+              "adequate": false,
+              "spread_hi_minus_lo_r_bar": null,
+              "edges_source": "V6 TRAIN mean_SIR_i qcut",
+              "weighting": "TRADE_BALANCED"
+            },
+            "label": "TEMPORAL_STABILITY_DIAGNOSTIC",
+            "weighting": "TRADE_BALANCED"
+          },
+          "20-49": {
+            "n_trades": 121,
+            "n_games": 121,
+            "mean_da": 0.8960975613942445,
+            "mean_r_bar": 10.995154247031458,
+            "spearman_mean_da_r_bar": 0.2254640292643273,
+            "eligible_stability": true,
+            "high_low": {
+              "status": "INCONCLUSIVE",
+              "n_lo": 1,
+              "n_hi": 5,
+              "adequate": false,
+              "spread_hi_minus_lo_r_bar": 5.1666909930256235,
+              "edges_source": "V6 TRAIN mean_SIR_i qcut",
+              "weighting": "TRADE_BALANCED"
+            },
+            "label": "TEMPORAL_STABILITY_DIAGNOSTIC",
+            "weighting": "TRADE_BALANCED"
+          },
+          "50+": {
+            "n_trades": 54,
+            "n_games": 54,
+            "mean_da": 1.538945191589532,
+            "mean_r_bar": 7.2502526120772925,
+            "spearman_mean_da_r_bar": -0.28096054888507715,
+            "eligible_stability": true,
+            "high_low": {
+              "status": "INCONCLUSIVE",
+              "n_lo": 0,
+              "n_hi": 1,
+              "adequate": false,
+              "spread_hi_minus_lo_r_bar": null,
+              "edges_source": "V6 TRAIN mean_SIR_i qcut",
+              "weighting": "TRADE_BALANCED"
+            },
+            "label": "TEMPORAL_STABILITY_DIAGNOSTIC",
+            "weighting": "TRADE_BALANCED"
+          }
+        }
+      },
+      "VALIDATION": {
+        "overall": {
+          "n_trades": 481,
+          "spearman_mean_da_r_bar": 0.19190813096355117,
+          "high_low": {
+            "status": "OK",
+            "n_lo": 34,
+            "n_hi": 28,
+            "adequate": true,
+            "spread_hi_minus_lo_r_bar": 17.689254968681553,
+            "edges_source": "V6 TRAIN mean_SIR_i qcut",
+            "weighting": "TRADE_BALANCED"
+          },
+          "label": "TEMPORAL_STABILITY_DIAGNOSTIC",
+          "weighting": "TRADE_BALANCED"
+        },
+        "by_min_support_stratum": {
+          "0": {
+            "n_trades": 52,
+            "n_games": 52,
+            "mean_da": 0.5944691971017578,
+            "mean_r_bar": -5.664583378994326,
+            "spearman_mean_da_r_bar": 0.07606932468197729,
+            "eligible_stability": false,
+            "high_low": {
+              "status": "SKIPPED_SPARSE"
+            },
+            "label": "TEMPORAL_STABILITY_DIAGNOSTIC",
+            "weighting": "TRADE_BALANCED"
+          },
+          "1": {
+            "n_trades": 42,
+            "n_games": 42,
+            "mean_da": 0.2657399933644016,
+            "mean_r_bar": -6.4947524504124905,
+            "spearman_mean_da_r_bar": 0.3666639656429787,
+            "eligible_stability": false,
+            "high_low": {
+              "status": "SKIPPED_SPARSE"
+            },
+            "label": "TEMPORAL_STABILITY_DIAGNOSTIC",
+            "weighting": "TRADE_BALANCED"
+          },
+          "2-4": {
+            "n_trades": 79,
+            "n_games": 79,
+            "mean_da": 0.14903432588653948,
+            "mean_r_bar": -10.370217333660616,
+            "spearman_mean_da_r_bar": 0.051874391431353466,
+            "eligible_stability": false,
+            "high_low": {
+              "status": "SKIPPED_SPARSE"
+            },
+            "label": "TEMPORAL_STABILITY_DIAGNOSTIC",
+            "weighting": "TRADE_BALANCED"
+          },
+          "5-9": {
+            "n_trades": 89,
+            "n_games": 89,
+            "mean_da": 0.9967432315703731,
+            "mean_r_bar": 6.417765569881689,
+            "spearman_mean_da_r_bar": 0.18678924072182504,
+            "eligible_stability": false,
+            "high_low": {
+              "status": "SKIPPED_SPARSE"
+            },
+            "label": "TEMPORAL_STABILITY_DIAGNOSTIC",
+            "weighting": "TRADE_BALANCED"
+          },
+          "10-19": {
+            "n_trades": 35,
+            "n_games": 35,
+            "mean_da": 0.40333346270515463,
+            "mean_r_bar": 7.437290302332613,
+            "spearman_mean_da_r_bar": 0.24789915966386555,
+            "eligible_stability": true,
+            "high_low": {
+              "status": "INCONCLUSIVE",
+              "n_lo": 1,
+              "n_hi": 0,
+              "adequate": false,
+              "spread_hi_minus_lo_r_bar": null,
+              "edges_source": "V6 TRAIN mean_SIR_i qcut",
+              "weighting": "TRADE_BALANCED"
+            },
+            "label": "TEMPORAL_STABILITY_DIAGNOSTIC",
+            "weighting": "TRADE_BALANCED"
+          },
+          "20-49": {
+            "n_trades": 128,
+            "n_games": 128,
+            "mean_da": 0.8189837378859683,
+            "mean_r_bar": 10.79993079922556,
+            "spearman_mean_da_r_bar": 0.36455481068832024,
+            "eligible_stability": true,
+            "high_low": {
+              "status": "INCONCLUSIVE",
+              "n_lo": 3,
+              "n_hi": 6,
+              "adequate": false,
+              "spread_hi_minus_lo_r_bar": 13.202561708463515,
+              "edges_source": "V6 TRAIN mean_SIR_i qcut",
+              "weighting": "TRADE_BALANCED"
+            },
+            "label": "TEMPORAL_STABILITY_DIAGNOSTIC",
+            "weighting": "TRADE_BALANCED"
+          },
+          "50+": {
+            "n_trades": 56,
+            "n_games": 56,
+            "mean_da": 1.4000735686531465,
+            "mean_r_bar": 8.116882441393455,
+            "spearman_mean_da_r_bar": 0.11148325358851675,
+            "eligible_stability": true,
+            "high_low": {
+              "status": "INCONCLUSIVE",
+              "n_lo": 0,
+              "n_hi": 2,
+              "adequate": false,
+              "spread_hi_minus_lo_r_bar": null,
+              "edges_source": "V6 TRAIN mean_SIR_i qcut",
+              "weighting": "TRADE_BALANCED"
+            },
+            "label": "TEMPORAL_STABILITY_DIAGNOSTIC",
+            "weighting": "TRADE_BALANCED"
+          }
+        }
+      },
+      "OOS": {
+        "overall": {
+          "n_trades": 237,
+          "spearman_mean_da_r_bar": 0.04114059268848067,
+          "high_low": {
+            "status": "INCONCLUSIVE",
+            "n_lo": 20,
+            "n_hi": 12,
+            "adequate": false,
+            "spread_hi_minus_lo_r_bar": 4.255897969374403,
+            "edges_source": "V6 TRAIN mean_SIR_i qcut",
+            "weighting": "TRADE_BALANCED"
+          },
+          "label": "TEMPORAL_STABILITY_DIAGNOSTIC",
+          "weighting": "TRADE_BALANCED"
+        },
+        "by_min_support_stratum": {
+          "0": {
+            "n_trades": 35,
+            "n_games": 35,
+            "mean_da": 0.2334762628374425,
+            "mean_r_bar": 9.159655255603427,
+            "spearman_mean_da_r_bar": 0.1296918767507003,
+            "eligible_stability": false,
+            "high_low": {
+              "status": "SKIPPED_SPARSE"
+            },
+            "label": "TEMPORAL_STABILITY_DIAGNOSTIC",
+            "weighting": "TRADE_BALANCED"
+          },
+          "1": {
+            "n_trades": 24,
+            "n_games": 24,
+            "mean_da": 1.4148716560037418,
+            "mean_r_bar": 5.058806942253908,
+            "spearman_mean_da_r_bar": 0.40695652173913033,
+            "eligible_stability": false,
+            "high_low": {
+              "status": "SKIPPED_SPARSE"
+            },
+            "label": "TEMPORAL_STABILITY_DIAGNOSTIC",
+            "weighting": "TRADE_BALANCED"
+          },
+          "2-4": {
+            "n_trades": 31,
+            "n_games": 31,
+            "mean_da": 0.2135945611641793,
+            "mean_r_bar": -11.21868540997273,
+            "spearman_mean_da_r_bar": -0.08870967741935484,
+            "eligible_stability": false,
+            "high_low": {
+              "status": "SKIPPED_SPARSE"
+            },
+            "label": "TEMPORAL_STABILITY_DIAGNOSTIC",
+            "weighting": "TRADE_BALANCED"
+          },
+          "5-9": {
+            "n_trades": 51,
+            "n_games": 51,
+            "mean_da": 0.6260379527984982,
+            "mean_r_bar": 2.3955930531138816,
+            "spearman_mean_da_r_bar": 0.09873303167420815,
+            "eligible_stability": false,
+            "high_low": {
+              "status": "SKIPPED_SPARSE"
+            },
+            "label": "TEMPORAL_STABILITY_DIAGNOSTIC",
+            "weighting": "TRADE_BALANCED"
+          },
+          "10-19": {
+            "n_trades": 13,
+            "n_games": 13,
+            "mean_da": -0.3410818563179844,
+            "mean_r_bar": 13.947655205173671,
+            "spearman_mean_da_r_bar": 0.3516483516483516,
+            "eligible_stability": true,
+            "high_low": {
+              "status": "INCONCLUSIVE",
+              "n_lo": 1,
+              "n_hi": 0,
+              "adequate": false,
+              "spread_hi_minus_lo_r_bar": null,
+              "edges_source": "V6 TRAIN mean_SIR_i qcut",
+              "weighting": "TRADE_BALANCED"
+            },
+            "label": "TEMPORAL_STABILITY_DIAGNOSTIC",
+            "weighting": "TRADE_BALANCED"
+          },
+          "20-49": {
+            "n_trades": 52,
+            "n_games": 52,
+            "mean_da": 0.49833263256706317,
+            "mean_r_bar": 9.143075151670722,
+            "spearman_mean_da_r_bar": 0.18628873900793988,
+            "eligible_stability": true,
+            "high_low": {
+              "status": "INCONCLUSIVE",
+              "n_lo": 2,
+              "n_hi": 0,
+              "adequate": false,
+              "spread_hi_minus_lo_r_bar": null,
+              "edges_source": "V6 TRAIN mean_SIR_i qcut",
+              "weighting": "TRADE_BALANCED"
+            },
+            "label": "TEMPORAL_STABILITY_DIAGNOSTIC",
+            "weighting": "TRADE_BALANCED"
+          },
+          "50+": {
+            "n_trades": 31,
+            "n_games": 31,
+            "mean_da": 1.156077645078341,
+            "mean_r_bar": 7.497099684705711,
+            "spearman_mean_da_r_bar": -0.25766129032258067,
+            "eligible_stability": true,
+            "high_low": {
+              "status": "INCONCLUSIVE",
+              "n_lo": 0,
+              "n_hi": 0,
+              "adequate": false,
+              "spread_hi_minus_lo_r_bar": null,
+              "edges_source": "V6 TRAIN mean_SIR_i qcut",
+              "weighting": "TRADE_BALANCED"
+            },
+            "label": "TEMPORAL_STABILITY_DIAGNOSTIC",
+            "weighting": "TRADE_BALANCED"
+          }
+        }
+      }
+    },
+    "note": "Does increasing unique-trade support correspond to more TRAIN\u2192VAL\u2192OOS consistency?"
+  },
+  "bootstrap": {
+    "oos_spearman_mean_da_r_bar": {
+      "status": "OK",
+      "n_games": 237,
+      "n_valid": 200,
+      "mean": 0.046680291660308286,
+      "p05": -0.08634473904956617,
+      "p95": 0.17468789554923336,
+      "cluster": "event_id",
+      "seed": 42,
+      "meaning": "Variation under resampling of observed game-level clusters. Not a population causal CI.",
+      "weighting": "TRADE_BALANCED"
+    }
+  },
+  "map_integrity": {
+    "n_m0": 20,
+    "n_m1": 584,
+    "m0_m1_calls": 0
+  },
+  "four_fields": [
+    "EXACT_CELL_EXISTS",
+    "TRAIN_UNIQUE_TRADE_SUPPORT",
+    "N_EFF_TRADE",
+    "SCORING_PATH"
+  ],
+  "four_field_defs": {
+    "EXACT_CELL_EXISTS": "Frozen M1 key is present in the persisted map",
+    "TRAIN_UNIQUE_TRADE_SUPPORT": "Unique TRAIN trade_id count in that cell (0 if missing)",
+    "N_EFF_TRADE": "OCCUPANCY_CONCENTRATION_EFFECTIVE_TRADE_COUNT \u2014 not independent n",
+    "SCORING_PATH": "M1_EXACT / M0_FALLBACK / GLOBAL_FALLBACK"
+  },
+  "limitations": [
+    "An observed state is not necessarily a well-supported state; a well-populated state is not necessarily independently supported; and an exactly scored state is not necessarily supported by a robust empirical distribution.",
+    "UNIQUE_TRADE_SUPPORT \u2260 STATISTICAL_INDEPENDENCE. N_EFF_TRADE = OCCUPANCY CONCENTRATION MEASURE \u2260 INDEPENDENT SAMPLE SIZE.",
+    "\u0394\u03b1_state \u2260 EDGE.",
+    "CONDITIONAL INFORMATION \u2260 EXECUTION.",
+    "REPEATED POSSESSIONS \u2260 INDEPENDENT OUTCOMES.",
+    "V5 Verdict B and V6 unclassified halt are historical.",
+    "N_eff is occupancy concentration, not independent n.",
+    "Bootstrap intervals are game-cluster resampling variation, not causal CIs."
+  ],
+  "live_deployment": "NOT AUTHORIZED"
+}

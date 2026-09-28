@@ -1,0 +1,97 @@
+{
+  "BASE_GRADE": "A-",
+  "DEBASE_GRADE": "A-",
+  "artifact": "jump_iti",
+  "created_at": "2026-09-16T21:49:46Z",
+  "engine_kind": "research_iti",
+  "entry_cents": 85,
+  "files": {
+    "abase": "SuperasiABase[as1_ITI]/SuperasiABase[as1_ITI].csv",
+    "debase": "SuperasiBDeBase[as1_ITI]/SuperasiBDeBase[as1_ITI].csv",
+    "roller": "Roller[as1_ITI]/Roller[as1_ITI].csv"
+  },
+  "honesty": {
+    "confirmation_2pct": "OPERATION_REQUIRED",
+    "fees": "UNAVAILABLE",
+    "fills": "UNAVAILABLE",
+    "live_execution": false,
+    "pyramiding": "OPERATION_REQUIRED",
+    "risk_not": "candle_path_not_fill",
+    "slippage": "UNAVAILABLE"
+  },
+  "iti_version": "jump_a_iti_v1.0.0",
+  "lab_id": "a63edfb839d54059b6a7f572d921cfe6",
+  "live_execution": false,
+  "loss_cents": 40,
+  "phase_a_result_id": "as1",
+  "phase_b_result_id": "as1",
+  "population": 288,
+  "question": {
+    "accept_limitations": false,
+    "entry_conditions": [
+      {
+        "clock": null,
+        "event_definition": "TRADABLE_CLOSE_CROSS",
+        "id": "entry_mu1xbssh_vysak",
+        "max_entry_e4": 9000,
+        "nth": null,
+        "ordinal": "FIRST_TOUCH",
+        "period": null,
+        "period_windows": [
+          {
+            "clock": null,
+            "period": "H2_1"
+          },
+          {
+            "clock": null,
+            "period": "H1_2"
+          }
+        ],
+        "price_e4": 8500,
+        "price_field": "yes_bid_close"
+      }
+    ],
+    "path_conditions": [
+      {
+        "id": "exit_mtug1t99_aq1lv",
+        "op": "REACH",
+        "outcome": "loss",
+        "price_e4": 4000,
+        "sequential": false
+      }
+    ],
+    "requested_dimensions": [
+      "HOLD_TO_SETTLEMENT"
+    ],
+    "terminal": "BOTH",
+    "universe": {
+      "date_from": "2025-03-18",
+      "date_to": "2026-09-01",
+      "game_data": [
+        "pbp"
+      ],
+      "leagues": [
+        "NCAAB"
+      ],
+      "market_data": [
+        "candles"
+      ],
+      "markets": [
+        "kalshi"
+      ],
+      "seasons": [
+        "2025-2026"
+      ],
+      "sports": [
+        "NCAAB"
+      ]
+    },
+    "win_hold": true
+  },
+  "run_id": "59308319607547e1a1e21b9c6e8a38aa",
+  "slot_id": "ITI-00",
+  "source_debase_result_id": "as1",
+  "source_folder": "as1",
+  "strategy_name": "as1_ITI",
+  "win_cents": null
+}

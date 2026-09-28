@@ -1,0 +1,10 @@
+trade T0026  NBA  Portland at Orlando
+contract KXNBAGAME-25NOV10PORORL-ORL  slice Q3
+signal 2025-11-10T17:52:00-08:00 PST  exit 2025-11-10T18:26:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 1823  principal_cents 142194
+entry_fee_cents 548  exit_fee_cents 706
+exit STOP at 67c  terminal yes
+gross_cents -20053  net_cents -21307
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

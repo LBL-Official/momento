@@ -1,0 +1,56 @@
+[
+  {
+    "event_ticker": "KXMLBGAME-26JUN181335TORBOS",
+    "missing_side": "NONE",
+    "team_a_ticker": "KXMLBGAME-26JUN181335TORBOS-BOS",
+    "team_b_ticker": "KXMLBGAME-26JUN181335TORBOS-TOR"
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN181410CLEMIL",
+    "missing_side": "NONE",
+    "team_a_ticker": "KXMLBGAME-26JUN181410CLEMIL-CLE",
+    "team_b_ticker": "KXMLBGAME-26JUN181410CLEMIL-MIL"
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN181435MINTEX",
+    "missing_side": "NONE",
+    "team_a_ticker": "KXMLBGAME-26JUN181435MINTEX-MIN",
+    "team_b_ticker": "KXMLBGAME-26JUN181435MINTEX-TEX"
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN181610BALSEA",
+    "missing_side": "NONE",
+    "team_a_ticker": "KXMLBGAME-26JUN181610BALSEA-BAL",
+    "team_b_ticker": "KXMLBGAME-26JUN181610BALSEA-SEA"
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN181840NYMPHI",
+    "missing_side": "NONE",
+    "team_a_ticker": "KXMLBGAME-26JUN181840NYMPHI-NYM",
+    "team_b_ticker": "KXMLBGAME-26JUN181840NYMPHI-PHI"
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN181905CWSNYY",
+    "missing_side": "NONE",
+    "team_a_ticker": "KXMLBGAME-26JUN181905CWSNYY-CWS",
+    "team_b_ticker": "KXMLBGAME-26JUN181905CWSNYY-NYY"
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN181915SFATL",
+    "missing_side": "NONE",
+    "team_a_ticker": "KXMLBGAME-26JUN181915SFATL-ATL",
+    "team_b_ticker": "KXMLBGAME-26JUN181915SFATL-SF"
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN181940STLKC",
+    "missing_side": "NONE",
+    "team_a_ticker": "KXMLBGAME-26JUN181940STLKC-KC",
+    "team_b_ticker": "KXMLBGAME-26JUN181940STLKC-STL"
+  },
+  {
+    "event_ticker": "KXMLBGAME-26JUN182140LAAATH",
+    "missing_side": "NONE",
+    "team_a_ticker": "KXMLBGAME-26JUN182140LAAATH-ATH",
+    "team_b_ticker": "KXMLBGAME-26JUN182140LAAATH-LAA"
+  }
+]

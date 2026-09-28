@@ -1,0 +1,167 @@
+{
+  "name": "SuperASI",
+  "legacy_name": "Lebronner",
+  "status": "SPEC_ONLY",
+  "implementation_authorized": false,
+  "live_authorized": false,
+  "live_execution": false,
+  "generated_at": "2026-09-10T22:23:57.751020+00:00",
+  "constraints": [
+    "LIVE EXECUTION = FALSE",
+    "CANDLE PATH \u2260 ACTUAL FILL",
+    "LEDGER 40 \u2260 PROVEN FILL",
+    "TERMINAL ALPHA \u2260 PATH ALPHA",
+    "PATH SURVIVAL \u2260 INDEPENDENT EDGE",
+    "STOP-PATH REALIZATION \u2260 LIVE LIQUIDATION RULE",
+    "DO NOT CHANGE LIVE FIRST01 / 80/81/83/89",
+    "DO NOT START W9",
+    "DO NOT RETUNE FIRST80 / T40 FROM THESE TABLES"
+  ],
+  "mission": "Alpha decomposition of positive-EV strategies generated from ROLLER. Enhancements attach to in-production EV in research by decomposing EV and deconstructing terminal efficiency and path efficiency. SuperASI does not submit orders.",
+  "first80_asked_six": {
+    "n": 1182,
+    "four_cell": {
+      "W_and_not_T40": 883,
+      "W_and_T40": 108,
+      "L_and_not_T40": 0,
+      "L_and_T40": 191
+    },
+    "terminal_p": 0.838409,
+    "terminal_p_frac": "991/1182",
+    "alpha_vs_K80_pp": 3.8409,
+    "s_W": 0.891019,
+    "s_L": 0.0,
+    "S_rule_80_40": 0.747039,
+    "S_frac": "883/1182",
+    "joint_win_survive": 0.747039,
+    "note": "In-production 80/40 win rate is S = P(\u00acT40) = 883/1182, not terminal P(W) = 991/1182. The 108 W\u2229T40 settled YES after the stop and are 80/40 losers."
+  },
+  "in_production_ev": {
+    "label": "FIRST80_ASKED_SIX_80_40_LEDGER",
+    "win_cents": 20,
+    "stop_loss_cents": 40,
+    "S": 0.747039,
+    "ev_cents": 4.8223,
+    "ev_frac": "950/197",
+    "breakeven_S": 0.666667,
+    "breakeven_L_at_S": 59.0635
+  },
+  "stop_path": {
+    "label": "CANDLE_T40_CLOSE_NOT_FILL",
+    "n": 299,
+    "printed_40": 54,
+    "first_close_lt40": 245,
+    "first_close_le35": 128,
+    "fast_gap": 181,
+    "t40_close_sum": 10318,
+    "mean_t40_close": 34.5084,
+    "mean_stop_loss": 45.4916,
+    "ev_cents": 3.4332,
+    "min5_n": 298,
+    "min5_close_sum": 7291,
+    "mean_min5_close": 24.4664,
+    "mean_min5_stop_loss": 55.5336,
+    "min5_ev_cents": 0.8929,
+    "pre_t40_38_40_trades": 1,
+    "surround": {
+      "-5": {
+        "n": 299,
+        "sum_bid_close": 18262,
+        "mean_bid_close": 61.076923
+      },
+      "-4": {
+        "n": 299,
+        "sum_bid_close": 17582,
+        "mean_bid_close": 58.802676
+      },
+      "-3": {
+        "n": 299,
+        "sum_bid_close": 17022,
+        "mean_bid_close": 56.929766
+      },
+      "-2": {
+        "n": 299,
+        "sum_bid_close": 16167,
+        "mean_bid_close": 54.070234
+      },
+      "-1": {
+        "n": 299,
+        "sum_bid_close": 14663,
+        "mean_bid_close": 49.040134
+      },
+      "0": {
+        "n": 299,
+        "sum_bid_close": 10318,
+        "mean_bid_close": 34.508361
+      },
+      "1": {
+        "n": 299,
+        "sum_bid_close": 10102,
+        "mean_bid_close": 33.785953
+      },
+      "2": {
+        "n": 299,
+        "sum_bid_close": 10023,
+        "mean_bid_close": 33.521739
+      },
+      "3": {
+        "n": 299,
+        "sum_bid_close": 10031,
+        "mean_bid_close": 33.548495
+      },
+      "4": {
+        "n": 297,
+        "sum_bid_close": 9945,
+        "mean_bid_close": 33.484848
+      },
+      "5": {
+        "n": 297,
+        "sum_bid_close": 9724,
+        "mean_bid_close": 32.740741
+      }
+    }
+  },
+  "research_planning_ev": {
+    "label": "USER_STATED_PLUS_2_5",
+    "ev_cents": 2.5,
+    "implied_mean_stop_loss": 49.1806,
+    "implied_mean_exit": 30.8194,
+    "note": "Planning haircut on in-production 80/40 EV. Not a fill. Not a retune of the 40 stop rule."
+  },
+  "layers": [
+    {
+      "id": "T",
+      "name": "terminal_efficiency",
+      "object": "P(W | trigger) \u2212 K",
+      "source": "research/first75_terminal_path_decomp/TERMINAL_PATH_REPORT.md"
+    },
+    {
+      "id": "P",
+      "name": "path_efficiency",
+      "object": "s_W, s_L, S, four-cell (W,L)\u00d7(\u00acT40,T40)",
+      "source": "research/first80_alpha_decomposition_v1/METHODOLOGY.md"
+    },
+    {
+      "id": "X",
+      "name": "stop_path_realization",
+      "object": "E[exit | T40] and the \u00b15m path to T40",
+      "source": "research/first80_asked_six_t40_surround_candles/"
+    },
+    {
+      "id": "E",
+      "name": "in_production_ev",
+      "object": "ledger 80/40 vs T40-close EV vs planning +2.5\u00a2",
+      "source": "research/superasi/EV_DECOMPOSITION.md"
+    }
+  ],
+  "sources": {
+    "legacy_archive": "research/lebronner/REPORT.md",
+    "legacy_program": "research/lebronner/PROGRAM.md",
+    "terminal_path": "research/first75_terminal_path_decomp/TERMINAL_PATH_REPORT.md",
+    "alpha_decomp_v1": "research/first80_alpha_decomposition_v1/FINAL_RESEARCH_REPORT.md",
+    "asked_six_ledger": "research/first80_asked_six_80_40_liquidation/",
+    "stop_loss": "research/first80_asked_six_80_40_stop_loss/",
+    "surround": "research/first80_asked_six_t40_surround_candles/t40_surround_pm5.csv",
+    "roller": "ROLLER/"
+  }
+}

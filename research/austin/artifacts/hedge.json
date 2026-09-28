@@ -1,0 +1,100 @@
+{
+  "n_trades": 604,
+  "n_lock": 604,
+  "fee_model_status": "UNAVAILABLE",
+  "fill_model_status": "FILL_UNAVAILABLE",
+  "scenario_label": "SCENARIO \u2014 NOT OBSERVED FILL RATE",
+  "reference_only": {
+    "book": "NBA FULL FIRST80 hedge V1",
+    "n": 1230,
+    "close_path_ev_cents": 5.17,
+    "taker_ev_cents": 4.39,
+    "note": "Do not mix 1230 with Austin 604."
+  },
+  "triggers": {
+    "42": {
+      "trigger": 42,
+      "hedge_price": 40,
+      "n_triggered_path": 443,
+      "n_price_reached": 157,
+      "path_based_mean_pnl_cents": 9.602649006622517,
+      "taker_8040_mean_pnl_cents": 4.701986754966887,
+      "hold_mean_pnl_cents": 3.609271523178808,
+      "scenarios": [
+        {
+          "fill_rate": 1.0,
+          "label": "SCENARIO \u2014 NOT OBSERVED FILL RATE",
+          "mean_net_pnl_cents": 9.602649006622517
+        },
+        {
+          "fill_rate": 0.75,
+          "label": "SCENARIO \u2014 NOT OBSERVED FILL RATE",
+          "mean_net_pnl_cents": 8.10430463576159
+        },
+        {
+          "fill_rate": 0.5,
+          "label": "SCENARIO \u2014 NOT OBSERVED FILL RATE",
+          "mean_net_pnl_cents": 6.605960264900662
+        },
+        {
+          "fill_rate": 0.25,
+          "label": "SCENARIO \u2014 NOT OBSERVED FILL RATE",
+          "mean_net_pnl_cents": 5.107615894039735
+        },
+        {
+          "fill_rate": 0.0,
+          "label": "SCENARIO \u2014 NOT OBSERVED FILL RATE",
+          "mean_net_pnl_cents": 3.609271523178808
+        }
+      ],
+      "hedge_fill_status": "FILL_UNAVAILABLE"
+    },
+    "41": {
+      "trigger": 41,
+      "hedge_price": 40,
+      "n_triggered_path": 443,
+      "n_price_reached": 157,
+      "path_based_mean_pnl_cents": 9.602649006622517,
+      "taker_8040_mean_pnl_cents": 4.701986754966887,
+      "hold_mean_pnl_cents": 3.609271523178808,
+      "scenarios": [
+        {
+          "fill_rate": 1.0,
+          "label": "SCENARIO \u2014 NOT OBSERVED FILL RATE",
+          "mean_net_pnl_cents": 9.602649006622517
+        },
+        {
+          "fill_rate": 0.75,
+          "label": "SCENARIO \u2014 NOT OBSERVED FILL RATE",
+          "mean_net_pnl_cents": 8.10430463576159
+        },
+        {
+          "fill_rate": 0.5,
+          "label": "SCENARIO \u2014 NOT OBSERVED FILL RATE",
+          "mean_net_pnl_cents": 6.605960264900662
+        },
+        {
+          "fill_rate": 0.25,
+          "label": "SCENARIO \u2014 NOT OBSERVED FILL RATE",
+          "mean_net_pnl_cents": 5.107615894039735
+        },
+        {
+          "fill_rate": 0.0,
+          "label": "SCENARIO \u2014 NOT OBSERVED FILL RATE",
+          "mean_net_pnl_cents": 3.609271523178808
+        }
+      ],
+      "hedge_fill_status": "FILL_UNAVAILABLE"
+    }
+  },
+  "resolution": {
+    "TRIGGER_RESOLUTION": "1m_close",
+    "definition_42": "first favorite yes_bid_close <= 42 after entry",
+    "definition_41": "first favorite yes_bid_close <= 41 after entry",
+    "n_first_le_42": 443,
+    "n_first_le_41": 443,
+    "n_42_without_41": 18,
+    "n_same_bar_42_and_41": 425,
+    "note": "If n_42_without_41=0, 1m closes skip 42-only prints. Do not invent separated hedge economics."
+  }
+}

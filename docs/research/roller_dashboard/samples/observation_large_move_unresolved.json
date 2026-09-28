@@ -1,0 +1,70 @@
+{
+  "schema_version": "research_spec_v0",
+  "identity": {
+    "name": "LARGE_DOWN_MOVE_Q4_UNRESOLVED",
+    "description": "Intentionally incomplete. 'Sharply' / magnitude must not be invented. Spec validates structurally but must not run.",
+    "tags": ["observation", "unresolved"]
+  },
+  "universe": "BBALL1",
+  "population_binding": {
+    "leagues": ["NBA"],
+    "default_structural_slices": ["Q4"],
+    "selection": "all_matching"
+  },
+  "anchor": {
+    "event": "PRICE_MOVE",
+    "price_field": "yes_bid_close",
+    "direction": "DOWN",
+    "magnitude_e4": null,
+    "unresolved_parameters": ["magnitude_e4", "favorite_definition"]
+  },
+  "information_regime": "POINT_IN_TIME",
+  "information_set": "O_t",
+  "state_filters": {
+    "op": "AND",
+    "args": [
+      {
+        "op": "ATOM",
+        "field": "period",
+        "operator": "eq",
+        "value": "Q4"
+      }
+    ]
+  },
+  "path_conditions": [
+    {
+      "kind": "FORWARD_RESPONSE",
+      "binding": "UNRESOLVED"
+    }
+  ],
+  "terminal_conditions": [
+    {
+      "kind": "UNRESTRICTED"
+    }
+  ],
+  "measurement_requests": [
+    {
+      "name": "forward_return_distribution",
+      "binding": "UNRESOLVED",
+      "not_edge": true
+    }
+  ],
+  "sample_binding": {
+    "as_of": null
+  },
+  "definition_versions": {
+    "observation": "roller_4.0.0-C"
+  },
+  "dataset_versions": {},
+  "execution_interpretation": "OBSERVABLE_PATH_ONLY",
+  "caveats": [
+    "UNRESOLVED PARAMETERS MUST BE RESOLVED BEFORE RUN",
+    "MEASUREMENT ≠ EDGE",
+    "CANDLE PATH ≠ FILL"
+  ],
+  "economic_layer": null,
+  "portfolio_layer": null,
+  "persistence": {
+    "kind": "ephemeral"
+  }
+}

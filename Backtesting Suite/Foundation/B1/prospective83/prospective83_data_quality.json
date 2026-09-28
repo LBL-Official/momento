@@ -1,0 +1,14 @@
+{
+  "existing_cutoff": "2026-06-27",
+  "prospective_start": "2026-06-28",
+  "prospective_end": "2026-08-26",
+  "w6_eligible_games": 757,
+  "w7_path_games": 3384,
+  "w7_post_cutoff_games": 0,
+  "first83_eligible": 0,
+  "excluded_no_w7_path": 757,
+  "excluded_reason": "W6 games exist after cutoff but W7 EventMarketPath / TRADE prints were not reconstructed for those games. First-exact-83 requires a W7 TRADE at 83¢. Do not invent prints from W6 state alone.",
+  "w6_date_min": "2026-06-28",
+  "w6_date_max": "2026-08-26",
+  "status": "PROSPECTIVE_DATA_NOT_YET_AVAILABLE"
+}

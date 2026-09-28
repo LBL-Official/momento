@@ -1,0 +1,396 @@
+{
+  "stax_id": "STAX-0002",
+  "schema_version": "stax_v1",
+  "name": "V11 CREATE PATH SMOKE",
+  "description": "",
+  "created_at": "2026-09-11T15:19:49Z",
+  "updated_at": "2026-09-11T15:20:03Z",
+  "universe": {
+    "sport_family": "basketball",
+    "league_set": [
+      "NBA"
+    ],
+    "seasons": [
+      "2025-2026"
+    ],
+    "date_from": null,
+    "date_to": null
+  },
+  "timezone": "America/Los_Angeles",
+  "automation_enabled": false,
+  "automation_schedule": "00:00",
+  "latest_version": null,
+  "latest_status": "PENDING",
+  "last_run_at": null,
+  "next_run_at": null,
+  "working_members": [
+    {
+      "member_id": "STXM-0001",
+      "position": 1,
+      "display_id": "STX02-S01",
+      "label": "S01 FIRST TOUCH 80",
+      "save_id": "a3f06ffb6e57474aa395cafab10b603b",
+      "roller_object_id": "a3f06ffb6e57474aa395cafab10b603b",
+      "research_object_id": null,
+      "question": {
+        "universe": {
+          "sports": [
+            "basketball"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "seasons": [
+            "2025-26"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "game_data": [],
+          "date_from": null,
+          "date_to": null
+        },
+        "entry_conditions": [
+          {
+            "id": "e1",
+            "ordinal": "FIRST_TOUCH",
+            "price_e4": 8000,
+            "period": "Q3",
+            "clock": null,
+            "nth": 1,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "p-loss",
+            "op": "REACH",
+            "price_e4": 4000,
+            "sequential": false,
+            "outcome": "loss"
+          }
+        ],
+        "terminal": "BOTH",
+        "requested_dimensions": [],
+        "accept_limitations": false,
+        "win_hold": true
+      },
+      "draft": {
+        "universe": {
+          "sports": [
+            "basketball"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "seasons": [
+            "2025-26"
+          ],
+          "dateFrom": "2025-10-10",
+          "dateTo": "2026-06-13",
+          "markets": [
+            "kalshi"
+          ],
+          "marketData": [
+            "candles"
+          ],
+          "dataSources": []
+        },
+        "entryConditions": [
+          {
+            "id": "e1",
+            "family": "first_touch",
+            "priceCents": 80,
+            "touchN": 1,
+            "periodWindows": [
+              {
+                "period": "Q3"
+              }
+            ]
+          }
+        ],
+        "exitConditions": [
+          {
+            "id": "p-loss",
+            "kind": "path",
+            "family": "reach",
+            "priceCents": 40,
+            "outcome": "loss"
+          },
+          {
+            "id": "h-win",
+            "kind": "terminal",
+            "family": "hold_expiration_win",
+            "outcome": "win"
+          }
+        ]
+      },
+      "research_spec": {},
+      "question_hash": "d504543b24efe3ccc547cecc0c28bf43e88e88f4a873d46425db4cd6e280fcfc",
+      "query_hash": "d504543b24efe3ccc547cecc0c28bf43e88e88f4a873d46425db4cd6e280fcfc",
+      "universe": {
+        "sport_family": "basketball",
+        "league_set": [
+          "NBA"
+        ],
+        "seasons": [
+          "2025-2026"
+        ],
+        "date_from": null,
+        "date_to": null
+      },
+      "definition_version": "1.0.0",
+      "status": "PENDING"
+    },
+    {
+      "member_id": "STXM-0002",
+      "position": 2,
+      "display_id": "STX02-S02",
+      "label": "S02 FIRST TOUCH 75",
+      "save_id": "985138452d014627a43995bc4d572eba",
+      "roller_object_id": "985138452d014627a43995bc4d572eba",
+      "research_object_id": null,
+      "question": {
+        "universe": {
+          "sports": [
+            "basketball"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "seasons": [
+            "2025-26"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "game_data": [],
+          "date_from": null,
+          "date_to": null
+        },
+        "entry_conditions": [
+          {
+            "id": "e1",
+            "ordinal": "FIRST_TOUCH",
+            "price_e4": 7500,
+            "period": "Q3",
+            "clock": null,
+            "nth": 1,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "p-loss",
+            "op": "REACH",
+            "price_e4": 4000,
+            "sequential": false,
+            "outcome": "loss"
+          }
+        ],
+        "terminal": "BOTH",
+        "requested_dimensions": [],
+        "accept_limitations": false,
+        "win_hold": true
+      },
+      "draft": {
+        "universe": {
+          "sports": [
+            "basketball"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "seasons": [
+            "2025-26"
+          ],
+          "dateFrom": "2025-10-10",
+          "dateTo": "2026-06-13",
+          "markets": [
+            "kalshi"
+          ],
+          "marketData": [
+            "candles"
+          ],
+          "dataSources": []
+        },
+        "entryConditions": [
+          {
+            "id": "e1",
+            "family": "first_touch",
+            "priceCents": 75,
+            "touchN": 1,
+            "periodWindows": [
+              {
+                "period": "Q3"
+              }
+            ]
+          }
+        ],
+        "exitConditions": [
+          {
+            "id": "p-loss",
+            "kind": "path",
+            "family": "reach",
+            "priceCents": 40,
+            "outcome": "loss"
+          },
+          {
+            "id": "h-win",
+            "kind": "terminal",
+            "family": "hold_expiration_win",
+            "outcome": "win"
+          }
+        ]
+      },
+      "research_spec": {},
+      "question_hash": "a8092ccda9a1471b81dc558c2633bdb53fd0fa3b6e126684a8c2fd2cd0a70cce",
+      "query_hash": "a8092ccda9a1471b81dc558c2633bdb53fd0fa3b6e126684a8c2fd2cd0a70cce",
+      "universe": {
+        "sport_family": "basketball",
+        "league_set": [
+          "NBA"
+        ],
+        "seasons": [
+          "2025-2026"
+        ],
+        "date_from": null,
+        "date_to": null
+      },
+      "definition_version": "1.0.0",
+      "status": "PENDING"
+    },
+    {
+      "member_id": "STXM-0003",
+      "position": 3,
+      "display_id": "STX02-S03",
+      "label": "S03 FIRST TOUCH 70",
+      "save_id": "50d673f23f8d45279d7db2749c765e4e",
+      "roller_object_id": "50d673f23f8d45279d7db2749c765e4e",
+      "research_object_id": null,
+      "question": {
+        "universe": {
+          "sports": [
+            "basketball"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "seasons": [
+            "2025-26"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "game_data": [],
+          "date_from": null,
+          "date_to": null
+        },
+        "entry_conditions": [
+          {
+            "id": "e1",
+            "ordinal": "FIRST_TOUCH",
+            "price_e4": 7000,
+            "period": "Q3",
+            "clock": null,
+            "nth": 1,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "p-loss",
+            "op": "REACH",
+            "price_e4": 4000,
+            "sequential": false,
+            "outcome": "loss"
+          }
+        ],
+        "terminal": "BOTH",
+        "requested_dimensions": [],
+        "accept_limitations": false,
+        "win_hold": true
+      },
+      "draft": {
+        "universe": {
+          "sports": [
+            "basketball"
+          ],
+          "leagues": [
+            "NBA"
+          ],
+          "seasons": [
+            "2025-26"
+          ],
+          "dateFrom": "2025-10-10",
+          "dateTo": "2026-06-13",
+          "markets": [
+            "kalshi"
+          ],
+          "marketData": [
+            "candles"
+          ],
+          "dataSources": []
+        },
+        "entryConditions": [
+          {
+            "id": "e1",
+            "family": "first_touch",
+            "priceCents": 70,
+            "touchN": 1,
+            "periodWindows": [
+              {
+                "period": "Q3"
+              }
+            ]
+          }
+        ],
+        "exitConditions": [
+          {
+            "id": "p-loss",
+            "kind": "path",
+            "family": "reach",
+            "priceCents": 40,
+            "outcome": "loss"
+          },
+          {
+            "id": "h-win",
+            "kind": "terminal",
+            "family": "hold_expiration_win",
+            "outcome": "win"
+          }
+        ]
+      },
+      "research_spec": {},
+      "question_hash": "a049637113f4e6882f5090d257f26eb5d53a6897048017b73496327e480a7816",
+      "query_hash": "a049637113f4e6882f5090d257f26eb5d53a6897048017b73496327e480a7816",
+      "universe": {
+        "sport_family": "basketball",
+        "league_set": [
+          "NBA"
+        ],
+        "seasons": [
+          "2025-2026"
+        ],
+        "date_from": null,
+        "date_to": null
+      },
+      "definition_version": "1.0.0",
+      "status": "PENDING"
+    }
+  ],
+  "member_seq": 3,
+  "live_execution": false
+}

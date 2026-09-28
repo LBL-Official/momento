@@ -1,0 +1,71 @@
+{
+  "schema_version": "2.0.0",
+  "families": [
+    {
+      "feature_family": "team_state",
+      "version": "2.0.0",
+      "description": "Point-in-time team state features (V1 *_pre plus in-game)",
+      "source_datasets": ["games", "pbp"],
+      "calculation_dependencies": [],
+      "availability_rule": "available_at < feature_time",
+      "lookahead": false,
+      "status": "ACTIVE",
+      "sports": ["NBA", "WNBA", "NCAAB"]
+    },
+    {
+      "feature_family": "trajectory",
+      "version": "2.0.0",
+      "description": "Backward path Γ_t into current game state",
+      "source_datasets": ["pbp", "possessions"],
+      "calculation_dependencies": ["game_state"],
+      "availability_rule": "available_at < feature_time",
+      "lookahead": false,
+      "status": "ACTIVE",
+      "sports": ["NBA"]
+    },
+    {
+      "feature_family": "market_state",
+      "version": "2.0.0",
+      "description": "Integer E4 candle observations, not fills",
+      "source_datasets": ["kalshi_candles"],
+      "calculation_dependencies": [],
+      "availability_rule": "available_at < feature_time",
+      "lookahead": false,
+      "status": "ACTIVE",
+      "sports": ["NBA", "WNBA", "NCAAB"]
+    },
+    {
+      "feature_family": "player_state",
+      "version": "2.0.0",
+      "description": "In-game player totals from personId",
+      "source_datasets": ["pbp"],
+      "calculation_dependencies": [],
+      "availability_rule": "available_at < feature_time",
+      "lookahead": false,
+      "status": "ACTIVE",
+      "sports": ["NBA"]
+    },
+    {
+      "feature_family": "lineup_state",
+      "version": "2.0.0",
+      "description": "On-court reconstruction; opening five unsupported in NBA warehouse",
+      "source_datasets": ["pbp"],
+      "calculation_dependencies": [],
+      "availability_rule": "available_at < feature_time",
+      "lookahead": false,
+      "status": "SCHEMA_ONLY",
+      "sports": ["NBA"]
+    },
+    {
+      "feature_family": "information_state",
+      "version": "2.0.0",
+      "description": "Extension point; no new injury/news sources in V2",
+      "source_datasets": [],
+      "calculation_dependencies": [],
+      "availability_rule": "available_at < feature_time",
+      "lookahead": false,
+      "status": "NOT_SUPPORTED",
+      "sports": ["NBA", "WNBA", "NCAAB"]
+    }
+  ]
+}

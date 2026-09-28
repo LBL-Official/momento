@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "momento://nba/capture-program-v1/episode.schema.json",
+  "title": "Engine B execution episode",
+  "description": "Append-only NBA 80/40 capture episode. Observation status must never be upgraded.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "episode_id",
+    "schema_version",
+    "created_utc",
+    "engine_a_intent",
+    "events"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "MOMENTO_NBA_CAPTURE_PROGRAM_V1"
+    },
+    "episode_id": { "type": "string", "minLength": 1 },
+    "first80_trade_id": { "type": ["string", "null"] },
+    "event_id": { "type": ["string", "null"] },
+    "ticker": { "type": ["string", "null"] },
+    "game_date": { "type": ["string", "null"] },
+    "created_utc": { "type": "string" },
+    "engine_a_intent": {
+      "type": "string",
+      "enum": ["ENTER", "SKIP", "UNAVAILABLE"]
+    },
+    "same_bar_limitation": {
+      "type": ["string", "null"],
+      "enum": ["SAME_BAR_1M_LIMITATION", null]
+    },
+    "live_armed": { "type": "boolean", "const": false },
+    "notes": { "type": "string" },
+    "events": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/event" }
+    }
+  },
+  "$defs": {
+    "status": {
+      "type": "string",
+      "enum": ["OBSERVED", "ESTIMATED", "SIMULATED", "UNAVAILABLE"]
+    },
+    "money": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["amount", "unit", "status"],
+      "properties": {
+        "amount": { "type": ["number", "null"] },
+        "unit": {
+          "type": "string",
+          "enum": ["USD", "USD_CENTS", "R_UNITS", "CONTRACTS"]
+        },
+        "status": { "$ref": "#/$defs/status" },
+        "label": { "type": ["string", "null"] }
+      }
+    },
+    "event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["event_type", "event_index", "status"],
+      "properties": {
+        "event_type": {
+          "type": "string",
+          "enum": [
+            "MARKET_BEFORE_ENTRY",
+            "ORDER_SUBMITTED",
+            "ORDER_ACKNOWLEDGED",
+            "BOOK_DURING_REST",
+            "FILL",
+            "NO_FILL",
+            "POST_ENTRY_PATH_SAMPLE",
+            "STOP_TOUCH",
+            "STOP_FILL",
+            "NO_STOP",
+            "EXIT_EXECUTION",
+            "SETTLEMENT",
+            "NET_REALIZED_PNL",
+            "CONNECTION",
+            "ERROR"
+          ]
+        },
+        "event_index": { "type": "integer", "minimum": 0 },
+        "timestamp_utc": { "type": ["string", "null"] },
+        "timestamp_unix": { "type": ["integer", "null"] },
+        "status": { "$ref": "#/$defs/status" },
+        "client_order_id": { "type": ["string", "null"] },
+        "exchange_order_id": { "type": ["string", "null"] },
+        "side": { "type": ["string", "null"] },
+        "price_cents": { "type": ["number", "null"] },
+        "quantity": { "type": ["integer", "null"] },
+        "remaining_quantity": { "type": ["integer", "null"] },
+        "post_only": { "type": ["boolean", "null"] },
+        "reduce_only": { "type": ["boolean", "null"] },
+        "yes_bid_cents": { "type": ["number", "null"] },
+        "yes_ask_cents": { "type": ["number", "null"] },
+        "last_trade_cents": { "type": ["number", "null"] },
+        "fee": {
+          "anyOf": [{ "type": "null" }, { "$ref": "#/$defs/money" }]
+        },
+        "cash": {
+          "anyOf": [{ "type": "null" }, { "$ref": "#/$defs/money" }]
+        },
+        "path_label_R": {
+          "description": "Gross +1R/-2R path label, never EV_realized",
+          "anyOf": [{ "type": "null" }, { "$ref": "#/$defs/money" }]
+        },
+        "detail": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

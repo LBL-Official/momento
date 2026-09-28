@@ -1,0 +1,19 @@
+{
+  "program": "EXECUTION_INTEGRITY_ENGINE_V1",
+  "dre_baseline": "DRE_BASELINE_V1",
+  "universe_version": "A1_UNIVERSE_V1",
+  "a1_config_hash": "d7d2e9e55d9a426a",
+  "code_version": "UNKNOWN",
+  "run_ts": "2026-09-02T19:18:20.450984+00:00",
+  "live_execution_changed": false,
+  "threshold": 40,
+  "band": [
+    40,
+    40
+  ],
+  "timing": "STRICT_NEXT_BAR via V3",
+  "ncaab": "P5_VS_P5",
+  "fees": "GROSS_UNRESOLVED",
+  "l4": "NOT_AVAILABLE",
+  "config_hash": "049d8ba4efe1816d"
+}

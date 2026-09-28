@@ -1,0 +1,87 @@
+---
+description: Logging, metrics, tracing, and audit requirements
+alwaysApply: true
+---
+
+# Observability
+
+If a trade goes wrong, we must be able to determine why.
+
+---
+
+## Structured Logs
+
+Every trading event should include stable identifiers where available:
+
+- event_id
+- timestamp
+- market_id
+- strategy_id
+- order_id
+- client_order_id
+- position_id
+
+---
+
+## Metrics
+
+Track at minimum:
+
+Market:
+- markets observed
+- signals generated
+- stale-data events
+
+Execution:
+- orders submitted
+- orders acknowledged
+- orders rejected
+- fills
+- partial fills
+- cancellations
+- fill rate
+- execution latency
+
+Risk:
+- approvals
+- rejections by reason
+- exposure
+- daily loss
+- position limits
+
+Trading:
+- realized P&L
+- unrealized P&L
+- fees
+- average entry
+- average exit
+- slippage
+- win rate
+- drawdown
+
+---
+
+## Slippage
+
+Always distinguish:
+
+expected price
+from
+actual execution price.
+
+Never report theoretical P&L as realized P&L.
+
+---
+
+## Audit Trail
+
+Trading decisions must be traceable from:
+
+signal
+→ risk decision
+→ order
+→ fill
+→ position
+→ exit
+→ settlement
+→ P&L

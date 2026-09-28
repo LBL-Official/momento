@@ -1,0 +1,10 @@
+trade T0550  NBA  Los Angeles C at Memphis
+contract KXNBAGAME-26MAR07LACMEM-LAC  slice Q3
+signal 2026-03-07T18:44:00-08:00 PST  exit 2026-03-07T19:01:00-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 11041  principal_cents 861198
+entry_fee_cents 3316  exit_fee_cents 4273
+exit STOP at 67c  terminal yes
+gross_cents -121451  net_cents -129040
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

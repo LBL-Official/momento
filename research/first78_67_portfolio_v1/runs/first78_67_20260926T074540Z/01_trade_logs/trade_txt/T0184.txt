@@ -1,0 +1,10 @@
+trade T0184  NBA  Golden State at Charlotte
+contract KXNBAGAME-25DEC31GSWCHA-GSW  slice Q2
+signal 2025-12-31T11:10:00-08:00 PST  exit 2025-12-31T11:47:00-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 3297  principal_cents 257166
+entry_fee_cents 991  exit_fee_cents 1276
+exit STOP at 67c  terminal yes
+gross_cents -36267  net_cents -38534
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

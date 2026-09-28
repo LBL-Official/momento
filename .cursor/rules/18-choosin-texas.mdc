@@ -1,0 +1,94 @@
+---
+description: Choosin Texas — FIRST80 80/40 NBA+NCAAB four-partition desk
+alwaysApply: true
+---
+
+# Choosin Texas
+
+Research desk for the FIRST80 80/40 NBA + NCAAB four-partition universe.
+
+```
+LIVE EXECUTION = FALSE
+CANDLE PATH ≠ ACTUAL FILL
+k/n integers are the authority
+asked-six (1182) ≠ derived four (936)
+FIRST81 asked-six 1193 ≠ FIRST80 1182; four 940 ≠ 936
+FIRST83 asked-six 1243 ≠ FIRST81 1193; four 973 ≠ 940
+terminal W/N ≠ 80/40 trade S
+80/25–80/50 use N=936
+80/55 S uses entry yes_bid < 86 only
+80/60 uses N=936
+80/60 EV = 20S − 20(1−S); s_L = 0
+Texas (75) FIRST75 913 ≠ FIRST80 936 ≠ asked-six FIRST75 1126
+75/40 EV = 25S − 35(1−S); s_L is not 0
+75/25–75/50 use N=913
+75/55 S uses entry yes_bid < 81 only
+Texas (77) FIRST77 933 ≠ FIRST75 913 ≠ FIRST80 936 ≠ asked-six FIRST77 1158
+77/40 EV = 23S − 37(1−S); s_L is not 0
+77/25–77/50 use N=933
+77/55 S uses entry yes_bid < 83 only
+ledger EV ≠ fill ≠ live EV
+```
+
+Dashboard: `frontend/choosin-texas` on `:5182`.
+API: `/choosin-texas/*` on ROLLER `:8791`.
+Locks: `docs/research/lebronner/TABLES.md`.
+
+## Absolute
+
+- Do not remount this inside `frontend/roller-terminal`.
+- Do not edit `first80.py`.
+- Do not rescan the warehouse to change N.
+- Do not invent N or percents on `LOCK_MISMATCH`.
+- Do not call the four-pool asked-six.
+- Do not treat candle path as a fill or live EV.
+- Do not change live FIRST01 / 80/81/83/89.
+- Do not start W9 or warehouse Phase 21.
+
+## Identities
+
+`N = W + L`
+
+`S = p · s_W + (1 − p) · s_L`
+
+On these four FIRST80 rows `s_L = 0`, so `S = (W∩¬T40)/N`.
+
+80/55 S is `P(¬T55)` on the entry `< 86` subset only (905, not 936).
+If the first ≥80 close is already ≥86, do not count.
+
+`#/texas-60` is 80/60 on the same derived four (N=936).
+`#/paired` replays that 936 for 80/40 and 80/65. Equal flat-stop risk,
+plus CAPITAL_6PCT_CAP3 entry-premium sizing. Through-close ≠ fill.
+Neither book is live.
+T60 = post-entry min ≤ 60. s_L = 0, so S = (W∩¬T60)/N.
+EV = 20S − 20(1−S). 80/65 and 80/55 on that page use the same N=936.
+The 86 filter stays on the Texas-ladder 80/55.
+
+Ledger EV is `20S − L(1−S)` with `L = 80 − stop`. The frontend does
+not compute it. Deeper stops 25/30/35 are research paths, not a live
+rule change. NBA T40 clock is a modeled snap, not warehouse PIT.
+Dallas (`#/dallas`) is NBA 2Q/3Q historical snapshots only. It is not
+a live current quote and not an early-exit rule.
+`#/book` is the 2026-27 research-registered NBA 2Q regular-season
+80/40 1-contract book. `RESEARCH_REGISTERED ≠ LIVE_ARMED`. Watch
+cells are logged, not filters. Do not remount NCAAB on Dallas.
+`#/austin` is the NBA 2Q/3Q PCA+KNN query desk on the locked 604
+book. Historical query only. Live feed UNAVAILABLE. Allocation
+band 3/4/5%, never BUY/SKIP. DRE is a separate desk on `:5191`.
+It consumes this desk as Trade Breakdown only. Objective SSOT:
+`research/dre/PORTFOLIO_OBJECTIVE_V1.md`.
+`#/austin/risk` is a pointer, not the product UI. `#/fort-worth` is a read-only policy
+contract. `#/katy` is a labeled experiment index; each experiment is
+`#/katy/{slug}`. `#/texas-75` is FIRST75 on the same four clock
+slices (N=913; 75/25–75/50 on 913; 75/55 entry `< 81` N=868).
+`#/texas-77` is FIRST77 on the same four clock slices (N=933;
+77/25–77/50 on 933; 77/55 entry `< 83` N=883). `#/asked-six` is
+asked-six (1182 / 1126 / 1158 / 1193 / 1243), not Texas 936/913/933.
+FIRST81 / FIRST83 are entry thresholds, not 75/77/80 stops and not
+live 80/81/83. TABLES.md has no FIRST77 / FIRST81 / FIRST83. Do not
+reuse the FIRST80 936 locks, FIRST75 913 locks,
+`first80_asked_six.csv`, or `first75_asked_six.csv`.
+Houston lock is declared, not a fill. Search is not
+a freeze. `#/sugarland` is `SUGARLAND_PREGAME_V1`, its own pregame
+quote universe. It is not FIRST80 936 and not Austin 604.
+Do not submit. Do not remount Austin inside roller-terminal.

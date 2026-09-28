@@ -1,0 +1,63 @@
+{
+  "written_utc": "2026-09-01T19:21:58.135427+00:00",
+  "n": 1230,
+  "matrix": [
+    {
+      "name": "possession sequence",
+      "status": "OBSERVED"
+    },
+    {
+      "name": "period / official clock",
+      "status": "OBSERVED"
+    },
+    {
+      "name": "score path",
+      "status": "OBSERVED"
+    },
+    {
+      "name": "modeled wall start/end",
+      "status": "DERIVED",
+      "note": "PERIOD_BOUNDED_LINEAR_GAME_CLOCK"
+    },
+    {
+      "name": "per-play timeActual",
+      "status": "UNAVAILABLE"
+    },
+    {
+      "name": "Kalshi 1m TOB OHLC",
+      "status": "OBSERVED"
+    },
+    {
+      "name": "possession-normalized market overlay",
+      "status": "APPROXIMATED",
+      "note": "MULTI_POSSESSION_CANDLE dominant"
+    },
+    {
+      "name": "L2 imbalance / queue / depth",
+      "status": "UNAVAILABLE"
+    },
+    {
+      "name": "pregame win probability",
+      "status": "UNAVAILABLE"
+    },
+    {
+      "name": "lineup state",
+      "status": "UNAVAILABLE"
+    },
+    {
+      "name": "maker fill",
+      "status": "UNAVAILABLE",
+      "note": "not a verified fill"
+    },
+    {
+      "name": "mae_after_entry / possessions_until_stop",
+      "status": "OBSERVED",
+      "role": "TARGET_ONLY"
+    },
+    {
+      "name": "1/5/15m candle windows",
+      "status": "OBSERVED",
+      "role": "SECONDARY_MARKET_SAMPLING_ARTIFACT"
+    }
+  ]
+}

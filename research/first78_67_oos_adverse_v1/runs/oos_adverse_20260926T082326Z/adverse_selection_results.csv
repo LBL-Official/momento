@@ -1,0 +1,4 @@
+analysis,where,run_id,status,label
+FUTURE_THRESHOLD_SAMPLE,first80_selection_comparison.csv,oos_adverse_20260926T082326Z,,
+MEASURED_FILL_SELECTION,,oos_adverse_20260926T082326Z,MEASURED_ADVERSE_SELECTION_UNAVAILABLE,
+ACCEPTANCE_BOUNDS,oracle_bound_results.csv,oos_adverse_20260926T082326Z,,not a queue and not a probability

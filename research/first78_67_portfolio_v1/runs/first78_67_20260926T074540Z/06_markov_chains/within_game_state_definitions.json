@@ -1,0 +1,20 @@
+{
+  "status": "DEVELOPMENT_ONLY",
+  "deployment_validation": "INCOMPLETE",
+  "distance_bins_prespecified": [
+    "0_to_5pp above 67",
+    "5_to_15pp",
+    "15pp_or_more"
+  ],
+  "time_bins_prespecified": [
+    "under_5min remaining",
+    "5min_or_more",
+    "UNKNOWN"
+  ],
+  "holdout_cut_local_date": "2026-02-01",
+  "note": "Cell rates are fit on the earlier segment and scored on the later segment of the same examined season. This is not an untouched prospective test. Predictions do not filter entries or change size.",
+  "later_segment_brier_stop": 0.2549007395661185,
+  "later_segment_scored_n": 279,
+  "fit_n": 359,
+  "later_n": 288
+}

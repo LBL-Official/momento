@@ -1,0 +1,215 @@
+{
+  "incident_id": "kalshi-user-not-found",
+  "title": "Kalshi Create V2 HTTP 404 user_not_found on MLB while WNBA accepted",
+  "verdict": "ROOT_CAUSE_EXTERNAL",
+  "do_not_change_mlb_ticker_or_create_v2_format": true,
+  "user_not_found_semantics": {
+    "official_openapi_defines_code_user_not_found": false,
+    "create_v2_documents_http_404": false,
+    "authenticated_account_globally_missing": "ruled_out",
+    "request_body_contains_user_id": false,
+    "ticker_means_user_in_official_rest": false,
+    "ticker_format_affected_by_sharding": false,
+    "kalshi_details_when_present": "Exchange user not found. For Predictions: reference documentation Exchange Sharding documentation.",
+    "kalshi_support_meaning": "request targeting wrong exchange shard/instance for user or market context; check exchange_index; verify intra-exchange transfer/user on that shard",
+    "best_supported_reading": "exchange_instance_user_or_wrong_shard_context",
+    "h_route_omit_defaulted_to_0": "unresolved_mlb_vs_wnba_does_not_distinguish",
+    "h_user_auto_routed_to_3_unprovisioned": "unresolved_mlb_vs_wnba_does_not_distinguish",
+    "create_v2_omit_plus_ticker_official": "auto-routes; else defaults to 0",
+    "create_v2_docs_example_exchange_index_0": "do_not_copy_would_force_shard_0",
+    "reading_is_openapi_enum": false,
+    "do_not_rewrite_mlb_tickers_because_wnba_worked": true,
+    "do_not_add_exchange_index_3_as_unproven_fix": true
+  },
+  "code_change_required": false,
+  "retry_404": false,
+  "w8_started": false,
+  "incident_window": {
+    "start_utc": "2026-08-27T23:18:56Z",
+    "end_utc": "2026-08-28T03:49:03Z",
+    "host_timezone": "UTC",
+    "config_timezone": "America/Los_Angeles"
+  },
+  "runtime": {
+    "host_instance_id": "i-0f0849d5829476c31",
+    "unit": "momento-live.service",
+    "pid": 163366,
+    "paper_unit": "inactive",
+    "mode": "live",
+    "live_enabled": true,
+    "live_confirmation_set": true,
+    "momento_kalshi_env": "production",
+    "config_path": "/var/lib/momento/config/live.toml",
+    "binary_sha256": "71319cae23bfd37225f49bef5053db7a03f47b11b49cb5c121c89731f7ccef26",
+    "credential_key_id_sha256_16": "2139f81bbe6b98f3",
+    "credential_key_id_len": 36,
+    "credential_key_id_uuid_shaped": true
+  },
+  "counts": {
+    "mlb_create_rejected": 201,
+    "mlb_create_acked": 0,
+    "mlb_fills": 0,
+    "wnba_create_accepted": 2,
+    "wnba_filled": 1,
+    "wnba_acked_then_cancelled_unfilled": 1,
+    "journal_404_without_details": 133,
+    "journal_404_with_sharding_details": 68,
+    "journal_submit_to_ack": 2
+  },
+  "shared_create_v2": {
+    "method": "POST",
+    "origin": "https://external-api.kalshi.com",
+    "path": "/trade-api/v2/portfolio/events/orders",
+    "url": "https://external-api.kalshi.com/trade-api/v2/portfolio/events/orders",
+    "signed_path": "/trade-api/v2/portfolio/events/orders",
+    "signature_payload_form": "{unix_ms}POST/trade-api/v2/portfolio/events/orders",
+    "auth_headers": [
+      "KALSHI-ACCESS-KEY",
+      "KALSHI-ACCESS-TIMESTAMP",
+      "KALSHI-ACCESS-SIGNATURE"
+    ],
+    "auth_header_values": "REDACTED",
+    "side": "bid",
+    "time_in_force": "good_till_canceled",
+    "self_trade_prevention_type": "taker_at_cross",
+    "post_only": true,
+    "reduce_only": false,
+    "omitted_fields": [
+      "expiration_time",
+      "cancel_order_on_pause",
+      "subaccount",
+      "order_group_id",
+      "exchange_index"
+    ],
+    "official_omit_exchange_index_with_ticker": "auto-routes to market shard (Create V2 field text and REST sharding); not proof auto-route executed",
+    "wire_exchange_index": "omitted",
+    "request_body_source": "reconstructed_from_submit_post_only_and_persisted_order",
+    "response_headers_logged": false,
+    "sport_specific_adapter_mutation": false
+  },
+  "representative_mlb_rejected": {
+    "utc": "2026-08-27T23:21:09.339609Z",
+    "ticker": "KXMLBGAME-26AUG271910MILNYM-MIL",
+    "client_order_id_raw": 1787872869339608903,
+    "client_order_id_uuid": "00000000-0000-0000-18cf-cce6f08bb747",
+    "count": "7.00",
+    "price": "0.8000",
+    "venue_order_id": null,
+    "state": "Rejected",
+    "http_status": 404,
+    "response_body": {
+      "error": {
+        "code": "user_not_found",
+        "message": "user not found"
+      }
+    }
+  },
+  "representative_wnba_filled": {
+    "utc": "2026-08-28T01:12:05.715286Z",
+    "ticker": "KXWNBAGAME-26AUG27GSNY-GS",
+    "client_order_id_raw": 1787879525715286233,
+    "client_order_id_uuid": "00000000-0000-0000-18cf-d2f4bf7418d9",
+    "count": "5.00",
+    "price": "0.8100",
+    "state": "Filled",
+    "fill_qty": 5,
+    "fill_price_cents": 81,
+    "http_status": "200_or_201_ack_logged_raw_status_not_persisted"
+  },
+  "representative_wnba_cancelled": {
+    "utc": "2026-08-28T02:44:37.489064Z",
+    "ticker": "KXWNBAGAME-26AUG27WSHPHX-WSH",
+    "client_order_id_raw": 1787885077489063820,
+    "client_order_id_uuid": "00000000-0000-0000-18cf-d8015ef5178c",
+    "count": "5.00",
+    "price": "0.8100",
+    "state": "Cancelled",
+    "filled_qty": 0,
+    "venue_order_id_present": true
+  },
+  "mlb_rejected_tickers": [
+    { "ticker": "KXMLBGAME-26AUG271910MILNYM-MIL", "n": 72 },
+    { "ticker": "KXMLBGAME-26AUG272145AZSF-SF", "n": 68 },
+    { "ticker": "KXMLBGAME-26AUG271907KCTOR-KC", "n": 30 },
+    { "ticker": "KXMLBGAME-26AUG271905HOUNYY-HOU", "n": 26 },
+    { "ticker": "KXMLBGAME-26AUG271915LADATL-ATL", "n": 5 }
+  ],
+  "mlb_rejected_count_all": "7.00",
+  "mlb_rejected_price_cents": { "80": 36, "81": 67, "82": 62, "83": 36 },
+  "classification": {
+    "A_user_missing_in_environment": "ruled_out",
+    "B_referenced_user_or_resource_missing": "supported_at_exchange_shard_scope",
+    "C_ticker_market_missing": "not_supported",
+    "D_malformed_request": "not_supported",
+    "E_environment_mismatch": "ruled_out",
+    "F_auth_mismatch": "ruled_out",
+    "G_insufficient_evidence": "h_route_vs_h_user_unresolved; openapi_omits_404; market_exchange_index_and_balance_breakdown_not_persisted",
+    "create_v2_openapi_documents_404": false,
+    "observed_error_code": "user_not_found",
+    "sharding_details_present_on": 68
+  },
+  "official_docs": {
+    "create_order_v2": "https://docs.kalshi.com/api-reference/orders/create-order-v2",
+    "exchange_sharding": "https://docs.kalshi.com/getting_started/exchange_sharding",
+    "get_balance": "https://docs.kalshi.com/api-reference/portfolio/get-balance",
+    "intra_account_transfer": "https://docs.kalshi.com/api-reference/portfolio/intra-account-transfer",
+    "intra_account_transfer_path": "POST /portfolio/intra_exchange_instance_transfer",
+    "intra_account_transfer_amount_unit": "centicents",
+    "kalshi_ui_exchange_indexes": "https://kalshi.com/account/exchange-indexes",
+    "baseball_shard_cutover_et": "2026-08-24T12:00:00-04:00",
+    "baseball_shard_index": 3,
+    "default_shard_index": 0,
+    "wnba_in_baseball_or_tennis_tag_table": false
+  },
+  "kalshi_pinpoint": {
+    "method": "POST",
+    "endpoint": "/trade-api/v2/portfolio/events/orders",
+    "mlb_category": "Sports",
+    "mlb_tags": "Baseball",
+    "mlb_series": "KXMLBGAME",
+    "mlb_expected_exchange_index": 3,
+    "wnba_category": "Sports",
+    "wnba_tags": "Basketball (not Tennis or Baseball; catch-all)",
+    "wnba_series": "KXWNBAGAME",
+    "wnba_expected_exchange_index": 0
+  },
+  "get_balance_2026_08_28": {
+    "http_all": 200,
+    "http_index_3": 200,
+    "aggregate_balance_cents": 5946,
+    "aggregate_balance_dollars": "59.4639",
+    "breakdown": [
+      {"exchange_index": 0, "balance": "59.4639", "label": "Default"},
+      {"exchange_index": 1, "balance": "0.0000", "label": "Combos"},
+      {"exchange_index": 2, "balance": "0.0000", "label": "Crypto"},
+      {"exchange_index": 3, "balance": "0.0000", "label": "Tennis & Baseball"}
+    ],
+    "open_kxmlbgame_exchange_index": 3,
+    "open_kxwnbagame_exchange_index": 0,
+    "kalshi_ui": "https://kalshi.com/account/exchange-indexes",
+    "h_user_unfunded_shard_3": "established",
+    "after_ui_transfer": {
+      "index_0_dollars": "24.4639",
+      "index_3_dollars": "35.0000",
+      "aggregate_dollars": "59.4639"
+    }
+  },
+  "root_cause": {
+    "summary": "404 user_not_found was unfunded baseball shard 3. UI transfer 2026-08-28: $35.0000 on index 3, $24.4639 remaining on index 0. Not a ticker/format bug.",
+    "kind": "external_account_or_venue_shard_state",
+    "h_route_vs_h_user": "h_user_established_by_get_balance_and_ui"
+  },
+  "recommended_next_action": [
+    "Do not retry the 201 rejected client_order_ids",
+    "Do not change Momento Create V2, MLB tickers, strategy, or risk",
+    "Watch the next MLB 80-83 create for HTTP 201 vs remaining 404"
+  ],
+  "trading_resume": {
+    "live_may_remain_armed": true,
+    "mlb_creates_expected_to_404_until_shard_3_funded": false,
+    "shard_3_funded_dollars": "35.0000",
+    "shard_0_remaining_dollars": "24.4639",
+    "wnba_on_shard_0_can_still_fill": true,
+    "paper_must_stay_stopped": true
+  }
+}

@@ -1,0 +1,10 @@
+trade T0438  NCAAB  Georgia at Kentucky
+contract KXNCAAMBGAME-26FEB17UGAUK-UGA  slice H1_2
+signal 2026-02-17T19:42:00-08:00 PST  exit 2026-02-17T20:17:00-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 7379  principal_cents 575562
+entry_fee_cents 2216  exit_fee_cents 2856
+exit STOP at 67c  terminal yes
+gross_cents -81169  net_cents -86241
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

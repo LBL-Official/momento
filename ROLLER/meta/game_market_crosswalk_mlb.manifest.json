@@ -1,0 +1,27 @@
+{
+  "artifact": "game_market_crosswalk",
+  "canonical_tickers": 8880,
+  "crosswalk_sha256": "961b924ea58ac69433f6ecec6c664867e078a1845129f9d90255845550a848c6",
+  "games_with_linked_markets": 4345,
+  "identity_rule_version": "1.0.0",
+  "identity_tickers": 8690,
+  "input_hashes": {
+    "identity": "29c91687302db79fa0ef693bb5b4a2951d02efd6d74e59ea764b1a444cf038f4",
+    "kalshi_markets": "2abffcbe01e81cac04ed0d7ef34e8ec06b25ec2884fe96fdb3a603aa619b8d5a",
+    "suite_markets": "636c1d0fb4399ea4cfde144f42d72ab44bc3a55a12f5815686766be1ba101966"
+  },
+  "link_rule_version": "1.0.0",
+  "market_row_count": 8920,
+  "markets_sha256": "c8aa3d35927dafee88bcef03b854773ede8c637f48a52c98f0d415fe317dc75e",
+  "provisional_layout": "/Users/user/Desktop/Momento/ROLLER/data/mlb/2025_2026/derived/warehouse_v0",
+  "row_count": 8920,
+  "sport": "MLB",
+  "status_counts": {
+    "AMBIGUOUS": 0,
+    "INVALID": 0,
+    "LINKED": 8690,
+    "UNLINKED": 230
+  },
+  "suite_tickers": 8758,
+  "updated_at": "2026-09-14T23:33:51Z"
+}

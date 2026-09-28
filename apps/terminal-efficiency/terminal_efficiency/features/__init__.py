@@ -1,0 +1,1 @@
+from terminal_efficiency.features.registry import FEATURE_REGISTRY, FeatureMetadata

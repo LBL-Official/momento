@@ -1,0 +1,53 @@
+{
+  "source": "Backtesting Suite/Data/NBA/2025-2026/warehouse/derived/nba/first80_execution_audit/candidates.json",
+  "binding": "warehouse_frozen_v1",
+  "note": "Identity sample for Phase 0 reconciliation. Not a full population lock.",
+  "expected_population_n": 1230,
+  "rows": [
+    {
+      "event_ticker": "KXNBAGAME-25DEC01CHIORL",
+      "ticker": "KXNBAGAME-25DEC01CHIORL-ORL",
+      "game_date": "2025-12-01",
+      "first_80_utc": "2025-12-02T01:14:00+00:00",
+      "first_80_timestamp": 1764638040,
+      "entry_bid_close_e4": 8000,
+      "entry_ask_close_e4": 8200,
+      "first_40_close_ts": 1764641700,
+      "first_40_low_ts": 1764641640,
+      "expiration_result_yes": true,
+      "stop_close_triggered": true,
+      "observed_first_80": 1764638040,
+      "status": "FIRST_80"
+    },
+    {
+      "event_ticker": "KXNBAGAME-25DEC01ATLDET",
+      "ticker": "KXNBAGAME-25DEC01ATLDET-DET",
+      "game_date": "2025-12-01",
+      "first_80_utc": "2025-12-02T00:35:00+00:00",
+      "first_80_timestamp": 1764635700,
+      "entry_bid_close_e4": 8100,
+      "entry_ask_close_e4": 8200,
+      "first_40_close_ts": null,
+      "first_40_low_ts": 1764640860,
+      "expiration_result_yes": true,
+      "stop_close_triggered": false,
+      "observed_first_80": 1764635700,
+      "status": "FIRST_80"
+    },
+    {
+      "event_ticker": "KXNBAGAME-25DEC01DALDEN",
+      "ticker": "KXNBAGAME-25DEC01DALDEN-DEN",
+      "game_date": "2025-12-01",
+      "first_80_utc": "2025-12-02T03:26:00+00:00",
+      "first_80_timestamp": 1764645960,
+      "entry_bid_close_e4": 8000,
+      "entry_ask_close_e4": 8100,
+      "first_40_close_ts": 1764648420,
+      "first_40_low_ts": 1764647940,
+      "expiration_result_yes": false,
+      "stop_close_triggered": true,
+      "observed_first_80": 1764645960,
+      "status": "FIRST_80"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+trade T0077  NBA  Houston at Golden State
+contract KXNBAGAME-25NOV26HOUGSW-GSW  slice Q2
+signal 2025-11-26T20:11:00-08:00 PST  exit 2025-11-26T20:58:00-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 2309  principal_cents 180102
+entry_fee_cents 694  exit_fee_cents 894
+exit STOP at 67c  terminal no
+gross_cents -25399  net_cents -26987
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

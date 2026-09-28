@@ -1,0 +1,10 @@
+trade T0095  NCAAB  Miami (FL) at Ole Miss
+contract KXNCAAMBGAME-25DEC02MIAMISS-MIA  slice H1_2
+signal 2025-12-02T18:55:00-08:00 PST  exit 2025-12-02T21:25:42-08:00 PST
+assumed entry 78c  observed close 83c  overshoot 5c
+contracts 2429  principal_cents 189462
+entry_fee_cents 730  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 53438  net_cents 52708
+strategy_result POSITIVE  net_r 1.856634611997604706048117229
+Assumed fill. Not a maker fill. Not live P&L.

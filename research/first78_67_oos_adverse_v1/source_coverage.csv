@@ -1,0 +1,5 @@
+test_id,sport,source,coverage_status,notes
+OCT_2025,NBA,normalized candles_1m and markets,COMPLETE_FOR_NORMALIZED_WAREHOUSE,games absent from this warehouse stay absent
+OCT_2025,NCAAB,normalized candles_1m and markets,COMPLETE_FOR_NORMALIZED_WAREHOUSE,a sport with no in-window games is NO_ELIGIBLE_GAMES after the scan
+APR_2025,NBA,raw candlesticks,PARTIAL_RAW_TICKER_SUBSET,42 April tickers on disk; not the full slate; no normalized candle tree
+APR_2025,NCAAB,markets and plays without candlesticks,CANDLES_ABSENT,no 25APR event dates in the market file; 20 APR-stamped rows are 26APR and sit outside this window; candlesticks absent; COVERAGE_UNKNOWN

@@ -1,0 +1,58 @@
+---
+description: SuperASI (Lebronner rename) — ROLLER +EV alpha decomposition
+globs:
+  - research/superasi/**
+  - docs/research/superasi/**
+  - research/lebronner/**
+  - apps/nba-data/scripts/superasi.py
+  - apps/nba-data/scripts/lebronner.py
+alwaysApply: false
+---
+
+# SuperASI (rename of Lebronner)
+
+Research-only alpha decomposition of positive-EV strategies generated
+from ROLLER.
+
+```
+LIVE EXECUTION = FALSE
+CANDLE PATH ≠ ACTUAL FILL
+LEDGER 40 ≠ PROVEN FILL
+DO NOT CHANGE LIVE FIRST01 / 80/81/83/89
+DO NOT START W9
+```
+
+## Mission
+
+Take a ROLLER +EV object and decompose its in-production EV:
+
+1. **Terminal efficiency** — P(W | trigger) vs K
+2. **Path efficiency** — s_W, s_L, four-cell, S = P(¬T40)
+3. **Stop-path realization** — E[exit | T40], ±5m window, printed-40 vs blow-through
+
+Do not treat a single ledger EV as alpha.
+
+Home: `research/superasi/`.
+Legacy FIRST75 archive: `research/lebronner/` (named −0.37¢ stays there).
+
+## Absolute
+
+- SuperASI does not submit, approve, or route orders.
+- Keep the 40 **rule**. Do not move the stop to 45 from these tables.
+- Do not retune FIRST80 / T40 / FIRST01.
+- In-production 80/40 win rate is S = 883/1182, not terminal 991/1182.
+- Planning +2.5¢ is a research haircut, not a proven fill.
+- Do not park a 40/45 sell at entry. Do not buy the opponent at 60 at entry.
+- Do not hunt a profitable subset. Do not invent L2.
+
+## Identities (already documented)
+
+`P(W ∩ ¬T40) = P(W) × P(¬T40 | W)`
+
+`S = p · s_W + (1 − p) · s_L`
+
+`EV_x = 20S − L_x(1 − S)`
+
+Sources: `research/first75_terminal_path_decomp/`,
+`research/first80_alpha_decomposition_v1/`,
+`research/superasi/EV_DECOMPOSITION.md`.

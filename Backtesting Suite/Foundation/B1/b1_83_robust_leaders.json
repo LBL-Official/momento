@@ -1,0 +1,50 @@
+[
+  {
+    "class": "CANDIDATE",
+    "condition": "lead_ge2=YES&personality=CHOPPY",
+    "selection_score": 8.867440574903261,
+    "test_ev": 7.32258064516129,
+    "train_ev": 0.0845771144278607,
+    "val_ev": 2.185185185185185
+  },
+  {
+    "class": "CANDIDATE_THIN_VALIDATION",
+    "condition": "half=TOP&vol_15m_tertile=LOW",
+    "selection_score": 7.160568086883876,
+    "test_ev": 2.7142857142857144,
+    "train_ev": 0.8095238095238095,
+    "val_ev": 1.2105263157894737
+  },
+  {
+    "class": "CANDIDATE_THIN_VALIDATION",
+    "condition": "lead_ge2=YES&vol_1m_tertile=LOW",
+    "selection_score": 7.152631578947369,
+    "test_ev": 11.736842105263158,
+    "train_ev": 0.3333333333333333,
+    "val_ev": 1.2105263157894737
+  },
+  {
+    "class": "CANDIDATE_THIN_VALIDATION",
+    "condition": "inning_late68=YES&vel_5m_sign=UP",
+    "selection_score": 6.4311188811188815,
+    "test_ev": 3.6666666666666665,
+    "train_ev": 1.6153846153846154,
+    "val_ev": 7.909090909090909
+  },
+  {
+    "class": "CANDIDATE_THIN_VALIDATION",
+    "condition": "inning_late68=YES&vel_sign=UP",
+    "selection_score": 6.153561387066541,
+    "test_ev": 3.6666666666666665,
+    "train_ev": 0.5051546391752577,
+    "val_ev": 7.909090909090909
+  },
+  {
+    "class": "CANDIDATE_THIN_VALIDATION",
+    "condition": "p_start_30_34=NO&inning_late68=YES",
+    "selection_score": 6.031989708404803,
+    "test_ev": 3.6666666666666665,
+    "train_ev": 0.018867924528301886,
+    "val_ev": 7.909090909090909
+  }
+]

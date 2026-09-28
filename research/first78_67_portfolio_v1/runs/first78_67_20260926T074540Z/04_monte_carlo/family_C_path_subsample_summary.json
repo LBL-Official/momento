@@ -1,0 +1,13 @@
+{
+  "paths": 400,
+  "seed": 20260929,
+  "block_days": 7,
+  "label": "SUBSAMPLE_FOR_PATH_STATISTICS_NOT_IN_THE_12255_ENDING_EQUITY_FILE",
+  "p_ending_below_start": 0.0,
+  "p_equity_after_40_below_start": 0.0225,
+  "p_equity_after_100_below_start": 0.0,
+  "p_mdd_above_15pct": 0.0,
+  "p_mdd_above_10pct": 0.045,
+  "drawdown_series": "realized accounting equity inside the resampled ledger",
+  "one_year_and_1000_trade_horizon": "NOT_PRODUCED"
+}

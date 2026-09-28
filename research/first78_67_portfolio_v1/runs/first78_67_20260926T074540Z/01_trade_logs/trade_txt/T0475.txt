@@ -1,0 +1,10 @@
+trade T0475  NBA  Boston at Phoenix
+contract KXNBAGAME-26FEB24BOSPHX-BOS  slice Q3
+signal 2026-02-24T19:21:00-08:00 PST  exit 2026-02-24T20:22:16-08:00 PST
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 8565  principal_cents 668070
+entry_fee_cents 2573  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 188430  net_cents 185857
+strategy_result POSITIVE  net_r 1.856657642628093064143931750
+Assumed fill. Not a maker fill. Not live P&L.

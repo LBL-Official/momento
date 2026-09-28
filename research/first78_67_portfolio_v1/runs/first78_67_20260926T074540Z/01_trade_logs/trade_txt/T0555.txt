@@ -1,0 +1,10 @@
+trade T0555  NBA  Chicago at Sacramento
+contract KXNBAGAME-26MAR08CHISAC-SAC  slice Q3
+signal 2026-03-08T19:28:00-07:00 PDT  exit 2026-03-08T20:59:29-07:00 PDT
+assumed entry 78c  observed close 84c  overshoot 6c
+contracts 11788  principal_cents 919464
+entry_fee_cents 3540  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 259336  net_cents 255796
+strategy_result POSITIVE  net_r 1.856688684038615083109530377
+Assumed fill. Not a maker fill. Not live P&L.

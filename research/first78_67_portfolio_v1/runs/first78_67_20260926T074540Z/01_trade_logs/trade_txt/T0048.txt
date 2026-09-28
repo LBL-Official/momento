@@ -1,0 +1,10 @@
+trade T0048  NBA  Milwaukee at Cleveland
+contract KXNBAGAME-25NOV17MILCLE-CLE  slice Q3
+signal 2025-11-17T17:33:00-08:00 PST  exit 2025-11-17T17:55:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 2114  principal_cents 164892
+entry_fee_cents 635  exit_fee_cents 818
+exit STOP at 67c  terminal yes
+gross_cents -23254  net_cents -24707
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

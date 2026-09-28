@@ -1,0 +1,90 @@
+{
+  "note": "Measured 2026-09-12. Do not invent. NBA/ATP/WTA from first --compare pass. WNBA/NCAAB/MLB from retry after fingerprint + NCAAB dataSources fix.",
+  "query": "first_touch_80_season",
+  "compare": [
+    {
+      "league": "NBA",
+      "query": "first_touch_80_season",
+      "optimized_mode": "indexed",
+      "reference_mode": "full_scan",
+      "optimized_n": 1552,
+      "reference_n": 1552,
+      "identities_equal": true,
+      "optimized_wall_ms": 134365.048,
+      "reference_wall_ms": 260119.366,
+      "optimized_load_ms": 6,
+      "reference_load_ms": 111718
+    },
+    {
+      "league": "NCAAB",
+      "query": "first_touch_80_season",
+      "optimized_status": "COMPLETE",
+      "reference_status": "COMPLETE",
+      "optimized_mode": "indexed",
+      "reference_mode": "full_scan",
+      "optimized_n": 908,
+      "reference_n": 908,
+      "identities_equal": true,
+      "optimized_wall_ms": 18427.911,
+      "reference_wall_ms": 30375.831,
+      "optimized_load_ms": 0,
+      "reference_load_ms": 23708
+    },
+    {
+      "league": "WNBA",
+      "query": "first_touch_80_season",
+      "optimized_status": "COMPLETE",
+      "reference_status": "COMPLETE",
+      "optimized_mode": "indexed",
+      "reference_mode": "full_scan",
+      "optimized_n": 348,
+      "reference_n": 348,
+      "identities_equal": true,
+      "optimized_wall_ms": 4812.623,
+      "reference_wall_ms": 7899.414,
+      "optimized_load_ms": 0,
+      "reference_load_ms": 5540
+    },
+    {
+      "league": "MLB",
+      "query": "first_touch_80_season",
+      "optimized_status": "COMPLETE",
+      "reference_status": "COMPLETE",
+      "optimized_mode": "indexed",
+      "reference_mode": "full_scan",
+      "optimized_n": 4162,
+      "reference_n": 4162,
+      "identities_equal": true,
+      "optimized_wall_ms": 39202.967,
+      "reference_wall_ms": 61687.18,
+      "optimized_load_ms": 1,
+      "reference_load_ms": 49387
+    },
+    {
+      "league": "ATP",
+      "query": "first_touch_80_season",
+      "optimized_mode": "indexed",
+      "reference_mode": "full_scan",
+      "optimized_n": 1596,
+      "reference_n": 1596,
+      "identities_equal": true,
+      "optimized_wall_ms": 22904.432,
+      "reference_wall_ms": 83894.508,
+      "optimized_load_ms": 1,
+      "reference_load_ms": 70005
+    },
+    {
+      "league": "WTA",
+      "query": "first_touch_80_season",
+      "optimized_mode": "indexed",
+      "reference_mode": "full_scan",
+      "optimized_n": 1869,
+      "reference_n": 1869,
+      "identities_equal": true,
+      "optimized_wall_ms": 24340.456,
+      "reference_wall_ms": 21382.334,
+      "optimized_load_ms": 1,
+      "reference_load_ms": 7511
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+claim,disposition,run_id,test_id,scenario_id,population_id,sport
+v1 uncentered bootstrap p-values and Holm adjustments,WITHDRAWN,audit_repair_20260926T090447Z,ALL,ALL,ALL,ALL
+"12255-path median $229,554.86 and 5th/95th percentiles $147,408.57/$354,986.99",WITHDRAWN,audit_repair_20260926T090447Z,ALL,ALL,ALL,ALL
+"next-bar net $65,814.78 as a causal replay",WITHDRAWN_PENDING_PATHS,audit_repair_20260926T090447Z,ALL,ALL,ALL,ALL

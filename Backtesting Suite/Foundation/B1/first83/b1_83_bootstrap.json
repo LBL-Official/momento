@@ -1,0 +1,134 @@
+[
+  {
+    "condition": "inning_grp=7&p_max_vs_83=PEAK_AT",
+    "mean_pnl_per_game_usd_ci95": [
+      -0.4141666666666666,
+      0.7525
+    ],
+    "reps": 10000,
+    "seed": 42,
+    "selection_score": 12.542307692307693,
+    "test_n": 48
+  },
+  {
+    "condition": "p_start_fine=45_49&lead_signed=LEAD_2",
+    "mean_pnl_per_game_usd_ci95": [
+      -1.3889473684210527,
+      0.45315789473684215
+    ],
+    "reps": 10000,
+    "seed": 42,
+    "selection_score": 12.488888888888889,
+    "test_n": 38
+  },
+  {
+    "condition": "p_start_fine=45_49&score_bucket=TWO_RUN",
+    "mean_pnl_per_game_usd_ci95": [
+      -1.3889473684210527,
+      0.45315789473684215
+    ],
+    "reps": 10000,
+    "seed": 42,
+    "selection_score": 12.488888888888889,
+    "test_n": 38
+  },
+  {
+    "condition": "p_start_45_49=YES&lead_signed=LEAD_2",
+    "mean_pnl_per_game_usd_ci95": [
+      -1.3889473684210527,
+      0.45315789473684215
+    ],
+    "reps": 10000,
+    "seed": 42,
+    "selection_score": 12.488888888888889,
+    "test_n": 38
+  },
+  {
+    "condition": "p_start_45_49=YES&score_bucket=TWO_RUN",
+    "mean_pnl_per_game_usd_ci95": [
+      -1.3889473684210527,
+      0.45315789473684215
+    ],
+    "reps": 10000,
+    "seed": 42,
+    "selection_score": 12.488888888888889,
+    "test_n": 38
+  },
+  {
+    "condition": "p_start_lt50=YES&inning_83=LATE_6_7",
+    "mean_pnl_per_game_usd_ci95": [
+      -0.45705882352941174,
+      0.6752941176470588
+    ],
+    "reps": 10000,
+    "seed": 42,
+    "selection_score": 12.218421052631578,
+    "test_n": 68
+  },
+  {
+    "condition": "p_start_ge50=NO&inning_83=LATE_6_7",
+    "mean_pnl_per_game_usd_ci95": [
+      -0.45705882352941174,
+      0.6752941176470588
+    ],
+    "reps": 10000,
+    "seed": 42,
+    "selection_score": 12.218421052631578,
+    "test_n": 68
+  },
+  {
+    "condition": "p_start_tertile=LOW&inning_83=LATE_6_7",
+    "mean_pnl_per_game_usd_ci95": [
+      -0.45705882352941174,
+      0.6752941176470588
+    ],
+    "reps": 10000,
+    "seed": 42,
+    "selection_score": 12.218421052631578,
+    "test_n": 68
+  },
+  {
+    "condition": "base_class=BASES_EMPTY&move_fine=GE_40",
+    "mean_pnl_per_game_usd_ci95": [
+      -1.0372727272727273,
+      0.5536363636363637
+    ],
+    "reps": 10000,
+    "seed": 42,
+    "selection_score": 12.179833770778652,
+    "test_n": 44
+  },
+  {
+    "condition": "inning_grp=7&vol_1m_tertile=LOW",
+    "mean_pnl_per_game_usd_ci95": [
+      -0.31,
+      1.0233333333333332
+    ],
+    "reps": 10000,
+    "seed": 42,
+    "selection_score": 12.161827956989248,
+    "test_n": 42
+  },
+  {
+    "condition": "p_start_fine=40_44&p_max_vs_83=PEAK_AT",
+    "mean_pnl_per_game_usd_ci95": [
+      0.315,
+      0.315
+    ],
+    "reps": 10000,
+    "seed": 42,
+    "selection_score": 12.156338028169014,
+    "test_n": 64
+  },
+  {
+    "condition": "p_start_40_44=YES&p_max_vs_83=PEAK_AT",
+    "mean_pnl_per_game_usd_ci95": [
+      0.315,
+      0.315
+    ],
+    "reps": 10000,
+    "seed": 42,
+    "selection_score": 12.156338028169014,
+    "test_n": 64
+  }
+]

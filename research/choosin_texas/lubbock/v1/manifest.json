@@ -1,0 +1,14 @@
+{
+  "spec": "research/choosin_texas/lubbock/LUBBOCK_SPEC_V1.md",
+  "spec_sha256": "5845bf9cecaad7f5f950fd2245b2be84f6512b3a609e57b848f813796eaf1fae",
+  "book_json_sha256": "4da5fdd3a48d2a5513ab6e9452657a790514fbef389a05d0385cfaba009b8cf6",
+  "confirmation_cohorts_opened": false,
+  "command": "python -m roller.choosin_texas.lubbock.run",
+  "code_version": "UNAVAILABLE",
+  "code_sha256": "a5830add36d5dce4bb8aa35f231fd543ababcb2785c5505783879fa653113828",
+  "source_sha256": {
+    "asked_six_csv": "28695cfb9cb731dc3076345c9d53c5e5f2c09b2e270228348ec0ed003c6a9329",
+    "mlb_ledger": "c4d8804daccfed87e8ab03199568942bc5a024a3d12d5468d13a4c37888ca07b",
+    "conferences": "9926a934dd37834dac512a5b9eac8b0dea438086a42a5bd3d29f89a4909ef120"
+  }
+}

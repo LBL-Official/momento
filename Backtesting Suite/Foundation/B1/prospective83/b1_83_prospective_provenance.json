@@ -1,0 +1,25 @@
+{
+  "bootstrap_seed": 42,
+  "command": "./target/release/momento-research-b1 --prospective-83",
+  "cost_grid_cents": [
+    0.0,
+    1.0,
+    2.0,
+    3.0,
+    5.0
+  ],
+  "dataset_hash_fnv": "7efa150ca92ff8ac",
+  "economic_report_threshold_cents": 3.0,
+  "economic_thresholds_cents": [
+    2.0,
+    3.0,
+    5.0
+  ],
+  "min_test": 25,
+  "min_train": 50,
+  "min_val": 25,
+  "permutation_seed": 42,
+  "test_end_observed": "2026-06-27",
+  "train_before": "2025-10-07",
+  "val_before": "2026-05-03"
+}

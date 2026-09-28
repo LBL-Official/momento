@@ -1,0 +1,17 @@
+{
+  "action": "start",
+  "bot_id": "mlb-001",
+  "command_id": "649707a3e769400f960c6c9aea4229c3",
+  "command_status": "CONTROL_DISABLED",
+  "desired_state": "RUNNING",
+  "detail": "production writes require VITAL_AWS_CONTROL=1 and confirmation=VITAL_ENABLE_CONTROL; this session does not mutate the live host",
+  "host_effect": "systemctl start momento-live.service",
+  "http_200_not_running": true,
+  "instance_id": "i-0f0849d5829476c31",
+  "kill_is_not_stop": false,
+  "live_confirmation_rejected": false,
+  "region": "us-east-1",
+  "requested_at": "2026-09-14T06:10:01Z",
+  "start_is_not_live_arm": true,
+  "target_unit": "momento-live.service"
+}

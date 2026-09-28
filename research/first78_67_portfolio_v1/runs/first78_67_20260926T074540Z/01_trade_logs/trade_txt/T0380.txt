@@ -1,0 +1,10 @@
+trade T0380  NCAAB  Iowa at Washington
+contract KXNCAAMBGAME-26FEB04IOWAWASH-IOWA  slice H2_1
+signal 2026-02-04T21:24:00-08:00 PST  exit 2026-02-04T21:35:00-08:00 PST
+assumed entry 78c  observed close 83c  overshoot 5c
+contracts 6508  principal_cents 507624
+entry_fee_cents 1955  exit_fee_cents 2519
+exit STOP at 67c  terminal yes
+gross_cents -71588  net_cents -76062
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

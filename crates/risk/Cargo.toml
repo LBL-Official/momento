@@ -1,0 +1,19 @@
+[package]
+name = "momento-risk"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "Risk approval domain. Sole authority for exposure."
+
+[lints]
+workspace = true
+
+[dependencies]
+chrono.workspace = true
+momento-core.workspace = true
+serde.workspace = true
+
+[dev-dependencies]
+chrono.workspace = true

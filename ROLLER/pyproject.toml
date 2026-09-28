@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "momento-roller"
+version = "1.0.0"
+description = "ROLLER: Momento point-in-time sports research database"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.1,<3",
+    "pyarrow>=14,<23",
+    "pydantic>=2.6,<3",
+    "duckdb>=1.1,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9", "jsonschema>=4.20,<5", "httpx>=0.27,<1"]
+terminal = ["fastapi>=0.115,<1", "uvicorn>=0.30,<1", "jsonschema>=4.20,<5", "httpx>=0.27,<1", "nba_api>=1.5,<2"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["roller*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+markers = [
+    "integration: optional tests that require the Momento warehouse",
+]

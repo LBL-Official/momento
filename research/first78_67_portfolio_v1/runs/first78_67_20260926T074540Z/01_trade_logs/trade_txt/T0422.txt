@@ -1,0 +1,10 @@
+trade T0422  NCAAB  SMU at Syracuse
+contract KXNCAAMBGAME-26FEB14SMUSYR-SMU  slice H1_2
+signal 2026-02-14T11:43:00-08:00 PST  exit 2026-02-14T11:54:00-08:00 PST
+assumed entry 78c  observed close 83c  overshoot 5c
+contracts 7104  principal_cents 554112
+entry_fee_cents 2134  exit_fee_cents 2749
+exit STOP at 67c  terminal no
+gross_cents -78144  net_cents -83027
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

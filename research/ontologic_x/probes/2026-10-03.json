@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-03",
+  "timezone": "America/New_York",
+  "provider": "the_odds_api",
+  "bookmaker": "williamhill",
+  "other_books": "NOT_REQUESTED",
+  "status": "SOURCE_UNAVAILABLE",
+  "sports": {
+    "basketball_nba_preseason": {
+      "active": false,
+      "events": [],
+      "odds": "NOT_REQUESTED"
+    },
+    "basketball_nba": {
+      "active": true,
+      "events": [],
+      "odds": "NOT_REQUESTED"
+    }
+  },
+  "quotes": [],
+  "live_execution": false,
+  "submits": false,
+  "note": "Empty boards are not priced. A missing quote is SOURCE_UNAVAILABLE."
+}

@@ -1,0 +1,92 @@
+{
+  "Universe_entry_sequence": {
+    "n": 647,
+    "counts": {
+      "WW": 159,
+      "WL": 170,
+      "LW": 170,
+      "LL": 147
+    },
+    "p_win_after_win": 0.48328267477203646,
+    "p_win_after_loss": 0.5362776025236593,
+    "stationary_W": 0.5092879256965944,
+    "stationary_L": 0.4907120743034056,
+    "residual": 0.0,
+    "interpretation": "Observed W/L subchain only; F unobserved and full 3-state stationary solution undefined; descriptive, not validated forecasting"
+  },
+  "NBA_entry_sequence": {
+    "n": 382,
+    "counts": {
+      "WW": 84,
+      "WL": 105,
+      "LW": 105,
+      "LL": 87
+    },
+    "p_win_after_win": 0.4444444444444444,
+    "p_win_after_loss": 0.546875,
+    "stationary_W": 0.49606299212598426,
+    "stationary_L": 0.5039370078740157,
+    "residual": 0.0,
+    "interpretation": "Observed W/L subchain only; F unobserved and full 3-state stationary solution undefined; descriptive, not validated forecasting"
+  },
+  "NCAAB_entry_sequence": {
+    "n": 265,
+    "counts": {
+      "WW": 74,
+      "WL": 65,
+      "LW": 65,
+      "LL": 60
+    },
+    "p_win_after_win": 0.5323741007194245,
+    "p_win_after_loss": 0.52,
+    "stationary_W": 0.5265151515151515,
+    "stationary_L": 0.4734848484848485,
+    "residual": 0.0,
+    "interpretation": "Observed W/L subchain only; F unobserved and full 3-state stationary solution undefined; descriptive, not validated forecasting"
+  },
+  "Universe_completion_sequence": {
+    "n": 647,
+    "counts": {
+      "WW": 178,
+      "WL": 151,
+      "LW": 151,
+      "LL": 166
+    },
+    "p_win_after_win": 0.541033434650456,
+    "p_win_after_loss": 0.47634069400630913,
+    "stationary_W": 0.5092879256965944,
+    "stationary_L": 0.4907120743034056,
+    "residual": 0.0,
+    "interpretation": "Observed W/L subchain only; F unobserved and full 3-state stationary solution undefined; descriptive, not validated forecasting"
+  },
+  "NBA_completion_sequence": {
+    "n": 382,
+    "counts": {
+      "WW": 92,
+      "WL": 97,
+      "LW": 97,
+      "LL": 95
+    },
+    "p_win_after_win": 0.48677248677248675,
+    "p_win_after_loss": 0.5052083333333334,
+    "stationary_W": 0.4960629921259843,
+    "stationary_L": 0.5039370078740157,
+    "residual": 5.551115123125783e-17,
+    "interpretation": "Observed W/L subchain only; F unobserved and full 3-state stationary solution undefined; descriptive, not validated forecasting"
+  },
+  "NCAAB_completion_sequence": {
+    "n": 265,
+    "counts": {
+      "WW": 82,
+      "WL": 57,
+      "LW": 57,
+      "LL": 68
+    },
+    "p_win_after_win": 0.5899280575539568,
+    "p_win_after_loss": 0.456,
+    "stationary_W": 0.5265151515151515,
+    "stationary_L": 0.4734848484848485,
+    "residual": 1.1102230246251565e-16,
+    "interpretation": "Observed W/L subchain only; F unobserved and full 3-state stationary solution undefined; descriptive, not validated forecasting"
+  }
+}

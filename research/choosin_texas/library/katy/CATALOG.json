@@ -1,0 +1,125 @@
+{
+  "status": "OBSERVED",
+  "kind": "catalog",
+  "product": "Katy Texas",
+  "title": "Katy experiments",
+  "live_execution": false,
+  "submits": false,
+  "fill_status": "FILL_UNAVAILABLE",
+  "candle_path_not_fill": true,
+  "policy_frozen": false,
+  "confirmation_accessed": false,
+  "confirmation_A": "SEALED_UNSPENT",
+  "confirmation_B": "SEALED_UNSPENT",
+  "phase5_policy": "NONE",
+  "austin_never_filters_entry": true,
+  "components": {
+    "dallas": {
+      "role": "clock + yes_bid path at the run mark",
+      "page": "#/dallas",
+      "note": "Dallas UI stays 2Q/3Q. Katy may read later 4Q path on the same 604 trades."
+    },
+    "houston": {
+      "desk": "Houston",
+      "identity": "HOUSTON_TAKER_OTHER_SIDE_V1",
+      "role": "TAKER_OTHER_SIDE_SCENARIO",
+      "standalone_page": false,
+      "live_execution": false,
+      "submits": false,
+      "l2": "SOURCE_UNAVAILABLE",
+      "no_ask": "SOURCE_UNAVAILABLE",
+      "declared_no_taker_price": "DECLARED_COMPLEMENT_OF_YES_BID",
+      "formula": "no_taker_cents = 100 - yes_bid; lock_vs_entry = yes_bid - 80",
+      "fill_status": "FILL_UNAVAILABLE",
+      "fee_model": "UNAVAILABLE",
+      "candle_path_not_fill": true,
+      "note": "Houston is declared inside Katy. It is not warehouse L2 and not a Kalshi taker fill."
+    },
+    "austin": {
+      "role": "frozen hold-80-to-settlement EV at the run-mark snapshot. Model is not refit.",
+      "hedge_if": "per experiment",
+      "missing_ev": "AUSTIN_EV_UNAVAILABLE \u2192 no hedge",
+      "page": "#/austin",
+      "optimize": "threshold and price-range search only. Not a retrain."
+    }
+  },
+  "experiments": [
+    {
+      "number": 1,
+      "experiment_id": "KATY_TEXAS_V1",
+      "slug": "late-underwater-41-70-ev5",
+      "href": "#/katy/late-underwater-41-70-ev5",
+      "title": "Late underwater 41\u201370 / EV < 5",
+      "question": "If FIRST80 is already on and yes_bid is 41\u201370 at 4Q 9:00 / 2H 7:30, does Austin EV < 5 plus a Houston taker lock cut loser damage?",
+      "marks": {
+        "nba": "4Q 9:00 remaining (540s; off-grid, first remaining \u2264 540)",
+        "ncaab": "2H 7:30 remaining (450s; off-grid, first remaining \u2264 450)"
+      },
+      "rule": "yes_bid in [41, 70] and Austin EV < 5",
+      "status": "MEASURED",
+      "one_line": "Loser tails improve on A/NBA; net path EV loses to hold on all three books (A 2.9895833333333335 vs hold 4.375; B 2.0869565217391304 vs 2.608695652173913; NBA 2.781094527363184 vs 3.582089552238806)."
+    },
+    {
+      "number": 2,
+      "experiment_id": "KATY_V2_Q4_OPEN_8040_SEARCH",
+      "slug": "q4-open-8040-search",
+      "href": "#/katy/q4-open-8040-search",
+      "title": "Q4 12:00 / 2H 10:00 \u2014 range \u00d7 Austin EV vs 80/40",
+      "question": "At NBA Q4 12:00 / NCAAB 2H 10:00, what yes_bid range and Austin EV cutoff would let a Houston lock beat always-80/40 by cutting losers?",
+      "marks": {
+        "nba": "4Q 12:00 remaining (720s; on-grid)",
+        "ncaab": "2H 10:00 remaining (600s; on-grid)"
+      },
+      "rule": "Preregistered grid. PRICE_LO=41. PRICE_HI \u2208 {50,55,60,65,70,75,79}. Austin EV < {-20,-10,0,5,10,15,20}. Maximize mixed 80/40 \u2212 always 80/40. Ties \u2192 fewer hedges, then tighter band.",
+      "status": "MEASURED",
+      "one_line": "A 41\u201375 / EV<-20.0 \u03940.625\u00a2; B NONE; NBA 41\u201379 / EV<-20.0 \u03940.05970149253731343\u00a2. Search \u2260 freeze. Books never combined."
+    },
+    {
+      "number": 3,
+      "experiment_id": "KATY_V3_2H_LAST10_FOUR_UNIVERSE",
+      "slug": "2h-last-10-price-search",
+      "href": "#/katy/2h-last-10-price-search",
+      "title": "2H last 10 \u2014 four-universe price hedge vs 80/40",
+      "question": "On the locked NBA 2Q/3Q and NCAAB 1H/2H FIRST80 books, at 2H last 10 (NBA Q4 12:00 converted to that label; NCAAB 2H 10:00), what yes_bid range lets a Houston lock beat always-80/40 by cutting losers? No Austin.",
+      "marks": {
+        "nba": "2H last 10 = Q4 12:00 remaining (720s)",
+        "ncaab": "2H last 10 = 2H 10:00 remaining (600s)"
+      },
+      "rule": "Independent price search. PRICE_LO=41. PRICE_HI \u2208 {50,55,60,65,70,75,79}. Maximize mixed 80/40 \u2212 always 80/40. Ties \u2192 fewer hedges, then tighter band. No Austin EV.",
+      "status": "MEASURED",
+      "one_line": "NBA 2Q NONE; NBA 3Q 41\u201370 \u03940.7448275862068966\u00a2; NCAAB 1H second 10 NONE; NCAAB 2H first 10 NONE. Search \u2260 freeze. Books never combined."
+    },
+    {
+      "number": 4,
+      "experiment_id": "KATY_V4_LAST10_CLOCK_TRAIL",
+      "slug": "last10-clock-trail-55-45",
+      "href": "#/katy/last10-clock-trail-55-45",
+      "title": "2H last 10 clock trail \u2014 55 / 45 / 40 vs 80/40",
+      "question": "On the locked NBA 2Q/3Q and NCAAB 1H/2H FIRST80 books, does a converted 2H last 10 clock trail (\u226455 early, \u226445 mid, else 80/40) raise candle-path EV vs always-80/40? No Austin.",
+      "marks": {
+        "nba": "2H last 10 = Q4 12:00; early \u226455 while rem>6:00; mid \u226445 from 6:00\u20133:00",
+        "ncaab": "2H last 10 = 2H 10:00; early \u226455 while rem>5:00; mid \u226445 from 5:00\u20132:30"
+      },
+      "rule": "Independent path trail. FIRST80 entry kept. T40 kept. Extra last-10 sells at 55 then 45. Houston lock is declared at the triggering close. No Austin EV.",
+      "status": "MEASURED",
+      "one_line": "NBA 2Q \u0394-1.321656050955414\u00a2 vs 80/40; NBA 3Q \u03940.5\u00a2 vs 80/40; NCAAB 1H second 10 \u03940.5181347150259067\u00a2 vs 80/40; NCAAB 2H first 10 \u0394-1.9784172661870503\u00a2 vs 80/40. Not a freeze. Books never combined."
+    },
+    {
+      "number": 5,
+      "experiment_id": "KATY_V5_LAST10_AUSTIN_FOUR_BOOK",
+      "slug": "last10-austin-four-book",
+      "href": "#/katy/last10-austin-four-book",
+      "title": "2H last 10 \u2014 four-book Austin range \u00d7 EV vs 80/40",
+      "question": "At 2H last 10 (NBA Q4 12:00 / NCAAB 2H 10:00), after examining losers, what yes_bid range and Austin EV cutoff lets a Houston lock beat always-80/40 on NBA 2Q, NBA 3Q, and NCAAB 1H/2H Discovery?",
+      "marks": {
+        "nba": "2H last 10 = Q4 12:00 remaining (720s; on-grid)",
+        "ncaab": "2H last 10 = 2H 10:00 remaining (600s; on-grid)"
+      },
+      "rule": "Preregistered grid. PRICE_LO=41. PRICE_HI \u2208 {50,55,60,65,70,75,79}. Austin EV < {-20,-10,0,5,10,15,20}. Maximize mixed 80/40 \u2212 always 80/40. Ties \u2192 fewer hedges, then tighter band. Austin not refit.",
+      "status": "MEASURED",
+      "one_line": "NBA 2Q 41\u201375 / EV<-20.0 \u03940.06070287539936102\u00a2; NBA 3Q 41\u201379 / EV<5.0 \u03940.6620689655172414\u00a2; NCAAB 1H Discovery 41\u201375 / EV<-20.0 \u03940.625\u00a2; NCAAB 2H Discovery NONE. Search \u2260 freeze. Books never combined."
+    }
+  ],
+  "combined_headline_forbidden": true,
+  "note": "Katy is a labeled research-experiment index. Each card is its own page. Houston lock is declared, not a fill. Experiments 1, 2, and 5 query frozen Austin. Experiments 3 and 4 do not. Confirmation unspent."
+}

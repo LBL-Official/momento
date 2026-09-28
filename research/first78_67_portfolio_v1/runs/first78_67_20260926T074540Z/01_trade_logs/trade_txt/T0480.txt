@@ -1,0 +1,10 @@
+trade T0480  NBA  Golden State at Memphis
+contract KXNBAGAME-26FEB25GSWMEM-GSW  slice Q2
+signal 2026-02-25T17:17:00-08:00 PST  exit 2026-02-25T19:08:05-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 8565  principal_cents 668070
+entry_fee_cents 2573  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 188430  net_cents 185857
+strategy_result POSITIVE  net_r 1.856657642628093064143931750
+Assumed fill. Not a maker fill. Not live P&L.

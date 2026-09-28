@@ -1,0 +1,28 @@
+{
+  "run_id": "oos_adverse_20260926T082326Z",
+  "launch_expectation": "NOT_YET_IDENTIFIABLE",
+  "windows": [
+    {
+      "test_id": "OCT_2025",
+      "candidates": 41,
+      "admitted": 41,
+      "judgment": {
+        "sample_selection": "supports_sign",
+        "execution": "supports_sign"
+      },
+      "coverage_status": "COMPLETE_FOR_NORMALIZED_WAREHOUSE"
+    },
+    {
+      "test_id": "APR_2025",
+      "candidates": 6,
+      "admitted": 6,
+      "judgment": {
+        "sample_selection": "weakens",
+        "execution": "weakens"
+      },
+      "coverage_status": "PARTIAL_RAW_TICKER_SUBSET"
+    }
+  ],
+  "measured_adverse_selection": "UNAVAILABLE",
+  "live_execution": false
+}

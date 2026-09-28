@@ -1,0 +1,10 @@
+trade T0533  NBA  Dallas at Boston
+contract KXNBAGAME-26MAR06DALBOS-BOS  slice Q2
+signal 2026-03-06T16:58:00-08:00 PST  exit 2026-03-06T18:37:48-08:00 PST
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 11495  principal_cents 896610
+entry_fee_cents 3452  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 252890  net_cents 249438
+strategy_result POSITIVE  net_r 1.856697309166697681342811418
+Assumed fill. Not a maker fill. Not live P&L.

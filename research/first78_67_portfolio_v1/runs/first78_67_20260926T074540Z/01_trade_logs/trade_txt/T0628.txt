@@ -1,0 +1,10 @@
+trade T0628  NBA  Chicago at Oklahoma City
+contract KXNBAGAME-26MAR27CHIOKC-OKC  slice Q2
+signal 2026-03-27T18:00:00-07:00 PDT  exit 2026-03-27T18:39:00-07:00 PDT
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 15195  principal_cents 1185210
+entry_fee_cents 4564  exit_fee_cents 5880
+exit STOP at 67c  terminal yes
+gross_cents -167145  net_cents -177589
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

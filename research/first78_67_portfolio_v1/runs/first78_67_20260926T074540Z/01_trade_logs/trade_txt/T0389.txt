@@ -1,0 +1,10 @@
+trade T0389  NCAAB  SMU at Pittsburgh
+contract KXNCAAMBGAME-26FEB07SMUPITT-SMU  slice H2_1
+signal 2026-02-07T12:15:00-08:00 PST  exit 2026-02-07T13:47:29-08:00 PST
+assumed entry 78c  observed close 81c  overshoot 3c
+contracts 6592  principal_cents 514176
+entry_fee_cents 1980  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 145024  net_cents 143044
+strategy_result POSITIVE  net_r 1.856677439871240735693054528
+Assumed fill. Not a maker fill. Not live P&L.

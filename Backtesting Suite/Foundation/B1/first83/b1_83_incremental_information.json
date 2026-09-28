@@ -1,0 +1,98 @@
+[
+  {
+    "condition": "ALL_83",
+    "layer": "ALL_83",
+    "n": 2906,
+    "test_ev": 1.4319775596072932,
+    "train_ev": 0.10771041789287816,
+    "val_ev": -0.8137651821862348
+  },
+  {
+    "condition": "p_start_lt50=YES",
+    "layer": "START_BELIEF",
+    "n": 1035,
+    "test_ev": 1.942084942084942,
+    "train_ev": 3.1666666666666665,
+    "val_ev": 1.0909090909090908
+  },
+  {
+    "condition": "start_price_band=40_49",
+    "layer": "START_40_49",
+    "n": 860,
+    "test_ev": 2.407725321888412,
+    "train_ev": 3.419753086419753,
+    "val_ev": 1.3971631205673758
+  },
+  {
+    "condition": "p_start_lt50=YES&lead_ge2=YES",
+    "ev_lift_vs_all83_test": 1.4216809769780725,
+    "layer": "START+LEAD",
+    "n": 807,
+    "test_ev": 2.8536585365853657,
+    "test_n": 205,
+    "train_ev": 5.043478260869565,
+    "train_n": 460,
+    "val_ev": 2.915492957746479,
+    "val_n": 142
+  },
+  {
+    "condition": "start_price_band=40_49&lead_ge2=YES",
+    "ev_lift_vs_all83_test": 1.3603721671686633,
+    "layer": "START_40_49+LEAD",
+    "n": 676,
+    "test_ev": 2.7923497267759565,
+    "test_n": 183,
+    "train_ev": 5.095238095238095,
+    "train_n": 378,
+    "val_ev": 2.217391304347826,
+    "val_n": 115
+  },
+  {
+    "condition": "start_price_band=40_49&inning_late68=YES",
+    "ev_lift_vs_all83_test": 2.1659605847226038,
+    "layer": "START_40_49+INNING",
+    "n": 346,
+    "test_ev": 3.597938144329897,
+    "test_n": 97,
+    "train_ev": 2.9223300970873787,
+    "train_n": 206,
+    "val_ev": 3.046511627906977,
+    "val_n": 43
+  },
+  {
+    "condition": "start_price_band=40_49&start_move_gt20=YES",
+    "ev_lift_vs_all83_test": 0.9128500265996031,
+    "layer": "START_40_49+PATH",
+    "n": 855,
+    "test_ev": 2.3448275862068964,
+    "test_n": 232,
+    "train_ev": 3.3354037267080745,
+    "train_n": 483,
+    "val_ev": 1.2857142857142858,
+    "val_n": 140
+  },
+  {
+    "condition": "start_price_band=40_49&vol_1m_tertile=LOW",
+    "ev_lift_vs_all83_test": 3.6799105522808184,
+    "layer": "START_40_49+VOL",
+    "n": 440,
+    "test_ev": 5.111888111888112,
+    "test_n": 143,
+    "train_ev": 6.57345971563981,
+    "train_n": 211,
+    "val_ev": 6.534883720930233,
+    "val_n": 86
+  },
+  {
+    "condition": "start_price_band=40_49&vel_sign=UP",
+    "ev_lift_vs_all83_test": 0.9757477622811188,
+    "layer": "START_40_49+VEL",
+    "n": 764,
+    "test_ev": 2.407725321888412,
+    "test_n": 233,
+    "train_ev": 3.7346938775510203,
+    "train_n": 392,
+    "val_ev": 1.1726618705035972,
+    "val_n": 139
+  }
+]

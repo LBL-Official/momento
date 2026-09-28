@@ -1,0 +1,467 @@
+{
+  "written_utc": "2026-09-06T06:00:19.231338+00:00",
+  "research_only": true,
+  "live_execution_changed": false,
+  "candle_path_not_fill": true,
+  "no_future_in_F": true,
+  "first80": {
+    "label": "FIRST80",
+    "quote_k": 0.8,
+    "n": 1230,
+    "n_matchable": 1158,
+    "cells": {
+      "WIN_SURVIVE": 910,
+      "WIN_T40": 109,
+      "LOSE_SURVIVE": 0,
+      "LOSE_T40": 211
+    },
+    "cell_probs": {
+      "WIN_SURVIVE": 0.7398373983739838,
+      "WIN_T40": 0.0886178861788618,
+      "LOSE_SURVIVE": 0.0,
+      "LOSE_T40": 0.17154471544715447
+    },
+    "splits": {
+      "TRAIN": 504,
+      "VALIDATION": 483,
+      "OOS": 243
+    },
+    "n_strata_train": 47,
+    "model": {
+      "unconditional": {
+        "WIN_SURVIVE": 0.7145669291338582,
+        "WIN_T40": 0.09055118110236221,
+        "LOSE_SURVIVE": 0.001968503937007874,
+        "LOSE_T40": 0.19291338582677164
+      },
+      "n_train": 504,
+      "n_train_matchable": 474,
+      "n_strata": 47,
+      "features": [
+        "quarter_bin",
+        "score_abs_bin",
+        "lead_state",
+        "home"
+      ],
+      "laplace": 1.0,
+      "forbidden_in_F": [
+        "W",
+        "T40",
+        "expiration",
+        "first_40_close_ts"
+      ]
+    },
+    "eval": {
+      "TRAIN": {
+        "n": 504,
+        "logloss_model": 0.777985,
+        "logloss_uncond": 0.772536,
+        "logloss_delta": 0.005449,
+        "logloss_delta_se": 0.015608,
+        "logloss_delta_ci95": [
+          -0.025142,
+          0.036039
+        ],
+        "delta_ci_excludes_0": false,
+        "model_better_logloss": false,
+        "brier_model": 0.424431,
+        "brier_uncond": 0.439118,
+        "acc_model": 0.7242,
+        "acc_uncond": 0.7183,
+        "predicted_mode_counts": {
+          "WIN_SURVIVE": 479,
+          "WIN_T40": 1,
+          "LOSE_SURVIVE": 0,
+          "LOSE_T40": 24
+        },
+        "observed_cells": {
+          "WIN_SURVIVE": 362,
+          "WIN_T40": 45,
+          "LOSE_SURVIVE": 0,
+          "LOSE_T40": 97
+        }
+      },
+      "VALIDATION": {
+        "n": 483,
+        "logloss_model": 0.8467,
+        "logloss_uncond": 0.715486,
+        "logloss_delta": 0.131214,
+        "logloss_delta_se": 0.014708,
+        "logloss_delta_ci95": [
+          0.102386,
+          0.160042
+        ],
+        "delta_ci_excludes_0": true,
+        "model_better_logloss": false,
+        "brier_model": 0.45861,
+        "brier_uncond": 0.397884,
+        "acc_model": 0.7226,
+        "acc_uncond": 0.7557,
+        "predicted_mode_counts": {
+          "WIN_SURVIVE": 449,
+          "WIN_T40": 3,
+          "LOSE_SURVIVE": 0,
+          "LOSE_T40": 31
+        },
+        "observed_cells": {
+          "WIN_SURVIVE": 365,
+          "WIN_T40": 38,
+          "LOSE_SURVIVE": 0,
+          "LOSE_T40": 80
+        }
+      },
+      "OOS": {
+        "n": 243,
+        "logloss_model": 0.835906,
+        "logloss_uncond": 0.74032,
+        "logloss_delta": 0.095586,
+        "logloss_delta_se": 0.022041,
+        "logloss_delta_ci95": [
+          0.052386,
+          0.138786
+        ],
+        "delta_ci_excludes_0": true,
+        "model_better_logloss": false,
+        "brier_model": 0.451993,
+        "brier_uncond": 0.406402,
+        "acc_model": 0.716,
+        "acc_uncond": 0.7531,
+        "predicted_mode_counts": {
+          "WIN_SURVIVE": 226,
+          "WIN_T40": 0,
+          "LOSE_SURVIVE": 0,
+          "LOSE_T40": 17
+        },
+        "observed_cells": {
+          "WIN_SURVIVE": 183,
+          "WIN_T40": 26,
+          "LOSE_SURVIVE": 0,
+          "LOSE_T40": 34
+        }
+      },
+      "FULL": {
+        "n": 1230,
+        "logloss_model": 0.816411,
+        "logloss_uncond": 0.743769,
+        "logloss_delta": 0.072642,
+        "logloss_delta_se": 0.009793,
+        "logloss_delta_ci95": [
+          0.053448,
+          0.091836
+        ],
+        "delta_ci_excludes_0": true,
+        "model_better_logloss": false,
+        "brier_model": 0.443298,
+        "brier_uncond": 0.416463,
+        "acc_model": 0.722,
+        "acc_uncond": 0.7398,
+        "predicted_mode_counts": {
+          "WIN_SURVIVE": 1154,
+          "WIN_T40": 4,
+          "LOSE_SURVIVE": 0,
+          "LOSE_T40": 72
+        },
+        "observed_cells": {
+          "WIN_SURVIVE": 910,
+          "WIN_T40": 109,
+          "LOSE_SURVIVE": 0,
+          "LOSE_T40": 211
+        }
+      },
+      "OOS_matchable": {
+        "n": 230,
+        "logloss_model": 0.820132,
+        "logloss_uncond": 0.719144,
+        "logloss_delta": 0.100988,
+        "logloss_delta_se": 0.023235,
+        "logloss_delta_ci95": [
+          0.055447,
+          0.14653
+        ],
+        "delta_ci_excludes_0": true,
+        "model_better_logloss": false,
+        "brier_model": 0.440481,
+        "brier_uncond": 0.392314,
+        "acc_model": 0.7261,
+        "acc_uncond": 0.7652,
+        "predicted_mode_counts": {
+          "WIN_SURVIVE": 213,
+          "WIN_T40": 0,
+          "LOSE_SURVIVE": 0,
+          "LOSE_T40": 17
+        },
+        "observed_cells": {
+          "WIN_SURVIVE": 176,
+          "WIN_T40": 23,
+          "LOSE_SURVIVE": 0,
+          "LOSE_T40": 31
+        }
+      },
+      "OOS_Q2Q3": {
+        "n": 120,
+        "logloss_model": 0.829382,
+        "logloss_uncond": 0.729852,
+        "logloss_delta": 0.099531,
+        "logloss_delta_se": 0.03389,
+        "logloss_delta_ci95": [
+          0.033106,
+          0.165955
+        ],
+        "delta_ci_excludes_0": true,
+        "model_better_logloss": false,
+        "brier_model": 0.445757,
+        "brier_uncond": 0.394214,
+        "acc_model": 0.7667,
+        "acc_uncond": 0.7667,
+        "predicted_mode_counts": {
+          "WIN_SURVIVE": 118,
+          "WIN_T40": 0,
+          "LOSE_SURVIVE": 0,
+          "LOSE_T40": 2
+        },
+        "observed_cells": {
+          "WIN_SURVIVE": 92,
+          "WIN_T40": 14,
+          "LOSE_SURVIVE": 0,
+          "LOSE_T40": 14
+        }
+      }
+    },
+    "decision": {
+      "token": "NO_ASOF_LIFT",
+      "rule": "VAL and OOS log-loss both beat TRAIN unconditional, and OOS paired delta CI excludes 0 on the negative side.",
+      "established": false
+    },
+    "information_set": "F_tau = {quarter, |score_diff| bin, lead/trail/tie, home} at reach_ts"
+  },
+  "first75": {
+    "label": "FIRST75",
+    "quote_k": 0.75,
+    "n": 1176,
+    "n_matchable": 1080,
+    "cells": {
+      "WIN_SURVIVE": 781,
+      "WIN_T40": 134,
+      "LOSE_SURVIVE": 1,
+      "LOSE_T40": 260
+    },
+    "cell_probs": {
+      "WIN_SURVIVE": 0.6641156462585034,
+      "WIN_T40": 0.11394557823129252,
+      "LOSE_SURVIVE": 0.0008503401360544217,
+      "LOSE_T40": 0.22108843537414966
+    },
+    "splits": {
+      "TRAIN": 484,
+      "VALIDATION": 459,
+      "OOS": 233
+    },
+    "n_strata_train": 47,
+    "model": {
+      "unconditional": {
+        "WIN_SURVIVE": 0.6311475409836066,
+        "WIN_T40": 0.11475409836065574,
+        "LOSE_SURVIVE": 0.004098360655737705,
+        "LOSE_T40": 0.25
+      },
+      "n_train": 484,
+      "n_train_matchable": 451,
+      "n_strata": 47,
+      "features": [
+        "quarter_bin",
+        "score_abs_bin",
+        "lead_state",
+        "home"
+      ],
+      "laplace": 1.0,
+      "forbidden_in_F": [
+        "W",
+        "T40",
+        "expiration",
+        "first_40_close_ts"
+      ]
+    },
+    "eval": {
+      "TRAIN": {
+        "n": 484,
+        "logloss_model": 0.886616,
+        "logloss_uncond": 0.895864,
+        "logloss_delta": -0.009247,
+        "logloss_delta_se": 0.015064,
+        "logloss_delta_ci95": [
+          -0.038774,
+          0.020279
+        ],
+        "delta_ci_excludes_0": false,
+        "model_better_logloss": true,
+        "brier_model": 0.504243,
+        "brier_uncond": 0.522264,
+        "acc_model": 0.655,
+        "acc_uncond": 0.6343,
+        "predicted_mode_counts": {
+          "WIN_SURVIVE": 470,
+          "WIN_T40": 5,
+          "LOSE_SURVIVE": 0,
+          "LOSE_T40": 9
+        },
+        "observed_cells": {
+          "WIN_SURVIVE": 307,
+          "WIN_T40": 55,
+          "LOSE_SURVIVE": 1,
+          "LOSE_T40": 121
+        }
+      },
+      "VALIDATION": {
+        "n": 459,
+        "logloss_model": 0.968416,
+        "logloss_uncond": 0.838554,
+        "logloss_delta": 0.129863,
+        "logloss_delta_se": 0.017948,
+        "logloss_delta_ci95": [
+          0.094684,
+          0.165041
+        ],
+        "delta_ci_excludes_0": true,
+        "model_better_logloss": false,
+        "brier_model": 0.538968,
+        "brier_uncond": 0.485229,
+        "acc_model": 0.6383,
+        "acc_uncond": 0.6776,
+        "predicted_mode_counts": {
+          "WIN_SURVIVE": 434,
+          "WIN_T40": 11,
+          "LOSE_SURVIVE": 0,
+          "LOSE_T40": 14
+        },
+        "observed_cells": {
+          "WIN_SURVIVE": 311,
+          "WIN_T40": 47,
+          "LOSE_SURVIVE": 0,
+          "LOSE_T40": 101
+        }
+      },
+      "OOS": {
+        "n": 233,
+        "logloss_model": 0.977531,
+        "logloss_uncond": 0.845378,
+        "logloss_delta": 0.132153,
+        "logloss_delta_se": 0.023415,
+        "logloss_delta_ci95": [
+          0.086259,
+          0.178047
+        ],
+        "delta_ci_excludes_0": true,
+        "model_better_logloss": false,
+        "brier_model": 0.530075,
+        "brier_uncond": 0.477902,
+        "acc_model": 0.6738,
+        "acc_uncond": 0.6996,
+        "predicted_mode_counts": {
+          "WIN_SURVIVE": 223,
+          "WIN_T40": 4,
+          "LOSE_SURVIVE": 0,
+          "LOSE_T40": 6
+        },
+        "observed_cells": {
+          "WIN_SURVIVE": 163,
+          "WIN_T40": 32,
+          "LOSE_SURVIVE": 0,
+          "LOSE_T40": 38
+        }
+      },
+      "FULL": {
+        "n": 1176,
+        "logloss_model": 0.936556,
+        "logloss_uncond": 0.863493,
+        "logloss_delta": 0.073064,
+        "logloss_delta_se": 0.010633,
+        "logloss_delta_ci95": [
+          0.052222,
+          0.093905
+        ],
+        "delta_ci_excludes_0": true,
+        "model_better_logloss": false,
+        "brier_model": 0.522914,
+        "brier_uncond": 0.49902,
+        "acc_model": 0.6522,
+        "acc_uncond": 0.6641,
+        "predicted_mode_counts": {
+          "WIN_SURVIVE": 1127,
+          "WIN_T40": 20,
+          "LOSE_SURVIVE": 0,
+          "LOSE_T40": 29
+        },
+        "observed_cells": {
+          "WIN_SURVIVE": 781,
+          "WIN_T40": 134,
+          "LOSE_SURVIVE": 1,
+          "LOSE_T40": 260
+        }
+      },
+      "OOS_matchable": {
+        "n": 212,
+        "logloss_model": 0.995914,
+        "logloss_uncond": 0.850671,
+        "logloss_delta": 0.145243,
+        "logloss_delta_se": 0.02556,
+        "logloss_delta_ci95": [
+          0.095146,
+          0.195341
+        ],
+        "delta_ci_excludes_0": true,
+        "model_better_logloss": false,
+        "brier_model": 0.539802,
+        "brier_uncond": 0.482461,
+        "acc_model": 0.6651,
+        "acc_uncond": 0.6934,
+        "predicted_mode_counts": {
+          "WIN_SURVIVE": 202,
+          "WIN_T40": 4,
+          "LOSE_SURVIVE": 0,
+          "LOSE_T40": 6
+        },
+        "observed_cells": {
+          "WIN_SURVIVE": 147,
+          "WIN_T40": 29,
+          "LOSE_SURVIVE": 0,
+          "LOSE_T40": 36
+        }
+      },
+      "OOS_Q2Q3": {
+        "n": 109,
+        "logloss_model": 1.062156,
+        "logloss_uncond": 0.894664,
+        "logloss_delta": 0.167492,
+        "logloss_delta_se": 0.038727,
+        "logloss_delta_ci95": [
+          0.091586,
+          0.243398
+        ],
+        "delta_ci_excludes_0": true,
+        "model_better_logloss": false,
+        "brier_model": 0.573059,
+        "brier_uncond": 0.508173,
+        "acc_model": 0.633,
+        "acc_uncond": 0.6697,
+        "predicted_mode_counts": {
+          "WIN_SURVIVE": 103,
+          "WIN_T40": 0,
+          "LOSE_SURVIVE": 0,
+          "LOSE_T40": 6
+        },
+        "observed_cells": {
+          "WIN_SURVIVE": 73,
+          "WIN_T40": 18,
+          "LOSE_SURVIVE": 0,
+          "LOSE_T40": 18
+        }
+      }
+    },
+    "decision": {
+      "token": "NO_ASOF_LIFT",
+      "rule": "VAL and OOS log-loss both beat TRAIN unconditional, and OOS paired delta CI excludes 0 on the negative side.",
+      "established": false
+    },
+    "information_set": "F_tau = {quarter, |score_diff| bin, lead/trail/tie, home} at reach_ts"
+  }
+}

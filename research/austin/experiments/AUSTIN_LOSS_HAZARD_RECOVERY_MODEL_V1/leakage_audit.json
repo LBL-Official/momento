@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "n_checked": 12,
+  "n_failed": 0,
+  "n_leaked_outcome_keys": 0,
+  "n_p_hat_failed": 0,
+  "n_warehouse_checked": 12,
+  "n_warehouse_failed": 0,
+  "n_errors": 0,
+  "note": "Mutating later EV/state/bars/PBP/outcome/T40/MAE/MFE must leave PIT keys and this row's LOGO p_hat unchanged because the same game is excluded."
+}

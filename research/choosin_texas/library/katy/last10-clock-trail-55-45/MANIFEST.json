@@ -1,0 +1,992 @@
+{
+  "status": "OBSERVED",
+  "kind": "experiment",
+  "surface": "trail",
+  "product": "Katy Texas",
+  "experiment_id": "KATY_V4_LAST10_CLOCK_TRAIL",
+  "slug": "last10-clock-trail-55-45",
+  "number": 4,
+  "title": "2H last 10 clock trail \u2014 55 / 45 / 40 vs 80/40",
+  "href": "#/katy/last10-clock-trail-55-45",
+  "live_execution": false,
+  "submits": false,
+  "fill_status": "FILL_UNAVAILABLE",
+  "candle_path_not_fill": true,
+  "pbp_sequence_not_pit": true,
+  "policy_frozen": false,
+  "confirmation_accessed": false,
+  "austin_used": false,
+  "austin_refit": false,
+  "independent_study": true,
+  "universe": "derived_four_936",
+  "season": "2025-2026",
+  "components": {
+    "path": {
+      "role": "warehouse 1m TRADABLE_YES_BID + PBP clock on the converted last-10 trail",
+      "note": "PBP sequence is not candle PIT. Zero/non-positive closes are skipped."
+    },
+    "houston": {
+      "desk": "Houston",
+      "identity": "HOUSTON_TAKER_OTHER_SIDE_V1",
+      "role": "TAKER_OTHER_SIDE_SCENARIO",
+      "standalone_page": false,
+      "live_execution": false,
+      "submits": false,
+      "l2": "SOURCE_UNAVAILABLE",
+      "no_ask": "SOURCE_UNAVAILABLE",
+      "declared_no_taker_price": "DECLARED_COMPLEMENT_OF_YES_BID",
+      "formula": "no_taker_cents = 100 - yes_bid; lock_vs_entry = yes_bid - 80",
+      "fill_status": "FILL_UNAVAILABLE",
+      "fee_model": "UNAVAILABLE",
+      "candle_path_not_fill": true,
+      "note": "Houston is declared inside Katy. It is not warehouse L2 and not a Kalshi taker fill."
+    },
+    "austin": {
+      "role": "NOT USED",
+      "hedge_if": "clock trail only",
+      "missing_ev": "Austin EV is not a member of this experiment"
+    }
+  },
+  "question": "Does the converted 2H last 10 55\u219245\u219240 trail beat always-80/40 on each locked book?",
+  "marks": {
+    "nba": "2H last 10 = Q4 12:00; early \u226455 while rem>6:00; mid \u226445 from 6:00\u20133:00",
+    "ncaab": "2H last 10 = 2H 10:00; early \u226455 while rem>5:00; mid \u226445 from 5:00\u20132:30"
+  },
+  "conversion": {
+    "label": "2H last 10",
+    "nba": {
+      "period": 4,
+      "start_rem": 720,
+      "early_cut": 360,
+      "mid_lo": 180,
+      "label": "Q4 12:00 \u2192 2H last 10"
+    },
+    "ncaab": {
+      "period": 2,
+      "start_rem": 600,
+      "early_cut": 300,
+      "mid_lo": 150,
+      "label": "2H 10:00 = 2H last 10"
+    },
+    "rows": [
+      {
+        "label": "last-10 open",
+        "nba": "Q4 12:00 remaining",
+        "ncaab": "2H 10:00 remaining"
+      },
+      {
+        "label": "early last-10 sell \u226455",
+        "nba": "Q4 remaining > 6:00",
+        "ncaab": "2H remaining > 5:00"
+      },
+      {
+        "label": "mid last-10 sell \u226445",
+        "nba": "Q4 6:00\u20133:00 remaining",
+        "ncaab": "2H 5:00\u20132:30 remaining"
+      },
+      {
+        "label": "else",
+        "nba": "80/40 T40",
+        "ncaab": "80/40 T40"
+      }
+    ]
+  },
+  "loser_exam": {
+    "nba_2q": {
+      "n_reached": 314,
+      "losers": {
+        "n": 47,
+        "n_open_ge_41": 35,
+        "n_already_lt_41": 12,
+        "n_t40_already_at_mark": 16,
+        "n_t40_terminal": 47,
+        "n_ev_available": 0,
+        "n_ev_unavailable": 47,
+        "n_open_ev_available": 0,
+        "price": {
+          "n": 47,
+          "mean": 57.91489361702128,
+          "median": 58
+        },
+        "open_price": {
+          "n": 35,
+          "mean": 66.31428571428572,
+          "median": 69
+        },
+        "ev": {
+          "n": 0,
+          "mean": null
+        },
+        "open_ev": {
+          "n": 0,
+          "mean": null
+        },
+        "score_differential": {
+          "n": 47,
+          "mean": 1.0,
+          "median": 2
+        },
+        "price_buckets": {
+          "lt_41": 12,
+          "41_50": 7,
+          "51_60": 7,
+          "61_70": 7,
+          "71_80": 7,
+          "81_90": 7,
+          "91_99": 0
+        }
+      },
+      "winners": {
+        "n": 267,
+        "n_open_ge_41": 260,
+        "n_already_lt_41": 7,
+        "n_t40_already_at_mark": 14,
+        "n_t40_terminal": 28,
+        "n_ev_available": 0,
+        "n_ev_unavailable": 267,
+        "n_open_ev_available": 0,
+        "price": {
+          "n": 267,
+          "mean": 85.82397003745318,
+          "median": 94
+        },
+        "open_price": {
+          "n": 260,
+          "mean": 87.53846153846153,
+          "median": 94
+        },
+        "ev": {
+          "n": 0,
+          "mean": null
+        },
+        "open_ev": {
+          "n": 0,
+          "mean": null
+        },
+        "score_differential": {
+          "n": 267,
+          "mean": 13.53183520599251,
+          "median": 14
+        },
+        "price_buckets": {
+          "lt_41": 7,
+          "41_50": 6,
+          "51_60": 8,
+          "61_70": 19,
+          "71_80": 30,
+          "81_90": 43,
+          "91_99": 154
+        }
+      },
+      "note": "Terminal loser/winner identity is settlement. Mark stats are first snapshot at or after the clock."
+    },
+    "nba_3q": {
+      "n_reached": 290,
+      "losers": {
+        "n": 52,
+        "n_open_ge_41": 48,
+        "n_already_lt_41": 4,
+        "n_t40_already_at_mark": 6,
+        "n_t40_terminal": 52,
+        "n_ev_available": 0,
+        "n_ev_unavailable": 52,
+        "n_open_ev_available": 0,
+        "price": {
+          "n": 52,
+          "mean": 67.28846153846153,
+          "median": 73
+        },
+        "open_price": {
+          "n": 48,
+          "mean": 70.89583333333333,
+          "median": 75
+        },
+        "ev": {
+          "n": 0,
+          "mean": null
+        },
+        "open_ev": {
+          "n": 0,
+          "mean": null
+        },
+        "score_differential": {
+          "n": 52,
+          "mean": 4.673076923076923,
+          "median": 4
+        },
+        "price_buckets": {
+          "lt_41": 4,
+          "41_50": 7,
+          "51_60": 7,
+          "61_70": 8,
+          "71_80": 9,
+          "81_90": 13,
+          "91_99": 4
+        }
+      },
+      "winners": {
+        "n": 238,
+        "n_open_ge_41": 236,
+        "n_already_lt_41": 2,
+        "n_t40_already_at_mark": 2,
+        "n_t40_terminal": 27,
+        "n_ev_available": 0,
+        "n_ev_unavailable": 238,
+        "n_open_ev_available": 0,
+        "price": {
+          "n": 238,
+          "mean": 84.60924369747899,
+          "median": 87
+        },
+        "open_price": {
+          "n": 236,
+          "mean": 85.16949152542372,
+          "median": 87
+        },
+        "ev": {
+          "n": 0,
+          "mean": null
+        },
+        "open_ev": {
+          "n": 0,
+          "mean": null
+        },
+        "score_differential": {
+          "n": 238,
+          "mean": 11.5,
+          "median": 12
+        },
+        "price_buckets": {
+          "lt_41": 2,
+          "41_50": 2,
+          "51_60": 4,
+          "61_70": 17,
+          "71_80": 46,
+          "81_90": 82,
+          "91_99": 85
+        }
+      },
+      "note": "Terminal loser/winner identity is settlement. Mark stats are first snapshot at or after the clock."
+    },
+    "ncaab_h1_2": {
+      "n_reached": 193,
+      "losers": {
+        "n": 30,
+        "n_open_ge_41": 23,
+        "n_already_lt_41": 7,
+        "n_t40_already_at_mark": 9,
+        "n_t40_terminal": 30,
+        "n_ev_available": 0,
+        "n_ev_unavailable": 30,
+        "n_open_ev_available": 0,
+        "price": {
+          "n": 30,
+          "mean": 58.8,
+          "median": 60
+        },
+        "open_price": {
+          "n": 23,
+          "mean": 68.65217391304348,
+          "median": 69
+        },
+        "ev": {
+          "n": 0,
+          "mean": null
+        },
+        "open_ev": {
+          "n": 0,
+          "mean": null
+        },
+        "score_differential": {
+          "n": 30,
+          "mean": 0.5333333333333333,
+          "median": 1
+        },
+        "price_buckets": {
+          "lt_41": 7,
+          "41_50": 3,
+          "51_60": 6,
+          "61_70": 5,
+          "71_80": 3,
+          "81_90": 5,
+          "91_99": 1
+        }
+      },
+      "winners": {
+        "n": 163,
+        "n_open_ge_41": 159,
+        "n_already_lt_41": 4,
+        "n_t40_already_at_mark": 9,
+        "n_t40_terminal": 21,
+        "n_ev_available": 0,
+        "n_ev_unavailable": 163,
+        "n_open_ev_available": 0,
+        "price": {
+          "n": 163,
+          "mean": 84.53374233128834,
+          "median": 90
+        },
+        "open_price": {
+          "n": 159,
+          "mean": 85.9496855345912,
+          "median": 91
+        },
+        "ev": {
+          "n": 0,
+          "mean": null
+        },
+        "open_ev": {
+          "n": 0,
+          "mean": null
+        },
+        "score_differential": {
+          "n": 163,
+          "mean": 9.56441717791411,
+          "median": 9
+        },
+        "price_buckets": {
+          "lt_41": 4,
+          "41_50": 8,
+          "51_60": 7,
+          "61_70": 6,
+          "71_80": 22,
+          "81_90": 35,
+          "91_99": 81
+        }
+      },
+      "note": "Terminal loser/winner identity is settlement. Mark stats are first snapshot at or after the clock."
+    },
+    "ncaab_h2_1": {
+      "n_reached": 139,
+      "losers": {
+        "n": 21,
+        "n_open_ge_41": 21,
+        "n_already_lt_41": 0,
+        "n_t40_already_at_mark": 0,
+        "n_t40_terminal": 21,
+        "n_ev_available": 0,
+        "n_ev_unavailable": 21,
+        "n_open_ev_available": 0,
+        "price": {
+          "n": 21,
+          "mean": 74.14285714285714,
+          "median": 80
+        },
+        "open_price": {
+          "n": 21,
+          "mean": 74.14285714285714,
+          "median": 80
+        },
+        "ev": {
+          "n": 0,
+          "mean": null
+        },
+        "open_ev": {
+          "n": 0,
+          "mean": null
+        },
+        "score_differential": {
+          "n": 21,
+          "mean": 4.428571428571429,
+          "median": 6
+        },
+        "price_buckets": {
+          "lt_41": 0,
+          "41_50": 2,
+          "51_60": 2,
+          "61_70": 2,
+          "71_80": 5,
+          "81_90": 9,
+          "91_99": 1
+        }
+      },
+      "winners": {
+        "n": 118,
+        "n_open_ge_41": 117,
+        "n_already_lt_41": 1,
+        "n_t40_already_at_mark": 1,
+        "n_t40_terminal": 10,
+        "n_ev_available": 0,
+        "n_ev_unavailable": 118,
+        "n_open_ev_available": 0,
+        "price": {
+          "n": 118,
+          "mean": 84.13559322033899,
+          "median": 87
+        },
+        "open_price": {
+          "n": 117,
+          "mean": 84.54700854700855,
+          "median": 87
+        },
+        "ev": {
+          "n": 0,
+          "mean": null
+        },
+        "open_ev": {
+          "n": 0,
+          "mean": null
+        },
+        "score_differential": {
+          "n": 118,
+          "mean": 8.957627118644067,
+          "median": 9
+        },
+        "price_buckets": {
+          "lt_41": 1,
+          "41_50": 1,
+          "51_60": 4,
+          "61_70": 9,
+          "71_80": 17,
+          "81_90": 46,
+          "91_99": 40
+        }
+      },
+      "note": "Terminal loser/winner identity is settlement. Mark stats are first snapshot at or after the clock."
+    }
+  },
+  "books": {
+    "nba_2q": {
+      "book": "NBA 2Q",
+      "n_trades": 314,
+      "n_run_mark_reached": 314,
+      "n_stop_55": 44,
+      "n_stop_45": 13,
+      "n_stop_40": 37,
+      "n_hold": 220,
+      "n_hedge_scenario": 57,
+      "n_hedge_losers": 27,
+      "n_hedge_winners": 30,
+      "cut_survivors_who_won": 18,
+      "always_8040": {
+        "n": 314,
+        "sum_cents": 1780,
+        "mean_cents": 5.6687898089171975
+      },
+      "always_hold": {
+        "n": 314,
+        "sum_cents": 1580,
+        "mean_cents": 5.031847133757962
+      },
+      "katy_vs_8040": {
+        "n": 314,
+        "sum_cents": 1365,
+        "mean_cents": 4.3471337579617835
+      },
+      "katy_path": {
+        "n": 314,
+        "sum_cents": 972,
+        "mean_cents": 3.0955414012738856
+      },
+      "overlay_theo": {
+        "n": 314,
+        "sum_cents": 1365,
+        "mean_cents": 4.3471337579617835
+      },
+      "overlay_obs": {
+        "n": 314,
+        "sum_cents": 972,
+        "mean_cents": 3.0955414012738856
+      },
+      "losers_hold": {
+        "n": 47,
+        "sum_cents": -3760,
+        "mean_cents": -80.0
+      },
+      "losers_katy_8040": {
+        "n": 47,
+        "sum_cents": -1545,
+        "mean_cents": -32.87234042553192
+      },
+      "delta_theo_mean": -1.321656050955414,
+      "delta_obs_mean": -2.573248407643312,
+      "reasons": {
+        "HOLD": 220,
+        "STOP_55": 44,
+        "STOP_40": 37,
+        "STOP_45": 13
+      },
+      "note": "SCENARIO \u2014 NOT OBSERVED FILL. Independent of Austin. Books are never combined."
+    },
+    "nba_3q": {
+      "book": "NBA 3Q",
+      "n_trades": 290,
+      "n_run_mark_reached": 290,
+      "n_stop_55": 51,
+      "n_stop_45": 8,
+      "n_stop_40": 31,
+      "n_hold": 200,
+      "n_hedge_scenario": 59,
+      "n_hedge_losers": 31,
+      "n_hedge_winners": 28,
+      "cut_survivors_who_won": 11,
+      "always_8040": {
+        "n": 290,
+        "sum_cents": 1060,
+        "mean_cents": 3.6551724137931036
+      },
+      "always_hold": {
+        "n": 290,
+        "sum_cents": 600,
+        "mean_cents": 2.0689655172413794
+      },
+      "katy_vs_8040": {
+        "n": 290,
+        "sum_cents": 1205,
+        "mean_cents": 4.155172413793103
+      },
+      "katy_path": {
+        "n": 290,
+        "sum_cents": 742,
+        "mean_cents": 2.5586206896551724
+      },
+      "overlay_theo": {
+        "n": 290,
+        "sum_cents": 1205,
+        "mean_cents": 4.155172413793103
+      },
+      "overlay_obs": {
+        "n": 290,
+        "sum_cents": 742,
+        "mean_cents": 2.5586206896551724
+      },
+      "losers_hold": {
+        "n": 52,
+        "sum_cents": -4160,
+        "mean_cents": -80.0
+      },
+      "losers_katy_8040": {
+        "n": 52,
+        "sum_cents": -1655,
+        "mean_cents": -31.826923076923077
+      },
+      "delta_theo_mean": 0.5,
+      "delta_obs_mean": -1.096551724137931,
+      "reasons": {
+        "HOLD": 200,
+        "STOP_55": 51,
+        "STOP_40": 31,
+        "STOP_45": 8
+      },
+      "note": "SCENARIO \u2014 NOT OBSERVED FILL. Independent of Austin. Books are never combined."
+    },
+    "ncaab_h1_2": {
+      "book": "NCAAB 1H second 10",
+      "n_trades": 193,
+      "n_run_mark_reached": 193,
+      "n_stop_55": 30,
+      "n_stop_45": 2,
+      "n_stop_40": 25,
+      "n_hold": 136,
+      "n_hedge_scenario": 32,
+      "n_hedge_losers": 17,
+      "n_hedge_winners": 15,
+      "cut_survivors_who_won": 6,
+      "always_8040": {
+        "n": 193,
+        "sum_cents": 800,
+        "mean_cents": 4.1450777202072535
+      },
+      "always_hold": {
+        "n": 193,
+        "sum_cents": 860,
+        "mean_cents": 4.455958549222798
+      },
+      "katy_vs_8040": {
+        "n": 193,
+        "sum_cents": 900,
+        "mean_cents": 4.66321243523316
+      },
+      "katy_path": {
+        "n": 193,
+        "sum_cents": 641,
+        "mean_cents": 3.321243523316062
+      },
+      "overlay_theo": {
+        "n": 193,
+        "sum_cents": 900,
+        "mean_cents": 4.66321243523316
+      },
+      "overlay_obs": {
+        "n": 193,
+        "sum_cents": 641,
+        "mean_cents": 3.321243523316062
+      },
+      "losers_hold": {
+        "n": 30,
+        "sum_cents": -2400,
+        "mean_cents": -80.0
+      },
+      "losers_katy_8040": {
+        "n": 30,
+        "sum_cents": -945,
+        "mean_cents": -31.5
+      },
+      "delta_theo_mean": 0.5181347150259067,
+      "delta_obs_mean": -0.8238341968911918,
+      "reasons": {
+        "HOLD": 136,
+        "STOP_40": 25,
+        "STOP_55": 30,
+        "STOP_45": 2
+      },
+      "note": "SCENARIO \u2014 NOT OBSERVED FILL. Independent of Austin. Books are never combined."
+    },
+    "ncaab_h2_1": {
+      "book": "NCAAB 2H first 10",
+      "n_trades": 139,
+      "n_run_mark_reached": 139,
+      "n_stop_55": 29,
+      "n_stop_45": 2,
+      "n_stop_40": 12,
+      "n_hold": 96,
+      "n_hedge_scenario": 31,
+      "n_hedge_losers": 11,
+      "n_hedge_winners": 20,
+      "cut_survivors_who_won": 12,
+      "always_8040": {
+        "n": 139,
+        "sum_cents": 920,
+        "mean_cents": 6.618705035971223
+      },
+      "always_hold": {
+        "n": 139,
+        "sum_cents": 680,
+        "mean_cents": 4.892086330935252
+      },
+      "katy_vs_8040": {
+        "n": 139,
+        "sum_cents": 645,
+        "mean_cents": 4.640287769784172
+      },
+      "katy_path": {
+        "n": 139,
+        "sum_cents": 412,
+        "mean_cents": 2.964028776978417
+      },
+      "overlay_theo": {
+        "n": 139,
+        "sum_cents": 645,
+        "mean_cents": 4.640287769784172
+      },
+      "overlay_obs": {
+        "n": 139,
+        "sum_cents": 412,
+        "mean_cents": 2.964028776978417
+      },
+      "losers_hold": {
+        "n": 21,
+        "sum_cents": -1680,
+        "mean_cents": -80.0
+      },
+      "losers_katy_8040": {
+        "n": 21,
+        "sum_cents": -675,
+        "mean_cents": -32.142857142857146
+      },
+      "delta_theo_mean": -1.9784172661870503,
+      "delta_obs_mean": -3.6546762589928057,
+      "reasons": {
+        "HOLD": 96,
+        "STOP_40": 12,
+        "STOP_55": 29,
+        "STOP_45": 2
+      },
+      "note": "SCENARIO \u2014 NOT OBSERVED FILL. Independent of Austin. Books are never combined."
+    }
+  },
+  "book_order": [
+    "nba_2q",
+    "nba_3q",
+    "ncaab_h1_2",
+    "ncaab_h2_1"
+  ],
+  "row_counts": {
+    "nba_2q": 314,
+    "nba_3q": 290,
+    "ncaab_h1_2": 193,
+    "ncaab_h2_1": 139
+  },
+  "card": {
+    "number": 4,
+    "experiment_id": "KATY_V4_LAST10_CLOCK_TRAIL",
+    "slug": "last10-clock-trail-55-45",
+    "href": "#/katy/last10-clock-trail-55-45",
+    "title": "2H last 10 clock trail \u2014 55 / 45 / 40 vs 80/40",
+    "question": "On the locked NBA 2Q/3Q and NCAAB 1H/2H FIRST80 books, does a converted 2H last 10 clock trail (\u226455 early, \u226445 mid, else 80/40) raise candle-path EV vs always-80/40? No Austin.",
+    "marks": {
+      "nba": "2H last 10 = Q4 12:00; early \u226455 while rem>6:00; mid \u226445 from 6:00\u20133:00",
+      "ncaab": "2H last 10 = 2H 10:00; early \u226455 while rem>5:00; mid \u226445 from 5:00\u20132:30"
+    },
+    "rule": "Independent path trail. FIRST80 entry kept. T40 kept. Extra last-10 sells at 55 then 45. Houston lock is declared at the triggering close. No Austin EV.",
+    "status": "MEASURED",
+    "one_line": "NBA 2Q \u0394-1.321656050955414\u00a2 vs 80/40; NBA 3Q \u03940.5\u00a2 vs 80/40; NCAAB 1H second 10 \u03940.5181347150259067\u00a2 vs 80/40; NCAAB 2H first 10 \u0394-1.9784172661870503\u00a2 vs 80/40. Not a freeze. Books never combined."
+  },
+  "combined_headline_forbidden": true,
+  "search_is_not_a_freeze": true,
+  "note": "Katy experiment 4. Independent of Austin. Converted 2H last 10 clock trail. Houston lock is declared, not a fill. Candle path \u2260 fill.",
+  "nba_2q": {
+    "partition_id": "nba_2q",
+    "label": "NBA 2Q",
+    "summary": {
+      "book": "NBA 2Q",
+      "n_trades": 314,
+      "n_run_mark_reached": 314,
+      "n_stop_55": 44,
+      "n_stop_45": 13,
+      "n_stop_40": 37,
+      "n_hold": 220,
+      "n_hedge_scenario": 57,
+      "n_hedge_losers": 27,
+      "n_hedge_winners": 30,
+      "cut_survivors_who_won": 18,
+      "always_8040": {
+        "n": 314,
+        "sum_cents": 1780,
+        "mean_cents": 5.6687898089171975
+      },
+      "always_hold": {
+        "n": 314,
+        "sum_cents": 1580,
+        "mean_cents": 5.031847133757962
+      },
+      "katy_vs_8040": {
+        "n": 314,
+        "sum_cents": 1365,
+        "mean_cents": 4.3471337579617835
+      },
+      "katy_path": {
+        "n": 314,
+        "sum_cents": 972,
+        "mean_cents": 3.0955414012738856
+      },
+      "overlay_theo": {
+        "n": 314,
+        "sum_cents": 1365,
+        "mean_cents": 4.3471337579617835
+      },
+      "overlay_obs": {
+        "n": 314,
+        "sum_cents": 972,
+        "mean_cents": 3.0955414012738856
+      },
+      "losers_hold": {
+        "n": 47,
+        "sum_cents": -3760,
+        "mean_cents": -80.0
+      },
+      "losers_katy_8040": {
+        "n": 47,
+        "sum_cents": -1545,
+        "mean_cents": -32.87234042553192
+      },
+      "delta_theo_mean": -1.321656050955414,
+      "delta_obs_mean": -2.573248407643312,
+      "reasons": {
+        "HOLD": 220,
+        "STOP_55": 44,
+        "STOP_40": 37,
+        "STOP_45": 13
+      },
+      "note": "SCENARIO \u2014 NOT OBSERVED FILL. Independent of Austin. Books are never combined."
+    }
+  },
+  "nba_3q": {
+    "partition_id": "nba_3q",
+    "label": "NBA 3Q",
+    "summary": {
+      "book": "NBA 3Q",
+      "n_trades": 290,
+      "n_run_mark_reached": 290,
+      "n_stop_55": 51,
+      "n_stop_45": 8,
+      "n_stop_40": 31,
+      "n_hold": 200,
+      "n_hedge_scenario": 59,
+      "n_hedge_losers": 31,
+      "n_hedge_winners": 28,
+      "cut_survivors_who_won": 11,
+      "always_8040": {
+        "n": 290,
+        "sum_cents": 1060,
+        "mean_cents": 3.6551724137931036
+      },
+      "always_hold": {
+        "n": 290,
+        "sum_cents": 600,
+        "mean_cents": 2.0689655172413794
+      },
+      "katy_vs_8040": {
+        "n": 290,
+        "sum_cents": 1205,
+        "mean_cents": 4.155172413793103
+      },
+      "katy_path": {
+        "n": 290,
+        "sum_cents": 742,
+        "mean_cents": 2.5586206896551724
+      },
+      "overlay_theo": {
+        "n": 290,
+        "sum_cents": 1205,
+        "mean_cents": 4.155172413793103
+      },
+      "overlay_obs": {
+        "n": 290,
+        "sum_cents": 742,
+        "mean_cents": 2.5586206896551724
+      },
+      "losers_hold": {
+        "n": 52,
+        "sum_cents": -4160,
+        "mean_cents": -80.0
+      },
+      "losers_katy_8040": {
+        "n": 52,
+        "sum_cents": -1655,
+        "mean_cents": -31.826923076923077
+      },
+      "delta_theo_mean": 0.5,
+      "delta_obs_mean": -1.096551724137931,
+      "reasons": {
+        "HOLD": 200,
+        "STOP_55": 51,
+        "STOP_40": 31,
+        "STOP_45": 8
+      },
+      "note": "SCENARIO \u2014 NOT OBSERVED FILL. Independent of Austin. Books are never combined."
+    }
+  },
+  "ncaab_h1_2": {
+    "partition_id": "ncaab_h1_2",
+    "label": "NCAAB 1H second 10",
+    "summary": {
+      "book": "NCAAB 1H second 10",
+      "n_trades": 193,
+      "n_run_mark_reached": 193,
+      "n_stop_55": 30,
+      "n_stop_45": 2,
+      "n_stop_40": 25,
+      "n_hold": 136,
+      "n_hedge_scenario": 32,
+      "n_hedge_losers": 17,
+      "n_hedge_winners": 15,
+      "cut_survivors_who_won": 6,
+      "always_8040": {
+        "n": 193,
+        "sum_cents": 800,
+        "mean_cents": 4.1450777202072535
+      },
+      "always_hold": {
+        "n": 193,
+        "sum_cents": 860,
+        "mean_cents": 4.455958549222798
+      },
+      "katy_vs_8040": {
+        "n": 193,
+        "sum_cents": 900,
+        "mean_cents": 4.66321243523316
+      },
+      "katy_path": {
+        "n": 193,
+        "sum_cents": 641,
+        "mean_cents": 3.321243523316062
+      },
+      "overlay_theo": {
+        "n": 193,
+        "sum_cents": 900,
+        "mean_cents": 4.66321243523316
+      },
+      "overlay_obs": {
+        "n": 193,
+        "sum_cents": 641,
+        "mean_cents": 3.321243523316062
+      },
+      "losers_hold": {
+        "n": 30,
+        "sum_cents": -2400,
+        "mean_cents": -80.0
+      },
+      "losers_katy_8040": {
+        "n": 30,
+        "sum_cents": -945,
+        "mean_cents": -31.5
+      },
+      "delta_theo_mean": 0.5181347150259067,
+      "delta_obs_mean": -0.8238341968911918,
+      "reasons": {
+        "HOLD": 136,
+        "STOP_40": 25,
+        "STOP_55": 30,
+        "STOP_45": 2
+      },
+      "note": "SCENARIO \u2014 NOT OBSERVED FILL. Independent of Austin. Books are never combined."
+    }
+  },
+  "ncaab_h2_1": {
+    "partition_id": "ncaab_h2_1",
+    "label": "NCAAB 2H first 10",
+    "summary": {
+      "book": "NCAAB 2H first 10",
+      "n_trades": 139,
+      "n_run_mark_reached": 139,
+      "n_stop_55": 29,
+      "n_stop_45": 2,
+      "n_stop_40": 12,
+      "n_hold": 96,
+      "n_hedge_scenario": 31,
+      "n_hedge_losers": 11,
+      "n_hedge_winners": 20,
+      "cut_survivors_who_won": 12,
+      "always_8040": {
+        "n": 139,
+        "sum_cents": 920,
+        "mean_cents": 6.618705035971223
+      },
+      "always_hold": {
+        "n": 139,
+        "sum_cents": 680,
+        "mean_cents": 4.892086330935252
+      },
+      "katy_vs_8040": {
+        "n": 139,
+        "sum_cents": 645,
+        "mean_cents": 4.640287769784172
+      },
+      "katy_path": {
+        "n": 139,
+        "sum_cents": 412,
+        "mean_cents": 2.964028776978417
+      },
+      "overlay_theo": {
+        "n": 139,
+        "sum_cents": 645,
+        "mean_cents": 4.640287769784172
+      },
+      "overlay_obs": {
+        "n": 139,
+        "sum_cents": 412,
+        "mean_cents": 2.964028776978417
+      },
+      "losers_hold": {
+        "n": 21,
+        "sum_cents": -1680,
+        "mean_cents": -80.0
+      },
+      "losers_katy_8040": {
+        "n": 21,
+        "sum_cents": -675,
+        "mean_cents": -32.142857142857146
+      },
+      "delta_theo_mean": -1.9784172661870503,
+      "delta_obs_mean": -3.6546762589928057,
+      "reasons": {
+        "HOLD": 96,
+        "STOP_40": 12,
+        "STOP_55": 29,
+        "STOP_45": 2
+      },
+      "note": "SCENARIO \u2014 NOT OBSERVED FILL. Independent of Austin. Books are never combined."
+    }
+  }
+}

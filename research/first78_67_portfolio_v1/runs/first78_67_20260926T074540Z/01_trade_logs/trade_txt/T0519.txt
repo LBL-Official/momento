@@ -1,0 +1,10 @@
+trade T0519  NCAAB  Colorado at Utah
+contract KXNCAAMBGAME-26MAR03COLOUTAH-COLO  slice H1_2
+signal 2026-03-03T18:28:00-08:00 PST  exit 2026-03-03T20:46:56-08:00 PST
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 9922  principal_cents 773916
+entry_fee_cents 2980  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 218284  net_cents 215304
+strategy_result POSITIVE  net_r 1.856677187354478191131577586
+Assumed fill. Not a maker fill. Not live P&L.

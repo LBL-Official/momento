@@ -1,0 +1,778 @@
+{
+  "package_id": "58b3932deb124b96907273cc4fecc596",
+  "decomposed_at": "2026-09-11T17:41:02Z",
+  "code_version": "superasi_v1.0.0",
+  "semantics_version": "1.0.0",
+  "live_execution": false,
+  "settings": {
+    "fill_algorithm": "FIRST_BARRIER_CLOSE",
+    "fee_scenario": "CURRENT",
+    "adverse_p": "73",
+    "window": "\u00b15"
+  },
+  "four_cell": {
+    "n": 212,
+    "cells": {
+      "W_and_not_T40": 176,
+      "W_and_T40": 7,
+      "L_and_not_T40": 0,
+      "L_and_T40": 29
+    },
+    "p": {
+      "numer": 183,
+      "denom": 212,
+      "status": "OBSERVED"
+    },
+    "alpha": {
+      "numer": 67,
+      "denom": 1060,
+      "status": "DERIVED",
+      "K": {
+        "numer": 4,
+        "denom": 5
+      }
+    },
+    "s_W": {
+      "numer": 176,
+      "denom": 183,
+      "status": "OBSERVED"
+    },
+    "s_L": {
+      "numer": 0,
+      "denom": 1,
+      "status": "OBSERVED"
+    },
+    "S": {
+      "numer": 44,
+      "denom": 53,
+      "status": "OBSERVED"
+    },
+    "note": "S is the SuperASI production-rule WR. Do not conflate S with terminal p.",
+    "status": "OBSERVED",
+    "n_terminal_unavailable": 2,
+    "n_classified": 212
+  },
+  "gross_pre_superasi": {
+    "label": "GROSS / PRE-SUPERASI",
+    "observed": {
+      "status": "OBSERVED",
+      "label": "OBSERVED PATH EV / CONTRACT",
+      "formula": "E[exit_close \u2212 entry_close]",
+      "estimate_cents": -56,
+      "ci95": {
+        "estimate": -56,
+        "lower": -61.22511053182177,
+        "upper": -50.77488946817823,
+        "confidence_level": 0.95,
+        "method": "student_t",
+        "n": 36,
+        "std": 15.430952197265265,
+        "standard_error": 2.5718253662108777,
+        "t_statistic": -21.774417787357752,
+        "p_value": 6.211078485777806e-22,
+        "df": 35,
+        "null": "EV = 0",
+        "zero_inside_ci": false,
+        "t_critical": 2.031673923303755,
+        "assumption": "IID-like mean. Sports observations are not assumed independent."
+      },
+      "method": "student_t",
+      "n": 36,
+      "significance": {
+        "status": "DERIVED",
+        "verdict": "NEGATIVE EV \u00b7 CI EXCLUDES ZERO",
+        "estimate": -56,
+        "standard_error": 2.5718253662108777,
+        "t_statistic": -21.774417787357752,
+        "p_value": 6.211078485777806e-22,
+        "df": 35,
+        "null": "EV = 0",
+        "lower": -61.22511053182177,
+        "upper": -50.77488946817823,
+        "zero_inside_ci": false,
+        "p_ev_gt_zero": {
+          "status": "NOT_COMPUTED",
+          "reason": "Frequentist test is H0: EV = 0. P(EV > 0) is not a posterior."
+        },
+        "note": "Not a trading recommendation. Not P(profit)."
+      }
+    },
+    "book": {
+      "status": "UNAVAILABLE",
+      "reason": "No explicit WIN/LOSS payoff. Tagged WIN/LOSS chip prices required for book-price EV."
+    },
+    "settlement": {
+      "status": "DERIVED",
+      "label": "SETTLEMENT PAYOFF EV \u00b7 measured Kalshi YES/NO only",
+      "formula": "P(YES)\u00d7(100\u00a2 \u2212 entry) + P(NO)\u00d7(0\u00a2 \u2212 entry)",
+      "win_n": 183,
+      "loss_n": 29,
+      "denominator": 212,
+      "win_probability": 0.8632075471698113,
+      "loss_probability": 0.13679245283018868,
+      "win_payoff_cents": 20,
+      "loss_payoff_cents": -80,
+      "win_contribution_cents": 17.264150943396228,
+      "loss_contribution_cents": -10.943396226415095,
+      "ev_cents": 6.320754716981131,
+      "breakeven_probability": 0.8,
+      "rate_margin_vs_breakeven": 0.06320754716981125,
+      "wilson": {
+        "lower": 0.810447202575712,
+        "upper": 0.9030394502731846,
+        "center": 0.8567433264244483,
+        "confidence_level": 0.95,
+        "method": "wilson",
+        "numerator": 183,
+        "denominator": 212,
+        "p_hat": 0.8632075471698113,
+        "z": 1.959963984540054
+      },
+      "clopper_pearson": {
+        "lower": 0.8094853402119815,
+        "upper": 0.9064364666261373,
+        "confidence_level": 0.95,
+        "method": "clopper_pearson",
+        "numerator": 183,
+        "denominator": 212,
+        "p_hat": 0.8632075471698113
+      },
+      "wilson_ev_ci": {
+        "lower": 1.0447202575711998,
+        "upper": 10.303945027318449,
+        "zero_inside_ci": false,
+        "method": "wilson_transformed_ev",
+        "confidence_level": 0.95,
+        "payoff_span_cents": 100,
+        "p_lower": 0.810447202575712,
+        "p_upper": 0.9030394502731846,
+        "formula": "EV = l + p(w \u2212 l)",
+        "note": "Finite-sample interval for book-price EV. Not P(EV > 0). Not a posterior."
+      },
+      "exact_binomial_ev_ci": {
+        "lower": 0.9485340211981423,
+        "upper": 10.643646662613733,
+        "zero_inside_ci": false,
+        "method": "clopper_pearson_transformed_ev",
+        "confidence_level": 0.95,
+        "payoff_span_cents": 100,
+        "p_lower": 0.8094853402119815,
+        "p_upper": 0.9064364666261373,
+        "formula": "EV = l + p(w \u2212 l)",
+        "note": "Finite-sample interval for book-price EV. Not P(EV > 0). Not a posterior."
+      },
+      "note": "Uses measured settlement only. Path WIN/LOSS rates are not substituted.",
+      "terminal_missing": 2
+    },
+    "note": "Copied from ROLLER. SuperASI fees are not subtracted here."
+  },
+  "fill_algorithms": {
+    "LEDGER_RULE": {
+      "id": "LEDGER_RULE",
+      "definition": "L_x = barrier price (ledger). NOT A FILL.",
+      "n_path_loss": 38,
+      "n_available": 38,
+      "n_unavailable": 0,
+      "mean_L": {
+        "numer": 40,
+        "denom": 1,
+        "status": "DERIVED"
+      },
+      "mean_exit": {
+        "numer": 1520,
+        "denom": 38,
+        "status": "OBSERVED"
+      },
+      "EV": {
+        "numer": 520,
+        "denom": 53,
+        "status": "DERIVED"
+      },
+      "G": 20,
+      "S": {
+        "numer": 44,
+        "denom": 53
+      },
+      "research_status": "RESEARCH EXIT MIX",
+      "not_a_fill": true,
+      "active_default": false
+    },
+    "FIRST_BARRIER_CLOSE": {
+      "id": "FIRST_BARRIER_CLOSE",
+      "definition": "L_x = first tradable close \u2264 barrier. NOT A FILL.",
+      "n_path_loss": 38,
+      "n_available": 36,
+      "n_unavailable": 2,
+      "mean_L": {
+        "numer": 317,
+        "denom": 6,
+        "status": "DERIVED"
+      },
+      "mean_exit": {
+        "numer": 978,
+        "denom": 36,
+        "status": "OBSERVED"
+      },
+      "EV": {
+        "numer": 809,
+        "denom": 106,
+        "status": "DERIVED"
+      },
+      "G": 20,
+      "S": {
+        "numer": 44,
+        "denom": 53
+      },
+      "research_status": "RESEARCH EXIT MIX",
+      "not_a_fill": true,
+      "active_default": true
+    },
+    "PRINTED_OR_CLOSE": {
+      "id": "PRINTED_OR_CLOSE",
+      "definition": "40\u00a2 if printed on the stop bar, else first through-close. NOT A FILL.",
+      "n_path_loss": 38,
+      "n_available": 36,
+      "n_unavailable": 2,
+      "mean_L": {
+        "numer": 317,
+        "denom": 6,
+        "status": "DERIVED"
+      },
+      "mean_exit": {
+        "numer": 978,
+        "denom": 36,
+        "status": "OBSERVED"
+      },
+      "EV": {
+        "numer": 809,
+        "denom": 106,
+        "status": "DERIVED"
+      },
+      "G": 20,
+      "S": {
+        "numer": 44,
+        "denom": 53
+      },
+      "research_status": "RESEARCH EXIT MIX",
+      "not_a_fill": true,
+      "active_default": false
+    },
+    "PLUS_1M": {
+      "id": "PLUS_1M",
+      "definition": "L_x = close one minute after the stop bar. Missing = UNAVAILABLE.",
+      "n_path_loss": 38,
+      "n_available": 0,
+      "n_unavailable": 38,
+      "mean_L": null,
+      "mean_exit": null,
+      "EV": null,
+      "G": 20,
+      "S": {
+        "numer": 44,
+        "denom": 53
+      },
+      "research_status": "RESEARCH EXIT MIX",
+      "not_a_fill": true,
+      "active_default": false
+    },
+    "PLUS_5M": {
+      "id": "PLUS_5M",
+      "definition": "L_x = close five minutes after the stop bar. Missing = UNAVAILABLE.",
+      "n_path_loss": 38,
+      "n_available": 0,
+      "n_unavailable": 38,
+      "mean_L": null,
+      "mean_exit": null,
+      "EV": null,
+      "G": 20,
+      "S": {
+        "numer": 44,
+        "denom": 53
+      },
+      "research_status": "RESEARCH EXIT MIX",
+      "not_a_fill": true,
+      "active_default": false
+    },
+    "MIN_5M": {
+      "id": "MIN_5M",
+      "definition": "L_x = minimum close in +1\u2026+5 minutes. Missing all = UNAVAILABLE.",
+      "n_path_loss": 38,
+      "n_available": 0,
+      "n_unavailable": 38,
+      "mean_L": null,
+      "mean_exit": null,
+      "EV": null,
+      "G": 20,
+      "S": {
+        "numer": 44,
+        "denom": 53
+      },
+      "research_status": "RESEARCH EXIT MIX",
+      "not_a_fill": true,
+      "active_default": false
+    },
+    "PLANNING_2_5": {
+      "id": "PLANNING_2_5",
+      "definition": "Implied L such that EV = +2.50\u00a2. PLANNING / NOT MEASURED.",
+      "n_path_loss": 38,
+      "n_available": null,
+      "n_unavailable": null,
+      "mean_L": {
+        "numer": 1495,
+        "denom": 18,
+        "status": "MODEL-ASSUMED"
+      },
+      "mean_exit": {
+        "numer": -55,
+        "denom": 18,
+        "status": "MODEL-ASSUMED"
+      },
+      "EV": {
+        "numer": 5,
+        "denom": 2,
+        "status": "MODEL-ASSUMED"
+      },
+      "G": 20,
+      "S": {
+        "numer": 44,
+        "denom": 53
+      },
+      "research_status": "PLANNING / NOT MEASURED",
+      "not_a_fill": true
+    },
+    "FAST_GAP_TAKER": {
+      "id": "FAST_GAP_TAKER",
+      "definition": "FAST_GAP uses first through-close as TAKER; else FIRST_BARRIER_CLOSE.",
+      "n_path_loss": 38,
+      "n_available": 36,
+      "n_unavailable": 2,
+      "mean_L": {
+        "numer": 317,
+        "denom": 6,
+        "status": "DERIVED"
+      },
+      "mean_exit": {
+        "numer": 978,
+        "denom": 36,
+        "status": "OBSERVED"
+      },
+      "EV": {
+        "numer": 809,
+        "denom": 106,
+        "status": "DERIVED"
+      },
+      "G": 20,
+      "S": {
+        "numer": 44,
+        "denom": 53
+      },
+      "research_status": "RESEARCH EXIT MIX",
+      "not_a_fill": true,
+      "active_default": false
+    }
+  },
+  "active_mix": {
+    "id": "FIRST_BARRIER_CLOSE",
+    "definition": "L_x = first tradable close \u2264 barrier. NOT A FILL.",
+    "n_path_loss": 38,
+    "n_available": 36,
+    "n_unavailable": 2,
+    "mean_L": {
+      "numer": 317,
+      "denom": 6,
+      "status": "DERIVED"
+    },
+    "mean_exit": {
+      "numer": 978,
+      "denom": 36,
+      "status": "OBSERVED"
+    },
+    "EV": {
+      "numer": 809,
+      "denom": 106,
+      "status": "DERIVED"
+    },
+    "G": 20,
+    "S": {
+      "numer": 44,
+      "denom": 53
+    },
+    "research_status": "RESEARCH EXIT MIX",
+    "not_a_fill": true,
+    "active_default": true
+  },
+  "entry_cents": 80,
+  "gain_cents": 20,
+  "gain_status": "OBSERVED",
+  "fees": {
+    "status": "ESTIMATED",
+    "maker_count": 0,
+    "taker_count": 31,
+    "unavailable_count": 7,
+    "n_trades": 214,
+    "quotes": {
+      "one_contract_80_maker": {
+        "amount_e6": 2800,
+        "amount_cents": 0.28,
+        "status": "ESTIMATED",
+        "model_id": "PUBLISHED_SCHEDULE_ESTIMATE",
+        "note": "quadratic maker entry; M=1"
+      },
+      "one_contract_80_taker": {
+        "amount_e6": 11200,
+        "amount_cents": 1.12,
+        "status": "ESTIMATED",
+        "model_id": "PUBLISHED_SCHEDULE_ESTIMATE",
+        "note": "quadratic taker entry; M=1"
+      },
+      "one_contract_40_maker": {
+        "amount_e6": 4200,
+        "amount_cents": 0.42,
+        "status": "ESTIMATED",
+        "model_id": "PUBLISHED_SCHEDULE_ESTIMATE",
+        "note": "quadratic maker entry; M=1"
+      },
+      "one_contract_40_taker": {
+        "amount_e6": 16801,
+        "amount_cents": 1.6801,
+        "status": "ESTIMATED",
+        "model_id": "PUBLISHED_SCHEDULE_ESTIMATE",
+        "note": "quadratic taker entry; M=1"
+      }
+    }
+  },
+  "net_estimate": {
+    "gross_EV": {
+      "numer": 809,
+      "denom": 106,
+      "status": "DERIVED"
+    },
+    "estimated_fee_cents": 1.3797,
+    "fee_status": "ESTIMATED",
+    "note": "NET ESTIMATE = research EV minus ESTIMATED fee. Not executed P&L."
+  },
+  "adverse_terminal": {
+    "label": "ADVERSE TERMINAL",
+    "kind": "STRESS TEST",
+    "not_a_forecast": true,
+    "not_a_model": true,
+    "not_a_signal": true,
+    "p_key": "73",
+    "p": {
+      "numer": 73,
+      "denom": 100,
+      "status": "MODEL-ASSUMED"
+    },
+    "s_W": {
+      "numer": 176,
+      "denom": 183,
+      "status": "OBSERVED",
+      "held": true
+    },
+    "s_L": {
+      "numer": 0,
+      "denom": 1,
+      "status": "OBSERVED",
+      "held": true
+    },
+    "S_stressed": {
+      "numer": 3212,
+      "denom": 4575,
+      "status": "DERIVED"
+    },
+    "held_s_W": true,
+    "held_s_L": true,
+    "note": "Changing adverse p must not modify s_W or s_L.",
+    "EV_adverse": {
+      "numer": -46631,
+      "denom": 27450,
+      "status": "HYPOTHETICAL"
+    },
+    "G": 20,
+    "L": {
+      "numer": 317,
+      "denom": 6
+    }
+  },
+  "path_windows": {
+    "status": "UNAVAILABLE",
+    "path_loss_n": 0
+  },
+  "liquidity": {
+    "taker": 0,
+    "maker": 0,
+    "unavailable": 38,
+    "rows": [
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      },
+      {
+        "classification": "UNAVAILABLE",
+        "is_stop": false,
+        "status": "UNAVAILABLE",
+        "note": "quote or limit UNAVAILABLE \u2014 not inferred."
+      }
+    ],
+    "note": "Sample of classifications. FAST_GAP = TAKER. bid\u2265limit is NOT A STOP."
+  },
+  "distribution": {
+    "status": "DERIVED",
+    "n": 36,
+    "mean": {
+      "numer": -56,
+      "denom": 1
+    },
+    "median": -51,
+    "sample_sd": 15.430952197265265,
+    "p5": -82,
+    "p25": -65,
+    "p50": -51,
+    "p75": -44,
+    "p95": -41,
+    "worst": -99,
+    "best": -40,
+    "note": "Observed candle exit\u2212entry cents. CANDLE PATH \u2260 FILL."
+  },
+  "capital_overlay": {
+    "status": "MODEL-ASSUMED",
+    "bankroll_dollars": 20000,
+    "allocation_pct": 5,
+    "allocation_dollars": 1000,
+    "note": "FIXED ALLOCATION. NOT COMPOUNDED. NOT RISK ENGINE. NOT EXECUTED P&L."
+  },
+  "caveats": [
+    "LIVE EXECUTION = FALSE",
+    "CANDLE PATH \u2260 ACTUAL FILL",
+    "LEDGER PRICE \u2260 PROVEN FILL",
+    "FEE MODEL = ESTIMATED",
+    "MEASUREMENT \u2260 EDGE",
+    "DECOMPOSITION \u2260 SIGNAL",
+    "S \u2260 terminal p",
+    "path loss \u2260 terminal loss"
+  ],
+  "stop_path_status": "OK",
+  "question_hash": "de321f1192a38e773058b5b028584c4443e21e72c25a7ae9f023fa3d3ee5a49b",
+  "dataset_version": "18c80ca890fe4f17f37568c10de5be8f1bc86a273cbaa4991ce5b29ff9149e34",
+  "checksums": {
+    "trades": "a1372e7d987f4323f07bcb3b22bc94c26ddac048bb95026be3a4668cb1262fad"
+  }
+}

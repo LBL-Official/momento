@@ -1,0 +1,23 @@
+{
+  "empirical_baseline": {
+    "name": "ENTRY_CELL_OUTCOME_FREQUENCY",
+    "role": "empirical baseline",
+    "not": "predictive alpha or a regime-switching simulator",
+    "changes_entries": false
+  },
+  "snapshot_diagnostic": {
+    "status": "BACKWARD_OR_WITHIN_WINDOW_DIAGNOSTIC",
+    "changes_entries": false,
+    "rows": 44,
+    "train_games": 30,
+    "test_games": 14,
+    "training_stop_rate": 0.5333333333333333,
+    "test_brier_training_rate": 0.25587301587301586,
+    "test_brier_half": 0.25,
+    "nested_refits": 20,
+    "nested_test_brier_mean": 0.2596007718985699,
+    "duration": "exit timestamp minus action timestamp",
+    "resolution_jumps": "volatility uses bids at or before the exit and does not append a settlement print"
+  },
+  "note": "completion-order transitions are descriptive only"
+}

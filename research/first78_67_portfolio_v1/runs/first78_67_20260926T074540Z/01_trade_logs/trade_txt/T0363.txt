@@ -1,0 +1,10 @@
+trade T0363  NBA  Los Angeles L at New York
+contract KXNBAGAME-26FEB01LALNYK-NYK  slice Q3
+signal 2026-02-01T17:40:00-08:00 PST  exit 2026-02-01T17:44:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 6429  principal_cents 501462
+entry_fee_cents 1931  exit_fee_cents 2488
+exit STOP at 67c  terminal yes
+gross_cents -70719  net_cents -75138
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

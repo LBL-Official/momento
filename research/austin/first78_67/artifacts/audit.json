@@ -1,0 +1,159 @@
+{
+  "dataset": "choosin_nba_2q3q_first78_67",
+  "filters": {
+    "sport": "NBA",
+    "slice": [
+      "Q2",
+      "Q3"
+    ],
+    "entry_cents": 78,
+    "stop_cents": 67
+  },
+  "N": {
+    "n_trades": 569,
+    "n_q2": 294,
+    "n_q3": 275,
+    "n_t67": 305,
+    "n_survive": 264,
+    "n_path_complete": 457,
+    "n_path_partial": 112,
+    "n_path_unavailable": 0,
+    "n_knn_observations": 137897,
+    "n_entry_snapshots": 569,
+    "exclusions": {
+      "UNPROVEN_FIRST": 35
+    },
+    "population": "NBA_2Q3Q_FIRST78",
+    "entry_cents": 78,
+    "stop_cents": 67,
+    "n_is_604": false,
+    "hedge_trigger_resolution": {
+      "TRIGGER_RESOLUTION": "1m_close",
+      "definition_69": "first favorite close <= 69 after the 78 entry",
+      "definition_68": "first favorite close <= 68 after the 78 entry",
+      "n_first_le_69": 489,
+      "n_first_le_68": 486,
+      "n_69_without_68": 105,
+      "n_same_bar_69_and_68": 384,
+      "note": "1m closes can skip a 69-only print. Hedge price is 67. Candle path is not a fill."
+    },
+    "pbp_status": "PBP_SEQUENCE_NOT_PIT",
+    "l2_status": "SOURCE_UNAVAILABLE",
+    "fill_status": "FILL_UNAVAILABLE",
+    "live_feed": "UNAVAILABLE",
+    "data_mode": "HISTORICAL_QUERY",
+    "note": "NBA 2Q/3Q contracts from the derived four with a 78\u00a2 up-cross. N is observed."
+  },
+  "default_knn": [
+    "entry_price_cents",
+    "current_price_cents",
+    "price_travel",
+    "distance_from_78",
+    "score_differential",
+    "score_differential_travel",
+    "score_travel",
+    "time_since_entry",
+    "seconds_remaining",
+    "quarter",
+    "quarter_progress",
+    "price_x_score_diff",
+    "score_diff_x_time",
+    "entry_price_x_score_diff"
+  ],
+  "missing_data_policy": "UNAVAILABLE never filled with 0",
+  "train_period": [
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01"
+  ],
+  "validation_period": [
+    "2026-02",
+    "2026-03"
+  ],
+  "oos_period": [
+    "2026-04",
+    "2026-05",
+    "2026-06"
+  ],
+  "pca_dimensions": 5,
+  "k": 25,
+  "distance_metric": "euclidean_pca",
+  "hedge_assumptions": {
+    "triggers": [
+      69,
+      68
+    ],
+    "hedge_price": 67,
+    "fill_status": "FILL_UNAVAILABLE"
+  },
+  "sizing_thresholds": {
+    "status": "INSUFFICIENT_SAMPLE",
+    "reason": "OOS top/mid/bot EV 1.692/1.692/3.438 do not separate",
+    "top_mean_pnl": 1.6923076923076923,
+    "mid_mean_pnl": 1.6923076923076923,
+    "bot_mean_pnl": 3.4375,
+    "threshold_4": null,
+    "threshold_5": null,
+    "table": [
+      {
+        "band": "D1-2",
+        "knn_ev_lo": null,
+        "knn_ev_hi": -10.999999999999998,
+        "n": 16,
+        "realized_PNL": 3.4375,
+        "drawdown": -11.0,
+        "recommended_band": 3
+      },
+      {
+        "band": "D3-4",
+        "knn_ev_lo": -10.999999999999998,
+        "knn_ev_hi": -9.711045945559578,
+        "n": 14,
+        "realized_PNL": 5.5,
+        "drawdown": -11.0,
+        "recommended_band": 3
+      },
+      {
+        "band": "D5-6",
+        "knn_ev_lo": -9.711045945559578,
+        "knn_ev_hi": -6.916971716340209,
+        "n": 13,
+        "realized_PNL": 1.6923076923076923,
+        "drawdown": -11.0,
+        "recommended_band": 3
+      },
+      {
+        "band": "D7-8",
+        "knn_ev_lo": -6.916971716340209,
+        "knn_ev_hi": -2.8877989099432173,
+        "n": 13,
+        "realized_PNL": 4.230769230769231,
+        "drawdown": -11.0,
+        "recommended_band": 4
+      },
+      {
+        "band": "D9-10",
+        "knn_ev_lo": -2.8877989099432173,
+        "knn_ev_hi": null,
+        "n": 13,
+        "realized_PNL": 1.6923076923076923,
+        "drawdown": -11.0,
+        "recommended_band": 5
+      }
+    ]
+  },
+  "integrity": {
+    "dataset_version": "choosin_nba_2q3q_first78_67",
+    "n_trades": 569,
+    "n_is_604": false,
+    "knn_includes_distance_from_78": true,
+    "knn_includes_distance_from_80": false,
+    "buy_skip": false,
+    "live_execution": false,
+    "live_feed": "UNAVAILABLE"
+  },
+  "ev_definition": "first78_67_candle_path",
+  "execution_status": "DISABLED",
+  "buy_skip": false
+}

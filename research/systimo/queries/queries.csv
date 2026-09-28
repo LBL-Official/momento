@@ -1,0 +1,2 @@
+query_id,query_type,requested_at,completed_at,requested_by,params_json,status
+9ac4bda2b97342db,datasets,2026-09-21T18:46:10Z,2026-09-21T18:46:10Z,operator,"{""query_type"": ""datasets"", ""system"": ""austin""}",COMPLETE

@@ -1,0 +1,10 @@
+trade T0215  NCAAB  TCU at Kansas
+contract KXNCAAMBGAME-26JAN06TCUKU-TCU  slice H1_2
+signal 2026-01-06T19:43:00-08:00 PST  exit 2026-01-06T20:28:00-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 3681  principal_cents 287118
+entry_fee_cents 1106  exit_fee_cents 1425
+exit STOP at 67c  terminal no
+gross_cents -40491  net_cents -43022
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

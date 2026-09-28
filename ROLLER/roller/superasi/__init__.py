@@ -1,0 +1,15 @@
+"""SuperASI — research consumer of ROLLER measurements.
+
+LIVE EXECUTION = FALSE
+CANDLE PATH ≠ ACTUAL FILL
+LEDGER PRICE ≠ PROVEN FILL
+FEE MODEL = ESTIMATED
+"""
+
+from roller.superasi.versions import (
+    CODE_VERSION,
+    PACKAGE_SCHEMA,
+    SEMANTICS_VERSION,
+)
+
+__all__ = ["CODE_VERSION", "PACKAGE_SCHEMA", "SEMANTICS_VERSION"]

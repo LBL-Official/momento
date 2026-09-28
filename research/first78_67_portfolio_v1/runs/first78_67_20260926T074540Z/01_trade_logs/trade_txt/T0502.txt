@@ -1,0 +1,10 @@
+trade T0502  NBA  New Orleans at Utah
+contract KXNBAGAME-26FEB28NOPUTA-NOP  slice Q2
+signal 2026-02-28T19:17:00-08:00 PST  exit 2026-02-28T21:19:26-08:00 PST
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 10309  principal_cents 804102
+entry_fee_cents 3096  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 226798  net_cents 223702
+strategy_result POSITIVE  net_r 1.856694664851764549649746024
+Assumed fill. Not a maker fill. Not live P&L.

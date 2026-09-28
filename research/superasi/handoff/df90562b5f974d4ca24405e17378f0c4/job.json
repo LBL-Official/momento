@@ -1,0 +1,17 @@
+{
+  "handoff_id": "df90562b5f974d4ca24405e17378f0c4",
+  "lab_id": "682b90bc58e4437fbf04838861012e67",
+  "status": "COMPLETE",
+  "phase": "final",
+  "result_id": "MLB CROSS 20 REACH 85 40 2025-03",
+  "phase_a_result_id": "MLB CROSS 20 REACH 85 40 2025-03",
+  "strategy_name": "MLB CROSS 20 REACH 85 40 2025-03",
+  "reused_base": false,
+  "reused_debase": false,
+  "ran_base": true,
+  "ran_debase": true,
+  "error": null,
+  "error_code": null,
+  "created_at": "2026-09-15T18:48:28Z",
+  "updated_at": "2026-09-15T18:48:40Z"
+}

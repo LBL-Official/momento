@@ -1,0 +1,240 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >
+  DATA-INGEST weekly worker. Isolated from paper/live trading.
+  Starts Sunday 00:00 America/Los_Angeles, lands StatsAPI+Kalshi, stops.
+
+Parameters:
+  VpcId:
+    Type: AWS::EC2::VPC::Id
+  SubnetId:
+    Type: AWS::EC2::Subnet::Id
+  LatestAmiId:
+    Type: AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>
+    Default: /aws/service/ami-amazon-linux-latest/al2023-ami-kernel-default-arm64
+
+Resources:
+  IngestBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub "momento-ingest-artifacts-${AWS::AccountId}"
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      VersioningConfiguration:
+        Status: Enabled
+
+  IngestLogs:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: /momento/research-ingest
+      RetentionInDays: 30
+
+  IngestInstanceRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: momento-research-ingest-ec2
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: ec2.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore
+      Policies:
+        - PolicyName: ingest-s3-and-self-stop
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action:
+                  - s3:GetObject
+                  - s3:PutObject
+                  - s3:DeleteObject
+                  - s3:ListBucket
+                Resource:
+                  - !GetAtt IngestBucket.Arn
+                  - !Sub "${IngestBucket.Arn}/*"
+              - Effect: Allow
+                Action:
+                  - logs:CreateLogStream
+                  - logs:PutLogEvents
+                Resource: !GetAtt IngestLogs.Arn
+              - Effect: Allow
+                Action:
+                  - ec2:StopInstances
+                Resource: !Sub "arn:aws:ec2:${AWS::Region}:${AWS::AccountId}:instance/*"
+                Condition:
+                  StringEquals:
+                    ec2:ResourceTag/Name: momento-research-ingest
+
+  IngestInstanceProfile:
+    Type: AWS::IAM::InstanceProfile
+    Properties:
+      Roles:
+        - !Ref IngestInstanceRole
+
+  IngestSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: DATA-INGEST egress HTTPS only; no inbound
+      VpcId: !Ref VpcId
+      SecurityGroupEgress:
+        - IpProtocol: tcp
+          FromPort: 443
+          ToPort: 443
+          CidrIp: 0.0.0.0/0
+          Description: HTTPS for StatsAPI, Kalshi, S3, SSM, rustup
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0
+          Description: HTTP only for rustup/package redirects
+        - IpProtocol: udp
+          FromPort: 53
+          ToPort: 53
+          CidrIp: 0.0.0.0/0
+          Description: DNS
+        - IpProtocol: tcp
+          FromPort: 53
+          ToPort: 53
+          CidrIp: 0.0.0.0/0
+          Description: DNS TCP
+      Tags:
+        - Key: Name
+          Value: momento-research-ingest-sg
+
+  IngestInstance:
+    Type: AWS::EC2::Instance
+    DependsOn: IngestBucket
+    Properties:
+      ImageId: !Ref LatestAmiId
+      InstanceType: t4g.small
+      IamInstanceProfile: !Ref IngestInstanceProfile
+      SubnetId: !Ref SubnetId
+      SecurityGroupIds:
+        - !Ref IngestSecurityGroup
+      BlockDeviceMappings:
+        - DeviceName: /dev/xvda
+          Ebs:
+            VolumeSize: 30
+            VolumeType: gp3
+            Encrypted: true
+            DeleteOnTermination: false
+      InstanceInitiatedShutdownBehavior: stop
+      MetadataOptions:
+        HttpTokens: required
+        HttpPutResponseHopLimit: 1
+      UserData:
+        Fn::Base64: !Sub |
+          #!/bin/bash
+          set -euxo pipefail
+          exec > >(tee /var/log/momento-ingest-bootstrap.log) 2>&1
+          timedatectl set-timezone UTC
+          dnf install -y awscli gcc git tar gzip curl openssl-devel || dnf install -y aws-cli gcc git tar gzip curl openssl-devel
+          if [[ ! -f /swapfile ]]; then
+            dd if=/dev/zero of=/swapfile bs=1M count=2048
+            chmod 0600 /swapfile
+            mkswap /swapfile
+            swapon /swapfile
+            echo '/swapfile none swap sw 0 0' >> /etc/fstab
+          fi
+          id momento >/dev/null 2>&1 || useradd --system --home-dir /var/lib/momento --create-home --shell /sbin/nologin momento
+          mkdir -p /var/lib/momento/ingest /var/lib/momento/cloud-lake /opt/momento-src
+          BUCKET="${IngestBucket}"
+          REGION="${AWS::Region}"
+          PREFIX="s3://${!BUCKET}/bootstrap"
+          ok=0
+          for _ in $(seq 1 60); do
+            if aws s3 cp "${!PREFIX}/momento-ingest-src.tar.gz" /tmp/momento-ingest-src.tar.gz --region "$REGION"; then
+              ok=1
+              break
+            fi
+            sleep 5
+          done
+          if [[ "$ok" != 1 ]]; then
+            echo "failed to download ingest source"
+            exit 1
+          fi
+          tar -xzf /tmp/momento-ingest-src.tar.gz -C /opt/momento-src --strip-components=1
+          chown -R momento:momento /opt/momento-src /var/lib/momento
+          if [[ ! -x /usr/local/bin/momento-research-ingest ]]; then
+            su -s /bin/bash momento -c 'curl --proto "=https" --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --default-toolchain 1.85.0'
+            su -s /bin/bash momento -c 'source /var/lib/momento/.cargo/env && cd /opt/momento-src && cargo build -p momento-research-ingest-app --release'
+            cp /opt/momento-src/target/release/momento-research-ingest /usr/local/bin/momento-research-ingest
+            chmod 0755 /usr/local/bin/momento-research-ingest
+          fi
+          aws s3 cp "${!PREFIX}/momento-ingest-weekly.sh" /usr/local/bin/momento-ingest-weekly.sh --region "$REGION"
+          aws s3 cp "${!PREFIX}/momento-research-ingest.service" /etc/systemd/system/momento-research-ingest.service --region "$REGION"
+          chmod 0755 /usr/local/bin/momento-ingest-weekly.sh
+          {
+            echo "MOMENTO_INGEST_BUCKET=${!BUCKET}"
+            echo "AWS_REGION=${!REGION}"
+            echo "MOMENTO_INGEST_CLOUD_STATUS=DEPLOYED"
+            echo "MOMENTO_INGEST_KEEP_ALIVE=0"
+          } >/etc/momento-ingest.env
+          chmod 0640 /etc/momento-ingest.env
+          mkdir -p /etc/systemd/system/momento-research-ingest.service.d
+          echo '[Service]' >/etc/systemd/system/momento-research-ingest.service.d/override.conf
+          echo 'EnvironmentFile=/etc/momento-ingest.env' >>/etc/systemd/system/momento-research-ingest.service.d/override.conf
+          systemctl daemon-reload
+          systemctl enable momento-research-ingest.service
+          echo bootstrap-complete
+      Tags:
+        - Key: Name
+          Value: momento-research-ingest
+        - Key: Plane
+          Value: DATA-INGEST
+        - Key: LiveTrading
+          Value: "false"
+
+  SchedulerRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: scheduler.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: start-ingest-instance
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action: ec2:StartInstances
+                Resource: !Sub "arn:aws:ec2:${AWS::Region}:${AWS::AccountId}:instance/${IngestInstance}"
+
+  WeeklySchedule:
+    Type: AWS::Scheduler::Schedule
+    Properties:
+      Name: momento-research-ingest-weekly
+      Description: Sunday 00:00 America/Los_Angeles DATA-INGEST
+      FlexibleTimeWindow:
+        Mode: "OFF"
+      ScheduleExpression: cron(0 0 ? * SUN *)
+      ScheduleExpressionTimezone: America/Los_Angeles
+      State: ENABLED
+      Target:
+        Arn: arn:aws:scheduler:::aws-sdk:ec2:startInstances
+        RoleArn: !GetAtt SchedulerRole.Arn
+        Input: !Sub '{"InstanceIds":["${IngestInstance}"]}'
+        RetryPolicy:
+          MaximumRetryAttempts: 2
+
+Outputs:
+  InstanceId:
+    Value: !Ref IngestInstance
+  Bucket:
+    Value: !Ref IngestBucket
+  ScheduleName:
+    Value: momento-research-ingest-weekly

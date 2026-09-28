@@ -1,0 +1,261 @@
+{
+  "n_events": 1230,
+  "missing_opponent": 0,
+  "by_threshold": {
+    "5": {
+      "FULL": {
+        "n": 1230,
+        "k": 1052,
+        "p": 0.8552845528455284,
+        "median_delay_s": 2040.0,
+        "p_given_W": 0.9990186457311089,
+        "p_given_not_W": 0.16113744075829384,
+        "p_given_T40": 0.446875,
+        "mean_complement_e4": 9853.041825095057
+      },
+      "TRAIN": {
+        "n": 504,
+        "k": 424,
+        "p": 0.8412698412698413,
+        "median_delay_s": 2100.0,
+        "p_given_W": 0.9975429975429976,
+        "p_given_not_W": 0.18556701030927836,
+        "p_given_T40": 0.44366197183098594,
+        "mean_complement_e4": 9835.377358490567
+      },
+      "VALIDATION": {
+        "n": 483,
+        "k": 413,
+        "p": 0.855072463768116,
+        "median_delay_s": 2040.0,
+        "p_given_W": 1.0,
+        "p_given_not_W": 0.125,
+        "p_given_T40": 0.4067796610169492,
+        "mean_complement_e4": 9863.19612590799
+      },
+      "OOS": {
+        "n": 243,
+        "k": 215,
+        "p": 0.8847736625514403,
+        "median_delay_s": 1920.0,
+        "p_given_W": 1.0,
+        "p_given_not_W": 0.17647058823529413,
+        "p_given_T40": 0.5333333333333333,
+        "mean_complement_e4": 9868.372093023256
+      }
+    },
+    "10": {
+      "FULL": {
+        "n": 1230,
+        "k": 1113,
+        "p": 0.9048780487804878,
+        "median_delay_s": 1020.0,
+        "p_given_W": 0.9990186457311089,
+        "p_given_not_W": 0.45023696682464454,
+        "p_given_T40": 0.6375,
+        "mean_complement_e4": 9850.584007187781
+      },
+      "TRAIN": {
+        "n": 504,
+        "k": 446,
+        "p": 0.8849206349206349,
+        "median_delay_s": 1080.0,
+        "p_given_W": 0.9975429975429976,
+        "p_given_not_W": 0.41237113402061853,
+        "p_given_T40": 0.5985915492957746,
+        "mean_complement_e4": 9833.632286995517
+      },
+      "VALIDATION": {
+        "n": 483,
+        "k": 439,
+        "p": 0.9089026915113871,
+        "median_delay_s": 900.0,
+        "p_given_W": 1.0,
+        "p_given_not_W": 0.45,
+        "p_given_T40": 0.6271186440677966,
+        "mean_complement_e4": 9861.731207289295
+      },
+      "OOS": {
+        "n": 243,
+        "k": 228,
+        "p": 0.9382716049382716,
+        "median_delay_s": 1080.0,
+        "p_given_W": 1.0,
+        "p_given_not_W": 0.5588235294117647,
+        "p_given_T40": 0.75,
+        "mean_complement_e4": 9862.280701754386
+      }
+    },
+    "15": {
+      "FULL": {
+        "n": 1230,
+        "k": 1175,
+        "p": 0.9552845528455285,
+        "median_delay_s": 240.0,
+        "p_given_W": 0.9990186457311089,
+        "p_given_not_W": 0.7440758293838863,
+        "p_given_T40": 0.83125,
+        "mean_complement_e4": 9852.170212765957
+      },
+      "TRAIN": {
+        "n": 504,
+        "k": 479,
+        "p": 0.9503968253968254,
+        "median_delay_s": 240.0,
+        "p_given_W": 0.9975429975429976,
+        "p_given_not_W": 0.7525773195876289,
+        "p_given_T40": 0.8309859154929577,
+        "mean_complement_e4": 9829.018789144051
+      },
+      "VALIDATION": {
+        "n": 483,
+        "k": 460,
+        "p": 0.9523809523809523,
+        "median_delay_s": 300.0,
+        "p_given_W": 1.0,
+        "p_given_not_W": 0.7125,
+        "p_given_T40": 0.8050847457627118,
+        "mean_complement_e4": 9865.652173913044
+      },
+      "OOS": {
+        "n": 243,
+        "k": 236,
+        "p": 0.9711934156378601,
+        "median_delay_s": 240.0,
+        "p_given_W": 1.0,
+        "p_given_not_W": 0.7941176470588235,
+        "p_given_T40": 0.8833333333333333,
+        "mean_complement_e4": 9872.881355932202
+      }
+    },
+    "20": {
+      "FULL": {
+        "n": 1230,
+        "k": 1212,
+        "p": 0.9853658536585366,
+        "median_delay_s": 60.0,
+        "p_given_W": 1.0,
+        "p_given_not_W": 0.9146919431279621,
+        "p_given_T40": 0.94375,
+        "mean_complement_e4": 9874.049586776859
+      },
+      "TRAIN": {
+        "n": 504,
+        "k": 494,
+        "p": 0.9801587301587301,
+        "median_delay_s": 60.0,
+        "p_given_W": 1.0,
+        "p_given_not_W": 0.8969072164948454,
+        "p_given_T40": 0.9295774647887324,
+        "mean_complement_e4": 9859.22920892495
+      },
+      "VALIDATION": {
+        "n": 483,
+        "k": 476,
+        "p": 0.9855072463768116,
+        "median_delay_s": 60.0,
+        "p_given_W": 1.0,
+        "p_given_not_W": 0.9125,
+        "p_given_T40": 0.940677966101695,
+        "mean_complement_e4": 9883.157894736842
+      },
+      "OOS": {
+        "n": 243,
+        "k": 242,
+        "p": 0.9958847736625515,
+        "median_delay_s": 60.0,
+        "p_given_W": 1.0,
+        "p_given_not_W": 0.9705882352941176,
+        "p_given_T40": 0.9833333333333333,
+        "mean_complement_e4": 9886.363636363636
+      }
+    },
+    "25": {
+      "FULL": {
+        "n": 1230,
+        "k": 1227,
+        "p": 0.9975609756097561,
+        "median_delay_s": 60.0,
+        "p_given_W": 1.0,
+        "p_given_not_W": 0.985781990521327,
+        "p_given_T40": 0.990625,
+        "mean_complement_e4": 9874.796084828711
+      },
+      "TRAIN": {
+        "n": 504,
+        "k": 502,
+        "p": 0.996031746031746,
+        "median_delay_s": 60.0,
+        "p_given_W": 1.0,
+        "p_given_not_W": 0.979381443298969,
+        "p_given_T40": 0.9859154929577465,
+        "mean_complement_e4": 9860.878243512974
+      },
+      "VALIDATION": {
+        "n": 483,
+        "k": 482,
+        "p": 0.9979296066252588,
+        "median_delay_s": 60.0,
+        "p_given_W": 1.0,
+        "p_given_not_W": 0.9875,
+        "p_given_T40": 0.9915254237288136,
+        "mean_complement_e4": 9883.609958506224
+      },
+      "OOS": {
+        "n": 243,
+        "k": 243,
+        "p": 1.0,
+        "median_delay_s": 60.0,
+        "p_given_W": 1.0,
+        "p_given_not_W": 1.0,
+        "p_given_T40": 1.0,
+        "mean_complement_e4": 9886.008230452675
+      }
+    },
+    "30": {
+      "FULL": {
+        "n": 1230,
+        "k": 1229,
+        "p": 0.9991869918699187,
+        "median_delay_s": 60.0,
+        "p_given_W": 1.0,
+        "p_given_not_W": 0.995260663507109,
+        "p_given_T40": 0.996875,
+        "mean_complement_e4": 9874.022801302932
+      },
+      "TRAIN": {
+        "n": 504,
+        "k": 503,
+        "p": 0.998015873015873,
+        "median_delay_s": 60.0,
+        "p_given_W": 1.0,
+        "p_given_not_W": 0.9896907216494846,
+        "p_given_T40": 0.9929577464788732,
+        "mean_complement_e4": 9860.756972111554
+      },
+      "VALIDATION": {
+        "n": 483,
+        "k": 483,
+        "p": 1.0,
+        "median_delay_s": 60.0,
+        "p_given_W": 1.0,
+        "p_given_not_W": 1.0,
+        "p_given_T40": 1.0,
+        "mean_complement_e4": 9882.194616977225
+      },
+      "OOS": {
+        "n": 243,
+        "k": 243,
+        "p": 1.0,
+        "median_delay_s": 60.0,
+        "p_given_W": 1.0,
+        "p_given_not_W": 1.0,
+        "p_given_T40": 1.0,
+        "mean_complement_e4": 9885.185185185184
+      }
+    }
+  },
+  "evidence_level": "THEORETICAL_HEDGE_STATE / OBSERVED_QUOTED_HEDGE_OPPORTUNITY",
+  "not": "EXECUTABLE_HEDGE",
+  "note": "Candle yes_bid_close on the opponent ticker is not a fill. Complementary prices are measured, not assumed to sum to 1.00. Fees, spread, slippage, and queue are omitted."
+}

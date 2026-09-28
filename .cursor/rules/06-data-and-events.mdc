@@ -1,0 +1,79 @@
+---
+description: Market data, event sourcing, timestamps, and replay rules
+globs: "{**/market-data/**,**/events/**,**/replay/**}"
+alwaysApply: false
+---
+
+# Market Data and Event Rules
+
+Trading decisions must be reproducible whenever possible.
+
+---
+
+## Event Time
+
+Distinguish:
+
+- exchange timestamp
+- event timestamp
+- local receipt timestamp
+- processing timestamp
+- order submission timestamp
+- acknowledgement timestamp
+- fill timestamp
+
+Never substitute local wall-clock time for exchange event time without recording
+the distinction.
+
+---
+
+## Market Data
+
+Store raw exchange data separately from normalized internal events.
+
+Raw data should be immutable.
+
+Normalized events should contain enough information to reconstruct decisions.
+
+---
+
+## No Lookahead
+
+Backtests and replay systems MUST NOT expose information that was unavailable
+at the decision timestamp.
+
+Forbidden examples:
+
+- final game result
+- future order-book state
+- future price
+- future score
+- future settlement
+- future market status
+
+---
+
+## Replay
+
+Replay should reproduce the same sequence of events given the same input data
+and configuration.
+
+Prefer deterministic replay.
+
+---
+
+## Order Book
+
+Do not treat last-traded price as equivalent to executable liquidity.
+
+When analyzing execution, distinguish:
+
+- last price
+- best bid
+- best ask
+- bid depth
+- ask depth
+- spread
+- executable quantity
+
+This distinction is especially important for fast sports markets.

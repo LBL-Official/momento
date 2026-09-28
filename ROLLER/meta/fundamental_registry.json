@@ -1,0 +1,35 @@
+{
+  "schema_version": "4.0.0-A",
+  "fundamentals": [
+    {
+      "name": "fundamental_win_probability_empirical_v1",
+      "family": "fundamental_probability",
+      "version": "v1",
+      "definition": "A prior-only, empirical, state-conditioned estimate of terminal win probability.",
+      "formula": "wins / n among eligible comparable historical states",
+      "required_inputs": [
+        "observation_id",
+        "period",
+        "elapsed_game_seconds",
+        "score_differential_home",
+        "historical_home_win",
+        "state_available_at",
+        "result_available_at"
+      ],
+      "optional_inputs": [],
+      "information_regime": "prior_only",
+      "source_resolution": "pbp_last_per_clock_bucket_v1",
+      "availability_rule": "state_available_at < cutoff AND result_available_at < cutoff AND internal_game_id != current",
+      "conditioning_schema_version": "core_v1",
+      "support_requirements": "config/fundamental_conditioning.json support",
+      "contains_future_information": true,
+      "status": "ACTIVE",
+      "implementation_status": "IMPLEMENTED",
+      "sport_capability": {
+        "NBA": "REAL",
+        "WNBA": "REAL",
+        "NCAAB": "REAL"
+      }
+    }
+  ]
+}

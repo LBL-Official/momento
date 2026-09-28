@@ -1,0 +1,10 @@
+trade T0591  NCAAB  Wisconsin at Michigan
+contract KXNCAAMBGAME-26MAR14WISMICH-MICH  slice H1_2
+signal 2026-03-14T10:31:00-07:00 PDT  exit 2026-03-14T10:43:00-07:00 PDT
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 14267  principal_cents 1112826
+entry_fee_cents 4285  exit_fee_cents 5521
+exit STOP at 67c  terminal yes
+gross_cents -156937  net_cents -166743
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

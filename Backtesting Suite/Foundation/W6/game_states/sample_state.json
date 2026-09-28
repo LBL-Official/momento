@@ -1,0 +1,178 @@
+{
+  "abs_run_differential": 3,
+  "away_abbreviation": {
+    "status": "OBSERVED",
+    "value": "LAD"
+  },
+  "away_team": {
+    "status": "OBSERVED",
+    "value": "119"
+  },
+  "balls": {
+    "status": "DERIVED",
+    "transform_version": "W6.COUNT.RESET.1",
+    "value": 0
+  },
+  "base_occupancy_id": "___",
+  "base_out_id": "___|3",
+  "bases_bitmask": 0,
+  "batter_hand": {
+    "reason": "handedness not in PBP",
+    "status": "UNAVAILABLE"
+  },
+  "batter_id": {
+    "status": "OBSERVED",
+    "value": "807713"
+  },
+  "batter_team": {
+    "status": "OBSERVED",
+    "value": "112"
+  },
+  "batting_order_slot": {
+    "reason": "batting order slot not in PBP",
+    "status": "UNAVAILABLE"
+  },
+  "canonical_timestamp": {
+    "status": "OBSERVED",
+    "value": "2025-03-18T12:47:36.088Z"
+  },
+  "count_id": {
+    "status": "DERIVED",
+    "transform_version": "W6.DERIVED.1.0.0",
+    "value": "0-0"
+  },
+  "derived_version": "W6.DERIVED.1.0.0",
+  "event_description": {
+    "status": "OBSERVED",
+    "value": "Matt Shaw strikes out swinging."
+  },
+  "event_id": "58d30c2dfa23780ffa06f3510259a176",
+  "event_kind": "GAME_STATUS_TRANSITION",
+  "event_sequence": 75,
+  "event_type": "STRIKEOUT",
+  "extra_inning": false,
+  "fingerprint": "988884da746c7d9a5f771430dd6f00a8e3b3685974519cf215dff1370e924938",
+  "fingerprint_version": "W6.FP.1.0.0",
+  "game_date": {
+    "status": "OBSERVED",
+    "value": "2025-03-18"
+  },
+  "game_elapsed_ms": {
+    "status": "DERIVED",
+    "transform_version": "W6.DERIVED.1.0.0",
+    "value": 9401935
+  },
+  "game_id": "7e49477d165a7218b05ab6acf18af9d2",
+  "game_number": 1,
+  "game_pk": "778563",
+  "game_remaining_ms": {
+    "reason": "remaining game time not knowable without lookahead",
+    "status": "UNAVAILABLE"
+  },
+  "game_status": "FINAL",
+  "half": "BOTTOM",
+  "home_abbreviation": {
+    "status": "OBSERVED",
+    "value": "CHC"
+  },
+  "home_team": {
+    "status": "OBSERVED",
+    "value": "112"
+  },
+  "inning": 9,
+  "inning_half_id": "9B",
+  "outs": 3,
+  "outs_before_event": {
+    "status": "OBSERVED",
+    "value": 2
+  },
+  "outs_remaining_half": 0,
+  "pa_end_ts": {
+    "status": "DERIVED",
+    "transform_version": "W6.PA.1.0.0",
+    "value": "2025-03-18T12:47:36.088Z"
+  },
+  "pa_id": {
+    "status": "DERIVED",
+    "transform_version": "W6.PA.1.0.0",
+    "value": "221409cec8e874e0167f586c267c5994f62f6fc13901b36f9f6fd6351042f8c5"
+  },
+  "pa_phase": "RESULT",
+  "pa_result": {
+    "status": "OBSERVED",
+    "value": "STRIKEOUT"
+  },
+  "pa_seq": {
+    "status": "DERIVED",
+    "transform_version": "W6.PA.1.0.0",
+    "value": 74
+  },
+  "pa_start_ts": {
+    "status": "DERIVED",
+    "transform_version": "W6.PA.1.0.0",
+    "value": "2025-03-18T12:47:36.088Z"
+  },
+  "pa_version": "W6.PA.1.0.0",
+  "pitch_of_pa": {
+    "reason": "pitch-level PA not in play-granularity PBP",
+    "status": "UNAVAILABLE"
+  },
+  "pitcher_hand": {
+    "reason": "handedness not in PBP",
+    "status": "UNAVAILABLE"
+  },
+  "pitcher_id": {
+    "status": "OBSERVED",
+    "value": "656945"
+  },
+  "pitching_team": {
+    "status": "OBSERVED",
+    "value": "119"
+  },
+  "reconstruction_version": "W6.REPLAY.1.0.0",
+  "risp": false,
+  "run_differential": -3,
+  "runner_first": {
+    "status": "OBSERVED",
+    "value": null
+  },
+  "runner_second": {
+    "status": "OBSERVED",
+    "value": null
+  },
+  "runner_third": {
+    "status": "OBSERVED",
+    "value": null
+  },
+  "schema_version": "W6.SCHEMA.1.0.0",
+  "score_away": 4,
+  "score_home": 1,
+  "score_state_id": "1-4",
+  "season": {
+    "status": "OBSERVED",
+    "value": 2025
+  },
+  "source_dataset": "mlb_statsapi",
+  "source_event_id": {
+    "status": "OBSERVED",
+    "value": "778563:play:73"
+  },
+  "source_timestamp": {
+    "status": "OBSERVED",
+    "value": "2025-03-18T12:47:36.088Z"
+  },
+  "source_version": "W2.PBP.1.1.0",
+  "state_id": "6c0b3b8ed3b362c17cbe1347d64a63f1491d512cb254478f737cb200ca3dfd4b",
+  "state_seq": 75,
+  "strikes": {
+    "status": "DERIVED",
+    "transform_version": "W6.COUNT.RESET.1",
+    "value": 0
+  },
+  "total_outs_elapsed": {
+    "status": "DERIVED",
+    "transform_version": "W6.DERIVED.1.0.0",
+    "value": 54
+  },
+  "walk_off": false
+}

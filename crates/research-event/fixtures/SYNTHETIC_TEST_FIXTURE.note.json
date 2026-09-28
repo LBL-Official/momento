@@ -1,0 +1,7 @@
+{
+  "envelope_version": "W2.RAW.1.0.0",
+  "fixture_kind": "SYNTHETIC_TEST_FIXTURE",
+  "source": "mlb_statsapi_live_feed_v1",
+  "source_game_id": "900001",
+  "note": "Not historical MLB. Parser fixture only."
+}

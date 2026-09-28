@@ -1,0 +1,106 @@
+:root {
+  --bg: #0b0d10;
+  --panel: #12151a;
+  --panel-2: #171b21;
+  --line: #232a33;
+  --text: #e6edf3;
+  --muted: #8b98a5;
+  --gold: #c8a25a;
+  --pos: #3dba7a;
+  --neg: #e05d5d;
+  --warn: #e0a14a;
+  --mono: "IBM Plex Mono", "SF Mono", ui-monospace, monospace;
+  --sans: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; margin: 0; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font: 13px/1.45 var(--sans);
+}
+
+a { color: var(--gold); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.app { display: grid; grid-template-columns: 200px 1fr; min-height: 100%; }
+.nav {
+  border-right: 1px solid var(--line);
+  background: #0e1115;
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.brand { font-family: var(--mono); letter-spacing: 0.08em; color: var(--gold); font-size: 12px; margin: 0 8px 16px; }
+.brand small { display: block; color: var(--muted); letter-spacing: 0; font-size: 10px; margin-top: 4px; }
+.nav a {
+  color: var(--muted);
+  padding: 6px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.nav a.active, .nav a:hover { color: var(--text); background: var(--panel-2); text-decoration: none; }
+.main { padding: 20px 24px 40px; overflow: auto; }
+h1 { font-size: 18px; font-weight: 560; margin: 0 0 16px; }
+h2 { font-size: 14px; font-weight: 560; margin: 24px 0 10px; color: var(--gold); }
+.row { display: flex; gap: 12px; flex-wrap: wrap; }
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 12px 14px;
+  min-width: 140px;
+}
+.card .k { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; }
+.card .v { font-family: var(--mono); font-size: 22px; margin-top: 4px; }
+table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--muted); font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; }
+tr:hover td { background: var(--panel-2); }
+.pos { color: var(--pos); }
+.neg { color: var(--neg); }
+.warn { color: var(--warn); }
+.badge {
+  display: inline-block;
+  padding: 1px 6px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  font-size: 11px;
+  font-family: var(--mono);
+}
+.badge.CANDIDATE, .badge.ROBUST, .badge.ROBUST_CANDIDATE { color: var(--warn); }
+.badge.REJECTED, .badge.FAILED { color: var(--neg); }
+.badge.COMPLETED, .badge.PAPER { color: var(--pos); }
+.badge.PRODUCTION { color: var(--neg); }
+.badge.INSUFFICIENT_DATA, .badge.AWAITING_HOLDOUT { color: var(--warn); }
+.badge.FAIL, .badge.FAILED { color: var(--neg); }
+.badge.INTERESTING { color: var(--gold); }
+.badge.FROZEN_HISTORICAL_RESULT { color: var(--muted); }
+.badge.PROSPECTIVE_VALIDATION_RESULT { color: var(--gold); }
+.badge.POST_HOLDOUT_DISCOVERY { color: var(--neg); }
+.card.layer-frozen { border-color: #3a4552; }
+.card.layer-holdout { border-color: var(--gold); }
+
+label { display: block; color: var(--muted); font-size: 11px; margin-bottom: 4px; }
+input, select, textarea, button {
+  font: inherit;
+  color: var(--text);
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 6px 8px;
+}
+textarea { width: 100%; min-height: 72px; font-family: var(--mono); }
+button { cursor: pointer; background: #243018; border-color: #3a4a28; color: #d7e8b8; }
+button.secondary { background: var(--panel-2); color: var(--text); border-color: var(--line); }
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; max-width: 960px; }
+.span2 { grid-column: span 2; }
+.muted { color: var(--muted); }
+.mono { font-family: var(--mono); }
+.err { color: var(--neg); white-space: pre-wrap; }
+.log { background: #0a0c0e; border: 1px solid var(--line); padding: 10px; font-family: var(--mono); font-size: 12px; max-height: 280px; overflow: auto; }
+.notice { border: 1px solid #5a3d14; background: #1a1408; color: #e6c27a; padding: 8px 10px; border-radius: 4px; margin: 12px 0; }
+svg.eq { width: 100%; height: 180px; background: var(--panel); border: 1px solid var(--line); }

@@ -1,0 +1,162 @@
+[
+  {
+    "condition": "start_price_band=70_79",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 1,
+    "train_ev": -2.0476190476190474,
+    "val_ev": -83.0
+  },
+  {
+    "condition": "p_start_fine=40_44",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 7,
+    "train_ev": -1.6046511627906976,
+    "val_ev": 0.3333333333333333
+  },
+  {
+    "condition": "p_start_fine=70_79",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 1,
+    "train_ev": -2.0476190476190474,
+    "val_ev": -83.0
+  },
+  {
+    "condition": "p_start_40_44=YES",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 7,
+    "train_ev": -1.6046511627906976,
+    "val_ev": 0.3333333333333333
+  },
+  {
+    "condition": "p_start_70p=YES",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 1,
+    "train_ev": -3.8333333333333335,
+    "val_ev": -83.0
+  },
+  {
+    "condition": "inning_83=LATE_8",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 4,
+    "train_ev": -7.242424242424242,
+    "val_ev": 4.5
+  },
+  {
+    "condition": "inning_grp=8",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 4,
+    "train_ev": -7.242424242424242,
+    "val_ev": 4.5
+  },
+  {
+    "condition": "base_class=LOADED",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 4,
+    "train_ev": -0.6470588235294118,
+    "val_ev": -16.333333333333332
+  },
+  {
+    "condition": "base_class=RUNNER_ON",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 5,
+    "train_ev": -9.666666666666666,
+    "val_ev": -8.0
+  },
+  {
+    "condition": "move_fine=10_15",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 1,
+    "train_ev": -9.08695652173913,
+    "val_ev": 17.0
+  },
+  {
+    "condition": "move_fine=5_10",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 2,
+    "train_ev": 0.3333333333333333,
+    "val_ev": -83.0
+  },
+  {
+    "condition": "move_fine=GE_40",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 8,
+    "train_ev": -7.390243902439025,
+    "val_ev": 17.0
+  },
+  {
+    "condition": "path_eff_tertile=MID",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 6,
+    "train_ev": -2.8412698412698414,
+    "val_ev": 2.7142857142857144
+  },
+  {
+    "condition": "reversal_tertile=MID",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 1,
+    "train_ev": -6.809523809523809,
+    "val_ev": 17.0
+  },
+  {
+    "condition": "vol_5m_tertile=HIGH",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 4,
+    "train_ev": -7.390243902439025,
+    "val_ev": 17.0
+  },
+  {
+    "condition": "vol_15m_tertile=HIGH",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 1,
+    "train_ev": -4.794871794871795,
+    "val_ev": 17.0
+  },
+  {
+    "condition": "vol_15m_tertile=MID",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 1,
+    "train_ev": -13.76923076923077,
+    "val_ev": -83.0
+  },
+  {
+    "condition": "last_event_class=STRIKEOUT",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 2,
+    "train_ev": -3.4545454545454546,
+    "val_ev": 17.0
+  },
+  {
+    "condition": "last_event_class=WALK",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 2,
+    "train_ev": -8.0,
+    "val_ev": -16.333333333333332
+  },
+  {
+    "condition": "last_delta_band=2_5",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 5,
+    "train_ev": 0.815028901734104,
+    "val_ev": -8.0
+  }
+]

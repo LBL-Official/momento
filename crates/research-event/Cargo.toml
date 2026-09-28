@@ -1,0 +1,27 @@
+[package]
+name = "momento-research-event"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "Waterfall 2: MLB event/PBP reconstruction for historical research. Not live trading."
+
+[lints]
+workspace = true
+
+[dependencies]
+arrow = { version = "54.2.1", default-features = false }
+chrono.workspace = true
+flate2 = "1.1.2"
+momento-core.workspace = true
+momento-kalshi.workspace = true
+momento-research-data.workspace = true
+parquet = { version = "54.2.1", default-features = false, features = ["arrow", "snap", "zstd"] }
+serde.workspace = true
+serde_json.workspace = true
+sha2 = "0.10.9"
+thiserror.workspace = true
+
+[dev-dependencies]
+tempfile = "3.20.0"

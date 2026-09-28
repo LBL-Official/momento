@@ -1,0 +1,10 @@
+{
+  "schema_version": "3.0.0",
+  "source_resolution": "1m",
+  "note": "Forward horizons only. 1s is a different future family, not an alias of 1m.",
+  "horizons": [
+    {"name": "1m", "seconds": 60},
+    {"name": "5m", "seconds": 300},
+    {"name": "10m", "seconds": 600}
+  ]
+}

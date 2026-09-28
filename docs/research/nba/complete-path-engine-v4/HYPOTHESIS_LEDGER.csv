@@ -1,0 +1,8 @@
+hypothesis_id,family,name,definition,split_role,status,notes
+H0,baseline,unconditional,q=26.02% on Y_40_CLOSE,benchmark,BENCHMARK,Model 0
+HS,state,state_at_80,Endpoint/local scalars at τ80 only,competitor,FIT,Path must beat this to claim sequence information
+H1,curve,mean_full_window,TRAIN mean failure vs survivor FULL_WINDOW curves differ,confirmatory,NO_LOCATION_SHIFT,Permutation ISD on TRAIN; replicate descriptively
+H2,curve,l2_to_class_mean,Distance to frozen TRAIN mean curves,confirmatory,FIT,Time-normalized L2
+H3,curve,dtw_medoid,DTW to TRAIN class medoids,confirmatory,FIT,Raw duration-varying sequences
+H4,functional,complete_path_functionals,TV duration efficiency from-50 time frac-below,confirmatory,FIT,Properties of the whole curve
+H5,curve,pca_scores,TRAIN SVD on FULL_WINDOW grid; logistic on scores,confirmatory,FIT,Eigen-paths not local features

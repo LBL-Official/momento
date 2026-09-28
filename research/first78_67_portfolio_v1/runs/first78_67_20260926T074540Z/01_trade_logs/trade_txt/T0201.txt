@@ -1,0 +1,10 @@
+trade T0201  NBA  Charlotte at Chicago
+contract KXNBAGAME-26JAN03CHACHI-CHI  slice Q2
+signal 2026-01-03T17:44:00-08:00 PST  exit 2026-01-03T18:18:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 3546  principal_cents 276588
+entry_fee_cents 1065  exit_fee_cents 1373
+exit STOP at 67c  terminal no
+gross_cents -39006  net_cents -41444
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

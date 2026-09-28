@@ -1,0 +1,19 @@
+[package]
+name = "momento-execution"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "Execution interfaces and paper venue skeleton"
+
+[lints]
+workspace = true
+
+[dependencies]
+momento-core.workspace = true
+momento-risk.workspace = true
+momento-positions.workspace = true
+
+[dev-dependencies]
+chrono.workspace = true

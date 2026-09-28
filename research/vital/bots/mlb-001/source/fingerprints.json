@@ -1,0 +1,155 @@
+{
+  "bot_id": "mlb-001",
+  "moved": false,
+  "pointers": {
+    "config": "config/live.toml",
+    "engine": "apps/trading-engine",
+    "secret_fetch": "deploy/m10-fetch-secret.sh",
+    "strategy": "strategies/mlb",
+    "unit": "deploy/momento-live.service"
+  },
+  "recorded_at": "2026-09-17T05:37:40Z",
+  "targets": [
+    {
+      "bytes": 254060,
+      "exists": true,
+      "file_n": 11,
+      "files": [
+        {
+          "bytes": 641,
+          "path": "apps/trading-engine/Cargo.toml",
+          "sha256": "5f89118b968689c368122a1facc5859a7f2ae4ce4ba392ca27013b4dba9f42bf"
+        },
+        {
+          "bytes": 27097,
+          "path": "apps/trading-engine/src/demo.rs",
+          "sha256": "3fc8dc798a3e6bdf5d86bf13e09226784e222da8822b4b77c7a9a51d54f435fb"
+        },
+        {
+          "bytes": 18725,
+          "path": "apps/trading-engine/src/iti_live.rs",
+          "sha256": "6fd2d7b71fc7f6f89f75afa76d5374fd70e47927e67885548bf082045596f420"
+        },
+        {
+          "bytes": 126,
+          "path": "apps/trading-engine/src/lib.rs",
+          "sha256": "3fba5fe90b0fd74cc80767a7f9fa9e58c8690be41bf5ae221ffeec25f2878c40"
+        },
+        {
+          "bytes": 92836,
+          "path": "apps/trading-engine/src/live.rs",
+          "sha256": "9939e7687b3830240014a6a7af639971bf840e931eebf897b3d1cd282e07cf25"
+        },
+        {
+          "bytes": 2087,
+          "path": "apps/trading-engine/src/main.rs",
+          "sha256": "ffb5f783b708b414c099b52ca4311de1e84a1ebdfc9844647627675f9778368b"
+        },
+        {
+          "bytes": 7030,
+          "path": "apps/trading-engine/src/runtime.rs",
+          "sha256": "98b9f7b57991ad8727440d1c8959b66ce56c3c2ad6e6871af847efd28312a12c"
+        },
+        {
+          "bytes": 11298,
+          "path": "apps/trading-engine/tests/demo_host.rs",
+          "sha256": "f8c19453dae536257ae1abe073f824067588baee5f93262a863f230b4d3d4541"
+        },
+        {
+          "bytes": 2743,
+          "path": "apps/trading-engine/tests/iti_live_host.rs",
+          "sha256": "61a0c6d1dd8fa66159f912069ba6f4594a770be7221ca9a724395de75f3d72fc"
+        },
+        {
+          "bytes": 89404,
+          "path": "apps/trading-engine/tests/live_host.rs",
+          "sha256": "b15437817611bf888881156f84c05a75b6aa220fc81ba84b3430834fb6351cf5"
+        },
+        {
+          "bytes": 2073,
+          "path": "apps/trading-engine/tests/paper_host.rs",
+          "sha256": "8023cbba07be6d09ac8fe0fb8817ad5da8d2b154638545e7cc50b418dfb6f69e"
+        }
+      ],
+      "kind": "tree",
+      "path": "apps/trading-engine",
+      "sha256": "442bc974b64b50a80715434314bdbc58c93bc9150c9ba5543443419bb7a1f22c"
+    },
+    {
+      "bytes": 87183,
+      "exists": true,
+      "file_n": 9,
+      "files": [
+        {
+          "bytes": 497,
+          "path": "strategies/mlb/Cargo.toml",
+          "sha256": "de4ddf6a8f7b9a24549ef9b1cd5ed458ca299b2bb6e6b32b4ef0d51be6139936"
+        },
+        {
+          "bytes": 875,
+          "path": "strategies/mlb/src/lib.rs",
+          "sha256": "dacb7932e0e47aebb2345559dfb5c46ffcf0954415565036d9bb4c5e3b787cd9"
+        },
+        {
+          "bytes": 2575,
+          "path": "strategies/mlb/src/quote.rs",
+          "sha256": "2a2f262df57a7480ae5e9c16c4727b66fc09c6682de75e61aa52558dde78b062"
+        },
+        {
+          "bytes": 3124,
+          "path": "strategies/mlb/src/state.rs",
+          "sha256": "2d2c19a7589105f0282394846dbe6303715884ebd76eb0b91c1165f44bc4cebf"
+        },
+        {
+          "bytes": 1562,
+          "path": "strategies/mlb/src/stop.rs",
+          "sha256": "b85e3c53806d0e3e1bc0fa2386dd346cbbc806074c47e1169d73e2c8e7da6663"
+        },
+        {
+          "bytes": 19383,
+          "path": "strategies/mlb/src/strategy.rs",
+          "sha256": "949c741019bb4897d3248ae91d8cfe588f2fdb4d525814070d5fc8587d791876"
+        },
+        {
+          "bytes": 20518,
+          "path": "strategies/mlb/tests/position_scoped_stop.rs",
+          "sha256": "0263e9306dd45530c83d3c61bd237e22aaeaf194370455b2579bb2c848a55578"
+        },
+        {
+          "bytes": 23121,
+          "path": "strategies/mlb/tests/strategy.rs",
+          "sha256": "bb0999202506019e4a54658816f3a1ebf0873d7d5ba75d0e8aa6a3ea7c365d27"
+        },
+        {
+          "bytes": 15528,
+          "path": "strategies/mlb/tests/yes_bid_observation.rs",
+          "sha256": "52443a9b92637270368e970b24922519475b91702f0f34bdfa5d7a13c15a3ba3"
+        }
+      ],
+      "kind": "tree",
+      "path": "strategies/mlb",
+      "sha256": "0cdfe2c77afa634dc9278a3a548bde0101c95e6207cd0df9202f34f03d7a624f"
+    },
+    {
+      "bytes": 400,
+      "exists": true,
+      "kind": "file",
+      "path": "config/live.toml",
+      "sha256": "fe194f10048687b09e9f4ee6df8f14462395e6909dfe27fb81002c6405233bbf"
+    },
+    {
+      "bytes": 1140,
+      "exists": true,
+      "kind": "file",
+      "path": "deploy/momento-live.service",
+      "sha256": "e405d99a39e623fbf6417956570ae782f5de78d657b27674cf8097a4b536f8de"
+    },
+    {
+      "bytes": 587,
+      "exists": true,
+      "kind": "file",
+      "path": "deploy/m10-fetch-secret.sh",
+      "sha256": "1578470d95e18ea5cb1060d6377c57f44f5258ba31a3824ccc8d82216995990d"
+    }
+  ]
+}

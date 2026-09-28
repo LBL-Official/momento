@@ -1,0 +1,66 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2865
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 You are implementing Momento, a production-grade algorithmic\
+execution and sports prediction trading platform.\
+\
+Do NOT implement trading logic yet.\
+\
+First create the repository architecture and Rust workspace.\
+\
+Core principles:\
+\
+1. Rust is used for the trading engine and latency-sensitive services.\
+2. React/TypeScript is used for the central trading dashboard.\
+3. MLB, NBA, NCAAB and NFL are separate strategy/risk/model domains.\
+4. MLB is the first implementation.\
+5. Strategy code MUST NOT communicate directly with Kalshi.\
+6. Strategy produces TradeIntent objects.\
+7. Risk Decision Engine is the only component authorized to approve exposure.\
+8. Execution Engine is responsible for order lifecycle and communicates with Kalshi.\
+9. Position Tracker is authoritative for local position state but must reconcile against Kalshi.\
+10. PNL is derived from fills, positions, fees and settlements.\
+11. All trading events must be persistently auditable.\
+12. Support replay, paper and live execution modes.\
+13. Live trading must require explicit production configuration.\
+14. Never assume an order was filled merely because it was submitted.\
+15. All order operations must be idempotent.\
+16. WebSocket disconnects must trigger reconciliation before trading resumes.\
+17. Risk limits must be enforced independently of strategy logic.\
+\
+Initial MLB risk configuration:\
+\
+- Bankroll: $50\
+- Maximum allocation per position: 12.5%\
+- Maximum position: $6.25\
+- Maximum MLB positions per day: 1\
+- Entry price: 80 cents\
+- Entry must be maker/resting-limit only\
+- Never cross the spread on entry\
+\
+Create:\
+\
+- Rust workspace\
+- Core domain types\
+- Strategy interface\
+- Risk interface\
+- Execution interface\
+- Position interface\
+- PNL interface\
+- Kalshi adapter interface\
+- MLB module\
+- configuration system\
+- structured logging\
+- error types\
+- test infrastructure\
+- replay/paper/live mode abstractions\
+\
+Do NOT implement actual trading behavior beyond interfaces and\
+safe scaffolding.\
+\
+Before writing code, output the proposed directory structure and\
+dependency graph. Wait for approval.}

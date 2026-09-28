@@ -1,0 +1,4 @@
+population_id,candidates,admitted,portfolio_net_cents,note,test_id,run_id,scenario_id,sport
+FIRST80_CONDITIONED_DIAGNOSTIC,40,40,322878,diagnostic label uses a later threshold,OCT_2025,oos_adverse_20260926T082326Z,REF,
+OMITTED_NO_LATER_THRESHOLD,1,1,33374,diagnostic label uses a later threshold,OCT_2025,oos_adverse_20260926T082326Z,REF,
+LEGACY_LOCK_INTERSECTION,38,38,355471,separate book; not the original locked universe,OCT_2025,oos_adverse_20260926T082326Z,REF,

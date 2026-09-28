@@ -1,0 +1,20 @@
+{
+  "BASE_GRADE": "F",
+  "DEBASE_GRADE": "F",
+  "debase_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40",
+  "lab_id": "f00d4e6004084201ab590f99f6fe4fed",
+  "monte_carlo_paths": 100000,
+  "phase_a_result_id": "ITI Stress Q4 CROSS 65 REACH 85 40",
+  "population": 23,
+  "question_sha256": "ebfd7143f1fac322446097ace16ebdb7770642f59818c130fe37a467d7527cd5",
+  "result_hash": "9fb549a09f05517969b3a053f95963171b8b8da7143032ef8820da6bca546107",
+  "source_ms": 10869,
+  "stages_ms": {
+    "base_ms": 440,
+    "compile_ms": 2325,
+    "debase_ms": 1536,
+    "execute_ms": 6215,
+    "lab_ms": 350
+  },
+  "strategy_name": "ITI Stress Q4 CROSS 65 REACH 85 40"
+}

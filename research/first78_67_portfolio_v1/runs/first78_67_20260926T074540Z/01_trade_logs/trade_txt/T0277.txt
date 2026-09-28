@@ -1,0 +1,10 @@
+trade T0277  NCAAB  Minnesota at Illinois
+contract KXNCAAMBGAME-26JAN17MINNILL-ILL  slice H1_2
+signal 2026-01-17T09:38:00-08:00 PST  exit 2026-01-17T11:37:50-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 4379  principal_cents 341562
+entry_fee_cents 1316  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 96338  net_cents 95022
+strategy_result POSITIVE  net_r 1.856623681125439624853458382
+Assumed fill. Not a maker fill. Not live P&L.

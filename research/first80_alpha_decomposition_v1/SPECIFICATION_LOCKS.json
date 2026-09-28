@@ -1,0 +1,78 @@
+{
+  "program": "FIRST80_ALPHA_DECOMPOSITION_V1",
+  "schema_version": "1.0.0",
+  "frozen": true,
+  "live_execution_changed": false,
+  "banner": "RESEARCH ONLY \u2014 OBSERVED CALIBRATION DEVIATION \u2260 PROVEN MARKET INEFFICIENCY \u2014 TERMINAL ALPHA \u2260 PATH ALPHA \u2014 PATH SURVIVAL \u2260 INDEPENDENT EDGE \u2014 CONDITIONAL INFORMATION \u2260 EXECUTABLE PROFIT \u2014 HISTORICAL CANDLE PATH \u2260 ACTUAL FILL \u2014 HEDGE OPPORTUNITY \u2260 LOCKED-IN ALPHA \u2014 LIVE EXECUTION = FALSE",
+  "first80_definition": "First tradable yes_bid_close >= 80\u00a2 after a prior tradable close < 80\u00a2, two-sided uncrossed spread <= 10\u00a2, inside the game-day window. One observation per event: earliest timestamp; same-minute ties excluded. Source: apps/nba-data/scripts/nba_80_40_execution_audit.py. DO NOT REDEFINE.",
+  "touch40_definition": "Primary T_40 = first subsequent completed candle AFTER the first-80 candle with tradable yes_bid_close <= 40\u00a2 (stop_close_triggered / Y_40_CLOSE). Wick (yes_bid_low) is secondary and is not the primary research object.",
+  "W": "expiration_result_yes on the FIRST80 ticker (Kalshi YES settlement).",
+  "null_terminal": 0.8,
+  "thresholds_cents": [
+    60,
+    65,
+    70,
+    75,
+    80,
+    85,
+    90,
+    95
+  ],
+  "hedge_thresholds_cents": [
+    5,
+    10,
+    15,
+    20,
+    25,
+    30
+  ],
+  "splits": {
+    "TRAIN": "game_date <= 2025-12-31",
+    "VALIDATION": "2025-12-31 < game_date <= 2026-03-15",
+    "OOS": "game_date > 2026-03-15",
+    "source": "frozen execution-audit cuts; not retuned"
+  },
+  "matching_bins_locked": {
+    "score_abs": [
+      "0-4",
+      "5-9",
+      "10-19",
+      "20+"
+    ],
+    "quarter": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "OT"
+    ],
+    "lead_state": [
+      "LEAD",
+      "TRAIL",
+      "TIE"
+    ],
+    "home": [
+      true,
+      false
+    ]
+  },
+  "classification_rules": {
+    "terminal_distinguishable": "One-sided exact binomial p-value vs p=0.80 < 0.05 on FULL, AND OOS point estimate > 0.80. Cluster bootstrap is reported; it does not by itself authorize a stronger claim.",
+    "independent_path": "Among terminal winners, P(~T40|W, FIRST80) differs from FIRST75 and/or stratum-matched FIRST75 with an OOS interval on the difference that excludes 0. If the control is nearly identical to the treated set, the path test is INCONCLUSIVE.",
+    "letters": [
+      "A_TERMINAL_CALIBRATION_ONLY",
+      "B_PATH_EFFECT_ONLY",
+      "C_BOTH",
+      "D_INCONCLUSIVE"
+    ],
+    "do_not_tune_on_oos": true
+  },
+  "not": [
+    "true fair value",
+    "executable fill",
+    "locked-in alpha",
+    "live trading",
+    "proven market inefficiency"
+  ],
+  "written_utc": "2026-09-04T14:02:07.590471+00:00"
+}

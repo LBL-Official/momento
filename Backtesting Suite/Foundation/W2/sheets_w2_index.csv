@@ -1,0 +1,2 @@
+run_id,waterfall,artifact_version,generated_at,mlb_2025,mlb_2026,pbp_files,coverage_rows,google_status
+w2-local,W2,W2.2.0,2026-08-26T08:30:00+00:00,"MISSING_HISTORICAL_SOURCE (5 local probes, 0 PBP, 0 reconstructed games)",13 Kalshi COMPLETE days in lake; StatsAPI PBP envelopes=174 reconstruction_ok=174 kalshi_mapped=168 (2025 PBP still MISSING_HISTORICAL_SOURCE),174,194,GOOGLE_PUBLISH_PENDING

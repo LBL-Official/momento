@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-09-10T22:10:43.180364+00:00",
+  "identity": {
+    "stopped_40": 299,
+    "trades_with_window": 299
+  },
+  "window": 5,
+  "n_candle_rows": 3285,
+  "rows_per_offset": {
+    "-5": 299,
+    "-4": 299,
+    "-3": 299,
+    "-2": 299,
+    "-1": 299,
+    "0": 299,
+    "1": 299,
+    "2": 299,
+    "3": 299,
+    "4": 297,
+    "5": 297
+  },
+  "t40_exact_40": 54,
+  "t40_le35": 128,
+  "csv": "/Users/user/Desktop/Momento/research/first80_asked_six_t40_surround_candles/t40_surround_pm5.csv",
+  "constraints": [
+    "RESEARCH ONLY",
+    "CANDLE PATH \u2260 ACTUAL FILL",
+    "LIVE EXECUTION = FALSE",
+    "DO NOT CHANGE LIVE FIRST01",
+    "40 STOP UNCHANGED"
+  ]
+}

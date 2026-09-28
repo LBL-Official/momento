@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "n_checked": 5,
+  "n_failed": 0,
+  "n_errors": 0,
+  "note": "mutate bars/PBP after t; feature vector at t must be unchanged"
+}

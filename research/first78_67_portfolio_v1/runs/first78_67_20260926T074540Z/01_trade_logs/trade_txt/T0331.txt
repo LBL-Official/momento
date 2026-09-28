@@ -1,0 +1,10 @@
+trade T0331  NCAAB  Purdue at Indiana
+contract KXNCAAMBGAME-26JAN27PURIND-IND  slice H2_1
+signal 2026-01-27T19:08:00-08:00 PST  exit 2026-01-27T19:11:00-08:00 PST
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 5607  principal_cents 437346
+entry_fee_cents 1684  exit_fee_cents 2170
+exit STOP at 67c  terminal yes
+gross_cents -61677  net_cents -65531
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

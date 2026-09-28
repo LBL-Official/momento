@@ -1,0 +1,26 @@
+{
+  "w8_input_count": 2884,
+  "b1_output_count": 2884,
+  "games_attempted": 2884,
+  "games_represented": 2884,
+  "unique_games": 2884,
+  "missing_w6_state": 8,
+  "missing_starting_price": 0,
+  "missing_1m": 2,
+  "missing_5m": 3,
+  "missing_15m": 3,
+  "missing_30m": 3,
+  "settlement_unavailable": 0,
+  "feature_lookahead_violations": 0,
+  "outcome_lookahead_violations": 0,
+  "duplicate_entry_ids": 0,
+  "duplicate_game_primary_entries": 0,
+  "unavailable_l2_features": 2884,
+  "fake_l2_from_trade": 0,
+  "notes": [
+    "B1 is observational. TRADE != maker fill.",
+    "Historical L2 UNAVAILABLE. No invented bid/ask/OBI/OFI.",
+    "Settlement is W6 only. W9 was not started."
+  ],
+  "gate": "COMPLETE"
+}

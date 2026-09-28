@@ -1,0 +1,10 @@
+trade T0593  NBA  Orlando at Miami
+contract KXNBAGAME-26MAR14ORLMIA-ORL  slice Q2
+signal 2026-03-14T17:59:00-07:00 PDT  exit 2026-03-14T19:49:39-07:00 PDT
+assumed entry 78c  observed close 84c  overshoot 6c
+contracts 14267  principal_cents 1112826
+entry_fee_cents 4285  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 313874  net_cents 309589
+strategy_result POSITIVE  net_r 1.856683638893386828832394763
+Assumed fill. Not a maker fill. Not live P&L.

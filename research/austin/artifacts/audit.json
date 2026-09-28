@@ -1,0 +1,391 @@
+{
+  "dataset": "choosin_nba_2q3q_604",
+  "filters": {
+    "sport": "NBA",
+    "slice": [
+      "Q2",
+      "Q3"
+    ]
+  },
+  "N": {
+    "n_trades": 604,
+    "n_q2": 314,
+    "n_q3": 290,
+    "n_survive": 450,
+    "n_path_complete": 520,
+    "n_path_partial": 84,
+    "n_path_unavailable": 0,
+    "n_knn_observations": 48752,
+    "n_entry_snapshots": 604,
+    "path_complete_definition": "favorite 1m path after entry, opponent joined, PBP present, no gap > 300s",
+    "hedge_trigger_resolution": {
+      "TRIGGER_RESOLUTION": "1m_close",
+      "definition_42": "first favorite yes_bid_close <= 42 after entry",
+      "definition_41": "first favorite yes_bid_close <= 41 after entry",
+      "n_first_le_42": 443,
+      "n_first_le_41": 443,
+      "n_42_without_41": 18,
+      "n_same_bar_42_and_41": 425,
+      "note": "If n_42_without_41=0, 1m closes skip 42-only prints. Do not invent separated hedge economics."
+    },
+    "locks": {
+      "n": 604,
+      "q2": 314,
+      "q3": 290,
+      "s": 450
+    },
+    "pbp_status": "PBP_SEQUENCE_NOT_PIT",
+    "l2_status": "SOURCE_UNAVAILABLE",
+    "fill_status": "FILL_UNAVAILABLE",
+    "live_feed": "UNAVAILABLE",
+    "data_mode": "HISTORICAL_QUERY"
+  },
+  "feature_list": [
+    "entry_price",
+    "entry_price_decimal",
+    "entry_price_cents",
+    "distance_from_50",
+    "distance_from_50_abs",
+    "distance_from_80",
+    "entry_price_distance_from_trigger",
+    "current_price_cents",
+    "price_travel",
+    "price_travel_pct",
+    "max_price_after_entry",
+    "min_price_after_entry",
+    "max_favorable_move",
+    "max_adverse_move",
+    "max_favorable_move_pct",
+    "max_adverse_move_pct",
+    "path_range",
+    "time_to_max_favorable_move",
+    "time_to_max_adverse_move",
+    "price_velocity_1",
+    "price_velocity_2",
+    "price_velocity_3",
+    "price_velocity_5",
+    "price_velocity_10",
+    "price_acceleration",
+    "price_direction",
+    "price_reversal_count",
+    "home_score",
+    "away_score",
+    "score",
+    "score_differential",
+    "favorite_score",
+    "opponent_score",
+    "score_travel",
+    "score_differential_travel",
+    "points_per_minute",
+    "favorite_points_per_minute",
+    "opponent_points_per_minute",
+    "score_diff_velocity",
+    "points_last_30s",
+    "points_last_60s",
+    "points_last_120s",
+    "score_diff_change_last_30s",
+    "score_diff_change_last_60s",
+    "score_diff_change_last_120s",
+    "score_diff_slope",
+    "score_diff_acceleration",
+    "lead_changes",
+    "tie_count",
+    "lead_growth",
+    "lead_shrinkage",
+    "largest_lead_since_entry",
+    "largest_deficit_since_entry",
+    "current_lead_vs_max_lead",
+    "quarter",
+    "seconds_remaining",
+    "minutes_remaining",
+    "normalized_quarter_time",
+    "normalized_game_time",
+    "time_since_entry",
+    "quarter_progress",
+    "time_bucket",
+    "price_x_score_diff",
+    "price_x_time",
+    "score_diff_x_time",
+    "score_travel_x_time",
+    "price_travel_x_score_diff_travel",
+    "entry_price_x_score_diff",
+    "entry_price_x_time"
+  ],
+  "default_knn": [
+    "entry_price_cents",
+    "current_price_cents",
+    "price_travel",
+    "distance_from_80",
+    "score_differential",
+    "score_differential_travel",
+    "score_travel",
+    "time_since_entry",
+    "seconds_remaining",
+    "quarter",
+    "quarter_progress",
+    "price_x_score_diff",
+    "score_diff_x_time",
+    "entry_price_x_score_diff"
+  ],
+  "missing_data_policy": "UNAVAILABLE never filled with 0",
+  "train_period": [
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01"
+  ],
+  "validation_period": [
+    "2026-02",
+    "2026-03"
+  ],
+  "oos_period": [
+    "2026-04",
+    "2026-05",
+    "2026-06"
+  ],
+  "pca_dimensions": 5,
+  "k": 25,
+  "distance_metric": "euclidean_pca",
+  "weighting": "1 / (distance + epsilon)",
+  "fee_assumptions": {
+    "fee_model_status": "UNAVAILABLE",
+    "fee_model_version": "UNAVAILABLE",
+    "gross_ev": null,
+    "entry_fees": null,
+    "exit_fees": null,
+    "hedge_fees": null,
+    "net_ev": null,
+    "note": "Do not treat demo/audit fees as live KXNBA production fees."
+  },
+  "hedge_assumptions": {
+    "triggers": [
+      42,
+      41
+    ],
+    "hedge_price": 40,
+    "fill_status": "FILL_UNAVAILABLE"
+  },
+  "sizing_thresholds": {
+    "status": "INSUFFICIENT_SAMPLE",
+    "reason": "OOS top/mid/bot EV 20.000/-15.714/0.000 do not separate",
+    "top_mean_pnl": 20.0,
+    "mid_mean_pnl": -15.714285714285714,
+    "bot_mean_pnl": 0.0,
+    "threshold_4": null,
+    "threshold_5": null,
+    "table": [
+      {
+        "band": "D1-2",
+        "knn_ev_lo": null,
+        "knn_ev_hi": -6.616077148406158,
+        "n": 15,
+        "realized_PNL": 0.0,
+        "drawdown": -80.0,
+        "recommended_band": 3
+      },
+      {
+        "band": "D3-4",
+        "knn_ev_lo": -6.616077148406158,
+        "knn_ev_hi": 2.494091099876037,
+        "n": 14,
+        "realized_PNL": 20.0,
+        "drawdown": 0.0,
+        "recommended_band": 3
+      },
+      {
+        "band": "D5-6",
+        "knn_ev_lo": 2.494091099876037,
+        "knn_ev_hi": 15.931040627556593,
+        "n": 14,
+        "realized_PNL": -15.714285714285714,
+        "drawdown": -80.0,
+        "recommended_band": 3
+      },
+      {
+        "band": "D7-8",
+        "knn_ev_lo": 15.931040627556593,
+        "knn_ev_hi": 20.0,
+        "n": 14,
+        "realized_PNL": -8.571428571428571,
+        "drawdown": -80.0,
+        "recommended_band": 4
+      },
+      {
+        "band": "D9-10",
+        "knn_ev_lo": 20.0,
+        "knn_ev_hi": null,
+        "n": 15,
+        "realized_PNL": 20.0,
+        "drawdown": 0.0,
+        "recommended_band": 5
+      }
+    ]
+  },
+  "integrity": {
+    "model_version": "austin_v2",
+    "dataset_version": "choosin_nba_2q3q_604",
+    "ev_definition": "hold_80_to_settlement",
+    "n_trades": 604,
+    "lock_n": 604,
+    "identity_lock_status": "PASS",
+    "path_coverage": {
+      "n_path_complete": 520,
+      "n_path_partial": 84,
+      "n_path_unavailable": 0,
+      "definition": "favorite 1m path after entry, opponent joined, PBP present, no gap > 300s"
+    },
+    "hedge_41_vs_42": {
+      "TRIGGER_RESOLUTION": "1m_close",
+      "definition_42": "first favorite yes_bid_close <= 42 after entry",
+      "definition_41": "first favorite yes_bid_close <= 41 after entry",
+      "n_first_le_42": 443,
+      "n_first_le_41": 443,
+      "n_42_without_41": 18,
+      "n_same_bar_42_and_41": 425,
+      "note": "If n_42_without_41=0, 1m closes skip 42-only prints. Do not invent separated hedge economics."
+    },
+    "ladder": [
+      {
+        "target_price": 80,
+        "n_source": 604,
+        "query_current": 81.0,
+        "query_travel": 0.0,
+        "query_time_since_entry": 40.0,
+        "neighbor_median_current": 81.0,
+        "neighbor_median_travel": 0.0,
+        "weighted_mean_EV": 6.632034073654333,
+        "median_distance": 0.4679767604401777,
+        "status": "OBSERVED"
+      },
+      {
+        "target_price": 70,
+        "n_source": 463,
+        "query_current": 70.0,
+        "query_travel": -10.0,
+        "query_time_since_entry": 233.0,
+        "neighbor_median_current": 72.0,
+        "neighbor_median_travel": -8.0,
+        "weighted_mean_EV": 5.279343690713445,
+        "median_distance": 0.3879389997898495,
+        "status": "OBSERVED"
+      },
+      {
+        "target_price": 60,
+        "n_source": 242,
+        "query_current": 60.0,
+        "query_travel": -23.0,
+        "query_time_since_entry": 1115.0,
+        "neighbor_median_current": 60.0,
+        "neighbor_median_travel": -22.0,
+        "weighted_mean_EV": -41.471941410599094,
+        "median_distance": 0.7898010666218216,
+        "status": "OBSERVED"
+      },
+      {
+        "target_price": 50,
+        "n_source": 115,
+        "query_current": 50.0,
+        "query_travel": -33.0,
+        "query_time_since_entry": 1140.0,
+        "neighbor_median_current": 52.0,
+        "neighbor_median_travel": -31.0,
+        "weighted_mean_EV": -39.544012119844,
+        "median_distance": 0.8406114419430422,
+        "status": "OBSERVED"
+      },
+      {
+        "target_price": 42,
+        "n_source": 96,
+        "query_current": 42.0,
+        "query_travel": -38.0,
+        "query_time_since_entry": 1131.0,
+        "neighbor_median_current": 41.0,
+        "neighbor_median_travel": -39.0,
+        "weighted_mean_EV": -53.40574451687601,
+        "median_distance": 0.6335710504264227,
+        "status": "OBSERVED"
+      },
+      {
+        "target_price": 41,
+        "n_source": 125,
+        "query_current": 41.0,
+        "query_travel": -39.0,
+        "query_time_since_entry": 418.0,
+        "neighbor_median_current": 54.0,
+        "neighbor_median_travel": -26.0,
+        "weighted_mean_EV": -60.32291562606441,
+        "median_distance": 1.3332467900125597,
+        "status": "OBSERVED"
+      },
+      {
+        "target_price": 40,
+        "n_source": 163,
+        "query_current": 40.0,
+        "query_travel": -43.0,
+        "query_time_since_entry": 1280.0,
+        "neighbor_median_current": 42.0,
+        "neighbor_median_travel": -41.0,
+        "weighted_mean_EV": -36.163361095151345,
+        "median_distance": 0.7116313214307138,
+        "status": "OBSERVED"
+      }
+    ],
+    "calibration": {
+      "status": "INSUFFICIENT_SAMPLE",
+      "reason": "OOS top/mid/bot EV 20.000/-15.714/0.000 do not separate",
+      "table": [
+        {
+          "band": "D1-2",
+          "knn_ev_lo": null,
+          "knn_ev_hi": -6.616077148406158,
+          "n": 15,
+          "realized_PNL": 0.0,
+          "drawdown": -80.0,
+          "recommended_band": 3
+        },
+        {
+          "band": "D3-4",
+          "knn_ev_lo": -6.616077148406158,
+          "knn_ev_hi": 2.494091099876037,
+          "n": 14,
+          "realized_PNL": 20.0,
+          "drawdown": 0.0,
+          "recommended_band": 3
+        },
+        {
+          "band": "D5-6",
+          "knn_ev_lo": 2.494091099876037,
+          "knn_ev_hi": 15.931040627556593,
+          "n": 14,
+          "realized_PNL": -15.714285714285714,
+          "drawdown": -80.0,
+          "recommended_band": 3
+        },
+        {
+          "band": "D7-8",
+          "knn_ev_lo": 15.931040627556593,
+          "knn_ev_hi": 20.0,
+          "n": 14,
+          "realized_PNL": -8.571428571428571,
+          "drawdown": -80.0,
+          "recommended_band": 4
+        },
+        {
+          "band": "D9-10",
+          "knn_ev_lo": 20.0,
+          "knn_ev_hi": null,
+          "n": 15,
+          "realized_PNL": 20.0,
+          "drawdown": 0.0,
+          "recommended_band": 5
+        }
+      ],
+      "oos_n": null
+    },
+    "knn_target": "pnl_hold_after_t",
+    "note": "POST-80 estimates outcomes after t. Not a replay of the original 80/40 ledger."
+  },
+  "ev_definition": "hold_80_to_settlement",
+  "execution_status": "DISABLED",
+  "leakage_status": "PASS"
+}

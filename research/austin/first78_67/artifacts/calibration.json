@@ -1,0 +1,56 @@
+{
+  "status": "INSUFFICIENT_SAMPLE",
+  "reason": "OOS top/mid/bot EV 1.692/1.692/3.438 do not separate",
+  "top_mean_pnl": 1.6923076923076923,
+  "mid_mean_pnl": 1.6923076923076923,
+  "bot_mean_pnl": 3.4375,
+  "threshold_4": null,
+  "threshold_5": null,
+  "table": [
+    {
+      "band": "D1-2",
+      "knn_ev_lo": null,
+      "knn_ev_hi": -10.999999999999998,
+      "n": 16,
+      "realized_PNL": 3.4375,
+      "drawdown": -11.0,
+      "recommended_band": 3
+    },
+    {
+      "band": "D3-4",
+      "knn_ev_lo": -10.999999999999998,
+      "knn_ev_hi": -9.711045945559578,
+      "n": 14,
+      "realized_PNL": 5.5,
+      "drawdown": -11.0,
+      "recommended_band": 3
+    },
+    {
+      "band": "D5-6",
+      "knn_ev_lo": -9.711045945559578,
+      "knn_ev_hi": -6.916971716340209,
+      "n": 13,
+      "realized_PNL": 1.6923076923076923,
+      "drawdown": -11.0,
+      "recommended_band": 3
+    },
+    {
+      "band": "D7-8",
+      "knn_ev_lo": -6.916971716340209,
+      "knn_ev_hi": -2.8877989099432173,
+      "n": 13,
+      "realized_PNL": 4.230769230769231,
+      "drawdown": -11.0,
+      "recommended_band": 4
+    },
+    {
+      "band": "D9-10",
+      "knn_ev_lo": -2.8877989099432173,
+      "knn_ev_hi": null,
+      "n": 13,
+      "realized_PNL": 1.6923076923076923,
+      "drawdown": -11.0,
+      "recommended_band": 5
+    }
+  ]
+}

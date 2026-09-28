@@ -1,0 +1,25 @@
+{
+  "BASE_GRADE": "F",
+  "abase_filename": "SuperasiABase[Q4 Cross 65 REACH 85 40].csv",
+  "abase_payload_sha256": "40ec31b9170095e94cda1fecd59b360d5493299c9df9174b7471ecc4a0130912",
+  "abase_sha256": "16bb1b650b0d5d260c85c04607a70881a2df3f9fea9b2deb0ceb2a0f19f045b4",
+  "artifact": "superasi_abase",
+  "borderline": false,
+  "components": {
+    "coverage": "C",
+    "research_evidence": "D",
+    "robustness": "D",
+    "theoretical_alignment": "D",
+    "validation": "F"
+  },
+  "created_at": "2026-09-13T09:07:39Z",
+  "folder": "Q4 Cross 65 REACH 85 40",
+  "grade_config_version": "grade_config_v1",
+  "phase": "A",
+  "result_id": "Q4 Cross 65 REACH 85 40",
+  "roller_filename": "RollerQ4 Cross 65 REACH 85 40.csv",
+  "source_csv_sha256": "d462cb5fe93d904b36ac355bb41edb899d88f3bd437ef220ac472483b875fbf8",
+  "source_lab_id": "b6404738888b42728c5559bfa80f84c0",
+  "strategy_name": "Q4 Cross 65 REACH 85 40",
+  "superasi_version": "superasi_abase_v1.0.0"
+}

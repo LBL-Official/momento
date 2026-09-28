@@ -1,0 +1,8 @@
+{"activation": "CONFIRM_REQUIRED", "jump_bot_id": "17727395a289478186d88d7263b87f83", "kind": "registered_from_jump", "ts": "2026-09-14T22:33:14Z"}
+{"engine_pointer": "research_iti", "kind": "implemented_research_engine", "ts": "2026-09-15T18:39:18Z"}
+{"activation": "DEMO_ATTACHED", "aws": "CONFIRMED", "kalshi": "OBSERVATION_UNAVAILABLE", "kind": "demo_attach", "ts": "2026-09-15T19:06:55Z", "unit_started": false, "worker": "OPERATION_REQUIRED"}
+{"activation": "DEPLOY_REQUIRED", "aws": "CONFIRMED", "kalshi": "CONFIRMED", "kind": "demo_attach", "ts": "2026-09-15T20:22:23Z", "unit_started": false, "worker": "OPERATION_REQUIRED"}
+{"activation": "DEPLOY_REQUIRED", "aws": "CONFIRMED", "kalshi": "CONFIRMED", "kind": "demo_attach", "ts": "2026-09-15T20:24:00Z", "unit_started": false, "worker": "OPERATION_REQUIRED"}
+{"activation": "RUNNING_DEMO", "aws": "CONFIRMED", "kalshi": "CONFIRMED", "kind": "demo_attach", "ts": "2026-09-15T20:26:25Z", "unit_started": true, "worker": "momento-demo@mlb-003.service"}
+{"activation": "DEPLOY_REQUIRED", "aws": "CONFIRMED", "kalshi": "CONFIRMED", "kind": "demo_attach", "ts": "2026-09-15T20:31:47Z", "unit_started": false, "worker": "OPERATION_REQUIRED"}
+{"activation": "RUNNING_DEMO", "aws": "CONFIRMED", "kalshi": "CONFIRMED", "kind": "demo_attach", "ts": "2026-09-15T20:34:26Z", "unit_started": true, "worker": "momento-demo@mlb-003.service"}

@@ -1,0 +1,44 @@
+{
+  "identity": {
+    "gate": "FROZEN_IDENTITY",
+    "status": "PASS",
+    "observed": {
+      "n": 1230,
+      "W": 1019,
+      "T40": 320,
+      "W_and_not_T40": 910,
+      "W_and_T40": 109,
+      "L_and_not_T40": 0,
+      "L_and_T40": 211
+    },
+    "expected": {
+      "n": 1230,
+      "W": 1019,
+      "T40": 320,
+      "W_and_not_T40": 910,
+      "W_and_T40": 109,
+      "L_and_not_T40": 0,
+      "L_and_T40": 211
+    },
+    "definition_source": "/Users/user/Desktop/Momento/Backtesting Suite/Data/NBA/2025-2026/warehouse/derived/nba/first80_execution_audit/candidates.json",
+    "note": "Candle path. Not fills."
+  },
+  "n_matchable_HIGH_MEDIUM": 1158,
+  "n_unusable_or_unaligned": 72,
+  "splits": {
+    "OOS": 243,
+    "TRAIN": 504,
+    "VALIDATION": 483
+  },
+  "feature_status_all_causal": true,
+  "cands_status_counts": {
+    "FIRST_80": 1230,
+    "NO_FIRST_80": 132
+  },
+  "audit_functions": [
+    "A.load_markets",
+    "A.scan quality",
+    "A.build_candidates"
+  ],
+  "candle_path_not_fill": true
+}

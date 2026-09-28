@@ -1,0 +1,62 @@
+[
+  {
+    "game_id": "edc8faee798424efe3d7427c473f2fa9",
+    "source": "SYNTHETIC_TEST_FIXTURE",
+    "events": 19,
+    "valid": true,
+    "invalid": 0,
+    "warnings": [],
+    "missing_fields": [],
+    "final_score": null,
+    "computed_final_score": {
+      "home": 0,
+      "away": 7
+    },
+    "reconciled": true,
+    "parser_version": "W2.PBP.1.1.0",
+    "normalization_version": "W2.NORM.1.0.0",
+    "state_machine_version": "W2.STATE.1.1.0",
+    "error": null
+  },
+  {
+    "game_id": "edc8faee798424efe3d7427c473f2fa9",
+    "source": "SYNTHETIC_TEST_FIXTURE",
+    "events": 3,
+    "valid": true,
+    "invalid": 0,
+    "warnings": [],
+    "missing_fields": [],
+    "final_score": {
+      "home": 3,
+      "away": 2
+    },
+    "computed_final_score": {
+      "home": 0,
+      "away": 2
+    },
+    "reconciled": false,
+    "parser_version": "W2.PBP.1.1.0",
+    "normalization_version": "W2.NORM.1.0.0",
+    "state_machine_version": "W2.STATE.1.1.0",
+    "error": null
+  },
+  {
+    "game_id": "edc8faee798424efe3d7427c473f2fa9",
+    "source": "SYNTHETIC_TEST_FIXTURE",
+    "events": 3,
+    "valid": true,
+    "invalid": 0,
+    "warnings": [],
+    "missing_fields": [],
+    "final_score": null,
+    "computed_final_score": {
+      "home": 0,
+      "away": 0
+    },
+    "reconciled": true,
+    "parser_version": "W2.PBP.1.1.0",
+    "normalization_version": "W2.NORM.1.0.0",
+    "state_machine_version": "W2.STATE.1.1.0",
+    "error": null
+  }
+]

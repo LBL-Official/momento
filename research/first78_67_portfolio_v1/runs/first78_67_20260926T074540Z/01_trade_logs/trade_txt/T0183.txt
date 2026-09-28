@@ -1,0 +1,10 @@
+trade T0183  NBA  Boston at Utah
+contract KXNBAGAME-25DEC30BOSUTA-BOS  slice Q2
+signal 2025-12-30T18:46:00-08:00 PST  exit 2025-12-30T18:59:00-08:00 PST
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 3297  principal_cents 257166
+entry_fee_cents 991  exit_fee_cents 1276
+exit STOP at 67c  terminal yes
+gross_cents -36267  net_cents -38534
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

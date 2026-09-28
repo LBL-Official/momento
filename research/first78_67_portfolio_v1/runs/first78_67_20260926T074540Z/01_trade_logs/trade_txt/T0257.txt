@@ -1,0 +1,10 @@
+trade T0257  NCAAB  Alabama at Mississippi St.
+contract KXNCAAMBGAME-26JAN13ALAMSST-ALA  slice H2_1
+signal 2026-01-13T19:18:00-08:00 PST  exit 2026-01-13T21:10:58-08:00 PST
+assumed entry 78c  observed close 84c  overshoot 6c
+contracts 4064  principal_cents 316992
+entry_fee_cents 1221  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 89408  net_cents 88187
+strategy_result POSITIVE  net_r 1.856646595646132468735525706
+Assumed fill. Not a maker fill. Not live P&L.

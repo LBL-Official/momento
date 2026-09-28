@@ -1,0 +1,5 @@
+#!/bin/sh
+# Repo package directory momento/ owns that name, so the CLI lives here.
+ROOT=$(CDPATH= cd -- "$(dirname "$0")/.." && pwd)
+export PYTHONPATH="$ROOT/ROLLER${PYTHONPATH:+:$PYTHONPATH}"
+exec "$ROOT/ROLLER/.venv/bin/python" -m roller.systimo.cli "$@"

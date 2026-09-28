@@ -1,0 +1,2044 @@
+{
+  "run_id": "0badad3024f24e579938ad0daf86eaa4",
+  "status": "RUNNING",
+  "iti_version": "jump_a_iti_v1.0.0",
+  "debase_result_id": "MLB CROSS 20 REACH 85 40 2025-03",
+  "source_folder": "MLB CROSS 20 REACH 85 40 2025-03",
+  "source_lab_id": "682b90bc58e4437fbf04838861012e67",
+  "strategy_name": "MLB CROSS 20 REACH 85 40 2025-03",
+  "source_question_sha256": "69696cb837be0ed144ff06664f1ecc8d23ef7f31d75b239b820a82f1735d1c59",
+  "source_snapshot": {
+    "lab_id": "682b90bc58e4437fbf04838861012e67",
+    "phase_a_result_id": "MLB CROSS 20 REACH 85 40 2025-03",
+    "phase_b_result_id": "MLB CROSS 20 REACH 85 40 2025-03",
+    "BASE_GRADE": "F",
+    "DEBASE_GRADE": "F",
+    "result_hash": "69c9f3cf301d8352691371868ac6fc6bd2799accf18db395efd72a158e835d0d",
+    "population": 6307,
+    "question_sha256": "69696cb837be0ed144ff06664f1ecc8d23ef7f31d75b239b820a82f1735d1c59"
+  },
+  "orchestrator": "optimized",
+  "job_ms": null,
+  "slots": [
+    {
+      "slot_id": "ITI-00",
+      "label": "control",
+      "entry_steps": 0,
+      "win_steps": 0,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mu1xbssh_vysak",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 2000,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 1000,
+            "sequential": false
+          },
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 6000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [],
+          "leagues": [
+            "MLB"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "MLB"
+          ]
+        }
+      },
+      "question_sha256": "69696cb837be0ed144ff06664f1ecc8d23ef7f31d75b239b820a82f1735d1c59",
+      "source_question_sha256": "69696cb837be0ed144ff06664f1ecc8d23ef7f31d75b239b820a82f1735d1c59",
+      "entry_e4": 2000,
+      "win_e4": 6000,
+      "loss_e4": 1000,
+      "entry_cents": 20,
+      "win_cents": 60,
+      "loss_cents": 10,
+      "population": 6307,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "682b90bc58e4437fbf04838861012e67",
+      "phase_a_result_id": "MLB CROSS 20 REACH 85 40 2025-03",
+      "phase_b_result_id": "MLB CROSS 20 REACH 85 40 2025-03",
+      "executed": false,
+      "reused_source": true,
+      "result_hash": "69c9f3cf301d8352691371868ac6fc6bd2799accf18db395efd72a158e835d0d",
+      "compile_ms": 0,
+      "execute_ms": 0,
+      "lab_ms": 0,
+      "base_ms": 0,
+      "debase_ms": 0,
+      "slot_ms": 0
+    },
+    {
+      "slot_id": "ITI-01",
+      "label": "E-3",
+      "entry_steps": -3,
+      "win_steps": 0,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mu1xbssh_vysak",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 1700,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 1000,
+            "sequential": false
+          },
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 6000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [],
+          "leagues": [
+            "MLB"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "MLB"
+          ]
+        }
+      },
+      "question_sha256": "10ee8a79aa9b0eeb594940029b651aefdef56b735265528fb712cf5e7ebbc799",
+      "source_question_sha256": "69696cb837be0ed144ff06664f1ecc8d23ef7f31d75b239b820a82f1735d1c59",
+      "entry_e4": 1700,
+      "win_e4": 6000,
+      "loss_e4": 1000,
+      "entry_cents": 17,
+      "win_cents": 60,
+      "loss_cents": 10,
+      "population": 4658,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "a5c2b46e667349cbb5fd3cd89b115540",
+      "phase_a_result_id": "MLB CROSS 20 REACH 85 40 2025-03 ITI-01",
+      "phase_b_result_id": "MLB CROSS 20 REACH 85 40 2025-03 ITI-01",
+      "executed": true,
+      "execute_ms": 217414,
+      "result_hash": "9d6a793ca4e655cbc4b661859c6eddab36a707a4963b2761506188fe15e040c6",
+      "lab_ms": 477,
+      "base_ms": 1787,
+      "debase_ms": 56756,
+      "slot_ms": 276439
+    },
+    {
+      "slot_id": "ITI-02",
+      "label": "E-2",
+      "entry_steps": -2,
+      "win_steps": 0,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mu1xbssh_vysak",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 1800,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 1000,
+            "sequential": false
+          },
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 6000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [],
+          "leagues": [
+            "MLB"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "MLB"
+          ]
+        }
+      },
+      "question_sha256": "16bc2104a289cb790d7ee38b74804852bf7ee649da3aba192cd08ef10e63ca4c",
+      "source_question_sha256": "69696cb837be0ed144ff06664f1ecc8d23ef7f31d75b239b820a82f1735d1c59",
+      "entry_e4": 1800,
+      "win_e4": 6000,
+      "loss_e4": 1000,
+      "entry_cents": 18,
+      "win_cents": 60,
+      "loss_cents": 10,
+      "population": 5925,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "2516c4659240437c84d7197df7ea521b",
+      "phase_a_result_id": "MLB CROSS 20 REACH 85 40 2025-03 ITI-02",
+      "phase_b_result_id": "MLB CROSS 20 REACH 85 40 2025-03 ITI-02",
+      "executed": true,
+      "execute_ms": 433916,
+      "result_hash": "2fbe2344daf9f04481ca95c0a912908901a70f1e822775720d85bb5ce67436ed",
+      "lab_ms": 636,
+      "base_ms": 2793,
+      "debase_ms": 60477,
+      "slot_ms": 497832
+    },
+    {
+      "slot_id": "ITI-03",
+      "label": "E-1",
+      "entry_steps": -1,
+      "win_steps": 0,
+      "loss_steps": 0,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mu1xbssh_vysak",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 1900,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 1000,
+            "sequential": false
+          },
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 6000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [],
+          "leagues": [
+            "MLB"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "MLB"
+          ]
+        }
+      },
+      "question_sha256": "9718cea27905f3b1cc24f174cc584851d5c82055012d637c342584d1184733c7",
+      "source_question_sha256": "69696cb837be0ed144ff06664f1ecc8d23ef7f31d75b239b820a82f1735d1c59",
+      "entry_e4": 1900,
+      "win_e4": 6000,
+      "loss_e4": 1000,
+      "entry_cents": 19,
+      "win_cents": 60,
+      "loss_cents": 10,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-04",
+      "label": "E+1",
+      "entry_steps": 1,
+      "win_steps": 0,
+      "loss_steps": 0,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mu1xbssh_vysak",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 2100,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 1000,
+            "sequential": false
+          },
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 6000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [],
+          "leagues": [
+            "MLB"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "MLB"
+          ]
+        }
+      },
+      "question_sha256": "af951a9d447cfcc20018154632a7a590881792776691ecef2acf82c15ad9f153",
+      "source_question_sha256": "69696cb837be0ed144ff06664f1ecc8d23ef7f31d75b239b820a82f1735d1c59",
+      "entry_e4": 2100,
+      "win_e4": 6000,
+      "loss_e4": 1000,
+      "entry_cents": 21,
+      "win_cents": 60,
+      "loss_cents": 10,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-05",
+      "label": "E+2",
+      "entry_steps": 2,
+      "win_steps": 0,
+      "loss_steps": 0,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mu1xbssh_vysak",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 2200,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 1000,
+            "sequential": false
+          },
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 6000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [],
+          "leagues": [
+            "MLB"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "MLB"
+          ]
+        }
+      },
+      "question_sha256": "3299b9cde6c5071c8f67ab82551473e537e9592a97d969134f1101398e256dbc",
+      "source_question_sha256": "69696cb837be0ed144ff06664f1ecc8d23ef7f31d75b239b820a82f1735d1c59",
+      "entry_e4": 2200,
+      "win_e4": 6000,
+      "loss_e4": 1000,
+      "entry_cents": 22,
+      "win_cents": 60,
+      "loss_cents": 10,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-06",
+      "label": "E+3",
+      "entry_steps": 3,
+      "win_steps": 0,
+      "loss_steps": 0,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mu1xbssh_vysak",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 2300,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 1000,
+            "sequential": false
+          },
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 6000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [],
+          "leagues": [
+            "MLB"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "MLB"
+          ]
+        }
+      },
+      "question_sha256": "735c7e9a3533feef99b81491b4dbf21ea687ee3464352c7145e5f4d40c0b3314",
+      "source_question_sha256": "69696cb837be0ed144ff06664f1ecc8d23ef7f31d75b239b820a82f1735d1c59",
+      "entry_e4": 2300,
+      "win_e4": 6000,
+      "loss_e4": 1000,
+      "entry_cents": 23,
+      "win_cents": 60,
+      "loss_cents": 10,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-07",
+      "label": "W-3",
+      "entry_steps": 0,
+      "win_steps": -3,
+      "loss_steps": 0,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mu1xbssh_vysak",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 2000,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 1000,
+            "sequential": false
+          },
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 5100,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [],
+          "leagues": [
+            "MLB"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "MLB"
+          ]
+        }
+      },
+      "question_sha256": "be42eadc0357df1d5261d732602ad249e9215c23f6db25bb6bcdfb807f111071",
+      "source_question_sha256": "69696cb837be0ed144ff06664f1ecc8d23ef7f31d75b239b820a82f1735d1c59",
+      "entry_e4": 2000,
+      "win_e4": 5100,
+      "loss_e4": 1000,
+      "entry_cents": 20,
+      "win_cents": 51,
+      "loss_cents": 10,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-08",
+      "label": "W-2",
+      "entry_steps": 0,
+      "win_steps": -2,
+      "loss_steps": 0,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mu1xbssh_vysak",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 2000,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 1000,
+            "sequential": false
+          },
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 5400,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [],
+          "leagues": [
+            "MLB"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "MLB"
+          ]
+        }
+      },
+      "question_sha256": "2ec5016058a71e2bd2ddc3298d8e3b4ddc1f2c29ba04fab9ef96872dcf105667",
+      "source_question_sha256": "69696cb837be0ed144ff06664f1ecc8d23ef7f31d75b239b820a82f1735d1c59",
+      "entry_e4": 2000,
+      "win_e4": 5400,
+      "loss_e4": 1000,
+      "entry_cents": 20,
+      "win_cents": 54,
+      "loss_cents": 10,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-09",
+      "label": "W-1",
+      "entry_steps": 0,
+      "win_steps": -1,
+      "loss_steps": 0,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mu1xbssh_vysak",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 2000,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 1000,
+            "sequential": false
+          },
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 5700,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [],
+          "leagues": [
+            "MLB"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "MLB"
+          ]
+        }
+      },
+      "question_sha256": "f1245ce9b4eda5256bce721524013120244dedd2ac60202dbfee41ab7e308e74",
+      "source_question_sha256": "69696cb837be0ed144ff06664f1ecc8d23ef7f31d75b239b820a82f1735d1c59",
+      "entry_e4": 2000,
+      "win_e4": 5700,
+      "loss_e4": 1000,
+      "entry_cents": 20,
+      "win_cents": 57,
+      "loss_cents": 10,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-10",
+      "label": "W+1",
+      "entry_steps": 0,
+      "win_steps": 1,
+      "loss_steps": 0,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mu1xbssh_vysak",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 2000,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 1000,
+            "sequential": false
+          },
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 6300,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [],
+          "leagues": [
+            "MLB"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "MLB"
+          ]
+        }
+      },
+      "question_sha256": "39ca4440abfd186a819f7119269bac8be66dee216f630baaecbddeac35bd31d6",
+      "source_question_sha256": "69696cb837be0ed144ff06664f1ecc8d23ef7f31d75b239b820a82f1735d1c59",
+      "entry_e4": 2000,
+      "win_e4": 6300,
+      "loss_e4": 1000,
+      "entry_cents": 20,
+      "win_cents": 63,
+      "loss_cents": 10,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-11",
+      "label": "W+2",
+      "entry_steps": 0,
+      "win_steps": 2,
+      "loss_steps": 0,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mu1xbssh_vysak",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 2000,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 1000,
+            "sequential": false
+          },
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 6600,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [],
+          "leagues": [
+            "MLB"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "MLB"
+          ]
+        }
+      },
+      "question_sha256": "380b32f3f8814f8ef1f23b093dc8d1216f96a85631e838145954432e4683d8b8",
+      "source_question_sha256": "69696cb837be0ed144ff06664f1ecc8d23ef7f31d75b239b820a82f1735d1c59",
+      "entry_e4": 2000,
+      "win_e4": 6600,
+      "loss_e4": 1000,
+      "entry_cents": 20,
+      "win_cents": 66,
+      "loss_cents": 10,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-12",
+      "label": "W+3",
+      "entry_steps": 0,
+      "win_steps": 3,
+      "loss_steps": 0,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mu1xbssh_vysak",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 2000,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 1000,
+            "sequential": false
+          },
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 6900,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [],
+          "leagues": [
+            "MLB"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "MLB"
+          ]
+        }
+      },
+      "question_sha256": "58047f338129d79c6dfc5a5901de636b0607ff3764cdab19328c689152bf25ee",
+      "source_question_sha256": "69696cb837be0ed144ff06664f1ecc8d23ef7f31d75b239b820a82f1735d1c59",
+      "entry_e4": 2000,
+      "win_e4": 6900,
+      "loss_e4": 1000,
+      "entry_cents": 20,
+      "win_cents": 69,
+      "loss_cents": 10,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-13",
+      "label": "L-3",
+      "entry_steps": 0,
+      "win_steps": 0,
+      "loss_steps": -3,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mu1xbssh_vysak",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 2000,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 700,
+            "sequential": false
+          },
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 6000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [],
+          "leagues": [
+            "MLB"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "MLB"
+          ]
+        }
+      },
+      "question_sha256": "0b636cbf8eb32220ca1b31e09b34dbebf692ce55d3caa9cea5ab8ab955049be4",
+      "source_question_sha256": "69696cb837be0ed144ff06664f1ecc8d23ef7f31d75b239b820a82f1735d1c59",
+      "entry_e4": 2000,
+      "win_e4": 6000,
+      "loss_e4": 700,
+      "entry_cents": 20,
+      "win_cents": 60,
+      "loss_cents": 7,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-14",
+      "label": "L-2",
+      "entry_steps": 0,
+      "win_steps": 0,
+      "loss_steps": -2,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mu1xbssh_vysak",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 2000,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 800,
+            "sequential": false
+          },
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 6000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [],
+          "leagues": [
+            "MLB"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "MLB"
+          ]
+        }
+      },
+      "question_sha256": "4d60b17e46369ba6361c7edfe1bb70174e51731263be13b5279d24fb71309c11",
+      "source_question_sha256": "69696cb837be0ed144ff06664f1ecc8d23ef7f31d75b239b820a82f1735d1c59",
+      "entry_e4": 2000,
+      "win_e4": 6000,
+      "loss_e4": 800,
+      "entry_cents": 20,
+      "win_cents": 60,
+      "loss_cents": 8,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-15",
+      "label": "L-1",
+      "entry_steps": 0,
+      "win_steps": 0,
+      "loss_steps": -1,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mu1xbssh_vysak",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 2000,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 900,
+            "sequential": false
+          },
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 6000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [],
+          "leagues": [
+            "MLB"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "MLB"
+          ]
+        }
+      },
+      "question_sha256": "bd4435951a7b1872176a641347b6700bd3514b926a1e70d8fb18294d34d6b2da",
+      "source_question_sha256": "69696cb837be0ed144ff06664f1ecc8d23ef7f31d75b239b820a82f1735d1c59",
+      "entry_e4": 2000,
+      "win_e4": 6000,
+      "loss_e4": 900,
+      "entry_cents": 20,
+      "win_cents": 60,
+      "loss_cents": 9,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-16",
+      "label": "L+1",
+      "entry_steps": 0,
+      "win_steps": 0,
+      "loss_steps": 1,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mu1xbssh_vysak",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 2000,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 1100,
+            "sequential": false
+          },
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 6000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [],
+          "leagues": [
+            "MLB"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "MLB"
+          ]
+        }
+      },
+      "question_sha256": "f4793ff28e55d38e634bd886db77415b03432741febec0a9d77ecafa680597bd",
+      "source_question_sha256": "69696cb837be0ed144ff06664f1ecc8d23ef7f31d75b239b820a82f1735d1c59",
+      "entry_e4": 2000,
+      "win_e4": 6000,
+      "loss_e4": 1100,
+      "entry_cents": 20,
+      "win_cents": 60,
+      "loss_cents": 11,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-17",
+      "label": "L+2",
+      "entry_steps": 0,
+      "win_steps": 0,
+      "loss_steps": 2,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mu1xbssh_vysak",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 2000,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 1200,
+            "sequential": false
+          },
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 6000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [],
+          "leagues": [
+            "MLB"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "MLB"
+          ]
+        }
+      },
+      "question_sha256": "2b6a7cd1565c75a6ea89890a68144f11f85dd6a9506aaca78e12ac08cf755d89",
+      "source_question_sha256": "69696cb837be0ed144ff06664f1ecc8d23ef7f31d75b239b820a82f1735d1c59",
+      "entry_e4": 2000,
+      "win_e4": 6000,
+      "loss_e4": 1200,
+      "entry_cents": 20,
+      "win_cents": 60,
+      "loss_cents": 12,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-18",
+      "label": "L+3",
+      "entry_steps": 0,
+      "win_steps": 0,
+      "loss_steps": 3,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mu1xbssh_vysak",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 2000,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 1300,
+            "sequential": false
+          },
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 6000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [],
+          "leagues": [
+            "MLB"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "MLB"
+          ]
+        }
+      },
+      "question_sha256": "8febb52a4c96eaf31c1ebd3be7f901e14b97d30bbea1d39a1c3c3e9c61c73276",
+      "source_question_sha256": "69696cb837be0ed144ff06664f1ecc8d23ef7f31d75b239b820a82f1735d1c59",
+      "entry_e4": 2000,
+      "win_e4": 6000,
+      "loss_e4": 1300,
+      "entry_cents": 20,
+      "win_cents": 60,
+      "loss_cents": 13,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-19",
+      "label": "E+1 W+1",
+      "entry_steps": 1,
+      "win_steps": 1,
+      "loss_steps": 0,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mu1xbssh_vysak",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 2100,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 1000,
+            "sequential": false
+          },
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 6300,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [],
+          "leagues": [
+            "MLB"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "MLB"
+          ]
+        }
+      },
+      "question_sha256": "b9f57a8279f0153902ad71f1edf293fc638404c2c35c56717a9347b2043bec6e",
+      "source_question_sha256": "69696cb837be0ed144ff06664f1ecc8d23ef7f31d75b239b820a82f1735d1c59",
+      "entry_e4": 2100,
+      "win_e4": 6300,
+      "loss_e4": 1000,
+      "entry_cents": 21,
+      "win_cents": 63,
+      "loss_cents": 10,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-20",
+      "label": "E-1 W-1",
+      "entry_steps": -1,
+      "win_steps": -1,
+      "loss_steps": 0,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mu1xbssh_vysak",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 1900,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 1000,
+            "sequential": false
+          },
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 5700,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [],
+          "leagues": [
+            "MLB"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "MLB"
+          ]
+        }
+      },
+      "question_sha256": "7233a8dde226a25c8870c5ff21929e755999a535cfac9102b37a9f5c9b6b337b",
+      "source_question_sha256": "69696cb837be0ed144ff06664f1ecc8d23ef7f31d75b239b820a82f1735d1c59",
+      "entry_e4": 1900,
+      "win_e4": 5700,
+      "loss_e4": 1000,
+      "entry_cents": 19,
+      "win_cents": 57,
+      "loss_cents": 10,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-21",
+      "label": "E+1 L+1",
+      "entry_steps": 1,
+      "win_steps": 0,
+      "loss_steps": 1,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mu1xbssh_vysak",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 2100,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 1100,
+            "sequential": false
+          },
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 6000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [],
+          "leagues": [
+            "MLB"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "MLB"
+          ]
+        }
+      },
+      "question_sha256": "62240fc71dca5e3fb02c0af3ea35ad0598ee95a5f6de4f15ea1a41d9bdc0c6e8",
+      "source_question_sha256": "69696cb837be0ed144ff06664f1ecc8d23ef7f31d75b239b820a82f1735d1c59",
+      "entry_e4": 2100,
+      "win_e4": 6000,
+      "loss_e4": 1100,
+      "entry_cents": 21,
+      "win_cents": 60,
+      "loss_cents": 11,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-22",
+      "label": "E-1 L-1",
+      "entry_steps": -1,
+      "win_steps": 0,
+      "loss_steps": -1,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mu1xbssh_vysak",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 1900,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 900,
+            "sequential": false
+          },
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 6000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [],
+          "leagues": [
+            "MLB"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "MLB"
+          ]
+        }
+      },
+      "question_sha256": "63bbd104bc112021272efa7254871159f2bb8e305b5ffe6c11d2c953154794e7",
+      "source_question_sha256": "69696cb837be0ed144ff06664f1ecc8d23ef7f31d75b239b820a82f1735d1c59",
+      "entry_e4": 1900,
+      "win_e4": 6000,
+      "loss_e4": 900,
+      "entry_cents": 19,
+      "win_cents": 60,
+      "loss_cents": 9,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-23",
+      "label": "W+1 L-1",
+      "entry_steps": 0,
+      "win_steps": 1,
+      "loss_steps": -1,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mu1xbssh_vysak",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 2000,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 900,
+            "sequential": false
+          },
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 6300,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [],
+          "leagues": [
+            "MLB"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "MLB"
+          ]
+        }
+      },
+      "question_sha256": "38b3efd0e0afa053a7158f80837c3386749400034fb1ce3d6a8e0b4da18d17bf",
+      "source_question_sha256": "69696cb837be0ed144ff06664f1ecc8d23ef7f31d75b239b820a82f1735d1c59",
+      "entry_e4": 2000,
+      "win_e4": 6300,
+      "loss_e4": 900,
+      "entry_cents": 20,
+      "win_cents": 63,
+      "loss_cents": 9,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    },
+    {
+      "slot_id": "ITI-24",
+      "label": "W-1 L+1",
+      "entry_steps": 0,
+      "win_steps": -1,
+      "loss_steps": 1,
+      "status": "PENDING",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "entry_mu1xbssh_vysak",
+            "nth": null,
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 2000,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "exit_mtug1t99_aq1lv",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 1100,
+            "sequential": false
+          },
+          {
+            "id": "exit_mty0bwbw_mvfqe",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 5700,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-03-18",
+          "date_to": "2026-09-01",
+          "game_data": [],
+          "leagues": [
+            "MLB"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "MLB"
+          ]
+        }
+      },
+      "question_sha256": "d4271f92249b6c7a17166499f2012b1a4476fb69fe781ec22b010e92de1c1cef",
+      "source_question_sha256": "69696cb837be0ed144ff06664f1ecc8d23ef7f31d75b239b820a82f1735d1c59",
+      "entry_e4": 2000,
+      "win_e4": 5700,
+      "loss_e4": 1100,
+      "entry_cents": 20,
+      "win_cents": 57,
+      "loss_cents": 11,
+      "population": null,
+      "BASE_GRADE": null,
+      "DEBASE_GRADE": null,
+      "lab_id": null,
+      "phase_a_result_id": null,
+      "phase_b_result_id": null,
+      "executed": false
+    }
+  ],
+  "slot_n": 25,
+  "progress_done": 3,
+  "recommended_slot_id": "ITI-01",
+  "committed_slot_id": "ITI-00",
+  "commit_path": "/Users/user/Desktop/Momento/ROLLER/superasi_labs/phase_b/MLB CROSS 20 REACH 85 40 2025-03/MLB CROSS 20 REACH 85 40 2025-03_ITI",
+  "created_at": "2026-09-15T18:49:21Z",
+  "updated_at": "2026-09-15T19:01:16Z",
+  "cancel_requested": false,
+  "honesty": {
+    "risk_not": "candle_path_not_fill",
+    "fees": "UNAVAILABLE",
+    "slippage": "UNAVAILABLE",
+    "fills": "UNAVAILABLE",
+    "confirmation_2pct": "OPERATION_REQUIRED",
+    "pyramiding": "OPERATION_REQUIRED",
+    "live_execution": false
+  },
+  "caveats": [
+    "LIVE EXECUTION = FALSE",
+    "CANDLE PATH \u2260 ACTUAL FILL",
+    "2% CONFIRMATION = OPERATION_REQUIRED",
+    "PYRAMIDING = OPERATION_REQUIRED",
+    "RECOMMENDED GRADE \u2260 FILL"
+  ],
+  "live_execution": false
+}

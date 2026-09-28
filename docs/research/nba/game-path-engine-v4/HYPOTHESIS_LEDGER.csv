@@ -1,0 +1,18 @@
+hypothesis_id,block,name,definition,split_role,status
+H0,baseline,unconditional_q,q=320/1230,benchmark,SUPPORTED
+HG1,game,score_differential,d_t at first-80,univariate,INCONCLUSIVE
+HG2,game,time_normalized_lead,d_star experimental,univariate,SUPPORTED
+HG3,game,score_velocity_5m,v_score 5m,univariate,INCONCLUSIVE
+HG4,game,lead_stability_index,LSI TRAIN-fit lambda gamma,univariate,INCONCLUSIVE
+HG5,game,score_vol_5m,sigma_d 5m,univariate,REJECTED
+HM1,market,momentum_5m,K 5m change,univariate,INCONCLUSIVE
+HM2,market,vol_5m_proxy,candle vol proxy,univariate,SUPPORTED
+HC1,coupling,market_game_residual,obs dK minus TRAIN E[dK|dd,tau],univariate,SUPPORTED
+HC2,coupling,empirical_delta,TRAIN beta_1 on dK~dd,descriptive,PRE_REGISTERED
+HP1,path,market_path_efficiency,PE arrival to 80,univariate,INCONCLUSIVE
+HP2,path,game_path_efficiency,PE_G arrival,univariate,INCONCLUSIVE
+HR1,regime,interpretable_regimes_A_E,TRAIN percentile boundaries,confirmatory,PRE_REGISTERED
+M2,model,l2_state_logistic,regularized S_tau80,model,REJECTED
+M3,model,preregistered_interactions,vol x |d|; residual x tau,model,REJECTED
+M4,model,shallow_gbm,only if M2/M3 beat 0.95x M0 on VAL,model,DATA_LIMITED
+T1,target,Y_40_CLOSE,frozen close-path 40,target,PRE_REGISTERED

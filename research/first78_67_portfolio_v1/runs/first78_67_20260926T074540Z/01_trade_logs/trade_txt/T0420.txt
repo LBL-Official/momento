@@ -1,0 +1,10 @@
+trade T0420  NCAAB  TCU at Oklahoma St.
+contract KXNCAAMBGAME-26FEB14TCUOKST-TCU  slice H2_1
+signal 2026-02-14T10:31:00-08:00 PST  exit 2026-02-14T10:46:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 7016  principal_cents 547248
+entry_fee_cents 2107  exit_fee_cents 2715
+exit STOP at 67c  terminal yes
+gross_cents -77176  net_cents -81998
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

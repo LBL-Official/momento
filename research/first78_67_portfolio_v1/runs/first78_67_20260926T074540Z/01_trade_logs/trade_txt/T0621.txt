@@ -1,0 +1,10 @@
+trade T0621  NBA  Atlanta at Detroit
+contract KXNBAGAME-26MAR25ATLDET-ATL  slice Q2
+signal 2026-03-25T16:58:00-07:00 PDT  exit 2026-03-25T17:29:00-07:00 PDT
+assumed entry 78c  observed close 81c  overshoot 3c
+contracts 15195  principal_cents 1185210
+entry_fee_cents 4564  exit_fee_cents 5880
+exit STOP at 67c  terminal yes
+gross_cents -167145  net_cents -177589
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

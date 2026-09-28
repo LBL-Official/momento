@@ -1,0 +1,49 @@
+{
+  "policy_id": "nba-001",
+  "version": "nba-001-v1",
+  "supersedes": "nba-001-v0",
+  "supersedes_file": "research/vital/bots/nba-001/strategy/policy.json",
+  "alias": "nba-first80-001",
+  "display_name": "NBA Bot 001",
+  "strategy_id": "FIRST78_67",
+  "decision_status": "OWNER_REGISTERED",
+  "live_execution": false,
+  "submits": false,
+  "execution_authorized": false,
+  "runtime": "momento-nba-001.service",
+  "runtime_mode_default": "LIVE_DATA_ONLY",
+  "series": "KXNBAGAME",
+  "fill_status": "FILL_UNAVAILABLE",
+  "contract": "research/vital/bots/nba-001/strategy/execution_contract.json",
+  "field_to_code": "research/vital/bots/nba-001/strategy/FIELD_TO_CODE.md",
+  "entry": {
+    "observable": "one_minute_tradable_yes_bid_close",
+    "entry_cents": 78,
+    "top_out_ceiling_cents": 85,
+    "stop_cents": 67,
+    "slices": ["Q2", "Q3"]
+  },
+  "portfolio": {
+    "reference_capital_cents": 2000000,
+    "funded_target_cents": 500000,
+    "external_reserve_cents": 1500000,
+    "external_reserve_spendable": false,
+    "allocation_bps": 600,
+    "shared_slots_ceiling": 7,
+    "batch_size": 10,
+    "one_entry_per_game": true
+  },
+  "hedge": {
+    "instrument": "opponent_team_yes_same_event",
+    "path_cents": "68..55",
+    "opponent_limit_cents": "32..45",
+    "pre_trigger_orders": false,
+    "market_dump_below_cents": 55
+  },
+  "unresolved_owner_input": [
+    "hedge_ladder_advancement",
+    "emergency_action",
+    "entry_order",
+    "slot_and_batch_release"
+  ]
+}

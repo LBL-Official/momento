@@ -1,0 +1,30 @@
+[
+  {
+    "game_pk": "824911",
+    "official_date": "2026-06-18",
+    "source_status": "Postponed",
+    "lifecycle": "POSTPONED",
+    "reason": "not a committed PBP artifact (skipped/non-final)"
+  },
+  {
+    "game_pk": "824664",
+    "official_date": "2026-06-21",
+    "source_status": "Postponed",
+    "lifecycle": "POSTPONED",
+    "reason": "not a committed PBP artifact (skipped/non-final)"
+  },
+  {
+    "game_pk": "823613",
+    "official_date": "2026-06-22",
+    "source_status": "Postponed",
+    "lifecycle": "POSTPONED",
+    "reason": "not a committed PBP artifact (skipped/non-final)"
+  },
+  {
+    "game_pk": "823042",
+    "official_date": "2026-06-25",
+    "source_status": "Postponed",
+    "lifecycle": "POSTPONED",
+    "reason": "not a committed PBP artifact (skipped/non-final)"
+  }
+]

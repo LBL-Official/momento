@@ -1,0 +1,10 @@
+trade T0247  NBA  San Antonio at Minnesota
+contract KXNBAGAME-26JAN11SASMIN-SAS  slice Q3
+signal 2026-01-11T17:23:00-08:00 PST  exit 2026-01-11T18:18:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 4011  principal_cents 312858
+entry_fee_cents 1205  exit_fee_cents 1552
+exit STOP at 67c  terminal no
+gross_cents -44121  net_cents -46878
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

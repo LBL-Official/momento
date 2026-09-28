@@ -1,0 +1,23 @@
+[package]
+name = "momento-research-engine"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "Research OS: datasets, experiments, jobs. Wraps B1. Not live trading."
+
+[lints]
+workspace = true
+
+[dependencies]
+chrono.workspace = true
+momento-research-features = { path = "../research-features" }
+rusqlite = { version = "0.32.1", features = ["bundled"] }
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+uuid = { version = "1.18.1", features = ["v4", "serde"] }
+
+[dev-dependencies]
+tempfile = "3.20.0"

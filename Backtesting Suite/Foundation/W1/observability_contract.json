@@ -1,0 +1,142 @@
+[
+  {
+    "field": "yes_bid",
+    "kind": "OBSERVED",
+    "notes": "Kalshi YES bid when present on a quote/candle close/trade is OBSERVED. Candle close is still a candle, not an L2 bid."
+  },
+  {
+    "field": "yes_ask",
+    "kind": "OBSERVED",
+    "notes": "Same as yes_bid."
+  },
+  {
+    "field": "public_trade",
+    "kind": "OBSERVED",
+    "notes": "Kalshi public trade payload (price, qty, created_time)."
+  },
+  {
+    "field": "spread",
+    "kind": "DERIVED",
+    "notes": "ask − bid when both OBSERVED and ask ≥ bid. Not a venue field."
+  },
+  {
+    "field": "price_velocity",
+    "kind": "DERIVED",
+    "notes": "Not computed in W1. Future DERIVED from OBSERVED path. Forbidden as OBSERVED."
+  },
+  {
+    "field": "mid",
+    "kind": "UNAVAILABLE",
+    "notes": "Kalshi does not publish an official mid. Never invent (bid+ask)/2 as OBSERVED."
+  },
+  {
+    "field": "l2_orderbook",
+    "kind": "L2_HISTORICAL_UNAVAILABLE",
+    "notes": "L2_HISTORICAL_UNAVAILABLE. REST backfill has no L2. Candles are not L2. PIT ingest snapshots are not game-time books."
+  },
+  {
+    "field": "true_queue_position",
+    "kind": "UNAVAILABLE",
+    "notes": "Not in public historical data. MODELED later if an execution plugin exists."
+  },
+  {
+    "field": "rest_snapshot_at_ingest",
+    "kind": "OBSERVED",
+    "notes": "OBSERVED as of collector ingest time only. UNAVAILABLE as game-time L2."
+  },
+  {
+    "field": "candlestick_1m_close",
+    "kind": "OBSERVED",
+    "notes": "1-minute YES bid/ask OHLC close. Observability remains CANDLESTICK, never tick/L2."
+  },
+  {
+    "field": "received_at",
+    "kind": "OBSERVED",
+    "notes": "Collector ingestion clock. NOT exchange time unless proven identical."
+  },
+  {
+    "field": "exchange_timestamp",
+    "kind": "OBSERVED",
+    "notes": "Trade created_time or candle end_period_ts when present in payload."
+  },
+  {
+    "field": "starting_price",
+    "kind": "UNAVAILABLE",
+    "notes": "STARTING_PRICE_UNVERIFIED for v1 close-day partitions. MARKET_OPEN_PRICE is not the first candle in the file. Metadata open_time may be OBSERVED independently."
+  },
+  {
+    "field": "pbp",
+    "kind": "UNAVAILABLE",
+    "notes": "No MLB PBP in the lake. Do not invent."
+  },
+  {
+    "field": "event_state",
+    "kind": "UNAVAILABLE",
+    "notes": "W2+. Not reconstructed in W1."
+  },
+  {
+    "field": "synchronized_state",
+    "kind": "UNAVAILABLE",
+    "notes": "W3+. Not reconstructed in W1."
+  },
+  {
+    "field": "future_winner",
+    "kind": "OUTCOME_LABEL",
+    "notes": "Kalshi result/settlement is a LABEL. Forbidden as a feature at t < settlement."
+  },
+  {
+    "field": "expected_fill_probability",
+    "kind": "MODELED",
+    "notes": "Execution plugin only. Not lake truth."
+  },
+  {
+    "field": "event_theta",
+    "kind": "MODELED",
+    "notes": "Later waterfall. No formula in W1."
+  },
+  {
+    "field": "market_theta",
+    "kind": "MODELED",
+    "notes": "Later waterfall. No formula in W1."
+  },
+  {
+    "field": "kalshi_trade",
+    "kind": "OBSERVED",
+    "notes": "Public trade print. Not a quote tick."
+  },
+  {
+    "field": "kalshi_bid",
+    "kind": "OBSERVED",
+    "notes": "YES bid when present. Candle close bid remains CANDLESTICK semantics."
+  },
+  {
+    "field": "kalshi_ask",
+    "kind": "OBSERVED",
+    "notes": "YES ask when present. Same candle caveat."
+  },
+  {
+    "field": "kalshi_size",
+    "kind": "UNAVAILABLE",
+    "notes": "Bid/ask size not on historical candles. UNAVAILABLE unless a true book snapshot at t exists."
+  },
+  {
+    "field": "kalshi_candle",
+    "kind": "OBSERVED",
+    "notes": "1-minute OHLC of YES bid/ask. Not ticks, not L2."
+  },
+  {
+    "field": "kalshi_orderbook",
+    "kind": "L2_HISTORICAL_UNAVAILABLE",
+    "notes": "Do not read v1 orderbook.parquet as historical L2."
+  },
+  {
+    "field": "kalshi_timestamp_ingestion",
+    "kind": "OBSERVED",
+    "notes": "received_at = collector clock."
+  },
+  {
+    "field": "kalshi_timestamp_exchange",
+    "kind": "OBSERVED",
+    "notes": "Trade created_time / candle end_period_ts only when in payload."
+  }
+]

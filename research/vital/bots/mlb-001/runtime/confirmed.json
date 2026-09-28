@@ -1,0 +1,10 @@
+{
+  "health": {
+    "status": "CONFIRMED",
+    "value": "HEALTHY"
+  },
+  "lifecycle": {
+    "status": "CONFIRMED",
+    "value": "RUNNING"
+  }
+}

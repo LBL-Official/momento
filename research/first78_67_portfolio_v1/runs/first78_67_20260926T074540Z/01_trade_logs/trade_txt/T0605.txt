@@ -1,0 +1,10 @@
+trade T0605  NBA  Milwaukee at Utah
+contract KXNBAGAME-26MAR19MILUTA-UTA  slice Q2
+signal 2026-03-19T19:07:00-07:00 PDT  exit 2026-03-19T20:43:41-07:00 PDT
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 14816  principal_cents 1155648
+entry_fee_cents 4450  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 325952  net_cents 321502
+strategy_result POSITIVE  net_r 1.856686629051911826702625910
+Assumed fill. Not a maker fill. Not live P&L.

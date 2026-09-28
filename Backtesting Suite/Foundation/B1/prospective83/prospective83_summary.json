@@ -1,0 +1,362 @@
+{
+  "answer": "INSUFFICIENT DATA",
+  "headline": "W6 has post-cutoff games, but W7 TRADE paths do not (or none printed 83¢). No first-exact-83 prospective observation exists. NO ROBUST 83¢ ENTRY EDGE FOUND — holdout not yet evaluable.",
+  "production_count": 0,
+  "fill_status": "TRADE_PRINT_MODELED",
+  "l2_status": "UNAVAILABLE_SOURCE",
+  "feature_schema_version": "B1.FEATURE.1.1.0",
+  "engine_version": "B1.ENGINE.1.1.0",
+  "discovery_tests": 6128,
+  "frozen_candidates": 6,
+  "coverage": {
+    "existing_cutoff": "2026-06-27",
+    "prospective_start": "2026-06-28",
+    "prospective_end": "2026-08-26",
+    "w6_eligible_games": 757,
+    "w7_path_games": 3384,
+    "w7_post_cutoff_games": 0,
+    "first83_eligible": 0,
+    "excluded_no_w7_path": 757,
+    "excluded_reason": "W6 games exist after cutoff but W7 EventMarketPath / TRADE prints were not reconstructed for those games. First-exact-83 requires a W7 TRADE at 83¢. Do not invent prints from W6 state alone.",
+    "w6_date_min": "2026-06-28",
+    "w6_date_max": "2026-08-26",
+    "status": "PROSPECTIVE_DATA_NOT_YET_AVAILABLE"
+  },
+  "candidates": [
+    {
+      "bootstrap": null,
+      "classification": "INSUFFICIENT_DATA",
+      "concentration": null,
+      "condition": "start_price_band=40_49",
+      "cost_sensitivity": [],
+      "cost_survival_max_cents": null,
+      "discovery_fdr_q": 0.1731,
+      "historical": {
+        "test_ev": 2.41,
+        "test_n": 233,
+        "train_ev": 3.42,
+        "train_n": 486,
+        "val_ev": 1.4,
+        "val_n": 141
+      },
+      "hypothesis_id": "CAND_A_40_49",
+      "incremental_ev_vs_all83": null,
+      "labels": {
+        "DISCOVERY_FDR": 0.1731,
+        "POST_HOLDOUT_DISCOVERY": false,
+        "PROSPECTIVE_VALIDATION": "NOT_RUN"
+      },
+      "layer": "PROSPECTIVE_VALIDATION",
+      "monthly": [],
+      "name": "Candidate A",
+      "permutation_p": null,
+      "prospective": {
+        "coverage_pct": 0.0,
+        "ev_cents": null,
+        "max_dd_usd": null,
+        "n_games": 0,
+        "n_unique_games": 0,
+        "pnl_usd": null,
+        "sharpe": null,
+        "status": "PROSPECTIVE_DATA_NOT_YET_AVAILABLE",
+        "win_rate": null
+      },
+      "search_stage": "FROZEN_PREDECLARED",
+      "threshold_sensitivity": "SECONDARY_NOT_RUN_NO_HOLDOUT",
+      "why_frozen": "Simplest +EV-on-all-splits 1-way. Discovery BH q=0.173 from 6,128 tests."
+    },
+    {
+      "bootstrap": null,
+      "classification": "INSUFFICIENT_DATA",
+      "concentration": null,
+      "condition": "start_move_gt30=YES&outs=0&vol_1m_tertile=LOW",
+      "cost_sensitivity": [],
+      "cost_survival_max_cents": null,
+      "discovery_fdr_q": null,
+      "historical": {
+        "test_ev": 12.12,
+        "test_n": 41,
+        "train_ev": 10.55,
+        "train_n": 62,
+        "val_ev": 9.86,
+        "val_n": 28
+      },
+      "hypothesis_id": "CAND_B_MOVE30_OUTS0_VOL1M_LOW",
+      "incremental_ev_vs_all83": null,
+      "labels": {
+        "DISCOVERY_FDR": null,
+        "POST_HOLDOUT_DISCOVERY": false,
+        "PROSPECTIVE_VALIDATION": "NOT_RUN"
+      },
+      "layer": "PROSPECTIVE_VALIDATION",
+      "monthly": [],
+      "name": "Candidate B",
+      "permutation_p": null,
+      "prospective": {
+        "coverage_pct": 0.0,
+        "ev_cents": null,
+        "max_dd_usd": null,
+        "n_games": 0,
+        "n_unique_games": 0,
+        "pnl_usd": null,
+        "sharpe": null,
+        "status": "PROSPECTIVE_DATA_NOT_YET_AVAILABLE",
+        "win_rate": null
+      },
+      "search_stage": "FROZEN_PREDECLARED",
+      "threshold_sensitivity": "SECONDARY_NOT_RUN_NO_HOLDOUT",
+      "why_frozen": "Highest-priority 3-way from locked exhaustive ROBUST leaders. Predeclared before this holdout."
+    },
+    {
+      "bootstrap": null,
+      "classification": "INSUFFICIENT_DATA",
+      "concentration": null,
+      "condition": "lead_signed=LEAD_2&start_move_gt30=YES&vol_1m_tertile=LOW",
+      "cost_sensitivity": [],
+      "cost_survival_max_cents": null,
+      "discovery_fdr_q": null,
+      "historical": {
+        "test_ev": 3.96,
+        "test_n": 92,
+        "train_ev": 8.74,
+        "train_n": 121,
+        "val_ev": 13.0,
+        "val_n": 50
+      },
+      "hypothesis_id": "CAND_C_LEAD2_MOVE30_VOL1M_LOW",
+      "incremental_ev_vs_all83": null,
+      "labels": {
+        "DISCOVERY_FDR": null,
+        "POST_HOLDOUT_DISCOVERY": false,
+        "PROSPECTIVE_VALIDATION": "NOT_RUN"
+      },
+      "layer": "PROSPECTIVE_VALIDATION",
+      "monthly": [],
+      "name": "Candidate C",
+      "permutation_p": null,
+      "prospective": {
+        "coverage_pct": 0.0,
+        "ev_cents": null,
+        "max_dd_usd": null,
+        "n_games": 0,
+        "n_unique_games": 0,
+        "pnl_usd": null,
+        "sharpe": null,
+        "status": "PROSPECTIVE_DATA_NOT_YET_AVAILABLE",
+        "win_rate": null
+      },
+      "search_stage": "FROZEN_PREDECLARED",
+      "threshold_sensitivity": "SECONDARY_NOT_RUN_NO_HOLDOUT",
+      "why_frozen": "Locked exhaustive ROBUST 3-way. Predeclared."
+    },
+    {
+      "bootstrap": null,
+      "classification": "INSUFFICIENT_DATA",
+      "concentration": null,
+      "condition": "score_bucket=TWO_RUN&start_move_gt30=YES&vol_1m_tertile=LOW",
+      "cost_sensitivity": [],
+      "cost_survival_max_cents": null,
+      "discovery_fdr_q": null,
+      "historical": {
+        "test_ev": 3.96,
+        "test_n": 92,
+        "train_ev": 8.74,
+        "train_n": 121,
+        "val_ev": 13.0,
+        "val_n": 50
+      },
+      "hypothesis_id": "CAND_D_TWORUN_MOVE30_VOL1M_LOW",
+      "incremental_ev_vs_all83": null,
+      "labels": {
+        "DISCOVERY_FDR": null,
+        "POST_HOLDOUT_DISCOVERY": false,
+        "PROSPECTIVE_VALIDATION": "NOT_RUN"
+      },
+      "layer": "PROSPECTIVE_VALIDATION",
+      "monthly": [],
+      "name": "Candidate D",
+      "permutation_p": null,
+      "prospective": {
+        "coverage_pct": 0.0,
+        "ev_cents": null,
+        "max_dd_usd": null,
+        "n_games": 0,
+        "n_unique_games": 0,
+        "pnl_usd": null,
+        "sharpe": null,
+        "status": "PROSPECTIVE_DATA_NOT_YET_AVAILABLE",
+        "win_rate": null
+      },
+      "search_stage": "FROZEN_PREDECLARED",
+      "threshold_sensitivity": "SECONDARY_NOT_RUN_NO_HOLDOUT",
+      "why_frozen": "Locked exhaustive ROBUST 3-way (near-duplicate of C). Predeclared."
+    },
+    {
+      "bootstrap": null,
+      "classification": "INSUFFICIENT_DATA",
+      "concentration": null,
+      "condition": "move_fine=30_35&vol_1m_tertile=LOW&vol_15m_tertile=LOW",
+      "cost_sensitivity": [],
+      "cost_survival_max_cents": null,
+      "discovery_fdr_q": null,
+      "historical": {
+        "test_ev": 4.25,
+        "test_n": 102,
+        "train_ev": 9.0,
+        "train_n": 125,
+        "val_ev": 8.8,
+        "val_n": 61
+      },
+      "hypothesis_id": "CAND_E_MOVEFINE_VOL_LOW",
+      "incremental_ev_vs_all83": null,
+      "labels": {
+        "DISCOVERY_FDR": null,
+        "POST_HOLDOUT_DISCOVERY": false,
+        "PROSPECTIVE_VALIDATION": "NOT_RUN"
+      },
+      "layer": "PROSPECTIVE_VALIDATION",
+      "monthly": [],
+      "name": "Candidate E",
+      "permutation_p": null,
+      "prospective": {
+        "coverage_pct": 0.0,
+        "ev_cents": null,
+        "max_dd_usd": null,
+        "n_games": 0,
+        "n_unique_games": 0,
+        "pnl_usd": null,
+        "sharpe": null,
+        "status": "PROSPECTIVE_DATA_NOT_YET_AVAILABLE",
+        "win_rate": null
+      },
+      "search_stage": "FROZEN_PREDECLARED",
+      "threshold_sensitivity": "SECONDARY_NOT_RUN_NO_HOLDOUT",
+      "why_frozen": "Locked exhaustive ROBUST 3-way. Predeclared."
+    },
+    {
+      "bootstrap": null,
+      "classification": "INSUFFICIENT_DATA",
+      "concentration": null,
+      "condition": "inning_grp=7&p_max_vs_83=PEAK_AT",
+      "cost_sensitivity": [],
+      "cost_survival_max_cents": null,
+      "discovery_fdr_q": 0.1837,
+      "historical": {
+        "test_ev": 2.42,
+        "test_n": 48,
+        "train_ev": 7.77,
+        "train_n": 65,
+        "val_ev": 13.0,
+        "val_n": 25
+      },
+      "hypothesis_id": "CAND_F_INNING7_PEAK_AT",
+      "incremental_ev_vs_all83": null,
+      "labels": {
+        "DISCOVERY_FDR": 0.1837,
+        "POST_HOLDOUT_DISCOVERY": false,
+        "PROSPECTIVE_VALIDATION": "NOT_RUN"
+      },
+      "layer": "PROSPECTIVE_VALIDATION",
+      "monthly": [],
+      "name": "Candidate F",
+      "permutation_p": null,
+      "prospective": {
+        "coverage_pct": 0.0,
+        "ev_cents": null,
+        "max_dd_usd": null,
+        "n_games": 0,
+        "n_unique_games": 0,
+        "pnl_usd": null,
+        "sharpe": null,
+        "status": "PROSPECTIVE_DATA_NOT_YET_AVAILABLE",
+        "win_rate": null
+      },
+      "search_stage": "FROZEN_PREDECLARED",
+      "threshold_sensitivity": "SECONDARY_NOT_RUN_NO_HOLDOUT",
+      "why_frozen": "VAL-selected primary. Less evidentiary weight than independently predeclared cells."
+    },
+    {
+      "classification": "INSUFFICIENT_DATA",
+      "condition": "",
+      "historical": {
+        "test_ev": 1.43,
+        "test_n": 713,
+        "train_ev": 0.11,
+        "train_n": 1699,
+        "val_ev": -0.81,
+        "val_n": 494
+      },
+      "hypothesis_id": "BENCH_ALL_FIRST83",
+      "labels": {
+        "DISCOVERY_FDR": null,
+        "PROSPECTIVE_VALIDATION": "NOT_RUN"
+      },
+      "layer": "PROSPECTIVE_VALIDATION",
+      "name": "ALL_FIRST83",
+      "prospective": {
+        "ev_cents": null,
+        "n_games": 0,
+        "n_unique_games": 0,
+        "status": "PROSPECTIVE_DATA_NOT_YET_AVAILABLE"
+      },
+      "search_stage": "BENCHMARK",
+      "why_frozen": "Unconditional first-exact-83 benchmark."
+    },
+    {
+      "classification": "INSUFFICIENT_DATA",
+      "condition": "NO_ENTRY",
+      "historical": {
+        "test_ev": 0.0,
+        "test_n": 0,
+        "train_ev": 0.0,
+        "train_n": 0,
+        "val_ev": 0.0,
+        "val_n": 0
+      },
+      "hypothesis_id": "BENCH_NO_ENTRY",
+      "labels": {
+        "DISCOVERY_FDR": null,
+        "PROSPECTIVE_VALIDATION": "BASELINE"
+      },
+      "layer": "PROSPECTIVE_VALIDATION",
+      "name": "do nothing",
+      "prospective": {
+        "ev_cents": 0.0,
+        "n_games": 0,
+        "n_unique_games": 0,
+        "pnl_usd": 0.0
+      },
+      "search_stage": "BENCHMARK",
+      "why_frozen": "No-entry baseline."
+    }
+  ],
+  "locked_train_tertiles": {
+    "note": "Prospective rows must reuse these TRAIN cuts. Never refit on the holdout.",
+    "path_dist": {
+      "low_max": 174,
+      "mid_max": 371,
+      "source": "LOCKED_TRAIN"
+    },
+    "vol_15m": {
+      "low_max": 2,
+      "mid_max": 3,
+      "source": "LOCKED_TRAIN"
+    },
+    "vol_1m": {
+      "low_max": 1,
+      "mid_max": 2,
+      "source": "LOCKED_TRAIN"
+    },
+    "vol_30m": {
+      "low_max": 2,
+      "mid_max": 3,
+      "source": "LOCKED_TRAIN"
+    },
+    "vol_z": {
+      "low_max": -592,
+      "mid_max": -47,
+      "source": "LOCKED_TRAIN"
+    }
+  },
+  "abort_reason": null
+}

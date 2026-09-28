@@ -1,0 +1,33 @@
+experiment:
+  name: EXECUTION_INTEGRITY_ENGINE_V1
+  dre_baseline: DRE_BASELINE_V1
+  live_execution_changed: false
+
+universe:
+  version: A1_UNIVERSE_V1
+  a1_config_hash: d7d2e9e55d9a426a
+  sports: [nba, ncaab]
+  ncaab_filter: p5_vs_p5
+
+baseline:
+  threshold: 40
+  band: [40, 40]
+  timing: strict_next_bar
+  fallback: legacy_80_40
+
+execution_models:
+  - E0_OBSERVATION_ONLY
+  - E1_CONSERVATIVE_OBSERVED_PROXY
+  - E2_PARAMETERIZED_SCENARIO
+  - E3_EMPIRICAL          # NOT_AVAILABLE
+  - E4_L2_QUEUE           # NOT_AVAILABLE
+
+e2:
+  q: [0.25, 0.50, 0.75, 1.00]
+  partial: [0.25, 0.50, 0.75, 1.00]
+
+do_not:
+  overwrite_a1: true
+  modify_first01: true
+  invent_l4: true
+  start_deterioration_calculus: true

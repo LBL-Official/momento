@@ -1,0 +1,10 @@
+trade T0396  NCAAB  Arizona St. at Colorado
+contract KXNCAAMBGAME-26FEB07ASUCOLO-COLO  slice H1_2
+signal 2026-02-07T19:00:00-08:00 PST  exit 2026-02-07T19:45:00-08:00 PST
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 6673  principal_cents 520494
+entry_fee_cents 2004  exit_fee_cents 2582
+exit STOP at 67c  terminal yes
+gross_cents -73403  net_cents -77989
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

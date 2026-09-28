@@ -1,0 +1,768 @@
+{
+  "schema": "choosin_texas_book_v1",
+  "book_id": "nba_2q_regular_8040_1lot_2026_27",
+  "live_execution": false,
+  "submits": false,
+  "tape_season": "2025-26",
+  "measure_season": "2026-27",
+  "identity": "S = P(¬T40); s_L = 0; EV = 20S − L(1−S); L = 40 on 80/40",
+  "registered": {
+    "status": "RESEARCH_REGISTERED",
+    "live_execution": false,
+    "submits": false,
+    "risk_approved": false,
+    "enable_live_trading": false,
+    "title": "NBA 2Q regular-season FIRST80 80/40, 1 contract, 2026-27",
+    "sport": "NBA",
+    "slice": "Q2",
+    "season_phase": "REGULAR_SEASON",
+    "rule": "FIRST80",
+    "entry_cents": 80,
+    "stop_cents": 40,
+    "contracts": 1,
+    "filters": [],
+    "baseline_tape": "nba_2q_regular",
+    "clauses": [
+      "Take every NBA regular-season 2Q FIRST80 in 2026-27.",
+      "Entry 80¢. Stop 40¢. One contract. No other stop.",
+      "Apply no lead, opening-price, or cross filter.",
+      "Log watch cells. Do not skip them on this book.",
+      "Candle path ≠ fill. This desk does not submit."
+    ]
+  },
+  "hold_reverse": [
+    {
+      "claim": "80/40 is a few cents, not 4%/month",
+      "ncaab": "+5.1807¢ on 332; Q2 RS +6.7143¢ on 280",
+      "verdict": "holds"
+    },
+    {
+      "claim": "Dogs (open ≤40¢) are not the problem",
+      "ncaab": "≤30 +3.33, 31–35 +5.00, 36–40 +8.00",
+      "verdict": "holds"
+    },
+    {
+      "claim": "Lead ≥10 is a large plus",
+      "ncaab": "107/141, +5.5319¢",
+      "verdict": "holds"
+    },
+    {
+      "claim": "4–6 × ≥71¢ is toxic",
+      "ncaab": "17/32, −8.1250¢; Q2 RS 6/12, −10.0000¢",
+      "verdict": "holds"
+    },
+    {
+      "claim": "Open 61–65¢ is near zero",
+      "ncaab": "23/35, −0.5714¢",
+      "verdict": "holds loosely"
+    },
+    {
+      "claim": "On 56–60¢, 80/40 is the best stop",
+      "ncaab": "80/40 +5.41 beats 25–55 on that cell",
+      "verdict": "holds"
+    },
+    {
+      "claim": "Score-path exit after 80",
+      "ncaab": "PIT still OPERATION_REQUIRED",
+      "verdict": "holds"
+    },
+    {
+      "claim": "2Q > 3Q",
+      "ncaab": "H1_2 +4.1451 < H2_1 +6.6187",
+      "verdict": "reverses"
+    },
+    {
+      "claim": "Lead 4–6 is negative",
+      "ncaab": "36/53, +0.7547¢",
+      "verdict": "reverses"
+    },
+    {
+      "claim": "Open 56–60¢ is the richest cell",
+      "ncaab": "+5.4054¢; richest is 66–70¢ +16.1290 (n=31)",
+      "verdict": "reverses"
+    },
+    {
+      "claim": "Open 41–45¢ is toxic",
+      "ncaab": "20/25, +8.0000¢",
+      "verdict": "reverses"
+    },
+    {
+      "claim": "Q3 likes shallower 80/50",
+      "ncaab": "H2_1 best is 80/40",
+      "verdict": "reverses"
+    },
+    {
+      "claim": "4–6 is not rescued by a shallower stop",
+      "ncaab": "4–6 best is deeper 80/25",
+      "verdict": "reverses"
+    }
+  ],
+  "watch_do_not_filter": [
+    {
+      "cell": "lead 4–6 × open ≥71¢",
+      "why": "Same-sign toxic cell on NBA 604, NCAAB 332, and Q2 RS 280. Watch, not a skip lock."
+    },
+    {
+      "cell": "open 56–60¢",
+      "why": "Richest on NBA 604. Not special on NCAAB. Do not promote to a filter."
+    },
+    {
+      "cell": "lead 4–6",
+      "why": "NBA 604 minus. NCAAB weakest-plus. Q2 RS −0.87¢. Overfit if skipped."
+    },
+    {
+      "cell": "open 41–45¢",
+      "why": "NBA 604 minus. NCAAB plus. Sport-specific."
+    }
+  ],
+  "forbidden": [
+    "Do not change live FIRST01 / 80/81/83/89.",
+    "Do not submit from this desk or from the browser.",
+    "Do not treat candle-path EV as a fill or live EV.",
+    "Do not apply NCAAB cuts as NBA filters.",
+    "Do not skip watch cells on the 2026-27 book.",
+    "Do not invent a score-path exit (OPERATION_REQUIRED).",
+    "Do not Kelly or size to a 4%/month target.",
+    "Do not include preseason, playoffs, or Finals on the registered book.",
+    "Do not remount NCAAB on Dallas.",
+    "Do not edit first80.py or start W9 / warehouse Phase 21."
+  ],
+  "measurement": [
+    "Reconstruct 2026-27 NBA regular-season 2Q FIRST80 from the same asked-six CSV contract.",
+    "Report N, S, W∩T40, L∩T40, EV, and book versus the 2025-26 Q2 RS lock (280 / 218/280 / 1880¢).",
+    "Do not invent N, fills, fees, or PIT.",
+    "OOS on the 2025-26 NCAAB analog is n=13 and cannot confirm a story."
+  ],
+  "conversion": [
+    "This object is RESEARCH_REGISTERED, not LIVE_ARMED.",
+    "Momento live execution today is MLB through Vital + Risk. This is an NBA research book.",
+    "Paper / Risk / live require a later program. HTTP 200 here is not an order.",
+    "ENABLE_LIVE_TRADING stays unset. Choosin Texas cannot arm it.",
+    "A future live conversion must go through the Risk Decision Engine and must not bypass it.",
+    "Order submitted ≠ fill. Requested 40¢ stop ≠ executable."
+  ],
+  "disclaimers": [
+    "LIVE EXECUTION = FALSE",
+    "CANDLE PATH ≠ ACTUAL FILL",
+    "ledger EV ≠ fill ≠ live EV",
+    "RESEARCH_REGISTERED ≠ LIVE_ARMED",
+    "Dallas stays NBA 2Q/3Q",
+    "Watch cells are not filters",
+    "4% / month is not supported",
+    "2026-27 is a new sample"
+  ],
+  "tapes": {
+    "nba_2q3q": {
+      "label": "NBA 2Q ∪ 3Q (Dallas universe)",
+      "slices": [
+        "Q2",
+        "Q3"
+      ],
+      "phases": [
+        "FINALS",
+        "PLAYOFFS",
+        "PRESEASON",
+        "REGULAR_SEASON"
+      ],
+      "window": [
+        "2025-10-10",
+        "2026-06-13"
+      ],
+      "n": 604,
+      "s_n": 450,
+      "book_cents": 2840,
+      "w_t40": 55,
+      "l_t40": 99,
+      "slice_rows": [
+        {
+          "key": "Q2",
+          "n": 314,
+          "s_n": 239,
+          "book_cents": 1780,
+          "w_t40": 28,
+          "l_t40": 47
+        },
+        {
+          "key": "Q3",
+          "n": 290,
+          "s_n": 211,
+          "book_cents": 1060,
+          "w_t40": 27,
+          "l_t40": 52
+        }
+      ],
+      "splits": [
+        {
+          "key": "IN_SAMPLE",
+          "n": 236,
+          "s_n": 172,
+          "book_cents": 880,
+          "w_t40": 24,
+          "l_t40": 40,
+          "window": [
+            "2025-10-10",
+            "2025-12-31"
+          ]
+        },
+        {
+          "key": "VALIDATION",
+          "n": 248,
+          "s_n": 186,
+          "book_cents": 1240,
+          "w_t40": 17,
+          "l_t40": 45,
+          "window": [
+            "2026-01-01",
+            "2026-03-15"
+          ]
+        },
+        {
+          "key": "OOS",
+          "n": 120,
+          "s_n": 92,
+          "book_cents": 720,
+          "w_t40": 14,
+          "l_t40": 14,
+          "window": [
+            "2026-03-16",
+            "2026-06-13"
+          ]
+        }
+      ],
+      "lead": [
+        {
+          "key": "le0",
+          "n": 276,
+          "s_n": 205,
+          "book_cents": 1260,
+          "w_t40": 26,
+          "l_t40": 45
+        },
+        {
+          "key": "1_3",
+          "n": 35,
+          "s_n": 29,
+          "book_cents": 340,
+          "w_t40": 1,
+          "l_t40": 5
+        },
+        {
+          "key": "4_6",
+          "n": 45,
+          "s_n": 27,
+          "book_cents": -180,
+          "w_t40": 6,
+          "l_t40": 12
+        },
+        {
+          "key": "7_9",
+          "n": 58,
+          "s_n": 43,
+          "book_cents": 260,
+          "w_t40": 6,
+          "l_t40": 9
+        },
+        {
+          "key": "ge10",
+          "n": 190,
+          "s_n": 146,
+          "book_cents": 1160,
+          "w_t40": 16,
+          "l_t40": 28
+        }
+      ],
+      "open": [
+        {
+          "key": "le30",
+          "n": 22,
+          "s_n": 17,
+          "book_cents": 140,
+          "w_t40": 1,
+          "l_t40": 4
+        },
+        {
+          "key": "31_35",
+          "n": 25,
+          "s_n": 18,
+          "book_cents": 80,
+          "w_t40": 2,
+          "l_t40": 5
+        },
+        {
+          "key": "36_40",
+          "n": 45,
+          "s_n": 33,
+          "book_cents": 180,
+          "w_t40": 4,
+          "l_t40": 8
+        },
+        {
+          "key": "41_45",
+          "n": 48,
+          "s_n": 30,
+          "book_cents": -120,
+          "w_t40": 5,
+          "l_t40": 13
+        },
+        {
+          "key": "46_50",
+          "n": 56,
+          "s_n": 45,
+          "book_cents": 460,
+          "w_t40": 7,
+          "l_t40": 4
+        },
+        {
+          "key": "51_55",
+          "n": 66,
+          "s_n": 47,
+          "book_cents": 180,
+          "w_t40": 5,
+          "l_t40": 14
+        },
+        {
+          "key": "56_60",
+          "n": 78,
+          "s_n": 70,
+          "book_cents": 1080,
+          "w_t40": 3,
+          "l_t40": 5
+        },
+        {
+          "key": "61_65",
+          "n": 78,
+          "s_n": 52,
+          "book_cents": 0,
+          "w_t40": 6,
+          "l_t40": 20
+        },
+        {
+          "key": "66_70",
+          "n": 74,
+          "s_n": 57,
+          "book_cents": 460,
+          "w_t40": 7,
+          "l_t40": 10
+        },
+        {
+          "key": "ge71",
+          "n": 112,
+          "s_n": 81,
+          "book_cents": 380,
+          "w_t40": 15,
+          "l_t40": 16
+        }
+      ],
+      "cross_4_6_ge71": {
+        "n": 21,
+        "s_n": 12,
+        "book_cents": -120,
+        "w_t40": 3,
+        "l_t40": 6
+      }
+    },
+    "ncaab_h12_h21": {
+      "label": "NCAAB P5 H1_2 ∪ H2_1 (2Q/3Q analog)",
+      "slices": [
+        "H1_2",
+        "H2_1"
+      ],
+      "phases": [
+        "REGULAR_SEASON"
+      ],
+      "window": [
+        "2025-11-07",
+        "2026-04-04"
+      ],
+      "n": 332,
+      "s_n": 250,
+      "book_cents": 1720,
+      "w_t40": 31,
+      "l_t40": 51,
+      "slice_rows": [
+        {
+          "key": "H1_2",
+          "n": 193,
+          "s_n": 142,
+          "book_cents": 800,
+          "w_t40": 21,
+          "l_t40": 30
+        },
+        {
+          "key": "H2_1",
+          "n": 139,
+          "s_n": 108,
+          "book_cents": 920,
+          "w_t40": 10,
+          "l_t40": 21
+        }
+      ],
+      "splits": [
+        {
+          "key": "IN_SAMPLE",
+          "n": 62,
+          "s_n": 48,
+          "book_cents": 400,
+          "w_t40": 6,
+          "l_t40": 8,
+          "window": [
+            "2025-11-07",
+            "2025-12-31"
+          ]
+        },
+        {
+          "key": "VALIDATION",
+          "n": 257,
+          "s_n": 192,
+          "book_cents": 1240,
+          "w_t40": 23,
+          "l_t40": 42,
+          "window": [
+            "2026-01-02",
+            "2026-03-14"
+          ]
+        },
+        {
+          "key": "OOS",
+          "n": 13,
+          "s_n": 10,
+          "book_cents": 80,
+          "w_t40": 2,
+          "l_t40": 1,
+          "window": [
+            "2026-03-19",
+            "2026-04-04"
+          ]
+        }
+      ],
+      "lead": [
+        {
+          "key": "le0",
+          "n": 43,
+          "s_n": 34,
+          "book_cents": 320,
+          "w_t40": 2,
+          "l_t40": 7
+        },
+        {
+          "key": "1_3",
+          "n": 18,
+          "s_n": 14,
+          "book_cents": 120,
+          "w_t40": 1,
+          "l_t40": 3
+        },
+        {
+          "key": "4_6",
+          "n": 53,
+          "s_n": 36,
+          "book_cents": 40,
+          "w_t40": 11,
+          "l_t40": 6
+        },
+        {
+          "key": "7_9",
+          "n": 77,
+          "s_n": 59,
+          "book_cents": 460,
+          "w_t40": 3,
+          "l_t40": 15
+        },
+        {
+          "key": "ge10",
+          "n": 141,
+          "s_n": 107,
+          "book_cents": 780,
+          "w_t40": 14,
+          "l_t40": 20
+        }
+      ],
+      "open": [
+        {
+          "key": "le30",
+          "n": 18,
+          "s_n": 13,
+          "book_cents": 60,
+          "w_t40": 2,
+          "l_t40": 3
+        },
+        {
+          "key": "31_35",
+          "n": 12,
+          "s_n": 9,
+          "book_cents": 60,
+          "w_t40": 1,
+          "l_t40": 2
+        },
+        {
+          "key": "36_40",
+          "n": 20,
+          "s_n": 16,
+          "book_cents": 160,
+          "w_t40": 0,
+          "l_t40": 4
+        },
+        {
+          "key": "41_45",
+          "n": 25,
+          "s_n": 20,
+          "book_cents": 200,
+          "w_t40": 4,
+          "l_t40": 1
+        },
+        {
+          "key": "46_50",
+          "n": 30,
+          "s_n": 23,
+          "book_cents": 180,
+          "w_t40": 2,
+          "l_t40": 5
+        },
+        {
+          "key": "51_55",
+          "n": 29,
+          "s_n": 21,
+          "book_cents": 100,
+          "w_t40": 4,
+          "l_t40": 4
+        },
+        {
+          "key": "56_60",
+          "n": 37,
+          "s_n": 28,
+          "book_cents": 200,
+          "w_t40": 3,
+          "l_t40": 6
+        },
+        {
+          "key": "61_65",
+          "n": 35,
+          "s_n": 23,
+          "book_cents": -20,
+          "w_t40": 4,
+          "l_t40": 8
+        },
+        {
+          "key": "66_70",
+          "n": 31,
+          "s_n": 29,
+          "book_cents": 500,
+          "w_t40": 1,
+          "l_t40": 1
+        },
+        {
+          "key": "ge71",
+          "n": 95,
+          "s_n": 68,
+          "book_cents": 280,
+          "w_t40": 10,
+          "l_t40": 17
+        }
+      ],
+      "cross_4_6_ge71": {
+        "n": 32,
+        "s_n": 17,
+        "book_cents": -260,
+        "w_t40": 9,
+        "l_t40": 6
+      }
+    },
+    "nba_2q_regular": {
+      "label": "NBA 2Q regular season (registered baseline)",
+      "slices": [
+        "Q2"
+      ],
+      "phases": [
+        "REGULAR_SEASON"
+      ],
+      "window": [
+        "2025-10-22",
+        "2026-04-12"
+      ],
+      "n": 280,
+      "s_n": 218,
+      "book_cents": 1880,
+      "w_t40": 22,
+      "l_t40": 40,
+      "slice_rows": [
+        {
+          "key": "Q2",
+          "n": 280,
+          "s_n": 218,
+          "book_cents": 1880,
+          "w_t40": 22,
+          "l_t40": 40
+        }
+      ],
+      "splits": [
+        {
+          "key": "IN_SAMPLE",
+          "n": 111,
+          "s_n": 85,
+          "book_cents": 660,
+          "w_t40": 8,
+          "l_t40": 18,
+          "window": [
+            "2025-10-22",
+            "2025-12-31"
+          ]
+        },
+        {
+          "key": "VALIDATION",
+          "n": 119,
+          "s_n": 89,
+          "book_cents": 580,
+          "w_t40": 10,
+          "l_t40": 20,
+          "window": [
+            "2026-01-01",
+            "2026-03-14"
+          ]
+        },
+        {
+          "key": "OOS",
+          "n": 50,
+          "s_n": 44,
+          "book_cents": 640,
+          "w_t40": 4,
+          "l_t40": 2,
+          "window": [
+            "2026-03-16",
+            "2026-04-12"
+          ]
+        }
+      ],
+      "lead": [
+        {
+          "key": "le0",
+          "n": 141,
+          "s_n": 111,
+          "book_cents": 1020,
+          "w_t40": 11,
+          "l_t40": 19
+        },
+        {
+          "key": "1_3",
+          "n": 9,
+          "s_n": 8,
+          "book_cents": 120,
+          "w_t40": 1,
+          "l_t40": 0
+        },
+        {
+          "key": "4_6",
+          "n": 23,
+          "s_n": 15,
+          "book_cents": -20,
+          "w_t40": 3,
+          "l_t40": 5
+        },
+        {
+          "key": "7_9",
+          "n": 22,
+          "s_n": 17,
+          "book_cents": 140,
+          "w_t40": 1,
+          "l_t40": 4
+        },
+        {
+          "key": "ge10",
+          "n": 85,
+          "s_n": 67,
+          "book_cents": 620,
+          "w_t40": 6,
+          "l_t40": 12
+        }
+      ],
+      "open": [
+        {
+          "key": "le30",
+          "n": 5,
+          "s_n": 4,
+          "book_cents": 40,
+          "w_t40": 0,
+          "l_t40": 1
+        },
+        {
+          "key": "31_35",
+          "n": 9,
+          "s_n": 6,
+          "book_cents": 0,
+          "w_t40": 0,
+          "l_t40": 3
+        },
+        {
+          "key": "36_40",
+          "n": 15,
+          "s_n": 13,
+          "book_cents": 180,
+          "w_t40": 0,
+          "l_t40": 2
+        },
+        {
+          "key": "41_45",
+          "n": 15,
+          "s_n": 11,
+          "book_cents": 60,
+          "w_t40": 2,
+          "l_t40": 2
+        },
+        {
+          "key": "46_50",
+          "n": 26,
+          "s_n": 21,
+          "book_cents": 220,
+          "w_t40": 4,
+          "l_t40": 1
+        },
+        {
+          "key": "51_55",
+          "n": 34,
+          "s_n": 25,
+          "book_cents": 140,
+          "w_t40": 3,
+          "l_t40": 6
+        },
+        {
+          "key": "56_60",
+          "n": 32,
+          "s_n": 26,
+          "book_cents": 280,
+          "w_t40": 2,
+          "l_t40": 4
+        },
+        {
+          "key": "61_65",
+          "n": 37,
+          "s_n": 31,
+          "book_cents": 380,
+          "w_t40": 1,
+          "l_t40": 5
+        },
+        {
+          "key": "66_70",
+          "n": 42,
+          "s_n": 35,
+          "book_cents": 420,
+          "w_t40": 3,
+          "l_t40": 4
+        },
+        {
+          "key": "ge71",
+          "n": 65,
+          "s_n": 46,
+          "book_cents": 160,
+          "w_t40": 7,
+          "l_t40": 12
+        }
+      ],
+      "cross_4_6_ge71": {
+        "n": 12,
+        "s_n": 6,
+        "book_cents": -120,
+        "w_t40": 2,
+        "l_t40": 4
+      }
+    }
+  }
+}

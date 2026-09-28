@@ -1,0 +1,110 @@
+{
+  "catalog_s": 2.139332,
+  "label": "baseline",
+  "peak_rss_mb": 375.78,
+  "queries": [
+    {
+      "classification_counts": {
+        "LOSS": 6,
+        "WIN": 1
+      },
+      "compile_s": 0.000161,
+      "context_s": 0.081988,
+      "context_status": "READY",
+      "difference_count": 0,
+      "execution_s": 0.01572,
+      "loaded_games": 5,
+      "loaded_observations": 5125,
+      "loaded_pbp": 0,
+      "month_files": [
+        "month=2025-10.parquet",
+        "month=2025-11.parquet"
+      ],
+      "optimized_s": 0.007367,
+      "parquet_files_opened": 6,
+      "peak_rss_mb": 313.2,
+      "plan_hash": "d8c10b912b20a45b0f9909cb759f2dee8a23298cd55df21ab94feb9e2432a35a",
+      "plan_status": "READY",
+      "population": 7,
+      "query": "B_date",
+      "reference_s": 0.008352,
+      "result_hash": "3ff90cf3b331db7909790f3180d5b54e1d3df6027d8dcfe277c3928397d02382"
+    },
+    {
+      "classification_counts": {},
+      "compile_s": 0.000125,
+      "context_s": 0.11956,
+      "context_status": "READY",
+      "difference_count": 0,
+      "execution_s": 0.028319,
+      "loaded_games": 5,
+      "loaded_observations": 5125,
+      "loaded_pbp": 3176,
+      "month_files": [
+        "month=2025-10.parquet",
+        "month=2025-11.parquet"
+      ],
+      "optimized_s": 0.013382,
+      "parquet_files_opened": 8,
+      "peak_rss_mb": 344.8,
+      "plan_hash": "4547787d8dfdb8c40717d7321e399179e868a67f0b069cadabc3f7964f9ffa67",
+      "plan_status": "READY",
+      "population": 0,
+      "query": "C_period",
+      "reference_s": 0.014937,
+      "result_hash": "1b0ce3dc4fb863a2c9b7517669ca1e5936a02d07dab4905d896ab2dc8894a0f6"
+    },
+    {
+      "classification_counts": {
+        "LOSS": 6,
+        "WIN": 1
+      },
+      "compile_s": 0.000135,
+      "context_s": 0.079776,
+      "context_status": "READY",
+      "difference_count": 0,
+      "execution_s": 0.01509,
+      "loaded_games": 5,
+      "loaded_observations": 5125,
+      "loaded_pbp": 0,
+      "month_files": [
+        "month=2025-10.parquet",
+        "month=2025-11.parquet"
+      ],
+      "optimized_s": 0.0079,
+      "parquet_files_opened": 6,
+      "peak_rss_mb": 358.8,
+      "plan_hash": "a22a381d5bdbc89dfffdd14c4af3af8df97e90ac8fbab0e314167af85389a0d3",
+      "plan_status": "READY",
+      "population": 7,
+      "query": "D_and",
+      "reference_s": 0.00719,
+      "result_hash": "e4e00ef8cd1b7dd24114b3b647862d174c1a870842360401be77309c7e9b9cad"
+    },
+    {
+      "classification_counts": {},
+      "compile_s": 0.000118,
+      "context_s": 0.116113,
+      "context_status": "READY",
+      "difference_count": 0,
+      "execution_s": 0.025535,
+      "loaded_games": 5,
+      "loaded_observations": 5125,
+      "loaded_pbp": 3176,
+      "month_files": [
+        "month=2025-10.parquet",
+        "month=2025-11.parquet"
+      ],
+      "optimized_s": 0.013257,
+      "parquet_files_opened": 8,
+      "peak_rss_mb": 375.78,
+      "plan_hash": "4547787d8dfdb8c40717d7321e399179e868a67f0b069cadabc3f7964f9ffa67",
+      "plan_status": "READY",
+      "population": 0,
+      "query": "E_zero",
+      "reference_s": 0.012278,
+      "result_hash": "1b0ce3dc4fb863a2c9b7517669ca1e5936a02d07dab4905d896ab2dc8894a0f6"
+    }
+  ],
+  "warehouse_version": "2026-09-13T06:28:48Z"
+}

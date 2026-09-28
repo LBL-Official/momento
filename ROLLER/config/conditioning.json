@@ -1,0 +1,19 @@
+{
+  "conditioning_schema_version": "conditioning_schema_v1",
+  "note": "Deterministic buckets only. No unsupervised clustering.",
+  "dimensions": [
+    {"name": "sport", "source": "sport", "type": "identity"},
+    {"name": "period", "source": "GAME_STATE.period", "type": "identity"},
+    {"name": "clock_bucket", "source": "GAME_STATE.elapsed_game_seconds", "type": "width", "width": 60},
+    {"name": "score_margin_bucket", "source": "GAME_STATE.score.score_differential_home.value", "type": "edges", "edges": [-15, -5, 0, 5, 15]},
+    {"name": "leading_trailing", "source": "GAME_STATE.score.score_differential_home.value", "type": "sign"},
+    {"name": "market_prob_bucket", "source": "MARKET_STATE.yes_bid_close", "type": "edges", "edges": [0, 2000, 4000, 6000, 8000, 10000]},
+    {"name": "volatility_bucket", "source": "BACKWARD_MEASUREMENTS.high_low_range_1m.value", "type": "edges", "edges": [0, 50, 150, 400]},
+    {"name": "possession_status", "source": "POSSESSIONS.latest_end_status", "type": "identity", "requires_sport_capability": "possessions"}
+  ],
+  "support": {
+    "min_unique_games": 2,
+    "min_observations": 3,
+    "effective_n_status": "NOT_IMPLEMENTED"
+  }
+}

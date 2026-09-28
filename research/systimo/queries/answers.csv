@@ -1,0 +1,2 @@
+answer_id,query_id,completed_at,result_schema,result_json,warnings,artifact_id
+04464a117a6c4f85,9ac4bda2b97342db,2026-09-21T18:46:10Z,systimo.answer.v0,"[{""dataset_id"": ""austin_nba_2q3q_604"", ""owner_system_id"": ""austin"", ""name"": ""Austin NBA 2Q/3Q book"", ""universe"": ""choosin_nba_2q3q_604"", ""n_expected"": ""604"", ""location"": ""ROLLER/roller/austin/"", ""schema_version"": ""v1"", ""notes"": ""Canonical Austin source. Systimo does not copy.""}]",,

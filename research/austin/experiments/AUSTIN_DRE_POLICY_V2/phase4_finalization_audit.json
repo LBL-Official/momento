@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "phase_4_complete": true,
+  "phase_5_classification": "MIXED",
+  "phase_5_decision": "PHASE 5 NOT JUSTIFIED",
+  "phase_5_note": "The PIT \u2192 LOGO improvement \u2192 recovery \u2192 update \u2192 early-enough \u2192 support chain does not hold.",
+  "gates": {
+    "A": "PASS",
+    "B": "MIXED",
+    "C": "MIXED",
+    "D": "MIXED",
+    "E": "MIXED",
+    "F": "MIXED"
+  },
+  "hazard_schema_hash": "b16bf075c323c926497beeba9bf6d51496eb348d40b306a8a99bfb8e9932c72e",
+  "mixed_caveat": true
+}

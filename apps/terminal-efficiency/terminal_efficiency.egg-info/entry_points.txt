@@ -1,0 +1,2 @@
+[console_scripts]
+terminal-efficiency = terminal_efficiency.cli:main

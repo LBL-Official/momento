@@ -1,0 +1,8 @@
+{
+  "realized_accounting_drawdown": 0.08717699999999995,
+  "event_valued_drawdown": 0.02719499999999997,
+  "full_grid_marked_drawdown": 0.028486674169296955,
+  "missing_mark_rows": 0,
+  "grid_rows": 14919,
+  "carried_bid_diagnostic": "not used as the marked series"
+}

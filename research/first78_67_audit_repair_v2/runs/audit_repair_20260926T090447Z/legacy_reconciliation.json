@@ -1,0 +1,61 @@
+{
+  "checks": {
+    "trades": {
+      "actual": 647,
+      "expected": 647,
+      "ok": true
+    },
+    "wins": {
+      "actual": 330,
+      "expected": 330,
+      "ok": true
+    },
+    "stops": {
+      "actual": 317,
+      "expected": 317,
+      "ok": true
+    },
+    "gross_cents": {
+      "actual": 25612015,
+      "expected": 25612015,
+      "ok": true
+    },
+    "fees_cents": {
+      "actual": 2063197,
+      "expected": 2063197,
+      "ok": true
+    },
+    "net_cents": {
+      "actual": 23548818,
+      "expected": 23548818,
+      "ok": true
+    },
+    "identity_gross_minus_fees": {
+      "actual": 23548818,
+      "expected": 23548818,
+      "ok": true
+    },
+    "paired_stop_minus_hold_cents": {
+      "actual": -5107503,
+      "expected": -5107503,
+      "ok": true
+    },
+    "financed_stop_minus_saved_hold_cents": {
+      "actual": 3238004,
+      "expected": 3238004,
+      "ok": true
+    },
+    "saved_ending_equity": {
+      "actual": 25548818,
+      "expected": 25548818,
+      "ok": true
+    }
+  },
+  "all_ok": true,
+  "nba_net_cents": 12060786,
+  "ncaab_net_cents": 11488032,
+  "sport_sum_ok": true,
+  "ending_cash_matches_equity": true,
+  "hold_book_source": "summary.json hold_net_pnl_cents and hold_admitted",
+  "admitted_only_note": "The saved trade file contains the 647 admitted trades. Rejected opportunities are in candidate_audit.csv and are not a complete ex-ante resample frame."
+}

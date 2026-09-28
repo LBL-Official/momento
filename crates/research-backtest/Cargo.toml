@@ -1,0 +1,28 @@
+[package]
+name = "momento-research-backtest"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "Google Sheets control plane and read-only FIRST01 backtest runner (research-only)."
+
+[lints]
+workspace = true
+
+[dependencies]
+chrono = { workspace = true, features = ["clock"] }
+csv = "1.3.1"
+momento-core.workspace = true
+momento-research-data.workspace = true
+momento-research-execution.workspace = true
+momento-research-strategies.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+sha2 = "0.10.9"
+thiserror.workspace = true
+tracing.workspace = true
+uuid = { version = "1.18.0", features = ["v4", "serde"] }
+
+[dev-dependencies]
+tempfile = "3.20.0"

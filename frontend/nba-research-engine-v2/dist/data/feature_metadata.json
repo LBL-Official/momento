@@ -1,0 +1,1625 @@
+{
+  "n": 180,
+  "rows": [
+    {
+      "feature_name": "quarter",
+      "feature_family": "game_state",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "official_time_remaining_s",
+      "feature_family": "game_state",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "game_elapsed_seconds",
+      "feature_family": "game_dynamics",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "DERIVED_PROXY",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "game_completion_pct",
+      "feature_family": "game_dynamics",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "DERIVED_PROXY",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "possession_number",
+      "feature_family": "game_state",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "estimated_possessions_remaining",
+      "feature_family": "game_state",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "score_differential",
+      "feature_family": "game_dynamics",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "DERIVED_PROXY",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "team_is_leading",
+      "feature_family": "game_state",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "home_score",
+      "feature_family": "game_state",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "away_score",
+      "feature_family": "game_state",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "possession_team",
+      "feature_family": "game_state",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "pts_for_1p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "net_homeaway_1p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "abs_score_change_1p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "turnovers_1p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "oreb_1p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "fta_1p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "lead_changes_1p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "timeouts_1p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "scoring_var_1p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "directional_reversals_1p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "directional_persist_1p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "n_window_1p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "off_eff_1p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "pts_for_3p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "net_homeaway_3p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "abs_score_change_3p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "turnovers_3p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "oreb_3p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "fta_3p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "lead_changes_3p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "timeouts_3p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "scoring_var_3p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "directional_reversals_3p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "directional_persist_3p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "n_window_3p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "off_eff_3p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "pts_for_5p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "net_homeaway_5p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "abs_score_change_5p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "turnovers_5p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "oreb_5p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "fta_5p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "lead_changes_5p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "timeouts_5p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "scoring_var_5p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "directional_reversals_5p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "directional_persist_5p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "n_window_5p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "off_eff_5p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "pts_for_10p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "net_homeaway_10p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "abs_score_change_10p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "turnovers_10p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "oreb_10p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "fta_10p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "lead_changes_10p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "timeouts_10p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "scoring_var_10p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "directional_reversals_10p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "directional_persist_10p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "n_window_10p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "off_eff_10p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "pts_for_20p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "net_homeaway_20p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "abs_score_change_20p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "turnovers_20p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "oreb_20p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "fta_20p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "lead_changes_20p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "timeouts_20p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "scoring_var_20p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "directional_reversals_20p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "directional_persist_20p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "n_window_20p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "off_eff_20p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "pts_for_30p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "net_homeaway_30p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "abs_score_change_30p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "turnovers_30p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "oreb_30p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "fta_30p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "lead_changes_30p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "timeouts_30p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "scoring_var_30p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "directional_reversals_30p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "directional_persist_30p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "n_window_30p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "off_eff_30p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "net_score_per_poss_5p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "net_score_per_poss_10p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "abs_score_per_poss_10p",
+      "feature_family": "possession_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "score_diff_std_5p",
+      "feature_family": "game_dynamics",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "DERIVED_PROXY",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "score_diff_std_10p",
+      "feature_family": "game_dynamics",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "DERIVED_PROXY",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "score_diff_range_10p",
+      "feature_family": "game_dynamics",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "DERIVED_PROXY",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "lead_reversal_freq_10p",
+      "feature_family": "game_dynamics",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "DERIVED_PROXY",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "possession_outcome_entropy_10p",
+      "feature_family": "game_dynamics",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "DERIVED_PROXY",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "game_acceleration_5_vs_10",
+      "feature_family": "game_dynamics",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "DERIVED_PROXY",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "game_instability_5p",
+      "feature_family": "game_dynamics",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "DERIVED_PROXY",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "game_momentum_5p",
+      "feature_family": "game_dynamics",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "DERIVED_PROXY",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "game_inertia_10p",
+      "feature_family": "game_dynamics",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "DERIVED_PROXY",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "game_regime",
+      "feature_family": "game_dynamics",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "DERIVED_PROXY",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "observed_or_derived",
+      "feature_family": "other",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_yes_bid_cents",
+      "feature_family": "market_state",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_yes_ask_cents",
+      "feature_family": "market_state",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_mid_cents_estimated",
+      "feature_family": "market_state",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_spread_cents",
+      "feature_family": "market_state",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_distance_from_80_cents",
+      "feature_family": "market_state",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_alignment_quality",
+      "feature_family": "market_state",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_l2_available",
+      "feature_family": "market_state",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_observed_or_derived",
+      "feature_family": "market_state",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_change_1p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_abs_move_1p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_range_mean_1p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_reversals_1p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_persist_1p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_exact_share_1p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_multiposs_share_1p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_momentum_1p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_accel_1p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_instability_1p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_change_3p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_abs_move_3p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_range_mean_3p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_reversals_3p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_persist_3p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_exact_share_3p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_multiposs_share_3p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_momentum_3p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_accel_3p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_instability_3p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_change_5p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_abs_move_5p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_range_mean_5p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_reversals_5p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_persist_5p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_exact_share_5p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_multiposs_share_5p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_momentum_5p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_accel_5p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_instability_5p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_change_10p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_abs_move_10p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_range_mean_10p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_reversals_10p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_persist_10p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_exact_share_10p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_multiposs_share_10p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_momentum_10p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_accel_10p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_instability_10p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_change_20p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_abs_move_20p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_range_mean_20p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_reversals_20p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_persist_20p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_exact_share_20p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_multiposs_share_20p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_momentum_20p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_accel_20p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_instability_20p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_change_30p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_abs_move_30p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_range_mean_30p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_reversals_30p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_persist_30p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_exact_share_30p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_multiposs_share_30p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_momentum_30p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_accel_30p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_instability_30p",
+      "feature_family": "market_path",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "MIXED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_dynamics_label",
+      "feature_family": "market_state",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "mkt_not_l2",
+      "feature_family": "market_state",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "OBSERVED",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "coupling_response_per_score_10p",
+      "feature_family": "coupling",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "DERIVED_PROXY",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "coupling_mkt_after_turnover_10p",
+      "feature_family": "coupling",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "DERIVED_PROXY",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "coupling_mkt_after_lead_change_10p",
+      "feature_family": "coupling",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "DERIVED_PROXY",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "coupling_consistency_10p",
+      "feature_family": "coupling",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "DERIVED_PROXY",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "coupling_regime",
+      "feature_family": "coupling",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "DERIVED_PROXY",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "coupling_observed_or_derived",
+      "feature_family": "coupling",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "DERIVED_PROXY",
+      "role": "PREDICTOR",
+      "l2_available": false
+    },
+    {
+      "feature_name": "coupling_not_causal_proof",
+      "feature_family": "coupling",
+      "causal": true,
+      "source_ts_rule": "source_ts \u2264 ENTRY_DECISION_TIME",
+      "observed_or_derived": "DERIVED_PROXY",
+      "role": "PREDICTOR",
+      "l2_available": false
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+trade T0212  NCAAB  UCF at Oklahoma St.
+contract KXNCAAMBGAME-26JAN06UCFOKST-OKST  slice H1_2
+signal 2026-01-06T17:48:00-08:00 PST  exit 2026-01-06T18:14:00-08:00 PST
+assumed entry 78c  observed close 80c  overshoot 2c
+contracts 3546  principal_cents 276588
+entry_fee_cents 1065  exit_fee_cents 1373
+exit STOP at 67c  terminal yes
+gross_cents -39006  net_cents -41444
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

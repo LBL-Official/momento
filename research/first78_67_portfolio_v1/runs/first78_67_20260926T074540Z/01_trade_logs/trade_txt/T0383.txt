@@ -1,0 +1,10 @@
+trade T0383  NBA  Philadelphia at Los Angeles L
+contract KXNBAGAME-26FEB05PHILAL-PHI  slice Q3
+signal 2026-02-05T20:25:00-08:00 PST  exit 2026-02-05T20:49:00-08:00 PST
+assumed entry 78c  observed close 82c  overshoot 4c
+contracts 6592  principal_cents 514176
+entry_fee_cents 1980  exit_fee_cents 2551
+exit STOP at 67c  terminal no
+gross_cents -72512  net_cents -77043
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

@@ -1,0 +1,259 @@
+{
+  "actual_evidence": "ACTUAL_FILL",
+  "actual_fills": 0,
+  "attribution": {
+    "admission_changes": "NOT_RUN",
+    "entry_price_component": "REPORTED_AS_CANDLE_BID_MINUS_NOMINAL_80",
+    "exit_execution_component": "NOT_SEPARATED",
+    "fee_component": "FEES_UNAVAILABLE",
+    "gap_recharged": false,
+    "note": "The through-close gap remains inside the candle benchmark. It is not subtracted again."
+  },
+  "baseline": {
+    "candidate_rows": 936,
+    "capital_6pct_cap3": {
+      "initial_contracts": {
+        "80/40": 1500,
+        "80/65": 1500
+      },
+      "through_close_pnl_cents": {
+        "80/40": 11164842,
+        "80/65": 8119467
+      }
+    },
+    "planned_risk_cap3": {
+      "accepted": {
+        "80/40": 820,
+        "80/65": 865
+      },
+      "initial_contracts": {
+        "80/40": 1000,
+        "80/65": 1500
+      },
+      "starting_cash_cents": 2000000,
+      "through_close_pnl_cents": {
+        "80/40": 5335376,
+        "80/65": 8119467
+      }
+    },
+    "unit_book_cents": {
+      "80/40": 3297,
+      "80/65": 2410
+    }
+  },
+  "books": {
+    "80/40": {
+      "accepted": 820,
+      "benchmark_pnl_cents": 5335376,
+      "diagnostics": {
+        "events": 820,
+        "unresolved_events": 820,
+        "partial_fills_modeled": 0,
+        "stop_signals_without_a_fill": 209,
+        "settlement_benchmarks": 611,
+        "missing_entry_candle": 0,
+        "missing_trade_file": 0,
+        "depth_available_entry_rows": 0,
+        "sequence_numbers_present": 0,
+        "entry_quote_relations": {
+          "AT_TOUCH_QUEUE_UNKNOWN": 315,
+          "LIMIT_BELOW_DISPLAYED_BID": 505
+        },
+        "exit_quote_relations": {
+          "MARKETABLE_AT_CANDLE_CLOSE": 41,
+          "NO_EXIT_ORDER": 611,
+          "SELL_LIMIT_ABOVE_DISPLAYED_BID": 168
+        },
+        "entry_bid_minus_nominal_80": {
+          "0": 315,
+          "1": 187,
+          "2": 119,
+          "3": 87,
+          "4": 50,
+          "5": 34,
+          "6": 18,
+          "7": 3,
+          "8": 5,
+          "11": 2
+        },
+        "backfill_ingest_minus_candle_end_seconds": {
+          "min": 6690725,
+          "max": 27950997,
+          "meaning": "File ingest clock minus the candle end. Not a game-time receive lag."
+        }
+      },
+      "example_entry_bid_minus_nominal_cents": 1,
+      "example_entry_relation": "LIMIT_BELOW_DISPLAYED_BID",
+      "example_event_id": "KXNBAGAME-25OCT10BOSTOR",
+      "initial_contracts": 1000
+    },
+    "80/65": {
+      "accepted": 865,
+      "benchmark_pnl_cents": 8119467,
+      "diagnostics": {
+        "events": 865,
+        "unresolved_events": 865,
+        "partial_fills_modeled": 0,
+        "stop_signals_without_a_fill": 388,
+        "settlement_benchmarks": 477,
+        "missing_entry_candle": 0,
+        "missing_trade_file": 0,
+        "depth_available_entry_rows": 0,
+        "sequence_numbers_present": 0,
+        "entry_quote_relations": {
+          "AT_TOUCH_QUEUE_UNKNOWN": 329,
+          "LIMIT_BELOW_DISPLAYED_BID": 536
+        },
+        "exit_quote_relations": {
+          "MARKETABLE_AT_CANDLE_CLOSE": 105,
+          "NO_EXIT_ORDER": 477,
+          "SELL_LIMIT_ABOVE_DISPLAYED_BID": 283
+        },
+        "entry_bid_minus_nominal_80": {
+          "0": 329,
+          "1": 193,
+          "2": 131,
+          "3": 94,
+          "4": 51,
+          "5": 38,
+          "6": 19,
+          "7": 3,
+          "8": 5,
+          "11": 2
+        },
+        "backfill_ingest_minus_candle_end_seconds": {
+          "min": 6690725,
+          "max": 27950997,
+          "meaning": "File ingest clock minus the candle end. Not a game-time receive lag."
+        }
+      },
+      "example_entry_bid_minus_nominal_cents": 1,
+      "example_entry_relation": "LIMIT_BELOW_DISPLAYED_BID",
+      "example_event_id": "KXNBAGAME-25OCT10BOSTOR",
+      "initial_contracts": 1500
+    }
+  },
+  "comparison_reason": "Every accepted event lacks depth, queue position, and sequence numbers. A maker fill is not established, so no execution-aware portfolio P&L is reported.",
+  "comparison_status": "NOT_COMPARABLE",
+  "configuration_id": "PLANNED_RISK_CAP3",
+  "coverage": {
+    "actual_order_records": "UNAVAILABLE",
+    "candle_files_indexed": {
+      "NBA": 2724,
+      "NCAAB": 10560
+    },
+    "candle_quote": "yes bid and yes ask open/high/low/close for the minute. No size.",
+    "candle_timestamp_precision": "unix second at the one-minute period end",
+    "exchange_trade_timestamps": "PRESENT_ON_PUBLIC_TRADES",
+    "feed_sequence_numbers": "UNAVAILABLE",
+    "game_time_local_receive_timestamps": "UNAVAILABLE",
+    "mlb_execution_ledger_not_used": true,
+    "order_book_deltas": "UNAVAILABLE",
+    "order_book_depth_snapshots": "UNAVAILABLE",
+    "point_in_time_order_book": "UNAVAILABLE",
+    "provenance": "historical_rest backfill. ingested_at is the collection clock, not a game-time receive time.",
+    "public_trades": "price, quantity_hundredths, taker side. No bid or ask resting at the print.",
+    "trade_files_indexed": {
+      "NBA": 2724,
+      "NCAAB": 10560
+    },
+    "trade_timestamp_precision": "millisecond datetime on the public-trade timestamp field"
+  },
+  "execution_aware_portfolio_pnl": "NOT_REPORTED",
+  "fees": {
+    "historical_book": "FEES_UNAVAILABLE",
+    "reason": "The quadratic series snapshot is dated 2026-09-03 and the cited PDF is effective 2026-07-07. Both are after the paired book's last entries. Maker zero is not applied to the historical book.",
+    "snapshot": {
+      "applies_to_historical_book": false,
+      "fee_multiplier": 1,
+      "fee_type": "quadratic",
+      "maker_fee_when_fee_type_is_quadratic": 0,
+      "pdf_effective": "2026-07-07",
+      "provenance": "docs/research/KALSHI_SPORTS_FEE_MODEL_2026_2027.md",
+      "series": [
+        "KXNBAGAME",
+        "KXNCAAMBGAME"
+      ],
+      "verified_on": "2026-09-03"
+    }
+  },
+  "generated_at": "2026-09-25T07:06:27+00:00",
+  "live_execution": "LIVE_EXECUTION_DISABLED",
+  "out_of_sample": false,
+  "page": "paired_execution_validation",
+  "prospective_collector": {
+    "credentials_read": false,
+    "note": "The specification is timestamped before any prospective capture. No capture is running.",
+    "observations_collected": 0,
+    "spec_frozen_at": "2026-09-25T07:06:27+00:00",
+    "status": "NOT_CONFIGURED",
+    "submits": false,
+    "websocket": "NOT_STARTED"
+  },
+  "reference_evidence": "CANDLE_PATH_NOT_FILL",
+  "separate_configuration_id": "CAPITAL_6PCT_CAP3",
+  "simulated_evidence": "SIMULATED_EXECUTION",
+  "spec_id": "PAIRED_EXECUTION_VALIDATION_V1",
+  "specification": {
+    "actual_evidence": "ACTUAL_FILL",
+    "canonical_net_return": "NOT_PUBLISHED",
+    "configuration_id": "PLANNED_RISK_CAP3",
+    "established": [
+      {
+        "name": "entry_signal",
+        "value": "Existing ledger timestamp. That second is the minute-close when the candle book marks entry."
+      },
+      {
+        "name": "earliest_order_submission",
+        "value": "The entry or stop signal timestamp. No order is eligible before that close is observable."
+      },
+      {
+        "name": "entry_side_and_price",
+        "value": "Buy YES at 80 cents. Nominal price. The candle close bid may differ."
+      },
+      {
+        "name": "post_only_intent",
+        "value": "The research description is a maker entry and a maker exit."
+      },
+      {
+        "name": "stop_detection",
+        "value": "First later minute whose yes bid close is at or below 40 or 65. Detection is not an order."
+      },
+      {
+        "name": "settlement",
+        "value": "Candle survivors are marked at 100 cents in the benchmark. That mark is not an exchange fill of our order."
+      },
+      {
+        "name": "taker_fallback",
+        "value": "NOT_AUTHORIZED"
+      },
+      {
+        "name": "opponent_hedge",
+        "value": "NOT_AUTHORIZED"
+      },
+      {
+        "name": "position_cap",
+        "value": "Three open slots across sports and slices. A pending entry occupies a slot."
+      }
+    ],
+    "execution_aware_portfolio_pnl": "NOT_REPORTED",
+    "informed_strategy_selection": true,
+    "live_execution": "LIVE_EXECUTION_DISABLED",
+    "max_open_positions": 3,
+    "missing": [
+      "Latency after the candle close. No game-time local receive clock is in the historical files.",
+      "Order lifetime and the cancellation clock.",
+      "Queue position. A trade at our price is not a fill.",
+      "Exit order price after the stop print: the stop level versus the observed bid.",
+      "Repricing.",
+      "Partial-fill priority across the two books. Accounting rules exist for a later replay. They are not applied to historical P&L.",
+      "A fee schedule whose effective dates cover every historical entry."
+    ],
+    "out_of_sample": false,
+    "reference_evidence": "CANDLE_PATH_NOT_FILL",
+    "separate_configuration_id": "CAPITAL_6PCT_CAP3",
+    "simulated_evidence": "SIMULATED_EXECUTION",
+    "spec_id": "PAIRED_EXECUTION_VALIDATION_V1"
+  },
+  "submits": false
+}

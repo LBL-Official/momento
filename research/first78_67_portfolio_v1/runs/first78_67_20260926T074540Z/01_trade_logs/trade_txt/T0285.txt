@@ -1,0 +1,10 @@
+trade T0285  NBA  Minnesota at San Antonio
+contract KXNBAGAME-26JAN17MINSAS-SAS  slice Q2
+signal 2026-01-17T17:51:00-08:00 PST  exit 2026-01-17T19:10:00-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 4545  principal_cents 354510
+entry_fee_cents 1365  exit_fee_cents 1759
+exit STOP at 67c  terminal yes
+gross_cents -49995  net_cents -53119
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

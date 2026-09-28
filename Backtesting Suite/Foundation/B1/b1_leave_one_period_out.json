@@ -1,0 +1,658 @@
+[
+  {
+    "id": "ENTRY_BAND_80_83|HORIZON_1M|score_bucket=MULTI_RUN&start_move_tertile=LOW",
+    "leave_one_month_out": [
+      {
+        "ev_cents": 4.078125,
+        "left_out_month": "2025-04",
+        "n_games": 128,
+        "remains_positive": true,
+        "total_pnl_usd": 36.54
+      },
+      {
+        "ev_cents": 4.057377049180328,
+        "left_out_month": "2025-05",
+        "n_games": 122,
+        "remains_positive": true,
+        "total_pnl_usd": 34.65
+      },
+      {
+        "ev_cents": 3.878260869565217,
+        "left_out_month": "2025-06",
+        "n_games": 115,
+        "remains_positive": true,
+        "total_pnl_usd": 31.22
+      },
+      {
+        "ev_cents": 4.547826086956522,
+        "left_out_month": "2025-07",
+        "n_games": 115,
+        "remains_positive": true,
+        "total_pnl_usd": 36.61
+      },
+      {
+        "ev_cents": 4.173076923076923,
+        "left_out_month": "2025-08",
+        "n_games": 104,
+        "remains_positive": true,
+        "total_pnl_usd": 30.38
+      },
+      {
+        "ev_cents": 3.9914529914529915,
+        "left_out_month": "2025-09",
+        "n_games": 117,
+        "remains_positive": true,
+        "total_pnl_usd": 32.69
+      },
+      {
+        "ev_cents": 4.0859375,
+        "left_out_month": "2025-10",
+        "n_games": 128,
+        "remains_positive": true,
+        "total_pnl_usd": 36.61
+      },
+      {
+        "ev_cents": 3.967741935483871,
+        "left_out_month": "2026-03",
+        "n_games": 124,
+        "remains_positive": true,
+        "total_pnl_usd": 34.44
+      },
+      {
+        "ev_cents": 4.070796460176991,
+        "left_out_month": "2026-04",
+        "n_games": 113,
+        "remains_positive": true,
+        "total_pnl_usd": 32.2
+      },
+      {
+        "ev_cents": 4.061946902654867,
+        "left_out_month": "2026-05",
+        "n_games": 113,
+        "remains_positive": true,
+        "total_pnl_usd": 32.13
+      },
+      {
+        "ev_cents": 3.954954954954955,
+        "left_out_month": "2026-06",
+        "n_games": 111,
+        "remains_positive": true,
+        "total_pnl_usd": 30.73
+      }
+    ]
+  },
+  {
+    "id": "ENTRY_BAND_80_83|HORIZON_1M|score_bucket=MULTI_RUN",
+    "leave_one_month_out": [
+      {
+        "ev_cents": 2.7041062801932365,
+        "left_out_month": "2025-04",
+        "n_games": 828,
+        "remains_positive": true,
+        "total_pnl_usd": 156.73
+      },
+      {
+        "ev_cents": 2.7846153846153845,
+        "left_out_month": "2025-05",
+        "n_games": 780,
+        "remains_positive": true,
+        "total_pnl_usd": 152.04
+      },
+      {
+        "ev_cents": 2.7196261682242993,
+        "left_out_month": "2025-06",
+        "n_games": 749,
+        "remains_positive": true,
+        "total_pnl_usd": 142.59
+      },
+      {
+        "ev_cents": 2.715984147952444,
+        "left_out_month": "2025-07",
+        "n_games": 757,
+        "remains_positive": true,
+        "total_pnl_usd": 143.92
+      },
+      {
+        "ev_cents": 2.702739726027397,
+        "left_out_month": "2025-08",
+        "n_games": 730,
+        "remains_positive": true,
+        "total_pnl_usd": 138.11
+      },
+      {
+        "ev_cents": 2.67828418230563,
+        "left_out_month": "2025-09",
+        "n_games": 746,
+        "remains_positive": true,
+        "total_pnl_usd": 139.86
+      },
+      {
+        "ev_cents": 2.704463208685163,
+        "left_out_month": "2025-10",
+        "n_games": 829,
+        "remains_positive": true,
+        "total_pnl_usd": 156.94
+      },
+      {
+        "ev_cents": 2.687192118226601,
+        "left_out_month": "2026-03",
+        "n_games": 812,
+        "remains_positive": true,
+        "total_pnl_usd": 152.74
+      },
+      {
+        "ev_cents": 2.751733703190014,
+        "left_out_month": "2026-04",
+        "n_games": 721,
+        "remains_positive": true,
+        "total_pnl_usd": 138.88
+      },
+      {
+        "ev_cents": 2.677731673582296,
+        "left_out_month": "2026-05",
+        "n_games": 723,
+        "remains_positive": true,
+        "total_pnl_usd": 135.52
+      },
+      {
+        "ev_cents": 2.6220689655172413,
+        "left_out_month": "2026-06",
+        "n_games": 725,
+        "remains_positive": true,
+        "total_pnl_usd": 133.07
+      }
+    ]
+  },
+  {
+    "id": "ENTRY_BAND_80_83|HORIZON_5M|score_bucket=MULTI_RUN",
+    "leave_one_month_out": [
+      {
+        "ev_cents": 3.323094425483504,
+        "left_out_month": "2025-04",
+        "n_games": 879,
+        "remains_positive": true,
+        "total_pnl_usd": 204.47
+      },
+      {
+        "ev_cents": 3.3839611178614826,
+        "left_out_month": "2025-05",
+        "n_games": 823,
+        "remains_positive": true,
+        "total_pnl_usd": 194.95
+      },
+      {
+        "ev_cents": 3.3249370277078087,
+        "left_out_month": "2025-06",
+        "n_games": 794,
+        "remains_positive": true,
+        "total_pnl_usd": 184.8
+      },
+      {
+        "ev_cents": 3.1937888198757762,
+        "left_out_month": "2025-07",
+        "n_games": 805,
+        "remains_positive": true,
+        "total_pnl_usd": 179.97
+      },
+      {
+        "ev_cents": 3.2461139896373057,
+        "left_out_month": "2025-08",
+        "n_games": 772,
+        "remains_positive": true,
+        "total_pnl_usd": 175.42
+      },
+      {
+        "ev_cents": 3.3601003764115434,
+        "left_out_month": "2025-09",
+        "n_games": 797,
+        "remains_positive": true,
+        "total_pnl_usd": 187.46
+      },
+      {
+        "ev_cents": 3.297175141242938,
+        "left_out_month": "2025-10",
+        "n_games": 885,
+        "remains_positive": true,
+        "total_pnl_usd": 204.26
+      },
+      {
+        "ev_cents": 3.2914746543778803,
+        "left_out_month": "2026-03",
+        "n_games": 868,
+        "remains_positive": true,
+        "total_pnl_usd": 199.99
+      },
+      {
+        "ev_cents": 3.3976833976833976,
+        "left_out_month": "2026-04",
+        "n_games": 777,
+        "remains_positive": true,
+        "total_pnl_usd": 184.8
+      },
+      {
+        "ev_cents": 3.268292682926829,
+        "left_out_month": "2026-05",
+        "n_games": 779,
+        "remains_positive": true,
+        "total_pnl_usd": 178.22
+      },
+      {
+        "ev_cents": 3.1856594110115237,
+        "left_out_month": "2026-06",
+        "n_games": 781,
+        "remains_positive": true,
+        "total_pnl_usd": 174.16
+      }
+    ]
+  },
+  {
+    "id": "ENTRY_BAND_80_83|HORIZON_30M|score_bucket=MULTI_RUN&start_move_tertile=LOW",
+    "leave_one_month_out": [
+      {
+        "ev_cents": 6.953846153846154,
+        "left_out_month": "2025-04",
+        "n_games": 130,
+        "remains_positive": true,
+        "total_pnl_usd": 63.28
+      },
+      {
+        "ev_cents": 7.048387096774194,
+        "left_out_month": "2025-05",
+        "n_games": 124,
+        "remains_positive": true,
+        "total_pnl_usd": 61.18
+      },
+      {
+        "ev_cents": 6.840336134453781,
+        "left_out_month": "2025-06",
+        "n_games": 119,
+        "remains_positive": true,
+        "total_pnl_usd": 56.98
+      },
+      {
+        "ev_cents": 7.7899159663865545,
+        "left_out_month": "2025-07",
+        "n_games": 119,
+        "remains_positive": true,
+        "total_pnl_usd": 64.89
+      },
+      {
+        "ev_cents": 6.833333333333333,
+        "left_out_month": "2025-08",
+        "n_games": 108,
+        "remains_positive": true,
+        "total_pnl_usd": 51.66
+      },
+      {
+        "ev_cents": 6.900826446280992,
+        "left_out_month": "2025-09",
+        "n_games": 121,
+        "remains_positive": true,
+        "total_pnl_usd": 58.45
+      },
+      {
+        "ev_cents": 7.015151515151516,
+        "left_out_month": "2025-10",
+        "n_games": 132,
+        "remains_positive": true,
+        "total_pnl_usd": 64.82
+      },
+      {
+        "ev_cents": 6.7890625,
+        "left_out_month": "2026-03",
+        "n_games": 128,
+        "remains_positive": true,
+        "total_pnl_usd": 60.83
+      },
+      {
+        "ev_cents": 6.6239316239316235,
+        "left_out_month": "2026-04",
+        "n_games": 117,
+        "remains_positive": true,
+        "total_pnl_usd": 54.25
+      },
+      {
+        "ev_cents": 6.700854700854701,
+        "left_out_month": "2026-05",
+        "n_games": 117,
+        "remains_positive": true,
+        "total_pnl_usd": 54.88
+      },
+      {
+        "ev_cents": 7.078260869565217,
+        "left_out_month": "2026-06",
+        "n_games": 115,
+        "remains_positive": true,
+        "total_pnl_usd": 56.98
+      }
+    ]
+  },
+  {
+    "id": "ENTRY_BAND_80_83|HORIZON_5M|score_bucket=MULTI_RUN&start_move_tertile=LOW",
+    "leave_one_month_out": [
+      {
+        "ev_cents": 5.430769230769231,
+        "left_out_month": "2025-04",
+        "n_games": 130,
+        "remains_positive": true,
+        "total_pnl_usd": 49.42
+      },
+      {
+        "ev_cents": 5.357723577235772,
+        "left_out_month": "2025-05",
+        "n_games": 123,
+        "remains_positive": true,
+        "total_pnl_usd": 46.13
+      },
+      {
+        "ev_cents": 5.059322033898305,
+        "left_out_month": "2025-06",
+        "n_games": 118,
+        "remains_positive": true,
+        "total_pnl_usd": 41.79
+      },
+      {
+        "ev_cents": 5.5508474576271185,
+        "left_out_month": "2025-07",
+        "n_games": 118,
+        "remains_positive": true,
+        "total_pnl_usd": 45.85
+      },
+      {
+        "ev_cents": 5.411214953271028,
+        "left_out_month": "2025-08",
+        "n_games": 107,
+        "remains_positive": true,
+        "total_pnl_usd": 40.53
+      },
+      {
+        "ev_cents": 5.341666666666667,
+        "left_out_month": "2025-09",
+        "n_games": 120,
+        "remains_positive": true,
+        "total_pnl_usd": 44.87
+      },
+      {
+        "ev_cents": 5.412213740458015,
+        "left_out_month": "2025-10",
+        "n_games": 131,
+        "remains_positive": true,
+        "total_pnl_usd": 49.63
+      },
+      {
+        "ev_cents": 5.283464566929134,
+        "left_out_month": "2026-03",
+        "n_games": 127,
+        "remains_positive": true,
+        "total_pnl_usd": 46.97
+      },
+      {
+        "ev_cents": 5.568965517241379,
+        "left_out_month": "2026-04",
+        "n_games": 116,
+        "remains_positive": true,
+        "total_pnl_usd": 45.22
+      },
+      {
+        "ev_cents": 5.301724137931035,
+        "left_out_month": "2026-05",
+        "n_games": 116,
+        "remains_positive": true,
+        "total_pnl_usd": 43.05
+      },
+      {
+        "ev_cents": 5.543859649122807,
+        "left_out_month": "2026-06",
+        "n_games": 114,
+        "remains_positive": true,
+        "total_pnl_usd": 44.24
+      }
+    ]
+  },
+  {
+    "id": "ENTRY_81|HOLD_TO_SETTLEMENT|personality=CHOPPY&vol_5m_tertile=MID",
+    "leave_one_month_out": [
+      {
+        "ev_cents": 3.375,
+        "left_out_month": "2025-04",
+        "n_games": 352,
+        "remains_positive": true,
+        "total_pnl_usd": 83.16
+      },
+      {
+        "ev_cents": 4.625,
+        "left_out_month": "2025-05",
+        "n_games": 320,
+        "remains_positive": true,
+        "total_pnl_usd": 103.6
+      },
+      {
+        "ev_cents": 5.031746031746032,
+        "left_out_month": "2025-06",
+        "n_games": 315,
+        "remains_positive": true,
+        "total_pnl_usd": 110.95
+      },
+      {
+        "ev_cents": 2.3865814696485623,
+        "left_out_month": "2025-07",
+        "n_games": 313,
+        "remains_positive": true,
+        "total_pnl_usd": 52.29
+      },
+      {
+        "ev_cents": 3.2465753424657535,
+        "left_out_month": "2025-08",
+        "n_games": 292,
+        "remains_positive": true,
+        "total_pnl_usd": 66.36
+      },
+      {
+        "ev_cents": 3.9056603773584904,
+        "left_out_month": "2025-09",
+        "n_games": 318,
+        "remains_positive": true,
+        "total_pnl_usd": 86.94
+      },
+      {
+        "ev_cents": 3.788732394366197,
+        "left_out_month": "2025-10",
+        "n_games": 355,
+        "remains_positive": true,
+        "total_pnl_usd": 94.15
+      },
+      {
+        "ev_cents": 3.1807909604519775,
+        "left_out_month": "2026-03",
+        "n_games": 354,
+        "remains_positive": true,
+        "total_pnl_usd": 78.82
+      },
+      {
+        "ev_cents": 3.2767295597484276,
+        "left_out_month": "2026-04",
+        "n_games": 318,
+        "remains_positive": true,
+        "total_pnl_usd": 72.94
+      },
+      {
+        "ev_cents": 2.018867924528302,
+        "left_out_month": "2026-05",
+        "n_games": 318,
+        "remains_positive": true,
+        "total_pnl_usd": 44.94
+      },
+      {
+        "ev_cents": 2.076923076923077,
+        "left_out_month": "2026-06",
+        "n_games": 325,
+        "remains_positive": true,
+        "total_pnl_usd": 47.25
+      }
+    ]
+  },
+  {
+    "id": "ENTRY_BAND_80_83|HORIZON_5M|lead_regime=LEAD",
+    "leave_one_month_out": [
+      {
+        "ev_cents": 1.8311965811965811,
+        "left_out_month": "2025-04",
+        "n_games": 1872,
+        "remains_positive": true,
+        "total_pnl_usd": 239.96
+      },
+      {
+        "ev_cents": 1.8672768878718535,
+        "left_out_month": "2025-05",
+        "n_games": 1748,
+        "remains_positive": true,
+        "total_pnl_usd": 228.48
+      },
+      {
+        "ev_cents": 1.7976401179941004,
+        "left_out_month": "2025-06",
+        "n_games": 1695,
+        "remains_positive": true,
+        "total_pnl_usd": 213.29
+      },
+      {
+        "ev_cents": 1.749563191613279,
+        "left_out_month": "2025-07",
+        "n_games": 1717,
+        "remains_positive": true,
+        "total_pnl_usd": 210.28
+      },
+      {
+        "ev_cents": 1.6862980769230769,
+        "left_out_month": "2025-08",
+        "n_games": 1664,
+        "remains_positive": true,
+        "total_pnl_usd": 196.42
+      },
+      {
+        "ev_cents": 1.816519174041298,
+        "left_out_month": "2025-09",
+        "n_games": 1695,
+        "remains_positive": true,
+        "total_pnl_usd": 215.53
+      },
+      {
+        "ev_cents": 1.7960805084745763,
+        "left_out_month": "2025-10",
+        "n_games": 1888,
+        "remains_positive": true,
+        "total_pnl_usd": 237.37
+      },
+      {
+        "ev_cents": 1.7575431034482758,
+        "left_out_month": "2026-03",
+        "n_games": 1856,
+        "remains_positive": true,
+        "total_pnl_usd": 228.34
+      },
+      {
+        "ev_cents": 1.828002414001207,
+        "left_out_month": "2026-04",
+        "n_games": 1657,
+        "remains_positive": true,
+        "total_pnl_usd": 212.03
+      },
+      {
+        "ev_cents": 1.7735042735042734,
+        "left_out_month": "2026-05",
+        "n_games": 1638,
+        "remains_positive": true,
+        "total_pnl_usd": 203.35
+      },
+      {
+        "ev_cents": 1.6517857142857142,
+        "left_out_month": "2026-06",
+        "n_games": 1680,
+        "remains_positive": true,
+        "total_pnl_usd": 194.25
+      }
+    ]
+  },
+  {
+    "id": "ENTRY_BAND_80_83|HORIZON_15M|score_bucket=MULTI_RUN&start_move_tertile=LOW",
+    "leave_one_month_out": [
+      {
+        "ev_cents": 6.8538461538461535,
+        "left_out_month": "2025-04",
+        "n_games": 130,
+        "remains_positive": true,
+        "total_pnl_usd": 62.37
+      },
+      {
+        "ev_cents": 6.911290322580645,
+        "left_out_month": "2025-05",
+        "n_games": 124,
+        "remains_positive": true,
+        "total_pnl_usd": 59.99
+      },
+      {
+        "ev_cents": 6.420168067226891,
+        "left_out_month": "2025-06",
+        "n_games": 119,
+        "remains_positive": true,
+        "total_pnl_usd": 53.48
+      },
+      {
+        "ev_cents": 7.025210084033613,
+        "left_out_month": "2025-07",
+        "n_games": 119,
+        "remains_positive": true,
+        "total_pnl_usd": 58.52
+      },
+      {
+        "ev_cents": 6.555555555555555,
+        "left_out_month": "2025-08",
+        "n_games": 108,
+        "remains_positive": true,
+        "total_pnl_usd": 49.56
+      },
+      {
+        "ev_cents": 6.68595041322314,
+        "left_out_month": "2025-09",
+        "n_games": 121,
+        "remains_positive": true,
+        "total_pnl_usd": 56.63
+      },
+      {
+        "ev_cents": 6.848484848484849,
+        "left_out_month": "2025-10",
+        "n_games": 132,
+        "remains_positive": true,
+        "total_pnl_usd": 63.28
+      },
+      {
+        "ev_cents": 6.65625,
+        "left_out_month": "2026-03",
+        "n_games": 128,
+        "remains_positive": true,
+        "total_pnl_usd": 59.64
+      },
+      {
+        "ev_cents": 6.735042735042735,
+        "left_out_month": "2026-04",
+        "n_games": 117,
+        "remains_positive": true,
+        "total_pnl_usd": 55.16
+      },
+      {
+        "ev_cents": 6.589743589743589,
+        "left_out_month": "2026-05",
+        "n_games": 117,
+        "remains_positive": true,
+        "total_pnl_usd": 53.97
+      },
+      {
+        "ev_cents": 7.217391304347826,
+        "left_out_month": "2026-06",
+        "n_games": 115,
+        "remains_positive": true,
+        "total_pnl_usd": 58.1
+      }
+    ]
+  }
+]

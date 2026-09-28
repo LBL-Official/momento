@@ -1,0 +1,137 @@
+---
+description: Financial safety and live trading protection rules
+alwaysApply: true
+---
+
+# Trading Safety Rules
+
+This system can place real financial orders.
+
+Treat every order submission as a potentially irreversible external action.
+
+---
+
+## Trading Modes
+
+Momento MUST support:
+
+1. REPLAY
+2. PAPER
+3. LIVE
+
+Default mode MUST NOT be LIVE.
+
+Tests MUST NOT require live credentials.
+
+Paper mode MUST NOT be capable of accidentally submitting live orders.
+
+Live execution must require explicit configuration.
+
+---
+
+## Live Trading Gate
+
+Live trading requires explicit confirmation through configuration.
+
+Do not infer live mode from:
+- presence of API keys
+- production hostname
+- environment name
+- command-line omission
+
+Require explicit live enablement.
+
+---
+
+## Kill Switch
+
+The system must support an immediate trading kill switch.
+
+Kill switch behavior:
+
+- prevent new entries
+- prevent new exposure
+- cancel eligible resting entry orders
+- preserve position-management functionality where appropriate
+- surface clear state in dashboard
+- record the event
+
+Never silently disable the kill switch.
+
+---
+
+## Position Limits
+
+Position limits must be enforced by the Risk Decision Engine.
+
+Never rely on strategy code to enforce them.
+
+Risk checks should include, where applicable:
+
+- maximum position size
+- maximum portfolio exposure
+- maximum sport exposure
+- maximum market exposure
+- maximum daily trades
+- maximum daily loss
+- maximum open positions
+- duplicate-market prevention
+- duplicate-signal prevention
+- stale market prevention
+- trading-hours restrictions
+
+---
+
+## Order Safety
+
+Every order must have:
+
+- client-generated identifier
+- market identifier
+- side
+- price
+- quantity
+- order type
+- strategy identifier
+- reason
+- timestamp
+- risk decision identifier
+
+Orders must be idempotent.
+
+Retries must not accidentally create duplicate exposure.
+
+---
+
+## Reconciliation
+
+If the system does not know whether an order was accepted, do not blindly retry.
+
+First reconcile with the exchange.
+
+Examples:
+
+HTTP timeout:
+    UNKNOWN
+
+not:
+
+    FAILED
+
+The correct recovery is:
+
+UNKNOWN
+    ↓
+RECONCILE
+    ↓
+FOUND / NOT FOUND / AMBIGUOUS
+
+---
+
+## Failure Policy
+
+When uncertain about trading state:
+
+STOP NEW EXPOSURE.
+
+Prefer missing an opportunity over creating unintended exposure.

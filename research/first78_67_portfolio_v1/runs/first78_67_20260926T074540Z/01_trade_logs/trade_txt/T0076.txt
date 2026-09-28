@@ -1,0 +1,10 @@
+trade T0076  NCAAB  North Carolina St. at Texas
+contract KXNCAAMBGAME-25NOV26NCSTTEX-TEX  slice H1_2
+signal 2025-11-26T19:17:00-08:00 PST  exit 2025-11-26T19:49:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 2309  principal_cents 180102
+entry_fee_cents 694  exit_fee_cents 894
+exit STOP at 67c  terminal yes
+gross_cents -25399  net_cents -26987
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

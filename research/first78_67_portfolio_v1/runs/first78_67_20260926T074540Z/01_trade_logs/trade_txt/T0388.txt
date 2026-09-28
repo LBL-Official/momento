@@ -1,0 +1,10 @@
+trade T0388  NBA  Los Angeles C at Sacramento
+contract KXNBAGAME-26FEB06LACSAC-LAC  slice Q3
+signal 2026-02-06T20:49:00-08:00 PST  exit 2026-02-06T20:51:00-08:00 PST
+assumed entry 78c  observed close 83c  overshoot 5c
+contracts 6592  principal_cents 514176
+entry_fee_cents 1980  exit_fee_cents 2551
+exit STOP at 67c  terminal yes
+gross_cents -72512  net_cents -77043
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

@@ -1,0 +1,45 @@
+"""SuperASI version tokens. Research only."""
+
+PACKAGE_SCHEMA = "superasi_package_v1"
+CODE_VERSION = "superasi_v1.0.0"
+SEMANTICS_VERSION = "1.0.0"
+
+CAVEATS = (
+    "LIVE EXECUTION = FALSE",
+    "CANDLE PATH ≠ ACTUAL FILL",
+    "LEDGER PRICE ≠ PROVEN FILL",
+    "FEE MODEL = ESTIMATED",
+    "MEASUREMENT ≠ EDGE",
+    "DECOMPOSITION ≠ SIGNAL",
+    "S ≠ terminal p",
+    "path loss ≠ terminal loss",
+)
+
+SOURCES = ("roller_frozen", "roller_generic", "seed_asked_six")
+PRICE_BASES = ("YES_BID_CLOSE", "LAST_TRADE_PRINT", "OTHER")
+METRIC_CLASSES = (
+    "OBSERVED",
+    "DERIVED",
+    "HYPOTHETICAL",
+    "MODEL-ASSUMED",
+    "UNAVAILABLE",
+    "DATA_REQUIRED",
+)
+
+FILL_ALGORITHMS = (
+    "LEDGER_RULE",
+    "FIRST_BARRIER_CLOSE",
+    "PRINTED_OR_CLOSE",
+    "PLUS_1M",
+    "PLUS_5M",
+    "MIN_5M",
+    "PLANNING_2_5",
+    "FAST_GAP_TAKER",
+)
+
+FEE_SCENARIOS = ("CURRENT", "MODERATE", "CONSERVATIVE")
+DEFAULT_FILL = "FIRST_BARRIER_CLOSE"
+DEFAULT_FEE = "CURRENT"
+DEFAULT_ADVERSE_P = "73"
+WINDOW_RADIUS = 5
+BOOTSTRAP_FORBIDDEN = True

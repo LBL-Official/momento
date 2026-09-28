@@ -1,0 +1,252 @@
+.vital-desk {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.vital-hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.85rem;
+}
+
+.vital-card {
+  border: 1px solid color-mix(in srgb, var(--mm-line, #2a3344) 80%, transparent);
+  background: color-mix(in srgb, var(--mm-panel, #10151d) 92%, transparent);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+}
+
+.vital-card dt {
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--mm-muted, #8b95a7);
+}
+
+.vital-card dd {
+  margin: 0.35rem 0 0;
+  font-size: 1.35rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.vital-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: end;
+}
+
+.vital-toolbar label {
+  display: grid;
+  gap: 0.25rem;
+  font-size: 0.78rem;
+}
+
+.vital-bot-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.vital-bot-list button {
+  width: 100%;
+  text-align: left;
+  display: grid;
+  gap: 0.2rem;
+}
+
+.vital-bot-meta {
+  color: var(--mm-muted, #8b95a7);
+  font-size: 0.82rem;
+}
+
+.vital-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 1rem;
+}
+
+@media (max-width: 920px) {
+  .vital-split {
+    grid-template-columns: 1fr;
+  }
+}
+
+.vital-chip {
+  display: inline-block;
+  margin-right: 0.4rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.vital-frame h2 {
+  margin: 0 0 0.4rem;
+  font-size: 1.05rem;
+}
+
+.vital-frame p {
+  margin: 0.25rem 0;
+}
+
+.vital-param-table td,
+.vital-param-table th {
+  font-size: 0.82rem;
+}
+
+.vital-journal {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  max-height: 22rem;
+  overflow: auto;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.vital-journal li {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.vital-shell .ws-header {
+  gap: 0.75rem;
+}
+
+.vital-desk-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.vital-desk-head .v2-page-title {
+  margin: 0.15rem 0 0;
+}
+
+.vital-row-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.vital-mini-dl {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.55rem 0.85rem;
+  margin: 0 0 0.85rem;
+}
+
+.vital-mini-dl dt {
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--mm-muted, #8b95a7);
+}
+
+.vital-mini-dl dd {
+  margin: 0.15rem 0 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.vital-blotter,
+.vital-bankroll-table {
+  font-variant-numeric: tabular-nums;
+  table-layout: auto;
+}
+
+.vital-blotter th,
+.vital-blotter td,
+.vital-bankroll-table th,
+.vital-bankroll-table td {
+  white-space: nowrap;
+  vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 16rem;
+}
+
+.vital-blotter td.vital-clip,
+.vital-bankroll-table td.vital-clip {
+  max-width: 22rem;
+}
+
+.stax-table-wrap {
+  overflow-x: auto;
+}
+
+.vital-blotter tr.is-selected td {
+  background: color-mix(in srgb, var(--mm-line, #2a3344) 35%, transparent);
+}
+
+.vital-tone {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: 0.03em;
+}
+
+.vital-tone.is-live {
+  color: #7dffa6;
+}
+
+.vital-tone.is-demo {
+  color: #7ec8ff;
+}
+
+.vital-tone.is-risk {
+  color: #ff8b8b;
+}
+
+.vital-tone.is-unread {
+  color: var(--mm-muted, #8b95a7);
+}
+
+.vital-tone.is-idle {
+  color: #e6c36a;
+}
+
+.vital-integration-proof h2,
+.vital-live-service h2 {
+  margin: 0.15rem 0 0;
+  font-size: 1.05rem;
+}
+
+.vital-live-service label {
+  display: grid;
+  gap: 0.25rem;
+  margin: 0.75rem 0 0.5rem;
+  font-size: 0.78rem;
+}
+
+.vital-live-obs .vital-journal {
+  margin: 0.5rem 0 0;
+  padding: 0.6rem 0.75rem;
+  max-height: 14rem;
+  overflow: auto;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  white-space: pre-wrap;
+  background: rgba(0, 0, 0, 0.22);
+  border-radius: 6px;
+}
+
+.vital-book-card .vital-book-hero {
+  margin: 0.35rem 0 0.55rem;
+  font-size: 1.45rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.vital-trade-detail {
+  margin-top: 0.75rem;
+}
+
+@media (max-width: 920px) {
+  .vital-desk-head {
+    align-items: start;
+  }
+}

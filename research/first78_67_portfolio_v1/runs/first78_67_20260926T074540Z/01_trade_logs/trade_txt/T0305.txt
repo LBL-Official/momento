@@ -1,0 +1,10 @@
+trade T0305  NBA  Toronto at Sacramento
+contract KXNBAGAME-26JAN21TORSAC-TOR  slice Q3
+signal 2026-01-21T20:51:00-08:00 PST  exit 2026-01-21T21:44:54-08:00 PST
+assumed entry 78c  observed close 82c  overshoot 4c
+contracts 5012  principal_cents 390936
+entry_fee_cents 1506  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 110264  net_cents 108758
+strategy_result POSITIVE  net_r 1.856635596981802041722148247
+Assumed fill. Not a maker fill. Not live P&L.

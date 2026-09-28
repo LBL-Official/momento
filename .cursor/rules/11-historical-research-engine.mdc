@@ -1,0 +1,101 @@
+# Historical Event–Market Research Engine
+
+## Scope
+
+This rule governs **research / backtesting platform** work only.
+It does **not** authorize production trading changes.
+
+Authoritative roadmap:
+`docs/research/BACKTEST_ENGINE_WATERFALL.md`
+
+CEO/CTO contract:
+`docs/research/BACKTEST_ENGINE_SYSTEM_SPECIFICATION.md`
+
+W/A/S registry:
+`docs/research/BACKTEST_ENGINE_WATERFALL_REGISTRY.csv`
+
+Current state:
+`docs/research/BACKTEST_ENGINE_CURRENT_STATE.md`
+
+ADRs:
+`docs/research/architecture-decisions/`
+
+Canonical plan (blueprint):
+`docs/research/HISTORICAL_ENGINE_DEVELOPMENT_PLAN.md`
+
+Reset notice:
+`docs/research/BACKTESTING_ENGINE_RESET.md`
+
+Waterfall 0 recon (complete):
+`docs/research/backtesting_rebuild/`
+
+---
+
+## North star
+
+Build a deterministic historical engine that reconstructs, for any MLB game time `t`:
+
+game state + prior events + Kalshi market/book + path to that market state +
+event-derived state + what FIRST01 would have done + what happened next +
+what could have predicted the outcome.
+
+Primary research objects: **`StateTransition`** (atomic) inside
+**`GameMarketEpisode`** (container). A trade is downstream.
+
+---
+
+## Absolute rules
+
+1. **Do not rebuild/extend** the legacy candle FIRST01 backtester as the platform.
+   Treat `momento-research-backtest` candle validation as LEGACY_V1 reference only.
+2. **Do not skip waterfalls / phases.** Prove each layer before the next.
+3. **Do not tune FIRST01** (or invent entry/stop parameters) before path/state truth exists.
+4. **Do not fabricate** L2, mid, fees, or exact sync. Mark observability and MODELED.
+5. **Do not rewrite** immutable raw history. New parsers → new normalized versions.
+6. **Do not auto-mutate production** from research. Governance pipeline required.
+7. **Do not change** live 80/81/83/89/50% as part of research engine work.
+8. Internal **`GameId`** is canonical; tickers are aliases.
+
+---
+
+## Current authorized work
+
+Only the **exact W/A/S** explicitly requested by the user.
+
+W0 complete. W1 **ACCEPTED / CLOSED** (CEO 2026-08-26). W2 engine COMPLETE
+(observed window). W3 **ACCEPTED / CLOSED** (CTO 2026-08-26). W4 market
+reconstruction **COMPLETE** (price-path foundation; 238 TRADES_ONLY paths).
+CTO-W5 event↔market sync **IMPLEMENTED** (PBP ∩ MATCHED trades; no invented L2).
+CTO-W6 canonical MLB state engine **IMPLEMENTED**. CTO-W7 EventMarketPath
+**IMPLEMENTED**. CTO-W8 FIRST01 observational replay **IMPLEMENTED**.
+B1 price-dissection features **IMPLEMENTED** (1.1.0 + A1 buckets).
+Authorized next: **STOP**. Do not start W9. Do not discard
+TRADES_ONLY. Do not invent L2. DATA-INGEST remains local-cron; do not deploy
+AWS ingest.
+
+After every S-step: test, validate, document, update waterfall + registry +
+current-state + completion record, identify next W/A/S, **STOP**.
+
+Forbidden by default: skip-ahead, FIRST01 retune, Phase 14+ plugin tuning,
+Phase 17+ ML, Phase 20 hyperparameterization, production bridge, other-sport
+adapters, fabricating L2/PBP/2025 days.
+
+---
+
+## FIRST01 role
+
+FIRST01 is a **strategy plugin** with a frozen baseline control:
+
+- one opportunity per GameId
+- sticky first_80 → 81 confirm → maker 80–83
+- GAME_LOCK ≥ 89
+- 50% entry-VWAP stop
+
+The data/state/path layers must not hard-code FIRST01.
+
+---
+
+## Production safety
+
+No production POST/DELETE/CANCEL/AMEND/order/restart from research tasks unless
+the user explicitly requests a separate, gated production change.

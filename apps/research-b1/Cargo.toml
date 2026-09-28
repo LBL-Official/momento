@@ -1,0 +1,23 @@
+[package]
+name = "momento-research-b1"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "B1 feature-extraction CLI. Research only. No Kalshi network."
+
+[[bin]]
+name = "momento-research-b1"
+path = "src/main.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+chrono.workspace = true
+serde_json.workspace = true
+momento-research-features = { path = "../../crates/research-features" }
+momento-research-engine = { path = "../../crates/research-engine" }
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.20", features = ["fmt", "env-filter"] }

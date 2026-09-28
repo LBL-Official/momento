@@ -1,0 +1,10 @@
+trade T0023  NCAAB  Washington at Baylor
+contract KXNCAAMBGAME-25NOV09WASHBAY-BAY  slice H1_2
+signal 2025-11-09T18:06:00-08:00 PST  exit 2025-11-09T20:45:36-08:00 PST
+assumed entry 78c  observed close 81c  overshoot 3c
+contracts 1823  principal_cents 142194
+entry_fee_cents 548  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 40106  net_cents 39558
+strategy_result POSITIVE  net_r 1.856572957244098183695499132
+Assumed fill. Not a maker fill. Not live P&L.

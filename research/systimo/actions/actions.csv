@@ -1,0 +1,7 @@
+action_id,action_type,target_system,target_resource,reason,source_answer_id,dry_run_supported,approval_required,risk_class,handler,status
+act_refresh,REFRESH_CONNECTION,systimo,connections,allowlisted refresh,,true,false,LOW,REFRESH_CONNECTION,ALLOWLISTED
+act_recheck,RECHECK_HEALTH,systimo,health,allowlisted recheck,,true,false,LOW,RECHECK_HEALTH,ALLOWLISTED
+act_rebuild,REBUILD_QUERY_INDEX,systimo,queries,allowlisted rebuild,,true,false,LOW,REBUILD_QUERY_INDEX,ALLOWLISTED
+act_tree,REGENERATE_TREE,systimo,graph,allowlisted regenerate tree,,true,false,LOW,REGENERATE_TREE,ALLOWLISTED
+act_export,EXPORT_ARTIFACT,systimo,artifacts,allowlisted export,,true,false,LOW,EXPORT_ARTIFACT,ALLOWLISTED
+act_validate,VALIDATE_SCHEMA,systimo,registry,allowlisted validate,,true,false,LOW,VALIDATE_SCHEMA,ALLOWLISTED

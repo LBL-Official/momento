@@ -1,0 +1,10 @@
+trade T0643  NBA  Portland at Los Angeles C
+contract KXNBAGAME-26MAR31PORLAC-POR  slice Q2
+signal 2026-03-31T21:08:00-07:00 PDT  exit 2026-03-31T21:32:00-07:00 PDT
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 18036  principal_cents 1406808
+entry_fee_cents 5417  exit_fee_cents 6979
+exit STOP at 67c  terminal yes
+gross_cents -198396  net_cents -210792
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

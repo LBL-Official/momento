@@ -1,0 +1,17 @@
+{
+  "catalog": {
+    "detail": null,
+    "status": "CONFIRMED"
+  },
+  "fills_added": 0,
+  "fills_updated": 0,
+  "host": {
+    "detail": "host live-runtime.json confirmed present; local fill body unread",
+    "fill_body": "OBSERVATION_UNAVAILABLE",
+    "status": "CONFIRMED"
+  },
+  "trades_closed": 0,
+  "trades_opened": 0,
+  "trades_updated": 0,
+  "ts": "2026-09-19T17:50:19Z"
+}

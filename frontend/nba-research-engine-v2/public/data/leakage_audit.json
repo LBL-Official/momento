@@ -1,0 +1,13 @@
+{
+  "written_utc": "2026-09-01T19:09:10.106197+00:00",
+  "pass": true,
+  "fails": [],
+  "n_rows": 1230,
+  "targets": [
+    "SURVIVE_40",
+    "Y_40_CLOSE",
+    "Y_40_WICK",
+    "expiration_result_yes",
+    "time_to_40_minutes"
+  ]
+}

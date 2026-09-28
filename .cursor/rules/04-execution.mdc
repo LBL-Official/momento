@@ -1,0 +1,121 @@
+---
+description: Order execution and Kalshi integration rules
+globs: "{**/execution/**,**/kalshi/**,**/order*.rs}"
+alwaysApply: false
+---
+
+# Execution Engine
+
+The Execution Engine is responsible for translating approved trading intents
+into exchange orders.
+
+It is NOT responsible for deciding whether a strategy should trade.
+
+---
+
+## Execution Responsibilities
+
+Execution handles:
+
+- order submission
+- order acknowledgement
+- order status
+- fills
+- partial fills
+- cancellations
+- replacement orders
+- retry policy
+- exchange errors
+- rate limits
+- connection state
+- reconciliation
+
+---
+
+## Maker-Only Entry
+
+If a strategy/risk configuration specifies maker-only entry:
+
+The execution engine MUST NOT:
+- cross the spread
+- submit a market order
+- modify the order to take liquidity
+- chase the price
+
+A maker-only order must remain a resting order at the approved price.
+
+If the order cannot be executed according to those constraints:
+
+DO NOTHING.
+
+---
+
+## Partial Fills
+
+Partial fills are first-class events.
+
+Never treat:
+
+requested quantity
+
+as:
+
+filled quantity.
+
+Maintain:
+
+requested
+open
+filled
+cancelled
+remaining
+
+separately.
+
+---
+
+## Order Lifecycle
+
+Model order state explicitly.
+
+Example:
+
+NEW
+SUBMITTING
+ACKNOWLEDGED
+WORKING
+PARTIALLY_FILLED
+FILLED
+CANCEL_PENDING
+CANCELLED
+REJECTED
+EXPIRED
+UNKNOWN
+
+Do not collapse these states.
+
+---
+
+## External State
+
+Exchange state is authoritative for actual fills and positions.
+
+Local state is a projection.
+
+Reconcile after uncertainty.
+
+---
+
+## Latency
+
+Optimize only after correctness.
+
+Measure:
+- event timestamp
+- local receipt timestamp
+- decision timestamp
+- submission timestamp
+- acknowledgement timestamp
+- fill timestamp
+
+Do not claim "low latency" without measurements.

@@ -1,0 +1,21 @@
+[package]
+name = "momento-research-w3"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "CTO-W3 reconstruction CLI. Research only. No live trading."
+
+[[bin]]
+name = "momento-research-w3"
+path = "src/main.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+chrono.workspace = true
+momento-research-reconstruction = { path = "../../crates/research-reconstruction" }
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.20", features = ["fmt", "env-filter"] }

@@ -1,0 +1,32 @@
+schema: ballhog.policy.v1
+version: first78_v1
+live_execution: false
+execution_enabled: false
+entry_cents: 78
+lock_gain_cents: 22
+research_unit_qty: 1
+default_q_dir: 1
+max_q_dir: 500
+price_grid:
+  - 62
+  - 63
+  - 64
+  - 65
+  - 66
+  - 67
+  - 68
+  - 69
+  - 70
+  - 71
+  - 72
+positive_robust_portfolio_ev: true
+execution_assumption: THEORETICAL
+risk_metric: T67_RISK_PROXY
+timing:
+  retain_requires_robust_unhedged_positive: true
+  retain_requires_nonnegative_alpha_delta: true
+  retain_requires_observed_support: true
+  watch_if_low_support: true
+  begin_reduction_if_alpha_delta_negative: true
+  neutralize_if_robust_unhedged_nonpositive: true
+note: Every threshold is explicit. No lambda. 62-72 is a counterfactual price grid around the 67 stop, not a live trigger.

@@ -1,0 +1,44 @@
+---
+description: Momento systems roadmap — Oct 1 dual-market ingest first; later programs stay later.
+alwaysApply: true
+---
+
+# Momento systems roadmap
+
+Canonical tracker: `docs/architecture/MOMENTO_SYSTEMS_ROADMAP.md`.
+Repo is source of truth. Notion is a readable copy.
+
+October 1, 2026 = NBA/NCAAB **dual-market ingest + Autoingest**.
+Not Terminito. Not RV HFT. Not agentic traders. Not “everything finished.”
+
+```text
+Vital + ROLLER (now)
+  → Polymarket 1m LAST_TRADE_PRINT (before Oct 1)
+  → Autoingest + Autojest (around Oct 1)
+  → Kalshi + Poly + PBP intersection (explicit PIT op, later)
+  → ROLLER 1m realism → SuperASI A/B correction
+  → Correlation → ITI Robust Optimized
+  → Terminito X/Y/MCS → Z → Fluctuations
+  → same-game RV (Todd Klein) → long-term hold EV
+  → Cloud Momento → Agentic traders (Vital only)
+```
+
+## Naming
+
+- Autoingest = acquisition + validation program.
+- Autojest = its dashboard. New Vite surface. Not Jump. Not Vital.
+
+## Do not
+
+- Start warehouse Phase 21, Confirm & Run cutover, or W9.
+- Change live FIRST01 / 80/81/83/89.
+- Treat Polymarket as Kalshi TOB or merge venues into one quote.
+- Invent missing minutes, OHLC, bid/ask, L2, fills, or PIT.
+- Treat candle path as a fill. Missing is never `$0`.
+- Build Terminito / Fluctuations / RV on assumed sync.
+- Claim PBP↔candle PIT done (today `OPERATION_REQUIRED`).
+- Dump the local filesystem into a cloud bucket.
+- Give agents live bankroll before research → paper → limited live.
+
+Joint Kalshi + Polymarket in one question stays `OPERATION_REQUIRED`
+until program 4 ships as a named operation.

@@ -1,0 +1,10 @@
+trade T0638  NBA  Phoenix at Orlando
+contract KXNBAGAME-26MAR31PHXORL-ORL  slice Q2
+signal 2026-03-31T17:15:00-07:00 PDT  exit 2026-03-31T17:48:00-07:00 PDT
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 16171  principal_cents 1261338
+entry_fee_cents 4857  exit_fee_cents 6257
+exit STOP at 67c  terminal yes
+gross_cents -177881  net_cents -188995
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

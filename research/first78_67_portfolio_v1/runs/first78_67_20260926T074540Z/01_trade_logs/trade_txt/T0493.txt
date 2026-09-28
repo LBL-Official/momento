@@ -1,0 +1,10 @@
+trade T0493  NCAAB  Vanderbilt at Kentucky
+contract KXNCAAMBGAME-26FEB28VANUK-UK  slice H1_2
+signal 2026-02-28T11:26:00-08:00 PST  exit 2026-02-28T14:10:27-08:00 PST
+assumed entry 78c  observed close 82c  overshoot 4c
+contracts 9461  principal_cents 737958
+entry_fee_cents 2842  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 208142  net_cents 205300
+strategy_result POSITIVE  net_r 1.856675167760956463544775444
+Assumed fill. Not a maker fill. Not live P&L.

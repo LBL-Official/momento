@@ -1,0 +1,162 @@
+[
+  {
+    "condition": "p_start_30_34=YES",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 4,
+    "train_ev": 12.454545454545455,
+    "val_ev": 2.7142857142857144
+  },
+  {
+    "condition": "move_fine=0_5",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 1,
+    "train_ev": 2.7142857142857144,
+    "val_ev": null
+  },
+  {
+    "condition": "move_fine=5_10",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 7,
+    "train_ev": 4.23404255319149,
+    "val_ev": -27.444444444444443
+  },
+  {
+    "condition": "last_delta_band=GE_10",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 3,
+    "train_ev": -6.4375,
+    "val_ev": null
+  },
+  {
+    "condition": "start_price_band=40_49&reversal_tertile=MID",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 1,
+    "train_ev": -0.7215189873417721,
+    "val_ev": null
+  },
+  {
+    "condition": "start_price_band=50_59&vol_15m_tertile=HIGH",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 6,
+    "train_ev": -2.0476190476190474,
+    "val_ev": 17.0
+  },
+  {
+    "condition": "start_price_band=60_69&path_eff_tertile=HIGH",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 1,
+    "train_ev": -2.2660550458715596,
+    "val_ev": null
+  },
+  {
+    "condition": "start_price_band=60_69&path_eff_tertile=MID",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 7,
+    "train_ev": -4.276595744680851,
+    "val_ev": 9.307692307692308
+  },
+  {
+    "condition": "start_price_band=60_69&reversal_tertile=MID",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 1,
+    "train_ev": -5.857142857142857,
+    "val_ev": 17.0
+  },
+  {
+    "condition": "start_price_band=60_69&last_delta_band=2_5",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 5,
+    "train_ev": -4.379310344827586,
+    "val_ev": -10.272727272727273
+  },
+  {
+    "condition": "start_price_band=70_79&tied=NO",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 7,
+    "train_ev": 4.6923076923076925,
+    "val_ev": -16.333333333333332
+  },
+  {
+    "condition": "start_price_band=LT_40&last_delta_band=2_5",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 1,
+    "train_ev": 9.0,
+    "val_ev": 4.5
+  },
+  {
+    "condition": "p_start_fine=45_49&reversal_tertile=MID",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 1,
+    "train_ev": -1.9473684210526316,
+    "val_ev": null
+  },
+  {
+    "condition": "p_start_fine=45_49&last_delta_band=2_5",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 6,
+    "train_ev": 0.4782608695652174,
+    "val_ev": -8.0
+  },
+  {
+    "condition": "p_start_fine=50_59&vol_15m_tertile=HIGH",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 6,
+    "train_ev": -2.0476190476190474,
+    "val_ev": 17.0
+  },
+  {
+    "condition": "p_start_fine=60_69&path_eff_tertile=HIGH",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 1,
+    "train_ev": -2.2660550458715596,
+    "val_ev": null
+  },
+  {
+    "condition": "p_start_fine=60_69&path_eff_tertile=MID",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 7,
+    "train_ev": -4.276595744680851,
+    "val_ev": 9.307692307692308
+  },
+  {
+    "condition": "p_start_fine=60_69&reversal_tertile=MID",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 1,
+    "train_ev": -5.857142857142857,
+    "val_ev": 17.0
+  },
+  {
+    "condition": "p_start_fine=60_69&last_delta_band=2_5",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 5,
+    "train_ev": -4.379310344827586,
+    "val_ev": -10.272727272727273
+  },
+  {
+    "condition": "p_start_fine=70_79&tied=NO",
+    "label": "OVERFIT_RISK",
+    "test_ev": 17.0,
+    "test_n": 7,
+    "train_ev": 4.6923076923076925,
+    "val_ev": -16.333333333333332
+  }
+]

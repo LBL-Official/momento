@@ -1,0 +1,4 @@
+{
+  "status": "NOT_APPLIED",
+  "reason": "The development within-game model was fit on later 2025-26 dates. Scoring it here would be a backward transport. It is not trained on these windows."
+}

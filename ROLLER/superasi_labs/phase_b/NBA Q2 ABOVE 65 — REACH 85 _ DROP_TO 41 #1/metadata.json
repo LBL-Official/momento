@@ -1,0 +1,93 @@
+{
+  "BASE_GRADE": "F",
+  "DEBASE_GRADE": "F",
+  "abase_filename": "SuperasiABase[NBA Q2 ABOVE 65 \u2014 REACH 85 _ DROP_TO 41 #1].csv",
+  "abase_sha256": "e4653266bf60a4052d1741ff32ff0dc34359ec68517409af7d4012b6145bf565",
+  "artifact": "superasi_bdebase",
+  "bottleneck": "F",
+  "components": {
+    "coverage": "A+",
+    "research_evidence": "F",
+    "robustness": "D",
+    "theoretical_alignment": "F",
+    "validation": "F"
+  },
+  "created_at": "2026-09-13T09:33:47Z",
+  "debase_filename": "SuperasiBDeBase[NBA Q2 ABOVE 65 \u2014 REACH 85 _ DROP_TO 41 #1].csv",
+  "debase_payload_sha256": "b604c7c5c61647df1a08c4e99968a31fba8f1f5ec82258ece4584aba8d6a0c36",
+  "debase_sha256": "0032e12a4ed407236abd16239784c62a310d5d777989c87c243c25c759cfecf2",
+  "folder": "NBA Q2 ABOVE 65 \u2014 REACH 85 _ DROP_TO 41 #1",
+  "grade_config_version": "grade_config_v1",
+  "phase": "B",
+  "phase_a_result_id": "NBA Q2 ABOVE 65 \u2014 REACH 85 _ DROP_TO 41 #1",
+  "plan_hash": "da5ce87b99e526a1d3a1bb6a0d59b19e7435faa278f799efbe182b361e30e815",
+  "question": {
+    "accept_limitations": false,
+    "entry_conditions": [
+      {
+        "clock": null,
+        "event_definition": "TRADABLE_CLOSE_CROSS",
+        "id": "e1",
+        "nth": null,
+        "operation": "ABOVE",
+        "ordinal": "FIRST_TOUCH",
+        "period": "Q2",
+        "price_e4": 6500,
+        "price_field": "yes_bid_close"
+      }
+    ],
+    "loss_hold": true,
+    "path_conditions": [
+      {
+        "id": "win",
+        "op": "REACH",
+        "outcome": "win",
+        "price_e4": 8500,
+        "sequential": false
+      },
+      {
+        "id": "loss",
+        "op": "DROP_TO",
+        "outcome": "loss",
+        "price_e4": 4100,
+        "sequential": false
+      }
+    ],
+    "requested_dimensions": [
+      "HOLD_TO_SETTLEMENT"
+    ],
+    "terminal": "BOTH",
+    "universe": {
+      "date_from": "2025-10-10",
+      "date_to": "2025-10-31",
+      "game_data": [
+        "pbp"
+      ],
+      "leagues": [
+        "NBA"
+      ],
+      "market_data": [
+        "candles"
+      ],
+      "markets": [
+        "kalshi"
+      ],
+      "seasons": [
+        "2025-2026"
+      ],
+      "sports": [
+        "NBA"
+      ]
+    },
+    "win_hold": true
+  },
+  "question_sha256": "ff8961c571deb4b07b68e1055989a88e0f6ee3b08666f92392ce6bc1b8135c6f",
+  "question_status": "PRESENT",
+  "result_hash": "d2326e487f573c545c51bcc95c991824ea5e602380f62185b18bf6acafefa1eb",
+  "result_id": "NBA Q2 ABOVE 65 \u2014 REACH 85 _ DROP_TO 41 #1",
+  "roller_filename": "RollerNBA Q2 ABOVE 65 \u2014 REACH 85 _ DROP_TO 41 #1.csv",
+  "source_csv_sha256": "d5e2e1b637a60893afb438ea4830fb6023e2103155f94855b7ee2de23ce67b49",
+  "source_lab_id": "55634238115d4f69a60e36383cc0efc1",
+  "strategy_name": "NBA Q2 ABOVE 65 \u2014 REACH 85 _ DROP_TO 41 #1",
+  "superasi_version": "superasi_bdebase_v1.0.0"
+}

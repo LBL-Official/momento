@@ -1,0 +1,94 @@
+{
+  "BASE_GRADE": "F",
+  "DEBASE_GRADE": "F",
+  "abase_filename": "SuperasiABase[ATP CROSS 65 REACH 85 40 JUL 2025 ITI-19].csv",
+  "abase_sha256": "595d254f28bdd02385865161e2c554caffcff9064cee678182cdddd74ab541e2",
+  "allocation_bps": 500,
+  "artifact": "superasi_bdebase",
+  "bankroll_cents": 2000000,
+  "bottleneck": "F",
+  "components": {
+    "coverage": "A",
+    "research_evidence": "F",
+    "robustness": "A",
+    "theoretical_alignment": "F",
+    "validation": "A+"
+  },
+  "created_at": "2026-09-21T18:17:38Z",
+  "debase_filename": "SuperasiBDeBase[ATP CROSS 65 REACH 85 40 JUL 2025 ITI-19].csv",
+  "debase_payload_sha256": "8b5b385d282cddd6cbd9b6499f562663c1303a89dae7f5cc83f5fffbf52dfe82",
+  "debase_sha256": "b1bb27dac65c27690adec4e648fe6bba17ff79f32b6b8b11d30635393d6bbb3c",
+  "desk_settings_source": "disk",
+  "floor_cents": 1500000,
+  "folder": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-19",
+  "grade_config_version": "grade_config_v1",
+  "phase": "B",
+  "phase_a_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-19",
+  "plan_hash": "61cdb4dd600e42842f18351bea21a4469fee6b61c857163fcae7b2ad9a91f6b9",
+  "question": {
+    "accept_limitations": false,
+    "entry_conditions": [
+      {
+        "clock": null,
+        "event_definition": "TRADABLE_CLOSE_CROSS",
+        "id": "e1",
+        "nth": null,
+        "operation": "CROSS",
+        "ordinal": "FIRST_TOUCH",
+        "period": null,
+        "price_e4": 6800,
+        "price_field": "yes_bid_close"
+      }
+    ],
+    "path_conditions": [
+      {
+        "id": "win",
+        "op": "REACH",
+        "outcome": "win",
+        "price_e4": 8900,
+        "sequential": false
+      },
+      {
+        "id": "loss",
+        "op": "REACH",
+        "outcome": "loss",
+        "price_e4": 4000,
+        "sequential": false
+      }
+    ],
+    "requested_dimensions": [
+      "HOLD_TO_SETTLEMENT"
+    ],
+    "terminal": "BOTH",
+    "universe": {
+      "date_from": "2025-07-01",
+      "date_to": "2025-07-31",
+      "game_data": [],
+      "leagues": [
+        "ATP"
+      ],
+      "market_data": [
+        "candles"
+      ],
+      "markets": [
+        "kalshi"
+      ],
+      "seasons": [
+        "2025-2026"
+      ],
+      "sports": [
+        "ATP"
+      ]
+    }
+  },
+  "question_sha256": "400c70dea7b6905037dac5d1385ede59f0514b24450a8908e716509056b1caba",
+  "question_status": "PRESENT",
+  "result_hash": "c0f2aab00c4d6bfe6b4237a7a8769f4c3181a9b62d5f9fe137805e2a5ef25f88",
+  "result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-19",
+  "roller_filename": "Roller[ATP CROSS 65 REACH 85 40 JUL 2025 ITI-19].csv",
+  "source_csv_sha256": "7f1a674dcffd4c4266209f07047957e9b26ddf5a38b850acc101374a48779165",
+  "source_lab_id": "ed3f84d8014042a2a9def1370bc4cae5",
+  "strategy_name": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-19",
+  "superasi_version": "superasi_bdebase_v1.1.0",
+  "target_cents": 3000000
+}

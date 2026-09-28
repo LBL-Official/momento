@@ -1,0 +1,30 @@
+{
+  "BASE_GRADE": "A-",
+  "abase_filename": "SuperasiABase[913 ITI-05].csv",
+  "abase_payload_sha256": "34f600d3b48e0d1c5a0bf05800a1283c720ea72e5fc9c983a1709c7cb502c75e",
+  "abase_sha256": "28eda0e0d2ee5b716be053b7c4b1415cf41c373d4b85c4a9428a45fbd5c5e608",
+  "allocation_bps": 500,
+  "artifact": "superasi_abase",
+  "bankroll_cents": 2000000,
+  "borderline": true,
+  "components": {
+    "coverage": "A+",
+    "research_evidence": "A+",
+    "robustness": "A-",
+    "theoretical_alignment": "A+",
+    "validation": "A+"
+  },
+  "created_at": "2026-09-14T17:19:04Z",
+  "desk_settings_source": "disk",
+  "floor_cents": 1500000,
+  "folder": "913 ITI-05",
+  "grade_config_version": "grade_config_v1",
+  "phase": "A",
+  "result_id": "913 ITI-05",
+  "roller_filename": "Roller[913 ITI-05].csv",
+  "source_csv_sha256": "5bf4c99d504235cc55b82a1777f96f0948445c6b93d6afb771418e41ae5e04f3",
+  "source_lab_id": "eb60dff599954c91aedc730c78d18cba",
+  "strategy_name": "913 ITI-05",
+  "superasi_version": "superasi_abase_v1.0.0",
+  "target_cents": 3000000
+}

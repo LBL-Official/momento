@@ -1,0 +1,82 @@
+{
+  "schema_version": "research_spec_v0",
+  "identity": {
+    "name": "FUNDAMENTAL_BASIS_AT_OBSERVATION",
+    "description": "State-conditioned measurement study. No FIRST80. F_t and basis are measurements, not edge.",
+    "tags": ["fundamental", "basis", "measurement"]
+  },
+  "universe": "BBALL1",
+  "population_binding": {
+    "leagues": ["NBA", "WNBA", "NCAAB"],
+    "default_structural_slices": ["ASKED_SIX"],
+    "p5_vs_p5_only": true,
+    "selection": "all_matching"
+  },
+  "anchor": {
+    "event": "OBSERVATION_TIME",
+    "price_e4": null,
+    "unresolved_parameters": []
+  },
+  "information_regime": "POINT_IN_TIME",
+  "information_set": "O_t",
+  "state_filters": {
+    "op": "AND",
+    "args": [
+      {
+        "op": "ATOM",
+        "field": "entry_slice",
+        "operator": "in",
+        "value": ["Q2", "Q3", "H1_2", "H2_1"]
+      }
+    ]
+  },
+  "path_conditions": [],
+  "terminal_conditions": [
+    {
+      "kind": "UNRESTRICTED"
+    }
+  ],
+  "measurement_requests": [
+    {
+      "name": "fundamental",
+      "binding": "roller_4.0.0-A.estimate_fundamental",
+      "not_edge": true
+    },
+    {
+      "name": "market_fundamental_basis",
+      "binding": "roller_4.0.0-B",
+      "not_edge": true
+    },
+    {
+      "name": "residual",
+      "binding": "roller_3.0.0.compute_residual",
+      "not_edge": true
+    }
+  ],
+  "sample_binding": {
+    "as_of": "2026-02-01T00:00:00Z",
+    "end_of_day": false
+  },
+  "definition_versions": {
+    "fundamental": "4.0.0-A",
+    "greeks": "4.0.0-B",
+    "greek_architecture": "4.0.0-C",
+    "observation": "2.0.0"
+  },
+  "dataset_versions": {
+    "roller_database": "4.0.0-C"
+  },
+  "execution_interpretation": "OBSERVABLE_PATH_ONLY",
+  "caveats": [
+    "F_t ≠ TRUE PROBABILITY",
+    "BASIS ≠ EDGE",
+    "MEASUREMENT ≠ EDGE",
+    "NOT_CONSTRUCTIBLE fields must display as NOT_CONSTRUCTIBLE — never as zero",
+    "LIVE EXECUTION = FALSE"
+  ],
+  "economic_layer": null,
+  "portfolio_layer": null,
+  "persistence": {
+    "kind": "ephemeral"
+  }
+}

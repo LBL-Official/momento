@@ -1,0 +1,87 @@
+experiment:
+  name: A1_HYBRID_HEDGE_V1
+  code_version_env: git
+  live_execution_changed: false
+
+universe:
+  version: A1_UNIVERSE_V1
+  sports:
+    - nba
+    - ncaab
+  ncaab_filter: p5_vs_p5
+  do_not_use_full_ncaab_4099: true
+
+entry:
+  strategy: FIRST80
+  nominal_cents: 80
+  actual_entry: UNAVAILABLE_ON_V4_LEDGER
+  timing: strict_next_bar
+
+hedge:
+  targets:
+    start: 10
+    end: 60
+    step: 1
+  surface_bands:
+    - exact
+    - symmetric_1
+    - symmetric_2
+  named_bands:
+    - band_39_41
+    - band_38_42
+    - band_37_42
+    - band_35_45
+    - focus_17_22
+    - focus_27_32
+    - focus_37_42
+
+execution:
+  strict_timing: true
+  persist_k:
+    - 1
+    - 2
+    - 3
+    - 5
+  probabilistic_fill_rates:
+    - 0.0
+    - 0.25
+    - 0.50
+    - 0.75
+    - 1.00
+
+partial_fill:
+  fractions:
+    - 0.00
+    - 0.25
+    - 0.50
+    - 0.75
+    - 1.00
+
+fallback:
+  headline: legacy_80_40
+  models:
+    - legacy_80_40
+    - realistic_band_exit
+    - conservative_next_observation
+    - settlement_only
+
+costs:
+  enabled: true
+  cents_per_hedge_leg: 0.0
+  cents_per_fallback_exit: 0.0
+  cents_per_entry: 0.0
+  label: GROSS_FEES_UNRESOLVED
+
+splits:
+  train_end: "2025-12-31"
+  validation_end: "2026-03-15"
+
+bootstrap:
+  n_boot: 400
+  seed: 7
+
+headline:
+  book: conservative_causal_inband
+  band: exact
+  fallback: legacy_80_40
+  selection_split: VALIDATION

@@ -1,0 +1,10 @@
+trade T0449  NBA  Denver at Los Angeles C
+contract KXNBAGAME-26FEB19DENLAC-DEN  slice Q3
+signal 2026-02-19T20:29:00-08:00 PST  exit 2026-02-19T20:56:00-08:00 PST
+assumed entry 78c  observed close 78c  overshoot 0c
+contracts 8037  principal_cents 626886
+entry_fee_cents 2414  exit_fee_cents 3110
+exit STOP at 67c  terminal no
+gross_cents -88407  net_cents -93931
+strategy_result NEGATIVE  net_r -1
+Assumed fill. Not a maker fill. Not live P&L.

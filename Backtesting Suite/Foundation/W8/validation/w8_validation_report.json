@@ -1,0 +1,11 @@
+{
+  "anti_lookahead": "PASS",
+  "fills_simulated": false,
+  "observability": "TRADE_PRINT_NOT_YES_BID",
+  "ordering_contract": "market_timestamp_utc, observation_id",
+  "pnl_calculated": false,
+  "sent_to_execution": false,
+  "sent_to_risk": false,
+  "w7_observations_reconciled": true,
+  "w9_started": false
+}

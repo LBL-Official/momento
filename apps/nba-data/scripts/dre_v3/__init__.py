@@ -1,0 +1,7 @@
+"""MOMENTO DYNAMIC RISK ENGINE V3 — offline research only.
+
+Nonlinear exposure-value experiment. Does not modify PADE, DRE V2, FIRST01, or Risk.
+CANDLE PATH ≠ ACTUAL FILL
+THEORETICAL EXPOSURE ≠ EXECUTED EXPOSURE
+MODELED STATE VALUE ≠ TRADABLE EDGE
+"""

@@ -1,0 +1,184 @@
+{
+  "bankroll_usd": 50000.0,
+  "forecast": false,
+  "required_for_20pct": "At qty=7, +3¢ EV earns $0.21/entry. 20% on $50k needs ~47,600 such entries/year. First-83 opportunity count cannot support that without inventing fills and depth.",
+  "research_stake_qty": 7,
+  "scenarios_edge_x_frequency": [
+    {
+      "assumed_ev_cents": 1.0,
+      "entries_needed_for_10pct_on_50k": 71428.57142857142,
+      "entries_needed_for_20pct_on_50k": 142857.14285714284,
+      "ev_usd_per_entry": 0.07,
+      "note": "Arithmetic, uncompounded, no fees. Not a forecast.",
+      "qty": 7
+    },
+    {
+      "assumed_ev_cents": 2.0,
+      "entries_needed_for_10pct_on_50k": 35714.28571428571,
+      "entries_needed_for_20pct_on_50k": 71428.57142857142,
+      "ev_usd_per_entry": 0.14,
+      "note": "Arithmetic, uncompounded, no fees. Not a forecast.",
+      "qty": 7
+    },
+    {
+      "assumed_ev_cents": 3.0,
+      "entries_needed_for_10pct_on_50k": 23809.52380952381,
+      "entries_needed_for_20pct_on_50k": 47619.04761904762,
+      "ev_usd_per_entry": 0.21,
+      "note": "Arithmetic, uncompounded, no fees. Not a forecast.",
+      "qty": 7
+    },
+    {
+      "assumed_ev_cents": 5.0,
+      "entries_needed_for_10pct_on_50k": 14285.714285714284,
+      "entries_needed_for_20pct_on_50k": 28571.42857142857,
+      "ev_usd_per_entry": 0.35000000000000003,
+      "note": "Arithmetic, uncompounded, no fees. Not a forecast.",
+      "qty": 7
+    }
+  ],
+  "simulation": true,
+  "strategies": [
+    {
+      "annualized_note": "TEST window is ~2 months / 713 first-83 games. Do not annualize.",
+      "annualized_return_50k": null,
+      "avg_hold": "HOLD_TO_SETTLEMENT (game remainder)",
+      "costs": "HYPOTHETICAL_RESEARCH_COST only",
+      "entries_per_test_month": 356.5,
+      "gross_ev_cents": 1.4319775596072932,
+      "historical_test_entries": 713.0,
+      "historical_test_pnl_usd_qty7": 71.47,
+      "hypothesis_id": "83H-000001",
+      "model_a_fixed_50_usd": {
+        "contracts": 60.0,
+        "ev_usd_per_entry_if_same_cents": 0.859186535764376,
+        "premium_usd": 50.0
+      },
+      "model_b_frac": [
+        {
+          "contracts": 60.0,
+          "fraction": 0.001,
+          "premium_usd": 50.0
+        },
+        {
+          "contracts": 150.0,
+          "fraction": 0.0025,
+          "premium_usd": 125.0
+        },
+        {
+          "contracts": 301.0,
+          "fraction": 0.005,
+          "premium_usd": 250.0
+        },
+        {
+          "contracts": 602.0,
+          "fraction": 0.01,
+          "premium_usd": 500.0
+        }
+      ],
+      "model_c_half_kelly": {
+        "b_odds": 0.20481927710843373,
+        "cap_fraction": 0.01,
+        "empirical_p_test": 0.844319775596073,
+        "note": "Sensitivity only. Do not recommend full Kelly."
+      },
+      "net_ev_at_2c": -0.5680224403927068,
+      "qualifying_share_of_first83": 1.0,
+      "strategy": ""
+    },
+    {
+      "annualized_note": "TEST window is ~2 months / 713 first-83 games. Do not annualize.",
+      "annualized_return_50k": null,
+      "avg_hold": "HOLD_TO_SETTLEMENT (game remainder)",
+      "costs": "HYPOTHETICAL_RESEARCH_COST only",
+      "entries_per_test_month": 116.5,
+      "gross_ev_cents": 2.407725321888412,
+      "historical_test_entries": 233.0,
+      "historical_test_pnl_usd_qty7": 39.269999999999996,
+      "hypothesis_id": "83H-000002",
+      "model_a_fixed_50_usd": {
+        "contracts": 60.0,
+        "ev_usd_per_entry_if_same_cents": 1.4446351931330472,
+        "premium_usd": 50.0
+      },
+      "model_b_frac": [
+        {
+          "contracts": 60.0,
+          "fraction": 0.001,
+          "premium_usd": 50.0
+        },
+        {
+          "contracts": 150.0,
+          "fraction": 0.0025,
+          "premium_usd": 125.0
+        },
+        {
+          "contracts": 301.0,
+          "fraction": 0.005,
+          "premium_usd": 250.0
+        },
+        {
+          "contracts": 602.0,
+          "fraction": 0.01,
+          "premium_usd": 500.0
+        }
+      ],
+      "model_c_half_kelly": {
+        "b_odds": 0.20481927710843373,
+        "cap_fraction": 0.01,
+        "empirical_p_test": 0.8540772532188842,
+        "note": "Sensitivity only. Do not recommend full Kelly."
+      },
+      "net_ev_at_2c": 0.40772532188841204,
+      "qualifying_share_of_first83": 0.2959394356503785,
+      "strategy": "start_price_band=40_49"
+    },
+    {
+      "annualized_note": "TEST window is ~2 months / 713 first-83 games. Do not annualize.",
+      "annualized_return_50k": null,
+      "avg_hold": "HOLD_TO_SETTLEMENT (game remainder)",
+      "costs": "HYPOTHETICAL_RESEARCH_COST only",
+      "entries_per_test_month": 20.5,
+      "gross_ev_cents": 12.121951219512194,
+      "historical_test_entries": 41.0,
+      "historical_test_pnl_usd_qty7": 34.79,
+      "hypothesis_id": "83H-000006",
+      "model_a_fixed_50_usd": {
+        "contracts": 60.0,
+        "ev_usd_per_entry_if_same_cents": 7.273170731707317,
+        "premium_usd": 50.0
+      },
+      "model_b_frac": [
+        {
+          "contracts": 60.0,
+          "fraction": 0.001,
+          "premium_usd": 50.0
+        },
+        {
+          "contracts": 150.0,
+          "fraction": 0.0025,
+          "premium_usd": 125.0
+        },
+        {
+          "contracts": 301.0,
+          "fraction": 0.005,
+          "premium_usd": 250.0
+        },
+        {
+          "contracts": 602.0,
+          "fraction": 0.01,
+          "premium_usd": 500.0
+        }
+      ],
+      "model_c_half_kelly": {
+        "b_odds": 0.20481927710843373,
+        "cap_fraction": 0.01,
+        "empirical_p_test": 0.9512195121951219,
+        "note": "Sensitivity only. Do not recommend full Kelly."
+      },
+      "net_ev_at_2c": 10.121951219512194,
+      "qualifying_share_of_first83": 0.045079146593255334,
+      "strategy": "start_move_gt30=YES&outs=0&vol_1m_tertile=LOW"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+[package]
+name = "momento-research-replay"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "CTO-W8: FIRST01 strategy replay over W7 EventMarketPath. Observational only. No fills, P&L, or live orders."
+
+[lints]
+workspace = true
+
+[dependencies]
+chrono.workspace = true
+momento-research-data.workspace = true
+momento-research-path.workspace = true
+momento-research-strategies.workspace = true
+rusqlite = { version = "0.32.1", features = ["bundled"] }
+serde.workspace = true
+serde_json.workspace = true
+sha2 = "0.10.9"
+thiserror.workspace = true
+
+[dev-dependencies]
+tempfile = "3.20.0"

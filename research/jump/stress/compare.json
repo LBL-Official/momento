@@ -1,0 +1,16 @@
+{
+  "baseline_job_ms": 272996,
+  "mismatch_n": 0,
+  "mismatches": [],
+  "optimized_job_ms": 130717,
+  "speedup_ratio": 2.088,
+  "control_result_hash": "9fb549a09f05517969b3a053f95963171b8b8da7143032ef8820da6bca546107",
+  "control_population": 23,
+  "recommended_slot_id": "ITI-12",
+  "notes": [
+    "Fresh Confirm & Run source N=23 hash=9fb549a09f05517969b3a053f95963171b8b8da7143032ef8820da6bca546107",
+    "Baseline ITI-00 re-executed the same question and matched N and hash",
+    "Optimized reused ITI-00 from that source; slots ITI-01..24 matched baseline N, grades, and hashes",
+    "Snapshot population parse missed Labs record_type=risk on the first optimized pass; parser now reads risk"
+  ]
+}

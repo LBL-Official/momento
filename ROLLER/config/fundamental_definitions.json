@@ -1,0 +1,23 @@
+{
+  "fundamental_schema_version": "4.0.0-A",
+  "note": "F_t is a documented empirical estimator, not truth, fair value, or edge.",
+  "estimators": {
+    "fundamental_win_probability_empirical_v1": {
+      "name": "fundamental_win_probability_empirical_v1",
+      "version": "v1",
+      "definition": "A prior-only, empirical, state-conditioned estimate of terminal win probability.",
+      "formula": "wins / n among eligible comparable historical terminal outcomes",
+      "subject": "home",
+      "outcome": "Y=1 iff home_win == 1",
+      "tie_treatment": "home_win and away_win are both 0; Y=0",
+      "score_orientation": "home_minus_away",
+      "not": [
+        "true probability",
+        "fair value",
+        "intrinsic value",
+        "market price",
+        "edge"
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "artifact_version": "W8.REPLAY.1.0.0",
+  "dataset_version": "W8.FIRST01_REPLAY.1",
+  "engine_version": "W8.ENGINE.1.0.0",
+  "generated_at": "2026-08-29T07:44:03.820911+00:00",
+  "note": "generated_at is manifest-only and does not order replay events",
+  "observability": "TRADE_PRINT_NOT_YES_BID",
+  "run_id": "w8-20260829T074403Z",
+  "strategy": "FIRST01",
+  "strategy_version": 1,
+  "w7_dataset_version": "W7.EVENT_MARKET_PATH.1",
+  "w7_run_id": "w7-20260828T215506Z",
+  "waterfall": "CTO-W8"
+}

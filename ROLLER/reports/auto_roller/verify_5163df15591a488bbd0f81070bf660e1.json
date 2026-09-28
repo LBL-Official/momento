@@ -1,0 +1,22 @@
+{
+  "run_id": "5163df15591a488bbd0f81070bf660e1",
+  "job_type": "verify",
+  "display": "AUTO ROLLER VERIFY",
+  "started_at": "2026-09-12T05:36:41Z",
+  "finished_at": "2026-09-12T05:36:41Z",
+  "duration_s": 0.036,
+  "status": "FAILED",
+  "code_version": "research_query_v1.2_ops",
+  "operation_semantics_version": "1.0.0",
+  "indexes": [
+    {
+      "leaf": "NBA/2025-2026/TRADABLE_YES_BID",
+      "ok": false,
+      "reason": "index checksum mismatch: bars.parquet"
+    }
+  ],
+  "sentinels": [],
+  "gaps_found": 30,
+  "errors": [],
+  "warnings": []
+}

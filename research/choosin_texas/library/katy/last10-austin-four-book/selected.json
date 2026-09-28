@@ -1,0 +1,89 @@
+{
+  "nba_2q": {
+    "status": "SELECTED",
+    "price_lo": 41,
+    "price_hi": 75,
+    "austin_ev_lt": -20.0,
+    "n_hedge": 16,
+    "n_hedge_losers": 8,
+    "n_hedge_winners": 8,
+    "baseline_8040": {
+      "n": 313,
+      "sum_cents": 1760,
+      "mean_cents": 5.623003194888179
+    },
+    "mixed_8040": {
+      "n": 313,
+      "sum_cents": 1779,
+      "mean_cents": 5.68370607028754
+    },
+    "delta_sum_cents": 19,
+    "delta_mean_cents": 0.06070287539936102
+  },
+  "nba_3q": {
+    "status": "SELECTED",
+    "price_lo": 41,
+    "price_hi": 79,
+    "austin_ev_lt": 5.0,
+    "n_hedge": 55,
+    "n_hedge_losers": 23,
+    "n_hedge_winners": 32,
+    "baseline_8040": {
+      "n": 290,
+      "sum_cents": 1060,
+      "mean_cents": 3.6551724137931036
+    },
+    "mixed_8040": {
+      "n": 290,
+      "sum_cents": 1252,
+      "mean_cents": 4.317241379310345
+    },
+    "delta_sum_cents": 192,
+    "delta_mean_cents": 0.6620689655172414
+  },
+  "ncaab_h1_2_discovery": {
+    "status": "SELECTED",
+    "price_lo": 41,
+    "price_hi": 75,
+    "austin_ev_lt": -20.0,
+    "n_hedge": 10,
+    "n_hedge_losers": 4,
+    "n_hedge_winners": 6,
+    "baseline_8040": {
+      "n": 96,
+      "sum_cents": 240,
+      "mean_cents": 2.5
+    },
+    "mixed_8040": {
+      "n": 96,
+      "sum_cents": 300,
+      "mean_cents": 3.125
+    },
+    "delta_sum_cents": 60,
+    "delta_mean_cents": 0.625
+  },
+  "ncaab_h2_1_discovery": {
+    "status": "NONE",
+    "reason": "NO_CELL_BEATS_ALWAYS_8040",
+    "best_nonpositive": {
+      "price_lo": 41,
+      "price_hi": 50,
+      "austin_ev_lt": -20.0,
+      "n_hedge": 0,
+      "n_hedge_losers": 0,
+      "n_hedge_winners": 0,
+      "baseline_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "mixed_8040": {
+        "n": 69,
+        "sum_cents": 360,
+        "mean_cents": 5.217391304347826
+      },
+      "delta_sum_cents": 0,
+      "delta_mean_cents": 0.0
+    }
+  }
+}

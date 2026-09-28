@@ -1,0 +1,18 @@
+scenario_id,population_scope,entry_price_cents,stop_price_cents,fee_coef,cash_delay_seconds,latency_seconds,latency_grace_seconds,stop_fail_probability,oracle,notes
+REF,baseline,78,67,0.0175,0,0,0,0,false,close-proxy reference
+ENTRY_1,baseline,79,67,0.0175,0,0,0,0,false,plus 1 cent on the entry price; not a one-minute delay
+ENTRY_2,baseline,80,67,0.0175,0,0,0,0,false,plus 2 cents on the entry price
+EXIT_1,baseline,78,66,0.0175,0,0,0,0,false,stop sale 1 cent lower
+EXIT_2,baseline,78,65,0.0175,0,0,0,0,false,stop sale 2 cents lower
+JOINT_1,baseline,79,66,0.0175,0,0,0,0,false,entry plus 1 and stop minus 1
+JOINT_2,baseline,80,65,0.0175,0,0,0,0,false,entry plus 2 and stop minus 2
+FEE_007,baseline,78,67,0.07,0,0,0,0,false,coefficient stress; applicability still unverified
+JOINT_2_FEE_007,baseline,80,65,0.07,0,0,0,0,false,primary adverse price-and-fee endpoint
+CASH_DELAY_15,baseline,78,67,0.0175,900,0,0,0,false,slot frees at exit; cash waits 15 minutes
+CASH_DELAY_60,baseline,78,67,0.0175,3600,0,0,0,false,slot frees at exit; cash waits 60 minutes
+STOP_FAIL_1,baseline,78,67,0.0175,0,0,0,0.01,false,Bernoulli 0.01; not round(p*n)
+STOP_FAIL_5,baseline,78,67,0.0175,0,0,0,0.05,false,Bernoulli 0.05; not round(p*n)
+LATENCY_60,baseline,,67,0.0175,0,60,60,0,false,first valid bar in [signal+60, signal+120]; else LATENCY_GAP_UNRESOLVED
+LATENCY_120,baseline,,67,0.0175,0,120,60,0,false,first valid bar in [signal+120, signal+180]
+ORACLE_TAIL_BOUND,oracle_only,78,67,0.0175,0,0,0,0.05,true,concentrates failures on later no settlements; baseline ids cannot call this
+ORACLE_ADVERSE_SELECTION_BOUND,oracle_only,,,,,0,,true,worst equal-contract outcomes within sport; not a fill model

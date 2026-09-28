@@ -1,0 +1,22 @@
+[package]
+name = "momento-strategy-wnba"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish.workspace = true
+description = "WNBA 80/81/89 strategy. Reuses the MLB machine. Emits TradeIntent only."
+
+[lints]
+workspace = true
+
+[dependencies]
+momento-core.workspace = true
+momento-sports.workspace = true
+momento-strategy-mlb.workspace = true
+serde.workspace = true
+
+[dev-dependencies]
+chrono.workspace = true
+momento-positions.workspace = true
+momento-risk.workspace = true

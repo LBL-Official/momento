@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "A": {
+    "experiment_id": "NCAAB_H1_2_AUSTIN_TRANSFER_V1",
+    "role": "CONFIRMATION",
+    "n_trades": 97,
+    "n_games": 97,
+    "cohort_hash": "4bc027bddba0f723b914b2d80e0ff49ae0eb0bff94711860e310737941e0f0e4",
+    "expected_n": 97,
+    "status": "SEALED_UNSPENT"
+  },
+  "B": {
+    "experiment_id": "NCAAB_H2_1_AUSTIN_TRANSFER_V1",
+    "role": "CONFIRMATION",
+    "n_trades": 70,
+    "n_games": 70,
+    "cohort_hash": "1ce8a0b2f3d3ee88d34cb0e4833cf3369aa776fc75bff912d7e2f3b2a4173c51",
+    "expected_n": 70,
+    "status": "SEALED_UNSPENT"
+  },
+  "outcomes_accessed": false
+}

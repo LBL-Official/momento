@@ -1,0 +1,16 @@
+{
+  "warehouse_root": "../Backtesting Suite/Data",
+  "fetch_clis": {
+    "NBA": ["cargo", "run", "-p", "momento-nba-data", "--", "download-all"],
+    "WNBA": ["cargo", "run", "-p", "momento-wnba-data", "--", "download-all"],
+    "NCAAB": ["cargo", "run", "-p", "momento-ncaab-data", "--", "download-all"],
+    "ATP": ["cargo", "run", "-p", "momento-tennis-data", "--", "download-all", "--tour", "atp"],
+    "WTA": ["cargo", "run", "-p", "momento-tennis-data", "--", "download-all", "--tour", "wta"]
+  },
+  "polymarket_ingest": "scripts/ingest_polymarket.py",
+  "pbp_ingest": {
+    "NBA": "apps/nba-data/scripts/nba_pbp_overnight_ingest.py",
+    "WNBA": "apps/wnba-data/scripts/wnba_pbp_espn_ingest.py",
+    "NCAAB": "apps/ncaab-data/scripts/ncaab_pbp_espn_ingest.py"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "run_id": "audit_repair_20260926T090447Z",
+  "git": "GIT_UNAVAILABLE",
+  "python": "3.14.7",
+  "unittest_returncode": 0,
+  "original_contract_sha256": {
+    "root": "b5a79a6687122b96caaaddf96bf8eb52afbf4383dead39bbb673afa45dbfe885",
+    "run": "bd60aa6f26238e18f45bf76d83ba0bc8b9b7eef362726adba89e1895f7cd284c",
+    "match": false
+  },
+  "consumed_sha256": {
+    "legacy_trades": "3fd57da37f7a12fbf05f993246e500a8d39ffae133f306374ed9019d030125ff",
+    "legacy_summary": "6f4b0c30f55b262aefa2f0c067759aebd6bdbce4ab4920d41ac719e40b5951c1",
+    "repair_contract": "9d251c80fb7b7341e2f1c4661e9083338156525be6b6af11948319707123534b"
+  },
+  "austin_confirmation_outcomes": "not opened and not hashed",
+  "live_execution": false,
+  "fee_applicability": "FEE_APPLICABILITY_UNVERIFIED",
+  "partial_fills": "UNSUPPORTED",
+  "legacy_replay_matches_saved_net": true,
+  "identity_matches_ref": true,
+  "calendar_paths_stored": 60,
+  "summaries": [
+    {
+      "test_id": "OCT_2025",
+      "coverage_status": "COMPLETE_FOR_NORMALIZED_WAREHOUSE",
+      "sport_status": {
+        "NBA": "HAS_CANDIDATES",
+        "NBA_events_in_window": 97,
+        "NCAAB": "NO_ELIGIBLE_GAMES",
+        "NCAAB_events_in_window": 0
+      },
+      "candidates": 44,
+      "admitted": 44,
+      "unresolved": 0,
+      "intrabar_ambiguity": 4,
+      "ref_net_cents": 344197,
+      "adverse_net_cents": 23441,
+      "mean_net_cents_per_contract": 5.005900682492711,
+      "adverse_mean": 0.5833784790347265,
+      "judgment": {
+        "sample_selection": "supports_sign",
+        "execution": "supports_sign"
+      },
+      "inference_ref": {
+        "status": "ESTIMATED",
+        "n_days": 13,
+        "observed_mean_cents_per_contract": 5.005900682492711,
+        "one_sided_p": 0.061938061938061936,
+        "draws_used": 1000,
+        "null": "centered studentized cluster bootstrap"
+      },
+      "inference_adverse": {
+        "status": "ESTIMATED",
+        "n_days": 13,
+        "observed_mean_cents_per_contract": 0.5833784790347265,
+        "one_sided_p": 0.41358641358641357,
+        "draws_used": 1000,
+        "null": "centered studentized cluster bootstrap"
+      }
+    },
+    {
+      "test_id": "APR_2025",
+      "coverage_status": "PARTIAL_RAW_TICKER_SUBSET",
+      "sport_status": {
+        "NBA": "HAS_CANDIDATES",
+        "NBA_events_in_window": 44,
+        "NCAAB": "COVERAGE_UNKNOWN",
+        "NCAAB_markets_in_window": 0,
+        "NCAAB_note": "no 25APR event dates; candlesticks absent"
+      },
+      "candidates": 6,
+      "admitted": 6,
+      "unresolved": 0,
+      "intrabar_ambiguity": 0,
+      "ref_net_cents": -5156,
+      "adverse_net_cents": -49636,
+      "mean_net_cents_per_contract": -0.5587342869527525,
+      "adverse_mean": -5.5151111111111115,
+      "judgment": {
+        "sample_selection": "weakens",
+        "execution": "weakens"
+      },
+      "inference_ref": {
+        "status": "P_VALUE_NOT_ESTIMABLE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "n_days": 4
+      },
+      "inference_adverse": {
+        "status": "P_VALUE_NOT_ESTIMABLE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "n_days": 4
+      }
+    }
+  ]
+}

@@ -1,0 +1,2201 @@
+{
+  "run_id": "b2f8d92a61bb4436913ce9f4751c670a",
+  "status": "COMPLETE",
+  "iti_version": "jump_a_iti_v1.0.0",
+  "debase_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025",
+  "source_folder": "ATP CROSS 65 REACH 85 40 JUL 2025",
+  "source_lab_id": "7b5042ec4907418696c900ef3916fbb8",
+  "strategy_name": "ATP CROSS 65 REACH 85 40 JUL 2025",
+  "source_question_sha256": "0e810d3a87d5b0a8271a855fa76a2124594dfa870f504f0e3b752b2ddf2935dc",
+  "source_snapshot": {
+    "lab_id": "7b5042ec4907418696c900ef3916fbb8",
+    "phase_a_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025",
+    "phase_b_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025",
+    "BASE_GRADE": "F",
+    "DEBASE_GRADE": "F",
+    "result_hash": "7cbb3b9d64b58c8f9c0935a6499cdfa67ae89021eda0d68eb31b7bfb3602db8c",
+    "population": 379,
+    "question_sha256": "0e810d3a87d5b0a8271a855fa76a2124594dfa870f504f0e3b752b2ddf2935dc"
+  },
+  "orchestrator": "optimized",
+  "job_ms": 139380,
+  "slots": [
+    {
+      "slot_id": "ITI-00",
+      "label": "control",
+      "entry_steps": 0,
+      "win_steps": 0,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "e1",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 6500,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "loss",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-07-01",
+          "date_to": "2025-07-31",
+          "game_data": [],
+          "leagues": [
+            "ATP"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "ATP"
+          ]
+        }
+      },
+      "question_sha256": "0e810d3a87d5b0a8271a855fa76a2124594dfa870f504f0e3b752b2ddf2935dc",
+      "source_question_sha256": "0e810d3a87d5b0a8271a855fa76a2124594dfa870f504f0e3b752b2ddf2935dc",
+      "entry_e4": 6500,
+      "win_e4": 8500,
+      "loss_e4": 4000,
+      "entry_cents": 65,
+      "win_cents": 85,
+      "loss_cents": 40,
+      "population": 379,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "7b5042ec4907418696c900ef3916fbb8",
+      "phase_a_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025",
+      "phase_b_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025",
+      "executed": false,
+      "reused_source": true,
+      "result_hash": "7cbb3b9d64b58c8f9c0935a6499cdfa67ae89021eda0d68eb31b7bfb3602db8c",
+      "compile_ms": 0,
+      "execute_ms": 0,
+      "lab_ms": 0,
+      "base_ms": 0,
+      "debase_ms": 0,
+      "slot_ms": 0
+    },
+    {
+      "slot_id": "ITI-01",
+      "label": "E-3",
+      "entry_steps": -3,
+      "win_steps": 0,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "e1",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 5600,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "loss",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-07-01",
+          "date_to": "2025-07-31",
+          "game_data": [],
+          "leagues": [
+            "ATP"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "ATP"
+          ]
+        }
+      },
+      "question_sha256": "d54936be6c830a945ab629ecc90d0e18cb8f79a57405536ecb3f96cc7fc961bc",
+      "source_question_sha256": "0e810d3a87d5b0a8271a855fa76a2124594dfa870f504f0e3b752b2ddf2935dc",
+      "entry_e4": 5600,
+      "win_e4": 8500,
+      "loss_e4": 4000,
+      "entry_cents": 56,
+      "win_cents": 85,
+      "loss_cents": 40,
+      "population": 417,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "c049de0b1aa141e59dc83d694940934d",
+      "phase_a_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-01",
+      "phase_b_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-01",
+      "executed": true,
+      "execute_ms": 3548,
+      "result_hash": "b5f95faf3ad0a9f885c2345cdabb521fa3ab19b08ea138abc9e4964cb6f0696c",
+      "lab_ms": 351,
+      "base_ms": 3558,
+      "debase_ms": 1944,
+      "slot_ms": 9405
+    },
+    {
+      "slot_id": "ITI-02",
+      "label": "E-2",
+      "entry_steps": -2,
+      "win_steps": 0,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "e1",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 5900,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "loss",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-07-01",
+          "date_to": "2025-07-31",
+          "game_data": [],
+          "leagues": [
+            "ATP"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "ATP"
+          ]
+        }
+      },
+      "question_sha256": "ad4c02358760e9c2add6480d2af99a9d9786e1564de672b8c537663a37c4cf0e",
+      "source_question_sha256": "0e810d3a87d5b0a8271a855fa76a2124594dfa870f504f0e3b752b2ddf2935dc",
+      "entry_e4": 5900,
+      "win_e4": 8500,
+      "loss_e4": 4000,
+      "entry_cents": 59,
+      "win_cents": 85,
+      "loss_cents": 40,
+      "population": 402,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "ff3eee1a4b214e18a5cd4a786f008acd",
+      "phase_a_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-02",
+      "phase_b_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-02",
+      "executed": true,
+      "execute_ms": 3543,
+      "result_hash": "bb0b6c0308f4cebebda6c6e5a32cfcf63cbb9e96527257e1f37832885401bf8c",
+      "lab_ms": 397,
+      "base_ms": 4062,
+      "debase_ms": 1883,
+      "slot_ms": 11450
+    },
+    {
+      "slot_id": "ITI-03",
+      "label": "E-1",
+      "entry_steps": -1,
+      "win_steps": 0,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "e1",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 6200,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "loss",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-07-01",
+          "date_to": "2025-07-31",
+          "game_data": [],
+          "leagues": [
+            "ATP"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "ATP"
+          ]
+        }
+      },
+      "question_sha256": "fbd259f0ee4dbe618e2d85efd534f4cda60ef44b052f0b5f8e20e591ab5bd34b",
+      "source_question_sha256": "0e810d3a87d5b0a8271a855fa76a2124594dfa870f504f0e3b752b2ddf2935dc",
+      "entry_e4": 6200,
+      "win_e4": 8500,
+      "loss_e4": 4000,
+      "entry_cents": 62,
+      "win_cents": 85,
+      "loss_cents": 40,
+      "population": 393,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "ea6b1a5d346e4744967586551c01e2fd",
+      "phase_a_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-03",
+      "phase_b_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-03",
+      "executed": true,
+      "execute_ms": 4040,
+      "result_hash": "c8187b65e0a4c21ef537b85765d68b1c4012e3289f581eb29ddf7e8f7ec9c3a8",
+      "lab_ms": 479,
+      "base_ms": 3941,
+      "debase_ms": 1645,
+      "slot_ms": 11533
+    },
+    {
+      "slot_id": "ITI-04",
+      "label": "E+1",
+      "entry_steps": 1,
+      "win_steps": 0,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "e1",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 6800,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "loss",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-07-01",
+          "date_to": "2025-07-31",
+          "game_data": [],
+          "leagues": [
+            "ATP"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "ATP"
+          ]
+        }
+      },
+      "question_sha256": "a7671dddbff0c7388bbf8e743efc6291b052cfea02c4b4478c73a41a3a6d84a1",
+      "source_question_sha256": "0e810d3a87d5b0a8271a855fa76a2124594dfa870f504f0e3b752b2ddf2935dc",
+      "entry_e4": 6800,
+      "win_e4": 8500,
+      "loss_e4": 4000,
+      "entry_cents": 68,
+      "win_cents": 85,
+      "loss_cents": 40,
+      "population": 365,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "23ae22e11b23461384b48dfa945afa17",
+      "phase_a_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-04",
+      "phase_b_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-04",
+      "executed": true,
+      "execute_ms": 3919,
+      "result_hash": "d5f261404966aad6cc5135932185575313f2d74e32da3e08032e09d9c01f8575",
+      "lab_ms": 310,
+      "base_ms": 3356,
+      "debase_ms": 1659,
+      "slot_ms": 10604
+    },
+    {
+      "slot_id": "ITI-05",
+      "label": "E+2",
+      "entry_steps": 2,
+      "win_steps": 0,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "e1",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 7100,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "loss",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-07-01",
+          "date_to": "2025-07-31",
+          "game_data": [],
+          "leagues": [
+            "ATP"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "ATP"
+          ]
+        }
+      },
+      "question_sha256": "7cf2bf76c8003884a544755e7347bcf4c2491c3bd9d6ef9e678bbec92d424256",
+      "source_question_sha256": "0e810d3a87d5b0a8271a855fa76a2124594dfa870f504f0e3b752b2ddf2935dc",
+      "entry_e4": 7100,
+      "win_e4": 8500,
+      "loss_e4": 4000,
+      "entry_cents": 71,
+      "win_cents": 85,
+      "loss_cents": 40,
+      "population": 351,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "55d9a8bdcc4e4d82a222fd1bfb84fdbf",
+      "phase_a_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-05",
+      "phase_b_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-05",
+      "executed": true,
+      "execute_ms": 3336,
+      "result_hash": "2d9a4d634a4a5508155a34c9ff097202c0d039e70a9a5b95665317d16af53f70",
+      "lab_ms": 339,
+      "base_ms": 3504,
+      "debase_ms": 1814,
+      "slot_ms": 10336
+    },
+    {
+      "slot_id": "ITI-06",
+      "label": "E+3",
+      "entry_steps": 3,
+      "win_steps": 0,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "e1",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 7400,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "loss",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-07-01",
+          "date_to": "2025-07-31",
+          "game_data": [],
+          "leagues": [
+            "ATP"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "ATP"
+          ]
+        }
+      },
+      "question_sha256": "d3e0794562c0dbcf155b8d59342bd51fd0592ec9e0a4818f5f70437e537565e9",
+      "source_question_sha256": "0e810d3a87d5b0a8271a855fa76a2124594dfa870f504f0e3b752b2ddf2935dc",
+      "entry_e4": 7400,
+      "win_e4": 8500,
+      "loss_e4": 4000,
+      "entry_cents": 74,
+      "win_cents": 85,
+      "loss_cents": 40,
+      "population": 345,
+      "BASE_GRADE": "D",
+      "DEBASE_GRADE": "F",
+      "lab_id": "fedf86c7920a41b18d1b204579e383d7",
+      "phase_a_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-06",
+      "phase_b_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-06",
+      "executed": true,
+      "execute_ms": 3479,
+      "result_hash": "d3be930478007f4b94fbe3700bb80ee277f089e702abb4f8c00c2872b54d3950",
+      "lab_ms": 494,
+      "base_ms": 3640,
+      "debase_ms": 1639,
+      "slot_ms": 10599
+    },
+    {
+      "slot_id": "ITI-07",
+      "label": "W-3",
+      "entry_steps": 0,
+      "win_steps": -3,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "e1",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 6500,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 7300,
+            "sequential": false
+          },
+          {
+            "id": "loss",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-07-01",
+          "date_to": "2025-07-31",
+          "game_data": [],
+          "leagues": [
+            "ATP"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "ATP"
+          ]
+        }
+      },
+      "question_sha256": "db0f091c1fb9ea839c5c7386b29c76fcdbe8008f1b2924d939470757c639fe02",
+      "source_question_sha256": "0e810d3a87d5b0a8271a855fa76a2124594dfa870f504f0e3b752b2ddf2935dc",
+      "entry_e4": 6500,
+      "win_e4": 7300,
+      "loss_e4": 4000,
+      "entry_cents": 65,
+      "win_cents": 73,
+      "loss_cents": 40,
+      "population": 378,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "2614f711f58c49c88c815943460f586b",
+      "phase_a_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-07",
+      "phase_b_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-07",
+      "executed": true,
+      "execute_ms": 3617,
+      "result_hash": "46e1c1b80b01b7a964e5c6df15cb7c58873eb73302e0ffe2b3528837771e3ff5",
+      "lab_ms": 328,
+      "base_ms": 3838,
+      "debase_ms": 1767,
+      "slot_ms": 10886
+    },
+    {
+      "slot_id": "ITI-08",
+      "label": "W-2",
+      "entry_steps": 0,
+      "win_steps": -2,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "e1",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 6500,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 7700,
+            "sequential": false
+          },
+          {
+            "id": "loss",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-07-01",
+          "date_to": "2025-07-31",
+          "game_data": [],
+          "leagues": [
+            "ATP"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "ATP"
+          ]
+        }
+      },
+      "question_sha256": "e483bbded2995c7cca08488638c2a0c545bd39b1f5c0b3a4d759c0b7260f5ce2",
+      "source_question_sha256": "0e810d3a87d5b0a8271a855fa76a2124594dfa870f504f0e3b752b2ddf2935dc",
+      "entry_e4": 6500,
+      "win_e4": 7700,
+      "loss_e4": 4000,
+      "entry_cents": 65,
+      "win_cents": 77,
+      "loss_cents": 40,
+      "population": 378,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "72b4e07809954481b654ac6b8f51aeb6",
+      "phase_a_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-08",
+      "phase_b_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-08",
+      "executed": true,
+      "execute_ms": 3805,
+      "result_hash": "f2eadb6ce61d2df0e9a2f618afc2189a53421763af051cdf87c098f478b82c4f",
+      "lab_ms": 379,
+      "base_ms": 3428,
+      "debase_ms": 1756,
+      "slot_ms": 10791
+    },
+    {
+      "slot_id": "ITI-09",
+      "label": "W-1",
+      "entry_steps": 0,
+      "win_steps": -1,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "e1",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 6500,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8100,
+            "sequential": false
+          },
+          {
+            "id": "loss",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-07-01",
+          "date_to": "2025-07-31",
+          "game_data": [],
+          "leagues": [
+            "ATP"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "ATP"
+          ]
+        }
+      },
+      "question_sha256": "879ccf747ebd7b204a5538dcedc903b500cb0df75ab3410382d29243477cecb2",
+      "source_question_sha256": "0e810d3a87d5b0a8271a855fa76a2124594dfa870f504f0e3b752b2ddf2935dc",
+      "entry_e4": 6500,
+      "win_e4": 8100,
+      "loss_e4": 4000,
+      "entry_cents": 65,
+      "win_cents": 81,
+      "loss_cents": 40,
+      "population": 378,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "f48ed17c072e4d738f7221afc65a8ec4",
+      "phase_a_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-09",
+      "phase_b_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-09",
+      "executed": true,
+      "execute_ms": 3380,
+      "result_hash": "84f3a80e2ca2b753b71f23f3d8898df59feb36e6ba3336cb2e90c0c3c0338241",
+      "lab_ms": 394,
+      "base_ms": 4314,
+      "debase_ms": 1674,
+      "slot_ms": 11174
+    },
+    {
+      "slot_id": "ITI-10",
+      "label": "W+1",
+      "entry_steps": 0,
+      "win_steps": 1,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "e1",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 6500,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8900,
+            "sequential": false
+          },
+          {
+            "id": "loss",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-07-01",
+          "date_to": "2025-07-31",
+          "game_data": [],
+          "leagues": [
+            "ATP"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "ATP"
+          ]
+        }
+      },
+      "question_sha256": "30b4fbc88ba9748ce270fae9dfa07232deaf91ec1cbd8aeaa166cadc0625816e",
+      "source_question_sha256": "0e810d3a87d5b0a8271a855fa76a2124594dfa870f504f0e3b752b2ddf2935dc",
+      "entry_e4": 6500,
+      "win_e4": 8900,
+      "loss_e4": 4000,
+      "entry_cents": 65,
+      "win_cents": 89,
+      "loss_cents": 40,
+      "population": 378,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "b3354f0b55e24360bb828b01d431f59f",
+      "phase_a_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-10",
+      "phase_b_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-10",
+      "executed": true,
+      "execute_ms": 4286,
+      "result_hash": "76d3029a6db05dd37415d02150af51191f735bce2e7974fa4733a002daf507c4",
+      "lab_ms": 341,
+      "base_ms": 3400,
+      "debase_ms": 2029,
+      "slot_ms": 11420
+    },
+    {
+      "slot_id": "ITI-11",
+      "label": "W+2",
+      "entry_steps": 0,
+      "win_steps": 2,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "e1",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 6500,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 9300,
+            "sequential": false
+          },
+          {
+            "id": "loss",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-07-01",
+          "date_to": "2025-07-31",
+          "game_data": [],
+          "leagues": [
+            "ATP"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "ATP"
+          ]
+        }
+      },
+      "question_sha256": "52eb52f23d1ad89f7c087f9914a78df1347cd97772ae7aec2cb9ecec34187f69",
+      "source_question_sha256": "0e810d3a87d5b0a8271a855fa76a2124594dfa870f504f0e3b752b2ddf2935dc",
+      "entry_e4": 6500,
+      "win_e4": 9300,
+      "loss_e4": 4000,
+      "entry_cents": 65,
+      "win_cents": 93,
+      "loss_cents": 40,
+      "population": 378,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "121096560d724a6a835ff97137e2d748",
+      "phase_a_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-11",
+      "phase_b_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-11",
+      "executed": true,
+      "execute_ms": 3374,
+      "result_hash": "00bff4b4716c377af01984819739f0752db8f2d6b91acdf10a26d23adde24a2f",
+      "lab_ms": 312,
+      "base_ms": 4179,
+      "debase_ms": 1742,
+      "slot_ms": 11353
+    },
+    {
+      "slot_id": "ITI-12",
+      "label": "W+3",
+      "entry_steps": 0,
+      "win_steps": 3,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "e1",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 6500,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 9700,
+            "sequential": false
+          },
+          {
+            "id": "loss",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-07-01",
+          "date_to": "2025-07-31",
+          "game_data": [],
+          "leagues": [
+            "ATP"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "ATP"
+          ]
+        }
+      },
+      "question_sha256": "2e2751c9be646ff9ddf68d81f367ac671ad4594eca6deacde6d0b751fc7755d7",
+      "source_question_sha256": "0e810d3a87d5b0a8271a855fa76a2124594dfa870f504f0e3b752b2ddf2935dc",
+      "entry_e4": 6500,
+      "win_e4": 9700,
+      "loss_e4": 4000,
+      "entry_cents": 65,
+      "win_cents": 97,
+      "loss_cents": 40,
+      "population": 378,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "d2a43803922b43dcbd0c25b6897e6c84",
+      "phase_a_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-12",
+      "phase_b_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-12",
+      "executed": true,
+      "execute_ms": 4165,
+      "result_hash": "2f8e91dd0fae36661208b1f598d2dfd3457d0e470eae4b6e66a8ebbf138e26ac",
+      "lab_ms": 351,
+      "base_ms": 4936,
+      "debase_ms": 1790,
+      "slot_ms": 12648
+    },
+    {
+      "slot_id": "ITI-13",
+      "label": "L-3",
+      "entry_steps": 0,
+      "win_steps": 0,
+      "loss_steps": -3,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "e1",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 6500,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "loss",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 3400,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-07-01",
+          "date_to": "2025-07-31",
+          "game_data": [],
+          "leagues": [
+            "ATP"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "ATP"
+          ]
+        }
+      },
+      "question_sha256": "71bfaf0f7cf99f91193a617b92a1bfa5398c79d98544400c9a34fd026683c5e0",
+      "source_question_sha256": "0e810d3a87d5b0a8271a855fa76a2124594dfa870f504f0e3b752b2ddf2935dc",
+      "entry_e4": 6500,
+      "win_e4": 8500,
+      "loss_e4": 3400,
+      "entry_cents": 65,
+      "win_cents": 85,
+      "loss_cents": 34,
+      "population": 378,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "aa70ab16d1a04060bb4ec74dc62412d9",
+      "phase_a_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-13",
+      "phase_b_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-13",
+      "executed": true,
+      "execute_ms": 4920,
+      "result_hash": "a8058f65c5ff205d137d688c1e82eed88aceafc65953fa428d2e39728b58e869",
+      "lab_ms": 368,
+      "base_ms": 4182,
+      "debase_ms": 1831,
+      "slot_ms": 12741
+    },
+    {
+      "slot_id": "ITI-14",
+      "label": "L-2",
+      "entry_steps": 0,
+      "win_steps": 0,
+      "loss_steps": -2,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "e1",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 6500,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "loss",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 3600,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-07-01",
+          "date_to": "2025-07-31",
+          "game_data": [],
+          "leagues": [
+            "ATP"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "ATP"
+          ]
+        }
+      },
+      "question_sha256": "614be5bff7eaf592d8462ff0b29a62db4ac7761bc29a6fc1202a10666e33a68d",
+      "source_question_sha256": "0e810d3a87d5b0a8271a855fa76a2124594dfa870f504f0e3b752b2ddf2935dc",
+      "entry_e4": 6500,
+      "win_e4": 8500,
+      "loss_e4": 3600,
+      "entry_cents": 65,
+      "win_cents": 85,
+      "loss_cents": 36,
+      "population": 378,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "d80e395ed565499495371f7ca1d9cc5e",
+      "phase_a_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-14",
+      "phase_b_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-14",
+      "executed": true,
+      "execute_ms": 4138,
+      "result_hash": "8e07f44e4ffcadacf2963bb5785048f3f8c5e7e43ec09e7d632397eeda1e8999",
+      "lab_ms": 435,
+      "base_ms": 4226,
+      "debase_ms": 1761,
+      "slot_ms": 12002
+    },
+    {
+      "slot_id": "ITI-15",
+      "label": "L-1",
+      "entry_steps": 0,
+      "win_steps": 0,
+      "loss_steps": -1,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "e1",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 6500,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "loss",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 3800,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-07-01",
+          "date_to": "2025-07-31",
+          "game_data": [],
+          "leagues": [
+            "ATP"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "ATP"
+          ]
+        }
+      },
+      "question_sha256": "4454f375059abc52b31510741eb437447f7591050543160462deb25a03a28f00",
+      "source_question_sha256": "0e810d3a87d5b0a8271a855fa76a2124594dfa870f504f0e3b752b2ddf2935dc",
+      "entry_e4": 6500,
+      "win_e4": 8500,
+      "loss_e4": 3800,
+      "entry_cents": 65,
+      "win_cents": 85,
+      "loss_cents": 38,
+      "population": 378,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "6392d03c270f4199b4cc5ffa503c6a97",
+      "phase_a_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-15",
+      "phase_b_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-15",
+      "executed": true,
+      "execute_ms": 4199,
+      "result_hash": "ec80b5d0eea95123078d97957b4ae44552d6011bda6e5aaa138365e800fa487d",
+      "lab_ms": 437,
+      "base_ms": 4193,
+      "debase_ms": 1673,
+      "slot_ms": 11854
+    },
+    {
+      "slot_id": "ITI-16",
+      "label": "L+1",
+      "entry_steps": 0,
+      "win_steps": 0,
+      "loss_steps": 1,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "e1",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 6500,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "loss",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4200,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-07-01",
+          "date_to": "2025-07-31",
+          "game_data": [],
+          "leagues": [
+            "ATP"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "ATP"
+          ]
+        }
+      },
+      "question_sha256": "8e5c466f0bd8023a3405e83da629d9eef58234fa3d84bb21d3894375a4bf6bdd",
+      "source_question_sha256": "0e810d3a87d5b0a8271a855fa76a2124594dfa870f504f0e3b752b2ddf2935dc",
+      "entry_e4": 6500,
+      "win_e4": 8500,
+      "loss_e4": 4200,
+      "entry_cents": 65,
+      "win_cents": 85,
+      "loss_cents": 42,
+      "population": 378,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "f1e7899cc36447e893cf238173602ca6",
+      "phase_a_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-16",
+      "phase_b_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-16",
+      "executed": true,
+      "execute_ms": 4170,
+      "result_hash": "da4c761cddd9e5756ea9142bef8c8e5ca08411900f9cb41d7c3ec4729eac16aa",
+      "lab_ms": 362,
+      "base_ms": 2519,
+      "debase_ms": 1695,
+      "slot_ms": 10081
+    },
+    {
+      "slot_id": "ITI-17",
+      "label": "L+2",
+      "entry_steps": 0,
+      "win_steps": 0,
+      "loss_steps": 2,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "e1",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 6500,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "loss",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4400,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-07-01",
+          "date_to": "2025-07-31",
+          "game_data": [],
+          "leagues": [
+            "ATP"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "ATP"
+          ]
+        }
+      },
+      "question_sha256": "f2ed402e824b14b6931cbca0d3f7dc13dedf0f0afb28993c15f1caae0f988c73",
+      "source_question_sha256": "0e810d3a87d5b0a8271a855fa76a2124594dfa870f504f0e3b752b2ddf2935dc",
+      "entry_e4": 6500,
+      "win_e4": 8500,
+      "loss_e4": 4400,
+      "entry_cents": 65,
+      "win_cents": 85,
+      "loss_cents": 44,
+      "population": 378,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "2962aeae002b4a34be1e01570cafd39f",
+      "phase_a_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-17",
+      "phase_b_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-17",
+      "executed": true,
+      "execute_ms": 2493,
+      "result_hash": "81422ecfc933427289a6780fed54f6e32ac37ba20583039a0890693d0b62fbe3",
+      "lab_ms": 354,
+      "base_ms": 5543,
+      "debase_ms": 1833,
+      "slot_ms": 11592
+    },
+    {
+      "slot_id": "ITI-18",
+      "label": "L+3",
+      "entry_steps": 0,
+      "win_steps": 0,
+      "loss_steps": 3,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "e1",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 6500,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "loss",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4600,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-07-01",
+          "date_to": "2025-07-31",
+          "game_data": [],
+          "leagues": [
+            "ATP"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "ATP"
+          ]
+        }
+      },
+      "question_sha256": "1014e94735ab70f7d9a333c898151dac37edc7cdfc9b04c2b38d907637093bbe",
+      "source_question_sha256": "0e810d3a87d5b0a8271a855fa76a2124594dfa870f504f0e3b752b2ddf2935dc",
+      "entry_e4": 6500,
+      "win_e4": 8500,
+      "loss_e4": 4600,
+      "entry_cents": 65,
+      "win_cents": 85,
+      "loss_cents": 46,
+      "population": 378,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "121fb095d7624709906dd4b39505cbb1",
+      "phase_a_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-18",
+      "phase_b_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-18",
+      "executed": true,
+      "execute_ms": 5520,
+      "result_hash": "2ab389f1d0669f22eacc8c077c496b6b94ba9d0a7c5658938d75bedf79b4617b",
+      "lab_ms": 403,
+      "base_ms": 4698,
+      "debase_ms": 1993,
+      "slot_ms": 14070
+    },
+    {
+      "slot_id": "ITI-19",
+      "label": "E+1 W+1",
+      "entry_steps": 1,
+      "win_steps": 1,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "e1",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 6800,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8900,
+            "sequential": false
+          },
+          {
+            "id": "loss",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-07-01",
+          "date_to": "2025-07-31",
+          "game_data": [],
+          "leagues": [
+            "ATP"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "ATP"
+          ]
+        }
+      },
+      "question_sha256": "400c70dea7b6905037dac5d1385ede59f0514b24450a8908e716509056b1caba",
+      "source_question_sha256": "0e810d3a87d5b0a8271a855fa76a2124594dfa870f504f0e3b752b2ddf2935dc",
+      "entry_e4": 6800,
+      "win_e4": 8900,
+      "loss_e4": 4000,
+      "entry_cents": 68,
+      "win_cents": 89,
+      "loss_cents": 40,
+      "population": 365,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "ed3f84d8014042a2a9def1370bc4cae5",
+      "phase_a_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-19",
+      "phase_b_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-19",
+      "executed": true,
+      "execute_ms": 4653,
+      "result_hash": "c0f2aab00c4d6bfe6b4237a7a8769f4c3181a9b62d5f9fe137805e2a5ef25f88",
+      "lab_ms": 408,
+      "base_ms": 4876,
+      "debase_ms": 1763,
+      "slot_ms": 13333
+    },
+    {
+      "slot_id": "ITI-20",
+      "label": "E-1 W-1",
+      "entry_steps": -1,
+      "win_steps": -1,
+      "loss_steps": 0,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "e1",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 6200,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8100,
+            "sequential": false
+          },
+          {
+            "id": "loss",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4000,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-07-01",
+          "date_to": "2025-07-31",
+          "game_data": [],
+          "leagues": [
+            "ATP"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "ATP"
+          ]
+        }
+      },
+      "question_sha256": "1c6f06ed7fc804d55b422f0b1b8f979e94b233d55c88a36cb6f962f3144c6591",
+      "source_question_sha256": "0e810d3a87d5b0a8271a855fa76a2124594dfa870f504f0e3b752b2ddf2935dc",
+      "entry_e4": 6200,
+      "win_e4": 8100,
+      "loss_e4": 4000,
+      "entry_cents": 62,
+      "win_cents": 81,
+      "loss_cents": 40,
+      "population": 393,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "c80df5c27df2410fb8fbdc0f7ab3df29",
+      "phase_a_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-20",
+      "phase_b_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-20",
+      "executed": true,
+      "execute_ms": 4836,
+      "result_hash": "06c6c214068fa14758c89251dd4458fedbfd4e0e7632c8cb7bf49ac5c5e326de",
+      "lab_ms": 434,
+      "base_ms": 2557,
+      "debase_ms": 1647,
+      "slot_ms": 10845
+    },
+    {
+      "slot_id": "ITI-21",
+      "label": "E+1 L+1",
+      "entry_steps": 1,
+      "win_steps": 0,
+      "loss_steps": 1,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "e1",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 6800,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "loss",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4200,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-07-01",
+          "date_to": "2025-07-31",
+          "game_data": [],
+          "leagues": [
+            "ATP"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "ATP"
+          ]
+        }
+      },
+      "question_sha256": "43a17132a35e7ad90eb9d6ba3dfb9a96c154fa6e8a3299387f05ee4194e57649",
+      "source_question_sha256": "0e810d3a87d5b0a8271a855fa76a2124594dfa870f504f0e3b752b2ddf2935dc",
+      "entry_e4": 6800,
+      "win_e4": 8500,
+      "loss_e4": 4200,
+      "entry_cents": 68,
+      "win_cents": 85,
+      "loss_cents": 42,
+      "population": 365,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "2c05422e3b304ece94fa48804c3631f2",
+      "phase_a_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-21",
+      "phase_b_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-21",
+      "executed": true,
+      "execute_ms": 2525,
+      "result_hash": "62930af1feb2d7d9f27a7d9b62ec63cb6d8bd06436a6989c1a5dc58ba8942fd3",
+      "lab_ms": 315,
+      "base_ms": 4738,
+      "debase_ms": 1790,
+      "slot_ms": 10734
+    },
+    {
+      "slot_id": "ITI-22",
+      "label": "E-1 L-1",
+      "entry_steps": -1,
+      "win_steps": 0,
+      "loss_steps": -1,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "e1",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 6200,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8500,
+            "sequential": false
+          },
+          {
+            "id": "loss",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 3800,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-07-01",
+          "date_to": "2025-07-31",
+          "game_data": [],
+          "leagues": [
+            "ATP"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "ATP"
+          ]
+        }
+      },
+      "question_sha256": "8c19dcd04a1b123a9a8e3d17bf3d625765733aaa2a1ba91e8c8865c3bf17e590",
+      "source_question_sha256": "0e810d3a87d5b0a8271a855fa76a2124594dfa870f504f0e3b752b2ddf2935dc",
+      "entry_e4": 6200,
+      "win_e4": 8500,
+      "loss_e4": 3800,
+      "entry_cents": 62,
+      "win_cents": 85,
+      "loss_cents": 38,
+      "population": 393,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "cc65376a893a4309939d03cb8d6e9ea2",
+      "phase_a_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-22",
+      "phase_b_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-22",
+      "executed": true,
+      "execute_ms": 4708,
+      "result_hash": "f895e939da8bf00f967983743eb6d84053838fe380a3fc73bf5e64b960745a6b",
+      "lab_ms": 370,
+      "base_ms": 6064,
+      "debase_ms": 1729,
+      "slot_ms": 14323
+    },
+    {
+      "slot_id": "ITI-23",
+      "label": "W+1 L-1",
+      "entry_steps": 0,
+      "win_steps": 1,
+      "loss_steps": -1,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "e1",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 6500,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8900,
+            "sequential": false
+          },
+          {
+            "id": "loss",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 3800,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-07-01",
+          "date_to": "2025-07-31",
+          "game_data": [],
+          "leagues": [
+            "ATP"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "ATP"
+          ]
+        }
+      },
+      "question_sha256": "d54dc1f67183cdbb36d948619f89968fbd847b487811f51b065a8d006eb362ec",
+      "source_question_sha256": "0e810d3a87d5b0a8271a855fa76a2124594dfa870f504f0e3b752b2ddf2935dc",
+      "entry_e4": 6500,
+      "win_e4": 8900,
+      "loss_e4": 3800,
+      "entry_cents": 65,
+      "win_cents": 89,
+      "loss_cents": 38,
+      "population": 378,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "7169b5b825a84c16a6b372b30ba95cc3",
+      "phase_a_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-23",
+      "phase_b_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-23",
+      "executed": true,
+      "execute_ms": 6032,
+      "result_hash": "105a22937eaa01c2df685caf9d496230a6d4d512fd2c3728fb7c347a15571558",
+      "lab_ms": 446,
+      "base_ms": 2513,
+      "debase_ms": 1724,
+      "slot_ms": 12033
+    },
+    {
+      "slot_id": "ITI-24",
+      "label": "W-1 L+1",
+      "entry_steps": 0,
+      "win_steps": -1,
+      "loss_steps": 1,
+      "status": "COMPLETE",
+      "skip_reason": null,
+      "question": {
+        "accept_limitations": false,
+        "entry_conditions": [
+          {
+            "clock": null,
+            "event_definition": "TRADABLE_CLOSE_CROSS",
+            "id": "e1",
+            "nth": null,
+            "operation": "CROSS",
+            "ordinal": "FIRST_TOUCH",
+            "period": null,
+            "price_e4": 6500,
+            "price_field": "yes_bid_close"
+          }
+        ],
+        "path_conditions": [
+          {
+            "id": "win",
+            "op": "REACH",
+            "outcome": "win",
+            "price_e4": 8100,
+            "sequential": false
+          },
+          {
+            "id": "loss",
+            "op": "REACH",
+            "outcome": "loss",
+            "price_e4": 4200,
+            "sequential": false
+          }
+        ],
+        "requested_dimensions": [
+          "HOLD_TO_SETTLEMENT"
+        ],
+        "terminal": "BOTH",
+        "universe": {
+          "date_from": "2025-07-01",
+          "date_to": "2025-07-31",
+          "game_data": [],
+          "leagues": [
+            "ATP"
+          ],
+          "market_data": [
+            "candles"
+          ],
+          "markets": [
+            "kalshi"
+          ],
+          "seasons": [
+            "2025-2026"
+          ],
+          "sports": [
+            "ATP"
+          ]
+        }
+      },
+      "question_sha256": "82acd675abfb4dd6da5407725e70bf0dae45df98a9d9cab562fb98ca436a16a3",
+      "source_question_sha256": "0e810d3a87d5b0a8271a855fa76a2124594dfa870f504f0e3b752b2ddf2935dc",
+      "entry_e4": 6500,
+      "win_e4": 8100,
+      "loss_e4": 4200,
+      "entry_cents": 65,
+      "win_cents": 81,
+      "loss_cents": 42,
+      "population": 378,
+      "BASE_GRADE": "F",
+      "DEBASE_GRADE": "F",
+      "lab_id": "372a7a5638f9476a942330b80b6ea4c6",
+      "phase_a_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-24",
+      "phase_b_result_id": "ATP CROSS 65 REACH 85 40 JUL 2025 ITI-24",
+      "executed": true,
+      "execute_ms": 2478,
+      "result_hash": "c6a76955442efa053472afe50e509619c2d702b714d7e8544a7601bcc3657be3",
+      "lab_ms": 273,
+      "base_ms": 604,
+      "debase_ms": 1773,
+      "slot_ms": 6616
+    }
+  ],
+  "slot_n": 25,
+  "progress_done": 25,
+  "recommended_slot_id": "ITI-06",
+  "committed_slot_id": null,
+  "commit_path": null,
+  "created_at": "2026-09-21T18:15:43Z",
+  "updated_at": "2026-09-21T18:18:03Z",
+  "cancel_requested": false,
+  "honesty": {
+    "risk_not": "candle_path_not_fill",
+    "fees": "UNAVAILABLE",
+    "slippage": "UNAVAILABLE",
+    "fills": "UNAVAILABLE",
+    "confirmation_2pct": "OPERATION_REQUIRED",
+    "pyramiding": "OPERATION_REQUIRED",
+    "live_execution": false
+  },
+  "caveats": [
+    "LIVE EXECUTION = FALSE",
+    "CANDLE PATH \u2260 ACTUAL FILL",
+    "2% CONFIRMATION = OPERATION_REQUIRED",
+    "PYRAMIDING = OPERATION_REQUIRED",
+    "RECOMMENDED GRADE \u2260 FILL"
+  ],
+  "live_execution": false
+}

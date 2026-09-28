@@ -1,0 +1,11 @@
+test_id,question,finding,record,status
+OCT_2025,identities inspected,October event tickers are rows in the locked 936 audit,research/first78_67_portfolio_v1/runs/first78_67_20260926T074540Z/01_trade_logs/candidate_audit.csv,yes
+OCT_2025,signals computed,extract.py scans the 78 cent cross before the November date filter,research/first78_67_portfolio_v1/src/first78/extract.py,yes
+OCT_2025,outcomes inspected,_outcome reads the market result before DATE_WINDOW exclusion,research/first78_67_portfolio_v1/src/first78/extract.py,yes
+OCT_2025,results entered the headline book,DATE_WINDOW and FIRST_OUTSIDE_WINDOW rows were excluded from the 647 admitted trades,candidate_audit.csv reason column,no
+OCT_2025,results changed 78/67 or 6 percent or the cap,those parameters were frozen for the November-April 936 study,research/first78_67_portfolio_v1/contract.json,not from October portfolio P&L
+OCT_2025,evidence status,previously examined retrospective validation; not a forward deployment test,this file,PREVIOUSLY_EXAMINED_RETROSPECTIVE_VALIDATION
+APR_2025,read by first78_67_portfolio_v1,that study's candle roots are the 2025-2026 normalized trees only,research/first78_67_portfolio_v1/src/first78/extract.py,no
+APR_2025,search scope,this label is relative to that study; it does not prove the rest of the repository never used April 2025,this file,search scope limited
+APR_2025,evidence status,historical holdout relative to the 78/67 v1 study; not a forward deployment test,this file,HISTORICAL_HOLDOUT_NOT_USED_IN_SELECTION
+BOTH,after this run,both windows are spent for further model selection,written again at the end of the run,spent once results exist

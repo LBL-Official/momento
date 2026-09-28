@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "google-sheets": {
+      "url": "https://sheetsmcp.googleapis.com/mcp/v1",
+      "auth": {
+        "CLIENT_ID": "${env:GOOGLE_SHEETS_CLIENT_ID}",
+        "CLIENT_SECRET": "${env:GOOGLE_SHEETS_CLIENT_SECRET}",
+        "scopes": [
+          "https://www.googleapis.com/auth/spreadsheets",
+          "https://www.googleapis.com/auth/drive.file"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "BASE_GRADE": "A",
+  "DEBASE_GRADE": "A",
+  "artifact": "jump_iti",
+  "created_at": "2026-09-16T21:20:04Z",
+  "engine_kind": "research_iti",
+  "entry_cents": 80,
+  "files": {
+    "abase": "SuperasiABase[nba_916_ITI]/SuperasiABase[nba_916_ITI].csv",
+    "debase": "SuperasiBDeBase[nba_916_ITI]/SuperasiBDeBase[nba_916_ITI].csv",
+    "roller": "Roller[nba_916_ITI]/Roller[nba_916_ITI].csv"
+  },
+  "honesty": {
+    "confirmation_2pct": "OPERATION_REQUIRED",
+    "fees": "UNAVAILABLE",
+    "fills": "UNAVAILABLE",
+    "live_execution": false,
+    "pyramiding": "OPERATION_REQUIRED",
+    "risk_not": "candle_path_not_fill",
+    "slippage": "UNAVAILABLE"
+  },
+  "iti_version": "jump_a_iti_v1.0.0",
+  "lab_id": "c9b726e435f941bc9dab9228fcb81fae",
+  "live_execution": false,
+  "loss_cents": 35,
+  "phase_a_result_id": "nba_916",
+  "phase_b_result_id": "nba_916",
+  "population": 514,
+  "question": {
+    "accept_limitations": false,
+    "entry_conditions": [
+      {
+        "clock": null,
+        "event_definition": "TRADABLE_CLOSE_CROSS",
+        "id": "entry_mu1xbssh_vysak",
+        "nth": null,
+        "ordinal": "FIRST_TOUCH",
+        "period": null,
+        "period_windows": [
+          {
+            "clock": null,
+            "period": "Q2"
+          },
+          {
+            "clock": null,
+            "period": "Q3"
+          }
+        ],
+        "price_e4": 8000,
+        "price_field": "yes_bid_close"
+      }
+    ],
+    "path_conditions": [
+      {
+        "id": "exit_mtug1t99_aq1lv",
+        "op": "REACH",
+        "outcome": "loss",
+        "price_e4": 3500,
+        "sequential": false
+      }
+    ],
+    "requested_dimensions": [
+      "HOLD_TO_SETTLEMENT"
+    ],
+    "terminal": "BOTH",
+    "universe": {
+      "date_from": "2025-03-18",
+      "date_to": "2026-09-01",
+      "game_data": [
+        "pbp"
+      ],
+      "leagues": [
+        "NBA"
+      ],
+      "market_data": [
+        "candles"
+      ],
+      "markets": [
+        "kalshi"
+      ],
+      "seasons": [
+        "2025-2026"
+      ],
+      "sports": [
+        "NBA"
+      ]
+    },
+    "win_hold": true
+  },
+  "run_id": "7340b8ec99a74f69a5df3d67aec26da9",
+  "slot_id": "ITI-00",
+  "source_debase_result_id": "nba_916",
+  "source_folder": "nba_916",
+  "strategy_name": "nba_916_ITI",
+  "win_cents": null
+}

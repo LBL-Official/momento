@@ -1,0 +1,61 @@
+{
+  "gamma_base": "https://gamma-api.polymarket.com",
+  "clob_base": "https://clob.polymarket.com",
+  "sports_path": "/sports",
+  "events_path": "/events",
+  "prices_history_path": "/prices-history",
+  "game_tag_id": 100639,
+  "moneyline_type": "moneyline",
+  "leagues": {
+    "NBA": {
+      "series_ids": ["10345"],
+      "sport_codes": ["nba"],
+      "source": "GET https://gamma-api.polymarket.com/sports sport=nba"
+    },
+    "NCAAB": {
+      "series_ids": ["10470", "39"],
+      "sport_codes": ["cbb", "ncaab"],
+      "source": "GET https://gamma-api.polymarket.com/sports sport=cbb (College Basketball) and sport=ncaab (March Madness)"
+    },
+    "WNBA": {
+      "series_ids": ["10105"],
+      "sport_codes": ["wnba"],
+      "source": "GET https://gamma-api.polymarket.com/sports sport=wnba"
+    }
+  },
+  "season_windows": {
+    "NBA": {
+      "2025-2026": {
+        "event_date_from": "2025-10-01",
+        "event_date_to": "2026-06-30"
+      }
+    },
+    "NCAAB": {
+      "2025-2026": {
+        "event_date_from": "2025-11-01",
+        "event_date_to": "2026-04-15"
+      }
+    },
+    "WNBA": {
+      "2025": {
+        "event_date_from": "2025-05-01",
+        "event_date_to": "2025-10-20"
+      },
+      "2026": {
+        "event_date_from": "2026-05-01",
+        "event_date_to": "2026-10-20"
+      }
+    }
+  },
+  "price_history": {
+    "fidelity_minutes": 1,
+    "pre_start_hours": 12,
+    "post_start_hours": 8,
+    "chunk_days": 10
+  },
+  "notes": [
+    "prices-history returns last-trade samples {t, p}, not Kalshi bid/ask OHLC.",
+    "Do not invent yes_bid/yes_ask from last price.",
+    "Do not substitute Kalshi candles for Polymarket."
+  ]
+}

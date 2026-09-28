@@ -1,0 +1,696 @@
+{
+  "generated_at_utc": "2026-09-07T18:44:53.913364+00:00",
+  "rule": {
+    "universe": "asked-six FIRST80 (NBA Q2\u222aQ3, WNBA Q2\u222aQ3, NCAAB P5 H1_2\u222aH2_1)",
+    "path": "first80 \u2192 close\u2208[85,88] \u2192 close\u226477 within 8 minutes of first80; reject if close>88 before entry",
+    "buy": "77\u00a2 (assumed on first \u226477 close)",
+    "exit": "first later close \u226440 else hold to expiration",
+    "pnl": {
+      "WIN": 23,
+      "STOP_40": -37,
+      "LOSS_HOLD": -77
+    },
+    "path_basis": "tradable yes_bid_close, quality filter, 1m candles",
+    "fees": "ZERO",
+    "fills": "NOT MODELED \u2014 candle path only"
+  },
+  "identity": {
+    "asked_six_by_sport": {
+      "NBA": 604,
+      "WNBA": 246,
+      "NCAAB": 332
+    },
+    "asked_six_total": 1182,
+    "halted": false
+  },
+  "funnel": {
+    "asked_six_n": 1182,
+    "qualified_n": 62,
+    "qualify_rate_pct": 5.2453,
+    "rejects": {
+      "NO_PEAK_85_88": 490,
+      "PEAK_ABOVE_88": 329,
+      "NO_REVERT_77": 301,
+      "QUALIFIED": 62
+    }
+  },
+  "backtest_pooled": {
+    "n": 62,
+    "WIN": 39,
+    "STOP_40": 23,
+    "LOSS_HOLD": 0,
+    "p_win_pct": 62.9032,
+    "p_win_ci95": [
+      50.4577,
+      73.843
+    ],
+    "p_stop_pct": 37.0968,
+    "p_loss_hold_pct": 0.0,
+    "sum_pnl_cents": 46,
+    "ev_cents": 0.7419,
+    "ev_pct_of_77_debit": 0.9636,
+    "label": "GROSS CANDLE PATH \u2014 BUY@77 / STOP@40 / HOLD \u2014 ZERO FEE \u2014 NOT A FILL"
+  },
+  "by_sport": {
+    "NBA": {
+      "funnel": {
+        "asked_six_n": 604,
+        "qualified_n": 29,
+        "qualify_rate_pct": 4.8013,
+        "rejects": {
+          "NO_PEAK_85_88": 269,
+          "PEAK_ABOVE_88": 154,
+          "NO_REVERT_77": 152,
+          "QUALIFIED": 29
+        }
+      },
+      "backtest": {
+        "n": 29,
+        "WIN": 16,
+        "STOP_40": 13,
+        "LOSS_HOLD": 0,
+        "p_win_pct": 55.1724,
+        "p_win_ci95": [
+          37.5477,
+          71.5871
+        ],
+        "p_stop_pct": 44.8276,
+        "p_loss_hold_pct": 0.0,
+        "sum_pnl_cents": -113,
+        "ev_cents": -3.8966,
+        "ev_pct_of_77_debit": -5.0605,
+        "label": "GROSS CANDLE PATH \u2014 BUY@77 / STOP@40 / HOLD \u2014 ZERO FEE \u2014 NOT A FILL"
+      },
+      "by_slice": {
+        "Q2": {
+          "n": 8,
+          "WIN": 6,
+          "STOP_40": 2,
+          "LOSS_HOLD": 0,
+          "p_win_pct": 75.0,
+          "p_win_ci95": [
+            40.927,
+            92.8522
+          ],
+          "p_stop_pct": 25.0,
+          "p_loss_hold_pct": 0.0,
+          "sum_pnl_cents": 64,
+          "ev_cents": 8.0,
+          "ev_pct_of_77_debit": 10.3896,
+          "label": "GROSS CANDLE PATH \u2014 BUY@77 / STOP@40 / HOLD \u2014 ZERO FEE \u2014 NOT A FILL"
+        },
+        "Q3": {
+          "n": 21,
+          "WIN": 10,
+          "STOP_40": 11,
+          "LOSS_HOLD": 0,
+          "p_win_pct": 47.619,
+          "p_win_ci95": [
+            28.3437,
+            67.6308
+          ],
+          "p_stop_pct": 52.381,
+          "p_loss_hold_pct": 0.0,
+          "sum_pnl_cents": -177,
+          "ev_cents": -8.4286,
+          "ev_pct_of_77_debit": -10.9462,
+          "label": "GROSS CANDLE PATH \u2014 BUY@77 / STOP@40 / HOLD \u2014 ZERO FEE \u2014 NOT A FILL"
+        }
+      }
+    },
+    "WNBA": {
+      "funnel": {
+        "asked_six_n": 246,
+        "qualified_n": 21,
+        "qualify_rate_pct": 8.5366,
+        "rejects": {
+          "QUALIFIED": 21,
+          "PEAK_ABOVE_88": 73,
+          "NO_PEAK_85_88": 90,
+          "NO_REVERT_77": 62
+        }
+      },
+      "backtest": {
+        "n": 21,
+        "WIN": 15,
+        "STOP_40": 6,
+        "LOSS_HOLD": 0,
+        "p_win_pct": 71.4286,
+        "p_win_ci95": [
+          50.0432,
+          86.1863
+        ],
+        "p_stop_pct": 28.5714,
+        "p_loss_hold_pct": 0.0,
+        "sum_pnl_cents": 123,
+        "ev_cents": 5.8571,
+        "ev_pct_of_77_debit": 7.6067,
+        "label": "GROSS CANDLE PATH \u2014 BUY@77 / STOP@40 / HOLD \u2014 ZERO FEE \u2014 NOT A FILL"
+      },
+      "by_slice": {
+        "Q2": {
+          "n": 8,
+          "WIN": 6,
+          "STOP_40": 2,
+          "LOSS_HOLD": 0,
+          "p_win_pct": 75.0,
+          "p_win_ci95": [
+            40.927,
+            92.8522
+          ],
+          "p_stop_pct": 25.0,
+          "p_loss_hold_pct": 0.0,
+          "sum_pnl_cents": 64,
+          "ev_cents": 8.0,
+          "ev_pct_of_77_debit": 10.3896,
+          "label": "GROSS CANDLE PATH \u2014 BUY@77 / STOP@40 / HOLD \u2014 ZERO FEE \u2014 NOT A FILL"
+        },
+        "Q3": {
+          "n": 13,
+          "WIN": 9,
+          "STOP_40": 4,
+          "LOSS_HOLD": 0,
+          "p_win_pct": 69.2308,
+          "p_win_ci95": [
+            42.3689,
+            87.3195
+          ],
+          "p_stop_pct": 30.7692,
+          "p_loss_hold_pct": 0.0,
+          "sum_pnl_cents": 59,
+          "ev_cents": 4.5385,
+          "ev_pct_of_77_debit": 5.8941,
+          "label": "GROSS CANDLE PATH \u2014 BUY@77 / STOP@40 / HOLD \u2014 ZERO FEE \u2014 NOT A FILL"
+        }
+      }
+    },
+    "NCAAB": {
+      "funnel": {
+        "asked_six_n": 332,
+        "qualified_n": 12,
+        "qualify_rate_pct": 3.6145,
+        "rejects": {
+          "PEAK_ABOVE_88": 102,
+          "NO_PEAK_85_88": 131,
+          "NO_REVERT_77": 87,
+          "QUALIFIED": 12
+        }
+      },
+      "backtest": {
+        "n": 12,
+        "WIN": 8,
+        "STOP_40": 4,
+        "LOSS_HOLD": 0,
+        "p_win_pct": 66.6667,
+        "p_win_ci95": [
+          39.0618,
+          86.1882
+        ],
+        "p_stop_pct": 33.3333,
+        "p_loss_hold_pct": 0.0,
+        "sum_pnl_cents": 36,
+        "ev_cents": 3.0,
+        "ev_pct_of_77_debit": 3.8961,
+        "label": "GROSS CANDLE PATH \u2014 BUY@77 / STOP@40 / HOLD \u2014 ZERO FEE \u2014 NOT A FILL"
+      },
+      "by_slice": {
+        "H1_2": {
+          "n": 7,
+          "WIN": 5,
+          "STOP_40": 2,
+          "LOSS_HOLD": 0,
+          "p_win_pct": 71.4286,
+          "p_win_ci95": [
+            35.8929,
+            91.7783
+          ],
+          "p_stop_pct": 28.5714,
+          "p_loss_hold_pct": 0.0,
+          "sum_pnl_cents": 41,
+          "ev_cents": 5.8571,
+          "ev_pct_of_77_debit": 7.6067,
+          "label": "GROSS CANDLE PATH \u2014 BUY@77 / STOP@40 / HOLD \u2014 ZERO FEE \u2014 NOT A FILL"
+        },
+        "H2_1": {
+          "n": 5,
+          "WIN": 3,
+          "STOP_40": 2,
+          "LOSS_HOLD": 0,
+          "p_win_pct": 60.0,
+          "p_win_ci95": [
+            23.072,
+            88.2382
+          ],
+          "p_stop_pct": 40.0,
+          "p_loss_hold_pct": 0.0,
+          "sum_pnl_cents": -5,
+          "ev_cents": -1.0,
+          "ev_pct_of_77_debit": -1.2987,
+          "label": "GROSS CANDLE PATH \u2014 BUY@77 / STOP@40 / HOLD \u2014 ZERO FEE \u2014 NOT A FILL"
+        }
+      }
+    }
+  },
+  "portfolio_historical": {
+    "start_cents": 2000000,
+    "end_cents": 2040057,
+    "end_dollars": 20400.57,
+    "multiple": 1.02,
+    "taken_bets": 62,
+    "dropped_cap": 0,
+    "active_days": 57,
+    "calendar_days": 57,
+    "max_drawdown_cents": -359899,
+    "max_drawdown_pct_of_peak": -16.2375,
+    "fraction_pct_per_bet": 5,
+    "max_per_sport_per_day": 6,
+    "entry_cents": 77
+  },
+  "portfolio_historical_equity": [
+    {
+      "date": null,
+      "bankroll_cents": 2000000,
+      "taken": 0,
+      "pnl_cents": 0
+    },
+    {
+      "date": "2025-06-11",
+      "bankroll_cents": 1951974,
+      "taken": 1,
+      "pnl_cents": -48026,
+      "sod_cents": 2000000
+    },
+    {
+      "date": "2025-06-14",
+      "bankroll_cents": 1981115,
+      "taken": 1,
+      "pnl_cents": 29141,
+      "sod_cents": 1951974
+    },
+    {
+      "date": "2025-06-17",
+      "bankroll_cents": 1933533,
+      "taken": 1,
+      "pnl_cents": -47582,
+      "sod_cents": 1981115
+    },
+    {
+      "date": "2025-06-20",
+      "bankroll_cents": 1962398,
+      "taken": 1,
+      "pnl_cents": 28865,
+      "sod_cents": 1933533
+    },
+    {
+      "date": "2025-06-27",
+      "bankroll_cents": 1991700,
+      "taken": 1,
+      "pnl_cents": 29302,
+      "sod_cents": 1962398
+    },
+    {
+      "date": "2025-07-29",
+      "bankroll_cents": 2021439,
+      "taken": 1,
+      "pnl_cents": 29739,
+      "sod_cents": 1991700
+    },
+    {
+      "date": "2025-08-01",
+      "bankroll_cents": 2033247,
+      "taken": 3,
+      "pnl_cents": 11808,
+      "sod_cents": 2021439
+    },
+    {
+      "date": "2025-08-15",
+      "bankroll_cents": 2063607,
+      "taken": 1,
+      "pnl_cents": 30360,
+      "sod_cents": 2033247
+    },
+    {
+      "date": "2025-08-16",
+      "bankroll_cents": 2014027,
+      "taken": 1,
+      "pnl_cents": -49580,
+      "sod_cents": 2063607
+    },
+    {
+      "date": "2025-09-05",
+      "bankroll_cents": 2044088,
+      "taken": 1,
+      "pnl_cents": 30061,
+      "sod_cents": 2014027
+    },
+    {
+      "date": "2025-09-17",
+      "bankroll_cents": 1994989,
+      "taken": 1,
+      "pnl_cents": -49099,
+      "sod_cents": 2044088
+    },
+    {
+      "date": "2025-10-11",
+      "bankroll_cents": 2024774,
+      "taken": 1,
+      "pnl_cents": 29785,
+      "sod_cents": 1994989
+    },
+    {
+      "date": "2025-10-25",
+      "bankroll_cents": 2054996,
+      "taken": 1,
+      "pnl_cents": 30222,
+      "sod_cents": 2024774
+    },
+    {
+      "date": "2025-10-30",
+      "bankroll_cents": 2085678,
+      "taken": 1,
+      "pnl_cents": 30682,
+      "sod_cents": 2054996
+    },
+    {
+      "date": "2025-10-31",
+      "bankroll_cents": 2066722,
+      "taken": 2,
+      "pnl_cents": -18956,
+      "sod_cents": 2085678
+    },
+    {
+      "date": "2025-11-05",
+      "bankroll_cents": 2097588,
+      "taken": 1,
+      "pnl_cents": 30866,
+      "sod_cents": 2066722
+    },
+    {
+      "date": "2025-11-08",
+      "bankroll_cents": 2128914,
+      "taken": 1,
+      "pnl_cents": 31326,
+      "sod_cents": 2097588
+    },
+    {
+      "date": "2025-11-09",
+      "bankroll_cents": 2160700,
+      "taken": 1,
+      "pnl_cents": 31786,
+      "sod_cents": 2128914
+    },
+    {
+      "date": "2025-11-15",
+      "bankroll_cents": 2108789,
+      "taken": 1,
+      "pnl_cents": -51911,
+      "sod_cents": 2160700
+    },
+    {
+      "date": "2025-11-18",
+      "bankroll_cents": 2140276,
+      "taken": 1,
+      "pnl_cents": 31487,
+      "sod_cents": 2108789
+    },
+    {
+      "date": "2025-11-23",
+      "bankroll_cents": 2088883,
+      "taken": 1,
+      "pnl_cents": -51393,
+      "sod_cents": 2140276
+    },
+    {
+      "date": "2025-11-26",
+      "bankroll_cents": 2120071,
+      "taken": 1,
+      "pnl_cents": 31188,
+      "sod_cents": 2088883
+    },
+    {
+      "date": "2025-12-03",
+      "bankroll_cents": 2151719,
+      "taken": 1,
+      "pnl_cents": 31648,
+      "sod_cents": 2120071
+    },
+    {
+      "date": "2025-12-07",
+      "bankroll_cents": 2183850,
+      "taken": 1,
+      "pnl_cents": 32131,
+      "sod_cents": 2151719
+    },
+    {
+      "date": "2025-12-23",
+      "bankroll_cents": 2216464,
+      "taken": 1,
+      "pnl_cents": 32614,
+      "sod_cents": 2183850
+    },
+    {
+      "date": "2025-12-25",
+      "bankroll_cents": 2163221,
+      "taken": 1,
+      "pnl_cents": -53243,
+      "sod_cents": 2216464
+    },
+    {
+      "date": "2025-12-28",
+      "bankroll_cents": 2111273,
+      "taken": 1,
+      "pnl_cents": -51948,
+      "sod_cents": 2163221
+    },
+    {
+      "date": "2026-01-03",
+      "bankroll_cents": 2060583,
+      "taken": 1,
+      "pnl_cents": -50690,
+      "sod_cents": 2111273
+    },
+    {
+      "date": "2026-01-07",
+      "bankroll_cents": 2122131,
+      "taken": 2,
+      "pnl_cents": 61548,
+      "sod_cents": 2060583
+    },
+    {
+      "date": "2026-01-16",
+      "bankroll_cents": 2071145,
+      "taken": 1,
+      "pnl_cents": -50986,
+      "sod_cents": 2122131
+    },
+    {
+      "date": "2026-01-20",
+      "bankroll_cents": 2102057,
+      "taken": 1,
+      "pnl_cents": 30912,
+      "sod_cents": 2071145
+    },
+    {
+      "date": "2026-02-01",
+      "bankroll_cents": 2133429,
+      "taken": 1,
+      "pnl_cents": 31372,
+      "sod_cents": 2102057
+    },
+    {
+      "date": "2026-02-04",
+      "bankroll_cents": 2082184,
+      "taken": 1,
+      "pnl_cents": -51245,
+      "sod_cents": 2133429
+    },
+    {
+      "date": "2026-02-11",
+      "bankroll_cents": 2113280,
+      "taken": 1,
+      "pnl_cents": 31096,
+      "sod_cents": 2082184
+    },
+    {
+      "date": "2026-02-14",
+      "bankroll_cents": 2144836,
+      "taken": 1,
+      "pnl_cents": 31556,
+      "sod_cents": 2113280
+    },
+    {
+      "date": "2026-02-18",
+      "bankroll_cents": 2176852,
+      "taken": 1,
+      "pnl_cents": 32016,
+      "sod_cents": 2144836
+    },
+    {
+      "date": "2026-02-19",
+      "bankroll_cents": 2124571,
+      "taken": 1,
+      "pnl_cents": -52281,
+      "sod_cents": 2176852
+    },
+    {
+      "date": "2026-02-25",
+      "bankroll_cents": 2073548,
+      "taken": 1,
+      "pnl_cents": -51023,
+      "sod_cents": 2124571
+    },
+    {
+      "date": "2026-02-27",
+      "bankroll_cents": 2104506,
+      "taken": 1,
+      "pnl_cents": 30958,
+      "sod_cents": 2073548
+    },
+    {
+      "date": "2026-03-01",
+      "bankroll_cents": 2085382,
+      "taken": 2,
+      "pnl_cents": -19124,
+      "sod_cents": 2104506
+    },
+    {
+      "date": "2026-03-07",
+      "bankroll_cents": 2035284,
+      "taken": 1,
+      "pnl_cents": -50098,
+      "sod_cents": 2085382
+    },
+    {
+      "date": "2026-03-09",
+      "bankroll_cents": 2065667,
+      "taken": 1,
+      "pnl_cents": 30383,
+      "sod_cents": 2035284
+    },
+    {
+      "date": "2026-03-15",
+      "bankroll_cents": 2096510,
+      "taken": 1,
+      "pnl_cents": 30843,
+      "sod_cents": 2065667
+    },
+    {
+      "date": "2026-03-16",
+      "bankroll_cents": 2046153,
+      "taken": 1,
+      "pnl_cents": -50357,
+      "sod_cents": 2096510
+    },
+    {
+      "date": "2026-03-21",
+      "bankroll_cents": 1997017,
+      "taken": 1,
+      "pnl_cents": -49136,
+      "sod_cents": 2046153
+    },
+    {
+      "date": "2026-03-27",
+      "bankroll_cents": 1949065,
+      "taken": 1,
+      "pnl_cents": -47952,
+      "sod_cents": 1997017
+    },
+    {
+      "date": "2026-03-30",
+      "bankroll_cents": 1902260,
+      "taken": 1,
+      "pnl_cents": -46805,
+      "sod_cents": 1949065
+    },
+    {
+      "date": "2026-04-06",
+      "bankroll_cents": 1856565,
+      "taken": 1,
+      "pnl_cents": -45695,
+      "sod_cents": 1902260
+    },
+    {
+      "date": "2026-04-07",
+      "bankroll_cents": 1884280,
+      "taken": 1,
+      "pnl_cents": 27715,
+      "sod_cents": 1856565
+    },
+    {
+      "date": "2026-05-27",
+      "bankroll_cents": 1912409,
+      "taken": 1,
+      "pnl_cents": 28129,
+      "sod_cents": 1884280
+    },
+    {
+      "date": "2026-05-29",
+      "bankroll_cents": 1940952,
+      "taken": 1,
+      "pnl_cents": 28543,
+      "sod_cents": 1912409
+    },
+    {
+      "date": "2026-06-14",
+      "bankroll_cents": 1969932,
+      "taken": 1,
+      "pnl_cents": 28980,
+      "sod_cents": 1940952
+    },
+    {
+      "date": "2026-07-30",
+      "bankroll_cents": 1999349,
+      "taken": 1,
+      "pnl_cents": 29417,
+      "sod_cents": 1969932
+    },
+    {
+      "date": "2026-08-06",
+      "bankroll_cents": 1951323,
+      "taken": 1,
+      "pnl_cents": -48026,
+      "sod_cents": 1999349
+    },
+    {
+      "date": "2026-08-08",
+      "bankroll_cents": 1980464,
+      "taken": 1,
+      "pnl_cents": 29141,
+      "sod_cents": 1951323
+    },
+    {
+      "date": "2026-08-11",
+      "bankroll_cents": 2010042,
+      "taken": 1,
+      "pnl_cents": 29578,
+      "sod_cents": 1980464
+    },
+    {
+      "date": "2026-08-21",
+      "bankroll_cents": 2040057,
+      "taken": 1,
+      "pnl_cents": 30015,
+      "sod_cents": 2010042
+    }
+  ],
+  "portfolio_monte_carlo": {
+    "n_sim": 10000,
+    "seed": 20260907,
+    "arrival": "observed qualifying days with 6/sport cap",
+    "outcome_mix": "bootstrap of realized +23/\u221237/\u221277 path P&L",
+    "end_median_cents": 2038076,
+    "end_mean_cents": 2058564,
+    "end_p05_cents": 1609474,
+    "end_p25_cents": 1814861,
+    "end_p75_cents": 2289298,
+    "end_p95_cents": 2578398,
+    "end_median_dollars": 20380.76,
+    "end_p05_dollars": 16094.74,
+    "end_p95_dollars": 25783.98,
+    "multiple_median": 1.019,
+    "p_end_above_start_pct": 54.98,
+    "p_end_below_half_pct": 0.0,
+    "p_touch_below_5k_pct": 0.0,
+    "max_dd_median_cents": -300374
+  }
+}

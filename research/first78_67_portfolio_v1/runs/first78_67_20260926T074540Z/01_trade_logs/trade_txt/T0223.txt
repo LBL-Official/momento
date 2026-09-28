@@ -1,0 +1,10 @@
+trade T0223  NBA  Milwaukee at Golden State
+contract KXNBAGAME-26JAN07MILGSW-GSW  slice Q2
+signal 2026-01-07T19:45:00-08:00 PST  exit 2026-01-07T21:44:51-08:00 PST
+assumed entry 78c  observed close 79c  overshoot 1c
+contracts 3681  principal_cents 287118
+entry_fee_cents 1106  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 80982  net_cents 79876
+strategy_result POSITIVE  net_r 1.856631490865138766212635396
+Assumed fill. Not a maker fill. Not live P&L.

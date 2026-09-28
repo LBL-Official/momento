@@ -1,0 +1,10 @@
+trade T0137  NBA  Milwaukee at Brooklyn
+contract KXNBAGAME-25DEC14MILBKN-BKN  slice Q2
+signal 2025-12-14T15:44:00-08:00 PST  exit 2025-12-14T17:39:46-08:00 PST
+assumed entry 78c  observed close 81c  overshoot 3c
+contracts 2876  principal_cents 224328
+entry_fee_cents 864  exit_fee_cents 0
+exit WIN_SETTLEMENT at 100c  terminal yes
+gross_cents 63272  net_cents 62408
+strategy_result POSITIVE  net_r 1.856662600779460327849344004
+Assumed fill. Not a maker fill. Not live P&L.

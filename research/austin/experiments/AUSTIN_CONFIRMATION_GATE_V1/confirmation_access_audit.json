@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "confirmation_outcomes_accessed": false,
+  "confirmation_queries_generated": false,
+  "confirmation_state_model_generated": false,
+  "confirmation_hazard_generated": false,
+  "confirmation_policy_generated": false,
+  "confirmation_result_csvs": false,
+  "note": "identity/hash only; no confirmation spend"
+}
