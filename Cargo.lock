@@ -1653,6 +1653,8 @@ dependencies = [
 name = "momento-strategy-nba"
 version = "0.1.0"
 dependencies = [
+ "chrono",
+ "chrono-tz",
  "momento-core",
  "serde",
  "serde_json",

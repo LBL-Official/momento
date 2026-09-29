@@ -20,6 +20,7 @@ mod config;
 mod controls;
 mod demo;
 mod engine;
+mod epoch_store;
 #[cfg(test)]
 mod exec_tests;
 mod executor;

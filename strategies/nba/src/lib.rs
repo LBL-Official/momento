@@ -17,6 +17,7 @@ pub mod routing;
 pub mod selection;
 pub mod signal;
 pub mod sizing;
+pub mod sizing_epoch;
 pub mod slice;
 
 pub use admission::{
