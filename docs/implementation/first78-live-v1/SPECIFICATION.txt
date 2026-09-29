@@ -2044,3 +2044,797 @@ The central engineering doctrine should be:
 \[ \boxed{ \text{Never miss silently} \quad \text{Never size ambiguously} \quad \text{Never forget exposure} } \]
 and not “assume the happy path is always available.”
 I also checked the connected GitHub account and confirmed that LBL-Official/momento is available to the integration, so Cursor should explicitly inspect that repository before creating any parallel AWS/execution infrastructure.
+
+# 92. 50-Trade Live Validation Objective
+
+The first production validation horizon for `MOMENTO_FIRST78_LIVE_V1` is:
+
+```text
+TARGET_COMPLETED_TRADES = 50
+TARGET_DEADLINE = 2027-01-01T00:00:00 America/Los_Angeles (exclusive; complete by end of December 31)
+STARTING_BANKROLL = $20,000
+TARGET_BANKROLL = $21,000
+TARGET_NET_PROFIT = $1,000
+TARGET_PORTFOLIO_RETURN = +5.00%
+```
+
+These are **measurement objectives**, not execution overrides.
+
+The system must never:
+
+- loosen eligibility to reach 50 trades;
+- chase entries;
+- exceed the eight-trade cap;
+- increase position sizing;
+- skip an authorized exit;
+- delay an exit;
+- enter outside NBA Q3 or verified P5-vs-P5 NCAAB H2 first 10 minutes
+
+for the purpose of reaching the January target.
+
+Trade quality takes precedence over trade-count targets.
+
+---
+
+# 93. Required Pace Tracking
+
+Maintain:
+
+```text
+completed_trades
+remaining_trades_to_50
+calendar_days_remaining
+eligible_games_remaining
+trades_per_week_required
+current_trade_pace
+projected_50th_trade_date
+```
+
+Display:
+
+```text
+50-TRADE TARGET
+Completed:        17 / 50
+Remaining:        33
+Deadline:         Jan 1 2027
+Current pace:     X.X trades/week
+Required pace:    X.X trades/week
+```
+
+If live trading begins October 20, 50 trades by January 1 requires roughly:
+
+\[
+\boxed{4.9\text{ completed trades/week}}
+\]
+
+or about:
+
+\[
+\boxed{21\text{ trades/month}}
+\]
+
+during that period.
+
+That is below your estimated ~30 NBA trades/month, so your projected opportunity count is sufficient **if the actual qualifying FIRST78 frequency resembles your estimate**. The bot must report observed opportunity frequency rather than assuming 30/month.
+
+---
+
+# 94. $21,000 Portfolio Target
+
+Create the following authoritative portfolio metrics:
+
+```text
+starting_bankroll = 20000.00
+target_bankroll = 21000.00
+target_net_profit = 1000.00
+target_return_pct = 5.00
+```
+
+At every completed trade calculate:
+
+```text
+current_reconciled_bankroll
+cumulative_net_profit
+portfolio_return_pct
+distance_to_21000
+```
+
+Where:
+
+\[
+PortfolioReturn
+=
+\frac{CumulativeRealizedNetTradingPnL}{20,000}
+\]
+
+The account-balance objective is measured separately from realized trading profit. It requires reconciled Kalshi account equity of at least:
+
+\[
+\boxed{\$21,000}
+\]
+
+after fees and realized trading losses. Also require at least $1,000 realized net trading profit for the profit objective; deposits do not count as profit. Use the accounting definitions in section 109.
+
+Do not count:
+
+- unrealized P&L;
+- hypothetical fills;
+- modeled EV;
+- open maker orders;
+- unsettled assumed wins
+
+as realized progress.
+
+---
+
+# 95. EV Required to Reach the Goal
+
+For planning purposes, with:
+
+```text
+entry price ≈ 80¢
+allocation = 6%
+illustration only: immediate resize after exactly every 10 trades
+50 completed trades
+```
+
+the approximate net EV required to grow:
+
+```text
+$20,000 → $21,000
+```
+
+is:
+
+\[
+\boxed{1.307¢/contract}
+\]
+
+Therefore track three EV levels:
+
+```text
+RESEARCH_TARGET_EV = +1.500¢
+ILLUSTRATIVE_REQUIRED_EV ≈ +1.307¢ (not the live decision threshold)
+LIVE_REALIZED_EV = measured
+```
+
+Dashboard:
+
+| Metric | Value |
+|---|---:|
+| Historical/model target | +1.500¢ |
+| Approx. EV required for $21k/50 trades | +1.307¢ |
+| Live realized EV | X.XXX¢ |
+| Gap vs research target | X.XXX¢ |
+| Gap vs $21k requirement | X.XXX¢ |
+
+This allows Momento to determine whether the strategy can miss the historical 1.5¢ estimate slightly while still reaching the portfolio objective.
+
+---
+
+# 96. Expected 50-Trade Result Under 1.5¢ EV
+
+Under the simplified model:
+
+```text
+6% allocation
+80¢ contracts
++1.5¢ net EV
+illustration only: exactly 10 trades per sizing epoch
+```
+
+modeled growth per illustrative 10-trade batch is approximately:
+
+\[
+10\times0.06\times\frac{0.015}{0.80}
+=
+1.125\%
+\]
+
+Five batches imply approximately:
+
+\[
+20,000(1.01125)^5
+=
+\boxed{\$21,150.60}
+\]
+
+Expected modeled gain:
+
+\[
+\boxed{+\$1,150.60}
+\]
+
+or:
+
+\[
+\boxed{+5.75\%}
+\]
+
+This is a simplified planning illustration, not a forecast or guarantee. It omits entry-fee-inclusive quantity rounding, varying fill prices, concurrency and delayed overnight resizing. Actual sizing follows sections 9 and 62–67 only.
+
+The live ledger must show how much realized results deviate from it.
+
+---
+
+# 97. Adverse Exit Quality
+
+Create a separate exit-quality KPI.
+
+Define an **adverse exit** as any trade where Momento removes exposure before favorable $1 settlement through:
+
+- complementary hedge;
+- direct sale of original contract;
+- mixed hedge/direct exit.
+
+Do not mix favorable settlements into average adverse exit price.
+
+Primary KPI:
+
+```text
+AVERAGE_ADVERSE_EXIT_EQUIVALENT_PRICE
+```
+
+Target:
+
+\[
+\boxed{\ge 50¢}
+\]
+
+This should be calculated from actual fills, not midpoint signals.
+
+---
+
+# 98. Exit-Equivalent Price
+
+Because Momento may exit by buying the opposing contract rather than selling its original contract, normalize every exit into an **original-contract-equivalent price**.
+
+### Direct exit
+
+If original YES is sold at:
+
+\[
+x
+\]
+
+then:
+
+\[
+ExitEquivalent=x
+\]
+
+### Opposing-contract hedge
+
+If Momento buys the exact complementary YES contract at:
+
+\[
+h
+\]
+
+then, before fees:
+
+\[
+ExitEquivalent=1-h
+\]
+
+Examples:
+
+| Opponent hedge purchase | Original exit-equivalent |
+|---:|---:|
+| 35¢ | 65¢ |
+| 36¢ | 64¢ |
+| 40¢ | 60¢ |
+| 45¢ | 55¢ |
+| 50¢ | 50¢ |
+
+Therefore your 50¢ minimum average-exit objective can be measured consistently regardless of which leg was used to eliminate exposure.
+
+For mixed exits:
+
+\[
+ExitEquivalentVWAP
+=
+\frac{
+\sum(q_i\times equivalentPrice_i)
+}{
+\sum q_i
+}
+\]
+
+---
+
+# 99. Net Exit-Equivalent Price
+
+Also maintain a fee-adjusted metric:
+
+```text
+NET_EXIT_EQUIVALENT_PRICE
+```
+
+because 50¢ gross exit and 50¢ net exit are not economically identical.
+
+For a direct sale:
+
+\[
+NetExitEquivalent
+=
+salePrice-exitFeePerContract
+\]
+
+For complementary acquisition:
+
+\[
+NetExitEquivalent
+=
+1-opponentPurchasePrice-hedgeFeePerContract
+\]
+
+This gives Momento two measures:
+
+```text
+gross_adverse_exit_equivalent
+net_adverse_exit_equivalent
+```
+
+Do not conflate them.
+
+Primary execution-quality reporting should display both.
+
+---
+
+# 100. Your 50¢ Floor Means Approximately a 30¢ Loss From an 80¢ Entry
+
+If entry VWAP is exactly 80¢ and adverse exit-equivalent VWAP is 50¢:
+
+\[
+0.50-0.80=-0.30
+\]
+
+Therefore gross adverse loss:
+
+\[
+\boxed{-30¢/contract}
+\]
+
+before fees.
+
+At an 82¢ entry:
+
+\[
+0.50-0.82=-0.32
+\]
+
+or:
+
+\[
+\boxed{-32¢}
+\]
+
+This distinction matters.
+
+Do not label:
+
+```text
+50¢ exit = 50¢ slippage
+```
+
+Instead maintain:
+
+```text
+entry_vwap
+exit_equivalent_vwap
+adverse_price_loss
+execution_slippage
+```
+
+separately.
+
+---
+
+# 101. Slippage Must Mean Execution Slippage
+
+Reserve the word `slippage` for the difference between the intended executable reference and actual execution.
+
+For example:
+
+### Entry
+
+```text
+78¢ signal
+80¢ actual entry
+```
+
+Entry implementation slippage:
+
+\[
++2¢
+\]
+
+### Exit
+
+Suppose intended hedge economics imply 64¢ exit-equivalent but actual execution yields 60¢.
+
+Exit slippage:
+
+\[
+-4¢
+\]
+
+That is different from:
+
+```text
+80¢ entry → 50¢ adverse exit
+```
+
+which is primarily a **strategy/path loss of 30¢**, not 30¢ of execution slippage.
+
+This separation is essential for diagnosing whether a poor result came from:
+
+1. the strategy being wrong;
+2. adverse market path;
+3. execution being poor.
+
+---
+
+# 102. Adverse-Exit Frequency
+
+You currently hypothesize that approximately:
+
+\[
+\boxed{20\%}
+\]
+
+of trades may require meaningful adverse exits.
+
+Record:
+
+```text
+adverse_exit_count
+adverse_exit_rate
+settlement_hold_count
+settlement_hold_rate
+```
+
+but treat:
+
+```text
+20%
+```
+
+as a hypothesis, not a hard-coded assumption.
+
+At 50 trades:
+
+```text
+expected adverse exits under 20% assumption ≈ 10
+```
+
+but the actual number must come from live trading.
+
+---
+
+# 103. Why the 50¢ Average Exit Is a Strong Safety Metric
+
+Suppose, purely for illustration:
+
+- 80% of positions ultimately return $1;
+- 20% require adverse exit;
+- average adverse exit = 50¢;
+- entry = 80¢.
+
+Before fees:
+
+Winning contribution:
+
+\[
+0.80\times(1.00-0.80)=+16¢
+\]
+
+Adverse contribution:
+
+\[
+0.20\times(0.50-0.80)=-6¢
+\]
+
+Gross expectancy:
+
+\[
+\boxed{+10¢/contract}
+\]
+
+That is far above your +1.5¢ net-EV target.
+
+So if **only 20% truly require adverse exits** and those exits genuinely average **50¢**, the strategy would have substantial economic room for fees and execution costs.
+
+But that is exactly why the live ledger must measure these separately. If instead:
+
+- more than 20% exit adversely;
+- winners are sometimes exited before $1;
+- entry VWAP drifts toward 82¢;
+- hedge fills are poor;
+- fees are higher;
+- 50¢ exit-equivalent isn't maintained,
+
+the economics change quickly.
+
+---
+
+# 104. Exit Quality Dashboard
+
+Add:
+
+```text
+ADVERSE EXITS
+Count                         X
+Rate                          XX.X%
+
+Average gross exit-equiv      XX.XXX¢
+Average net exit-equiv        XX.XXX¢
+
+Median exit-equiv             XX.XXX¢
+Worst exit-equiv              XX.XXX¢
+10th percentile               XX.XXX¢
+
+Target average                >= 50.000¢
+Distance from target          +/- X.XXX¢
+```
+
+Also show buckets:
+
+```text
+>=65¢
+60–64.99¢
+55–59.99¢
+50–54.99¢
+45–49.99¢
+40–44.99¢
+<40¢
+```
+
+This is much more informative than just reporting one average.
+
+A 50¢ average could otherwise conceal:
+
+```text
+nine equal-quantity exits at 55¢
+one equal-quantity exit at 5¢
+mean = 50¢ despite the severe 5¢ exit
+```
+
+The average alone is insufficient.
+
+---
+
+# 105. Severe Exit Rate
+
+Track:
+
+```text
+EXIT_EQUIVALENT < 50¢
+```
+
+as its own event.
+
+Metrics:
+
+```text
+below_50_count
+below_50_rate
+mean_below_50_exit
+worst_exit
+```
+
+Your desired operating condition can therefore be expressed as:
+
+```text
+mean adverse exit-equivalent >= 50¢
+```
+
+while also monitoring:
+
+```text
+frequency of exits < 50¢
+```
+
+Averages cannot be allowed to hide tail failures.
+
+---
+
+# 106. 50-Trade Scorecard
+
+At exactly Trade 50, automatically freeze:
+
+```text
+FIRST78_LIVE_50_TRADE_REPORT
+```
+
+containing:
+
+### Capital
+
+```text
+Starting bankroll
+Ending reconciled bankroll
+Net profit
+Return %
+Target = $21,000
+Target difference
+```
+
+### Trading
+
+```text
+50 completed trades
+NBA count
+NCAAB count
+eligible opportunities
+missed entries
+capacity skips
+```
+
+### EV
+
+```text
+Net EV/contract
+Gross EV/contract
+Historical target = +1.5¢
+Required EV ≈ +1.307¢
+95% uncertainty interval
+```
+
+### Execution
+
+```text
+Entry VWAP
+Entry slippage
+Maker fill %
+Taker fill %
+Fees/contract
+Signal-to-fill latency
+```
+
+### Adverse exits
+
+```text
+Adverse exit count
+Adverse exit %
+Mean gross exit-equivalent
+Mean net exit-equivalent
+Median exit
+Worst exit
+Below-50 count
+Below-50 %
+```
+
+### Risk
+
+```text
+Maximum drawdown
+Largest single-trade loss
+Longest losing sequence
+Peak bankroll
+Lowest bankroll
+```
+
+### Batch sizing
+
+```text
+Sizing epochs
+Starting bankroll each epoch
+6% budget each epoch
+Actual contracts each trade
+Resize timestamps
+```
+
+---
+
+# 107. The Three Success Questions at Trade 50
+
+The report should prominently answer these separately:
+
+```text
+1. PORTFOLIO OBJECTIVE
+Did reconciled bankroll reach >= $21,000?
+
+2. EDGE OBJECTIVE
+Was realized net EV sufficient for $1,000 net profit at the actual completed-contract count?
+Report +1.307¢ only as the simplified planning comparator.
+How does it compare with +1.5¢ research EV?
+
+3. EXIT QUALITY OBJECTIVE
+Was average adverse exit-equivalent >= 50¢?
+```
+
+Do **not** collapse them into one arbitrary PASS/FAIL flag.
+
+A strategy could:
+
+- miss $21k because of variance while still showing good EV;
+- reach $21k despite poor execution through favorable variance;
+- maintain 50¢ exits but have poor entry fills;
+- have +1.5¢ overall EV while showing dangerous tail exits.
+
+The underlying measurements matter more than a single badge.
+
+---
+
+# 108. Progress Milestones
+
+Freeze intermediate snapshots at:
+
+```text
+N=10
+N=20
+N=30
+N=40
+N=50
+```
+
+The major statistical review points remain:
+
+```text
+20
+50
+100
+200
+```
+
+but the 10-trade snapshots are measurement checkpoints only. They do not trigger an immediate size change and need not coincide with actual sizing epochs.
+
+At every ten trades record:
+
+```text
+bankroll
+cumulative P&L
+portfolio return
+live EV
+adverse exit rate
+average adverse exit
+fees
+drawdown
+```
+
+This creates a clean history that cannot later be rewritten.
+
+---
+
+
+# 109. Binding accounting and measurement definitions
+
+These definitions qualify sections 92–108 and override their simplified planning examples.
+
+- FIRST78 V1 remains a 78-cent midpoint signal with actual entry fills permitted only by its 78–82-cent execution policy. An 80-cent planning example is not a new entry trigger.
+- Ten fully reconciled completions request resizing. Only a safe commit during 01:00 <= America/Los_Angeles time < 03:00 changes the active epoch. No scorecard, deadline or profit target may override that rule.
+- NCAAB remains verified P5 vs P5 only. Measurement targets cannot broaden eligibility.
+- January 1 reporting uses the deadline stated in section 92. Freeze a separate deadline snapshot even if fewer than 50 trades complete; freeze the 50th-trade report whenever trade 50 actually reconciles. Order completions by durable reconciliation sequence so simultaneous completions cannot duplicate or skip a checkpoint.
+- Completed trade means all original exposure is exited or settled, outstanding orders are resolved, and all fills, fees and final P&L are reconciled. Fully paired but unsettled complementary contracts remain SETTLEMENT_NEUTRAL / SETTLEMENT_PENDING; their locked economic value is not realized trading profit.
+- Report actual funded Kalshi equity, available cash, external reserves, cumulative net external flows, realized net trading P&L, and unrealized/locked-but-unsettled value separately. Starting strategy reference capital of $20,000 is not evidence that $20,000 was deposited to Kalshi. Moving a disclosed reserve into Kalshi is funding, not trading profit.
+- Realized strategy return = cumulative realized net trading P&L / $20,000. The realized-capital objective is $20,000 + realized net trading P&L >= $21,000. Display the distinct account-equity objective alongside it. Do not claim all objectives passed unless the trade count, deadline, realized-profit and account-equity conditions each have authoritative evidence.
+- Live realized EV in cents = 100 * total realized net P&L in dollars / total initial contracts for the same fully reconciled trade cohort. At the 50-trade checkpoint, exact net EV corresponding to $1,000 profit is 100000 / sum(initial_contracts) cents. If that denominator is zero, return UNAVAILABLE. +1.307 cents is only the specified 80-cent/five-batch approximation, not a universal target or evidence of the true expected return.
+- Average adverse exit-equivalent is contract-quantity weighted across actual exposure-removing fills. Report the gross >=50-cent objective and the net value separately. Never mix favorable $1 settlements into this exit average. No qualifying exit fills means UNAVAILABLE, not zero or a pass.
+- Direct-sale equivalent = sale price. Matched exact-complement equivalent = $1 minus opposing acquisition price. Count only matched quantity, never unmatched opponent holdings. Allocate actual fees to each quantity once. Include applicable realized settlement fees in final net economics. Do not count a later matched-pair settlement as a second exit fill.
+- Split entry implementation shortfall versus the 78-cent strategy reference from execution shortfall versus the executable quote at submission. A midpoint or a passive unfilled order is not an executable fill benchmark. Retain timestamps and benchmark sources for both.
+- The adverse-exit rate is trades with any qualifying exposure-removal fill / completed trades. Report the quantity-weighted adverse-exit share separately. Preserve partial exits and partial settlements rather than forcing every trade into an all-win/all-exit label. Track unhedged zero-payout settlements as losses in their own count and net P&L; never hide them by excluding them from the adverse-exit average.
+- Below-50 reporting must include both exposure-removing contract quantity below 50 cents / total adverse-exit quantity, and adverse-exit trades whose exit-equivalent VWAP is below 50 cents / all adverse-exit trades. Label denominators. Keep median, minimum and tenth percentile definitions explicit and retain underlying rows.
+- The hypothetical 80% favorable settlement / 20% adverse-exit mixture is illustrative, not the backtest survival rate, an execution assumption or an opportunity forecast. The 50-cent mean objective is monitoring only; it cannot guarantee individual exit prices or justify delaying a protective exit.
+- Cash-flow-adjusted drawdown must name its basis (realized strategy capital versus marked account equity). Confidence intervals must identify the estimator, resampling unit and sample size; correlated trades from the same game/session must not be treated as independent contract observations. An observed 50-trade EV does not establish the long-run edge.
+- Pace uses the actual authorized launch date and elapsed time. If launch date, schedule coverage or observed rate is insufficient, show UNAVAILABLE. The October 20 / 4.9-trades-per-week illustration is not the launch schedule. Scheduled games are candidate opportunities, not guaranteed eligible FIRST78 signals.
+- Freeze the requested dashboard example as a labeled mock only: 34/50, $20,742, +$742, +3.71%, +1.42 cents live EV, 56.8-cent mean adverse exit, 7/34 adverse exits, 2/7 below-50 trades. Never seed these numbers into live results; mock values need not reconcile as a real ledger.
+
+# 110. October implementation and launch handoff
+
+Planned Cursor implementation/resumption date: October 8, 2026.
+Target NBA preseason launch date: October 10, 2026.
+Timezone: America/Los_Angeles.
+
+The operator intends to resume with Cursor when credits reset October 8. This is a handoff plan, not a scheduled automation or a claim that this work will run unattended.
+
+Cursor must start from branch feat/first78-live-v1-overnight-sizing, read this full specification and STATUS.md, inspect repository instructions and current changes, then complete the remaining integration and verification. The current contribution is a sizing foundation, not a completed bot. Rust tests have been written but not executed in the current environment.
+
+October 8–9 priorities: establish the repository-pinned Rust build environment, run and repair tests, complete V1 market/sports-state ingestion and first-touch eligibility, transactionally integrate sizing and reservations, implement the order/hedge/fallback and reconciliation paths, and finish the actual-fill ledger and scorecards. These are required work items, not a promise that two days suffice.
+
+October 10 is a target, not a forced activation deadline. Start with SHADOW_LIVE if production gates are incomplete. Live canary requires the explicit operator authorization and readiness evidence specified earlier; full 6% sizing requires the full readiness gate including verified canary behavior. Do not mark a gate passed merely to meet the date.
+
+Confirm eligible preseason market availability and clock/feed behavior from actual provider data. Do not assume an October 10 game or tradable contract exists. NBA remains Q3 only; NCAAB remains season-verified P5 vs P5 in H2 first ten minutes.
+
+Required handoff artifacts include remaining implementation blockers, test evidence, LIVE_READINESS_REPORT.md, deployment/incident/disaster-recovery runbooks, exact deployed revision when deployment occurs, and explicit operator authorization records. No production order or AWS service change is authorized solely by this timeline.

@@ -78,3 +78,12 @@ The historical mapping is 2025-2026: ACC, B1G, BIG12, SEC, PAC12.
 A reviewed 2026-2027 membership manifest and runtime admission integration
 remain required. This change specifies the gate and its required tests;
 it does not claim that the current legacy worker enforces the new V1 gate.
+
+## 50-trade objective and October handoff
+
+Specification sections 92–108 incorporate the supplied scorecard and exit-quality
+requirements. Sections 109–110 define realized accounting, actual-contract EV,
+overnight-sizing precedence, P5 eligibility, deadline/50th-trade snapshots, and
+the October 8 Cursor / October 10 target launch handoff.
+These are specification additions, not implemented ledger/dashboard features.
+The October 10 target does not override the shadow/canary/readiness gates.
