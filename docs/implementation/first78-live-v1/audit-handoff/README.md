@@ -12,7 +12,7 @@ FIRST78_67 SHADOW (`nba001-20260927T042347Z`).
 |---|---|
 | Branch | `main` |
 | Implementation commit (source under review) | `2a22a2a2f7797f9d54b6372c6f4f8ccb5379bcc2` |
-| Audit-documentation commit | the later commit that added this folder (see `2026-09-30/release-manifest.json`) |
+| Audit-documentation commit | `1daeeba2598facd65f21f240fb3832278956a1a6` (folder); tip stamp `c28b1317ef866525fdefd9fbe11e5689a1cce7fa` |
 | Deployed code | GET-only FIRST78_67 worker started `2026-09-27T04:30:09Z` |
 | Deployed binary SHA-256 | `9ef129e1d8b1ee111666e80265d70cd3dad1ddfa3dd5017d9865b848e57d6789` |
 | Host contract SHA-256 | `ef1c488ab450aadd82e78c2bde2f40506d6baccee15e35f4e09fb3f9869d5ab9` (FIRST78_67, **not** V1) |
