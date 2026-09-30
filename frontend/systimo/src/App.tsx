@@ -68,8 +68,9 @@ export default function App() {
   const [pathFrom, setPathFrom] = useState("choosin_texas");
   const [pathTo, setPathTo] = useState("jump");
   const [queryResult, setQueryResult] = useState<QueryResponse | null>(null);
-  const [workspace, setWorkspace] = useState<"registry" | "trace" | "orchestra" | "control">("registry");
+  const [workspace, setWorkspace] = useState<"registry" | "trace" | "orchestra" | "control" | "nba001">("registry");
   const [control, setControl] = useState<Record<string, unknown> | null>(null);
+  const [nba001, setNba001] = useState<Record<string, unknown> | null>(null);
   const [tradeId, setTradeId] = useState("f84fd059fc0e1429");
   const [orchestra, setOrchestra] = useState<Record<string, unknown> | null>(null);
   const [traces, setTraces] = useState<Array<Record<string, string>>>([]);
@@ -244,6 +245,16 @@ export default function App() {
             >
               Control
             </button>
+            <button
+              className={workspace === "nba001" ? "primary" : ""}
+              onClick={() => {
+                setWorkspace("nba001");
+                void api.nba001V1().then(setNba001).catch((exc: Error) => setError(exc.message));
+              }}
+              type="button"
+            >
+              NBA 001 V1
+            </button>
           </div>
           <button className="primary" disabled={busy} onClick={() => void refreshNow()} type="button">
             Refresh now
@@ -347,6 +358,22 @@ export default function App() {
               <h2>CONTROL</h2>
               <p>Process running, autostart, and trading armed are separate. Trading armed stays false.</p>
               <pre>{JSON.stringify(control, null, 2)}</pre>
+            </>
+          ) : null}
+          {workspace === "nba001" ? (
+            <>
+              <h2>NBA 001 FIRST78 LIVE V1</h2>
+              <p>Projection only. Drevo/Positman are UNAVAILABLE observations. Missing equity is never $0. ARMED stays blocked.</p>
+              <button
+                disabled={busy}
+                onClick={() => {
+                  void api.nba001V1().then(setNba001).catch((exc: Error) => setError(exc.message));
+                }}
+                type="button"
+              >
+                Reload projection
+              </button>
+              {nba001 ? <pre>{JSON.stringify(nba001, null, 2)}</pre> : <p>UNAVAILABLE until the V1 control room is written.</p>}
             </>
           ) : null}
           {workspace === "orchestra" ? (

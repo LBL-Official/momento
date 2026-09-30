@@ -78,9 +78,11 @@ fn budget(equity: u64) -> Result<u64, ResizeError> {
 }
 
 impl SizingEpochs {
-    pub fn new(equity_cents: u64, at: DateTime<Utc>, snapshot_id: String)
-        -> Result<Self, ResizeError>
-    {
+    pub fn new(
+        equity_cents: u64,
+        at: DateTime<Utc>,
+        snapshot_id: String,
+    ) -> Result<Self, ResizeError> {
         if snapshot_id.trim().is_empty() {
             return Err(ResizeError::InvalidEvidence);
         }
@@ -98,7 +100,9 @@ impl SizingEpochs {
     }
 
     pub fn active(&self) -> &Epoch {
-        self.epochs.last().expect("validated nonempty sizing epochs")
+        self.epochs
+            .last()
+            .expect("validated nonempty sizing epochs")
     }
 
     /// Must be called after decoding persisted state before any admission.
@@ -111,7 +115,9 @@ impl SizingEpochs {
             if e.number != i as u64 + 1
                 || e.trade_budget_cents != budget(e.starting_equity_cents)?
                 || e.reconciliation_snapshot_id.trim().is_empty()
-                || e.completions.iter().any(|id| id.trim().is_empty() || !seen.insert(id))
+                || e.completions
+                    .iter()
+                    .any(|id| id.trim().is_empty() || !seen.insert(id))
             {
                 return Err(ResizeError::InvalidEvidence);
             }
@@ -148,9 +154,11 @@ impl SizingEpochs {
     /// Only call for a fully closed/settled trade with final fills and fees
     /// reconciled. The boolean is supplied by the reconciler, not the UI.
     /// Duplicate deliveries never count twice, including across epochs.
-    pub fn record_completion(&mut self, trade_id: &str, fully_reconciled: bool)
-        -> Result<bool, ResizeError>
-    {
+    pub fn record_completion(
+        &mut self,
+        trade_id: &str,
+        fully_reconciled: bool,
+    ) -> Result<bool, ResizeError> {
         self.validate()?;
         if trade_id.trim().is_empty() || !fully_reconciled {
             return Err(ResizeError::InvalidEvidence);
@@ -158,7 +166,11 @@ impl SizingEpochs {
         if self.epochs.iter().any(|e| e.completions.contains(trade_id)) {
             return Ok(false);
         }
-        self.epochs.last_mut().expect("validated").completions.insert(trade_id.into());
+        self.epochs
+            .last_mut()
+            .expect("validated")
+            .completions
+            .insert(trade_id.into());
         Ok(true)
     }
 
@@ -181,11 +193,20 @@ impl SizingEpochs {
         entry_construction_in_flight: bool,
     ) -> Result<Self, ResizeError> {
         self.validate()?;
-        if !self.resize_pending() { return Err(ResizeError::NotPending); }
-        if !Self::in_resize_window(now) { return Err(ResizeError::OutsideWindow); }
-        let age = now.signed_duration_since(snapshot.observed_at).num_milliseconds();
-        if !snapshot.reconciliation_clean || snapshot.snapshot_id.trim().is_empty()
-            || max_snapshot_age_ms < 0 || age < 0 || age > max_snapshot_age_ms
+        if !self.resize_pending() {
+            return Err(ResizeError::NotPending);
+        }
+        if !Self::in_resize_window(now) {
+            return Err(ResizeError::OutsideWindow);
+        }
+        let age = now
+            .signed_duration_since(snapshot.observed_at)
+            .num_milliseconds();
+        if !snapshot.reconciliation_clean
+            || snapshot.snapshot_id.trim().is_empty()
+            || max_snapshot_age_ms < 0
+            || age < 0
+            || age > max_snapshot_age_ms
             || now < self.active().effective_at
         {
             return Err(ResizeError::ReconciliationRequired);

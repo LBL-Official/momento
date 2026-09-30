@@ -31,11 +31,13 @@ mod lane;
 #[cfg(test)]
 mod lane_tests;
 mod lease;
+mod ledger;
 mod public;
+mod recon;
 #[cfg(test)]
 mod tests;
-mod venue;
 mod v1;
+mod venue;
 
 use std::collections::BTreeMap;
 use std::env;
@@ -43,7 +45,7 @@ use std::path::{Path, PathBuf};
 use std::time::Duration;
 
 use momento_kalshi::redact_secrets;
-use momento_strategy_nba::ContractStatus;
+use momento_strategy_nba::{ConfigMode, ContractStatus};
 use serde_json::json;
 use sha2::{Digest, Sha256};
 
@@ -189,6 +191,12 @@ fn load_state(dir: &Path, now: i64) -> Result<(WorkerState, serde_json::Value), 
 fn run() -> Result<(), (i32, String)> {
     let p = paths();
     let cfg = Config::load(&p.config).map_err(|e| (EXIT_FAIL_CLOSED, e))?;
+    if cfg.config_mode().ok() == Some(ConfigMode::First78LiveV1) {
+        std::fs::create_dir_all(&p.state_dir)
+            .map_err(|e| (EXIT_FAIL_CLOSED, format!("state dir: {e}")))?;
+        return v1::runtime::run_supervised(&cfg, &p.state_dir, p.secret.as_deref())
+            .map_err(|e| (EXIT_FAIL_CLOSED, e));
+    }
     std::fs::create_dir_all(&p.state_dir)
         .map_err(|e| (EXIT_FAIL_CLOSED, format!("state dir: {e}")))?;
     let _lease = lease::Lease::acquire(&p.state_dir).map_err(|e| (EXIT_FAIL_CLOSED, e))?;

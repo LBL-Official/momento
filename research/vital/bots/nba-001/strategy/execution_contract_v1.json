@@ -1,0 +1,107 @@
+{
+  "schema_version": "nba_001_first78_live_v1_contract",
+  "contract_id": "nba-001-first78-live-v1",
+  "bot_id": "nba-001",
+  "policy_id": "MOMENTO_FIRST78_LIVE_V1",
+  "live_execution": false,
+  "submits": false,
+  "candle_path_is_fill": false,
+  "production_submission_enabled": false,
+  "production_orders_compiled": false,
+  "fractional_fills_supported": false,
+  "fractional_fills_blocks": "ARMED",
+  "armed": false,
+  "v1_runtime_policy": {
+    "quote_max_age_ms": 5000,
+    "sports_max_age_ms": 5000,
+    "entry_reprice_ms": 1000,
+    "emergency_floor_cents": null,
+    "fee_model": {
+      "fee_type": "quadratic_with_maker_fees",
+      "multiplier_milli": 1000,
+      "precision": "CENT"
+    },
+    "fee_version": "KXNBAGAME_M1_VERIFIED_2026-09-27"
+  },
+  "resolved": {
+    "sport_windows": {
+      "status": "RESOLVED",
+      "nba": "Q3 only; period==3 and clock_seconds<=720",
+      "ncaab": "H2 first ten minutes; period==2 and clock_seconds in [600,1200]"
+    },
+    "first_touch": {
+      "status": "RESOLVED",
+      "rule": "Event-wide first midpoint bid+ask >= 156 (78¢). Incomplete earlier history disqualifies. No Q3/H2 re-entry after an earlier touch."
+    },
+    "entry": {
+      "status": "RESOLVED",
+      "ladder_cents": [78, 79, 80, 81, 82],
+      "post_only": true,
+      "cancel_selected_mid_ge": 86
+    },
+    "sizing": {
+      "status": "RESOLVED",
+      "allocation_bps": 600,
+      "source": "reconciled account equity snapshot only",
+      "hardcoded_reference_bankroll": false,
+      "below_minimum": "SIZE_BELOW_MINIMUM, never round up"
+    },
+    "epoch": {
+      "status": "RESOLVED",
+      "min_completions": 10,
+      "window": "01:00 inclusive to 03:00 exclusive America/Los_Angeles"
+    },
+    "hedge": {
+      "status": "RESOLVED",
+      "trigger": "opponent mid2 >= 72 (36¢)",
+      "initial_limit_cents": 35,
+      "recovery_ratchet": "down only, never above prior limit, never cross ask as maker"
+    },
+    "exit_25": {
+      "status": "RESOLVED",
+      "meaning": "opponent midpoint recovery trigger from hedge-working or recovery. Sells residual original A YES. Not a 25¢ original limit and not a successor of EMERGENCY_DIRECT_EXIT."
+    },
+    "residual": {
+      "status": "RESOLVED",
+      "paired": "min(A_long, B_long)",
+      "residual_original": "max(0, A_long - B_long)",
+      "overhedge": "integrity incident, no automatic unwind"
+    },
+    "drevo_positman": {
+      "status": "RESOLVED",
+      "role": "research observations only",
+      "unavailable": "UNAVAILABLE",
+      "changes_strategy": false
+    }
+  },
+  "unresolved_owner_input": {
+    "emergency_floor_cents": {
+      "status": "UNRESOLVED_OWNER_INPUT",
+      "blocks": "ARMED",
+      "question": "Lowest limit the bot may use on a reduce-only IOC sale of residual original A during deterioration or 25¢-trigger exits. Tight can leave exposure; permissive can realize a large loss. Do not invent 1¢."
+    },
+    "session_boundary_and_eight_trade_count": {
+      "status": "UNRESOLVED_OWNER_INPUT",
+      "blocks": "ARMED",
+      "implemented_shadow": "Los_Angeles calendar day, increment on admit including nonfills"
+    },
+    "entry_reprice_timing": {
+      "status": "UNRESOLVED_OWNER_INPUT",
+      "blocks": "ARMED",
+      "implemented_shadow_ms": 1000
+    },
+    "deterioration_comparator": {
+      "status": "UNRESOLVED_OWNER_INPUT",
+      "blocks": "ARMED",
+      "implemented_shadow": "any opponent mid2 above the post-trigger low"
+    },
+    "hedge_timeout_retry_limits": {
+      "status": "UNRESOLVED_OWNER_INPUT",
+      "blocks": "ARMED"
+    },
+    "exposure_drawdown_limits": {
+      "status": "UNRESOLVED_OWNER_INPUT",
+      "blocks": "ARMED"
+    }
+  }
+}

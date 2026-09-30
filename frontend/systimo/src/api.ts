@@ -94,4 +94,5 @@ export const api = {
     getJson<{ bots: Array<Record<string, string>>; trading_armed: boolean }>(
       `/systimo/bots?session_id=${encodeURIComponent(sessionId)}`,
     ),
+  nba001V1: () => getJson<Record<string, unknown>>("/systimo/nba-001/v1"),
 };

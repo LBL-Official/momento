@@ -110,6 +110,7 @@ impl Config {
         match self.mode.as_str() {
             "live_data_only" => Ok(ConfigMode::LiveDataOnly),
             "shadow" => Ok(ConfigMode::Shadow),
+            "first78_live_v1" => Ok(ConfigMode::First78LiveV1),
             "live" => Ok(ConfigMode::Live),
             other => Err(format!("unknown mode {other}")),
         }

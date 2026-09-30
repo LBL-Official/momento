@@ -8,6 +8,8 @@ pub enum ConfigMode {
     LiveDataOnly,
     Shadow,
     Live,
+    /// Supervised FIRST78 Live V1 collector. Production submission stays compiled out.
+    First78LiveV1,
 }
 
 #[derive(Clone, Copy, Debug, PartialEq, Eq, Serialize, Deserialize)]
@@ -39,7 +41,7 @@ pub fn derive_mode(i: &ModeInputs) -> Mode {
     }
     match i.config {
         ConfigMode::LiveDataOnly => Mode::LiveDataOnly,
-        ConfigMode::Shadow => Mode::Shadow,
+        ConfigMode::Shadow | ConfigMode::First78LiveV1 => Mode::Shadow,
         ConfigMode::Live => {
             if !i.live_gates_set || !i.hard_blockers.is_empty() {
                 Mode::Shadow

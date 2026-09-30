@@ -3285,6 +3285,13 @@ def systimo_bots(session_id: str) -> dict:
     return _systimo_http(handle_bots, session_id)
 
 
+@app.get("/systimo/nba-001/v1")
+def systimo_nba001_v1() -> dict:
+    from roller.systimo.api import handle_nba001_v1
+
+    return handle_nba001_v1()
+
+
 @app.get("/stryke/health")
 def stryke_health() -> dict:
     from roller.stryke.api import handle_health

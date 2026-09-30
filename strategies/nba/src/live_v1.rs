@@ -94,6 +94,17 @@ pub struct FirstTouch {
     pub sports: Option<SportsState>,
     pub reason: Option<String>,
 }
+/// How residual original A is being reduced. `Floor25` is a trigger from a
+/// still-working or recovery hedge. It is never the successor of
+/// `Deterioration` merely because exposure remains.
+#[derive(Clone, Copy, Debug, Default, PartialEq, Eq, Serialize, Deserialize)]
+pub enum ExitKind {
+    #[default]
+    None,
+    Deterioration,
+    Floor25,
+}
+
 #[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct Trade {
     pub selected: usize,
@@ -103,6 +114,8 @@ pub struct Trade {
     pub hedge_low_mid2: Option<u32>,
     pub hedge_limit: u16,
     pub emergency: bool,
+    pub exit_kind: ExitKind,
+    pub direct_exit_attempts: u32,
     pub entry_closed: bool,
     pub last_entry_price: u16,
     pub last_entry_ms: i64,
@@ -201,6 +214,10 @@ pub enum Action {
     },
     Resized {
         epoch: u64,
+    },
+    SizeBelowMinimum {
+        event_id: String,
+        remaining_centicents: i64,
     },
 }
 fn utc(ms: i64) -> Result<DateTime<Utc>, String> {
@@ -568,6 +585,8 @@ impl Engine {
             hedge_low_mid2: None,
             hedge_limit: 35,
             emergency: false,
+            exit_kind: ExitKind::None,
+            direct_exit_attempts: 0,
             entry_closed: false,
             last_entry_price: 78,
             last_entry_ms: now,
@@ -628,15 +647,21 @@ impl Engine {
             t.hedge_low_mid2 = Some(m);
             t.entry_closed = true;
         }
-        if let (Some(low), Some(q)) = (t.hedge_low_mid2, opp) {
-            if q.mid2() > low || q.mid2() <= 50 {
-                t.emergency = true;
-            }
-            if q.mid2() < low {
-                t.hedge_low_mid2 = Some(q.mid2());
-                t.hedge_limit = t
-                    .hedge_limit
-                    .min((q.mid2() / 2).saturating_sub(1).clamp(25, 35) as u16);
+        if t.exit_kind == ExitKind::None {
+            if let (Some(low), Some(q)) = (t.hedge_low_mid2, opp) {
+                if q.mid2() <= 50 {
+                    t.exit_kind = ExitKind::Floor25;
+                    t.emergency = true;
+                } else if q.mid2() > low {
+                    t.exit_kind = ExitKind::Deterioration;
+                    t.emergency = true;
+                }
+                if q.mid2() < low {
+                    t.hedge_low_mid2 = Some(q.mid2());
+                    t.hedge_limit = t
+                        .hedge_limit
+                        .min((q.mid2() / 2).saturating_sub(1).clamp(25, 35) as u16);
+                }
             }
         }
         let mut cancel = Vec::new();
@@ -678,11 +703,15 @@ impl Engine {
                 });
             let next_id = format!("v1-{}-{}", id, t.book.orders.len());
             match t.book.plan_emergency(policy, &next_id, None) {
-                PlanStep::Submit(order) => stage(t, id, order, out)?,
+                PlanStep::Submit(order) => {
+                    t.direct_exit_attempts = t.direct_exit_attempts.saturating_add(1);
+                    stage(t, id, order, out)?;
+                }
                 PlanStep::PolicyUnresolved { .. } => out.push(Action::Block {
                     event_id: id.into(),
                     reason: "EMERGENCY_PRICE_POLICY_UNRESOLVED".into(),
                 }),
+                PlanStep::AwaitReconciliation { .. } | PlanStep::CancelWorking { .. } => {}
                 _ => {}
             }
             return Ok(());
@@ -742,6 +771,11 @@ impl Engine {
                 t.last_entry_price = price;
                 t.last_entry_ms = now;
                 stage(t, id, order, out)?;
+            } else {
+                out.push(Action::SizeBelowMinimum {
+                    event_id: id.into(),
+                    remaining_centicents: remaining,
+                });
             }
         }
         Ok(())

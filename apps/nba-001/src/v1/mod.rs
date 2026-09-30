@@ -1,6 +1,11 @@
-//! Isolated replay runner. It never calls an order transport.
+//! Isolated replay runner plus supervised V1 runtime. It never calls a
+//! production order transport from this module.
+pub mod alerts;
+pub mod discovery;
 pub mod espn;
 pub mod kalshi;
+pub mod outbox;
+pub mod runtime;
 mod wal;
 use momento_strategy_nba::live_v1::{Engine, Input, Policy};
 use serde::{Deserialize, Serialize};

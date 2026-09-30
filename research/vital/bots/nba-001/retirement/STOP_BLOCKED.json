@@ -1,0 +1,58 @@
+{
+  "schema": "nba001_mlb_wnba_retirement_v1",
+  "observed_at_utc": "2026-09-30T13:53:56Z",
+  "ssm_command_id": "0dbaa619-ad89-41ed-978f-d8f75d8c0e4a",
+  "instance": "i-0f0849d5829476c31",
+  "region": "us-east-1",
+  "aws_account": "895492487332",
+  "vital_aws_control": false,
+  "action": "NONE",
+  "stop": "BLOCKED",
+  "disable": "BLOCKED",
+  "secrets_revoked": false,
+  "units": {
+    "momento-live.service": {
+      "active": true,
+      "sub": "running",
+      "unit_file_state": "enabled",
+      "heartbeat": {
+        "mode": "Live",
+        "order_submission": "enabled",
+        "mlb_strategy": "active",
+        "wnba_strategy": "active",
+        "open_mlb_positions": 0,
+        "open_wnba_positions": 0,
+        "unknown_orders": 0,
+        "recon": "Healthy",
+        "bankroll_cents": 5000
+      },
+      "notes": [
+        "Heartbeat open_*=0 is host-reported, not a signed Kalshi GET inventory.",
+        "Journal still coalesces fills and records fill_fractional_unrepresentable in the same minute.",
+        "occupancy_sync n=0 is not sole-bot proof while this unit remains Live and enabled."
+      ]
+    },
+    "momento-nba-001.service": {
+      "active": true,
+      "sub": "running",
+      "unit_file_state": "enabled",
+      "heartbeat": {
+        "mode": "SHADOW",
+        "submits": false,
+        "shard0_cents": 5741,
+        "shard3_cents": 56,
+        "blockers": 7
+      },
+      "notes": [
+        "Host binary is the deployed FIRST78_67 SHADOW worker, not this increment's V1 supervisor.",
+        "Shard cash figures are heartbeat integers, not a V1 reconciled snapshot."
+      ]
+    }
+  },
+  "blockers": [
+    "VITAL_AWS_CONTROL unset; drain-and-disable must go through Vital confirmation",
+    "momento-live.service still Live with order_submission=enabled",
+    "signed Kalshi positions/orders/unresolved/late-fills not re-read in this increment",
+    "shared credential with nba-001; do not revoke"
+  ]
+}

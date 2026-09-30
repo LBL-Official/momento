@@ -1,0 +1,21 @@
+# Example only. Not the shipped FIRST78_67 host config.
+# Copy to a working path and point MOMENTO_NBA_CONFIG at it.
+# Production orders stay compiled out. emergency_floor_cents must remain unset
+# on the V1 contract. Do not set live.enabled.
+
+mode = "first78_live_v1"
+contract_path = "research/vital/bots/nba-001/strategy/execution_contract_v1.json"
+
+tick_seconds = 15
+discovery_seconds = 300
+account_seconds = 60
+series = "KXNBAGAME"
+
+[live]
+enabled = false
+confirmation = ""
+
+[collateral]
+isolation_evidence = ""
+reservation_ledger = ""
+shared_credential_submitters = ["momento-live.service (MLB/WNBA, same Kalshi credential)"]

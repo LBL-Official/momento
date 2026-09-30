@@ -231,3 +231,9 @@ def handle_bots(session_id: str) -> dict[str, Any]:
     if session["scope_level"] != "global":
         bots = [row for row in bots if row["quadrant_id"] == session["quadrant_id"]]
     return {"bots": bots, "trading_armed": False}
+
+
+def handle_nba001_v1() -> dict[str, Any]:
+    from roller.systimo.nba001_v1 import handle_nba001_v1 as impl
+
+    return impl()

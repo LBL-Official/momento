@@ -1,0 +1,14 @@
+{
+  "season": "2026-27",
+  "status": "EVIDENCE_INCOMPLETE",
+  "note": "Spec requires verified both-teams P5 for NCAAB. 2025-26 lists are not sufficient. 2024+ realignment makes a frozen 'Power 5' set non-obvious. Teams are admitted only when verified=true with a current-season evidence_url and ESPN id. This file is empty until those sources are attached; NCAAB entries stay blocked.",
+  "conferences": ["ACC", "Big Ten", "Big 12", "SEC", "Pac-12"],
+  "source_attempts": [
+    {
+      "label": "NCAA Division I conference membership 2026-27",
+      "status": "NOT_YET_ATTACHED",
+      "url": null
+    }
+  ],
+  "teams": []
+}

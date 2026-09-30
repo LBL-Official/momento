@@ -426,3 +426,16 @@ def test_cli_plan_does_not_arm_trading(store, monkeypatch):
     text = (REPO / "ROLLER" / "roller" / "systimo" / "cli.py").read_text(encoding="utf-8")
     assert "VITAL_AWS_CONTROL" not in text or "does not set VITAL_AWS_CONTROL" in text
     assert "momento-live.service" in text
+
+
+def test_nba001_v1_missing_control_room_is_unavailable_not_zero(store, monkeypatch, tmp_path):
+    monkeypatch.setenv("NBA001_STATE_DIR", str(tmp_path / "missing"))
+    from roller.systimo.nba001_v1 import handle_nba001_v1
+
+    body = handle_nba001_v1()
+    assert body["availability"] == "UNAVAILABLE"
+    assert body["equity"] == "UNAVAILABLE"
+    assert body["armed"] is False
+    assert body["executing"] is False
+    assert body["drevo"] == "UNAVAILABLE"
+    assert "0" not in str(body["equity"])
