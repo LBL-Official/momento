@@ -35,6 +35,7 @@ mod public;
 #[cfg(test)]
 mod tests;
 mod venue;
+mod v1;
 
 use std::collections::BTreeMap;
 use std::env;
@@ -80,6 +81,9 @@ fn main() {
     let code = match args.first().map(String::as_str) {
         None | Some("run") => run(),
         Some("probe") => probe(),
+        Some("v1-replay") => v1::replay(&args[1..]),
+        Some("v1-kalshi-observe") => v1::kalshi::observe(&args[1..]),
+        Some("v1-espn") => v1::espn::probe(&args[1..]),
         Some("evidence") => evidence(),
         Some("demo-exercise") => demo::exercise(),
         Some("--version") => {
@@ -94,7 +98,7 @@ fn main() {
         Some(other) => Err((
             2,
             format!(
-                "unknown command {other}; expected run, probe, evidence, demo-exercise, --version"
+                "unknown command {other}; expected run, probe, evidence, demo-exercise, v1-replay, v1-espn, v1-kalshi-observe, --version"
             ),
         )),
     };

@@ -10,6 +10,7 @@ pub mod exposure;
 pub mod fees;
 pub mod hedge;
 pub mod lifecycle;
+pub mod live_v1;
 pub mod mode;
 pub mod orders;
 pub mod reserve;
@@ -70,3 +71,5 @@ pub const ALLOCATION_BPS: u32 = 600;
 pub const SHARED_SLOTS: u32 = 7;
 pub const BATCH_SIZE: u32 = 10;
 pub const BATCH_1_REFERENCE_CENTS: i64 = batch::REFERENCE_INITIAL_CENTS;
+
+pub mod portfolio_v1;

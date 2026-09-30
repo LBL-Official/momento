@@ -1,3 +1,10 @@
+CURRENT OWNER AMENDMENT — September 30, 2026
+Section 111 and OPERATIONS_AND_CAPITAL_V1.md govern capital, launch and operations.
+Target: October 3 $20 funded-account canary, subject to readiness. Size from actual
+reconciled account equity; no $20,000 default. All earlier $20,000/$21,000 objectives
+are reference scenarios, not the current funded-account baseline. NCAAB remains
+season-verified P5 vs P5 only. Overnight resizing remains 01:00–03:00 Los Angeles.
+
 Momento Bot 01
 
 
@@ -112,11 +119,11 @@ The partial position becomes the authoritative open quantity and must be managed
 
 6. Capital model
 Initial bankroll:
-$20,000
+Actual authenticated and reconciled Kalshi account equity (target initial funding $20).
 Initial allocation:
 6% of batch bankroll
-Therefore Batch 1 maximum acquisition budget:
-\[ 20,000\times0.06=\$1,200 \]
+Example Batch 1 maximum acquisition budget at $20 equity: $1.20.
+At $20,000 reconciled epoch equity the same formula gives $1,200.
 This includes entry fees.
 It is not:
 premium budget + unlimited fees
@@ -2052,8 +2059,8 @@ The first production validation horizon for `MOMENTO_FIRST78_LIVE_V1` is:
 ```text
 TARGET_COMPLETED_TRADES = 50
 TARGET_DEADLINE = 2027-01-01T00:00:00 America/Los_Angeles (exclusive; complete by end of December 31)
-STARTING_BANKROLL = $20,000
-TARGET_BANKROLL = $21,000
+REFERENCE_SCENARIO_STARTING_BANKROLL = $20,000
+REFERENCE_SCENARIO_TARGET_BANKROLL = $21,000
 TARGET_NET_PROFIT = $1,000
 TARGET_PORTFOLIO_RETURN = +5.00%
 ```
@@ -2838,3 +2845,33 @@ October 10 is a target, not a forced activation deadline. Start with SHADOW_LIVE
 Confirm eligible preseason market availability and clock/feed behavior from actual provider data. Do not assume an October 10 game or tradable contract exists. NBA remains Q3 only; NCAAB remains season-verified P5 vs P5 in H2 first ten minutes.
 
 Required handoff artifacts include remaining implementation blockers, test evidence, LIVE_READINESS_REPORT.md, deployment/incident/disaster-recovery runbooks, exact deployed revision when deployment occurs, and explicit operator authorization records. No production order or AWS service change is authorized solely by this timeline.
+
+
+# 111. Actual-account capital and independent operations amendment
+
+The complete governing amendment is OPERATIONS_AND_CAPITAL_V1.md in this folder.
+It is part of this specification, not an optional research note.
+
+October 3, 2026 replaces October 10 as the target for the $20 funded-account
+canary. A date is not readiness evidence or automatic arming. The same trading
+logic, order lifecycle, fees, idempotency, reconciliation, and observability
+must operate at $20 and $20,000. No special small-account strategy or fee waiver.
+
+Authenticated reconciled account equity initializes the sizing baseline. The
+NBA + NCAAB bot is assumed to be the only account user; verify ownership and block
+on unknown/manual activity. No static balance fallback. Preserve the 6% frozen
+epoch and 01:00–03:00 America/Los_Angeles resize rule after ten completions.
+Actual equity monitoring does not authorize intraday budget changes. Deposits
+and withdrawals are external flows and never strategy P&L. Earlier $20,000→$21,000
+figures are labeled reference scenarios; report actual funded performance.
+
+AWS execution operates independently of the operator laptop/Wi-Fi, Cursor,
+website, Linear and Sunsama. Orchestra owns explicit NORMAL/CAUTION/
+NO_NEW_ENTRIES/EXECUTION_LOCKED authority. Systimo owns the Control Room.
+Maintain separate execution, portfolio and development ledgers with immutable
+source events and rebuildable projections, durable intent/alert outboxes,
+P0/P1/P2 incidents, versioned Drevo time series and Positman recommendations
+separate from actions. Linear receives evidence-based follow-up outside the
+execution path. Every implementation/deployment gate requires observed evidence.
+
+Refer to STATUS.md for what is implemented, tested, connected, and still blocked.
