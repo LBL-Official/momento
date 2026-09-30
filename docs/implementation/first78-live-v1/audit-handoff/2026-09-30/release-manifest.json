@@ -3,7 +3,7 @@
   "prepared_at_utc": "2026-09-30T13:56:15Z",
   "branch": "main",
   "implementation_commit": "2a22a2a2f7797f9d54b6372c6f4f8ccb5379bcc2",
-  "audit_documentation_commit": "PENDING_THIS_FOLDER_COMMIT",
+  "audit_documentation_commit": "1daeeba2598facd65f21f240fb3832278956a1a6",
   "pushing_does_not_deploy": true,
   "deployed": {
     "policy": "FIRST78_67",
