@@ -1,0 +1,70 @@
+{
+  "schema": "first78_live_v1_audit_handoff_v1",
+  "prepared_at_utc": "2026-09-30T13:56:15Z",
+  "branch": "main",
+  "implementation_commit": "2a22a2a2f7797f9d54b6372c6f4f8ccb5379bcc2",
+  "audit_documentation_commit": "PENDING_THIS_FOLDER_COMMIT",
+  "pushing_does_not_deploy": true,
+  "deployed": {
+    "policy": "FIRST78_67",
+    "not": "MOMENTO_FIRST78_LIVE_V1",
+    "service": "momento-nba-001.service",
+    "exec_start": "/usr/local/bin/momento-nba-001 run",
+    "process_start_utc": "2026-09-27T04:30:09Z",
+    "build_id": "nba001-20260927T042347Z",
+    "binary_sha256": "9ef129e1d8b1ee111666e80265d70cd3dad1ddfa3dd5017d9865b848e57d6789",
+    "binary_backup": "/usr/local/bin/momento-nba-001.9ef129e1.bak",
+    "config_sha256": "fff031f2736f38f0fe00373de0844ab18dfaccaee856b86bc4bf47583b21434c",
+    "host_contract_sha256": "ef1c488ab450aadd82e78c2bde2f40506d6baccee15e35f4e09fb3f9869d5ab9",
+    "host_contract_schema": "nba_001_execution_contract_v1",
+    "unit_file_sha256": "60a57c8ad3a0a2c919af0e3761febc2f4792ef0b32966ab70f668a7967b0ecaf",
+    "arch": "aarch64",
+    "mode": "SHADOW",
+    "submission_adapter_linked": false,
+    "production_orders": false,
+    "live_gates": {
+      "enabled": false,
+      "confirmation": ""
+    }
+  },
+  "source_under_review": {
+    "policy": "MOMENTO_FIRST78_LIVE_V1",
+    "v1_contract_path": "research/vital/bots/nba-001/strategy/execution_contract_v1.json",
+    "v1_contract_sha256": "bf9607805ea84bfb80e7427ea3fa53882675773b002519311d6042a1aadd825e",
+    "p5_manifest_sha256": "7d21c88f2c547886c0941374de599eb348e72579048b75271d747e9ee4f2df1d",
+    "repo_legacy_contract_sha256": "b8d119a5dbf78c6d582f95cc47003f035796babdcce254a4c3ce6c0baeba8e1c",
+    "repo_legacy_contract_differs_from_host": true,
+    "toolchain": {
+      "rust_channel": "1.98.0",
+      "rustc": "1.98.0 (88d9e12ae 2026-08-18)",
+      "cargo": "1.98.0 (797e8a9bc 2026-08-05)",
+      "rust_toolchain_toml_sha256": "07487db9d6b45de2f308f9fb578c9c46041381c3ee44ef782eca64150a394772",
+      "cargo_lock_sha256": "1d1ddfeb0e52b2555430e8427983ac494af57a095a6a73106379229f9a12928d"
+    },
+    "example_v1_config": "config/nba-001-first78-live-v1.toml.example",
+    "shipped_host_config_example": "config/nba-001.toml",
+    "schema_versions": {
+      "v1_contract": "nba_001_first78_live_v1_contract",
+      "event_envelope": "first78_v1_event_v1",
+      "systimo_projection": "systimo.nba001_v1.v0"
+    }
+  },
+  "aws": {
+    "account": "895492487332",
+    "region": "us-east-1",
+    "instance": "i-0f0849d5829476c31",
+    "identity_ssm_command_id": "7bb420af-430b-4358-9a0d-24b846412e81",
+    "contract_ssm_command_id": "5bddb119-9568-4a6b-a8c3-a618f0be1276",
+    "observed_at_utc": "2026-09-30T13:55:53Z"
+  },
+  "execution_mode_terms": {
+    "IMPLEMENTED": true,
+    "TESTED": "local crates only",
+    "CONNECTED": "read-only AWS STS/SSM + host GET heartbeat",
+    "RECONCILED": false,
+    "DEPLOYED": false,
+    "HEALTHY": false,
+    "ARMED": false,
+    "EXECUTING": false
+  }
+}
