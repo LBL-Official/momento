@@ -1,0 +1,2877 @@
+CURRENT OWNER AMENDMENT — September 30, 2026
+Section 111 and OPERATIONS_AND_CAPITAL_V1.md govern capital, launch and operations.
+Target: October 3 $20 funded-account canary, subject to readiness. Size from actual
+reconciled account equity; no $20,000 default. All earlier $20,000/$21,000 objectives
+are reference scenarios, not the current funded-account baseline. NCAAB remains
+season-verified P5 vs P5 only. Overnight resizing remains 01:00–03:00 Los Angeles.
+
+Momento Bot 01
+
+
+
+
+MOMENTO LIVE BOT V1
+FIRST78 Live Execution, Trade Ledger, Pricing Kernel, Risk Controls and Deployment Contract
+Build a production-grade live execution system for Momento Systems covering the FIRST78 strategy described below.
+This is not a research notebook and not merely a frontend.
+The implementation must produce an auditable, deterministic, restart-safe, low-latency trading service whose decisions can be reconstructed from persisted market data, signals, orders, fills, fees, account state, and settlements.
+The bot must be capable of running live, but live order submission must remain behind an explicit deployment gate until all tests, reconciliation checks, dry runs, and operator authorization pass.
+Do not silently alter the strategy while engineering it.
+
+1. Strategy identity
+Canonical strategy:
+MOMENTO_FIRST78_LIVE_V1
+Authorized markets only:
+* KXNBA
+* KXNCAAB — P5 vs P5 only; never the unrestricted NCAAB universe.
+
+NCAAB universe restriction (mandatory before entry authorization):
+Both teams must independently qualify for Momento's versioned P5 research universe. P5-vs-non-P5 and non-P5-vs-non-P5 games are ineligible, even when the FIRST78 and clock conditions pass. Teams may belong to different approved conferences; same-conference play is not required.
+Repository evidence: ROLLER/config/sports.json declares research_universe = P5_vs_P5. ROLLER/config/conferences.json defines the historical 2025-2026 conference IDs as ACC, B1G, BIG12, SEC, PAC12. research/choosin_texas/lubbock/LUBBOCK_SPEC_V1.md requires p5_vs_p5 == 1 on canonical games.csv. Do not substitute a generic media definition of Power Five or silently add Big East.
+Use canonical team identities, documented aliases, and a versioned season-specific membership manifest. The historical 2025-2026 mapping is evidence of the backtest universe, not automatic approval of 2026-2027 membership. Preserve the historical manifest unchanged. Validate and record the upcoming season's membership before NCAAB entries are enabled; any change to the research universe must be explicit.
+Missing, stale-season, ambiguous or conflicting membership evidence produces NCAAB_P5_MEMBERSHIP_UNVERIFIED and NO_NEW_ENTRY. A confirmed out-of-universe team produces NCAAB_NOT_P5_VS_P5 and NO_NEW_ENTRY. Unknown membership is never treated as eligible.
+Persist both canonical team IDs, season, conference IDs, membership manifest version/digest, and the two eligibility decisions with the signal/admission record. This entry filter must never prevent management of an already-open position.
+Authorized entry windows only:
+NBA
+3Q
+NCAAB
+2H first 10 minutes
+Equivalent NCAAB clock:
+20:00 >= remaining >= 10:00
+No other periods may initiate positions.
+
+2. FIRST78 definition
+The strategy is based on the first in-game midpoint touch of 78¢ by either side.
+For each game, observe both mutually exclusive team winner contracts continuously from game start.
+For every quote update calculate:
+\[ mid_t=\frac{bestBid_t+bestAsk_t}{2} \]
+Persist the underlying bid and ask.
+Never persist only the midpoint.
+Maintain an event-level state:
+first_78_seen
+first_78_side
+first_78_exchange_ts
+first_78_receive_ts
+first_78_period
+first_78_game_clock
+If either contract reaches:
+mid >= 0.78
+before the authorized entry window, the entire game becomes permanently ineligible.
+Set:
+eligible = false
+skip_reason = PRIOR_FIRST78_OUTSIDE_WINDOW
+A later return to 78¢ does not reset eligibility.
+This is a first-touch strategy, not a "first 78 during Q3" strategy.
+
+3. Authorized entry
+An entry opportunity exists only when:
+first_78_seen == false
+AND
+current period is authorized
+AND
+one contract midpoint >= 0.78
+At that moment freeze:
+signal_mid = actual midpoint
+strategy_reference_price = 0.78
+signal_best_bid
+signal_best_ask
+signal_opponent_bid
+signal_opponent_ask
+exchange_timestamp
+local_receive_timestamp
+game_clock
+period
+The first team reaching the threshold becomes:
+selected_side
+
+4. Entry execution
+Initial desired order:
+BUY selected YES @ 0.78
+POST-ONLY
+Preferred execution is maker.
+Allowed entry price ladder:
+0.78
+0.79
+0.80
+0.81
+0.82
+Maximum permitted entry price:
+0.82
+Never intentionally execute above 82¢.
+All entry replacements must preserve post-only behavior wherever the exchange supports it.
+Do not assume a submitted limit order was a maker fill.
+Persist the exchange-reported liquidity role for every fill.
+
+5. Missed-entry rule
+If:
+selected_mid >= 0.86
+AND
+filled_entry_qty == 0
+then immediately:
+cancel all entry orders
+state = MISSED_ENTRY
+No re-entry.
+No chasing.
+Reason:
+MID_86_WITHOUT_FILL
+If there is already a partial fill, do not classify the trade as missed.
+The partial position becomes the authoritative open quantity and must be managed by the normal risk engine.
+
+6. Capital model
+Initial bankroll:
+Actual authenticated and reconciled Kalshi account equity (target initial funding $20).
+Initial allocation:
+6% of batch bankroll
+Example Batch 1 maximum acquisition budget at $20 equity: $1.20.
+At $20,000 reconciled epoch equity the same formula gives $1,200.
+This includes entry fees.
+It is not:
+premium budget + unlimited fees
+It is:
+premium + entry fees <= 6% bankroll
+
+7. Fee model
+Current strategy assumption supplied by Momento:
+Maker
+\[ Fee_{maker} = 0.0175CP(1-P) \]
+where:
+* \(C\) = contracts
+* \(P\) = price in dollars
+The engine must keep fee logic behind a versioned fee adapter:
+KalshiFeeModel
+fee_schedule_version
+effective_date
+maker_coefficient
+taker_coefficient
+Do not bury coefficients throughout execution code.
+Every actual fill must preferably use the exchange-reported fee for authoritative P&L.
+Formula-derived fees are for:
+* pre-trade sizing;
+* forecasts;
+* sanity checking.
+Actual ledger P&L uses actual charged fees.
+
+8. 6% sizing
+Before placing an entry order calculate:
+\[ cost_{contract} = P + fee_{maker}(1,P) \]
+Then:
+\[ qty= \left\lfloor \frac{batchTradeBudget} {cost_{contract}} \right\rfloor \]
+At 78¢:
+\[ fee\approx0.003003 \]
+so:
+\[ cost\approx0.783003 \]
+and:
+\[ \left\lfloor1200/0.783003\right\rfloor = 1532 \]
+Therefore Batch 1 can acquire approximately:
+1,532 contracts at 78¢
+if entirely executed there.
+Higher entry prices reduce quantity.
+The engine must recalculate remaining available quantity after every partial fill.
+Never allow:
+filled premium
++ filled fees
++ remaining open order worst-case cost
+> batch allocation
+This must be enforced transactionally.
+
+9. Sizing epochs and overnight compounding (authoritative)
+Sections 62–67 govern all sizing changes and supersede any fixed ten-trade batch interpretation elsewhere in this document.
+A sizing epoch uses one frozen starting equity and one fee-inclusive 6% trade budget.
+Ten distinct completed and fully reconciled trades in the current epoch set RESIZE_PENDING = true. They do not change sizing immediately.
+Only during 01:00 <= America/Los_Angeles local time < 03:00 may a pending resize commit, after reconciliation passes and no entry construction is in flight.
+Use the IANA timezone, including daylight-saving transitions, never fixed UTC-8.
+Trades 11, 12, and later keep the old budget until an eligible resize commits. Epochs may contain more than ten trades.
+At commit use an identified, authoritative reconciled equity snapshot. Atomically persist the new epoch, equity, 6% budget, timestamps, and reconciliation snapshot ID.
+Do not carry excess completions forward as credit toward a second resize. Completion events count once, in the active epoch when reconciliation completes; retain the trade's original admission epoch separately.
+Every admitted trade retains its original epoch and authorized acquisition budget, including partial entry fills after a resize. A resize never changes an existing position.
+Missing or unresolved reconciliation defers resizing and preserves the prior budget.
+
+10. Combined trade cap
+Maximum total initiated positions per trading day/session:
+8
+across:
+KXNBA + KXNCAAB
+Not eight each.
+The allocation service must perform an atomic capacity check before authorizing an entry.
+Two simultaneous signals must not both observe "one slot remaining" and create Trade 8 and Trade 9.
+Use transactional reservation semantics.
+
+11. Corrected exit policy
+This replaces the previously unresolved exit ladder.
+The desired exit mechanism is initially to acquire the opposing winner contract.
+Assume:
+we own Team A YES
+Then:
+hedge instrument = Team B YES
+Before enabling this mechanism, the service must verify from market metadata that the two contracts are truly exhaustive and mutually exclusive under identical settlement rules.
+Equal quantities of exact complements create a fixed settlement payout. Do not call that generally "delta neutral" in the ledger.
+Call it:
+SETTLEMENT_NEUTRAL
+because binary claims in incomplete markets should not automatically be treated like continuously hedgeable underlying assets. The prediction-market literature explicitly distinguishes market price from underlying physical probability and describes these contracts as incomplete-market binary claims. Yang_2026_Pricing_Prediction_Ma…
+The binary-hedging paper makes a related point: a binary claim can hedge the component associated with the event partition, but binary instruments do not generally remove every form of portfolio risk. main
+For exact opposing winner contracts in the same game, however, equal quantities can lock the terminal state payout if and only if the contract definitions are exact complements.
+
+12. Hedge trigger
+Trigger:
+opponent_mid >= 0.36
+on the first qualifying quote.
+Persist:
+hedge_trigger_ts
+original_bid
+original_ask
+original_mid
+opponent_bid
+opponent_ask
+opponent_mid
+game_clock
+period
+Immediately create:
+HEDGE_PENDING
+Initial hedge order:
+BUY opponent YES @ 0.35
+POST-ONLY
+Target quantity:
+current_unhedged_original_qty
+
+13. Correct hedge state machine
+The old statement:
+36 trigger -> 35 -> 34 -> ... -> 25
+was incomplete because it ignored market direction.
+Implement the following.
+Branch A — recovery after trigger
+If the hedge has triggered at opponent 36¢ and the opponent subsequently falls:
+36 -> 35 -> 34 -> 33 ...
+then the original position is recovering.
+The passive opposing-contract bid may be ratcheted downward:
+35
+34
+33
+...
+25
+according to the current quote state.
+Purpose:
+lock the position at a progressively cheaper complementary acquisition price rather than unnecessarily paying 35¢ after the market has recovered.
+Each reprice must:
+1. cancel/replace safely;
+2. preserve filled quantity;
+3. avoid duplicate live exposure;
+4. remain post-only;
+5. preserve the target matched quantity.
+This is the recovery hedge ladder.
+It is not an adverse-price chase.
+
+Branch B — deterioration after trigger
+If the hedge triggers at opponent 36¢ but the opponent subsequently rises:
+36 -> 37 -> 38...
+our original position is deteriorating further.
+Do not perform:
+35 -> 34 -> 33
+because those prices become less executable as the opponent rises.
+Do not leave the system waiting indefinitely for a stale maker bid.
+Instead:
+cancel passive hedge orders
+transition = EMERGENCY_DIRECT_EXIT
+Close/reduce the original position using the authorized taker-capable fallback.
+The purpose of the maker hedge is price improvement.
+It must never convert a defined stop into unlimited adverse exposure because the passive order failed to execute.
+
+14. Recovery-ladder floor
+If opponent midpoint declines to:
+0.25
+and no sufficient hedge has filled:
+cancel remaining hedge
+transition = DIRECT_EXIT
+Use the original contract for the final exit.
+This preserves the requested 25¢ terminal condition while giving it coherent meaning:
+25¢ is the lower boundary of the recovery hedge ladder, not a continuation of an adverse hedge chase.
+
+15. Partial hedge behavior
+Suppose:
+initial position = 1,500 A YES
+hedge fills = 900 B YES
+Then:
+matched_qty = 900
+unhedged_qty = 600
+Only 600 remain directionally exposed to the event outcome.
+Never submit another 1,500 contract hedge.
+The next hedge request is:
+600
+The ledger must maintain:
+original_open_qty
+opponent_hedge_qty
+matched_qty
+unhedged_qty
+after every execution message.
+
+16. Direct fallback
+The direct exit operates only on currently unhedged original quantity.
+If:
+original qty = 1,500
+hedge qty = 900
+fallback quantity is:
+600
+not 1,500.
+This is crucial.
+Otherwise the bot could inadvertently reverse exposure.
+
+17. Order-state engine
+Do not implement execution as scattered conditional statements.
+Build an explicit deterministic state machine.
+Recommended states:
+WATCHING
+INELIGIBLE_PRIOR78
+ENTRY_SIGNALLED
+ENTRY_WORKING
+PARTIAL_ENTRY
+POSITION_OPEN
+MISSED_ENTRY
+HEDGE_TRIGGERED
+HEDGE_WORKING
+PARTIAL_HEDGE
+RECOVERY_HEDGE
+EMERGENCY_DIRECT_EXIT
+DIRECT_EXIT_WORKING
+SETTLEMENT_PENDING
+RECONCILIATION_REQUIRED
+COMPLETED
+ABORTED
+Every transition must be:
+event-driven
+timestamped
+persisted
+idempotent
+No implicit state inferred only from frontend appearance.
+
+18. Market-data architecture
+For high-speed execution, use an event-driven streaming architecture.
+Prefer:
+exchange websocket
+        ↓
+normalized market event
+        ↓
+in-memory state
+        ↓
+strategy state machine
+        ↓
+risk gate
+        ↓
+execution router
+        ↓
+exchange
+Do not poll REST endpoints as the primary trigger mechanism if a reliable streaming feed exists.
+REST should be used for:
+* startup snapshots;
+* reconciliation;
+* historical recovery;
+* metadata;
+* authoritative checks.
+Streaming data should drive:
+* quote changes;
+* midpoint state;
+* signal generation;
+* order updates;
+* fill updates.
+
+19. Clock model
+Store separately:
+exchange_timestamp
+local_receive_timestamp
+processing_timestamp
+order_send_timestamp
+exchange_ack_timestamp
+fill_timestamp
+Calculate:
+feed_latency
+decision_latency
+submission_latency
+ack_latency
+signal_to_fill_latency
+Do not overwrite one clock with another.
+Use monotonic local clocks for latency measurements.
+Use UTC wall-clock timestamps for audit records.
+
+20. Hot-path design
+The quote-to-order hot path should not perform:
+* database joins;
+* dataframe operations;
+* disk scans;
+* PDF-derived modeling;
+* HTTP research calls;
+* expensive model training;
+* frontend updates.
+The hot path should operate on already loaded in-memory state.
+Target architecture:
+MarketDataWorker
+    ↓
+EventNormalizer
+    ↓
+GameStateCache
+    ↓
+FIRST78StateMachine
+    ↓
+RiskGate
+    ↓
+ExecutionRouter
+Persistence is asynchronous but durable.
+Never block order decisions waiting on UI rendering.
+
+21. Durable event journal
+Use an append-only event journal.
+Persist every:
+quote observation relevant to threshold transition
+signal
+eligibility change
+order submission
+exchange acknowledgement
+cancel
+replace
+partial fill
+fill
+fee
+hedge transition
+fallback
+settlement
+reconciliation action
+batch resize
+The current position state should be reproducible by replaying the journal.
+This makes restart recovery possible.
+
+22. Restart safety
+On process restart:
+1. disable new entries;
+2. retrieve exchange open orders;
+3. retrieve current positions;
+4. retrieve recent fills;
+5. compare them against local ledger;
+6. reconstruct state;
+7. cancel orphan orders where policy requires;
+8. surface discrepancies;
+9. only resume entry generation after reconciliation passes.
+Never assume:
+process restart = flat book
+
+23. Idempotency
+Every command to the execution layer must have a deterministic client order ID based on:
+trade_id
+leg
+state
+sequence_number
+Example:
+MOM-NBA-12345-ENTRY-00
+MOM-NBA-12345-HEDGE-00
+MOM-NBA-12345-HEDGE-01
+MOM-NBA-12345-EXIT-00
+Repeated processing of the same event must not generate duplicate orders.
+
+24. Quote quality
+Do not fire FIRST78 from malformed markets.
+Require:
+bid exists
+ask exists
+bid <= ask
+market open
+quote sufficiently fresh
+contract metadata valid
+Persist:
+quote_age_ms
+spread
+Reject stale quote triggers.
+Threshold transitions should be based on a normalized quote event, not frontend display rounding.
+
+25. Midpoint precision
+Do not implement:
+if mid == 0.78:
+
+Use integer cents/ticks whenever possible.
+Example:
+bid_cents
+ask_cents
+mid_half_cents
+Then threshold evaluation is deterministic.
+Avoid floating-point comparison bugs.
+
+26. Entry signal versus execution model
+The strategy trigger remains the market midpoint.
+The actual fill does not.
+Maintain:
+signal_mid
+entry_order_price
+entry_fill_price
+entry_vwap
+separately.
+Never rewrite the historical signal to the eventual fill.
+
+27. Execution-quality model
+For every trade calculate:
+Entry implementation shortfall
+\[ IS_{entry} = VWAP_{entry}-0.78 \]
+Entry fee drag
+\[ FeeDrag_{entry} = fees_{entry}/contracts \]
+Hedge implementation shortfall
+relative to the intended hedge state.
+Total implementation drag
+\[ Drag = RealizedEV_{beforeExecution} - RealizedEV_{afterExecution} \]
+The point of the live ledger is to determine whether the hypothesized:
++1.5¢/contract
+survives actual exchange microstructure.
+
+28. Required ledger
+Maintain at least these normalized tables.
+trade
+trade_id
+policy_version
+sport
+series
+event_id
+market_id
+selected_side
+opponent_side
+game_date
+entry_window
+eligibility_status
+skip_reason
+state
+batch_id
+trade_number
+created_at
+completed_at
+signal
+trade_id
+signal_type
+exchange_ts
+receive_ts
+period
+game_clock
+selected_bid
+selected_ask
+selected_mid
+opponent_bid
+opponent_ask
+opponent_mid
+order
+order_id
+client_order_id
+trade_id
+leg
+side
+ticker
+price
+qty
+post_only
+submitted_at
+ack_at
+status
+cancel_reason
+fill
+fill_id
+order_id
+trade_id
+ticker
+price
+qty
+liquidity_role
+fee
+exchange_ts
+receive_ts
+position
+trade_id
+initial_qty
+initial_vwap
+hedge_qty
+hedge_vwap
+matched_qty
+unhedged_qty
+direct_exit_qty
+settlement
+trade_id
+winning_contract
+settlement_value_initial
+settlement_value_opponent
+settled_at
+pnl
+trade_id
+gross_pnl
+entry_fees
+hedge_fees
+direct_exit_fees
+total_fees
+net_pnl
+net_pnl_per_contract
+return_on_deployed_cash
+batch
+batch_id
+starting_equity
+allocation_pct
+trade_budget
+first_trade
+last_trade
+realized_pnl
+ending_equity
+next_trade_budget
+
+29. Modeled EV comparison
+Official research comparison value:
+MODEL_NET_EV = +1.5 cents / initial contract
+Live result:
+\[ EV_{live} = 100 \times \frac{\sum NetPnL} {\sum InitialContracts} \]
+Display:
+Modeled EV       +1.500¢
+Live realized EV +X.XXX¢
+Execution gap    ±X.XXX¢
+This must exist at:
+20 trades
+50 trades
+100 trades
+200 trades
+
+30. Prediction-market pricing layer
+Do not make the pricing model override FIRST78 V1 entry eligibility.
+The first deployment is intended to test the historical strategy.
+Instead create a parallel research/diagnostic module:
+PredictionPricingKernel
+that observes every live trade without controlling entry.
+The Yang paper argues that prediction-market prices should not automatically be interpreted as physical probabilities: observed prices may contain a pricing wedge. Its proposed architecture combines a log-odds state variable, stochastic dynamics in log-odds space, and a Wang-transform decomposition. Yang_2026_Pricing_Prediction_Ma…
+It also motivates log-odds because probability prices are bounded in \((0,1)\), whereas the logit maps them onto the real line. Yang_2026_Pricing_Prediction_Ma…
+Implement:
+\[ x_t= \log\left(\frac{p_t}{1-p_t}\right) \]
+for:
+selected_mid
+opponent_mid
+selected_bid
+selected_ask
+Maintain rolling:
+logit_return
+realized_logit_volatility
+jump_indicator
+time_to_resolution
+spread
+quote_velocity
+The paper reports random-walk-like behavior, fat-tailed log-odds increments and volatility clustering, which argues against assuming constant Gaussian price changes in execution/risk models. Yang_2026_Pricing_Prediction_Ma…
+Therefore do not model:
+next price movement ~ fixed normal distribution
+without testing it.
+
+31. Jump detection
+Build an observational jump detector.
+Example research features:
+delta_logit
+rolling_sigma
+standardized_logit_move
+time_since_score_event
+period
+game_clock
+spread_change
+book_imbalance
+Tag:
+NORMAL_MOVE
+POSSIBLE_JUMP
+Do not delay emergency execution while waiting for this model.
+Execution risk takes priority.
+
+32. Physical probability versus market price
+Keep three concepts separate:
+market_price
+estimated_physical_probability
+execution_price
+Never label midpoint:
+true probability
+The pricing paper explicitly distinguishes the observed market price from physical event probability. Yang_2026_Pricing_Prediction_Ma…
+If the Wang model is implemented experimentally:
+\[ p_{mkt} = \Phi\left( \Phi^{-1}(p^*)+\lambda \right) \]
+and therefore:
+\[ \hat p^* = \Phi\left( \Phi^{-1}(p_{mkt})-\hat\lambda \right) \]
+But:
+do not import a global \(\lambda\) estimate from an unrelated prediction-market population and assume it is correct for NBA/NCAAB live sports.
+Momento must estimate sports-specific behavior from its own data.
+
+33. Time-varying pricing wedge
+Yang reports evidence that its estimated pricing wedge changes through a contract's life and declines as resolution approaches. Yang_2026_Pricing_Prediction_Ma…
+Therefore future Momento calibration should permit:
+\[ \lambda = \lambda( sport, time, period, scoreState, liquidity, volatility ) \]
+rather than:
+lambda = one universal constant
+Do not use this in FIRST78 V1 execution until validated out of sample.
+
+34. Binary hedge analytics
+Create a parallel analytics module:
+BinaryHedgeAnalytics
+The attached Binary Hedge Frontier paper separates:
+* physical event probability;
+* market-implied price;
+* conditional portfolio loss;
+and warns against assuming a binary contract removes arbitrary portfolio risk. main
+For this specific strategy, the useful application is not generic portfolio hedging.
+It is validating that:
+A YES + B YES
+are exact settlement complements.
+Before enabling settlement-neutral hedge logic verify:
+same event
+same expiration
+same winner definition
+no draw state
+no cancellation asymmetry
+no settlement-rule mismatch
+If complementarity is not exact:
+HEDGE_DISABLED
+CONTRACT_PAIR_INVALID
+
+35. Near-resolution risk
+Do not assume a binary contract behaves smoothly near resolution.
+The Binary Hedge Frontier paper explicitly identifies instability near resolution as a separate issue and notes that binary payoffs are discontinuous and difficult to hedge close to maturity. main
+Therefore record execution statistics by:
+period
+seconds_remaining
+score_margin
+so Momento can later measure whether:
+hedge fill probability
+slippage
+spread
+jump size
+change materially late in games.
+
+36. Microstructure research capture
+For every entry/exit transition, store short pre/post windows of book state where practical.
+Example:
+T-5s
+T-2s
+T-1s
+T0
+T+250ms
+T+500ms
+T+1s
+T+2s
+T+5s
+At minimum capture:
+best bid
+best ask
+spread
+top-level sizes
+mid
+If deeper book data is available:
+L2 bid ladder
+L2 ask ladder
+imbalance
+This allows later study of:
+* maker fill probability;
+* adverse selection;
+* queue decay;
+* price impact;
+* signal latency;
+* whether 78→82 laddering improves or destroys EV.
+
+37. Do not assume maker fill
+This is mandatory.
+A resting limit order is:
+an order
+not:
+a fill
+The prop-firm paper makes the same broader methodological point in another market context: transaction costs, slippage, barrier overshoot and actual path mechanics can materially change results that look better under idealized geometry. ssrn-7445798
+Therefore FIRST78 live accounting must never substitute:
+touch
+limit price
+midpoint
+for an execution.
+
+38. Risk controls
+Implement hard guards:
+MAX_DAILY_TRADES = 8
+MAX_POSITION_ALLOCATION = 6%
+MAX_ENTRY_PRICE = 0.82
+CANCEL_IF_NO_FILL_AT_MID = 0.86
+ENTRY_ALLOWED_NBA = Q3
+ENTRY_ALLOWED_NCAAB = H2_FIRST_10
+NCAAB_UNIVERSE = P5_VS_P5
+NCAAB_REQUIRE_BOTH_TEAMS_VERIFIED = TRUE
+Also:
+max_open_orders_per_trade
+max_live_position_per_event
+max_global_notional
+stale_quote_timeout
+exchange_disconnect_guard
+clock_desync_guard
+position_reconciliation_guard
+duplicate_order_guard
+If market data stream becomes stale:
+NO_NEW_ENTRY
+If position state becomes ambiguous:
+NO_NEW_ENTRY
+RECONCILIATION_REQUIRED
+Existing risk positions should still be manageable.
+
+39. Kill switch
+Provide:
+GLOBAL_KILL
+NO_NEW_ENTRIES
+CANCEL_ALL_PASSIVE
+FLATTEN_AUTHORIZED
+These must be separate controls.
+A global kill should not accidentally leave forgotten open orders.
+
+40. Paper/live separation
+Modes:
+REPLAY
+SIMULATION
+PAPER
+SHADOW_LIVE
+LIVE
+Use the same strategy and state-machine code in all modes.
+Do not maintain a separate "fake strategy" for paper trading.
+Only the exchange adapter changes.
+
+41. Shadow deployment
+Before live authorization:
+Phase 1
+Historical deterministic replay.
+Phase 2
+Synthetic order/fill tests.
+Phase 3
+Live market-data shadow mode.
+Generate signals and hypothetical orders without submitting.
+Phase 4
+Paper execution.
+Phase 5
+Minimal-capital live canary.
+Phase 6
+Normal authorized sizing.
+Each phase must produce a signed/frozen validation report.
+
+42. Tests required before deployment
+At minimum test:
+Eligibility
+* NCAAB verified P5 vs P5 in the correct season may proceed to remaining entry gates.
+* NCAAB P5 vs non-P5 and non-P5 vs non-P5 are rejected.
+* Different approved P5 conferences are permitted; Big East is not silently added.
+* Unknown team, ambiguous alias, missing/stale season membership, and conflicting metadata block entry.
+* Existing NCAAB positions remain manageable if membership data becomes unavailable.
+* NBA first 78 during Q1 → never trade Q3.
+* NBA first 78 during Q3 → eligible.
+* NCAAB first 78 at 15:00 H2 → eligible.
+* NCAAB first 78 at 9:59 H2 → ineligible.
+* one side touches 78 before window, other side touches later → ineligible.
+Entry
+* 78 maker fills completely.
+* 78 partial → 79 partial → 80 remainder.
+* no fill → mid 86 → cancel.
+* price jumps 77 → 83.
+* price jumps 77 → 87.
+* duplicate websocket event.
+* out-of-order quote message.
+Capital
+* exact 6% budget.
+* fees included.
+* partial fills never exceed budget.
+* ten reconciled completions set pending without changing the budget.
+* trade 11 before the overnight commit uses the old budget.
+* 00:59:59 and 03:00 local time refuse resize; 01:00 is eligible.
+* successful overnight commit makes the new budget available only to new admissions.
+* unresolved reconciliation and entry construction defer resize.
+* extended epochs, duplicate completion events, restart, and DST transitions preserve sizing.
+* existing positions retain their admission epoch and acquisition budget.
+Hedge
+* opponent reaches 36 and 35 fills.
+* 35 partial.
+* opponent falls 36→34: recovery ladder.
+* opponent rises 36→38: emergency direct exit.
+* opponent reaches 25 without completed hedge.
+* partial hedge then fallback.
+* duplicate fill message.
+* fill received after cancel request.
+Portfolio
+* eight trades allowed.
+* ninth rejected.
+* two simultaneous candidates for final slot.
+Recovery
+* crash with no position.
+* crash with entry order.
+* crash with live position.
+* crash during partial hedge.
+* crash while direct exit pending.
+
+43. Performance instrumentation
+Measure:
+market_event_to_strategy_us
+strategy_to_risk_us
+risk_to_order_us
+order_to_socket_us
+exchange_ack_ms
+signal_to_first_fill_ms
+Do not optimize blindly.
+Profile the actual pipeline.
+Prefer correctness and deterministic recovery over shaving microseconds from Python that are irrelevant compared with network/exchange latency.
+If the existing Momento architecture uses Python, build the first correct implementation there unless profiling proves a real latency bottleneck.
+Do not rewrite in Rust/C++ merely for aesthetics.
+
+44. Frontend live desk
+Build a functional execution surface showing:
+BANKROLL
+BATCH
+TRADE NUMBER
+6% BUDGET
+DAILY TRADE CAP
+OPEN POSITIONS
+OPEN ORDERS
+ENTRY VWAP
+HEDGE VWAP
+UNHEDGED QTY
+TOTAL FEES
+TODAY PNL
+REALIZED EV/CONTRACT
+Per game show:
+FIRST78 eligibility
+period
+clock
+selected mid
+opponent mid
+entry state
+hedge state
+order state
+fill state
+Execution timeline:
+78 SIGNAL
+ORDER SENT
+ACK
+PARTIAL
+FILL
+36 HEDGE TRIGGER
+HEDGE SENT
+HEDGE FILL
+EXIT
+SETTLEMENT
+Never let the frontend become the source of truth.
+It reads the backend state.
+
+45. Live EV dashboard
+Primary KPI:
+TARGET NET EV = +1.500¢/contract
+Display:
+N
+Live EV
+95% uncertainty interval
+Gross P&L
+Fees
+Net P&L
+Entry slippage
+Hedge/direct-exit slippage
+Maker %
+Taker %
+Missed entries
+Partial fills
+Max drawdown
+Current bankroll
+Break out:
+NBA
+NCAAB
+pooled
+Do not pool without retaining sport-specific results.
+
+46. Checkpoints
+Freeze reports at:
+N = 20
+N = 50
+N = 100
+N = 200
+Each checkpoint must be immutable.
+Answer:
+Did the historical +1.5¢ net EV survive real execution?
+And decompose the difference into:
+entry price
+entry fees
+entry non-fill
+hedge price
+hedge fees
+direct exit
+latency
+other reconciliation differences
+
+47. Repository discipline
+Before coding:
+1. inspect repository instructions;
+2. locate existing exchange clients;
+3. locate market ingestion;
+4. locate current order router;
+5. locate reconciliation;
+6. locate position management;
+7. locate Systimo registrations;
+8. locate Positman/Drevo integration;
+9. locate test fixtures;
+10. identify current live execution flags.
+Do not create duplicate infrastructure if a canonical service already exists.
+Reuse existing Momento naming and registry architecture.
+The live strategy should flow conceptually:
+INGESTION
+   ↓
+FIRST78 SIGNAL ENGINE
+   ↓
+RISK / CAPITAL GATE
+   ↓
+EXECUTION
+   ↓
+POSITMAN
+   ↓
+DREVO
+   ↓
+RECONCILIATION
+   ↓
+LIVE LEDGER
+Pricing diagnostics can run beside this:
+MARKET FEED
+   ├─ FIRST78 EXECUTION
+   └─ PRICING KERNEL / RESEARCH TELEMETRY
+The pricing model must not silently become an entry filter.
+
+48. Deliverables
+Cursor must return:
+1. exact repository files changed;
+2. architecture diagram;
+3. database schema/migrations;
+4. strategy state machine;
+5. entry execution service;
+6. hedge/fallback state machine;
+7. batch sizing service;
+8. daily trade-cap service;
+9. reconciliation implementation;
+10. restart recovery implementation;
+11. shadow mode;
+12. frontend execution desk;
+13. tests;
+14. latency benchmark;
+15. deterministic replay test;
+16. deployment/runbook;
+17. rollback procedure;
+18. live-enablement checklist;
+19. checkpoint EV report generator.
+Also produce:
+MOMENTO_FIRST78_LIVE_V1_POLICY.json
+containing every strategy constant.
+No important constant should live only in frontend JavaScript or scattered source files.
+
+49. Non-negotiable invariants
+These should be enforced in code and tests:
+NCAAB entry requires two verified P5 teams under the versioned season-specific Momento universe.
+
+A game can produce at most one FIRST78 strategy position.
+
+A prior 78 touch permanently removes eligibility.
+
+Entry cannot exceed 82¢.
+
+No position -> mid 86 -> abandon.
+
+Entry acquisition cost including fees cannot exceed 6%.
+
+Ten reconciled trades request a resize. Only a safe atomic commit during 01:00–03:00 America/Los_Angeles changes sizing; extended epochs keep the old budget.
+
+NBA + NCAAB initiated positions cannot exceed 8 per day.
+
+Hedge quantity cannot exceed unhedged original quantity.
+
+A partial hedge changes fallback quantity immediately.
+
+A recovery ladder can move 35→25 only when opponent price is falling.
+
+An adverse opponent move cannot invoke a downward hedge ladder.
+
+Ambiguous account state blocks new entries.
+
+Midpoint is a signal, never a fill.
+
+Orders are not fills.
+
+Fills are not settlements.
+
+Market price is not automatically physical probability.
+
+Frontend state is not authoritative state.
+
+50. Final execution doctrine
+Momento should optimize in this order:
+\[ \boxed{ \text{Correctness} > \text{Risk containment} > \text{Reconciliation} > \text{Execution quality} > \text{Latency} > \text{UI} } \]
+The goal is not simply to create a fast bot.
+The goal is to create a bot fast enough that execution delay does not consume the strategy's measured edge, while remaining sufficiently deterministic and auditable that every dollar of realized P&L can be explained.
+
+The exit logic, in one diagram
+Own A YES
+     |
+Opponent mid < 36
+     |
+    HOLD
+     |
+Opponent mid >= 36
+     |
+     v
+POST-ONLY BUY B YES @ 35
+     |
+     +-------------------------------+
+     |                               |
+B price FALLS                    B price RISES
+A recovering                     A deteriorating
+     |                               |
+35 -> 34 -> 33 -> ... -> 25      CANCEL PASSIVE HEDGE
+recovery hedge ladder                 |
+     |                                v
+fill? -----------------------> SETTLEMENT-NEUTRAL
+     |
+     no
+     |
+B reaches 25
+     |
+     v
+DIRECT TAKER EXIT A
+treat the 10-trade rule as a resize trigger, not as permission to resize immediately. If trade 10 finishes at 4 PM and another qualifying trade arrives at 7 PM, the bot must still use the old sizing until the overnight resize window.
+Also, for the time window, implement America/Los_Angeles, not a hardcoded UTC-8, so daylight-saving changes do not accidentally move the maintenance window.
+
+51. ESPN Sports-State Provider
+Momento must use a dedicated sports-state feed to determine:
+* game identity;
+* game status;
+* current period;
+* official displayed game clock;
+* score;
+* whether the authorized strategy window is active.
+Kalshi remains authoritative for:
+* contract prices;
+* bid/ask;
+* order book;
+* orders;
+* fills;
+* fees;
+* positions;
+* settlement.
+ESPN is not authoritative for exchange execution.
+Architecture:
+KALSHI WEBSOCKET
+    |
+    |-- bid / ask
+    |-- order book
+    |-- trades
+    |-- orders
+    |-- fills
+    |-- positions
+    v
+
+MarketState
+                      +----------------------+
+                      |                      |
+                      | timestamp/event join |
+                      |                      |
+                      v                      |
+NormalizedGameState <-+
+                      ^
+                      |
+ESPN SPORTS STATE
+    |
+    |-- event discovery
+    |-- game status
+    |-- period
+    |-- clock
+    |-- home score
+    |-- away score
+    |-- play-by-play
+The execution strategy consumes the synchronized:
+NormalizedGameState
++
+KalshiMarketState
+not raw ESPN JSON directly.
+
+52. ESPN Endpoints
+Implement ESPN behind:
+SportsStateProvider
+with:
+ESPNProvider
+as Provider A.
+Candidate NBA scoreboard:
+https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard
+Candidate NCAAB scoreboard:
+https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard
+Per-game detailed state should use the appropriate ESPN summary/play-by-play surface for the discovered ESPN event ID.
+Do not scrape rendered ESPN webpages.
+Consume structured JSON responses directly.
+Do not spread ESPN field names throughout Momento.
+Only:
+ESPNProvider
+may understand ESPN-specific JSON.
+Everything downstream receives Momento's normalized schema.
+These endpoints are not a contractual commercial API. Therefore the adapter must assume that fields, availability, throttling, or behavior may change without notice.
+
+53. Normalized Game State
+Canonical representation:
+{
+  "momento_event_id": "nba_2026_LAL_BOS",
+  "sport": "NBA",
+  "provider": "ESPN",
+  "provider_event_id": "401xxxxxx",
+
+  "status": "IN_PROGRESS",
+
+  "period": 3,
+  "clock_display": "06:42",
+  "clock_seconds": 402,
+
+  "home_team": "BOS",
+  "away_team": "LAL",
+
+  "home_score": 71,
+  "away_score": 68,
+
+  "provider_timestamp": "...",
+  "request_started_at": "...",
+  "received_at": "...",
+
+  "age_ms": 183,
+
+  "sequence": 12345,
+
+  "valid": true
+}
+Do not let strategy logic parse:
+"3rd"
+"Q3"
+"Third Quarter"
+ad hoc.
+Normalize periods to integers/enums first.
+
+54. ESPN Responsibilities
+Use the ESPN scoreboard for:
+game discovery
+scheduled start
+event ID mapping
+status changes
+Use detailed game/summary/play-by-play feeds for:
+period
+game clock
+score
+recent scoring events
+game progression
+Maintain a mapping:
+Kalshi event
+    ↔
+Momento event
+    ↔
+ESPN event
+Persist it.
+Do not rematch games from team names on every quote.
+
+55. Event Matching
+A Kalshi market must never be associated with an ESPN game solely by fuzzy team-name matching at order time.
+Create a deterministic mapping process before game start.
+Validate:
+sport
+game date
+home team
+away team
+scheduled start
+If mapping confidence is not exact enough:
+EVENT_MAPPING_AMBIGUOUS
+and:
+NO_NEW_ENTRY
+Do not guess.
+Persist:
+kalshi_event_id
+kalshi_market_tickers
+espn_event_id
+mapping_created_at
+mapping_method
+mapping_verified
+
+56. Clock Authority
+ESPN supplies the strategy's sports clock.
+Kalshi supplies the strategy's market price.
+Therefore a FIRST78 entry requires both:
+fresh Kalshi quote
+AND
+fresh valid sports state
+Example:
+NBA:
+period == 3
+
+NCAAB:
+period == 2
+AND
+1200 >= clock_seconds >= 600
+Do not infer NBA quarter from wall-clock time.
+Do not infer NCAAB game clock from scheduled tip time.
+
+57. ESPN Polling Architecture
+Build separate polling rates for different game states.
+For example:
+PRE_GAME:
+low frequency
+
+LIVE:
+high frequency
+
+HALFTIME:
+moderate frequency
+
+FINAL:
+stop high-frequency polling
+Cursor should inspect actual behavior and select the fastest sustainable frequency that does not create avoidable throttling or instability.
+Do not tie Kalshi WebSocket processing to ESPN request latency.
+They must run independently:
+Kalshi stream task
+ESPN state task
+Execution task
+Reconciliation task
+A slow ESPN request may not block:
+fill processing
+cancel processing
+risk handling
+position reconciliation
+
+58. ESPN Freshness Gate
+Every sports-state observation must carry:
+provider_timestamp
+received_at
+age_ms
+Set configurable limits:
+SPORTS_STATE_WARN_MS
+SPORTS_STATE_STALE_MS
+If ESPN data exceeds the stale threshold:
+SPORTS_STATE_STALE
+NO_NEW_ENTRY
+Existing open positions must still be managed.
+A stale clock must never prevent:
+hedging
+emergency exit
+reconciliation
+Entry safety and exit safety are different.
+
+59. Feed Disagreement
+Build the architecture for:
+Provider A = ESPN
+Provider B = future paid provider
+Canonical interface:
+class SportsStateProvider:    async def discover_events(...)    async def get_game_state(...)    async def stream_or_poll_state(...)    async def health(...)
+
+Future providers must be swappable without changing strategy logic.
+If two providers are eventually active, compare:
+period
+clock
+score
+game status
+and persist disagreement.
+Example:
+ESPN clock = 08:31
+Provider B clock = 08:28
+Do not silently choose one if disagreement exceeds configured tolerances.
+
+60. ESPN Failure Modes
+Explicitly test:
+HTTP timeout
+HTTP 429
+HTTP 500
+malformed JSON
+missing clock
+missing period
+wrong event
+clock moves backward
+clock freezes
+score decreases
+game jumps periods
+duplicate play
+provider outage
+Responses:
+Before entry
+Unsafe state:
+NO_NEW_ENTRY
+With an existing position
+Sports-feed failure must not disable exchange-side risk management.
+The bot must still know:
+position quantity
+Kalshi quotes
+hedge state
+orders
+fills
+and remain capable of exiting.
+
+61. Independent First-Touch Memory
+The FIRST78 eligibility state must come from Kalshi market observations.
+It must not depend on ESPN being healthy at the precise millisecond of the first touch.
+Record every first-touch market event continuously.
+Example:
+13:07:32.151 Kalshi mid = 78
+13:07:32.182 persisted FIRST78_SEEN
+If ESPN is temporarily stale at that moment:
+FIRST78 still counts
+ENTRY blocked because clock verification unavailable
+The game does not get a second chance at FIRST78 later.
+This prevents feed outages from accidentally resetting strategy eligibility.
+
+62. Overnight Batch Resize Window
+The 6% position budget may change only during:
+01:00 <= local time < 03:00
+America/Los_Angeles
+This is the sole authorized automatic sizing-maintenance window.
+Do not hardcode:
+PST = UTC-8
+Use the IANA timezone:
+America/Los_Angeles
+so daylight-saving transitions are handled correctly.
+
+63. Ten Trades Creates a Resize Request
+Ten completed trades do not immediately modify live sizing.
+Instead:
+at least 10 distinct reconciled completions recorded in the current sizing epoch
+        ↓
+RESIZE_PENDING = TRUE
+The existing:
+batch_trade_budget
+remains active until the next eligible overnight resize.
+Example:
+Batch bankroll       $20,000
+Trade budget         $1,200
+
+Trade #10 completes  4:04 PM
+Do not resize.
+At:
+7:30 PM
+Trade #11 appears.
+It still uses:
+$1,200 maximum acquisition cost
+not a newly calculated amount.
+
+64. Extended Batch Behavior
+Because resizing may occur only overnight, a sizing batch is permitted to contain more than ten trades.
+Example:
+Trade 10  4:04 PM
+Trade 11  6:22 PM
+Trade 12  8:15 PM
+Trade 13 10:09 PM
+All four use the same frozen sizing parameters.
+Conceptually distinguish:
+completed_trade_count
+from:
+sizing_epoch
+Recommended model:
+Sizing Epoch 7
+start equity:       $23,182
+trade budget:       $1,390.92
+minimum resize trigger: 10 concluded trades
+actual trades before overnight resize: 13
+Then at the authorized maintenance window:
+Sizing Epoch 8
+begins.
+This exactly preserves the rule:
+Once ten trades have completed, update sizing at the next safe overnight window, not in the middle of the trading day.
+
+65. Resize Preconditions
+Even between 1 AM and 3 AM, do not resize blindly.
+All of the following must be true:
+RESIZE_PENDING == true
+and:
+no unresolved reconciliation errors
+and:
+no entry order currently being constructed (enforced by the same transactional admission/resize boundary)
+The system must use authoritative reconciled equity.
+If there are unresolved fills or balance discrepancies:
+RESIZE_DEFERRED_RECONCILIATION
+Keep the previous size.
+Never guess account equity.
+
+66. Open Positions During Resize Window
+Sizing an upcoming trade and managing an existing trade are separate concerns.
+If the maintenance window arrives while an existing position remains open, do not mutate that position's authorized quantity.
+Its:
+initial allocation
+entry quantity
+hedge target
+remain frozen.
+For new positions after a successfully committed resize, use the new sizing epoch.
+Cursor must ensure there is no state where part of one position was sized from Epoch N and another part accidentally uses Epoch N+1.
+
+67. Atomic Resize Commit
+Sizing changes must happen transactionally.
+Persist:
+old_epoch
+old_bankroll
+old_trade_budget
+
+new_equity
+new_epoch
+new_trade_budget
+
+calculation_timestamp
+effective_timestamp
+reconciliation_snapshot_id
+Then atomically change:
+ACTIVE_SIZING_EPOCH
+If the process crashes during resizing, restart must determine conclusively whether:
+old epoch
+or:
+new epoch
+became active.
+There can never be an ambiguous half-committed resize.
+
+68. AWS Production Deployment Requirement
+This bot is intended to run on Momento's existing AWS infrastructure.
+Before implementing deployment, Cursor must inspect the repository and existing AWS/runtime conventions rather than inventing a second production stack.
+The connected Momento repository is:
+LBL-Official/momento
+The implementation should locate the existing production mechanisms for:
+momento-live.service
+Systimo
+runtime registry
+service definitions
+environment configuration
+Kalshi credentials
+AWS instance startup
+health monitoring
+logs
+deployment
+rollback
+Preserve existing ownership boundaries.
+Do not replace the existing AWS production host, service manager, networking model, or secret-management system unless there is a demonstrated requirement.
+
+69. Production Service
+The live bot must run as a supervised service.
+Expected properties:
+start on boot
+restart on unexpected failure
+bounded restart policy
+structured logs
+health endpoint
+readiness endpoint
+metrics
+persistent state
+A process restart cannot erase:
+open positions
+open orders
+FIRST78 history
+daily trade count
+batch state
+hedge state
+Persistent state must survive service restart and EC2 reboot.
+
+70. AWS Boot Sequence
+On instance/service startup:
+PROCESS START
+     |
+     v
+LIVE ENTRY DISABLED
+     |
+     v
+LOAD DURABLE LEDGER
+     |
+     v
+CONNECT KALSHI
+     |
+     v
+FETCH OPEN ORDERS
+     |
+     v
+FETCH POSITIONS
+     |
+     v
+FETCH RECENT FILLS
+     |
+     v
+RECONCILE LOCAL ↔ EXCHANGE
+     |
+     v
+LOAD ESPN EVENT MAPPINGS
+     |
+     v
+VERIFY SPORTS FEED
+     |
+     v
+VERIFY DAILY TRADE COUNTER
+     |
+     v
+VERIFY ACTIVE SIZING EPOCH
+     |
+     v
+READY
+Only after every critical invariant passes may:
+NEW_ENTRY_ENABLED = true
+
+71. Position Guardian
+Create an independent safety component:
+PositionGuardian
+Its job is not to discover trades.
+Its job is:
+Never forget that money is exposed.
+It continuously compares:
+exchange positions
+local positions
+open orders
+expected hedge quantities
+strategy state
+If the exchange says there is a position but Momento believes there is none:
+CRITICAL_POSITION_MISMATCH
+NO_NEW_ENTRIES
+and alert immediately.
+A position must never disappear from monitoring merely because:
+strategy worker crashed
+frontend crashed
+ESPN failed
+database reconnect occurred
+
+72. Order Guardian
+Create:
+OrderGuardian
+Periodically reconcile all exchange-open orders.
+Detect:
+orphan entry orders
+orphan hedge orders
+cancelled locally but live remotely
+duplicate orders
+orders larger than allowed
+stale orders
+Unknown live orders are treated as a critical condition.
+Do not assume a cancel request succeeded.
+Only an exchange acknowledgement/state change proves cancellation.
+
+73. Exit Guardian
+A separate invariant should answer continuously:
+Does every nonzero position currently have a valid management path?
+For each position require:
+strategy state exists
+current quantity known
+hedge quantity known
+fallback route available
+market subscription healthy
+If not:
+POSITION_UNMANAGED
+This is a critical alert.
+No newly generated trades while an existing position is unmanaged.
+
+74. Do Not Promise Impossible Reliability
+The design objective should be:
+NO SILENT FAILURE
+rather than claiming:
+FAILURE IS IMPOSSIBLE
+No production trading system can mathematically guarantee that:
+* AWS never fails;
+* the network never disconnects;
+* ESPN never fails;
+* Kalshi never rejects an order;
+* a maker order always fills;
+* a market never gaps.
+Therefore the bot must be engineered so failures become:
+detected
+contained
+reconciled
+alerted
+recoverable
+instead of silently corrupting positions.
+
+75. Heartbeats
+Each major worker emits a heartbeat:
+kalshi_market_feed
+espn_provider
+strategy_engine
+risk_engine
+execution_router
+position_guardian
+order_guardian
+reconciliation
+database
+Track:
+last_heartbeat
+status
+lag_ms
+restart_count
+If a critical worker dies:
+NO_NEW_ENTRY
+Existing position-management components should remain active whenever technically possible.
+
+76. Watchdog
+Run an independent watchdog outside the strategy worker.
+The watchdog must detect:
+process stopped
+heartbeat stale
+memory exhaustion
+disk exhaustion
+database unavailable
+websocket disconnected
+repeated restart loop
+and restart/alert according to policy.
+Do not rely on the same process to detect its own death.
+
+77. Network Failure Behavior
+If Kalshi market data disconnects:
+NO_NEW_ENTRY
+Reconnect with:
+exponential backoff
++
+jitter
+After reconnection:
+obtain fresh snapshot
+reconcile sequence/state
+retrieve open orders
+retrieve positions
+retrieve fills
+Do not simply continue from an unknown quote gap.
+
+78. Missed-Trade Protection
+To minimize accidentally missing valid FIRST78 events:
+Maintain independent:
+market subscriptions
+event state
+first-touch journal
+Subscribe before the authorized window begins.
+Do not wait until Q3 or H2 to begin monitoring.
+This is critical because a 78 touch before the authorized window disqualifies the game.
+Therefore observation begins at:
+game start
+even though execution authorization begins later.
+
+79. Sequence-Gap Detection
+If Kalshi's stream provides sequence numbers or another continuity mechanism, validate continuity.
+On detected gap:
+MARKET_STATE_UNKNOWN
+NO_NEW_ENTRY
+Obtain a new authoritative snapshot.
+Never assume:
+last quote before disconnect
+→
+first quote after reconnect
+contains the full path.
+A missed 78 touch matters permanently to this strategy.
+
+80. First-Touch Uncertainty
+If Momento loses Kalshi market observation for part of a game before the allowed entry period, it may no longer be possible to prove that neither contract touched 78¢.
+Therefore:
+observation gap capable of hiding FIRST78
+should conservatively produce:
+FIRST78_HISTORY_UNCERTAIN
+NO_ENTRY
+rather than pretending the touch never happened.
+This is essential to preserving the research strategy definition.
+
+81. Durable Writes Before Risky Actions
+Critical transitions should be durably recorded before or atomically with order intent.
+For example:
+ENTRY_AUTHORIZED
+must carry a deterministic ID before submission.
+Likewise:
+HEDGE_TRIGGERED
+must survive a crash occurring milliseconds after the trigger.
+Use:
+write-ahead event
+→ order submission
+→ exchange acknowledgement
+with idempotent recovery.
+
+82. Exchange Is the Position Authority
+For live risk, the exchange is authoritative about:
+actual fills
+actual positions
+actual open orders
+actual fees
+Momento's database is authoritative about:
+strategy intent
+eligibility
+FIRST78 history
+batch policy
+decision history
+Reconciliation combines the two.
+Never overwrite an exchange position merely because local state says zero.
+
+83. Alerts
+Create critical alerts for:
+unmanaged position
+position mismatch
+order mismatch
+duplicate order
+unexpected fill
+stale Kalshi stream
+stale ESPN state
+sports-state disagreement
+reconciliation failure
+daily limit breach attempt
+6% budget breach attempt
+AWS restart
+database failure
+disk failure
+clock synchronization failure
+Severity levels:
+INFO
+WARNING
+CRITICAL
+EMERGENCY
+Critical and emergency conditions disable new entries automatically.
+
+84. Clock Synchronization on AWS
+Execution timestamps matter.
+Ensure the AWS host has healthy system-time synchronization.
+Monitor clock offset.
+If clock synchronization exceeds a configured safety tolerance:
+CLOCK_UNHEALTHY
+NO_NEW_ENTRY
+Do not rely on a drifting EC2 clock for:
+latency measurement
+overnight resize
+sports-feed joins
+audit sequencing
+
+85. Persistence and Backups
+Critical state must not live solely in RAM.
+Persist:
+trade ledger
+event journal
+FIRST78 history
+event mappings
+orders
+fills
+positions
+sizing epochs
+daily counters
+reconciliation snapshots
+Back up the durable data according to the existing Momento AWS architecture.
+Test restoration.
+A backup that has never been restored in a test is not considered a validated backup.
+
+86. Deployment Is Not Complete Until Failure Injection Passes
+Before production authorization, deliberately simulate:
+kill strategy process
+kill ESPN worker
+drop Kalshi WebSocket
+restart AWS service
+restart database connection
+duplicate fill message
+out-of-order fill
+cancel acknowledgement delayed
+partial hedge then crash
+AWS host reboot
+After every scenario prove:
+no duplicate position
+no lost position
+no unauthorized size
+no forgotten hedge
+no phantom fill
+no incorrect batch change
+
+87. End-to-End Shadow Verification
+Run the production binary/service on the actual AWS host in:
+SHADOW_LIVE
+with real:
+Kalshi market data
+ESPN sports data
+game mapping
+strategy state
+but:
+ORDER_SUBMISSION = FALSE
+Compare every detected trade manually against live games.
+Required checks include:
+Did it identify every relevant game?
+
+Did it correctly reject prior-78 games?
+
+Did it identify Q3 correctly?
+
+Did it identify NCAAB first 10 minutes correctly?
+
+Did it generate the 78 signal once?
+
+Did it cancel the hypothetical entry at 86?
+
+Did it model the hedge trigger at 36?
+
+Did it retain sizing correctly?
+
+Did it enforce the eight-trade cap?
+
+88. Canary Capital
+Do not move directly from shadow mode to full 6% positions.
+Deployment should support a temporary:
+CANARY_ALLOCATION
+that changes only size, not strategy behavior.
+This permits verification of:
+actual authentication
+actual maker behavior
+actual cancel/replace
+actual fills
+actual fees
+actual hedge handling
+actual reconciliation
+with materially less money at risk.
+After the live plumbing is verified, the authorized allocation may be changed to the strategy's intended:
+6%
+through explicit operator authorization.
+
+89. Production Readiness Gate
+Full-size live activation is prohibited until Cursor can demonstrate:
+all unit tests pass
+
+all integration tests pass
+
+historical replay passes
+
+shadow-live passes
+
+restart recovery passes
+
+position reconciliation passes
+
+partial-fill tests pass
+
+hedge state-machine tests pass
+
+daily trade-cap concurrency test passes
+
+batch-resize timing test passes
+
+ESPN stale-feed test passes
+
+Kalshi reconnect test passes
+
+AWS reboot recovery passes
+
+kill switch passes
+
+canary live test passes
+Generate:
+LIVE_READINESS_REPORT.md
+with evidence for every line.
+No unsupported:
+"looks good"
+or:
+"should work"
+is acceptable.
+
+90. AWS Deployment Deliverables
+Cursor must provide the exact:
+AWS instance
+service name
+service file
+working directory
+binary/application revision
+Git commit SHA
+environment/config source
+database location
+log location
+health endpoint
+startup command
+stop command
+restart command
+rollback command
+Also produce:
+DEPLOYMENT_RUNBOOK.md
+INCIDENT_RUNBOOK.md
+DISASTER_RECOVERY.md
+The runbook must explain what the operator should do if Momento wakes up and finds:
+an unexpected open position
+an unexpected live order
+a stale ESPN feed
+a Kalshi disconnect
+a reconciliation mismatch
+
+91. Final Safety Invariants
+Add these to the prior non-negotiable invariants:
+ESPN determines sports state, never exchange fills.
+
+Kalshi determines exchange state, never game clock.
+
+A stale sports feed blocks new entries.
+
+A stale sports feed does not prevent position liquidation.
+
+A Kalshi observation gap capable of hiding FIRST78 invalidates entry eligibility.
+
+FIRST78 history survives process restart.
+
+Ten completed trades requests a resize; it does not authorize immediate resizing.
+
+Sizing changes only between 01:00 and 03:00 America/Los_Angeles.
+
+Trades arriving after the tenth trade but before the resize continue using the old sizing epoch.
+
+A resizing operation cannot modify an already-open position.
+
+New sizing becomes active atomically.
+
+An exchange position can never disappear merely because local application state was lost.
+
+Every nonzero position must have an active PositionGuardian.
+
+Every live order must be known to OrderGuardian.
+
+Every unhedged position must have a valid exit route.
+
+Unknown exchange state disables new entries.
+
+Critical failures must be visible; never fail silently.
+
+The resulting production architecture
+                    AWS / MOMENTO LIVE
+                           |
+             +-------------+-------------+
+             |                           |
+             v                           v
+      KALSHI WEBSOCKET               ESPN PROVIDER
+             |                           |
+             v                           v
+       MarketState               SportsGameState
+             |                           |
+             +-------------+-------------+
+                           |
+                           v
+                  Normalized Live State
+                           |
+                           v
+                 FIRST78 State Machine
+                           |
+                  +--------+--------+
+                  |                 |
+                  v                 v
+              Risk Gate       Pricing Telemetry
+                  |
+                  v
+             Execution Router
+                  |
+          +-------+-------+
+          |               |
+          v               v
+     Entry Orders     Hedge / Exit
+          |               |
+          +-------+-------+
+                  |
+                  v
+              KALSHI
+                  |
+            fills/orders
+                  |
+                  v
+       +-----------------------+
+       | PositionGuardian      |
+       | OrderGuardian         |
+       | ExitGuardian          |
+       | Reconciliation        |
+       +-----------------------+
+                  |
+                  v
+            Durable Ledger
+                  |
+          +-------+-------+
+          |               |
+          v               v
+       Systimo        Live Desk
+The central engineering doctrine should be:
+\[ \boxed{ \text{Never miss silently} \quad \text{Never size ambiguously} \quad \text{Never forget exposure} } \]
+and not “assume the happy path is always available.”
+I also checked the connected GitHub account and confirmed that LBL-Official/momento is available to the integration, so Cursor should explicitly inspect that repository before creating any parallel AWS/execution infrastructure.
+
+# 92. 50-Trade Live Validation Objective
+
+The first production validation horizon for `MOMENTO_FIRST78_LIVE_V1` is:
+
+```text
+TARGET_COMPLETED_TRADES = 50
+TARGET_DEADLINE = 2027-01-01T00:00:00 America/Los_Angeles (exclusive; complete by end of December 31)
+REFERENCE_SCENARIO_STARTING_BANKROLL = $20,000
+REFERENCE_SCENARIO_TARGET_BANKROLL = $21,000
+TARGET_NET_PROFIT = $1,000
+TARGET_PORTFOLIO_RETURN = +5.00%
+```
+
+These are **measurement objectives**, not execution overrides.
+
+The system must never:
+
+- loosen eligibility to reach 50 trades;
+- chase entries;
+- exceed the eight-trade cap;
+- increase position sizing;
+- skip an authorized exit;
+- delay an exit;
+- enter outside NBA Q3 or verified P5-vs-P5 NCAAB H2 first 10 minutes
+
+for the purpose of reaching the January target.
+
+Trade quality takes precedence over trade-count targets.
+
+---
+
+# 93. Required Pace Tracking
+
+Maintain:
+
+```text
+completed_trades
+remaining_trades_to_50
+calendar_days_remaining
+eligible_games_remaining
+trades_per_week_required
+current_trade_pace
+projected_50th_trade_date
+```
+
+Display:
+
+```text
+50-TRADE TARGET
+Completed:        17 / 50
+Remaining:        33
+Deadline:         Jan 1 2027
+Current pace:     X.X trades/week
+Required pace:    X.X trades/week
+```
+
+If live trading begins October 20, 50 trades by January 1 requires roughly:
+
+\[
+\boxed{4.9\text{ completed trades/week}}
+\]
+
+or about:
+
+\[
+\boxed{21\text{ trades/month}}
+\]
+
+during that period.
+
+That is below your estimated ~30 NBA trades/month, so your projected opportunity count is sufficient **if the actual qualifying FIRST78 frequency resembles your estimate**. The bot must report observed opportunity frequency rather than assuming 30/month.
+
+---
+
+# 94. $21,000 Portfolio Target
+
+Create the following authoritative portfolio metrics:
+
+```text
+starting_bankroll = 20000.00
+target_bankroll = 21000.00
+target_net_profit = 1000.00
+target_return_pct = 5.00
+```
+
+At every completed trade calculate:
+
+```text
+current_reconciled_bankroll
+cumulative_net_profit
+portfolio_return_pct
+distance_to_21000
+```
+
+Where:
+
+\[
+PortfolioReturn
+=
+\frac{CumulativeRealizedNetTradingPnL}{20,000}
+\]
+
+The account-balance objective is measured separately from realized trading profit. It requires reconciled Kalshi account equity of at least:
+
+\[
+\boxed{\$21,000}
+\]
+
+after fees and realized trading losses. Also require at least $1,000 realized net trading profit for the profit objective; deposits do not count as profit. Use the accounting definitions in section 109.
+
+Do not count:
+
+- unrealized P&L;
+- hypothetical fills;
+- modeled EV;
+- open maker orders;
+- unsettled assumed wins
+
+as realized progress.
+
+---
+
+# 95. EV Required to Reach the Goal
+
+For planning purposes, with:
+
+```text
+entry price ≈ 80¢
+allocation = 6%
+illustration only: immediate resize after exactly every 10 trades
+50 completed trades
+```
+
+the approximate net EV required to grow:
+
+```text
+$20,000 → $21,000
+```
+
+is:
+
+\[
+\boxed{1.307¢/contract}
+\]
+
+Therefore track three EV levels:
+
+```text
+RESEARCH_TARGET_EV = +1.500¢
+ILLUSTRATIVE_REQUIRED_EV ≈ +1.307¢ (not the live decision threshold)
+LIVE_REALIZED_EV = measured
+```
+
+Dashboard:
+
+| Metric | Value |
+|---|---:|
+| Historical/model target | +1.500¢ |
+| Approx. EV required for $21k/50 trades | +1.307¢ |
+| Live realized EV | X.XXX¢ |
+| Gap vs research target | X.XXX¢ |
+| Gap vs $21k requirement | X.XXX¢ |
+
+This allows Momento to determine whether the strategy can miss the historical 1.5¢ estimate slightly while still reaching the portfolio objective.
+
+---
+
+# 96. Expected 50-Trade Result Under 1.5¢ EV
+
+Under the simplified model:
+
+```text
+6% allocation
+80¢ contracts
++1.5¢ net EV
+illustration only: exactly 10 trades per sizing epoch
+```
+
+modeled growth per illustrative 10-trade batch is approximately:
+
+\[
+10\times0.06\times\frac{0.015}{0.80}
+=
+1.125\%
+\]
+
+Five batches imply approximately:
+
+\[
+20,000(1.01125)^5
+=
+\boxed{\$21,150.60}
+\]
+
+Expected modeled gain:
+
+\[
+\boxed{+\$1,150.60}
+\]
+
+or:
+
+\[
+\boxed{+5.75\%}
+\]
+
+This is a simplified planning illustration, not a forecast or guarantee. It omits entry-fee-inclusive quantity rounding, varying fill prices, concurrency and delayed overnight resizing. Actual sizing follows sections 9 and 62–67 only.
+
+The live ledger must show how much realized results deviate from it.
+
+---
+
+# 97. Adverse Exit Quality
+
+Create a separate exit-quality KPI.
+
+Define an **adverse exit** as any trade where Momento removes exposure before favorable $1 settlement through:
+
+- complementary hedge;
+- direct sale of original contract;
+- mixed hedge/direct exit.
+
+Do not mix favorable settlements into average adverse exit price.
+
+Primary KPI:
+
+```text
+AVERAGE_ADVERSE_EXIT_EQUIVALENT_PRICE
+```
+
+Target:
+
+\[
+\boxed{\ge 50¢}
+\]
+
+This should be calculated from actual fills, not midpoint signals.
+
+---
+
+# 98. Exit-Equivalent Price
+
+Because Momento may exit by buying the opposing contract rather than selling its original contract, normalize every exit into an **original-contract-equivalent price**.
+
+### Direct exit
+
+If original YES is sold at:
+
+\[
+x
+\]
+
+then:
+
+\[
+ExitEquivalent=x
+\]
+
+### Opposing-contract hedge
+
+If Momento buys the exact complementary YES contract at:
+
+\[
+h
+\]
+
+then, before fees:
+
+\[
+ExitEquivalent=1-h
+\]
+
+Examples:
+
+| Opponent hedge purchase | Original exit-equivalent |
+|---:|---:|
+| 35¢ | 65¢ |
+| 36¢ | 64¢ |
+| 40¢ | 60¢ |
+| 45¢ | 55¢ |
+| 50¢ | 50¢ |
+
+Therefore your 50¢ minimum average-exit objective can be measured consistently regardless of which leg was used to eliminate exposure.
+
+For mixed exits:
+
+\[
+ExitEquivalentVWAP
+=
+\frac{
+\sum(q_i\times equivalentPrice_i)
+}{
+\sum q_i
+}
+\]
+
+---
+
+# 99. Net Exit-Equivalent Price
+
+Also maintain a fee-adjusted metric:
+
+```text
+NET_EXIT_EQUIVALENT_PRICE
+```
+
+because 50¢ gross exit and 50¢ net exit are not economically identical.
+
+For a direct sale:
+
+\[
+NetExitEquivalent
+=
+salePrice-exitFeePerContract
+\]
+
+For complementary acquisition:
+
+\[
+NetExitEquivalent
+=
+1-opponentPurchasePrice-hedgeFeePerContract
+\]
+
+This gives Momento two measures:
+
+```text
+gross_adverse_exit_equivalent
+net_adverse_exit_equivalent
+```
+
+Do not conflate them.
+
+Primary execution-quality reporting should display both.
+
+---
+
+# 100. Your 50¢ Floor Means Approximately a 30¢ Loss From an 80¢ Entry
+
+If entry VWAP is exactly 80¢ and adverse exit-equivalent VWAP is 50¢:
+
+\[
+0.50-0.80=-0.30
+\]
+
+Therefore gross adverse loss:
+
+\[
+\boxed{-30¢/contract}
+\]
+
+before fees.
+
+At an 82¢ entry:
+
+\[
+0.50-0.82=-0.32
+\]
+
+or:
+
+\[
+\boxed{-32¢}
+\]
+
+This distinction matters.
+
+Do not label:
+
+```text
+50¢ exit = 50¢ slippage
+```
+
+Instead maintain:
+
+```text
+entry_vwap
+exit_equivalent_vwap
+adverse_price_loss
+execution_slippage
+```
+
+separately.
+
+---
+
+# 101. Slippage Must Mean Execution Slippage
+
+Reserve the word `slippage` for the difference between the intended executable reference and actual execution.
+
+For example:
+
+### Entry
+
+```text
+78¢ signal
+80¢ actual entry
+```
+
+Entry implementation slippage:
+
+\[
++2¢
+\]
+
+### Exit
+
+Suppose intended hedge economics imply 64¢ exit-equivalent but actual execution yields 60¢.
+
+Exit slippage:
+
+\[
+-4¢
+\]
+
+That is different from:
+
+```text
+80¢ entry → 50¢ adverse exit
+```
+
+which is primarily a **strategy/path loss of 30¢**, not 30¢ of execution slippage.
+
+This separation is essential for diagnosing whether a poor result came from:
+
+1. the strategy being wrong;
+2. adverse market path;
+3. execution being poor.
+
+---
+
+# 102. Adverse-Exit Frequency
+
+You currently hypothesize that approximately:
+
+\[
+\boxed{20\%}
+\]
+
+of trades may require meaningful adverse exits.
+
+Record:
+
+```text
+adverse_exit_count
+adverse_exit_rate
+settlement_hold_count
+settlement_hold_rate
+```
+
+but treat:
+
+```text
+20%
+```
+
+as a hypothesis, not a hard-coded assumption.
+
+At 50 trades:
+
+```text
+expected adverse exits under 20% assumption ≈ 10
+```
+
+but the actual number must come from live trading.
+
+---
+
+# 103. Why the 50¢ Average Exit Is a Strong Safety Metric
+
+Suppose, purely for illustration:
+
+- 80% of positions ultimately return $1;
+- 20% require adverse exit;
+- average adverse exit = 50¢;
+- entry = 80¢.
+
+Before fees:
+
+Winning contribution:
+
+\[
+0.80\times(1.00-0.80)=+16¢
+\]
+
+Adverse contribution:
+
+\[
+0.20\times(0.50-0.80)=-6¢
+\]
+
+Gross expectancy:
+
+\[
+\boxed{+10¢/contract}
+\]
+
+That is far above your +1.5¢ net-EV target.
+
+So if **only 20% truly require adverse exits** and those exits genuinely average **50¢**, the strategy would have substantial economic room for fees and execution costs.
+
+But that is exactly why the live ledger must measure these separately. If instead:
+
+- more than 20% exit adversely;
+- winners are sometimes exited before $1;
+- entry VWAP drifts toward 82¢;
+- hedge fills are poor;
+- fees are higher;
+- 50¢ exit-equivalent isn't maintained,
+
+the economics change quickly.
+
+---
+
+# 104. Exit Quality Dashboard
+
+Add:
+
+```text
+ADVERSE EXITS
+Count                         X
+Rate                          XX.X%
+
+Average gross exit-equiv      XX.XXX¢
+Average net exit-equiv        XX.XXX¢
+
+Median exit-equiv             XX.XXX¢
+Worst exit-equiv              XX.XXX¢
+10th percentile               XX.XXX¢
+
+Target average                >= 50.000¢
+Distance from target          +/- X.XXX¢
+```
+
+Also show buckets:
+
+```text
+>=65¢
+60–64.99¢
+55–59.99¢
+50–54.99¢
+45–49.99¢
+40–44.99¢
+<40¢
+```
+
+This is much more informative than just reporting one average.
+
+A 50¢ average could otherwise conceal:
+
+```text
+nine equal-quantity exits at 55¢
+one equal-quantity exit at 5¢
+mean = 50¢ despite the severe 5¢ exit
+```
+
+The average alone is insufficient.
+
+---
+
+# 105. Severe Exit Rate
+
+Track:
+
+```text
+EXIT_EQUIVALENT < 50¢
+```
+
+as its own event.
+
+Metrics:
+
+```text
+below_50_count
+below_50_rate
+mean_below_50_exit
+worst_exit
+```
+
+Your desired operating condition can therefore be expressed as:
+
+```text
+mean adverse exit-equivalent >= 50¢
+```
+
+while also monitoring:
+
+```text
+frequency of exits < 50¢
+```
+
+Averages cannot be allowed to hide tail failures.
+
+---
+
+# 106. 50-Trade Scorecard
+
+At exactly Trade 50, automatically freeze:
+
+```text
+FIRST78_LIVE_50_TRADE_REPORT
+```
+
+containing:
+
+### Capital
+
+```text
+Starting bankroll
+Ending reconciled bankroll
+Net profit
+Return %
+Target = $21,000
+Target difference
+```
+
+### Trading
+
+```text
+50 completed trades
+NBA count
+NCAAB count
+eligible opportunities
+missed entries
+capacity skips
+```
+
+### EV
+
+```text
+Net EV/contract
+Gross EV/contract
+Historical target = +1.5¢
+Required EV ≈ +1.307¢
+95% uncertainty interval
+```
+
+### Execution
+
+```text
+Entry VWAP
+Entry slippage
+Maker fill %
+Taker fill %
+Fees/contract
+Signal-to-fill latency
+```
+
+### Adverse exits
+
+```text
+Adverse exit count
+Adverse exit %
+Mean gross exit-equivalent
+Mean net exit-equivalent
+Median exit
+Worst exit
+Below-50 count
+Below-50 %
+```
+
+### Risk
+
+```text
+Maximum drawdown
+Largest single-trade loss
+Longest losing sequence
+Peak bankroll
+Lowest bankroll
+```
+
+### Batch sizing
+
+```text
+Sizing epochs
+Starting bankroll each epoch
+6% budget each epoch
+Actual contracts each trade
+Resize timestamps
+```
+
+---
+
+# 107. The Three Success Questions at Trade 50
+
+The report should prominently answer these separately:
+
+```text
+1. PORTFOLIO OBJECTIVE
+Did reconciled bankroll reach >= $21,000?
+
+2. EDGE OBJECTIVE
+Was realized net EV sufficient for $1,000 net profit at the actual completed-contract count?
+Report +1.307¢ only as the simplified planning comparator.
+How does it compare with +1.5¢ research EV?
+
+3. EXIT QUALITY OBJECTIVE
+Was average adverse exit-equivalent >= 50¢?
+```
+
+Do **not** collapse them into one arbitrary PASS/FAIL flag.
+
+A strategy could:
+
+- miss $21k because of variance while still showing good EV;
+- reach $21k despite poor execution through favorable variance;
+- maintain 50¢ exits but have poor entry fills;
+- have +1.5¢ overall EV while showing dangerous tail exits.
+
+The underlying measurements matter more than a single badge.
+
+---
+
+# 108. Progress Milestones
+
+Freeze intermediate snapshots at:
+
+```text
+N=10
+N=20
+N=30
+N=40
+N=50
+```
+
+The major statistical review points remain:
+
+```text
+20
+50
+100
+200
+```
+
+but the 10-trade snapshots are measurement checkpoints only. They do not trigger an immediate size change and need not coincide with actual sizing epochs.
+
+At every ten trades record:
+
+```text
+bankroll
+cumulative P&L
+portfolio return
+live EV
+adverse exit rate
+average adverse exit
+fees
+drawdown
+```
+
+This creates a clean history that cannot later be rewritten.
+
+---
+
+
+# 109. Binding accounting and measurement definitions
+
+These definitions qualify sections 92–108 and override their simplified planning examples.
+
+- FIRST78 V1 remains a 78-cent midpoint signal with actual entry fills permitted only by its 78–82-cent execution policy. An 80-cent planning example is not a new entry trigger.
+- Ten fully reconciled completions request resizing. Only a safe commit during 01:00 <= America/Los_Angeles time < 03:00 changes the active epoch. No scorecard, deadline or profit target may override that rule.
+- NCAAB remains verified P5 vs P5 only. Measurement targets cannot broaden eligibility.
+- January 1 reporting uses the deadline stated in section 92. Freeze a separate deadline snapshot even if fewer than 50 trades complete; freeze the 50th-trade report whenever trade 50 actually reconciles. Order completions by durable reconciliation sequence so simultaneous completions cannot duplicate or skip a checkpoint.
+- Completed trade means all original exposure is exited or settled, outstanding orders are resolved, and all fills, fees and final P&L are reconciled. Fully paired but unsettled complementary contracts remain SETTLEMENT_NEUTRAL / SETTLEMENT_PENDING; their locked economic value is not realized trading profit.
+- Report actual funded Kalshi equity, available cash, external reserves, cumulative net external flows, realized net trading P&L, and unrealized/locked-but-unsettled value separately. Starting strategy reference capital of $20,000 is not evidence that $20,000 was deposited to Kalshi. Moving a disclosed reserve into Kalshi is funding, not trading profit.
+- Realized strategy return = cumulative realized net trading P&L / $20,000. The realized-capital objective is $20,000 + realized net trading P&L >= $21,000. Display the distinct account-equity objective alongside it. Do not claim all objectives passed unless the trade count, deadline, realized-profit and account-equity conditions each have authoritative evidence.
+- Live realized EV in cents = 100 * total realized net P&L in dollars / total initial contracts for the same fully reconciled trade cohort. At the 50-trade checkpoint, exact net EV corresponding to $1,000 profit is 100000 / sum(initial_contracts) cents. If that denominator is zero, return UNAVAILABLE. +1.307 cents is only the specified 80-cent/five-batch approximation, not a universal target or evidence of the true expected return.
+- Average adverse exit-equivalent is contract-quantity weighted across actual exposure-removing fills. Report the gross >=50-cent objective and the net value separately. Never mix favorable $1 settlements into this exit average. No qualifying exit fills means UNAVAILABLE, not zero or a pass.
+- Direct-sale equivalent = sale price. Matched exact-complement equivalent = $1 minus opposing acquisition price. Count only matched quantity, never unmatched opponent holdings. Allocate actual fees to each quantity once. Include applicable realized settlement fees in final net economics. Do not count a later matched-pair settlement as a second exit fill.
+- Split entry implementation shortfall versus the 78-cent strategy reference from execution shortfall versus the executable quote at submission. A midpoint or a passive unfilled order is not an executable fill benchmark. Retain timestamps and benchmark sources for both.
+- The adverse-exit rate is trades with any qualifying exposure-removal fill / completed trades. Report the quantity-weighted adverse-exit share separately. Preserve partial exits and partial settlements rather than forcing every trade into an all-win/all-exit label. Track unhedged zero-payout settlements as losses in their own count and net P&L; never hide them by excluding them from the adverse-exit average.
+- Below-50 reporting must include both exposure-removing contract quantity below 50 cents / total adverse-exit quantity, and adverse-exit trades whose exit-equivalent VWAP is below 50 cents / all adverse-exit trades. Label denominators. Keep median, minimum and tenth percentile definitions explicit and retain underlying rows.
+- The hypothetical 80% favorable settlement / 20% adverse-exit mixture is illustrative, not the backtest survival rate, an execution assumption or an opportunity forecast. The 50-cent mean objective is monitoring only; it cannot guarantee individual exit prices or justify delaying a protective exit.
+- Cash-flow-adjusted drawdown must name its basis (realized strategy capital versus marked account equity). Confidence intervals must identify the estimator, resampling unit and sample size; correlated trades from the same game/session must not be treated as independent contract observations. An observed 50-trade EV does not establish the long-run edge.
+- Pace uses the actual authorized launch date and elapsed time. If launch date, schedule coverage or observed rate is insufficient, show UNAVAILABLE. The October 20 / 4.9-trades-per-week illustration is not the launch schedule. Scheduled games are candidate opportunities, not guaranteed eligible FIRST78 signals.
+- Freeze the requested dashboard example as a labeled mock only: 34/50, $20,742, +$742, +3.71%, +1.42 cents live EV, 56.8-cent mean adverse exit, 7/34 adverse exits, 2/7 below-50 trades. Never seed these numbers into live results; mock values need not reconcile as a real ledger.
+
+# 110. October implementation and launch handoff
+
+Planned Cursor implementation/resumption date: October 8, 2026.
+Target NBA preseason launch date: October 10, 2026.
+Timezone: America/Los_Angeles.
+
+The operator intends to resume with Cursor when credits reset October 8. This is a handoff plan, not a scheduled automation or a claim that this work will run unattended.
+
+Cursor must start from branch feat/first78-live-v1-overnight-sizing, read this full specification and STATUS.md, inspect repository instructions and current changes, then complete the remaining integration and verification. The current contribution is a sizing foundation, not a completed bot. Rust tests have been written but not executed in the current environment.
+
+October 8–9 priorities: establish the repository-pinned Rust build environment, run and repair tests, complete V1 market/sports-state ingestion and first-touch eligibility, transactionally integrate sizing and reservations, implement the order/hedge/fallback and reconciliation paths, and finish the actual-fill ledger and scorecards. These are required work items, not a promise that two days suffice.
+
+October 10 is a target, not a forced activation deadline. Start with SHADOW_LIVE if production gates are incomplete. Live canary requires the explicit operator authorization and readiness evidence specified earlier; full 6% sizing requires the full readiness gate including verified canary behavior. Do not mark a gate passed merely to meet the date.
+
+Confirm eligible preseason market availability and clock/feed behavior from actual provider data. Do not assume an October 10 game or tradable contract exists. NBA remains Q3 only; NCAAB remains season-verified P5 vs P5 in H2 first ten minutes.
+
+Required handoff artifacts include remaining implementation blockers, test evidence, LIVE_READINESS_REPORT.md, deployment/incident/disaster-recovery runbooks, exact deployed revision when deployment occurs, and explicit operator authorization records. No production order or AWS service change is authorized solely by this timeline.
+
+
+# 111. Actual-account capital and independent operations amendment
+
+The complete governing amendment is OPERATIONS_AND_CAPITAL_V1.md in this folder.
+It is part of this specification, not an optional research note.
+
+October 3, 2026 replaces October 10 as the target for the $20 funded-account
+canary. A date is not readiness evidence or automatic arming. The same trading
+logic, order lifecycle, fees, idempotency, reconciliation, and observability
+must operate at $20 and $20,000. No special small-account strategy or fee waiver.
+
+Authenticated reconciled account equity initializes the sizing baseline. The
+NBA + NCAAB bot is assumed to be the only account user; verify ownership and block
+on unknown/manual activity. No static balance fallback. Preserve the 6% frozen
+epoch and 01:00–03:00 America/Los_Angeles resize rule after ten completions.
+Actual equity monitoring does not authorize intraday budget changes. Deposits
+and withdrawals are external flows and never strategy P&L. Earlier $20,000→$21,000
+figures are labeled reference scenarios; report actual funded performance.
+
+AWS execution operates independently of the operator laptop/Wi-Fi, Cursor,
+website, Linear and Sunsama. Orchestra owns explicit NORMAL/CAUTION/
+NO_NEW_ENTRIES/EXECUTION_LOCKED authority. Systimo owns the Control Room.
+Maintain separate execution, portfolio and development ledgers with immutable
+source events and rebuildable projections, durable intent/alert outboxes,
+P0/P1/P2 incidents, versioned Drevo time series and Positman recommendations
+separate from actions. Linear receives evidence-based follow-up outside the
+execution path. Every implementation/deployment gate requires observed evidence.
+
+Refer to STATUS.md for what is implemented, tested, connected, and still blocked.

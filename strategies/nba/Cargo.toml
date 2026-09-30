@@ -11,6 +11,8 @@ description = "NBA Bot 001 FIRST78_67: signal, slice, hedge pair, reservation, l
 workspace = true
 
 [dependencies]
+chrono.workspace = true
+chrono-tz.workspace = true
 momento-core.workspace = true
 serde.workspace = true
 serde_json.workspace = true
